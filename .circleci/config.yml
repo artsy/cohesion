@@ -1,0 +1,38 @@
+version: 2.1
+
+orbs:
+  yarn: artsy/yarn@4.0.1
+  # auto: artsy/auto@1.1.0
+
+workflows:
+  build_and_verify:
+    jobs:
+      - yarn/workflow-queue
+      - yarn/update-cache:
+          requires:
+            - yarn/workflow-queue
+      - yarn/type-check:
+          requires:
+            - yarn/workflow-queue
+      - yarn/jest:
+          args: --runInBand
+      # - auto/publish-canary:
+      #     context: npm-deploy
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master
+      #     requires:
+      #       - yarn/jest
+      #       - yarn/type-check
+      #       - yarn/update-cache
+      # - auto/publish:
+      #     context: npm-deploy
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
+      #     requires:
+      #       - yarn/jest
+      #       - yarn/type-check
+      #       - yarn/update-cache

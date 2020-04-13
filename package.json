@@ -15,6 +15,7 @@
   "license": "MIT",
   "scripts": {
     "compile": "babel src --out-dir dist --extensions '.ts' --ignore src/**/__tests__",
+    "test": "jest",
     "type-check": "tsc --noEmit --pretty"
   },
   "devDependencies": {
@@ -46,8 +47,7 @@
   },
   "lint-staged": {
     "*.@(ts)": [
-      "yarn run prettier --write",
-      "git add"
+      "yarn run prettier --write"
     ]
   },
   "prettier": {
