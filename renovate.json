@@ -1,0 +1,4 @@
+{
+  "extends": ["@artsy:lib"],
+  "assignees": ["eessex"],
+}
