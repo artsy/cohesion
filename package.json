@@ -1,6 +1,6 @@
 {
   "name": "@artsy/cohesion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Analytics schema and library helpers",
   "main": "dist/index.js",
   "publishConfig": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artsy/cohesion.git"
+    "url": "git+https://github.com/artsy/cohesion.git"
   },
   "author": "",
   "license": "MIT",
@@ -56,5 +56,9 @@
     "singleQuote": false,
     "trailingComma": "all",
     "bracketSpacing": true
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/artsy/cohesion/issues"
+  },
+  "homepage": "https://github.com/artsy/cohesion#readme"
 }
