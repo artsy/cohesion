@@ -6,6 +6,10 @@ orbs:
 
 not_master: &not_master
   context: npm-deploy
+  pre-steps:
+    - yarn/run-script:
+        script: compile
+
   filters:
     branches:
       ignore: master
