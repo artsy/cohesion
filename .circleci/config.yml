@@ -4,18 +4,18 @@ orbs:
   yarn: artsy/yarn@4.0.2
   auto: artsy/auto@1.2.0
 
-not_master: &not_master
+deploy: &deploy
   context: npm-deploy
   pre-steps:
     - yarn/run-script:
         script: compile
 
+not_master: &not_master
   filters:
     branches:
       ignore: master
 
 only_master: &only_master
-  context: npm-deploy
   filters:
     branches:
       only: master
@@ -35,6 +35,7 @@ workflows:
       # Pr builds
       - auto/publish-canary:
           <<: *not_master
+          <<: *deploy
           requires:
             - yarn/jest
             - yarn/type-check
@@ -42,6 +43,7 @@ workflows:
       # Releases
       - auto/publish:
           <<: *only_master
+          <<: *deploy
           requires:
             - yarn/jest
             - yarn/type-check
