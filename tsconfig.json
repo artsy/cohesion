@@ -15,5 +15,13 @@
     "target": "es2016"
   },
   "include": ["./src", "typings/*.d.ts"],
-  "exclude": ["node_modules/*"]
+  "exclude": ["node_modules/*"],
+  "typedocOptions": {
+    "inputFiles": ["./src"],
+    "out": "doc",
+    "mode": "module",
+    "exclude": ["src/**/index.ts", "src/**/__tests__/*.ts"],
+    "excludeNotExported": true,
+    "excludeExternals": true
+  }
 }
