@@ -1,10 +1,11 @@
 import { ContextModule } from "./ContextModule"
-/*
+/**
  * Shared schema for authentication events
+ * @packageDocumentation
  */
 
-/*
- * the component where an auth modal was triggered
+/**
+ * The component where an auth modal was triggered
  */
 export type AuthContextModule =
   | ContextModule.aboutTheWork
@@ -53,7 +54,7 @@ export type AuthContextModule =
   | ContextModule.worksForSaleRail
 
 /**
- * the type of auth modal displayed
+ * The type of authentication modal displayed
  */
 export enum AuthModalType {
   forgot = "forgot",
@@ -62,7 +63,7 @@ export enum AuthModalType {
 }
 
 /**
- * an action taken that prompted the user to signup or login
+ * An action taken that prompted the user to view an authentication form
  */
 export enum AuthIntent {
   bid = "bid",
@@ -89,6 +90,6 @@ export enum AuthIntent {
 }
 
 /**
- * the type of action that opened the auth modal
+ * The type of action that opened the authentication modal
  */
 export type AuthTrigger = "click" | "timed"

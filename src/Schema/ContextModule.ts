@@ -1,5 +1,6 @@
-/*
- * the component where an action is triggered
+/**
+ * The component where an action is triggered
+ * @packageDocumentation
  */
 export enum ContextModule {
   aboutTheWork = "aboutTheWork",

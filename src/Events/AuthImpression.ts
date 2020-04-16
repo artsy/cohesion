@@ -7,7 +7,7 @@ import {
   AuthTrigger,
 } from "Schema"
 
-interface AuthImpressionArgs {
+export interface AuthImpressionArgs {
   copy?: string
   contextModule: AuthContextModule
   intent: AuthIntent
@@ -18,14 +18,16 @@ interface AuthImpressionArgs {
 }
 
 /**
- * Action fired when an auth form is viewed
+ * Action fired when a user views an authentication form
  *
  * @example
- * authImpression({
- *   contextModule: "header",
- *   intent: "signup",
- *   type: "signup",
- * })
+ *  ```
+ *  authImpression({
+ *    contextModule: ContextModule.header,
+ *    intent: AuthIntent.viewEditorial,
+ *    type: AuthModalType.signup,
+ *  })
+ * ```
  */
 export const authImpression = ({
   contextModule,

@@ -7,9 +7,15 @@ import {
 } from "./Authentication"
 
 /**
- * Schemas for individual events by ActionType
+ * Schemas describing for individual events by ActionType
+ * @packageDocumentation
  */
 
+/**
+ * A user viewed an authentication form
+ *
+ * Related to [[authImpression]]
+ */
 export interface AuthImpression {
   action: ActionType.authImpression
   context_module: AuthContextModule
