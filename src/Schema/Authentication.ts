@@ -5,7 +5,7 @@ import { ContextModule } from "./ContextModule"
  */
 
 /**
- * The component where an auth modal was triggered
+ * ContextModules where an authentication modal is triggered
  */
 export type AuthContextModule =
   | ContextModule.aboutTheWork

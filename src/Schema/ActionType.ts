@@ -1,4 +1,3 @@
-// import { AuthImpression } from "Events"
 /**
  * The top-level actions an Event describes.
  *

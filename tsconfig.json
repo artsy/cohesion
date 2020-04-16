@@ -22,6 +22,7 @@
     "mode": "module",
     "exclude": ["src/**/index.ts", "src/**/__tests__/*.ts"],
     "excludeNotExported": true,
-    "excludeExternals": true
+    "excludeExternals": true,
+    "readme": "README.md"
   }
 }

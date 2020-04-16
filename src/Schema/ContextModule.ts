@@ -1,5 +1,5 @@
 /**
- * The component where an action is triggered
+ * A component where an action is triggered
  * @packageDocumentation
  */
 export enum ContextModule {
