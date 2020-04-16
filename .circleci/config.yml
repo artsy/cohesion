@@ -2,7 +2,23 @@ version: 2.1
 
 orbs:
   yarn: artsy/yarn@4.0.2
-  # auto: artsy/auto@1.2.0
+  auto: artsy/auto@1.2.0
+
+deploy: &deploy
+  context: npm-deploy
+  pre-steps:
+    - yarn/run-script:
+        script: compile
+
+not_master: &not_master
+  filters:
+    branches:
+      ignore: master
+
+only_master: &only_master
+  filters:
+    branches:
+      only: master
 
 workflows:
   build_and_verify:
@@ -16,23 +32,19 @@ workflows:
             - yarn/workflow-queue
       - yarn/jest:
           args: --runInBand
-      # - auto/publish-canary:
-      #     context: npm-deploy
-      #     filters:
-      #       branches:
-      #         ignore:
-      #           - master
-      #     requires:
-      #       - yarn/jest
-      #       - yarn/type-check
-      #       - yarn/update-cache
-      # - auto/publish:
-      #     context: npm-deploy
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
-      #     requires:
-      #       - yarn/jest
-      #       - yarn/type-check
-      #       - yarn/update-cache
+      # Pr builds
+      - auto/publish-canary:
+          <<: *not_master
+          <<: *deploy
+          requires:
+            - yarn/jest
+            - yarn/type-check
+            - yarn/update-cache
+      # Releases
+      - auto/publish:
+          <<: *only_master
+          <<: *deploy
+          requires:
+            - yarn/jest
+            - yarn/type-check
+            - yarn/update-cache
