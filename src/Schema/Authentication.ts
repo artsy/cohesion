@@ -6,51 +6,7 @@ import { ContextModule } from "./ContextModule"
 /*
  * the component where an auth modal was triggered
  */
-export type AuthContextModule =
-  | ContextModule.aboutTheWork
-  | ContextModule.artistHeader
-  | ContextModule.artistRecentlySold
-  | ContextModule.artistsTab
-  | ContextModule.artistsToFollowRail
-  | ContextModule.artworkGrid
-  | ContextModule.artworkImage
-  | ContextModule.artworkSidebar
-  | ContextModule.auctionSidebar
-  | ContextModule.auctionRail
-  | ContextModule.auctionResults
-  | ContextModule.auctionsInfo
-  | ContextModule.bannerPopUp
-  | ContextModule.browseFair
-  | ContextModule.categoryRail
-  | ContextModule.collectionDescription
-  | ContextModule.consignSubmissionFlow
-  | ContextModule.currentShowsRail
-  | ContextModule.fairInfo
-  | ContextModule.fairsHeader
-  | ContextModule.featuredArtistsRail
-  | ContextModule.footer
-  | ContextModule.geneHeader
-  | ContextModule.header
-  | ContextModule.intextTooltip
-  | ContextModule.liveAuctionsRail
-  | ContextModule.mainCarousel
-  | ContextModule.minimalCTABanner
-  | ContextModule.otherWorksByArtistRail
-  | ContextModule.otherWorksFromPartnerRail
-  | ContextModule.otherWorksFromShowRail
-  | ContextModule.otherWorksInAuctionRail
-  | ContextModule.partnerHeader
-  | ContextModule.pastFairs
-  | ContextModule.popUpModal
-  | ContextModule.recentlyViewedRail
-  | ContextModule.relatedArtistsRail
-  | ContextModule.relatedWorksRail
-  | ContextModule.saveWorksCTA
-  | ContextModule.showHeader
-  | ContextModule.showInfo
-  | ContextModule.tagHeader
-  | ContextModule.worksByPopularArtistsRail
-  | ContextModule.worksForSaleRail
+export type AuthContextModule = keyof typeof ContextModule
 
 /**
  * the type of auth modal displayed
