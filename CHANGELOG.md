@@ -1,3 +1,21 @@
+# v0.1.0 (Fri Apr 17 2020)
+
+#### 🚀  Enhancement
+
+- Update auction results tracking strings [#15](https://github.com/artsy/cohesion/pull/15) ([@lilyfromseattle](https://github.com/lilyfromseattle))
+
+#### 🏠  Internal
+
+- Pin dep @artsy/auto-config from ^1.0.2 to 1.0.2 [#11](https://github.com/artsy/cohesion/pull/11) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Lily Pace ([@lilyfromseattle](https://github.com/lilyfromseattle))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.0.2 (Thu Apr 16 2020)
 
 #### 🐛  Bug Fix
