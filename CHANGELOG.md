@@ -1,3 +1,21 @@
+# v0.1.2 (Mon Apr 20 2020)
+
+#### 🐛  Bug Fix
+
+- Update cimg/python Docker tag to v3.8 [#18](https://github.com/artsy/cohesion/pull/18) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### 🏠  Internal
+
+- Add Typedoc static site [#12](https://github.com/artsy/cohesion/pull/12) ([@eessex](https://github.com/eessex))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Eve Essex ([@eessex](https://github.com/eessex))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.1.1 (Mon Apr 20 2020)
 
 #### 🐛  Bug Fix
