@@ -1,3 +1,15 @@
+# v0.2.0 (Mon Apr 20 2020)
+
+#### 🚀  Enhancement
+
+- Add CreatedAccount and SuccessfullyLoggedIn events [#17](https://github.com/artsy/cohesion/pull/17) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.1.2 (Mon Apr 20 2020)
 
 #### 🐛  Bug Fix
