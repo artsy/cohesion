@@ -29,6 +29,7 @@ import {
  *    type: "signup"
  *  }
  * ```
+ *
  */
 export interface AuthImpression {
   action: ActionType.authImpression
@@ -50,11 +51,11 @@ export interface AuthImpression {
  *  ```
  *  {
  *    action: "createdAccount"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    context_module: "popUpModal"
  *    intent: "viewArtist"
- *    trigger: "timed"
- *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    service: "email"
+ *    trigger: "timed"
  *  }
  * ```
  */
