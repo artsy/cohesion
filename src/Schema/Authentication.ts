@@ -92,3 +92,8 @@ export enum AuthIntent {
  * the type of action that opened the auth modal
  */
 export type AuthTrigger = "click" | "timed"
+
+/**
+ * the service the user used to authenticate
+ */
+export type AuthService = "apple" | "email" | "facebook"
