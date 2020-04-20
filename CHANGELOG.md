@@ -1,3 +1,15 @@
+# v0.1.1 (Mon Apr 20 2020)
+
+#### 🐛  Bug Fix
+
+- Adds createdAccount and successfullyLoggedIn to Schema [#16](https://github.com/artsy/cohesion/pull/16) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v0.1.0 (Fri Apr 17 2020)
 
 #### 🚀  Enhancement
