@@ -34,21 +34,6 @@ only_master: &only_master
 workflows:
   build_and_verify:
     jobs:
-      - yarn/run:
-          name: build-docs
-          script: "docs"
-          post-steps:
-            - persist_to_workspace:
-                root: .
-                paths:
-                  - doc
-      - upload-docs:
-          context: static-sites-uploader
-          requires:
-            - build-docs
-          pre-steps:
-            - attach_workspace:
-                at: .
       - yarn/workflow-queue
       - yarn/update-cache:
           requires:
@@ -75,3 +60,20 @@ workflows:
             - yarn/type-check
             - yarn/update-cache
             - build-docs
+      - yarn/run:
+          <<: *only_master
+          name: build-docs
+          script: "docs"
+          post-steps:
+            - persist_to_workspace:
+                root: .
+                paths:
+                  - doc
+      - upload-docs:
+          <<: *only_master
+          context: static-sites-uploader
+          requires:
+            - build-docs
+          pre-steps:
+            - attach_workspace:
+                at: .
