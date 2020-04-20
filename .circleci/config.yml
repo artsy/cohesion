@@ -3,6 +3,17 @@ version: 2.1
 orbs:
   yarn: artsy/yarn@4.0.2
   auto: artsy/auto@1.2.0
+  aws-s3: circleci/aws-s3@1.0.15
+
+jobs:
+  upload-docs:
+    docker:
+      - image: "cimg/python:3.6"
+    steps:
+      - aws-s3/sync:
+          arguments: --acl public-read
+          from: doc
+          to: "s3://artsy-static-sites/artsy-cohesion"
 
 deploy: &deploy
   context: npm-deploy
@@ -23,6 +34,21 @@ only_master: &only_master
 workflows:
   build_and_verify:
     jobs:
+      - yarn/run:
+          name: build-docs
+          script: "docs"
+          post-steps:
+            - persist_to_workspace:
+                root: .
+                paths:
+                  - doc
+      - upload-docs:
+          context: static-sites-uploader
+          requires:
+            - build-docs
+          pre-steps:
+            - attach_workspace:
+                at: .
       - yarn/workflow-queue
       - yarn/update-cache:
           requires:
@@ -48,3 +74,4 @@ workflows:
             - yarn/jest
             - yarn/type-check
             - yarn/update-cache
+            - build-docs
