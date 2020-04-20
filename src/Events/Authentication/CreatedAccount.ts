@@ -1,22 +1,14 @@
-import { ActionType, AuthContextModule, AuthIntent, AuthTrigger } from "Schema"
-import { AuthService } from "Schema/Authentication"
+import { ActionType } from "Schema"
 import { CreatedAccount } from "Schema/Event"
-
-interface CreatedAccountArgs {
-  authRedirect: string
-  contextModule: AuthContextModule
-  intent: AuthIntent
-  trigger?: AuthTrigger
-  service: AuthService
-}
+import { AccountArgs } from "./Typings"
 
 /**
- * Action fired when an auth form is viewed
+ * Action fired when a user creates an account
  *
  * @example
  * createdAccount({
  *   authRedirect: "https://artsy.net/artist/andy-warhol"
- *   contextModule: ContextModule.header,
+ *   contextModule: ContextModule.popUpModal,
  *   intent: AuthIntent.viewEditorial,
  *   service: AuthService.email
  *   trigger: "timed"
@@ -28,7 +20,7 @@ export const createdAccount = ({
   intent,
   service,
   trigger,
-}: CreatedAccountArgs): CreatedAccount => {
+}: AccountArgs): CreatedAccount => {
   return {
     action: ActionType.createdAccount,
     auth_redirect: authRedirect,

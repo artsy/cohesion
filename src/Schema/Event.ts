@@ -29,7 +29,6 @@ import {
  *    type: "signup"
  *  }
  * ```
- *
  */
 export interface AuthImpression {
   action: ActionType.authImpression
