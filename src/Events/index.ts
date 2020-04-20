@@ -1,1 +1,1 @@
-export { authImpression } from "./AuthImpression"
+export * from "./AuthImpression"

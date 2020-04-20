@@ -8,7 +8,8 @@ import {
 } from "./Authentication"
 
 /**
- * Schemas for individual events by ActionType
+ * Schemas describing for individual events by ActionType
+ * @packageDocumentation
  */
 
 /**

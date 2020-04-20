@@ -1,2 +1,4 @@
 node_modules
 dist
+doc
+.DS_Store
