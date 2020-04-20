@@ -66,3 +66,29 @@ export interface CreatedAccount {
   auth_redirect: string
   service: AuthService
 }
+
+/**
+ * A user successfully logged in to their existing account
+ *
+ * This schema describes events sent to Segment from [[successfullyLoggedIn]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "successfullyLoggedIn"
+ *    context_module: "popUpModal"
+ *    intent: "viewArtist"
+ *    trigger: "timed"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
+ *    service: "email"
+ *  }
+ * ```
+ */
+export interface SuccessfullyLoggedIn {
+  action: ActionType.successfullyLoggedIn
+  context_module: AuthContextModule
+  intent: AuthIntent
+  trigger: AuthTrigger
+  auth_redirect: string
+  service: AuthService
+}
