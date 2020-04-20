@@ -9,4 +9,6 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  createdAccount = "createdAccount",
+  successfullyLoggedIn = "successfullyLoggedIn",
 }

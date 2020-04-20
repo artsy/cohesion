@@ -75,9 +75,9 @@ export enum AuthIntent {
   forgot = "forgot",
   inquire = "inquire",
   login = "login",
-  loginToSeeEstimate = "loginToSeeEstimate",
-  loginToSeePrice = "loginToSeePrice",
-  loginToSeeRealizedPrice = "loginToSeeRealizedPrice",
+  seeEstimateAuctionRecords = "seeEstimateAuctionRecords",
+  seePriceAuctionRecords = "seePriceAuctionRecords",
+  seeRealizedPriceAuctionRecords = "seeRealizedPriceAuctionRecords",
   makeOffer = "makeOffer",
   registerToBid = "registerToBid",
   requestConditionReport = "requestConditionReport",
@@ -93,3 +93,8 @@ export enum AuthIntent {
  * The type of action that opened the authentication modal
  */
 export type AuthTrigger = "click" | "timed"
+
+/**
+ * the service the user used to authenticate
+ */
+export type AuthService = "apple" | "email" | "facebook"

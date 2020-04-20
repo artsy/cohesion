@@ -4,6 +4,7 @@ import {
   AuthIntent,
   AuthModalType,
   AuthTrigger,
+  AuthService,
 } from "./Authentication"
 
 /**
@@ -39,4 +40,56 @@ export interface AuthImpression {
   trigger: AuthTrigger
   trigger_seconds?: number
   type: AuthModalType
+}
+
+/**
+ * A user created an account
+ *
+ * This schema describes events sent to Segment from [[createdAccount]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "createdAccount"
+ *    context_module: "popUpModal"
+ *    intent: "viewArtist"
+ *    trigger: "timed"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
+ *    service: "email"
+ *  }
+ * ```
+ */
+export interface CreatedAccount {
+  action: ActionType.createdAccount
+  context_module: AuthContextModule
+  intent: AuthIntent
+  trigger: AuthTrigger
+  auth_redirect: string
+  service: AuthService
+}
+
+/**
+ * A user successfully logged in to their existing account
+ *
+ * This schema describes events sent to Segment from [[successfullyLoggedIn]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "successfullyLoggedIn"
+ *    context_module: "popUpModal"
+ *    intent: "viewArtist"
+ *    trigger: "timed"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
+ *    service: "email"
+ *  }
+ * ```
+ */
+export interface SuccessfullyLoggedIn {
+  action: ActionType.successfullyLoggedIn
+  context_module: AuthContextModule
+  intent: AuthIntent
+  trigger: AuthTrigger
+  auth_redirect: string
+  service: AuthService
 }
