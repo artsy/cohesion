@@ -1,4 +1,4 @@
-import { ContextModule, AuthIntent, AuthModalType } from "Schema"
+import { ContextModule, AuthIntent, AuthModalType } from "../../../Schema"
 import { authImpression } from "../AuthImpression"
 
 describe("authImpression", () => {

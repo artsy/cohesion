@@ -1,4 +1,4 @@
-import { ContextModule, AuthIntent } from "Schema"
+import { ContextModule, AuthIntent } from "../../../Schema"
 import { createdAccount } from "../CreatedAccount"
 
 describe("createdAccount", () => {

@@ -1,2 +1,2 @@
-export * from "Events"
-export * from "Schema"
+export * from "./Events"
+export * from "./Schema"
