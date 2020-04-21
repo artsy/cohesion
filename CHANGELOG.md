@@ -1,3 +1,15 @@
+# v0.2.1 (Tue Apr 21 2020)
+
+#### 🐛  Bug Fix
+
+- update pre-publish steps to emit types [#19](https://github.com/artsy/cohesion/pull/19) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.0 (Mon Apr 20 2020)
 
 #### 🚀  Enhancement
