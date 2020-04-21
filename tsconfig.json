@@ -14,7 +14,7 @@
     "target": "es2016"
   },
   "include": ["./src", "typings/*.d.ts"],
-  "exclude": ["node_modules/*", "**/*.test.ts"],
+  "exclude": ["node_modules/*"],
   "typedocOptions": {
     "inputFiles": ["./src"],
     "out": "doc",
