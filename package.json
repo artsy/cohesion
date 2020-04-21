@@ -14,7 +14,10 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf dist",
     "compile": "babel src --out-dir dist --extensions '.ts' --ignore src/**/__tests__",
+    "emit-types": "tsc --declaration --emitDeclarationOnly --listEmittedFiles --outDir dist",
+    "pre-publish": "yarn clean && yarn compile && yarn emit-types",
     "test": "jest",
     "type-check": "tsc --noEmit --pretty",
     "docs": "rm -rf doc && yarn typedoc"
