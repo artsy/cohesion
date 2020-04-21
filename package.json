@@ -14,10 +14,14 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf dist",
     "compile": "babel src --out-dir dist --extensions '.ts' --ignore src/**/__tests__",
+    "docs": "rm -rf doc && yarn typedoc",
+    "emit-types": "tsc --declaration --emitDeclarationOnly --listEmittedFiles --outDir dist",
+    "pre-publish": "yarn clean && yarn compile && yarn emit-types",
     "test": "jest",
     "type-check": "tsc --noEmit --pretty",
-    "docs": "rm -rf doc && yarn typedoc"
+    "watch": "concurrently --raw --kill-others 'yarn compile -w' 'yarn emit-types -w'"
   },
   "devDependencies": {
     "@artsy/auto-config": "1.0.2",
@@ -28,6 +32,7 @@
     "@types/jest": "25.2.1",
     "babel-jest": "25.3.0",
     "babel-plugin-module-resolver": "4.0.0",
+    "concurrently": "5.1.0",
     "husky": "4.2.5",
     "jest": "25.3.0",
     "jest-junit": "10.0.0",

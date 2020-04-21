@@ -19,7 +19,7 @@ deploy: &deploy
   context: npm-deploy
   pre-steps:
     - yarn/run-script:
-        script: compile
+        script: pre-publish
 
 not_master: &not_master
   filters:
