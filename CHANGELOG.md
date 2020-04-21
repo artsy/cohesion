@@ -1,3 +1,15 @@
+# v0.2.2 (Tue Apr 21 2020)
+
+#### 🐛  Bug Fix
+
+- Remove module resolver [#20](https://github.com/artsy/cohesion/pull/20) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.1 (Tue Apr 21 2020)
 
 #### 🐛  Bug Fix
