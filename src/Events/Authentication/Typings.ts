@@ -1,5 +1,5 @@
-import { AuthContextModule, AuthIntent, AuthTrigger } from "index"
-import { AuthService } from "Schema/Authentication"
+import { AuthContextModule, AuthIntent, AuthTrigger } from "../../Schema"
+import { AuthService } from "../../Schema/Authentication"
 
 export interface AccountArgs {
   authRedirect: string

@@ -5,7 +5,7 @@ import {
   AuthIntent,
   AuthModalType,
   AuthTrigger,
-} from "Schema"
+} from "../../Schema"
 
 export interface AuthImpressionArgs {
   copy?: string

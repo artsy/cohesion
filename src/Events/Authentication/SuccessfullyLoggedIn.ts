@@ -1,5 +1,5 @@
-import { ActionType } from "Schema"
-import { SuccessfullyLoggedIn } from "Schema/Event"
+import { ActionType } from "../../Schema"
+import { SuccessfullyLoggedIn } from "../../Schema/Event"
 import { AccountArgs } from "./Typings"
 
 /**
