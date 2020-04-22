@@ -11,7 +11,7 @@ import { AccountArgs } from "./Typings"
  *   contextModule: ContextModule.popUpModal,
  *   intent: AuthIntent.viewEditorial,
  *   service: AuthService.email
- *   trigger: "timed"
+ *   triggerSeconds: 3
  * })
  */
 export const createdAccount = ({
@@ -19,7 +19,7 @@ export const createdAccount = ({
   contextModule,
   intent,
   service,
-  trigger,
+  triggerSeconds,
 }: AccountArgs): CreatedAccount => {
   return {
     action: ActionType.createdAccount,
@@ -27,6 +27,6 @@ export const createdAccount = ({
     context_module: contextModule,
     intent,
     service,
-    trigger: trigger || "click",
+    trigger: (triggerSeconds && "timed") || "click",
   }
 }

@@ -11,7 +11,7 @@ import { AccountArgs } from "./Typings"
  *   contextModule: ContextModule.popUpModal,
  *   intent: AuthIntent.viewEditorial,
  *   service: AuthService.email
- *   trigger: "timed"
+ *   triggerSeconds: 3
  * })
  */
 export const successfullyLoggedIn = ({
@@ -19,7 +19,7 @@ export const successfullyLoggedIn = ({
   contextModule,
   intent,
   service,
-  trigger,
+  triggerSeconds,
 }: AccountArgs): SuccessfullyLoggedIn => {
   return {
     action: ActionType.successfullyLoggedIn,
@@ -27,6 +27,6 @@ export const successfullyLoggedIn = ({
     context_module: contextModule,
     intent,
     service,
-    trigger: trigger || "click",
+    trigger: (triggerSeconds && "timed") || "click",
   }
 }
