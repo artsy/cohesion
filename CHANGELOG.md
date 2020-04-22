@@ -1,3 +1,22 @@
+# v0.2.5 (Wed Apr 22 2020)
+
+#### ⚠️  Pushed to `master`
+
+- only run tests from /src directory ([@eessex](https://github.com/eessex))
+- Fixes tests ([@abhitip](https://github.com/abhitip))
+- Event helpers match updated schema ([@abhitip](https://github.com/abhitip))
+- Merge branch 'master' of github.com:artsy/cohesion into reset-your-password ([@abhitip](https://github.com/abhitip))
+- Enriches events with properties carried over from authImpression ([@abhitip](https://github.com/abhitip))
+- alphabetizes properties ([@abhitip](https://github.com/abhitip))
+- Adds resetYourPassword ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.4 (Wed Apr 22 2020)
 
 #### ⚠️  Pushed to `master`
