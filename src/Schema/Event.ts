@@ -1,4 +1,7 @@
-import { ActionType } from "./ActionType"
+import { 
+  ActionType 
+} from "./ActionType"
+
 import {
   AuthContextModule,
   AuthIntent,
@@ -6,6 +9,15 @@ import {
   AuthTrigger,
   AuthService,
 } from "./Authentication"
+
+import {
+  ContextModule
+} from "./ContextModule"
+
+import {
+  ScreenOwnerType
+} from "./ScreenOwnerType"
+
 
 /**
  * Schemas describing for individual events by ActionType
@@ -92,4 +104,38 @@ export interface SuccessfullyLoggedIn {
   trigger: AuthTrigger
   auth_redirect: string
   service: AuthService
+}
+
+/**
+ * A user taps a rail, card, or other grouping of entities on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedEntityGroup"
+ *    context_module: "newWorksByArtistsYouFollowRail"
+ *    context_screen_owner_type: Home
+ *    destination_screen_owner_type: Artwork
+ *    destination_screen_owner_id: "5e9a7a238483bf000e2c4c5e"
+ *    destination_screen_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong"
+ *    horizontal_slide_position: 1
+ *    module_height: "single"
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface tappedEntityGroup {
+  action: ActionType.tappedEntityGroup
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height?: "single" | "double"
+  type: "button" | "thumbnail" | "header" | "stub"
 }
