@@ -1,3 +1,15 @@
+# v0.2.6 (Wed Apr 22 2020)
+
+#### 🐛  Bug Fix
+
+- Separate input arg interfaces, userId casing [#23](https://github.com/artsy/cohesion/pull/23) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.5 (Wed Apr 22 2020)
 
 #### ⚠️  Pushed to `master`
