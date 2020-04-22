@@ -6,6 +6,7 @@ import { AccountArgs } from "./Typings"
  * Action fired when a user logs into an existing account
  *
  * @example
+ * ```
  * successfullyLoggedIn({
  *   authRedirect: "https://artsy.net/artist/andy-warhol"
  *   contextModule: ContextModule.popUpModal,
@@ -13,6 +14,7 @@ import { AccountArgs } from "./Typings"
  *   service: AuthService.email
  *   triggerSeconds: 3
  * })
+ * ```
  */
 export const successfullyLoggedIn = ({
   authRedirect,
