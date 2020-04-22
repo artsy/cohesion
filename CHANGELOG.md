@@ -1,3 +1,15 @@
+# v0.2.4 (Wed Apr 22 2020)
+
+#### ⚠️  Pushed to `master`
+
+- fix example comment formatting ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.3 (Wed Apr 22 2020)
 
 #### 🐛  Bug Fix
