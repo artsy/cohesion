@@ -54,8 +54,13 @@ export interface AuthImpression {
  *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    context_module: "popUpModal"
  *    intent: "viewArtist"
+ *    modal_copy: "Sign up to follow artists"
+ *    onboarding: true
  *    service: "email"
  *    trigger: "timed"
+ *    trigger_seconds: 4
+ *    type: signup
+ *    user_id: [Artsy user_id]
  *  }
  * ```
  */
@@ -64,8 +69,13 @@ export interface CreatedAccount {
   auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
+  modal_copy?: string
+  onboarding: boolean
   service: AuthService
   trigger: AuthTrigger
+  trigger_seconds?: number
+  type: AuthModalType
+  user_id: string
 }
 
 /**
@@ -80,7 +90,11 @@ export interface CreatedAccount {
  *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    context_module: "popUpModal"
  *    intent: "viewArtist"
+ *    modal_copy: "Sign up to follow artists"
+ *    service: "email"
  *    trigger: "timed"
+ *    trigger_seconds: 4
+ *    type: "forgot"
  *  }
  * ```
  */
@@ -89,7 +103,11 @@ export interface ResetYourPassword {
   auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
+  modal_copy?: string
+  service: AuthService
   trigger: AuthTrigger
+  trigger_seconds?: number
+  type: AuthModalType
 }
 
 /**
@@ -104,8 +122,12 @@ export interface ResetYourPassword {
  *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    context_module: "popUpModal"
  *    intent: "viewArtist"
+ *    modal_copy: "Sign up to follow artists"
  *    service: "email"
  *    trigger: "timed"
+ *    trigger_seconds: 4
+ *    type: "login"
+ *    user_id: [Artsy user_id]
  *  }
  * ```
  */
@@ -114,6 +136,10 @@ export interface SuccessfullyLoggedIn {
   auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
+  modal_copy?: string
   service: AuthService
   trigger: AuthTrigger
+  trigger_seconds?: number
+  type: AuthModalType
+  user_id: string
 }
