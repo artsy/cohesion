@@ -8,7 +8,7 @@ describe("successfullyLoggedIn", () => {
       contextModule: ContextModule.header,
       intent: AuthIntent.signup,
       service: "apple",
-      user_id: "foo",
+      userId: "5bd8b675776bd6002c86526c",
     })
 
     expect(args).toEqual({
@@ -20,7 +20,7 @@ describe("successfullyLoggedIn", () => {
       service: "apple",
       trigger: "click",
       type: "login",
-      user_id: "foo",
+      user_id: "5bd8b675776bd6002c86526c",
     })
   })
 
@@ -32,7 +32,7 @@ describe("successfullyLoggedIn", () => {
       intent: AuthIntent.viewEditorial,
       service: "email",
       triggerSeconds: 2,
-      user_id: "foo",
+      userId: "5bd8b675776bd6002c86526c",
     })
 
     expect(args).toEqual({
@@ -44,7 +44,7 @@ describe("successfullyLoggedIn", () => {
       service: "email",
       trigger: "timed",
       type: "login",
-      user_id: "foo",
+      user_id: "5bd8b675776bd6002c86526c",
     })
   })
 })
