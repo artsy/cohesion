@@ -60,7 +60,7 @@ export interface AuthImpression {
  *    trigger: "timed"
  *    trigger_seconds: 4
  *    type: signup
- *    user_id: [Artsy user_id]
+ *    user_id: "5bd8b675776bd6002c86526c"
  *  }
  * ```
  */
@@ -127,7 +127,7 @@ export interface ResetYourPassword {
  *    trigger: "timed"
  *    trigger_seconds: 4
  *    type: "login"
- *    user_id: [Artsy user_id]
+ *    user_id: "5bd8b675776bd6002c86526c"
  *  }
  * ```
  */
