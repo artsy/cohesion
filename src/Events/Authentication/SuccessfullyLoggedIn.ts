@@ -6,20 +6,22 @@ import { AccountArgs } from "./Typings"
  * Action fired when a user logs into an existing account
  *
  * @example
+ * ```
  * successfullyLoggedIn({
  *   authRedirect: "https://artsy.net/artist/andy-warhol"
  *   contextModule: ContextModule.popUpModal,
  *   intent: AuthIntent.viewEditorial,
  *   service: AuthService.email
- *   trigger: "timed"
+ *   triggerSeconds: 3
  * })
+ * ```
  */
 export const successfullyLoggedIn = ({
   authRedirect,
   contextModule,
   intent,
   service,
-  trigger,
+  triggerSeconds,
 }: AccountArgs): SuccessfullyLoggedIn => {
   return {
     action: ActionType.successfullyLoggedIn,
@@ -27,6 +29,6 @@ export const successfullyLoggedIn = ({
     context_module: contextModule,
     intent,
     service,
-    trigger: trigger || "click",
+    trigger: (triggerSeconds && "timed") || "click",
   }
 }
