@@ -61,11 +61,11 @@ export interface AuthImpression {
  */
 export interface CreatedAccount {
   action: ActionType.createdAccount
+  auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
-  trigger: AuthTrigger
-  auth_redirect: string
   service: AuthService
+  trigger: AuthTrigger
 }
 
 /**
@@ -77,19 +77,19 @@ export interface CreatedAccount {
  *  ```
  *  {
  *    action: "resetYourPassword"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    context_module: "popUpModal"
  *    intent: "viewArtist"
  *    trigger: "timed"
- *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *  }
  * ```
  */
 export interface ResetYourPassword {
   action: ActionType.resetYourPassword
+  auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
   trigger: AuthTrigger
-  auth_redirect: string
 }
 
 /**
@@ -101,19 +101,19 @@ export interface ResetYourPassword {
  *  ```
  *  {
  *    action: "successfullyLoggedIn"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    context_module: "popUpModal"
  *    intent: "viewArtist"
- *    trigger: "timed"
- *    auth_redirect: "https://artsy.net/artist/andy-warhol"
  *    service: "email"
+ *    trigger: "timed"
  *  }
  * ```
  */
 export interface SuccessfullyLoggedIn {
   action: ActionType.successfullyLoggedIn
+  auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
-  trigger: AuthTrigger
-  auth_redirect: string
   service: AuthService
+  trigger: AuthTrigger
 }
