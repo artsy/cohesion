@@ -1,3 +1,15 @@
+# v0.2.3 (Wed Apr 22 2020)
+
+#### 🐛  Bug Fix
+
+- Auth events use triggerSeconds [#21](https://github.com/artsy/cohesion/pull/21) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.2 (Tue Apr 21 2020)
 
 #### 🐛  Bug Fix
