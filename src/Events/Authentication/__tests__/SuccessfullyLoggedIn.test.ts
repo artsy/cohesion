@@ -26,7 +26,7 @@ describe("successfullyLoggedIn", () => {
       contextModule: ContextModule.popUpModal,
       intent: AuthIntent.viewEditorial,
       service: "email",
-      trigger: "timed",
+      triggerSeconds: 2,
     })
 
     expect(args).toEqual({
