@@ -1,6 +1,22 @@
-import { ActionType, AuthModalType } from "../../Schema"
+import {
+  ActionType,
+  AuthModalType,
+  AuthContextModule,
+  AuthIntent,
+  AuthService,
+} from "../../Schema"
 import { CreatedAccount } from "../../Schema/Event"
-import { AccountArgs } from "./Typings"
+
+export interface CreatedAccountArgs {
+  authRedirect: string
+  contextModule: AuthContextModule
+  copy?: string
+  intent: AuthIntent
+  onboarding?: boolean
+  service: AuthService
+  triggerSeconds?: number
+  userId: string
+}
 
 /**
  * Action fired when a user creates an account
@@ -15,7 +31,7 @@ import { AccountArgs } from "./Typings"
  *   onboarding: true,
  *   service: AuthService.email,
  *   triggerSeconds: 3,
- *   user_id: "5bd8b675776bd6002c86526c"
+ *   userId: "5bd8b675776bd6002c86526c"
  * })
  * ```
  */
@@ -27,8 +43,8 @@ export const createdAccount = ({
   onboarding,
   service,
   triggerSeconds,
-  user_id,
-}: AccountArgs): CreatedAccount => {
+  userId,
+}: CreatedAccountArgs): CreatedAccount => {
   return {
     action: ActionType.createdAccount,
     auth_redirect: authRedirect,
@@ -39,6 +55,6 @@ export const createdAccount = ({
     service,
     trigger: (triggerSeconds && "timed") || "click",
     type: AuthModalType.signup,
-    user_id,
+    user_id: userId,
   }
 }

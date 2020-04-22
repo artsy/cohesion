@@ -8,7 +8,7 @@ describe("createdAccount", () => {
       contextModule: ContextModule.header,
       intent: AuthIntent.signup,
       service: "apple",
-      user_id: "foo",
+      userId: "5bd8b675776bd6002c86526c",
     })
 
     expect(args).toEqual({
@@ -21,7 +21,7 @@ describe("createdAccount", () => {
       service: "apple",
       trigger: "click",
       type: "signup",
-      user_id: "foo",
+      user_id: "5bd8b675776bd6002c86526c",
     })
   })
 
@@ -34,7 +34,7 @@ describe("createdAccount", () => {
       onboarding: true,
       service: "email",
       triggerSeconds: 2,
-      user_id: "foo",
+      userId: "5bd8b675776bd6002c86526c",
     })
 
     expect(args).toEqual({
@@ -47,7 +47,7 @@ describe("createdAccount", () => {
       service: "email",
       trigger: "timed",
       type: "signup",
-      user_id: "foo",
+      user_id: "5bd8b675776bd6002c86526c",
     })
   })
 })

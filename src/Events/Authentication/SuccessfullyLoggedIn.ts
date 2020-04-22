@@ -1,6 +1,21 @@
-import { ActionType, AuthModalType } from "../../Schema"
+import {
+  ActionType,
+  AuthModalType,
+  AuthContextModule,
+  AuthIntent,
+  AuthService,
+} from "../../Schema"
 import { SuccessfullyLoggedIn } from "../../Schema/Event"
-import { AccountArgs } from "./Typings"
+
+export interface SuccessfullyLoggedInArgs {
+  authRedirect: string
+  contextModule: AuthContextModule
+  copy?: string
+  intent: AuthIntent
+  service: AuthService
+  triggerSeconds?: number
+  userId: string
+}
 
 /**
  * Action fired when a user logs into an existing account
@@ -14,7 +29,7 @@ import { AccountArgs } from "./Typings"
  *   intent: AuthIntent.viewEditorial,
  *   service: AuthService.email,
  *   triggerSeconds: 3,
- *   user_id: "5bd8b675776bd6002c86526c"
+ *   userId: "5bd8b675776bd6002c86526c"
  * })
  * ```
  */
@@ -25,8 +40,8 @@ export const successfullyLoggedIn = ({
   intent,
   service,
   triggerSeconds,
-  user_id,
-}: AccountArgs): SuccessfullyLoggedIn => {
+  userId,
+}: SuccessfullyLoggedInArgs): SuccessfullyLoggedIn => {
   return {
     action: ActionType.successfullyLoggedIn,
     auth_redirect: authRedirect,
@@ -36,6 +51,6 @@ export const successfullyLoggedIn = ({
     service,
     trigger: (triggerSeconds && "timed") || "click",
     type: AuthModalType.login,
-    user_id,
+    user_id: userId,
   }
 }
