@@ -69,6 +69,30 @@ export interface CreatedAccount {
 }
 
 /**
+ * A user requested to reset their password for an existing account
+ *
+ * This schema describes events sent to Segment from [[resetYourPassword]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "resetYourPassword"
+ *    context_module: "popUpModal"
+ *    intent: "viewArtist"
+ *    trigger: "timed"
+ *    auth_redirect: "https://artsy.net/artist/andy-warhol"
+ *  }
+ * ```
+ */
+export interface ResetYourPassword {
+  action: ActionType.resetYourPassword
+  context_module: AuthContextModule
+  intent: AuthIntent
+  trigger: AuthTrigger
+  auth_redirect: string
+}
+
+/**
  * A user successfully logged in to their existing account
  *
  * This schema describes events sent to Segment from [[successfullyLoggedIn]]
