@@ -45,7 +45,10 @@
   "jest": {
     "transform": {
       ".ts": "babel-jest"
-    }
+    },
+    "roots": [
+      "<rootDir>/src"
+    ]
   },
   "husky": {
     "hooks": {
