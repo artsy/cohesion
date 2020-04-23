@@ -1,3 +1,24 @@
+# v0.2.7 (Thu Apr 23 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add docs URL to Readme ([@eessex](https://github.com/eessex))
+
+#### 🏠  Internal
+
+- Update dep babel-jest from 25.3.0 to v25.4.0 [#25](https://github.com/artsy/cohesion/pull/25) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep jest from 25.3.0 to v25.4.0 [#26](https://github.com/artsy/cohesion/pull/26) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep lint-staged from 10.1.3 to v10.1.7 [#27](https://github.com/artsy/cohesion/pull/27) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep prettier from 2.0.4 to v2.0.5 [#28](https://github.com/artsy/cohesion/pull/28) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Eve Essex ([@eessex](https://github.com/eessex))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.2.6 (Wed Apr 22 2020)
 
 #### 🐛  Bug Fix
