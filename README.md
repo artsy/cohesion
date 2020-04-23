@@ -4,6 +4,7 @@
 
 - **State:** In development
 - **GitHub:** https://github.com/artsy/cohesion
+- **Docs:** https://cohesion.artsy.net
 - **Ci**: https://circleci.com/gh/artsy/cohesion
 - **[NPM](https://www.npmjs.com/package/@artsy/2Fcohesion):** Package updates are published automatically on successful merges to master. Canaries are available on PR's from feature branches.
 - **Point People**: [@eessex](https://github.com/eessex), [@abhitip](https://github.com/abhitip)
