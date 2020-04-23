@@ -13,7 +13,7 @@ export enum ContextModule {
   artworkImage = "artworkImage",
   artworkSidebar = "artworkSidebar",
   auctionSidebar = "auctionSidebar",
-  auctionCail = "auctionCard",
+  auctionCard = "auctionCard",
   auctionRail = "auctionRail",
   auctionResults = "auctionResults",
   auctionsInfo = "auctionsInfo",
