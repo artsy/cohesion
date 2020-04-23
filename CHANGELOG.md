@@ -1,3 +1,15 @@
+# v0.2.8 (Thu Apr 23 2020)
+
+#### 🐛  Bug Fix
+
+- resetYourPassword helper, pass trigger_seconds with auth events [#29](https://github.com/artsy/cohesion/pull/29) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.7 (Thu Apr 23 2020)
 
 #### ⚠️  Pushed to `master`
