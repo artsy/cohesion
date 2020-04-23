@@ -54,9 +54,9 @@ export enum ActionType {
 
 ```
 
-2. In `Event.ts`, create an interface describing the shape of the new event, as it is recieved in Segment/Redshift.
+2. In `Schema/Event.ts`, create an interface describing the shape of the new event, as it is recieved in Segment/Redshift.
 
-The `action` key is required and should match the `ActionType` created in step 1.
+- The `action` key is required and should match the `ActionType` created in step 1.
 
 ```typescript
 // Schema/Event.ts
@@ -69,7 +69,7 @@ export interface MyNewEvent {
 }
 ```
 
-3. If your event uses values not yet in the schema, such as a new `ContextModule`, add new values to existing enums in the Schema directory.
+3. If your event uses values not yet in the schema, such as a new `ContextModule`, add new values to the existing typings in the Schema directory.
 
 4. Add descriptive comments with examples to explain the use of your new event. Our documentation is generated automatically from in-code comments, find more information on syntax in the [`typedoc` docs](https://typedoc.org/guides/doccomments/).
 
@@ -81,4 +81,4 @@ export interface MyNewEvent {
 
 The `/Events` directory contains javascript helpers that return schema-compliant analytics events, and provide some useful default values. Each helper corresponds to one event from `/Schema/Events.ts`.
 
-Engineers should use these helpers whenever sending analtics data to Segment, for example, when creating and analytics event with `react-tracking`.
+Engineers should use these helpers whenever sending analtics data to Segment, for example, when creating an analytics event with `react-tracking`.
