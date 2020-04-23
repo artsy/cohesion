@@ -135,6 +135,7 @@ export interface tappedEntityGroup {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
+  freshness?: number
   horizontal_slide_position?: number
   module_height?: "single" | "double"
   type: "button" | "thumbnail" | "header" | "stub"
