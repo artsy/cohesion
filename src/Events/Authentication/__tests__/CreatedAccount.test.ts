@@ -46,6 +46,7 @@ describe("createdAccount", () => {
       onboarding: true,
       service: "email",
       trigger: "timed",
+      trigger_seconds: 2,
       type: "signup",
       user_id: "5bd8b675776bd6002c86526c",
     })

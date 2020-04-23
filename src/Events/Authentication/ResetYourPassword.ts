@@ -27,7 +27,7 @@ export interface ResetYourPasswordArgs {
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
  *   intent: AuthIntent.viewEditorial,
- *   service: AuthService.email,
+ *   service: "email",
  *   triggerSeconds: 3
  * })
  * ```

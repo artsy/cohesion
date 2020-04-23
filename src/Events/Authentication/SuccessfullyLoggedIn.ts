@@ -27,7 +27,7 @@ export interface SuccessfullyLoggedInArgs {
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
  *   intent: AuthIntent.viewEditorial,
- *   service: AuthService.email,
+ *   service: "email",
  *   triggerSeconds: 3,
  *   userId: "5bd8b675776bd6002c86526c"
  * })
@@ -50,6 +50,7 @@ export const successfullyLoggedIn = ({
     intent,
     service,
     trigger: (triggerSeconds && "timed") || "click",
+    trigger_seconds: triggerSeconds,
     type: AuthModalType.login,
     user_id: userId,
   }

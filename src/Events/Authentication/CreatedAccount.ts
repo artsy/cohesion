@@ -29,7 +29,7 @@ export interface CreatedAccountArgs {
  *   copy: "Sign up to follow artists",
  *   intent: AuthIntent.viewEditorial,
  *   onboarding: true,
- *   service: AuthService.email,
+ *   service: "email",
  *   triggerSeconds: 3,
  *   userId: "5bd8b675776bd6002c86526c"
  * })
@@ -54,6 +54,7 @@ export const createdAccount = ({
     onboarding: onboarding || false,
     service,
     trigger: (triggerSeconds && "timed") || "click",
+    trigger_seconds: triggerSeconds,
     type: AuthModalType.signup,
     user_id: userId,
   }
