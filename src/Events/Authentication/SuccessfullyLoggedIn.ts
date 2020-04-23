@@ -26,7 +26,7 @@ export interface SuccessfullyLoggedInArgs {
  *   authRedirect: "https://artsy.net/artist/andy-warhol",
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
- *   intent: AuthIntent.viewEditorial,
+ *   intent: AuthIntent.viewArtist,
  *   service: "email",
  *   triggerSeconds: 3,
  *   userId: "5bd8b675776bd6002c86526c"

@@ -14,7 +14,6 @@ export interface ResetYourPasswordArgs {
   intent: AuthIntent
   service: AuthService
   triggerSeconds?: number
-  userId: string
 }
 
 /**
@@ -26,7 +25,7 @@ export interface ResetYourPasswordArgs {
  *   authRedirect: "https://artsy.net/artist/andy-warhol",
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
- *   intent: AuthIntent.viewEditorial,
+ *   intent: AuthIntent.viewArtist,
  *   service: "email",
  *   triggerSeconds: 3
  * })
