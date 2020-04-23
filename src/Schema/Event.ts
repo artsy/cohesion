@@ -107,14 +107,48 @@ export interface SuccessfullyLoggedIn {
 }
 
 /**
- * A user taps a rail, card, or other grouping of entities on iOS
+ * A user taps a grouping of artists on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from [[tappedArtistGroup]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedEntityGroup"
+ *    action: "tappedArtistGroup"
+ *    context_module: "trendingArtistsRail"
+ *    context_screen_owner_type: Home
+ *    destination_screen_owner_type: Artist
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7"
+ *    destination_screen_owner_slug: "anthony-hunter"
+ *    horizontal_slide_position: 1
+ *    module_height: "double"
+ *    type: "stub"
+ *  }
+ * ```
+ */
+export interface tappedArtistGroup {
+  action: ActionType.tappedArtistGroup
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height?: "single" | "double"
+  type?: "thumbnail" | "header" | "stub"
+}
+
+/**
+ * A user taps a grouping of artworks on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedArtworkGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtworkGroup"
  *    context_module: "newWorksByArtistsYouFollowRail"
  *    context_screen_owner_type: Home
  *    destination_screen_owner_type: Artwork
@@ -126,8 +160,8 @@ export interface SuccessfullyLoggedIn {
  *  }
  * ```
  */
-export interface tappedEntityGroup {
-  action: ActionType.tappedEntityGroup
+export interface tappedArtworkGroup {
+  action: ActionType.tappedArtworkGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -135,8 +169,108 @@ export interface tappedEntityGroup {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
-  freshness?: number
   horizontal_slide_position?: number
   module_height?: "single" | "double"
-  type: "button" | "thumbnail" | "header" | "stub"
+  type?: "thumbnail" | "header" | "stub"
+}
+
+/**
+ * A user taps a grouping of auctions on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedAuctionGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAuctionGroup"
+ *    context_module: "auctionsRail"
+ *    context_screen_owner_type: Home
+ *    destination_screen_owner_type: Sale
+ *    destination_screen_owner_id: "5e95b37a2fdcb20012a0e082"
+ *    destination_screen_owner_slug: "forum-auctions-colour-theory-4"
+ *    horizontal_slide_position: 3
+ *    module_height: "double"
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface tappedAuctionGroup {
+  action: ActionType.tappedAuctionGroup
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height?: "single" | "double"
+  type?: "thumbnail" | "header" | "stub"
+}
+
+/**
+ * A user taps a grouping of collections on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedCollectionGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCollectionGroup"
+ *    context_module: "collectionRail"
+ *    context_screen_owner_type: Home
+ *    destination_screen_owner_type: Collection
+ *    destination_screen_owner_slug: "limited-edition-prints-trending-artists"
+ *    horizontal_slide_position: 2
+ *    module_height: "double"
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface tappedCollectionGroup {
+  action: ActionType.tappedCollectionGroup
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height?: "single" | "double"
+  type: "thumbnail" | "header" | "stub"
+}
+
+/**
+ * A user taps a grouping of fairs on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedFairGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedFairGroup"
+ *    context_module: "fairRail"
+ *    context_screen_owner_type: Home
+ *    destination_screen_owner_type: Fair
+ *    destination_screen_owner_id: "5e726bd22524980012caafb0"
+ *    destination_screen_owner_slug: "arteba-special-edition"
+ *    horizontal_slide_position: 2
+ *    module_height: "double"
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface tappedFairGroup {
+  action: ActionType.tappedFairGroup
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height?: "single" | "double"
+  type: "thumbnail" | "header" | "stub"
 }

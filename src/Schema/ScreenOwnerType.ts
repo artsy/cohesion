@@ -15,5 +15,7 @@ export enum ScreenOwnerType {
   Sale = "Sale",
   Search = "Search",
   SavesAndFollows = "SavesAndFollows",
+  ViewingRoom = "ViewingRoom",
+  ViewingRoomArtworks = "ViewingRoomArtworks",
   WorksForYou = "WorksForYou"
 }
