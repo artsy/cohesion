@@ -10,6 +10,7 @@ export enum ScreenOwnerType {
   CityGuideGuide = "CityGuideGuide",
   CityGuideMap = "CityGuideMap",
   CityPicker = "CityPicker",
+  Explore = "Explore",
   Fair = "Fair",
   Inbox = "Inbox",
   Sale = "Sale",
