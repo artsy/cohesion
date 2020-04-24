@@ -242,6 +242,37 @@ export interface tappedCollectionGroup {
 }
 
 /**
+ * A user taps a grouped explore module (City Guide, for example)
+ *
+ * This schema describes events sent to Segment from [[tappedExploreGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedExploreGroup"
+ *    context_module: "cityGuideCard"
+ *    context_screen_owner_type: Search
+ *    destination_screen_owner_type: CityGuideGuide
+ *    module_height: "double"
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface tappedExploreGroup {
+  action: ActionType.tappedExploreGroup
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height?: "single" | "double"
+  type?: "thumbnail" | "header" | "stub"
+}
+
+/**
  * A user taps a grouping of fairs on iOS
  *
  * This schema describes events sent to Segment from [[tappedFairGroup]]

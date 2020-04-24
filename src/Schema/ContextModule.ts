@@ -20,6 +20,7 @@ export enum ContextModule {
   bannerPopUp = "bannerPopUp",
   browseFair = "browseFair",
   categoryRail = "categoryRail",
+  cityGuideCard = "cityGuideCard",
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",
   collectionCard = "collectionCard",

@@ -15,5 +15,6 @@ export enum ActionType {
   tappedArtworkGroup = "tappedArtworkGroup",
   tappedAuctionGroup = "tappedAuctionGroup",
   tappedCollectionGroup = "tappedCollectionGroup",
+  tappedExploreGroup = "tappedExploreGroup",
   tappedFairGroup = "tappedFairGroup"
 }
