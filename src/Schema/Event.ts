@@ -1,6 +1,4 @@
-import { 
-  ActionType 
-} from "./ActionType"
+import { ActionType } from "./ActionType"
 
 import {
   AuthContextModule,
@@ -10,14 +8,9 @@ import {
   AuthService,
 } from "./Authentication"
 
-import {
-  ContextModule
-} from "./ContextModule"
+import { ContextModule } from "./ContextModule"
 
-import {
-  ScreenOwnerType
-} from "./ScreenOwnerType"
-
+import { ScreenOwnerType } from "./OwnerType"
 
 /**
  * Schemas describing for individual events by ActionType
@@ -107,6 +100,25 @@ export interface SuccessfullyLoggedIn {
 }
 
 /**
+ *  A user taps a grouping of entities on iOS
+ *
+ *  Events are separated by entity type
+ */
+
+interface TappedEntityGroup {
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  horizontal_slide_position?: number
+  module_height: "single" | "double"
+  type: "thumbnail" | "header" | "stub"
+}
+
+/**
  * A user taps a grouping of artists on iOS
  *
  * This schema describes events sent to Segment from [[tappedArtistGroup]]
@@ -126,18 +138,8 @@ export interface SuccessfullyLoggedIn {
  *  }
  * ```
  */
-export interface TappedArtistGroup {
+export interface TappedArtistGroup extends TappedEntityGroup {
   action: ActionType.tappedArtistGroup
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
-  horizontal_slide_position?: number
-  module_height?: "single" | "double"
-  type?: "thumbnail" | "header" | "stub"
 }
 
 /**
@@ -160,18 +162,8 @@ export interface TappedArtistGroup {
  *  }
  * ```
  */
-export interface TappedArtworkGroup {
+export interface TappedArtworkGroup extends TappedEntityGroup {
   action: ActionType.tappedArtworkGroup
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
-  horizontal_slide_position?: number
-  module_height?: "single" | "double"
-  type?: "thumbnail" | "header" | "stub"
 }
 
 /**
@@ -194,18 +186,8 @@ export interface TappedArtworkGroup {
  *  }
  * ```
  */
-export interface TappedAuctionGroup {
+export interface TappedAuctionGroup extends TappedEntityGroup {
   action: ActionType.tappedAuctionGroup
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
-  horizontal_slide_position?: number
-  module_height?: "single" | "double"
-  type?: "thumbnail" | "header" | "stub"
 }
 
 /**
@@ -227,18 +209,8 @@ export interface TappedAuctionGroup {
  *  }
  * ```
  */
-export interface TappedCollectionGroup {
+export interface TappedCollectionGroup extends TappedEntityGroup {
   action: ActionType.tappedCollectionGroup
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
-  horizontal_slide_position?: number
-  module_height?: "single" | "double"
-  type?: "thumbnail" | "header" | "stub"
 }
 
 /**
@@ -258,18 +230,8 @@ export interface TappedCollectionGroup {
  *  }
  * ```
  */
-export interface TappedExploreGroup {
+export interface TappedExploreGroup extends TappedEntityGroup {
   action: ActionType.tappedExploreGroup
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
-  horizontal_slide_position?: number
-  module_height?: "single" | "double"
-  type?: "thumbnail" | "header" | "stub"
 }
 
 /**
@@ -292,16 +254,6 @@ export interface TappedExploreGroup {
  *  }
  * ```
  */
-export interface TappedFairGroup {
+export interface TappedFairGroup extends TappedEntityGroup {
   action: ActionType.tappedFairGroup
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
-  horizontal_slide_position?: number
-  module_height?: "single" | "double"
-  type?: "thumbnail" | "header" | "stub"
 }
