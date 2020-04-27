@@ -104,7 +104,6 @@ export interface SuccessfullyLoggedIn {
  *
  *  Events are separated by entity type
  */
-
 interface TappedEntityGroup {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
