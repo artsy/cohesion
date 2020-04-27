@@ -126,7 +126,7 @@ export interface SuccessfullyLoggedIn {
  *  }
  * ```
  */
-export interface tappedArtistGroup {
+export interface TappedArtistGroup {
   action: ActionType.tappedArtistGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
@@ -160,7 +160,7 @@ export interface tappedArtistGroup {
  *  }
  * ```
  */
-export interface tappedArtworkGroup {
+export interface TappedArtworkGroup {
   action: ActionType.tappedArtworkGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
@@ -194,7 +194,7 @@ export interface tappedArtworkGroup {
  *  }
  * ```
  */
-export interface tappedAuctionGroup {
+export interface TappedAuctionGroup {
   action: ActionType.tappedAuctionGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
@@ -227,7 +227,7 @@ export interface tappedAuctionGroup {
  *  }
  * ```
  */
-export interface tappedCollectionGroup {
+export interface TappedCollectionGroup {
   action: ActionType.tappedCollectionGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
@@ -238,7 +238,7 @@ export interface tappedCollectionGroup {
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
   module_height?: "single" | "double"
-  type: "thumbnail" | "header" | "stub"
+  type?: "thumbnail" | "header" | "stub"
 }
 
 /**
@@ -258,7 +258,7 @@ export interface tappedCollectionGroup {
  *  }
  * ```
  */
-export interface tappedExploreGroup {
+export interface TappedExploreGroup {
   action: ActionType.tappedExploreGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
@@ -292,7 +292,7 @@ export interface tappedExploreGroup {
  *  }
  * ```
  */
-export interface tappedFairGroup {
+export interface TappedFairGroup {
   action: ActionType.tappedFairGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
@@ -303,5 +303,5 @@ export interface tappedFairGroup {
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
   module_height?: "single" | "double"
-  type: "thumbnail" | "header" | "stub"
+  type?: "thumbnail" | "header" | "stub"
 }
