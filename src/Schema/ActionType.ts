@@ -12,4 +12,10 @@ export enum ActionType {
   createdAccount = "createdAccount",
   resetYourPassword = "resetYourPassword",
   successfullyLoggedIn = "successfullyLoggedIn",
+  tappedArtistGroup = "tappedArtistGroup",
+  tappedArtworkGroup = "tappedArtworkGroup",
+  tappedAuctionGroup = "tappedAuctionGroup",
+  tappedCollectionGroup = "tappedCollectionGroup",
+  tappedExploreGroup = "tappedExploreGroup",
+  tappedFairGroup = "tappedFairGroup"
 }
