@@ -1,3 +1,20 @@
+# v0.2.9 (Tue Apr 28 2020)
+
+#### 🐛  Bug Fix
+
+- Create iOS tapped group events and schema [#24](https://github.com/artsy/cohesion/pull/24) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- Use typescript strict [#30](https://github.com/artsy/cohesion/pull/30) ([@eessex](https://github.com/eessex))
+
+#### Authors: 2
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v0.2.8 (Thu Apr 23 2020)
 
 #### 🐛  Bug Fix
