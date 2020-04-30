@@ -5,7 +5,7 @@ import {
   AuthIntent,
   AuthService,
 } from "../../Schema"
-import { ResetYourPassword } from "../../Schema/Event"
+import { ResetYourPassword } from "../../Schema/Event/Authentication"
 
 export interface ResetYourPasswordArgs {
   authRedirect: string

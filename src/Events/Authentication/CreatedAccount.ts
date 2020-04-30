@@ -5,7 +5,7 @@ import {
   AuthIntent,
   AuthService,
 } from "../../Schema"
-import { CreatedAccount } from "../../Schema/Event"
+import { CreatedAccount } from "../../Schema/Event/Authentication"
 
 export interface CreatedAccountArgs {
   authRedirect: string

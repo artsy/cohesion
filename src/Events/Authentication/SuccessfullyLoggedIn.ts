@@ -5,7 +5,7 @@ import {
   AuthIntent,
   AuthService,
 } from "../../Schema"
-import { SuccessfullyLoggedIn } from "../../Schema/Event"
+import { SuccessfullyLoggedIn } from "../../Schema/Event/Authentication"
 
 export interface SuccessfullyLoggedInArgs {
   authRedirect: string
