@@ -4,8 +4,8 @@ import {
   AuthContextModule,
   AuthIntent,
   AuthService,
+  CreatedAccount,
 } from "../../Schema"
-import { CreatedAccount } from "../../Schema/Event"
 
 export interface CreatedAccountArgs {
   authRedirect: string
@@ -27,7 +27,7 @@ export interface CreatedAccountArgs {
  *   authRedirect: "https://artsy.net/artist/andy-warhol",
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
- *   intent: AuthIntent.viewArtist,
+ *   intent: Intent.viewArtist,
  *   onboarding: true,
  *   service: "email",
  *   triggerSeconds: 3,

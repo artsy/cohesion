@@ -1,11 +1,11 @@
-import { ContextModule, AuthIntent, AuthModalType } from "../../../Schema"
+import { ContextModule, Intent, AuthModalType } from "../../../Schema"
 import { authImpression } from "../AuthImpression"
 
 describe("authImpression", () => {
   it("Works with minimal args", () => {
     const args = authImpression({
       contextModule: ContextModule.header,
-      intent: AuthIntent.signup,
+      intent: Intent.signup,
       type: AuthModalType.signup,
     })
 
@@ -24,7 +24,7 @@ describe("authImpression", () => {
   it("Works with all args", () => {
     const args = authImpression({
       contextModule: ContextModule.header,
-      intent: AuthIntent.followArtist,
+      intent: Intent.followArtist,
       copy: "Sign up to follow artists",
       onboarding: true,
       triggerSeconds: 4,

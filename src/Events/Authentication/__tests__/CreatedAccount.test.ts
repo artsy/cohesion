@@ -1,4 +1,4 @@
-import { ContextModule, AuthIntent } from "../../../Schema"
+import { ContextModule, Intent } from "../../../Schema"
 import { createdAccount } from "../CreatedAccount"
 
 describe("createdAccount", () => {
@@ -6,7 +6,7 @@ describe("createdAccount", () => {
     const args = createdAccount({
       authRedirect: "https://artsy.net/artist/andy-warhol",
       contextModule: ContextModule.header,
-      intent: AuthIntent.signup,
+      intent: Intent.signup,
       service: "apple",
       userId: "5bd8b675776bd6002c86526c",
     })
@@ -30,7 +30,7 @@ describe("createdAccount", () => {
       authRedirect: "https://artsy.net/artist/andy-warhol",
       contextModule: ContextModule.popUpModal,
       copy: "Sign up to follow artists",
-      intent: AuthIntent.viewArtist,
+      intent: Intent.viewArtist,
       onboarding: true,
       service: "email",
       triggerSeconds: 2,

@@ -4,8 +4,8 @@ import {
   AuthContextModule,
   AuthIntent,
   AuthService,
+  ResetYourPassword,
 } from "../../Schema"
-import { ResetYourPassword } from "../../Schema/Event"
 
 export interface ResetYourPasswordArgs {
   authRedirect: string
@@ -25,7 +25,7 @@ export interface ResetYourPasswordArgs {
  *   authRedirect: "https://artsy.net/artist/andy-warhol",
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
- *   intent: AuthIntent.viewArtist,
+ *   intent: Intent.viewArtist,
  *   service: "email",
  *   triggerSeconds: 3
  * })
