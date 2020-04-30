@@ -17,7 +17,7 @@ import { ScreenOwnerType } from "../OwnerType"
 /**
  * A user taps a grouping of artists on iOS
  *
- *  This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *  This schema describes events sent to Segment from [[tappedArtistGroup]]
  *
  *  @example
  *  ```

@@ -11,6 +11,8 @@
 
 ## Contributing
 
+Requirements: [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+
 #### Set up:
 
 ```
@@ -29,19 +31,21 @@ yarn test
 yarn docs
 ```
 
+To view docs locally, visit the full filepath of `docs/index.html` in your browser, i.e, `file:///Users/<MY_USER>/<MY_LOCAL_DIRECTORY>/cohesion/doc/index.html`
+
 ## Schema
 
 The `/Schema` directory represents the Artsy's analytics schema, and describes expectations for data consumed by Redshift and Segment.
 
 This schema is maintained by Artsy's data team, engineers should not expect to change these files.
 
-Valid analytics events are described in `/Schema/Event.ts`.
+Valid analytics events are described in `/Schema/Event.ts`, and individual event schemas live in the `Schema/Events` directory, divided by concern.
 
 Typings for all allowed values, such as `ContextModule`, are exported for use by engineers in consuming projects.
 
 ### Add a new event to the schema (For data analysts)
 
-1. In `Schema/ActionType.ts`, add the name of the new event. This name defines the corresponding downstream table's name in Redshift, and should use the [`lowerCamelCase`](https://wiki.c2.com/?LowerCamelCase) naming convention.
+1. In `Schema/Event.ts`, add the name of the new event. This name defines the corresponding downstream table's name in Redshift, and should use the [`lowerCamelCase`](https://wiki.c2.com/?LowerCamelCase) naming convention.
 
 ```typescript
 // Schema/ActionType.ts
@@ -54,12 +58,14 @@ export enum ActionType {
 
 ```
 
-2. In `Schema/Event.ts`, create an interface describing the shape of the new event, as it is recieved in Segment/Redshift.
+2. In `Schema/Events` directory, create a new interface describing the shape of the new event, as it is recieved in Segment/Redshift.
 
+- The name of the interface should match the `ActionType` created in step 1, but use the [`UpperCamelCase`](https://wiki.c2.com/?UpperCamelCase) naming convention.
 - The `action` key is required and should match the `ActionType` created in step 1.
+- If your event uses values not yet in the schema, such as a new `ContextModule`, add new values to the existing typings in the Schema directory.
 
 ```typescript
-// Schema/Event.ts
+// Schema/Events/MyNewEvent.ts
 
 export interface MyNewEvent {
   action: ActionType.myNewEvent
@@ -69,13 +75,21 @@ export interface MyNewEvent {
 }
 ```
 
-3. If your event uses values not yet in the schema, such as a new `ContextModule`, add new values to the existing typings in the Schema directory.
+3. In `Schema/Event.ts`, add the new interface to the valid events master list, `Event`
 
 4. Add descriptive comments with examples to explain the use of your new event. Our documentation is generated automatically from in-code comments, find more information on syntax in the [`typedoc` docs](https://typedoc.org/guides/doccomments/).
 
-5. PR your changes. Once merged, the schema will be updated and your new event and values will be available to consumers of this package.
+5. If you have created any new files, add an export statement to `Schema/index.ts` like so:
 
-6. Data analysts should request an engineer to construct a new event helper for the `/Events` directory (see below).
+```typescript
+// Schema/index.ts
+
+export * from "./Events/MyNewEvent"
+```
+
+6. PR your changes. Once merged, the schema will be updated and your new event and values will be available to consumers of this package.
+
+7. Data analysts should request an engineer to construct a new event helper for the `/Events` directory (see below).
 
 ## Events
 
