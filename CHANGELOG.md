@@ -1,3 +1,15 @@
+# v1.0.0 (Thu Apr 30 2020)
+
+#### 💥  Breaking Change
+
+- improve file structure [#31](https://github.com/artsy/cohesion/pull/31) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v0.2.9 (Tue Apr 28 2020)
 
 #### 🐛  Bug Fix
