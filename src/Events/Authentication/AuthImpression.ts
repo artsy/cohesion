@@ -24,7 +24,7 @@ export interface AuthImpressionArgs {
  *  ```
  *  authImpression({
  *    contextModule: ContextModule.header,
- *    intent: AuthIntent.viewEditorial,
+ *    intent: Intent.viewEditorial,
  *    type: AuthModalType.signup,
  *  })
  * ```
