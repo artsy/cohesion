@@ -1,3 +1,22 @@
+# v1.0.1 (Mon May 11 2020)
+
+#### 🐛  Bug Fix
+
+- Tapped entity event helper [#32](https://github.com/artsy/cohesion/pull/32) ([@eessex](https://github.com/eessex))
+
+#### 🏠  Internal
+
+- Update yarn orb from 4.0.2 to v5 [#34](https://github.com/artsy/cohesion/pull/34) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update auto orb from 1.2.0 to v1.2.1 [#33](https://github.com/artsy/cohesion/pull/33) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Eve Essex ([@eessex](https://github.com/eessex))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.0 (Thu Apr 30 2020)
 
 #### 💥  Breaking Change
