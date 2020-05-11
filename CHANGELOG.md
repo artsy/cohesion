@@ -1,3 +1,15 @@
+# v1.0.2 (Mon May 11 2020)
+
+#### 🐛  Bug Fix
+
+- add export for TappedEntityDestinationType [#35](https://github.com/artsy/cohesion/pull/35) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.0.1 (Mon May 11 2020)
 
 #### 🐛  Bug Fix
