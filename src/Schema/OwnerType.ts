@@ -1,17 +1,19 @@
 /**
- * Screen or page owner types, for Eigen and Force respectively
+ * All owner types available for iOS (screen) and web (page)
  * @packageDocumentation
  */
 export enum OwnerType {
   artist = "artist",
   artwork = "artwork",
   auctions = "auctions",
-  consign = "consign",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
+  collection = "collection",
+  consign = "consign",
   explore = "explore",
   fair = "fair",
+  home = "home",
   inbox = "inbox",
   sale = "sale",
   search = "search",
@@ -28,12 +30,14 @@ export type ScreenOwnerType =
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.auctions
-  | OwnerType.consign
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
+  | OwnerType.collection
+  | OwnerType.consign
   | OwnerType.explore
   | OwnerType.fair
+  | OwnerType.home
   | OwnerType.inbox
   | OwnerType.sale
   | OwnerType.search
@@ -49,6 +53,8 @@ export type PageOwnerType =
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.auctions
+  | OwnerType.collection
   | OwnerType.consign
   | OwnerType.fair
+  | OwnerType.home
   | OwnerType.search
