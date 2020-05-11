@@ -13,7 +13,7 @@ import {
   ScreenOwnerType,
 } from "../../Schema"
 
-type TappedEntityDestinationType =
+export type TappedEntityDestinationType =
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.collection
