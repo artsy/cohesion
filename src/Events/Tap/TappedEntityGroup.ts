@@ -20,6 +20,10 @@ export type TappedEntityDestinationType =
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.sale
+  | OwnerType.auctions
+  | OwnerType.savesAndFollows
+  | OwnerType.category
+  | OwnerType.worksForYou
 
 export interface TappedEntityGroupArgs {
   contextModule: ContextModule
@@ -77,6 +81,9 @@ export const tappedEntityGroup = ({
       action = ActionType.tappedArtistGroup
       break
     case OwnerType.artwork:
+    case OwnerType.category:
+    case OwnerType.worksForYou:
+    case OwnerType.savesAndFollows:
       action = ActionType.tappedArtworkGroup
       break
     case OwnerType.collection:
@@ -89,6 +96,7 @@ export const tappedEntityGroup = ({
       action = ActionType.tappedFairGroup
       break
     case OwnerType.sale:
+    case OwnerType.auctions:
       action = ActionType.tappedAuctionGroup
       break
   }
