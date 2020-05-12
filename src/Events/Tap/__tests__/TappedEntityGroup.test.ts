@@ -63,19 +63,46 @@ describe("tappedEntityGroup", () => {
   })
 
   it("Constructs TappedArtworkGroup events", () => {
-    const event = tappedEntityGroup({
+    const singleArtworkEvent = tappedEntityGroup({
       ...args,
       destinationScreenOwnerType: OwnerType.artwork,
     })
-    expect(event.action).toEqual("tappedArtworkGroup")
+    expect(singleArtworkEvent.action).toEqual("tappedArtworkGroup")
+
+    const worksForYouEvent = tappedEntityGroup({
+      ...args,
+      destinationScreenOwnerType: OwnerType.worksForYou,
+    })
+
+    expect(worksForYouEvent.action).toEqual("tappedArtworkGroup")
+
+    const categoryEvent = tappedEntityGroup({
+      ...args,
+      destinationScreenOwnerType: OwnerType.category,
+    })
+
+    expect(categoryEvent.action).toEqual("tappedArtworkGroup")
+
+    const savesAndFollowsEvent = tappedEntityGroup({
+      ...args,
+      destinationScreenOwnerType: OwnerType.savesAndFollows,
+    })
+
+    expect(savesAndFollowsEvent.action).toEqual("tappedArtworkGroup")
   })
 
   it("Constructs TappedAuctionGroup events", () => {
-    const event = tappedEntityGroup({
+    const singleAuctionEvent = tappedEntityGroup({
       ...args,
       destinationScreenOwnerType: OwnerType.sale,
     })
-    expect(event.action).toEqual("tappedAuctionGroup")
+    expect(singleAuctionEvent.action).toEqual("tappedAuctionGroup")
+
+    const auctionOverviewEvent = tappedEntityGroup({
+      ...args,
+      destinationScreenOwnerType: OwnerType.auctions,
+    })
+    expect(auctionOverviewEvent.action).toEqual("tappedAuctionGroup")
   })
 
   it("Constructs TappedCollectionGroup events", () => {
