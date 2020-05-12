@@ -5,6 +5,7 @@ import {
   TappedAuctionGroup,
   TappedCollectionGroup,
   TappedExploreGroup,
+  TappedConsign,
 } from "./Events/Tap"
 import {
   AuthImpression,
@@ -59,6 +60,11 @@ export enum ActionType {
    * Corresponds to {@link TappedFairGroup}
    */
   tappedFairGroup = "tappedFairGroup",
+
+  tappedConsign = "tappedConsign",
+  /**
+   * Corresponds to {@link tappedConsign}
+   */
 }
 
 /**
@@ -77,3 +83,4 @@ export type Event =
   | TappedCollectionGroup
   | TappedExploreGroup
   | TappedFairGroup
+  | TappedConsign

@@ -10,6 +10,7 @@ export enum OwnerType {
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
   collection = "collection",
+  consignmentSubmission = "consignmentSubmission",
   consign = "consign",
   explore = "explore",
   fair = "fair",
@@ -17,6 +18,7 @@ export enum OwnerType {
   inbox = "inbox",
   sale = "sale",
   search = "search",
+  sell = "sell",
   savesAndFollows = "savesAndFollows",
   viewingRoom = "viewingRoom",
   viewingRoomArtworks = "viewingRoomArtworks",
@@ -34,6 +36,7 @@ export type ScreenOwnerType =
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
   | OwnerType.collection
+  | OwnerType.consignmentSubmission
   | OwnerType.consign
   | OwnerType.explore
   | OwnerType.fair
@@ -42,6 +45,7 @@ export type ScreenOwnerType =
   | OwnerType.sale
   | OwnerType.search
   | OwnerType.savesAndFollows
+  | OwnerType.sell
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworks
   | OwnerType.worksForYou
