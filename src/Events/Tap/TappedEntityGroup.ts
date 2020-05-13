@@ -22,7 +22,7 @@ export type TappedEntityDestinationType =
   | OwnerType.sale
   | OwnerType.auctions
   | OwnerType.savesAndFollows
-  | OwnerType.category
+  | OwnerType.gene
   | OwnerType.worksForYou
 
 export interface TappedEntityGroupArgs {
@@ -81,7 +81,7 @@ export const tappedEntityGroup = ({
       action = ActionType.tappedArtistGroup
       break
     case OwnerType.artwork:
-    case OwnerType.category:
+    case OwnerType.gene:
     case OwnerType.worksForYou:
     case OwnerType.savesAndFollows:
       action = ActionType.tappedArtworkGroup

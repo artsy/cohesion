@@ -6,7 +6,7 @@ export enum OwnerType {
   artist = "artist",
   artwork = "artwork",
   auctions = "auctions",
-  category = "category",
+  gene = "gene",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
@@ -31,7 +31,7 @@ export type ScreenOwnerType =
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.auctions
-  | OwnerType.category
+  | OwnerType.gene
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker

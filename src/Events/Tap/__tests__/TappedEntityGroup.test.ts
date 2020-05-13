@@ -76,12 +76,12 @@ describe("tappedEntityGroup", () => {
 
     expect(worksForYouEvent.action).toEqual("tappedArtworkGroup")
 
-    const categoryEvent = tappedEntityGroup({
+    const geneEvent = tappedEntityGroup({
       ...args,
-      destinationScreenOwnerType: OwnerType.category,
+      destinationScreenOwnerType: OwnerType.gene,
     })
 
-    expect(categoryEvent.action).toEqual("tappedArtworkGroup")
+    expect(geneEvent.action).toEqual("tappedArtworkGroup")
 
     const savesAndFollowsEvent = tappedEntityGroup({
       ...args,
