@@ -1,3 +1,22 @@
+# v1.0.3 (Wed May 13 2020)
+
+#### 🐛  Bug Fix
+
+- Add additional screen destinations, add category screen [#36](https://github.com/artsy/cohesion/pull/36) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### 🏠  Internal
+
+- Update yarn orb from 5.1.1 to v5.1.3 [#38](https://github.com/artsy/cohesion/pull/38) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 3.8.3 to v3.9.2 [#40](https://github.com/artsy/cohesion/pull/40) ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto orb from 1.2.1 to v1.3.2 [#37](https://github.com/artsy/cohesion/pull/37) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.2 (Mon May 11 2020)
 
 #### 🐛  Bug Fix
