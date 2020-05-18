@@ -199,10 +199,5 @@ export interface TappedConsign {
   action: ActionType.tappedConsign
   context_screen_owner_type: ScreenOwnerType
   destination_screen_owner_type: ScreenOwnerType
-  subject: Subject
+  subject: string
 }
-
-/**
- * The text on the button tapped
- */
-export type Subject = "startSelling" | "startToday"

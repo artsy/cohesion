@@ -60,11 +60,10 @@ export enum ActionType {
    * Corresponds to {@link TappedFairGroup}
    */
   tappedFairGroup = "tappedFairGroup",
-
-  tappedConsign = "tappedConsign",
   /**
-   * Corresponds to {@link tappedConsign}
+   * Corresponds to {@link TappedConsign}
    */
+  tappedConsign = "tappedConsign",
 }
 
 /**
