@@ -37,7 +37,7 @@
     "jest-junit": "10.0.0",
     "lint-staged": "10.1.7",
     "prettier": "2.0.5",
-    "tslint": "6.1.1",
+    "tslint": "6.1.2",
     "typedoc": "0.17.7",
     "typescript": "3.9.2"
   },
