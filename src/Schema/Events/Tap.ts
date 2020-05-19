@@ -181,7 +181,7 @@ export type EntityModuleHeight = "single" | "double"
 export type EntityModuleType = "thumbnail" | "header" | "stub"
 
 /**
- * A user clicks a Consign button in iOS
+ * A user taps a Consign button in iOS
  *
  * This schema describes events sent to Segment from [[tappedConsign]]
  *
@@ -198,6 +198,7 @@ export type EntityModuleType = "thumbnail" | "header" | "stub"
 export interface TappedConsign {
   action: ActionType.tappedConsign
   context_screen_owner_type: ScreenOwnerType
+  context_module: ContextModule
   destination_screen_owner_type: ScreenOwnerType
   subject: string
 }

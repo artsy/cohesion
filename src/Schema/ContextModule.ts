@@ -58,6 +58,8 @@ export enum ContextModule {
   relatedArtistsRail = "relatedArtistsRail",
   relatedWorksRail = "relatedWorksRail",
   saveWorksCTA = "saveWorksCTA",
+  sellFooter = "sellFooter",
+  sellHeader = "sellHeader",
   showHeader = "showHeader",
   showInfo = "showInfo",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
