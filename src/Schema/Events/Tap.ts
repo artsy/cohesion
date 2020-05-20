@@ -179,3 +179,27 @@ export interface TappedEntityGroup {
 
 export type EntityModuleHeight = "single" | "double"
 export type EntityModuleType = "thumbnail" | "header" | "stub"
+
+/**
+ * A user taps a Consign button in iOS
+ *
+ * This schema describes events sent to Segment from [[tappedConsign]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedConsign",
+ *    context_module : "sellHeader",
+ *    context_screen_owner_type: "sell",
+ *    destination_screen_owner_type: "consignmentSubmission",
+ *    subject: "startSelling"
+ *  }
+ * ```
+ */
+export interface TappedConsign {
+  action: ActionType.tappedConsign
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: ScreenOwnerType
+  subject: string
+}
