@@ -201,5 +201,6 @@ export interface TappedConsign {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   destination_screen_owner_type: ScreenOwnerType
+  /** The text of the tapped button */
   subject: string
 }

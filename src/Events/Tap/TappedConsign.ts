@@ -13,7 +13,9 @@ export interface TappedConsignArgs {
 }
 
 /**
- *  A user taps a CTA to consign on iOS
+ * A user taps a CTA to consign on iOS
+ *
+ * subject is the text of the tapped button
  *
  * @example
  * ```
