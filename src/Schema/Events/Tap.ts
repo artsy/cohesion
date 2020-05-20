@@ -189,6 +189,7 @@ export type EntityModuleType = "thumbnail" | "header" | "stub"
  *  ```
  *  {
  *    action: "tappedConsign",
+ *    context_module : "sellHeader",
  *    context_screen_owner_type: "sell",
  *    destination_screen_owner_type: "consignmentSubmission",
  *    subject: "startSelling"
@@ -197,8 +198,8 @@ export type EntityModuleType = "thumbnail" | "header" | "stub"
  */
 export interface TappedConsign {
   action: ActionType.tappedConsign
-  context_screen_owner_type: ScreenOwnerType
   context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
   destination_screen_owner_type: ScreenOwnerType
   subject: string
 }
