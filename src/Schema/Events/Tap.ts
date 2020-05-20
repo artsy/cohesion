@@ -192,7 +192,7 @@ export type EntityModuleType = "thumbnail" | "header" | "stub"
  *    context_module : "sellHeader",
  *    context_screen_owner_type: "sell",
  *    destination_screen_owner_type: "consignmentSubmission",
- *    subject: "startSelling"
+ *    subject: "Start selling"
  *  }
  * ```
  */
