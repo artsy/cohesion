@@ -1,3 +1,25 @@
+# v1.0.4 (Wed May 20 2020)
+
+#### 🐛  Bug Fix
+
+- Sell tab tracking in iOS [#39](https://github.com/artsy/cohesion/pull/39) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- Update dep typescript from 3.9.2 to v3.9.3 [#45](https://github.com/artsy/cohesion/pull/45) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep tslint from 6.1.1 to v6.1.2 [#41](https://github.com/artsy/cohesion/pull/41) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typedoc from 0.17.4 to v0.17.7 [#42](https://github.com/artsy/cohesion/pull/42) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep babel-jest from 25.4.0 to v26 [#43](https://github.com/artsy/cohesion/pull/43) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep jest from 25.4.0 to v26 [#44](https://github.com/artsy/cohesion/pull/44) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@louislecluse](https://github.com/louislecluse)
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.3 (Wed May 13 2020)
 
 #### 🐛  Bug Fix
