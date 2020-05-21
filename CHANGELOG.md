@@ -1,3 +1,15 @@
+# v1.0.5 (Thu May 21 2020)
+
+#### 🐛  Bug Fix
+
+- Add tappedConsign helper [#46](https://github.com/artsy/cohesion/pull/46) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.0.4 (Wed May 20 2020)
 
 #### 🐛  Bug Fix
