@@ -192,7 +192,7 @@ export type EntityModuleType = "thumbnail" | "header" | "stub"
  *    context_module : "sellHeader",
  *    context_screen_owner_type: "sell",
  *    destination_screen_owner_type: "consignmentSubmission",
- *    subject: "startSelling"
+ *    subject: "Start selling"
  *  }
  * ```
  */
@@ -201,5 +201,6 @@ export interface TappedConsign {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   destination_screen_owner_type: ScreenOwnerType
+  /** The text of the tapped button */
   subject: string
 }
