@@ -1,3 +1,16 @@
+# v1.1.0 (Thu May 21 2020)
+
+#### 🚀  Enhancement
+
+- Manage links in README [#47](https://github.com/artsy/cohesion/pull/47) ([@jonallured](https://github.com/jonallured))
+- Expose consign helpers [#48](https://github.com/artsy/cohesion/pull/48) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
 # v1.0.5 (Thu May 21 2020)
 
 #### 🐛  Bug Fix
