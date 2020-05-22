@@ -1,4 +1,4 @@
-## Cohesion [![CircleCI][badge]][circleci]
+## Cohesion [![CircleCI][circle_badge]][circleci] [![npm version][npm_badge]][npm]
 
 ### Artsy's analytics schema &amp; event helpers
 
@@ -97,8 +97,10 @@ The `/Events` directory contains javascript helpers that return schema-compliant
 
 Engineers should use these helpers whenever sending analytics data to Segment, for example, when creating an analytics event with `react-tracking`.
 
-[badge]: https://circleci.com/gh/artsy/cohesion.svg?style=svg
+[circle_badge]: https://circleci.com/gh/artsy/cohesion.svg?style=svg
 [circleci]: https://circleci.com/gh/artsy/cohesion
+[npm_badge]: https://badge.fury.io/js/%40artsy%2Fcohesion.svg
+[npm]: https://www.npmjs.com/package/@artsy/2Fcohesion
 [@eessex]: https://github.com/eessex
 [@abhitip]: https://github.com/abhitip
 [Yarn]: https://classic.yarnpkg.com/en/docs/install/#mac-stable
