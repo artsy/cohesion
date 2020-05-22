@@ -1,3 +1,15 @@
+# v1.2.0 (Fri May 22 2020)
+
+#### 🚀  Enhancement
+
+- Put NPM badge back [#49](https://github.com/artsy/cohesion/pull/49) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
 # v1.1.0 (Thu May 21 2020)
 
 #### 🚀  Enhancement
