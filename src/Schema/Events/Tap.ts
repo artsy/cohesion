@@ -173,7 +173,7 @@ export interface TappedEntityGroup {
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
-  module_height: EntityModuleHeight
+  module_height?: EntityModuleHeight
   type: EntityModuleType
 }
 
