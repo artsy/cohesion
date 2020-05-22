@@ -1,3 +1,16 @@
+# v1.3.0 (Fri May 22 2020)
+
+#### 🚀  Enhancement
+
+- Fix broken build [#51](https://github.com/artsy/cohesion/pull/51) ([@jonallured](https://github.com/jonallured))
+- Don't require module height for entity group [#50](https://github.com/artsy/cohesion/pull/50) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
 # v1.2.0 (Fri May 22 2020)
 
 #### 🚀  Enhancement
