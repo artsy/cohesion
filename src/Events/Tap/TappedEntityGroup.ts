@@ -34,7 +34,7 @@ export interface TappedEntityGroupArgs {
   destinationScreenOwnerId?: string
   destinationScreenOwnerSlug?: string
   horizontalSlidePosition?: number
-  moduleHeight: EntityModuleHeight
+  moduleHeight?: EntityModuleHeight
   type: EntityModuleType
 }
 
