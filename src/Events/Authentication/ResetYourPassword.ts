@@ -1,8 +1,8 @@
 import {
   ActionType,
-  AuthModalType,
   AuthContextModule,
   AuthIntent,
+  AuthModalType,
   AuthService,
   ResetYourPassword,
 } from "../../Schema"

@@ -1,8 +1,8 @@
 import {
   ActionType,
-  AuthModalType,
   AuthContextModule,
   AuthIntent,
+  AuthModalType,
   AuthService,
   CreatedAccount,
 } from "../../Schema"
@@ -49,8 +49,8 @@ export const createdAccount = ({
     action: ActionType.createdAccount,
     auth_redirect: authRedirect,
     context_module: contextModule,
-    modal_copy: copy,
     intent,
+    modal_copy: copy,
     onboarding: onboarding || false,
     service,
     trigger: (triggerSeconds && "timed") || "click",

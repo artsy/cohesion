@@ -1,18 +1,18 @@
 import {
-  TappedFairGroup,
-  TappedArtistGroup,
-  TappedArtworkGroup,
-  TappedAuctionGroup,
-  TappedCollectionGroup,
-  TappedExploreGroup,
-  TappedConsign,
-} from "./Events/Tap"
-import {
   AuthImpression,
   CreatedAccount,
   ResetYourPassword,
   SuccessfullyLoggedIn,
 } from "./Events/Authentication"
+import {
+  TappedArtistGroup,
+  TappedArtworkGroup,
+  TappedAuctionGroup,
+  TappedCollectionGroup,
+  TappedConsign,
+  TappedExploreGroup,
+  TappedFairGroup,
+} from "./Events/Tap"
 
 /**
  * The top-level actions an Event describes.

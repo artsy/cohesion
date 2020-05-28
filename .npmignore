@@ -4,5 +4,5 @@ src
 .gitignore
 renovate.json
 tsconfig.json
-tslint.json
+.eslintrc.js
 .circleci
