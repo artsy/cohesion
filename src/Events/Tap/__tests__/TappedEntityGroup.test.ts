@@ -1,5 +1,5 @@
 import { ContextModule, OwnerType } from "../../../Schema"
-import { tappedEntityGroup, TappedEntityGroupArgs } from "../TappedEntityGroup"
+import { TappedEntityGroupArgs, tappedEntityGroup } from "../TappedEntityGroup"
 
 describe("tappedEntityGroup", () => {
   let args: TappedEntityGroupArgs
@@ -7,9 +7,9 @@ describe("tappedEntityGroup", () => {
     args = {
       contextModule: ContextModule.trendingArtistsRail,
       contextScreenOwnerType: OwnerType.home,
-      destinationScreenOwnerType: OwnerType.artist,
       destinationScreenOwnerId: "5359794d1a1e86c3740001f7",
       destinationScreenOwnerSlug: "andy-warhol",
+      destinationScreenOwnerType: OwnerType.artist,
       horizontalSlidePosition: 2,
       moduleHeight: "double",
       type: "thumbnail",
@@ -37,9 +37,9 @@ describe("tappedEntityGroup", () => {
     const event = tappedEntityGroup({
       ...args,
       contextModule: ContextModule.otherWorksInAuctionRail,
-      contextScreenOwnerType: OwnerType.artwork,
       contextScreenOwnerId: "5359794d1a1e86c3740001f6",
       contextScreenOwnerSlug: "andy-warhol-flower",
+      contextScreenOwnerType: OwnerType.artwork,
     })
 
     expect(event).toEqual({

@@ -1,4 +1,4 @@
-import { ContextModule, Intent, AuthModalType } from "../../../Schema"
+import { AuthModalType, ContextModule, Intent } from "../../../Schema"
 import { authImpression } from "../AuthImpression"
 
 describe("authImpression", () => {
@@ -24,8 +24,8 @@ describe("authImpression", () => {
   it("Works with all args", () => {
     const args = authImpression({
       contextModule: ContextModule.header,
-      intent: Intent.followArtist,
       copy: "Sign up to follow artists",
+      intent: Intent.followArtist,
       onboarding: true,
       triggerSeconds: 4,
       type: AuthModalType.signup,

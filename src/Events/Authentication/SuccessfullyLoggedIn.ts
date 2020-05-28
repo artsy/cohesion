@@ -1,8 +1,8 @@
 import {
   ActionType,
-  AuthModalType,
   AuthContextModule,
   AuthIntent,
+  AuthModalType,
   AuthService,
   SuccessfullyLoggedIn,
 } from "../../Schema"
@@ -46,8 +46,8 @@ export const successfullyLoggedIn = ({
     action: ActionType.successfullyLoggedIn,
     auth_redirect: authRedirect,
     context_module: contextModule,
-    modal_copy: copy,
     intent,
+    modal_copy: copy,
     service,
     trigger: (triggerSeconds && "timed") || "click",
     trigger_seconds: triggerSeconds,

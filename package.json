@@ -18,6 +18,7 @@
     "compile": "babel src --out-dir dist --extensions '.ts' --ignore src/**/__tests__",
     "docs": "rm -rf doc && yarn typedoc",
     "emit-types": "tsc --declaration --emitDeclarationOnly --listEmittedFiles --outDir dist",
+    "lint": "eslint . --ext .ts --fix",
     "pre-publish": "yarn clean && yarn compile && yarn emit-types",
     "test": "jest",
     "type-check": "tsc --noEmit --pretty",
@@ -63,7 +64,7 @@
   },
   "lint-staged": {
     "*.@(ts)": [
-      "yarn eslint . --ext .ts --fix",
+      "yarn lint",
       "yarn run prettier --write 'src/**/*.ts'"
     ]
   },
