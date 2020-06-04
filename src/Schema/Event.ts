@@ -13,6 +13,13 @@ import {
   TappedExploreGroup,
   TappedFairGroup,
 } from "./Events/Tap"
+import {
+  ClickedArtistGroup,
+  ClickedArtworkGroup,
+  ClickedAuctionGroup,
+  ClickedCollectionGroup,
+  ClickedFairGroup,
+} from "./Events/Click"
 
 /**
  * The top-level actions an Event describes.
@@ -24,6 +31,26 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link ClickedArtistGroup}
+   */
+  clickedArtistGroup = "clickedArtistGroup",
+  /**
+   * Corresponds to {@link ClickedArtworkGroup}
+   */
+  clickedArtworkGroup = "clickedArtworkGroup",
+  /**
+   * Corresponds to {@link ClickedAuctionGroup}
+   */
+  clickedAuctionGroup = "clickedAuctionGroup",
+  /**
+   * Corresponds to {@link ClickedCollectionGroup}
+   */
+  clickedCollectionGroup = "clickedCollectionGroup",
+  /**
+   * Corresponds to {@link ClickedFairGroup}
+   */
+  clickedFairGroup = "clickedFairGroup",
   /**
    * Corresponds to {@link CreatedAccount}
    */
@@ -74,6 +101,11 @@ export enum ActionType {
 export type Event =
   | AuthImpression
   | CreatedAccount
+  | ClickedArtistGroup
+  | ClickedArtworkGroup
+  | ClickedAuctionGroup
+  | ClickedCollectionGroup
+  | ClickedFairGroup
   | ResetYourPassword
   | SuccessfullyLoggedIn
   | TappedArtistGroup
