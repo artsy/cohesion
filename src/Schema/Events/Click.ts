@@ -1,6 +1,7 @@
 import { ActionType } from "../Event"
 import { ContextModule } from "../ContextModule"
 import { PageOwnerType } from "../OwnerType"
+import { Type } from "../Type"
 
 /**
  * Schemas describing Click events
@@ -38,7 +39,7 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of artworks on iOS
+ * A user clicks a grouping of artworks on web
  *
  * This schema describes events sent to Segment from [[clickedArtworkGroup]]
  *
@@ -61,7 +62,7 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of auctions on iOS
+ * A user clicks a grouping of auctions on web
  *
  * This schema describes events sent to Segment from [[clickedAuctionGroup]]
  *
@@ -84,7 +85,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of collections on iOS
+ * A user clicks a grouping of collections on web
  *
  * This schema describes events sent to Segment from [[clickedCollectionGroup]]
  *
@@ -106,7 +107,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of fairs on iOS
+ * A user clicks a grouping of fairs on web
  *
  * This schema describes events sent to Segment from [[clickedFairGroup]]
  *
@@ -130,7 +131,7 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 }
 
 /**
- * Shared interface for clicked group actions in iOS
+ * Shared interface for clicked group actions on web
  */
 export interface ClickedEntityGroup {
   action:
@@ -147,7 +148,7 @@ export interface ClickedEntityGroup {
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
-  type: EntityModuleType
+  type: Type
 }
 
 export type EntityModuleType = "thumbnail" | "viewAll"
