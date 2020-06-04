@@ -1,6 +1,7 @@
 import { ActionType } from "../Event"
 import { ContextModule } from "../ContextModule"
 import { ScreenOwnerType } from "../OwnerType"
+import { EntityModuleType } from "../EntityModuleType"
 
 /**
  * Schemas describing Tap events
@@ -178,7 +179,6 @@ export interface TappedEntityGroup {
 }
 
 export type EntityModuleHeight = "single" | "double"
-export type EntityModuleType = "thumbnail" | "header" | "stub"
 
 /**
  * A user taps a Consign button in iOS

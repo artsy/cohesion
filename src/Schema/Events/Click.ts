@@ -1,7 +1,7 @@
 import { ActionType } from "../Event"
 import { ContextModule } from "../ContextModule"
 import { PageOwnerType } from "../OwnerType"
-import { Type } from "../Type"
+import { EntityModuleType } from "../EntityModuleType"
 
 /**
  * Schemas describing Click events
@@ -148,7 +148,5 @@ export interface ClickedEntityGroup {
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
-  type: Type
+  type: EntityModuleType
 }
-
-export type EntityModuleType = "thumbnail" | "viewAll"
