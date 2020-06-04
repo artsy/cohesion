@@ -1,9 +1,9 @@
 import {
-  ContextModule,
   ActionType,
+  ContextModule,
+  OwnerType,
   ScreenOwnerType,
   TappedConsign,
-  OwnerType,
 } from "../../Schema"
 
 export interface TappedConsignArgs {
