@@ -25,10 +25,10 @@ import { EntityModuleType } from "../EntityModuleType"
  *  {
  *    action: "clickedArtistGroup",
  *    context_module: "trendingArtistsRail",
- *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "artist",
- *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
- *    destination_screen_owner_slug: "anthony-hunter",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "artist",
+ *    destination_page_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_page_owner_slug: "anthony-hunter",
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
@@ -48,10 +48,10 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  *  {
  *    action: "clickedArtworkGroup",
  *    context_module: "newWorksByArtistsYouFollowRail",
- *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: Artwork,
- *    destination_screen_owner_id: "5e9a7a238483bf000e2c4c5e",
- *    destination_screen_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "artwork",
+ *    destination_page_owner_id: "5e9a7a238483bf000e2c4c5e",
+ *    destination_page_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
@@ -71,10 +71,10 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  *  {
  *    action: "clickedAuctionGroup",
  *    context_module: "auctionsRail",
- *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "sale",
- *    destination_screen_owner_id: "5e95b37a2fdcb20012a0e082",
- *    destination_screen_owner_slug: "forum-auctions-colour-theory-4",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "sale",
+ *    destination_page_owner_id: "5e95b37a2fdcb20012a0e082",
+ *    destination_page_owner_slug: "forum-auctions-colour-theory-4",
  *    horizontal_slide_position: 3,
  *    type: "thumbnail"
  *  }
@@ -94,9 +94,9 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  *  {
  *    action: "clickedCollectionGroup",
  *    context_module: "collectionRail",
- *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "collection",
- *    destination_screen_owner_slug: "limited-edition-prints-trending-artists",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "collection",
+ *    destination_page_owner_slug: "limited-edition-prints-trending-artists",
  *    horizontal_slide_position: 2,
  *    type: "thumbnail"
  *  }
@@ -116,10 +116,10 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  {
  *    action: "clickedFairGroup",
  *    context_module: "fairRail",
- *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "fair",
- *    destination_screen_owner_id: "5e726bd22524980012caafb0",
- *    destination_screen_owner_slug: "arteba-special-edition",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "fair",
+ *    destination_page_owner_id: "5e726bd22524980012caafb0",
+ *    destination_page_owner_slug: "arteba-special-edition",
  *    horizontal_slide_position: 2,
  *    module_height: "double",
  *    type: "thumbnail"
@@ -142,11 +142,11 @@ export interface ClickedEntityGroup {
     | ActionType.clickedFairGroup
   context_module: ContextModule
   context_screen_owner_type: PageOwnerType
-  context_screen_owner_id?: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: PageOwnerType
-  destination_screen_owner_id?: string
-  destination_screen_owner_slug?: string
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id?: string
+  destination_page_owner_slug?: string
   horizontal_slide_position?: number
   type: EntityModuleType
 }
