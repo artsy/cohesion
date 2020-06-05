@@ -141,7 +141,7 @@ export interface ClickedEntityGroup {
     | ActionType.clickedCollectionGroup
     | ActionType.clickedFairGroup
   context_module: ContextModule
-  context_screen_owner_type: PageOwnerType
+  context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
   destination_page_owner_type: PageOwnerType
