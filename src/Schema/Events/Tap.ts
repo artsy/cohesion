@@ -1,6 +1,7 @@
 import { ActionType } from "../Event"
 import { ContextModule } from "../ContextModule"
 import { ScreenOwnerType } from "../OwnerType"
+import { EntityModuleType } from "../EntityModuleType"
 
 /**
  * Schemas describing Tap events
@@ -49,7 +50,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
  *    action: "tappedArtworkGroup",
  *    context_module: "newWorksByArtistsYouFollowRail",
  *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: Artwork,
+ *    destination_screen_owner_type: "artwork",
  *    destination_screen_owner_id: "5e9a7a238483bf000e2c4c5e",
  *    destination_screen_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
@@ -178,7 +179,6 @@ export interface TappedEntityGroup {
 }
 
 export type EntityModuleHeight = "single" | "double"
-export type EntityModuleType = "thumbnail" | "header" | "stub"
 
 /**
  * A user taps a Consign button in iOS
