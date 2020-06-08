@@ -62,5 +62,8 @@ export type PageOwnerType =
   | OwnerType.collection
   | OwnerType.consign
   | OwnerType.fair
+  | OwnerType.gene
   | OwnerType.home
+  | OwnerType.sale
   | OwnerType.search
+  | OwnerType.worksForYou
