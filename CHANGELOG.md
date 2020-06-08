@@ -1,3 +1,23 @@
+# v1.4.0 (Fri Jun 05 2020)
+
+#### 🚀  Enhancement
+
+- Adds ClickedEntityGroup events [#55](https://github.com/artsy/cohesion/pull/55) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- Update dep typescript from 3.9.3 to v3.9.5 [#54](https://github.com/artsy/cohesion/pull/54) ([@renovate-bot](https://github.com/renovate-bot))
+- Pin dependencies [#53](https://github.com/artsy/cohesion/pull/53) ([@renovate-bot](https://github.com/renovate-bot))
+- Migrate from tslint to eslint [#52](https://github.com/artsy/cohesion/pull/52) ([@eessex](https://github.com/eessex))
+
+#### Authors: 3
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Eve Essex ([@eessex](https://github.com/eessex))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.3.0 (Fri May 22 2020)
 
 #### 🚀  Enhancement
