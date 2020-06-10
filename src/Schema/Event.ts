@@ -13,6 +13,7 @@ import {
   TappedExploreGroup,
   TappedFairGroup,
 } from "./Events/Tap"
+import { TimeOnPage } from "./Events/System"
 import {
   ClickedArtistGroup,
   ClickedArtworkGroup,
@@ -91,6 +92,10 @@ export enum ActionType {
    * Corresponds to {@link TappedConsign}
    */
   tappedConsign = "tappedConsign",
+  /**
+   * Corresponds to {@link TimeOnPage}
+   */
+  timeOnPage = "timeOnPage",
 }
 
 /**
@@ -115,3 +120,4 @@ export type Event =
   | TappedExploreGroup
   | TappedFairGroup
   | TappedConsign
+  | TimeOnPage
