@@ -1,3 +1,15 @@
+# v1.5.0 (Wed Jun 10 2020)
+
+#### 🚀  Enhancement
+
+- Add clickedEntityGroup helper [#57](https://github.com/artsy/cohesion/pull/57) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.4.0 (Fri Jun 05 2020)
 
 #### 🚀  Enhancement
