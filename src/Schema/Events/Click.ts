@@ -39,6 +39,32 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
+ * A user clicks on an artwork in an artwork grid.
+ * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event.
+ * Separating it out will make it easier for analysts to access.
+ *
+ * This schema describes events sent to Segment from [[clickedArtworkGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArtworkGrid",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_page_owner_type: "artwork",
+ *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
+ *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedArtworkGrid extends ClickedEntityGroup {
+  action: ActionType.clickedArtworkGrid
+}
+
+/**
  * A user clicks a grouping of artworks on web
  *
  * This schema describes events sent to Segment from [[clickedArtworkGroup]]
@@ -136,6 +162,7 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 export interface ClickedEntityGroup {
   action:
     | ActionType.clickedArtistGroup
+    | ActionType.clickedArtworkGrid
     | ActionType.clickedArtworkGroup
     | ActionType.clickedAuctionGroup
     | ActionType.clickedCollectionGroup
