@@ -1,3 +1,15 @@
+# v1.6.0 (Wed Jun 10 2020)
+
+#### 🚀  Enhancement
+
+- Adds timeOnPage [#56](https://github.com/artsy/cohesion/pull/56) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.5.0 (Wed Jun 10 2020)
 
 #### 🚀  Enhancement
