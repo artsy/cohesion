@@ -39,17 +39,18 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks on an artwork in an artwork grid.
+ * A user clicks on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
+ * Currently, this event only fires on our new artwork grids on the following pages: Collect, Collection, Artist works-for-sale, and Search Results.
  * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event.
  * Separating it out will make it easier for analysts to access.
  *
- * This schema describes events sent to Segment from [[clickedArtworkGrid]]
+ * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedArtworkGrid",
- *    context_module: "artworkGrid",
+ *    action: "clickedMainArtworkGrid",
+ *    context_module: "mainArtworkGrid",
  *    context_page_owner_type: "artist",
  *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
  *    context_page_owner_slug: "damien-hirst",
@@ -65,7 +66,8 @@ export interface ClickedArtworkGrid extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of artworks on web
+ * A user clicks a grouping of artworks on web. This includes all artwork groupings (i.e. artwork rails), except the main artwork grid on our core merchandising surfaces.
+ * For our main artwork grids, we use the event [[clickedMainArtworkGrid]].
  *
  * This schema describes events sent to Segment from [[clickedArtworkGroup]]
  *
