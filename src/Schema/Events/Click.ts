@@ -61,8 +61,8 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
-export interface ClickedArtworkGrid extends ClickedEntityGroup {
-  action: ActionType.clickedArtworkGrid
+export interface ClickedMainArtworkGrid extends ClickedEntityGroup {
+  action: ActionType.clickedMainArtworkGrid
 }
 
 /**
@@ -164,7 +164,7 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 export interface ClickedEntityGroup {
   action:
     | ActionType.clickedArtistGroup
-    | ActionType.clickedArtworkGrid
+    | ActionType.clickedMainArtworkGrid
     | ActionType.clickedArtworkGroup
     | ActionType.clickedAuctionGroup
     | ActionType.clickedCollectionGroup

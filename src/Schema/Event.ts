@@ -54,7 +54,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedMainArtworkGrid}
    */
-  clickedArtworkGrid = "clickedMainArtworkGrid",
+  clickedMainArtworkGrid = "clickedMainArtworkGrid",
   /**
    * Corresponds to {@link CreatedAccount}
    */
