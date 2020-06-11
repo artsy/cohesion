@@ -1,3 +1,19 @@
+# v1.6.2 (Thu Jun 11 2020)
+
+#### ⚠️  Pushed to `master`
+
+- casing hotfix ([@eessex](https://github.com/eessex))
+
+#### 🏠  Internal
+
+- add timeOnPage helper test [#60](https://github.com/artsy/cohesion/pull/60) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.6.1 (Thu Jun 11 2020)
 
 #### 🐛  Bug Fix
