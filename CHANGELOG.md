@@ -1,3 +1,15 @@
+# v1.6.1 (Thu Jun 11 2020)
+
+#### 🐛  Bug Fix
+
+- Add helper for TimeOnPage event [#59](https://github.com/artsy/cohesion/pull/59) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.6.0 (Wed Jun 10 2020)
 
 #### 🚀  Enhancement
