@@ -1,5 +1,5 @@
 import { OwnerType } from "../../../Schema"
-import { timeOnPage } from "../timeOnPage"
+import { timeOnPage } from "../TimeOnPage"
 
 describe("timeOnPage", () => {
   it("Works with minimal args", () => {
