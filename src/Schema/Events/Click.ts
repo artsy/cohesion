@@ -39,33 +39,6 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
- * Currently, this event only fires on our new artwork grids on the following pages: Collect, Collection, Artist works-for-sale, and Search Results.
- * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event.
- * Separating it out will make it easier for analysts to access.
- *
- * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedMainArtworkGrid",
- *    context_module: "mainArtworkGrid",
- *    context_page_owner_type: "artist",
- *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
- *    context_page_owner_slug: "damien-hirst",
- *    destination_page_owner_type: "artwork",
- *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
- *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
- *    type: "thumbnail"
- *  }
- * ```
- */
-export interface ClickedMainArtworkGrid extends ClickedEntityGroup {
-  action: ActionType.clickedMainArtworkGrid
-}
-
-/**
  * A user clicks a grouping of artworks on web. This includes all artwork groupings (i.e. artwork rails), except the main artwork grid on our core merchandising surfaces.
  * For our main artwork grids, we use the event [[clickedMainArtworkGrid]].
  *
@@ -178,4 +151,38 @@ export interface ClickedEntityGroup {
   destination_page_owner_slug?: string
   horizontal_slide_position?: number
   type: EntityModuleType
+}
+
+/**
+ * A user clicks on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
+ * Currently, this event only fires on our new artwork grids on the following pages: Collect, Collection, Artist works-for-sale, and Search Results.
+ * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
+ *
+ * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedMainArtworkGrid",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_page_owner_type: "artwork",
+ *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
+ *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedMainArtworkGrid {
+  action: ActionType.clickedMainArtworkGrid
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
 }
