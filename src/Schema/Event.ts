@@ -53,6 +53,10 @@ export enum ActionType {
    */
   clickedFairGroup = "clickedFairGroup",
   /**
+   * Corresponds to {@link ClickedMainArtworkGrid}
+   */
+  clickedMainArtworkGrid = "clickedMainArtworkGrid",
+  /**
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
