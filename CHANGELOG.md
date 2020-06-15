@@ -1,3 +1,15 @@
+# v1.8.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- Refactors clickedMainArtworkGrid [#61](https://github.com/artsy/cohesion/pull/61) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.7.0 (Mon Jun 15 2020)
 
 #### 🚀  Enhancement
