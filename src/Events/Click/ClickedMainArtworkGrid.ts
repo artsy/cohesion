@@ -22,7 +22,7 @@ export interface ClickedMainArtworkGridArgs {
  * clickedMainArtworkGrid({
  *   contextPageOwnerType: OwnerType.artist,
  *   contextPageOwnerId: "5359794d2a1e86c3741001f8",
- *   contextPageOwnerSlug: "andy-warholl",
+ *   contextPageOwnerSlug: "andy-warhol",
  *   destinationPageOwnerId: "5359794d1a1e86c3740001f7",
  *   destinationPageOwnerSlug: "andy-warhol-skull",
  * })
