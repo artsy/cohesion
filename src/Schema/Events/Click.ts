@@ -175,7 +175,7 @@ export interface ClickedEntityGroup {
  *  }
  * ```
  */
-export interface ClickedMainArtworkGrid extends ClickedEntityGroup {
+export interface ClickedMainArtworkGrid {
   action: ActionType.clickedMainArtworkGrid
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
