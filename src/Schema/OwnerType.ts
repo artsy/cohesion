@@ -10,6 +10,7 @@ export enum OwnerType {
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
+  collect = "collect",
   collection = "collection",
   consignmentSubmission = "consignmentSubmission",
   consign = "consign",
@@ -59,6 +60,7 @@ export type PageOwnerType =
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.auctions
+  | OwnerType.collect
   | OwnerType.collection
   | OwnerType.consign
   | OwnerType.fair
