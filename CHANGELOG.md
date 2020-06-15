@@ -1,3 +1,15 @@
+# v1.10.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- @eessex => [OwnerType] Add collect page [#63](https://github.com/artsy/cohesion/pull/63) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v1.9.0 (Mon Jun 15 2020)
 
 #### 🚀  Enhancement
