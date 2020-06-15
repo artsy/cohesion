@@ -1,3 +1,15 @@
+# v1.7.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- Adds clickedMainArtworkGrid [#58](https://github.com/artsy/cohesion/pull/58) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.6.2 (Thu Jun 11 2020)
 
 #### ⚠️  Pushed to `master`
