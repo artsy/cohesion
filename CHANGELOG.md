@@ -1,3 +1,15 @@
+# v1.9.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- Clicked main artwork grid helper [#62](https://github.com/artsy/cohesion/pull/62) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.8.0 (Mon Jun 15 2020)
 
 #### 🚀  Enhancement
