@@ -1,7 +1,7 @@
 import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
-import { PageOwnerType } from "../Values/OwnerType"
 import { EntityModuleType } from "../Values/EntityModuleType"
+import { PageOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing Click events
@@ -18,7 +18,7 @@ import { EntityModuleType } from "../Values/EntityModuleType"
 /**
  * A user clicks a grouping of artists on web
  *
- *  This schema describes events sent to Segment from [[clickedArtistGroup]]
+ *  This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
  *  @example
  *  ```
@@ -42,7 +42,7 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  * A user clicks a grouping of artworks on web. This includes all artwork groupings (i.e. artwork rails), except the main artwork grid on our core merchandising surfaces.
  * For our main artwork grids, we use the event [[clickedMainArtworkGrid]].
  *
- * This schema describes events sent to Segment from [[clickedArtworkGroup]]
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
  *  @example
  *  ```
@@ -65,7 +65,7 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of auctions on web
  *
- * This schema describes events sent to Segment from [[clickedAuctionGroup]]
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
  *  @example
  *  ```
@@ -88,7 +88,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of collections on web
  *
- * This schema describes events sent to Segment from [[clickedCollectionGroup]]
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
  *  @example
  *  ```
@@ -110,7 +110,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of fairs on web
  *
- * This schema describes events sent to Segment from [[clickedFairGroup]]
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
  *  @example
  *  ```
