@@ -1,7 +1,7 @@
-import { ActionType } from "../Event"
-import { ContextModule } from "../ContextModule"
-import { PageOwnerType } from "../OwnerType"
-import { EntityModuleType } from "../EntityModuleType"
+import { ActionType } from "."
+import { ContextModule } from "../Values/ContextModule"
+import { PageOwnerType } from "../Values/OwnerType"
+import { EntityModuleType } from "../Values/EntityModuleType"
 
 /**
  * Schemas describing Click events

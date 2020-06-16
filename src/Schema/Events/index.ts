@@ -3,7 +3,15 @@ import {
   CreatedAccount,
   ResetYourPassword,
   SuccessfullyLoggedIn,
-} from "./Events/Authentication"
+} from "./Authentication"
+import {
+  ClickedArtistGroup,
+  ClickedArtworkGroup,
+  ClickedAuctionGroup,
+  ClickedCollectionGroup,
+  ClickedFairGroup,
+  ClickedMainArtworkGrid,
+} from "./Click"
 import {
   TappedArtistGroup,
   TappedArtworkGroup,
@@ -12,15 +20,33 @@ import {
   TappedConsign,
   TappedExploreGroup,
   TappedFairGroup,
-} from "./Events/Tap"
-import { TimeOnPage } from "./Events/System"
-import {
-  ClickedArtistGroup,
-  ClickedArtworkGroup,
-  ClickedAuctionGroup,
-  ClickedCollectionGroup,
-  ClickedFairGroup,
-} from "./Events/Click"
+} from "./Tap"
+import { TimeOnPage } from "./System"
+
+/**
+ * Master list of valid schemas for analytics actions
+ *
+ * Each event describes one ActionType
+ */
+export type Event =
+  | AuthImpression
+  | CreatedAccount
+  | ClickedArtistGroup
+  | ClickedArtworkGroup
+  | ClickedAuctionGroup
+  | ClickedCollectionGroup
+  | ClickedFairGroup
+  | ClickedMainArtworkGrid
+  | ResetYourPassword
+  | SuccessfullyLoggedIn
+  | TappedArtistGroup
+  | TappedArtworkGroup
+  | TappedAuctionGroup
+  | TappedCollectionGroup
+  | TappedExploreGroup
+  | TappedFairGroup
+  | TappedConsign
+  | TimeOnPage
 
 /**
  * The top-level actions an Event describes.
@@ -101,27 +127,3 @@ export enum ActionType {
    */
   timeOnPage = "timeOnPage",
 }
-
-/**
- * Master list of valid schemas for analytics actions
- *
- * Each event describes one ActionType
- */
-export type Event =
-  | AuthImpression
-  | CreatedAccount
-  | ClickedArtistGroup
-  | ClickedArtworkGroup
-  | ClickedAuctionGroup
-  | ClickedCollectionGroup
-  | ClickedFairGroup
-  | ResetYourPassword
-  | SuccessfullyLoggedIn
-  | TappedArtistGroup
-  | TappedArtworkGroup
-  | TappedAuctionGroup
-  | TappedCollectionGroup
-  | TappedExploreGroup
-  | TappedFairGroup
-  | TappedConsign
-  | TimeOnPage

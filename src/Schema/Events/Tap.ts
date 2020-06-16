@@ -1,7 +1,7 @@
-import { ActionType } from "../Event"
-import { ContextModule } from "../ContextModule"
-import { ScreenOwnerType } from "../OwnerType"
-import { EntityModuleType } from "../EntityModuleType"
+import { ActionType } from "."
+import { ContextModule } from "../Values/ContextModule"
+import { EntityModuleType } from "../Values/EntityModuleType"
+import { ScreenOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing Tap events
