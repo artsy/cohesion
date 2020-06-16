@@ -1,3 +1,15 @@
+# v1.11.0 (Tue Jun 16 2020)
+
+#### 🚀  Enhancement
+
+- Cleanup file structure [#64](https://github.com/artsy/cohesion/pull/64) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.10.0 (Mon Jun 15 2020)
 
 #### 🚀  Enhancement
