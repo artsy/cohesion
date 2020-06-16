@@ -1,5 +1,6 @@
 /**
  * All owner types available for iOS (screen) and web (page)
+ *
  * @packageDocumentation
  */
 export enum OwnerType {

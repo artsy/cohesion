@@ -18,7 +18,7 @@ import { ScreenOwnerType } from "../Values/OwnerType"
 /**
  * A user taps a grouping of artists on iOS
  *
- *  This schema describes events sent to Segment from [[tappedArtistGroup]]
+ *  This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -42,7 +42,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of artworks on iOS
  *
- * This schema describes events sent to Segment from [[tappedArtworkGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -66,7 +66,7 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of auctions on iOS
  *
- * This schema describes events sent to Segment from [[tappedAuctionGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -90,7 +90,7 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of collections on iOS
  *
- * This schema describes events sent to Segment from [[tappedCollectionGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -113,7 +113,7 @@ export interface TappedCollectionGroup extends TappedEntityGroup {
 /**
  * A user taps a grouped explore module (City Guide, for example)
  *
- * This schema describes events sent to Segment from [[tappedExploreGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -134,7 +134,7 @@ export interface TappedExploreGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of fairs on iOS
  *
- * This schema describes events sent to Segment from [[tappedFairGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -157,6 +157,8 @@ export interface TappedFairGroup extends TappedEntityGroup {
 
 /**
  * Shared interface for tapped group actions in iOS
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  */
 export interface TappedEntityGroup {
   action:
