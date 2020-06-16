@@ -1,5 +1,5 @@
-import { ActionType } from "../Event"
-import { PageOwnerType } from "../OwnerType"
+import { ActionType } from "."
+import { PageOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing system events

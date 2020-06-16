@@ -12,9 +12,9 @@ export interface TimeOnPageArgs {
  * @example
  *  ```
  *  timeOnPage({
- *    contextPageOwnerId: OwnerType.artist,
+ *    contextPageOwnerId: "4d8b92b34eb68a1b2c0003f4",
  *    contextPageOwnerSlug: "any-warhol",
- *    contextPageOwnerType: "4d8b92b34eb68a1b2c0003f4",
+ *    contextPageOwnerType: OwnerType.artist,
  *  })
  * ```
  */
