@@ -12,6 +12,10 @@ import {
   ResetYourPassword,
   SuccessfullyLoggedIn,
 } from "./Events/Authentication"
+import {
+  FocusedOnConversationMessageInput,
+  SentConversationMessage,
+} from "./Events/Conversations"
 
 /**
  * The top-level actions an Event describes.
@@ -59,6 +63,14 @@ export enum ActionType {
    * Corresponds to {@link TappedFairGroup}
    */
   tappedFairGroup = "tappedFairGroup",
+  /**
+   * Corresponds to {@link FocusedOnConversationMessageInput}
+   */
+  focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
+  /**
+   * Corresponds to {@link SentConversationMessage}
+   */
+  sentConversationMessage = "sentConversationMessage",
 }
 
 /**
@@ -77,3 +89,5 @@ export type Event =
   | TappedCollectionGroup
   | TappedExploreGroup
   | TappedFairGroup
+  | FocusedOnConversationMessageInput
+  | SentConversationMessage
