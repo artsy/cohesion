@@ -123,6 +123,10 @@ export enum ActionType {
    */
   tappedConsign = "tappedConsign",
   /**
+   * Corresponds to {@link TappedPromoSpace}
+   */
+  tappedPromoSpace = "tappedPromoSpace",
+  /**
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",

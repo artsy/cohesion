@@ -206,3 +206,32 @@ export interface TappedConsign {
   /** The text of the tapped button */
   subject: string
 }
+
+/**
+ * A user taps the promo space on the iOS home screen
+ *
+ * This schema describes events sent to Segment from [[tappedPromoSpace]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedPromoSpace",
+ *    context_module: "promoSpace",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_type: "collection",
+ *    destination_screen_owner_slug: artists-impacted-museum-shows,
+ *    subject: "Explore the collection",
+ *    utm_campaign: "art-keeps-going"
+ *  }
+ * ```
+ */
+export interface TappedPromoSpace {
+  action: ActionType.tappedPromoSpace
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  subject: string
+  utm_campaign: string
+}
