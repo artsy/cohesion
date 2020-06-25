@@ -1,5 +1,6 @@
 /**
  * Master list of context modules available in web and iOS
+ *
  * A component where an action is triggered
  * @packageDocumentation
  */
@@ -7,11 +8,13 @@ export enum ContextModule {
   aboutTheWork = "aboutTheWork",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
+  artistHighDemandGrid = "artistHighDemandGrid",
   artistRecentlySold = "artistRecentlySold",
   artistsTab = "artistsTab",
   artistsToFollowRail = "artistsToFollowRail",
   artworkGrid = "artworkGrid",
   artworkImage = "artworkImage",
+  artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
   artworkSidebar = "artworkSidebar",
   auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
@@ -56,11 +59,14 @@ export enum ContextModule {
   relatedArtistsRail = "relatedArtistsRail",
   relatedWorksRail = "relatedWorksRail",
   saveWorksCTA = "saveWorksCTA",
+  sellFooter = "sellFooter",
+  sellHeader = "sellHeader",
   showHeader = "showHeader",
   showInfo = "showInfo",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
   tagHeader = "tagHeader",
+  topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksForSaleRail = "worksForSaleRail",

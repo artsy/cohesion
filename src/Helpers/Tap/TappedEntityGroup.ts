@@ -1,16 +1,16 @@
 import {
+  ActionType,
   ContextModule,
-  EntityModuleType,
   EntityModuleHeight,
+  EntityModuleType,
+  OwnerType,
+  ScreenOwnerType,
   TappedArtistGroup,
   TappedArtworkGroup,
-  ActionType,
   TappedAuctionGroup,
   TappedCollectionGroup,
   TappedExploreGroup,
   TappedFairGroup,
-  OwnerType,
-  ScreenOwnerType,
 } from "../../Schema"
 
 export type TappedEntityDestinationType =
@@ -34,7 +34,7 @@ export interface TappedEntityGroupArgs {
   destinationScreenOwnerId?: string
   destinationScreenOwnerSlug?: string
   horizontalSlidePosition?: number
-  moduleHeight: EntityModuleHeight
+  moduleHeight?: EntityModuleHeight
   type: EntityModuleType
 }
 
@@ -100,15 +100,16 @@ export const tappedEntityGroup = ({
       action = ActionType.tappedAuctionGroup
       break
   }
+
   return {
     action,
     context_module: contextModule,
-    context_screen_owner_type: contextScreenOwnerType,
     context_screen_owner_id: contextScreenOwnerId,
     context_screen_owner_slug: contextScreenOwnerSlug,
-    destination_screen_owner_type: destinationScreenOwnerType,
+    context_screen_owner_type: contextScreenOwnerType,
     destination_screen_owner_id: destinationScreenOwnerId,
     destination_screen_owner_slug: destinationScreenOwnerSlug,
+    destination_screen_owner_type: destinationScreenOwnerType,
     horizontal_slide_position: horizontalSlidePosition,
     module_height: moduleHeight,
     type,

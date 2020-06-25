@@ -1,3 +1,219 @@
+# v1.12.0 (Tue Jun 16 2020)
+
+#### 🚀  Enhancement
+
+- Cleanup docs links [#65](https://github.com/artsy/cohesion/pull/65) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.11.0 (Tue Jun 16 2020)
+
+#### 🚀  Enhancement
+
+- Cleanup file structure [#64](https://github.com/artsy/cohesion/pull/64) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.10.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- @eessex => [OwnerType] Add collect page [#63](https://github.com/artsy/cohesion/pull/63) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
+# v1.9.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- Clicked main artwork grid helper [#62](https://github.com/artsy/cohesion/pull/62) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.8.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- Refactors clickedMainArtworkGrid [#61](https://github.com/artsy/cohesion/pull/61) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.7.0 (Mon Jun 15 2020)
+
+#### 🚀  Enhancement
+
+- Adds clickedMainArtworkGrid [#58](https://github.com/artsy/cohesion/pull/58) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.6.2 (Thu Jun 11 2020)
+
+#### ⚠️  Pushed to `master`
+
+- casing hotfix ([@eessex](https://github.com/eessex))
+
+#### 🏠  Internal
+
+- add timeOnPage helper test [#60](https://github.com/artsy/cohesion/pull/60) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.6.1 (Thu Jun 11 2020)
+
+#### 🐛  Bug Fix
+
+- Add helper for TimeOnPage event [#59](https://github.com/artsy/cohesion/pull/59) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.6.0 (Wed Jun 10 2020)
+
+#### 🚀  Enhancement
+
+- Adds timeOnPage [#56](https://github.com/artsy/cohesion/pull/56) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.5.0 (Wed Jun 10 2020)
+
+#### 🚀  Enhancement
+
+- Add clickedEntityGroup helper [#57](https://github.com/artsy/cohesion/pull/57) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.4.0 (Fri Jun 05 2020)
+
+#### 🚀  Enhancement
+
+- Adds ClickedEntityGroup events [#55](https://github.com/artsy/cohesion/pull/55) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- Update dep typescript from 3.9.3 to v3.9.5 [#54](https://github.com/artsy/cohesion/pull/54) ([@renovate-bot](https://github.com/renovate-bot))
+- Pin dependencies [#53](https://github.com/artsy/cohesion/pull/53) ([@renovate-bot](https://github.com/renovate-bot))
+- Migrate from tslint to eslint [#52](https://github.com/artsy/cohesion/pull/52) ([@eessex](https://github.com/eessex))
+
+#### Authors: 3
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Eve Essex ([@eessex](https://github.com/eessex))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v1.3.0 (Fri May 22 2020)
+
+#### 🚀  Enhancement
+
+- Fix broken build [#51](https://github.com/artsy/cohesion/pull/51) ([@jonallured](https://github.com/jonallured))
+- Don't require module height for entity group [#50](https://github.com/artsy/cohesion/pull/50) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
+# v1.2.0 (Fri May 22 2020)
+
+#### 🚀  Enhancement
+
+- Put NPM badge back [#49](https://github.com/artsy/cohesion/pull/49) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
+# v1.1.0 (Thu May 21 2020)
+
+#### 🚀  Enhancement
+
+- Manage links in README [#47](https://github.com/artsy/cohesion/pull/47) ([@jonallured](https://github.com/jonallured))
+- Expose consign helpers [#48](https://github.com/artsy/cohesion/pull/48) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
+# v1.0.5 (Thu May 21 2020)
+
+#### 🐛  Bug Fix
+
+- Add tappedConsign helper [#46](https://github.com/artsy/cohesion/pull/46) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.0.4 (Wed May 20 2020)
+
+#### 🐛  Bug Fix
+
+- Sell tab tracking in iOS [#39](https://github.com/artsy/cohesion/pull/39) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- Update dep typescript from 3.9.2 to v3.9.3 [#45](https://github.com/artsy/cohesion/pull/45) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep tslint from 6.1.1 to v6.1.2 [#41](https://github.com/artsy/cohesion/pull/41) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep typedoc from 0.17.4 to v0.17.7 [#42](https://github.com/artsy/cohesion/pull/42) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep babel-jest from 25.4.0 to v26 [#43](https://github.com/artsy/cohesion/pull/43) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dep jest from 25.4.0 to v26 [#44](https://github.com/artsy/cohesion/pull/44) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@louislecluse](https://github.com/louislecluse)
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.3 (Wed May 13 2020)
 
 #### 🐛  Bug Fix

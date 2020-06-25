@@ -1,6 +1,7 @@
-import { ActionType } from "../Event"
-import { ContextModule } from "../ContextModule"
-import { ScreenOwnerType } from "../OwnerType"
+import { ActionType } from "."
+import { ContextModule } from "../Values/ContextModule"
+import { EntityModuleType } from "../Values/EntityModuleType"
+import { ScreenOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing Tap events
@@ -17,7 +18,7 @@ import { ScreenOwnerType } from "../OwnerType"
 /**
  * A user taps a grouping of artists on iOS
  *
- *  This schema describes events sent to Segment from [[tappedArtistGroup]]
+ *  This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -41,7 +42,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of artworks on iOS
  *
- * This schema describes events sent to Segment from [[tappedArtworkGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -49,7 +50,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
  *    action: "tappedArtworkGroup",
  *    context_module: "newWorksByArtistsYouFollowRail",
  *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: Artwork,
+ *    destination_screen_owner_type: "artwork",
  *    destination_screen_owner_id: "5e9a7a238483bf000e2c4c5e",
  *    destination_screen_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
@@ -65,7 +66,7 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of auctions on iOS
  *
- * This schema describes events sent to Segment from [[tappedAuctionGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -89,7 +90,7 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of collections on iOS
  *
- * This schema describes events sent to Segment from [[tappedCollectionGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -112,7 +113,7 @@ export interface TappedCollectionGroup extends TappedEntityGroup {
 /**
  * A user taps a grouped explore module (City Guide, for example)
  *
- * This schema describes events sent to Segment from [[tappedExploreGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -133,7 +134,7 @@ export interface TappedExploreGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of fairs on iOS
  *
- * This schema describes events sent to Segment from [[tappedFairGroup]]
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
@@ -156,6 +157,8 @@ export interface TappedFairGroup extends TappedEntityGroup {
 
 /**
  * Shared interface for tapped group actions in iOS
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
  */
 export interface TappedEntityGroup {
   action:
@@ -173,9 +176,33 @@ export interface TappedEntityGroup {
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
-  module_height: EntityModuleHeight
+  module_height?: EntityModuleHeight
   type: EntityModuleType
 }
 
 export type EntityModuleHeight = "single" | "double"
-export type EntityModuleType = "thumbnail" | "header" | "stub"
+
+/**
+ * A user taps a Consign button in iOS
+ *
+ * This schema describes events sent to Segment from [[tappedConsign]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedConsign",
+ *    context_module : "sellHeader",
+ *    context_screen_owner_type: "sell",
+ *    destination_screen_owner_type: "consignmentSubmission",
+ *    subject: "Start selling"
+ *  }
+ * ```
+ */
+export interface TappedConsign {
+  action: ActionType.tappedConsign
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: ScreenOwnerType
+  /** The text of the tapped button */
+  subject: string
+}

@@ -1,11 +1,11 @@
-import { ActionType } from "../Event"
+import { ActionType } from "."
 
 /**
  * Schemas describing Conversation events
  * @packageDocumentation
  */
 
- /**
+/**
  * A user focused on message input on a conversation
  *
  * This schema describes events sent to Segment from [[focusedOnConversationMessageInput]]
@@ -15,14 +15,14 @@ import { ActionType } from "../Event"
  *  {
  *    action: "focusedOnConversationMessageInput",
  *    impulse_conversation_id: 198
- *    
+ *
  *  }
  * ```
  */
 export interface FocusedOnConversationMessageInput {
-    action: ActionType.focusedOnConversationMessageInput
-    impulse_conversation_id?: number
-  }
+  action: ActionType.focusedOnConversationMessageInput
+  impulse_conversation_id?: number
+}
 
 /**
  * A user successfully sends a message to partner from a conversation
@@ -35,14 +35,12 @@ export interface FocusedOnConversationMessageInput {
  *    action: "sentConversationMessage",
  *    impulse_conversation_id: 198,
  *    impulse_message_id: 8765
- *    
+ *
  *  }
  * ```
  */
 export interface SentConversationMessage {
-    action: ActionType.sentConversationMessage
-    impulse_conversation_id?: number
-    impulse_message_id?: number
+  action: ActionType.sentConversationMessage
+  impulse_conversation_id?: number
+  impulse_message_id?: number
 }
-
-  

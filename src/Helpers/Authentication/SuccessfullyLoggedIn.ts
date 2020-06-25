@@ -1,46 +1,49 @@
 import {
   ActionType,
-  AuthModalType,
   AuthContextModule,
   AuthIntent,
+  AuthModalType,
   AuthService,
-  ResetYourPassword,
+  SuccessfullyLoggedIn,
 } from "../../Schema"
 
-export interface ResetYourPasswordArgs {
+export interface SuccessfullyLoggedInArgs {
   authRedirect: string
   contextModule: AuthContextModule
   copy?: string
   intent: AuthIntent
   service: AuthService
   triggerSeconds?: number
+  userId: string
 }
 
 /**
- * Action fired when a user user requests to reset their password for an existing account
+ * Action fired when a user logs into an existing account
  *
  * @example
  * ```
- * resetYourPassword({
+ * successfullyLoggedIn({
  *   authRedirect: "https://artsy.net/artist/andy-warhol",
  *   contextModule: ContextModule.popUpModal,
  *   copy: "Sign up to follow artists",
  *   intent: Intent.viewArtist,
  *   service: "email",
- *   triggerSeconds: 3
+ *   triggerSeconds: 3,
+ *   userId: "5bd8b675776bd6002c86526c"
  * })
  * ```
  */
-export const resetYourPassword = ({
+export const successfullyLoggedIn = ({
   authRedirect,
   contextModule,
   copy,
   intent,
   service,
   triggerSeconds,
-}: ResetYourPasswordArgs): ResetYourPassword => {
+  userId,
+}: SuccessfullyLoggedInArgs): SuccessfullyLoggedIn => {
   return {
-    action: ActionType.resetYourPassword,
+    action: ActionType.successfullyLoggedIn,
     auth_redirect: authRedirect,
     context_module: contextModule,
     intent,
@@ -48,6 +51,7 @@ export const resetYourPassword = ({
     service,
     trigger: (triggerSeconds && "timed") || "click",
     trigger_seconds: triggerSeconds,
-    type: AuthModalType.forgot,
+    type: AuthModalType.login,
+    user_id: userId,
   }
 }

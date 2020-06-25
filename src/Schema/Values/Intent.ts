@@ -1,5 +1,6 @@
 /**
  * Master list of intent available in web and iOS
+ *
  * Intended action by a user that triggered an event
  * @packageDocumentation
  */
