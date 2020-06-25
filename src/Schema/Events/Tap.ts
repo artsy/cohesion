@@ -219,7 +219,8 @@ export interface TappedConsign {
  *    context_module: "promoSpace",
  *    context_screen_owner_type: "home",
  *    destination_screen_owner_type: "collection",
- *    destination_screen_owner_slug: artists-impacted-museum-shows,
+ *    destination_screen_owner_slug: "artists-impacted-museum-shows",
+ *    destination_path: "/collection/artists-impacted-museum-shows"
  *    subject: "Explore the collection",
  *    utm_campaign: "art-keeps-going"
  *  }
@@ -232,6 +233,7 @@ export interface TappedPromoSpace {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
+  destination_path?: string
   subject: string
   utm_campaign: string
 }
