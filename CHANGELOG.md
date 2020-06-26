@@ -1,3 +1,20 @@
+# v1.13.0 (Fri Jun 26 2020)
+
+#### 🚀  Enhancement
+
+- GALL-2880 Add tracking for signing up due to viewing rooms [#67](https://github.com/artsy/cohesion/pull/67) ([@ansor4](https://github.com/ansor4))
+
+#### 🏠  Internal
+
+- typo [#66](https://github.com/artsy/cohesion/pull/66) ([@pvinis](https://github.com/pvinis))
+
+#### Authors: 2
+
+- Anson Wang ([@ansor4](https://github.com/ansor4))
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v1.12.0 (Tue Jun 16 2020)
 
 #### 🚀  Enhancement
