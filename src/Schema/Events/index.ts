@@ -13,6 +13,10 @@ import {
   ClickedMainArtworkGrid,
 } from "./Click"
 import {
+  FocusedOnConversationMessageInput,
+  SentConversationMessage,
+} from "./Conversations"
+import {
   TappedArtistGroup,
   TappedArtworkGroup,
   TappedAuctionGroup,
@@ -37,7 +41,9 @@ export type Event =
   | ClickedCollectionGroup
   | ClickedFairGroup
   | ClickedMainArtworkGrid
+  | FocusedOnConversationMessageInput
   | ResetYourPassword
+  | SentConversationMessage
   | SuccessfullyLoggedIn
   | TappedArtistGroup
   | TappedArtworkGroup
@@ -87,6 +93,10 @@ export enum ActionType {
    */
   createdAccount = "createdAccount",
   /**
+   * Corresponds to {@link FocusedOnConversationMessageInput}
+   */
+  focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
+  /**
    * Corresponds to {@link ResetYourPassword}
    */
   resetYourPassword = "resetYourPassword",
@@ -94,6 +104,10 @@ export enum ActionType {
    * Corresponds to {@link SuccessfullyLoggedIn}
    */
   successfullyLoggedIn = "successfullyLoggedIn",
+  /**
+   * Corresponds to {@link SentConversationMessage}
+   */
+  sentConversationMessage = "sentConversationMessage",
   /**
    * Corresponds to {@link TappedArtistGroup}
    */

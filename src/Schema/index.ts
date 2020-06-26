@@ -1,5 +1,6 @@
 export * from "./Events"
 export * from "./Events/Authentication"
+export * from "./Events/Conversations"
 export * from "./Events/Click"
 export * from "./Events/System"
 export * from "./Events/Tap"
