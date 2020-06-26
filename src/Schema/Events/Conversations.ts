@@ -21,7 +21,7 @@ import { ActionType } from "."
  */
 export interface FocusedOnConversationMessageInput {
   action: ActionType.focusedOnConversationMessageInput
-  impulse_conversation_id?: number
+  impulse_conversation_id: string
 }
 
 /**
@@ -41,6 +41,6 @@ export interface FocusedOnConversationMessageInput {
  */
 export interface SentConversationMessage {
   action: ActionType.sentConversationMessage
-  impulse_conversation_id?: number
-  impulse_message_id?: number
+  impulse_conversation_id: string
+  impulse_message_id: string
 }
