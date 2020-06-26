@@ -1,3 +1,15 @@
+# v1.14.0 (Fri Jun 26 2020)
+
+#### 🚀  Enhancement
+
+- Events for conversations [#68](https://github.com/artsy/cohesion/pull/68) ([@anipetrov](https://github.com/anipetrov))
+
+#### Authors: 1
+
+- Ani Petrov ([@anipetrov](https://github.com/anipetrov))
+
+---
+
 # v1.13.0 (Fri Jun 26 2020)
 
 #### 🚀  Enhancement
