@@ -26,6 +26,7 @@ export enum Intent {
   viewArtist = "viewArtist",
   viewEditorial = "viewEditorial",
   viewFair = "viewFair",
+  viewViewingRoom = "viewViewingRoom",
 }
 
 /**
@@ -55,3 +56,4 @@ export type AuthIntent =
   | Intent.viewArtist
   | Intent.viewEditorial
   | Intent.viewFair
+  | Intent.viewViewingRoom
