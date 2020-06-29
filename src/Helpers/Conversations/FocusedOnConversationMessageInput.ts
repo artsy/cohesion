@@ -1,6 +1,6 @@
 import { ActionType, FocusedOnConversationMessageInput } from "../../Schema"
 
-interface FocusedOnConversationMessageInputArgs {
+export interface FocusedOnConversationMessageInputArgs {
   impulse_conversation_id: string
 }
 

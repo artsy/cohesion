@@ -1,6 +1,6 @@
 import { ActionType, SentConversationMessage } from "../../Schema"
 
-interface SentConversationMessageArgs {
+export interface SentConversationMessageArgs {
   impulse_conversation_id: string
   impulse_message_id: string
 }
