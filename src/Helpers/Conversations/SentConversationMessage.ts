@@ -11,8 +11,8 @@ interface SentConversationMessageArgs {
  * @example
  * ```
  * sentConversationMessage({
- *   impulse_conversation_id: 12345,
- *   impulse_message_id: 54321
+ *   impulse_conversation_id: "12345",
+ *   impulse_message_id: "54321"
  * })
  * ```
  */

@@ -10,7 +10,7 @@ interface FocusedOnConversationMessageInputArgs {
  * @example
  * ```
  * focusedOnConversationMessageInput({
- *   impulse_conversation_id: 12345
+ *   impulse_conversation_id: "12345"
  * })
  * ```
  */

@@ -14,8 +14,7 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "focusedOnConversationMessageInput",
- *    impulse_conversation_id: 198
- *
+ *    impulse_conversation_id: "198"
  *  }
  * ```
  */
@@ -33,9 +32,8 @@ export interface FocusedOnConversationMessageInput {
  *  ```
  *  {
  *    action: "sentConversationMessage",
- *    impulse_conversation_id: 198,
- *    impulse_message_id: 8765
- *
+ *    impulse_conversation_id: "198",
+ *    impulse_message_id: "8765"
  *  }
  * ```
  */
