@@ -1,3 +1,15 @@
+# v1.15.0 (Tue Jun 30 2020)
+
+#### 🚀  Enhancement
+
+- Add helpers for conversation events (PURCHASE-1896) [#70](https://github.com/artsy/cohesion/pull/70) ([@starsirius](https://github.com/starsirius))
+
+#### Authors: 1
+
+- Chung-Yi Chi ([@starsirius](https://github.com/starsirius))
+
+---
+
 # v1.14.0 (Fri Jun 26 2020)
 
 #### 🚀  Enhancement
