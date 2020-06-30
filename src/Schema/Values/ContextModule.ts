@@ -52,6 +52,7 @@ export enum ContextModule {
   pastFairs = "pastFairs",
   popularArtistsRail = "popularArtistsRail",
   popUpModal = "popUpModal",
+  promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
   recommendedArtistsRail = "recommendedArtistsRail",
