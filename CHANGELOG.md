@@ -1,3 +1,15 @@
+# v1.16.0 (Tue Jun 30 2020)
+
+#### 🚀  Enhancement
+
+- Track taps on the iOS promo space [#69](https://github.com/artsy/cohesion/pull/69) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.15.0 (Tue Jun 30 2020)
 
 #### 🚀  Enhancement
