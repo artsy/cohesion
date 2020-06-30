@@ -1,8 +1,8 @@
 import { ActionType, SentConversationMessage } from "../../Schema"
 
 export interface SentConversationMessageArgs {
-  impulse_conversation_id: string
-  impulse_message_id: string
+  impulseConversationId: string
+  impulseMessageId: string
 }
 
 /**
@@ -11,18 +11,18 @@ export interface SentConversationMessageArgs {
  * @example
  * ```
  * sentConversationMessage({
- *   impulse_conversation_id: "12345",
- *   impulse_message_id: "54321"
+ *   impulseConversationId: "12345",
+ *   impulseMessageId: "54321"
  * })
  * ```
  */
 export const sentConversationMessage = ({
-  impulse_conversation_id,
-  impulse_message_id,
+  impulseConversationId,
+  impulseMessageId,
 }: SentConversationMessageArgs): SentConversationMessage => {
   return {
     action: ActionType.sentConversationMessage,
-    impulse_conversation_id,
-    impulse_message_id,
+    impulse_conversation_id: impulseConversationId,
+    impulse_message_id: impulseMessageId,
   }
 }

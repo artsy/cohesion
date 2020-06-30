@@ -1,7 +1,7 @@
 import { ActionType, FocusedOnConversationMessageInput } from "../../Schema"
 
 export interface FocusedOnConversationMessageInputArgs {
-  impulse_conversation_id: string
+  impulseConversationId: string
 }
 
 /**
@@ -10,15 +10,15 @@ export interface FocusedOnConversationMessageInputArgs {
  * @example
  * ```
  * focusedOnConversationMessageInput({
- *   impulse_conversation_id: "12345"
+ *   impulseConversationId: "12345"
  * })
  * ```
  */
 export const focusedOnConversationMessageInput = ({
-  impulse_conversation_id,
+  impulseConversationId,
 }: FocusedOnConversationMessageInputArgs): FocusedOnConversationMessageInput => {
   return {
     action: ActionType.focusedOnConversationMessageInput,
-    impulse_conversation_id,
+    impulse_conversation_id: impulseConversationId,
   }
 }

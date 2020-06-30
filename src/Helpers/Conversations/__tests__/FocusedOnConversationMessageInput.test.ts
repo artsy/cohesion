@@ -3,7 +3,7 @@ import { focusedOnConversationMessageInput } from "../FocusedOnConversationMessa
 describe("focusedOnConversationMessageInput", () => {
   it("returns expected event properties", () => {
     const event = focusedOnConversationMessageInput({
-      impulse_conversation_id: "123",
+      impulseConversationId: "123",
     })
 
     expect(event).toEqual({
