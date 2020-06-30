@@ -229,9 +229,9 @@ export interface TappedPromoSpace {
   action: ActionType.tappedPromoSpace
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type?: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
-  destination_path?: string
+  destination_path: string
   subject: string
 }
