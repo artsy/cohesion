@@ -14,14 +14,13 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "focusedOnConversationMessageInput",
- *    impulse_conversation_id: 198
- *
+ *    impulse_conversation_id: "198"
  *  }
  * ```
  */
 export interface FocusedOnConversationMessageInput {
   action: ActionType.focusedOnConversationMessageInput
-  impulse_conversation_id?: number
+  impulse_conversation_id: string
 }
 
 /**
@@ -33,14 +32,13 @@ export interface FocusedOnConversationMessageInput {
  *  ```
  *  {
  *    action: "sentConversationMessage",
- *    impulse_conversation_id: 198,
- *    impulse_message_id: 8765
- *
+ *    impulse_conversation_id: "198",
+ *    impulse_message_id: "8765"
  *  }
  * ```
  */
 export interface SentConversationMessage {
   action: ActionType.sentConversationMessage
-  impulse_conversation_id?: number
-  impulse_message_id?: number
+  impulse_conversation_id: string
+  impulse_message_id: string
 }
