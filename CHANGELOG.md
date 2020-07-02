@@ -1,3 +1,18 @@
+# v1.18.0 (Thu Jul 02 2020)
+
+#### 🚀  Enhancement
+
+- Revert "Increase node version to 12" [#76](https://github.com/artsy/cohesion/pull/76) ([@eessex](https://github.com/eessex))
+- Increase node version to 12 [#73](https://github.com/artsy/cohesion/pull/73) ([@eessex](https://github.com/eessex))
+- Adds export for promo space [#74](https://github.com/artsy/cohesion/pull/74) ([@ashfurrow](https://github.com/ashfurrow))
+
+#### Authors: 2
+
+- Ash Furrow ([@ashfurrow](https://github.com/ashfurrow))
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.17.0 (Thu Jul 02 2020)
 
 #### 🚀  Enhancement
