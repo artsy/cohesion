@@ -1,3 +1,20 @@
+# v1.17.0 (Thu Jul 02 2020)
+
+#### 🚀  Enhancement
+
+- Adds helper for promo space tap tracking [#72](https://github.com/artsy/cohesion/pull/72) ([@ashfurrow](https://github.com/ashfurrow))
+
+#### 🏠  Internal
+
+- Update dep typescript from 3.9.5 to v3.9.6 [#71](https://github.com/artsy/cohesion/pull/71) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Ash Furrow ([@ashfurrow](https://github.com/ashfurrow))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.16.0 (Tue Jun 30 2020)
 
 #### 🚀  Enhancement
