@@ -22,7 +22,7 @@ export interface TappedTabBarArgs {
  * @example
  * ```
  * tappedTabBar({
- *   badge: false,
+ *   badge: true,
  *   tab: "sell"
  * })
  * ```
