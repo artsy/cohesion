@@ -1,3 +1,15 @@
+# v1.19.0 (Mon Jul 06 2020)
+
+#### 🚀  Enhancement
+
+- Add contextModule for followed galleries rail [#77](https://github.com/artsy/cohesion/pull/77) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v1.18.0 (Thu Jul 02 2020)
 
 #### 🚀  Enhancement
