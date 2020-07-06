@@ -255,7 +255,7 @@ export interface TappedPromoSpace {
  */
 export interface TappedTabBar {
   action: ActionType.tappedTabBar
-  badge?: boolean
+  badge: boolean
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   tab: Tab

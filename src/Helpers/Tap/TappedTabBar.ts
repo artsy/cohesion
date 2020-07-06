@@ -5,9 +5,11 @@ import {
   TappedTabBar,
 } from "../../Schema"
 
+import { Tab } from "../../Schema/Values/Tab"
+
 export interface TappedTabBarArgs {
-  badge: boolean
-  tab: string
+  badge?: boolean
+  tab: Tab
 }
 
 /**
@@ -25,12 +27,15 @@ export interface TappedTabBarArgs {
  * })
  * ```
  */
-export const tappedTabBar = ({ badge }: TappedTabBarArgs): TappedTabBar => {
+export const tappedTabBar = ({
+  badge,
+  tab,
+}: TappedTabBarArgs): TappedTabBar => {
   return {
     action: ActionType.tappedTabBar,
-    badge,
+    badge: badge || false,
     context_module: ContextModule.tabBar,
     context_screen_owner_type: OwnerType.home,
-    tab: "sell",
+    tab,
   }
 }
