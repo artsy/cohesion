@@ -44,6 +44,7 @@ export enum ContextModule {
   mainCarousel = "mainCarousel",
   minimalCTABanner = "minimalCTABanner",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
+  newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   otherWorksByArtistRail = "otherWorksByArtistRail",
   otherWorksFromPartnerRail = "otherWorksFromPartnerRail",
   otherWorksFromShowRail = "otherWorksFromShowRail",
