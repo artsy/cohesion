@@ -2,6 +2,7 @@ import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { ScreenOwnerType } from "../Values/OwnerType"
+import { Tab } from "../Values/Tab"
 
 /**
  * Schemas describing Tap events
@@ -234,4 +235,28 @@ export interface TappedPromoSpace {
   destination_screen_owner_slug?: string
   destination_path: string
   subject: string
+}
+
+/**
+ * A user taps an icon on the tab bar
+ *
+ * This schema describes events sent to Segment from [[tappedTabBar]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedTabBar",
+ *    badge: true
+ *    context_module: "tabBar",
+ *    context_screen_owner_type: "home",
+ *    tab: "messages"
+ *  }
+ * ```
+ */
+export interface TappedTabBar {
+  action: ActionType.tappedTabBar
+  badge?: boolean
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  tab: Tab
 }
