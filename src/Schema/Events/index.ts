@@ -24,6 +24,8 @@ import {
   TappedConsign,
   TappedExploreGroup,
   TappedFairGroup,
+  TappedPromoSpace,
+  TappedTabBar,
 } from "./Tap"
 import { TimeOnPage } from "./System"
 
@@ -52,6 +54,8 @@ export type Event =
   | TappedExploreGroup
   | TappedFairGroup
   | TappedConsign
+  | TappedPromoSpace
+  | TappedTabBar
   | TimeOnPage
 
 /**
@@ -140,6 +144,10 @@ export enum ActionType {
    * Corresponds to {@link TappedPromoSpace}
    */
   tappedPromoSpace = "tappedPromoSpace",
+  /**
+   * Corresponds to {@link TappedTabBar}
+   */
+  tappedTabBar = "tappedTabBar",
   /**
    * Corresponds to {@link TimeOnPage}
    */

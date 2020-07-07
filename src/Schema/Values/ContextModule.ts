@@ -67,6 +67,7 @@ export enum ContextModule {
   showInfo = "showInfo",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
+  tabBar = "tabBar",
   tagHeader = "tagHeader",
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
