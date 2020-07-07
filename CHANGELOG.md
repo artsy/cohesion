@@ -1,3 +1,15 @@
+# v1.20.0 (Tue Jul 07 2020)
+
+#### 🚀  Enhancement
+
+- Track tab bar taps on iOS [#78](https://github.com/artsy/cohesion/pull/78) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.19.0 (Mon Jul 06 2020)
 
 #### 🚀  Enhancement
