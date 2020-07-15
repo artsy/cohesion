@@ -23,7 +23,7 @@ import { PageOwnerType } from "../Values/OwnerType"
 export interface TimeOnPage {
   action: ActionType.timeOnPage
   category: "15 seconds"
-  context_page_owner_type: PageOwnerType
+  context_page_owner_type?: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
 }

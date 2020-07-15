@@ -3,7 +3,7 @@ import { ActionType, PageOwnerType, TimeOnPage } from "../../Schema"
 export interface TimeOnPageArgs {
   contextPageOwnerId?: string
   contextPageOwnerSlug?: string
-  contextPageOwnerType: PageOwnerType
+  contextPageOwnerType?: PageOwnerType
 }
 
 /**
