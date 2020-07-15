@@ -1,3 +1,20 @@
+# v1.21.0 (Wed Jul 15 2020)
+
+#### 🚀  Enhancement
+
+- Makes context page properties optional in timeOnPage [#80](https://github.com/artsy/cohesion/pull/80) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- Update aws-s3 orb from 1.0.15 to v1.0.16 [#79](https://github.com/artsy/cohesion/pull/79) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.20.0 (Tue Jul 07 2020)
 
 #### 🚀  Enhancement
