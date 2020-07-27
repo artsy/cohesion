@@ -1,3 +1,20 @@
+# v1.22.0 (Mon Jul 27 2020)
+
+#### 🚀  Enhancement
+
+- Adds tappedMainArtworkGrid [#83](https://github.com/artsy/cohesion/pull/83) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- Update dep typescript from 3.9.6 to v3.9.7 [#81](https://github.com/artsy/cohesion/pull/81) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.21.0 (Wed Jul 15 2020)
 
 #### 🚀  Enhancement
