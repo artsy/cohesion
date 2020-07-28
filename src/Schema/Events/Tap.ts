@@ -169,6 +169,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedCollectionGroup
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
+    | ActionType.tappedViewingRoomGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -292,4 +293,24 @@ export interface TappedTabBar {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   tab: Tab
+}
+
+/**
+ * A user taps a grouping of viewing rooms on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedViewingRoomGroup",
+ *    context_module: "featuredViewingRoomsRail",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_type: "viewingRoomList",
+ *    type: "header"
+ *  }
+ * ```
+ */
+export interface TappedViewingRoomGroup extends TappedEntityGroup {
+  action: ActionType.tappedViewingRoomGroup
 }
