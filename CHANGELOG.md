@@ -1,3 +1,20 @@
+# v1.23.0 (Tue Jul 28 2020)
+
+#### 🚀  Enhancement
+
+- New event and properties for Viewing Rooms on iOS [#84](https://github.com/artsy/cohesion/pull/84) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- Bump lodash from 4.17.15 to 4.17.19 [#82](https://github.com/artsy/cohesion/pull/82) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v1.22.0 (Mon Jul 27 2020)
 
 #### 🚀  Enhancement
