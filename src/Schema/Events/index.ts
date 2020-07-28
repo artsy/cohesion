@@ -27,6 +27,7 @@ import {
   TappedMainArtworkGrid,
   TappedPromoSpace,
   TappedTabBar,
+  TappedViewingRoomGroup,
 } from "./Tap"
 import { TimeOnPage } from "./System"
 
@@ -58,6 +59,7 @@ export type Event =
   | TappedMainArtworkGrid
   | TappedPromoSpace
   | TappedTabBar
+  | TappedViewingRoomGroup
   | TimeOnPage
 
 /**
@@ -154,6 +156,10 @@ export enum ActionType {
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
+  /**
+   * Corresponds to {@link TappedViewingRoomGroup}
+   */
+  tappedViewingRoomGroup = "tappedViewingRoomGroup",
   /**
    * Corresponds to {@link TimeOnPage}
    */

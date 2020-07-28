@@ -25,6 +25,8 @@ export enum OwnerType {
   savesAndFollows = "savesAndFollows",
   viewingRoom = "viewingRoom",
   viewingRoomArtworks = "viewingRoomArtworks",
+  viewingRoomList = "viewingRoomList",
+  viewingRoomArtworkPage = "viewingRoomArtworkPage",
   worksForYou = "worksForYou",
 }
 
@@ -52,6 +54,8 @@ export type ScreenOwnerType =
   | OwnerType.sell
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworks
+  | OwnerType.viewingRoomList
+  | OwnerType.viewingRoomArtworkPage
   | OwnerType.worksForYou
 
 /**
