@@ -7,11 +7,11 @@ import {
 } from "../../Schema"
 
 export interface TappedMainArtworkGridArgs {
-  contextPageOwnerType: ScreenOwnerType
-  contextPageOwnerId?: string
-  contextPageOwnerSlug?: string
-  destinationPageOwnerId: string
-  destinationPageOwnerSlug: string
+  contextScreenOwnerType: ScreenOwnerType
+  contextScreenOwnerId?: string
+  contextScreenOwnerSlug?: string
+  destinationScreenOwnerId: string
+  destinationScreenOwnerSlug: string
 }
 
 /**
@@ -20,30 +20,30 @@ export interface TappedMainArtworkGridArgs {
  * @example
  * ```
  * tappedMainArtworkGrid({
- *   contextPageOwnerType: OwnerType.artist,
- *   contextPageOwnerId: "5359794d2a1e86c3741001f8",
- *   contextPageOwnerSlug: "andy-warhol",
- *   destinationPageOwnerId: "5359794d1a1e86c3740001f7",
- *   destinationPageOwnerSlug: "andy-warhol-skull",
+ *   contextScreenOwnerType: OwnerType.artist,
+ *   contextScreenOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextScreenOwnerSlug: "andy-warhol",
+ *   destinationScreenOwnerId: "5359794d1a1e86c3740001f7",
+ *   destinationScreenOwnerSlug: "andy-warhol-skull",
  * })
  * ```
  */
 export const tappedMainArtworkGrid = ({
-  contextPageOwnerType,
-  contextPageOwnerId,
-  contextPageOwnerSlug,
-  destinationPageOwnerId,
-  destinationPageOwnerSlug,
+  contextScreenOwnerType,
+  contextScreenOwnerId,
+  contextScreenOwnerSlug,
+  destinationScreenOwnerId,
+  destinationScreenOwnerSlug,
 }: TappedMainArtworkGridArgs): TappedMainArtworkGrid => {
   return {
     action: ActionType.tappedMainArtworkGrid,
     context_module: ContextModule.artworkGrid,
-    context_page_owner_id: contextPageOwnerId,
-    context_page_owner_slug: contextPageOwnerSlug,
-    context_page_owner_type: contextPageOwnerType,
-    destination_page_owner_id: destinationPageOwnerId,
-    destination_page_owner_slug: destinationPageOwnerSlug,
-    destination_page_owner_type: OwnerType.artwork,
+    context_screen_owner_id: contextScreenOwnerId,
+    context_screen_owner_slug: contextScreenOwnerSlug,
+    context_screen_owner_type: contextScreenOwnerType,
+    destination_screen_owner_id: destinationScreenOwnerId,
+    destination_screen_owner_slug: destinationScreenOwnerSlug,
+    destination_screen_owner_type: OwnerType.artwork,
     type: "thumbnail",
   }
 }

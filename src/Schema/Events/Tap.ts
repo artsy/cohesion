@@ -220,12 +220,12 @@ export interface TappedConsign {
  *  {
  *    action: "tappedMainArtworkGrid",
  *    context_module: "artworkGrid",
- *    context_page_owner_type: "artist",
- *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
- *    context_page_owner_slug: "damien-hirst",
- *    destination_page_owner_type: "artwork",
- *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
- *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
+ *    context_screen_owner_type: "artist",
+ *    context_screen_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_screen_owner_slug: "damien-hirst",
+ *    destination_screen_owner_type: "artwork",
+ *    destination_screen_owner_id: "53188b0d8b3b8192bb0005ae",
+ *    destination_screen_owner_slug: "damien-hirst-anatomy-of-an-angel",
  *    type: "thumbnail"
  *  }
  * ```
@@ -233,12 +233,12 @@ export interface TappedConsign {
 export interface TappedMainArtworkGrid {
   action: ActionType.tappedMainArtworkGrid
   context_module: ContextModule
-  context_page_owner_type: ScreenOwnerType
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
-  destination_page_owner_type: ScreenOwnerType
-  destination_page_owner_id: string
-  destination_page_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
   type: "thumbnail"
 }
 
