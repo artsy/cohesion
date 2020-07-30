@@ -1,3 +1,15 @@
+# v1.24.0 (Thu Jul 30 2020)
+
+#### 🚀  Enhancement
+
+- Add partner to OwnerType [#86](https://github.com/artsy/cohesion/pull/86) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.23.0 (Tue Jul 28 2020)
 
 #### 🚀  Enhancement
