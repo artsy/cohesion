@@ -5,6 +5,7 @@
  */
 export enum OwnerType {
   artist = "artist",
+  artists = "artists",
   artwork = "artwork",
   auctions = "auctions",
   gene = "gene",
@@ -17,6 +18,7 @@ export enum OwnerType {
   consign = "consign",
   explore = "explore",
   fair = "fair",
+  galleries = "galleries",
   home = "home",
   inbox = "inbox",
   partner = "partner",
@@ -65,12 +67,14 @@ export type ScreenOwnerType =
  */
 export type PageOwnerType =
   | OwnerType.artist
+  | OwnerType.artists
   | OwnerType.artwork
   | OwnerType.auctions
   | OwnerType.collect
   | OwnerType.collection
   | OwnerType.consign
   | OwnerType.fair
+  | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home
   | OwnerType.partner
