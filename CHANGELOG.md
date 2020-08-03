@@ -1,3 +1,15 @@
+# v1.25.0 (Mon Aug 03 2020)
+
+#### 🚀  Enhancement
+
+- Add "artists" and "galleries" to OwnerType [#88](https://github.com/artsy/cohesion/pull/88) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.24.0 (Thu Jul 30 2020)
 
 #### 🚀  Enhancement
