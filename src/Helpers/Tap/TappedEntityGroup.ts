@@ -11,6 +11,7 @@ import {
   TappedCollectionGroup,
   TappedExploreGroup,
   TappedFairGroup,
+  TappedViewingRoomGroup,
 } from "../../Schema"
 
 export type TappedEntityDestinationType =
@@ -24,6 +25,7 @@ export type TappedEntityDestinationType =
   | OwnerType.savesAndFollows
   | OwnerType.gene
   | OwnerType.worksForYou
+  | OwnerType.viewingRoom
 
 export interface TappedEntityGroupArgs {
   contextModule: ContextModule
@@ -74,6 +76,7 @@ export const tappedEntityGroup = ({
   | TappedAuctionGroup
   | TappedCollectionGroup
   | TappedExploreGroup
+  |TappedViewingRoomGroup
   | TappedFairGroup => {
   let action: ActionType
   switch (destinationScreenOwnerType) {
@@ -98,7 +101,11 @@ export const tappedEntityGroup = ({
     case OwnerType.sale:
     case OwnerType.auctions:
       action = ActionType.tappedAuctionGroup
-      break
+	  break
+	  case OwnerType.viewingRoom:
+		  action = ActionType.tappedViewingRoomGroup
+		  break
+
   }
 
   return {
