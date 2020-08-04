@@ -1,3 +1,15 @@
+# v1.26.0 (Tue Aug 04 2020)
+
+#### 🚀  Enhancement
+
+- Add tappedMainArtworkGrid helper [#85](https://github.com/artsy/cohesion/pull/85) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.25.0 (Mon Aug 03 2020)
 
 #### 🚀  Enhancement
