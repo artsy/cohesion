@@ -48,12 +48,12 @@ export interface TappedEntityGroupArgs {
  * tappedEntityGroup({
  *   contextModule: ContextModule.trendingArtistsRail,
  *   contextScreenOwnerType: OwnerType.home,
+ *   type: "thumbnail"
  *   destinationScreenOwnerType: OwnerType.artist,
  *   destinationScreenOwnerId: "5359794d1a1e86c3740001f7",
  *   destinationScreenOwnerSlug: "andy-warhol",
  *   horizontalSlidePosition: 2,
  *   moduleHeight: "double",
- *   type: "thumbnail"
  * })
  * ```
  */
@@ -62,12 +62,12 @@ export const tappedEntityGroup = ({
   contextScreenOwnerType,
   contextScreenOwnerId,
   contextScreenOwnerSlug,
+  type,
   destinationScreenOwnerType,
   destinationScreenOwnerId,
   destinationScreenOwnerSlug,
   horizontalSlidePosition,
   moduleHeight,
-  type,
 }: TappedEntityGroupArgs):
   | TappedArtistGroup
   | TappedArtworkGroup
@@ -107,11 +107,11 @@ export const tappedEntityGroup = ({
     context_screen_owner_id: contextScreenOwnerId,
     context_screen_owner_slug: contextScreenOwnerSlug,
     context_screen_owner_type: contextScreenOwnerType,
+    type,
     destination_screen_owner_id: destinationScreenOwnerId,
     destination_screen_owner_slug: destinationScreenOwnerSlug,
     destination_screen_owner_type: destinationScreenOwnerType,
     horizontal_slide_position: horizontalSlidePosition,
     module_height: moduleHeight,
-    type,
   }
 }

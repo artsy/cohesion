@@ -40,10 +40,10 @@ export const clickedMainArtworkGrid = ({
     context_module: ContextModule.artworkGrid,
     context_page_owner_id: contextPageOwnerId,
     context_page_owner_slug: contextPageOwnerSlug,
+    type: "thumbnail",
     context_page_owner_type: contextPageOwnerType,
     destination_page_owner_id: destinationPageOwnerId,
     destination_page_owner_slug: destinationPageOwnerSlug,
     destination_page_owner_type: OwnerType.artwork,
-    type: "thumbnail",
   }
 }

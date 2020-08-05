@@ -143,12 +143,12 @@ export interface TappedExploreGroup extends TappedEntityGroup {
  *    action: "tappedFairGroup",
  *    context_module: "fairRail",
  *    context_screen_owner_type: "home",
+ *    type: "thumbnail"
  *    destination_screen_owner_type: "fair",
  *    destination_screen_owner_id: "5e726bd22524980012caafb0",
  *    destination_screen_owner_slug: "arteba-special-edition",
  *    horizontal_slide_position: 2,
  *    module_height: "double",
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -174,12 +174,12 @@ export interface TappedEntityGroup {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+  type: EntityModuleType
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
   horizontal_slide_position?: number
   module_height?: EntityModuleHeight
-  type: EntityModuleType
 }
 
 export type EntityModuleHeight = "single" | "double"
@@ -223,10 +223,10 @@ export interface TappedConsign {
  *    context_screen_owner_type: "artist",
  *    context_screen_owner_id: "4d8b926a4eb68a1b2c0000ae",
  *    context_screen_owner_slug: "damien-hirst",
+ *    type: "thumbnail"
  *    destination_screen_owner_type: "artwork",
  *    destination_screen_owner_id: "53188b0d8b3b8192bb0005ae",
  *    destination_screen_owner_slug: "damien-hirst-anatomy-of-an-angel",
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -236,10 +236,10 @@ export interface TappedMainArtworkGrid {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+  type: "thumbnail"
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id: string
   destination_screen_owner_slug: string
-  type: "thumbnail"
 }
 
 /**
@@ -306,8 +306,8 @@ export interface TappedTabBar {
  *    action: "tappedViewingRoomGroup",
  *    context_module: "featuredViewingRoomsRail",
  *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "viewingRoomList",
  *    type: "header"
+ *    destination_screen_owner_type: "viewingRoomList",
  *  }
  * ```
  */

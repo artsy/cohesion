@@ -20,7 +20,6 @@ module.exports = {
   root: true,
   rules: {
     "no-console": 1,
-    "sort-keys": 1,
     "sort-imports": 1,
     "spaced-comment": ["error", "always", { block: { balanced: true } }],
   },

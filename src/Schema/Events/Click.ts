@@ -26,11 +26,11 @@ import { PageOwnerType } from "../Values/OwnerType"
  *    action: "clickedArtistGroup",
  *    context_module: "trendingArtistsRail",
  *    context_page_owner_type: "home",
+ *    type: "thumbnail"
  *    destination_page_owner_type: "artist",
  *    destination_page_owner_id: "5359794d1a1e86c3740001f7",
  *    destination_page_owner_slug: "anthony-hunter",
  *    horizontal_slide_position: 1,
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -50,11 +50,11 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  *    action: "clickedArtworkGroup",
  *    context_module: "newWorksByArtistsYouFollowRail",
  *    context_page_owner_type: "home",
+ *    type: "thumbnail"
  *    destination_page_owner_type: "artwork",
  *    destination_page_owner_id: "5e9a7a238483bf000e2c4c5e",
  *    destination_page_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -73,11 +73,11 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  *    action: "clickedAuctionGroup",
  *    context_module: "auctionsRail",
  *    context_page_owner_type: "home",
+ *    type: "thumbnail"
  *    destination_page_owner_type: "sale",
  *    destination_page_owner_id: "5e95b37a2fdcb20012a0e082",
  *    destination_page_owner_slug: "forum-auctions-colour-theory-4",
  *    horizontal_slide_position: 3,
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -96,10 +96,10 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  *    action: "clickedCollectionGroup",
  *    context_module: "collectionRail",
  *    context_page_owner_type: "home",
+ *    type: "thumbnail"
  *    destination_page_owner_type: "collection",
  *    destination_page_owner_slug: "limited-edition-prints-trending-artists",
  *    horizontal_slide_position: 2,
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -118,12 +118,12 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *    action: "clickedFairGroup",
  *    context_module: "fairRail",
  *    context_page_owner_type: "home",
+ *    type: "thumbnail"
  *    destination_page_owner_type: "fair",
  *    destination_page_owner_id: "5e726bd22524980012caafb0",
  *    destination_page_owner_slug: "arteba-special-edition",
  *    horizontal_slide_position: 2,
  *    module_height: "double",
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -146,11 +146,11 @@ export interface ClickedEntityGroup {
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
+  type: EntityModuleType
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id?: string
   destination_page_owner_slug?: string
   horizontal_slide_position?: number
-  type: EntityModuleType
 }
 
 /**
@@ -168,10 +168,10 @@ export interface ClickedEntityGroup {
  *    context_page_owner_type: "artist",
  *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
  *    context_page_owner_slug: "damien-hirst",
+ *    type: "thumbnail"
  *    destination_page_owner_type: "artwork",
  *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
  *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
- *    type: "thumbnail"
  *  }
  * ```
  */
@@ -181,8 +181,8 @@ export interface ClickedMainArtworkGrid {
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
+  type: "thumbnail"
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id: string
   destination_page_owner_slug: string
-  type: "thumbnail"
 }

@@ -22,10 +22,10 @@ describe("clickedEntityGroup", () => {
       context_page_owner_id: undefined,
       context_page_owner_slug: undefined,
       context_page_owner_type: "home",
+      type: "thumbnail",
       destination_page_owner_id: "5359794d1a1e86c3740001f7",
       destination_page_owner_slug: "andy-warhol-flower",
       destination_page_owner_type: "artwork",
-      type: "thumbnail",
     })
   })
 
@@ -43,10 +43,10 @@ describe("clickedEntityGroup", () => {
       context_page_owner_id: "5359794d1a1e86c3740001f6",
       context_page_owner_slug: "andy-warhol",
       context_page_owner_type: "artist",
+      type: "thumbnail",
       destination_page_owner_id: "5359794d1a1e86c3740001f7",
       destination_page_owner_slug: "andy-warhol-flower",
       destination_page_owner_type: "artwork",
-      type: "thumbnail",
     })
   })
 })
