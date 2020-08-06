@@ -34,6 +34,7 @@ export enum ContextModule {
   fairsHeader = "fairsHeader",
   fairRail = "fairRail",
   fairCard = "fairCard",
+  featuredArtists = "featuredArtists",
   featuredArtistsRail = "featuredArtistsRail",
   featuredCollection = "featuredCollection",
   featuredViewingRoomsRail = "featuredViewingRoomsRail",

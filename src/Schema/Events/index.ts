@@ -31,7 +31,7 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { TimeOnPage } from "./System"
-import { FollowedArtist } from "./SavesAndFollows"
+import { FollowedArtist, UnfollowedArtist } from "./SavesAndFollows"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -65,6 +65,7 @@ export type Event =
   | TappedTabBar
   | TappedViewingRoomGroup
   | TimeOnPage
+  | UnfollowedArtist
 
 /**
  * The top-level actions an Event describes.
@@ -176,4 +177,8 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
+  /**
+   * Corresponds to {@link UnfollowedArtist}
+   */
+  unfollowedArtist = "unfollowedArtist",
 }

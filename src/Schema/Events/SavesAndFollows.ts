@@ -16,7 +16,7 @@ import { ScreenOwnerType } from "../Values/OwnerType"
  *  ```
  *  {
  *    action: "followedArtist",
- *    context_module: "FeaturedArtists"
+ *    context_module: "featuredArtists"
  *    context_screen_owner_type: "artistSeries"
  *    context_screen_owner_id: "5359794d1a1e86c3740001f7"
  *    context_screen_owner_slug: "alex-katz-departure"
@@ -28,6 +28,36 @@ import { ScreenOwnerType } from "../Values/OwnerType"
  */
 export interface FollowedArtist {
   action: ActionType.followedArtist
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  owner_type: ScreenOwnerType
+  owner_id: string
+  owner_slug: string
+}
+
+/**
+ * A user has unfollowed an artist on iOS.
+ *
+ * This schema describes events sent to Segment from [[unfollowedArtist]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "unfollowedArtist",
+ *    context_module: "featuredArtists"
+ *    context_screen_owner_type: "artistSeries"
+ *    context_screen_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_screen_owner_slug: "alex-katz-departure"
+ *    owner_type: "artist"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "alex-katz"
+ *  }
+ * ```
+ */
+export interface UnfollowedArtist {
+  action: ActionType.unfollowedArtist
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
