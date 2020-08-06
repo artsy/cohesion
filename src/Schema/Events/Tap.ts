@@ -79,6 +79,7 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  *    destination_screen_owner_type: "artwork",
  *    destination_screen_owner_id: "5e9a7a238483bf000e2c4c5e",
  *    destination_screen_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
+ *    featured: true,
  *    horizontal_slide_position: 1,
  *    module_height: "single",
  *    type: "thumbnail"
@@ -203,6 +204,7 @@ export interface TappedEntityGroup {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
+  featured?: boolean
   horizontal_slide_position?: number
   module_height?: EntityModuleHeight
   type: EntityModuleType

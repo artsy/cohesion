@@ -10,6 +10,7 @@ export enum ContextModule {
   artistHeader = "artistHeader",
   artistHighDemandGrid = "artistHighDemandGrid",
   artistRecentlySold = "artistRecentlySold",
+  artistSeriesRail = "artistSeriesRail",
   artistsTab = "artistsTab",
   artistsToFollowRail = "artistsToFollowRail",
   artworkGrid = "artworkGrid",
