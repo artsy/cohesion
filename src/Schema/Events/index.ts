@@ -31,6 +31,7 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { TimeOnPage } from "./System"
+import { FollowedArtist } from "./SavesAndFollows"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -47,6 +48,7 @@ export type Event =
   | ClickedFairGroup
   | ClickedMainArtworkGrid
   | FocusedOnConversationMessageInput
+  | FollowedArtist
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
@@ -106,6 +108,10 @@ export enum ActionType {
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
+  /**
+   * Corresponds to {@link FollowedArtist}
+   */
+  followedArtist = "followedArtist",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
