@@ -45,6 +45,7 @@ export enum ContextModule {
   liveAuctionsRail = "liveAuctionsRail",
   mainCarousel = "mainCarousel",
   minimalCTABanner = "minimalCTABanner",
+  moreSeriesByThisArtist = "moreSeriesByThisArtist",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   otherWorksByArtistRail = "otherWorksByArtistRail",

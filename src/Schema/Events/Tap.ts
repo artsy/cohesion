@@ -41,6 +41,31 @@ export interface TappedArtistGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user taps a grouping of artist series on iOS
+ *
+ *  This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtistSeriesGroup",
+ *    context_module: "moreSeriesByThisArtist",
+ *    context_screen_owner_type: "artistSeries",
+ *    context_screen_owner_id: "5359794d1a1e86c3740001f7",
+ *    context_screen_owner_slug: "alex-katz-departure",
+ *    destination_screen_owner_type: "artistSeries",
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_screen_owner_slug: "alex-katz-black-dress",
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedArtistSeriesGroup extends TappedEntityGroup {
+  action: ActionType.tappedArtistSeriesGroup
+}
+
+/**
  * A user taps a grouping of artworks on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -164,6 +189,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
 export interface TappedEntityGroup {
   action:
     | ActionType.tappedArtistGroup
+    | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
     | ActionType.tappedCollectionGroup

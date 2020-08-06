@@ -5,6 +5,7 @@
  */
 export enum OwnerType {
   artist = "artist",
+  artistSeries = "artistSeries",
   artists = "artists",
   artwork = "artwork",
   auctions = "auctions",
@@ -38,6 +39,7 @@ export enum OwnerType {
  */
 export type ScreenOwnerType =
   | OwnerType.artist
+  | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctions
   | OwnerType.gene

@@ -18,6 +18,7 @@ import {
 } from "./Conversations"
 import {
   TappedArtistGroup,
+  TappedArtistSeriesGroup,
   TappedArtworkGroup,
   TappedAuctionGroup,
   TappedCollectionGroup,
@@ -50,6 +51,7 @@ export type Event =
   | SentConversationMessage
   | SuccessfullyLoggedIn
   | TappedArtistGroup
+  | TappedArtistSeriesGroup
   | TappedArtworkGroup
   | TappedAuctionGroup
   | TappedCollectionGroup
@@ -120,6 +122,10 @@ export enum ActionType {
    * Corresponds to {@link TappedArtistGroup}
    */
   tappedArtistGroup = "tappedArtistGroup",
+  /**
+   * Corresponds to {@link TappedArtistSeriesGroup}
+   */
+  tappedArtistSeriesGroup = "tappedArtistSeriesGroup",
   /**
    * Corresponds to {@link TappedArtworkGroup}
    */
