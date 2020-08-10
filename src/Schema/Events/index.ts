@@ -6,6 +6,7 @@ import {
 } from "./Authentication"
 import {
   ClickedArtistGroup,
+  ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
   ClickedAuctionGroup,
   ClickedCollectionGroup,
@@ -42,6 +43,7 @@ export type Event =
   | AuthImpression
   | CreatedAccount
   | ClickedArtistGroup
+  | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
   | ClickedAuctionGroup
   | ClickedCollectionGroup

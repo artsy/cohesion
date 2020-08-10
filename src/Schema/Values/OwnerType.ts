@@ -70,6 +70,7 @@ export type ScreenOwnerType =
 export type PageOwnerType =
   | OwnerType.artist
   | OwnerType.artists
+  | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctions
   | OwnerType.collect

@@ -1,7 +1,7 @@
 import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
-import { PageOwnerType } from "../Values/OwnerType"
+import { OwnerType, PageOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing Click events
@@ -39,7 +39,7 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of artist series on iOS. If the artist series was boosted by the curation team, then featured will be set to true.
+ * A user clicks a grouping of artist series on web. If the artist series was boosted by the curation team, then curation_boost will be set to true.
  *
  *  This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
@@ -54,7 +54,7 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  *    destination_page_owner_type: "artistSeries",
  *    destination_page_owner_id: "5359794d1a1e86c3740001f7",
  *    destination_page_owner_slug: "alex-katz-black-dress",
- *    featured: true,
+ *    curation_boost: true,
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
@@ -62,6 +62,7 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  */
 export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtistSeriesGroup
+  destination_page_owner_type: OwnerType.artistSeries
 }
 
 /**
