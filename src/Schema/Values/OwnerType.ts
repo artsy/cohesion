@@ -6,6 +6,7 @@
 export enum OwnerType {
   artist = "artist",
   artists = "artists",
+  artistSeries = "artistSeries",
   artwork = "artwork",
   auctions = "auctions",
   gene = "gene",
