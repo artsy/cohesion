@@ -82,6 +82,10 @@ export enum ActionType {
    */
   clickedArtistGroup = "clickedArtistGroup",
   /**
+   * Corresponds to {@link ClickedArtistSeriesGroup}
+   */
+  clickedArtistSeriesGroup = "clickedArtistSeriesGroup",
+  /**
    * Corresponds to {@link ClickedArtworkGroup}
    */
   clickedArtworkGroup = "clickedArtworkGroup",

@@ -39,6 +39,32 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
+ * A user clicks a grouping of artist series on iOS. If the artist series was boosted by the curation team, then featured will be set to true.
+ *
+ *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArtistSeriesGroup",
+ *    context_module: "moreSeriesByThisArtist",
+ *    context_page_owner_type: "artistSeries",
+ *    context_page_owner_id: "5359794d1a1e86c3740001f7",
+ *    context_page_owner_slug: "alex-katz-departure",
+ *    destination_page_owner_type: "artistSeries",
+ *    destination_page_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_page_owner_slug: "alex-katz-black-dress",
+ *    featured: true,
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
+  action: ActionType.clickedArtistSeriesGroup
+}
+
+/**
  * A user clicks a grouping of artworks on web. This includes all artwork groupings (i.e. artwork rails), except the main artwork grid on our core merchandising surfaces.
  * For our main artwork grids, we use the event [[clickedMainArtworkGrid]].
  *
@@ -137,11 +163,12 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 export interface ClickedEntityGroup {
   action:
     | ActionType.clickedArtistGroup
-    | ActionType.clickedMainArtworkGrid
+    | ActionType.clickedArtistSeriesGroup
     | ActionType.clickedArtworkGroup
     | ActionType.clickedAuctionGroup
     | ActionType.clickedCollectionGroup
     | ActionType.clickedFairGroup
+    | ActionType.clickedMainArtworkGrid
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string

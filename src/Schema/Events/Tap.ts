@@ -56,6 +56,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
  *    destination_screen_owner_type: "artistSeries",
  *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
  *    destination_screen_owner_slug: "alex-katz-black-dress",
+ *    featured: true,
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
@@ -79,7 +80,6 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  *    destination_screen_owner_type: "artwork",
  *    destination_screen_owner_id: "5e9a7a238483bf000e2c4c5e",
  *    destination_screen_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
- *    featured: true,
  *    horizontal_slide_position: 1,
  *    module_height: "single",
  *    type: "thumbnail"
