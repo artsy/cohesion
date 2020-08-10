@@ -1,3 +1,15 @@
+# v1.27.0 (Mon Aug 10 2020)
+
+#### 🚀  Enhancement
+
+- Adds export for tapped artwork grid + owner type for artist series [#91](https://github.com/artsy/cohesion/pull/91) ([@sweir27](https://github.com/sweir27))
+
+#### Authors: 1
+
+- Sarah Weir ([@sweir27](https://github.com/sweir27))
+
+---
+
 # v1.26.0 (Tue Aug 04 2020)
 
 #### 🚀  Enhancement
