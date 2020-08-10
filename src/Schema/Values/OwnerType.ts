@@ -39,6 +39,7 @@ export enum OwnerType {
  */
 export type ScreenOwnerType =
   | OwnerType.artist
+  | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctions
   | OwnerType.gene
@@ -69,6 +70,7 @@ export type ScreenOwnerType =
 export type PageOwnerType =
   | OwnerType.artist
   | OwnerType.artists
+  | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctions
   | OwnerType.collect
