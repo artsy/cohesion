@@ -1,3 +1,15 @@
+# v1.28.0 (Mon Aug 10 2020)
+
+#### 🚀  Enhancement
+
+- Include artistSeries in ScreenOwnerType [#92](https://github.com/artsy/cohesion/pull/92) ([@sweir27](https://github.com/sweir27))
+
+#### Authors: 1
+
+- Sarah Weir ([@sweir27](https://github.com/sweir27))
+
+---
+
 # v1.27.0 (Mon Aug 10 2020)
 
 #### 🚀  Enhancement
