@@ -17,9 +17,9 @@ import { OwnerType, PageOwnerType } from "../Values/OwnerType"
  *  {
  *    action: "followedArtist",
  *    context_module: "featuredArtists"
- *    context_page_owner_type: "artistSeries"
- *    context_page_owner_id: "5359794d1a1e86c3740001f7"
- *    context_page_owner_slug: "alex-katz-departure"
+ *    context_owner_type: "artistSeries"
+ *    context_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_owner_slug: "alex-katz-departure"
  *    owner_type: "artist"
  *    owner_id: "5359794d1a1e86c3740001f7"
  *    owner_slug: "alex-katz"
@@ -29,9 +29,9 @@ import { OwnerType, PageOwnerType } from "../Values/OwnerType"
 export interface FollowedArtist {
   action: ActionType.followedArtist
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
   owner_type: OwnerType.artist
   owner_id: string
   owner_slug: string
@@ -47,9 +47,9 @@ export interface FollowedArtist {
  *  {
  *    action: "unfollowedArtist",
  *    context_module: "featuredArtists"
- *    context_page_owner_type: "artistSeries"
- *    context_page_owner_id: "5359794d1a1e86c3740001f7"
- *    context_page_owner_slug: "alex-katz-departure"
+ *    context_owner_type: "artistSeries"
+ *    context_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_owner_slug: "alex-katz-departure"
  *    owner_type: "artist"
  *    owner_id: "5359794d1a1e86c3740001f7"
  *    owner_slug: "alex-katz"
@@ -59,9 +59,9 @@ export interface FollowedArtist {
 export interface UnfollowedArtist {
   action: ActionType.unfollowedArtist
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
   owner_type: OwnerType.artist
   owner_id: string
   owner_slug: string
