@@ -1,9 +1,9 @@
 import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
-import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { OwnerType } from "../Values/OwnerType"
 
 /**
- * Schemas describing save and follow events
+ * Schemas describing save and follow events for all systems
  * @packageDocumentation
  */
 
@@ -29,7 +29,7 @@ import { OwnerType, PageOwnerType } from "../Values/OwnerType"
 export interface FollowedArtist {
   action: ActionType.followedArtist
   context_module: ContextModule
-  context_owner_type: PageOwnerType
+  context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
   owner_type: OwnerType.artist
@@ -59,7 +59,7 @@ export interface FollowedArtist {
 export interface UnfollowedArtist {
   action: ActionType.unfollowedArtist
   context_module: ContextModule
-  context_owner_type: PageOwnerType
+  context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
   owner_type: OwnerType.artist
