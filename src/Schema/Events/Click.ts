@@ -1,7 +1,7 @@
 import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
-import { PageOwnerType } from "../Values/OwnerType"
+import { OwnerType, PageOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing Click events
@@ -36,6 +36,33 @@ import { PageOwnerType } from "../Values/OwnerType"
  */
 export interface ClickedArtistGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtistGroup
+}
+
+/**
+ * A user clicks a grouping of artist series on web. If the artist series was boosted by the curation team, then curation_boost will be set to true.
+ *
+ *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArtistSeriesGroup",
+ *    context_module: "moreSeriesByThisArtist",
+ *    context_page_owner_type: "artistSeries",
+ *    context_page_owner_id: "5359794d1a1e86c3740001f7",
+ *    context_page_owner_slug: "alex-katz-departure",
+ *    destination_page_owner_type: "artistSeries",
+ *    destination_page_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_page_owner_slug: "alex-katz-black-dress",
+ *    curation_boost: true,
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
+  action: ActionType.clickedArtistSeriesGroup
+  destination_page_owner_type: OwnerType.artistSeries
 }
 
 /**
@@ -137,11 +164,12 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 export interface ClickedEntityGroup {
   action:
     | ActionType.clickedArtistGroup
-    | ActionType.clickedMainArtworkGrid
+    | ActionType.clickedArtistSeriesGroup
     | ActionType.clickedArtworkGroup
     | ActionType.clickedAuctionGroup
     | ActionType.clickedCollectionGroup
     | ActionType.clickedFairGroup
+    | ActionType.clickedMainArtworkGrid
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string

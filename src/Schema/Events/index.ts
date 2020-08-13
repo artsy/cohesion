@@ -6,6 +6,7 @@ import {
 } from "./Authentication"
 import {
   ClickedArtistGroup,
+  ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
   ClickedAuctionGroup,
   ClickedCollectionGroup,
@@ -18,6 +19,7 @@ import {
 } from "./Conversations"
 import {
   TappedArtistGroup,
+  TappedArtistSeriesGroup,
   TappedArtworkGroup,
   TappedAuctionGroup,
   TappedCollectionGroup,
@@ -30,6 +32,7 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { TimeOnPage } from "./System"
+import { FollowedArtist, UnfollowedArtist } from "./SavesAndFollows"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -40,16 +43,19 @@ export type Event =
   | AuthImpression
   | CreatedAccount
   | ClickedArtistGroup
+  | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
   | ClickedAuctionGroup
   | ClickedCollectionGroup
   | ClickedFairGroup
   | ClickedMainArtworkGrid
   | FocusedOnConversationMessageInput
+  | FollowedArtist
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
   | TappedArtistGroup
+  | TappedArtistSeriesGroup
   | TappedArtworkGroup
   | TappedAuctionGroup
   | TappedCollectionGroup
@@ -61,6 +67,7 @@ export type Event =
   | TappedTabBar
   | TappedViewingRoomGroup
   | TimeOnPage
+  | UnfollowedArtist
 
 /**
  * The top-level actions an Event describes.
@@ -76,6 +83,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedArtistGroup}
    */
   clickedArtistGroup = "clickedArtistGroup",
+  /**
+   * Corresponds to {@link ClickedArtistSeriesGroup}
+   */
+  clickedArtistSeriesGroup = "clickedArtistSeriesGroup",
   /**
    * Corresponds to {@link ClickedArtworkGroup}
    */
@@ -105,6 +116,10 @@ export enum ActionType {
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
   /**
+   * Corresponds to {@link FollowedArtist}
+   */
+  followedArtist = "followedArtist",
+  /**
    * Corresponds to {@link ResetYourPassword}
    */
   resetYourPassword = "resetYourPassword",
@@ -120,6 +135,10 @@ export enum ActionType {
    * Corresponds to {@link TappedArtistGroup}
    */
   tappedArtistGroup = "tappedArtistGroup",
+  /**
+   * Corresponds to {@link TappedArtistSeriesGroup}
+   */
+  tappedArtistSeriesGroup = "tappedArtistSeriesGroup",
   /**
    * Corresponds to {@link TappedArtworkGroup}
    */
@@ -164,4 +183,8 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
+  /**
+   * Corresponds to {@link UnfollowedArtist}
+   */
+  unfollowedArtist = "unfollowedArtist",
 }

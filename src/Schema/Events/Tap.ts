@@ -1,7 +1,7 @@
 import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
-import { ScreenOwnerType } from "../Values/OwnerType"
+import { OwnerType, ScreenOwnerType } from "../Values/OwnerType"
 import { Tab } from "../Values/Tab"
 
 /**
@@ -38,6 +38,33 @@ import { Tab } from "../Values/Tab"
  */
 export interface TappedArtistGroup extends TappedEntityGroup {
   action: ActionType.tappedArtistGroup
+}
+
+/**
+ * A user taps a grouping of artist series on iOS. If the artist series was boosted by the curation team, then curation_boost will be set to true.
+ *
+ *  This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtistSeriesGroup",
+ *    context_module: "moreSeriesByThisArtist",
+ *    context_screen_owner_type: "artistSeries",
+ *    context_screen_owner_id: "5359794d1a1e86c3740001f7",
+ *    context_screen_owner_slug: "alex-katz-departure",
+ *    destination_screen_owner_type: "artistSeries",
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_screen_owner_slug: "alex-katz-black-dress",
+ *    curation_boost: true,
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedArtistSeriesGroup extends TappedEntityGroup {
+  action: ActionType.tappedArtistSeriesGroup
+  destination_screen_owner_type: OwnerType.artistSeries
 }
 
 /**
@@ -164,6 +191,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
 export interface TappedEntityGroup {
   action:
     | ActionType.tappedArtistGroup
+    | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
     | ActionType.tappedCollectionGroup
@@ -177,6 +205,7 @@ export interface TappedEntityGroup {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
+  curation_boost?: boolean
   horizontal_slide_position?: number
   module_height?: EntityModuleHeight
   type: EntityModuleType

@@ -5,6 +5,7 @@
  */
 export enum OwnerType {
   artist = "artist",
+  artistSeries = "artistSeries",
   artists = "artists",
   artistSeries = "artistSeries",
   artwork = "artwork",
