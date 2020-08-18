@@ -1,3 +1,20 @@
+# v1.29.0 (Tue Aug 18 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1437] Artist series analytics tracking for iOS and web [#90](https://github.com/artsy/cohesion/pull/90) ([@abhitip](https://github.com/abhitip))
+
+#### 🐛  Bug Fix
+
+- New helpers: clickedArtistSeriesGroup, followArtist, unfollowArtist [#93](https://github.com/artsy/cohesion/pull/93) ([@eessex](https://github.com/eessex))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.28.0 (Mon Aug 10 2020)
 
 #### 🚀  Enhancement
