@@ -39,7 +39,9 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a grouping of artist series on web. If the artist series was boosted by the curation team, then curation_boost will be set to true.
+ *  A user clicks a grouping of artist series on web.
+ *
+ *  If the series is boosted by the curation team, set curation_boost to true.
  *
  *  This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
@@ -174,6 +176,7 @@ export interface ClickedEntityGroup {
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
+  curation_boost?: boolean
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id?: string
   destination_page_owner_slug?: string
