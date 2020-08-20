@@ -1,13 +1,13 @@
 import {
   ActionType,
-  ContextModule,
+  AuthContextModule,
   FollowedArtist,
   OwnerType,
   UnfollowedArtist,
 } from "../../Schema"
 
 export interface FollowedArtistArgs {
-  contextModule: ContextModule
+  contextModule: AuthContextModule
   contextOwnerId?: string
   contextOwnerSlug?: string
   contextOwnerType: OwnerType

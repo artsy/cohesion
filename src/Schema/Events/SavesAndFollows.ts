@@ -1,5 +1,5 @@
 import { ActionType } from "."
-import { ContextModule } from "../Values/ContextModule"
+import { AuthContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
 
 /**
@@ -28,7 +28,7 @@ import { OwnerType } from "../Values/OwnerType"
  */
 export interface FollowedArtist {
   action: ActionType.followedArtist
-  context_module: ContextModule
+  context_module: AuthContextModule
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
