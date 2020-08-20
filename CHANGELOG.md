@@ -1,3 +1,16 @@
+# v1.30.0 (Thu Aug 20 2020)
+
+#### 🚀  Enhancement
+
+- Update dep typescript from 3.9.7 to v4 [#94](https://github.com/artsy/cohesion/pull/94) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.29.0 (Tue Aug 18 2020)
 
 #### 🚀  Enhancement
