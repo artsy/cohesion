@@ -58,7 +58,7 @@ export interface FollowedArtist {
  */
 export interface UnfollowedArtist {
   action: ActionType.unfollowedArtist
-  context_module: ContextModule
+  context_module: AuthContextModule
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
