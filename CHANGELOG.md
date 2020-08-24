@@ -1,3 +1,20 @@
+# v1.31.0 (Mon Aug 24 2020)
+
+#### 🚀  Enhancement
+
+- Use auth context for follow [#95](https://github.com/artsy/cohesion/pull/95) ([@eessex](https://github.com/eessex))
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of https://github.com/artsy/cohesion ([@eessex](https://github.com/eessex))
+- include popularArtistsRail in AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.30.0 (Thu Aug 20 2020)
 
 #### 🚀  Enhancement
