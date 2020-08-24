@@ -1,3 +1,15 @@
+# v1.31.1 (Mon Aug 24 2020)
+
+#### ⚠️  Pushed to `master`
+
+- add featuredArtists to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.31.0 (Mon Aug 24 2020)
 
 #### 🚀  Enhancement
