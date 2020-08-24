@@ -120,6 +120,7 @@ export type AuthContextModule =
   | ContextModule.otherWorksInAuctionRail
   | ContextModule.partnerHeader
   | ContextModule.pastFairs
+  | ContextModule.popularArtistsRail
   | ContextModule.popUpModal
   | ContextModule.recentlyViewedRail
   | ContextModule.relatedArtistsRail
