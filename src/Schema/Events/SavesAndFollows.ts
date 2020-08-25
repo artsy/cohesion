@@ -7,6 +7,17 @@ import { OwnerType } from "../Values/OwnerType"
  * @packageDocumentation
  */
 
+export interface FollowedEntity {
+  // action: ActionType.followedArtist | ActionType.followedGene | ActionType.unfollowedArtist | ActionType.unfollowedGene
+  context_module: AuthContextModule
+  context_owner_type: OwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  owner_type: OwnerType.artist | OwnerType.gene
+  owner_id: string
+  owner_slug: string
+}
+
 /**
  * A user has followed an artist.
  *
@@ -26,15 +37,31 @@ import { OwnerType } from "../Values/OwnerType"
  *  }
  * ```
  */
-export interface FollowedArtist {
+export interface FollowedArtist extends FollowedEntity {
   action: ActionType.followedArtist
-  context_module: AuthContextModule
-  context_owner_type: OwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  owner_type: OwnerType.artist
-  owner_id: string
-  owner_slug: string
+}
+
+/**
+ * A user has followed a gene.
+ *
+ * This schema describes events sent to Segment from [[followedGene]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "followedGene",
+ *    context_module: "intextTooltip"
+ *    context_owner_type: "article"
+ *    context_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_owner_slug: "artsy-editorial-future-of-art"
+ *    owner_type: "gene"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "surrealism"
+ *  }
+ * ```
+ */
+export interface FollowedGene extends FollowedEntity {
+  action: ActionType.followedGene
 }
 
 /**
@@ -56,13 +83,29 @@ export interface FollowedArtist {
  *  }
  * ```
  */
-export interface UnfollowedArtist {
+export interface UnfollowedArtist extends FollowedEntity {
   action: ActionType.unfollowedArtist
-  context_module: AuthContextModule
-  context_owner_type: OwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  owner_type: OwnerType.artist
-  owner_id: string
-  owner_slug: string
+}
+
+/**
+ * A user has unfollowed a gene.
+ *
+ * This schema describes events sent to Segment from [[unfollowedGene]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "unfollowedGene",
+ *    context_module: "intextTooltip"
+ *    context_owner_type: "article"
+ *    context_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_owner_slug: "artsy-editorial-future-of-art"
+ *    owner_type: "gene"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "surrealism"
+ *  }
+ * ```
+ */
+export interface UnfollowedGene extends FollowedEntity {
+  action: ActionType.unfollowedGene
 }

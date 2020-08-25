@@ -120,6 +120,10 @@ export enum ActionType {
    */
   followedArtist = "followedArtist",
   /**
+   * Corresponds to {@link FollowedGene}
+   */
+  followedGene = "followedGene",
+  /**
    * Corresponds to {@link ResetYourPassword}
    */
   resetYourPassword = "resetYourPassword",
@@ -187,4 +191,8 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedArtist}
    */
   unfollowedArtist = "unfollowedArtist",
+  /**
+   * Corresponds to {@link UnfollowedArtist}
+   */
+  unfollowedGene = "unfollowedGene",
 }
