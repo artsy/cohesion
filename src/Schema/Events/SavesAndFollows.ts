@@ -8,14 +8,13 @@ import { OwnerType } from "../Values/OwnerType"
  */
 
 export interface FollowedEntity {
-  // action: ActionType.followedArtist | ActionType.followedGene | ActionType.unfollowedArtist | ActionType.unfollowedGene
   context_module: AuthContextModule
-  context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  owner_type: OwnerType.artist | OwnerType.gene
+  context_owner_type: OwnerType
   owner_id: string
   owner_slug: string
+  owner_type: OwnerType.artist | OwnerType.gene
 }
 
 /**
@@ -28,12 +27,12 @@ export interface FollowedEntity {
  *  {
  *    action: "followedArtist",
  *    context_module: "featuredArtists"
- *    context_owner_type: "artistSeries"
  *    context_owner_id: "5359794d1a1e86c3740001f7"
  *    context_owner_slug: "alex-katz-departure"
- *    owner_type: "artist"
+ *    context_owner_type: "artistSeries"
  *    owner_id: "5359794d1a1e86c3740001f7"
  *    owner_slug: "alex-katz"
+ *    owner_type: "artist"
  *  }
  * ```
  */
@@ -51,12 +50,12 @@ export interface FollowedArtist extends FollowedEntity {
  *  {
  *    action: "followedGene",
  *    context_module: "intextTooltip"
- *    context_owner_type: "article"
  *    context_owner_id: "5359794d1a1e86c3740001f7"
  *    context_owner_slug: "artsy-editorial-future-of-art"
- *    owner_type: "gene"
+ *    context_owner_type: "article"
  *    owner_id: "5359794d1a1e86c3740001f7"
  *    owner_slug: "surrealism"
+ *    owner_type: "gene"
  *  }
  * ```
  */
@@ -74,12 +73,12 @@ export interface FollowedGene extends FollowedEntity {
  *  {
  *    action: "unfollowedArtist",
  *    context_module: "featuredArtists"
- *    context_owner_type: "artistSeries"
  *    context_owner_id: "5359794d1a1e86c3740001f7"
  *    context_owner_slug: "alex-katz-departure"
- *    owner_type: "artist"
+ *    context_owner_type: "artistSeries"
  *    owner_id: "5359794d1a1e86c3740001f7"
  *    owner_slug: "alex-katz"
+ *    owner_type: "artist"
  *  }
  * ```
  */
@@ -97,12 +96,12 @@ export interface UnfollowedArtist extends FollowedEntity {
  *  {
  *    action: "unfollowedGene",
  *    context_module: "intextTooltip"
- *    context_owner_type: "article"
  *    context_owner_id: "5359794d1a1e86c3740001f7"
  *    context_owner_slug: "artsy-editorial-future-of-art"
- *    owner_type: "gene"
+ *    context_owner_type: "article"
  *    owner_id: "5359794d1a1e86c3740001f7"
  *    owner_slug: "surrealism"
+ *    owner_type: "gene"
  *  }
  * ```
  */
