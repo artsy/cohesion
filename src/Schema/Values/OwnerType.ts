@@ -4,6 +4,8 @@
  * @packageDocumentation
  */
 export enum OwnerType {
+  article = "article",
+  articles = "articles",
   artist = "artist",
   artists = "artists",
   artistSeries = "artistSeries",
@@ -68,6 +70,8 @@ export type ScreenOwnerType =
  * Owner types available in web/mobile web
  */
 export type PageOwnerType =
+  | OwnerType.article
+  | OwnerType.articles
   | OwnerType.artist
   | OwnerType.artists
   | OwnerType.artistSeries
