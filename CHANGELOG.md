@@ -1,3 +1,15 @@
+# v1.32.0 (Tue Aug 25 2020)
+
+#### 🚀  Enhancement
+
+- Add article and articles to OwnerType [#97](https://github.com/artsy/cohesion/pull/97) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.31.1 (Mon Aug 24 2020)
 
 #### ⚠️  Pushed to `master`
