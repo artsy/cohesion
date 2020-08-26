@@ -1,3 +1,15 @@
+# v1.33.2 (Wed Aug 26 2020)
+
+#### 🐛  Bug Fix
+
+- FollowedGene / UnfollowedGene [#98](https://github.com/artsy/cohesion/pull/98) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.33.1 (Wed Aug 26 2020)
 
 #### ⚠️  Pushed to `master`
