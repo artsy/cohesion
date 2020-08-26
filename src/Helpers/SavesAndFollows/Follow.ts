@@ -2,11 +2,13 @@ import {
   ActionType,
   AuthContextModule,
   FollowedArtist,
+  FollowedGene,
   OwnerType,
   UnfollowedArtist,
+  UnfollowedGene,
 } from "../../Schema"
 
-export interface FollowedArtistArgs {
+export interface FollowedArgs {
   contextModule: AuthContextModule
   contextOwnerId?: string
   contextOwnerSlug?: string
@@ -22,16 +24,16 @@ export interface FollowedArtistArgs {
  * ```
  * followedArtist({
  *   contextModule: ContextModule.artistSeriesRail
- *   contextOwnerType: OwnerType.artist,
  *   contextOwnerId: "5359794d2a1e86c3741001f8",
  *   contextOwnerSlug: "andy-warhol",
+ *   contextOwnerType: OwnerType.artist,
  *   ownerId: "5359794d1a1e86c3740001f7",
  *   ownerSlug: "sturtevant",
  * })
  * ```
  */
-export const followedArtist = (args: FollowedArtistArgs): FollowedArtist => {
-  return followArtist(args) as FollowedArtist
+export const followedArtist = (args: FollowedArgs): FollowedArtist => {
+  return follow(args, OwnerType.artist) as FollowedArtist
 }
 
 /**
@@ -41,21 +43,57 @@ export const followedArtist = (args: FollowedArtistArgs): FollowedArtist => {
  * ```
  * unfollowedArtist({
  *   contextModule: ContextModule.artistSeriesRail
- *   contextOwnerType: OwnerType.artist,
  *   contextOwnerId: "5359794d2a1e86c3741001f8",
  *   contextOwnerSlug: "andy-warhol",
+ *   contextOwnerType: OwnerType.artist,
  *   OwnerId: "5359794d1a1e86c3740001f7",
  *   OwnerSlug: "sturtevant",
  * })
  * ```
  */
-export const unfollowedArtist = (
-  args: FollowedArtistArgs,
-): UnfollowedArtist => {
-  return followArtist(args, true) as UnfollowedArtist
+export const unfollowedArtist = (args: FollowedArgs): UnfollowedArtist => {
+  return follow(args, OwnerType.artist, true) as UnfollowedArtist
 }
 
-const followArtist = (
+/**
+ *  A user follows a gene
+ *
+ * @example
+ * ```
+ * followedGene({
+ *   contextModule: ContextModule.intextTooltip,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "artsy-editorial-future-of-art",
+ *   contextOwnerType: OwnerType.article,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "surrealism",
+ * })
+ * ```
+ */
+export const followedGene = (args: FollowedArgs): FollowedGene => {
+  return follow(args, OwnerType.gene) as FollowedGene
+}
+
+/**
+ *  A user unfollows a gene
+ *
+ * @example
+ * ```
+ * unfollowedGene({
+ *   contextModule: ContextModule.intextTooltip,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "artsy-editorial-future-of-art",
+ *   contextOwnerType: OwnerType.article,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "surrealism",
+ * })
+ * ```
+ */
+export const unfollowedGene = (args: FollowedArgs): UnfollowedGene => {
+  return follow(args, OwnerType.gene, true) as UnfollowedGene
+}
+
+const follow = (
   {
     contextModule,
     contextOwnerId,
@@ -63,15 +101,24 @@ const followArtist = (
     contextOwnerType,
     ownerId,
     ownerSlug,
-  }: FollowedArtistArgs,
+  }: FollowedArgs,
+  ownerType: OwnerType.artist | OwnerType.gene,
   isUnfollow?: boolean,
-): UnfollowedArtist | FollowedArtist => {
+): UnfollowedArtist | FollowedArtist | FollowedGene | UnfollowedGene => {
   let action: ActionType
-  if (isUnfollow) {
-    action = ActionType.unfollowedArtist
-  } else {
-    action = ActionType.followedArtist
+
+  switch (ownerType) {
+    case OwnerType.artist: {
+      action = isUnfollow
+        ? ActionType.unfollowedArtist
+        : ActionType.followedArtist
+      break
+    }
+    case OwnerType.gene: {
+      action = isUnfollow ? ActionType.unfollowedGene : ActionType.followedGene
+    }
   }
+
   return {
     action,
     context_module: contextModule,
@@ -80,6 +127,6 @@ const followArtist = (
     context_owner_type: contextOwnerType,
     owner_id: ownerId,
     owner_slug: ownerSlug,
-    owner_type: OwnerType.artist,
+    owner_type: ownerType,
   }
 }

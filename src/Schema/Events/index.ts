@@ -18,6 +18,12 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import {
+  FollowedArtist,
+  FollowedGene,
+  UnfollowedArtist,
+  UnfollowedGene,
+} from "./SavesAndFollows"
+import {
   TappedArtistGroup,
   TappedArtistSeriesGroup,
   TappedArtworkGroup,
@@ -32,7 +38,6 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { TimeOnPage } from "./System"
-import { FollowedArtist, UnfollowedArtist } from "./SavesAndFollows"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -51,6 +56,7 @@ export type Event =
   | ClickedMainArtworkGrid
   | FocusedOnConversationMessageInput
   | FollowedArtist
+  | FollowedGene
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
@@ -68,6 +74,7 @@ export type Event =
   | TappedViewingRoomGroup
   | TimeOnPage
   | UnfollowedArtist
+  | UnfollowedGene
 
 /**
  * The top-level actions an Event describes.
@@ -119,6 +126,10 @@ export enum ActionType {
    * Corresponds to {@link FollowedArtist}
    */
   followedArtist = "followedArtist",
+  /**
+   * Corresponds to {@link FollowedGene}
+   */
+  followedGene = "followedGene",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
@@ -187,4 +198,8 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedArtist}
    */
   unfollowedArtist = "unfollowedArtist",
+  /**
+   * Corresponds to {@link UnfollowedArtist}
+   */
+  unfollowedGene = "unfollowedGene",
 }
