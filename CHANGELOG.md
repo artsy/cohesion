@@ -1,3 +1,15 @@
+# v1.33.0 (Wed Aug 26 2020)
+
+#### 🚀  Enhancement
+
+- Adds allArtistSeries for iOS [#99](https://github.com/artsy/cohesion/pull/99) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.32.0 (Tue Aug 25 2020)
 
 #### 🚀  Enhancement
