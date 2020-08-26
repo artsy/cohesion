@@ -4,6 +4,7 @@
  * @packageDocumentation
  */
 export enum OwnerType {
+  allArtistSeries = "allArtistSeries",
   article = "article",
   articles = "articles",
   artist = "artist",
@@ -40,6 +41,7 @@ export enum OwnerType {
  * Owner types available in iOS
  */
 export type ScreenOwnerType =
+  | OwnerType.allArtistSeries
   | OwnerType.artist
   | OwnerType.artistSeries
   | OwnerType.artwork
