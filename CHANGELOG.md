@@ -1,3 +1,15 @@
+# v1.33.1 (Wed Aug 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add artistSeriesRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.33.0 (Wed Aug 26 2020)
 
 #### 🚀  Enhancement
