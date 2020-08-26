@@ -6,7 +6,6 @@
  */
 export enum ContextModule {
   aboutTheWork = "aboutTheWork",
-  allArtistSeries = "allArtistSeries",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
   artistHighDemandGrid = "artistHighDemandGrid",
@@ -88,7 +87,6 @@ export enum ContextModule {
  */
 export type AuthContextModule =
   | ContextModule.aboutTheWork
-  | ContextModule.allArtistSeries
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
   | ContextModule.artistsTab
