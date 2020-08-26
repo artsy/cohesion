@@ -89,6 +89,7 @@ export type AuthContextModule =
   | ContextModule.aboutTheWork
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
+  | ContextModule.artistSeriesRail
   | ContextModule.artistsTab
   | ContextModule.artistsToFollowRail
   | ContextModule.artworkGrid
