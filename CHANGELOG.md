@@ -1,3 +1,15 @@
+# v1.33.3 (Thu Aug 27 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add topWorksRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.33.2 (Wed Aug 26 2020)
 
 #### 🐛  Bug Fix
