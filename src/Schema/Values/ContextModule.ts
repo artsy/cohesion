@@ -131,6 +131,7 @@ export type AuthContextModule =
   | ContextModule.showHeader
   | ContextModule.showInfo
   | ContextModule.tagHeader
+  | ContextModule.topWorksRail
   | ContextModule.worksByPopularArtistsRail
   | ContextModule.worksForSaleRail
   | ContextModule.viewingRoom
