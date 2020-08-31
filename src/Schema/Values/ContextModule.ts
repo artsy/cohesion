@@ -106,6 +106,7 @@ export type AuthContextModule =
   | ContextModule.consignSubmissionFlow
   | ContextModule.currentShowsRail
   | ContextModule.fairInfo
+  | ContextModule.fairRail
   | ContextModule.fairsHeader
   | ContextModule.featuredArtists
   | ContextModule.featuredArtistsRail
