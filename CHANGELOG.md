@@ -1,3 +1,15 @@
+# v1.33.4 (Mon Aug 31 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add fairRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.33.3 (Thu Aug 27 2020)
 
 #### ⚠️  Pushed to `master`
