@@ -1,3 +1,15 @@
+# v1.33.5 (Wed Sep 02 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add recommendedArtistsRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.33.4 (Mon Aug 31 2020)
 
 #### ⚠️  Pushed to `master`
