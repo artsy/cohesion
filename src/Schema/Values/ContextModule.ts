@@ -126,6 +126,7 @@ export type AuthContextModule =
   | ContextModule.popularArtistsRail
   | ContextModule.popUpModal
   | ContextModule.recentlyViewedRail
+  | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
   | ContextModule.relatedWorksRail
   | ContextModule.saveWorksCTA
