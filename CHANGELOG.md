@@ -1,3 +1,15 @@
+# v1.34.0 (Wed Sep 09 2020)
+
+#### 🚀  Enhancement
+
+- add clickedCollectionGroup helper [#100](https://github.com/artsy/cohesion/pull/100) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.33.5 (Wed Sep 02 2020)
 
 #### ⚠️  Pushed to `master`
