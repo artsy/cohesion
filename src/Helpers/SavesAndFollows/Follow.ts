@@ -72,7 +72,7 @@ export const unfollowedArtist = (args: FollowedArgs): UnfollowedArtist => {
  *   contextOwnerSlug: "andy-warhol-skull",
  *   contextOwnerType: OwnerType.artwork,
  *   ownerId: "5359794d1a1e86c3740001f7",
- *   ownerSlug: "frieze-london"",
+ *   ownerSlug: "frieze-london",
  * })
  * ```
  */
@@ -91,7 +91,7 @@ export const followedFair = (args: FollowedArgs): FollowedFair => {
  *   contextOwnerSlug: "andy-warhol-skull",
  *   contextOwnerType: OwnerType.artwork,
  *   ownerId: "5359794d1a1e86c3740001f7",
- *   ownerSlug: "frieze-london"",
+ *   ownerSlug: "frieze-london",
  * })
  * ```
  */
