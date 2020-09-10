@@ -3,9 +3,11 @@ import {
   AuthContextModule,
   FollowedArtist,
   FollowedGene,
+  FollowedPartner,
   OwnerType,
   UnfollowedArtist,
   UnfollowedGene,
+  UnfollowedPartner,
 } from "../../Schema"
 
 export interface FollowedArgs {
@@ -93,6 +95,44 @@ export const unfollowedGene = (args: FollowedArgs): UnfollowedGene => {
   return follow(args, OwnerType.gene, true) as UnfollowedGene
 }
 
+/**
+ *  A user follows a partner
+ *
+ * @example
+ * ```
+ * followedPartner({
+ *   contextModule: ContextModule.aboutTheWork,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "pace-prints",
+ * })
+ * ```
+ */
+export const followedPartner = (args: FollowedArgs): FollowedPartner => {
+  return follow(args, OwnerType.partner) as FollowedPartner
+}
+
+/**
+ *  A user unfollows a partner
+ *
+ * @example
+ * ```
+ * unfollowedPartner({
+ *   contextModule: ContextModule.aboutTheWork,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "pace-prints",
+ * })
+ * ```
+ */
+export const unfollowedPartner = (args: FollowedArgs): UnfollowedPartner => {
+  return follow(args, OwnerType.partner, true) as UnfollowedPartner
+}
+
 const follow = (
   {
     contextModule,
@@ -102,9 +142,15 @@ const follow = (
     ownerId,
     ownerSlug,
   }: FollowedArgs,
-  ownerType: OwnerType.artist | OwnerType.gene,
+  ownerType: OwnerType.artist | OwnerType.gene | OwnerType.partner,
   isUnfollow?: boolean,
-): UnfollowedArtist | FollowedArtist | FollowedGene | UnfollowedGene => {
+):
+  | UnfollowedArtist
+  | FollowedArtist
+  | FollowedGene
+  | UnfollowedGene
+  | FollowedPartner
+  | UnfollowedPartner => {
   let action: ActionType
 
   switch (ownerType) {
@@ -116,6 +162,12 @@ const follow = (
     }
     case OwnerType.gene: {
       action = isUnfollow ? ActionType.unfollowedGene : ActionType.followedGene
+      break
+    }
+    case OwnerType.partner: {
+      action = isUnfollow
+        ? ActionType.unfollowedPartner
+        : ActionType.followedPartner
     }
   }
 

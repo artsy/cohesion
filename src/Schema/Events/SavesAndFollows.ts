@@ -14,7 +14,7 @@ export interface FollowedEntity {
   context_owner_type: OwnerType
   owner_id: string
   owner_slug: string
-  owner_type: OwnerType.artist | OwnerType.gene
+  owner_type: OwnerType.artist | OwnerType.gene | OwnerType.partner
 }
 
 /**
@@ -64,6 +64,29 @@ export interface FollowedGene extends FollowedEntity {
 }
 
 /**
+ * A user has followed a partner.
+ *
+ * This schema describes events sent to Segment from [[followedPartner]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "followedPartner",
+ *    context_module: "aboutTheWork"
+ *    context_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_owner_slug: "andy-warhol-skull"
+ *    context_owner_type: "artwork"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "pace-prints"
+ *    owner_type: "partner"
+ *  }
+ * ```
+ */
+export interface FollowedPartner extends FollowedEntity {
+  action: ActionType.followedPartner
+}
+
+/**
  * A user has unfollowed an artist.
  *
  * This schema describes events sent to Segment from [[unfollowedArtist]]
@@ -107,4 +130,27 @@ export interface UnfollowedArtist extends FollowedEntity {
  */
 export interface UnfollowedGene extends FollowedEntity {
   action: ActionType.unfollowedGene
+}
+
+/**
+ * A user has unfollowed a partner.
+ *
+ * This schema describes events sent to Segment from [[unfollowedPartner]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "unfollowedPartner",
+ *    context_module: "aboutTheWork"
+ *    context_owner_id: "5359794d1a1e86c3740001f7"
+ *    context_owner_slug: "andy-warhol-skull"
+ *    context_owner_type: "artwork"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "pace-prints"
+ *    owner_type: "partner"
+ *  }
+ * ```
+ */
+export interface UnfollowedPartner extends FollowedEntity {
+  action: ActionType.unfollowedPartner
 }

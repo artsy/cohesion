@@ -20,8 +20,10 @@ import {
 import {
   FollowedArtist,
   FollowedGene,
+  FollowedPartner,
   UnfollowedArtist,
   UnfollowedGene,
+  UnfollowedPartner,
 } from "./SavesAndFollows"
 import {
   TappedArtistGroup,
@@ -57,6 +59,7 @@ export type Event =
   | FocusedOnConversationMessageInput
   | FollowedArtist
   | FollowedGene
+  | FollowedPartner
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
@@ -75,6 +78,7 @@ export type Event =
   | TimeOnPage
   | UnfollowedArtist
   | UnfollowedGene
+  | UnfollowedPartner
 
 /**
  * The top-level actions an Event describes.
@@ -130,6 +134,10 @@ export enum ActionType {
    * Corresponds to {@link FollowedGene}
    */
   followedGene = "followedGene",
+  /**
+   * Corresponds to {@link FollowedPartner}
+   */
+  followedPartner = "followedPartner",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
@@ -202,4 +210,8 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedArtist}
    */
   unfollowedGene = "unfollowedGene",
+  /**
+   * Corresponds to {@link UnfollowedPartner}
+   */
+  unfollowedPartner = "unfollowedPartner",
 }
