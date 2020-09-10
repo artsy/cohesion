@@ -7,6 +7,22 @@ import { OwnerType } from "../Values/OwnerType"
  * @packageDocumentation
  */
 
+export type FollowableEntity =
+  | OwnerType.artist
+  | OwnerType.fair
+  | OwnerType.gene
+  | OwnerType.partner
+
+export type FollowEvents =
+  | FollowedArtist
+  | UnfollowedArtist
+  | FollowedFair
+  | UnfollowedFair
+  | FollowedGene
+  | UnfollowedGene
+  | FollowedPartner
+  | UnfollowedPartner
+
 export interface FollowedEntity {
   context_module: AuthContextModule
   context_owner_id?: string
@@ -14,7 +30,7 @@ export interface FollowedEntity {
   context_owner_type: OwnerType
   owner_id: string
   owner_slug: string
-  owner_type: OwnerType.artist | OwnerType.gene | OwnerType.partner
+  owner_type: FollowableEntity
 }
 
 /**
@@ -38,6 +54,29 @@ export interface FollowedEntity {
  */
 export interface FollowedArtist extends FollowedEntity {
   action: ActionType.followedArtist
+}
+
+/**
+ * A user has followed a fair.
+ *
+ * This schema describes events sent to Segment from [[followedFair]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "followedFair",
+ *    context_module: "otherWorksFromPartnerRail"
+ *    context_owner_id: "5359794d1a1e86c3740001f8"
+ *    context_owner_slug: "andy-warhol-skull"
+ *    context_owner_type: "artwork"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "frieze-london"
+ *    owner_type: "fair"
+ *  }
+ * ```
+ */
+export interface FollowedFair extends FollowedEntity {
+  action: ActionType.followedFair
 }
 
 /**
@@ -107,6 +146,29 @@ export interface FollowedPartner extends FollowedEntity {
  */
 export interface UnfollowedArtist extends FollowedEntity {
   action: ActionType.unfollowedArtist
+}
+
+/**
+ * A user has unfollowed a fair.
+ *
+ * This schema describes events sent to Segment from [[unfollowedFair]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "unfollowedFair",
+ *    context_module: "otherWorksFromPartnerRail"
+ *    context_owner_id: "5359794d1a1e86c3740001f8"
+ *    context_owner_slug: "andy-warhol-skull"
+ *    context_owner_type: "artwork"
+ *    owner_id: "5359794d1a1e86c3740001f7"
+ *    owner_slug: "frieze-london"
+ *    owner_type: "fair"
+ *  }
+ * ```
+ */
+export interface UnfollowedFair extends FollowedEntity {
+  action: ActionType.unfollowedFair
 }
 
 /**

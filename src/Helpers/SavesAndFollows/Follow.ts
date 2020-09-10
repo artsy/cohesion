@@ -1,11 +1,15 @@
 import {
   ActionType,
   AuthContextModule,
+  FollowEvents,
+  FollowableEntity,
   FollowedArtist,
+  FollowedFair,
   FollowedGene,
   FollowedPartner,
   OwnerType,
   UnfollowedArtist,
+  UnfollowedFair,
   UnfollowedGene,
   UnfollowedPartner,
 } from "../../Schema"
@@ -55,6 +59,44 @@ export const followedArtist = (args: FollowedArgs): FollowedArtist => {
  */
 export const unfollowedArtist = (args: FollowedArgs): UnfollowedArtist => {
   return follow(args, OwnerType.artist, true) as UnfollowedArtist
+}
+
+/**
+ *  A user follows a fair
+ *
+ * @example
+ * ```
+ * followedFair({
+ *   contextModule: ContextModule.otherWorksFromPartnerRail,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "frieze-london"",
+ * })
+ * ```
+ */
+export const followedFair = (args: FollowedArgs): FollowedFair => {
+  return follow(args, OwnerType.fair) as FollowedFair
+}
+
+/**
+ *  A user unfollows a fair
+ *
+ * @example
+ * ```
+ * unfollowedFair({
+ *   contextModule: ContextModule.otherWorksFromPartnerRail,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "frieze-london"",
+ * })
+ * ```
+ */
+export const unfollowedFair = (args: FollowedArgs): UnfollowedFair => {
+  return follow(args, OwnerType.fair, true) as UnfollowedFair
 }
 
 /**
@@ -142,15 +184,9 @@ const follow = (
     ownerId,
     ownerSlug,
   }: FollowedArgs,
-  ownerType: OwnerType.artist | OwnerType.gene | OwnerType.partner,
+  ownerType: FollowableEntity,
   isUnfollow?: boolean,
-):
-  | UnfollowedArtist
-  | FollowedArtist
-  | FollowedGene
-  | UnfollowedGene
-  | FollowedPartner
-  | UnfollowedPartner => {
+): FollowEvents => {
   let action: ActionType
 
   switch (ownerType) {
@@ -158,6 +194,10 @@ const follow = (
       action = isUnfollow
         ? ActionType.unfollowedArtist
         : ActionType.followedArtist
+      break
+    }
+    case OwnerType.fair: {
+      action = isUnfollow ? ActionType.unfollowedFair : ActionType.followedFair
       break
     }
     case OwnerType.gene: {
