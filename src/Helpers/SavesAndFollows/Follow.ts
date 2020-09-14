@@ -1,11 +1,17 @@
 import {
   ActionType,
   AuthContextModule,
+  FollowEvents,
+  FollowableEntity,
   FollowedArtist,
+  FollowedFair,
   FollowedGene,
+  FollowedPartner,
   OwnerType,
   UnfollowedArtist,
+  UnfollowedFair,
   UnfollowedGene,
+  UnfollowedPartner,
 } from "../../Schema"
 
 export interface FollowedArgs {
@@ -56,6 +62,44 @@ export const unfollowedArtist = (args: FollowedArgs): UnfollowedArtist => {
 }
 
 /**
+ *  A user follows a fair
+ *
+ * @example
+ * ```
+ * followedFair({
+ *   contextModule: ContextModule.otherWorksFromPartnerRail,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "frieze-london",
+ * })
+ * ```
+ */
+export const followedFair = (args: FollowedArgs): FollowedFair => {
+  return follow(args, OwnerType.fair) as FollowedFair
+}
+
+/**
+ *  A user unfollows a fair
+ *
+ * @example
+ * ```
+ * unfollowedFair({
+ *   contextModule: ContextModule.otherWorksFromPartnerRail,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "frieze-london",
+ * })
+ * ```
+ */
+export const unfollowedFair = (args: FollowedArgs): UnfollowedFair => {
+  return follow(args, OwnerType.fair, true) as UnfollowedFair
+}
+
+/**
  *  A user follows a gene
  *
  * @example
@@ -93,6 +137,44 @@ export const unfollowedGene = (args: FollowedArgs): UnfollowedGene => {
   return follow(args, OwnerType.gene, true) as UnfollowedGene
 }
 
+/**
+ *  A user follows a partner
+ *
+ * @example
+ * ```
+ * followedPartner({
+ *   contextModule: ContextModule.aboutTheWork,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "pace-prints",
+ * })
+ * ```
+ */
+export const followedPartner = (args: FollowedArgs): FollowedPartner => {
+  return follow(args, OwnerType.partner) as FollowedPartner
+}
+
+/**
+ *  A user unfollows a partner
+ *
+ * @example
+ * ```
+ * unfollowedPartner({
+ *   contextModule: ContextModule.aboutTheWork,
+ *   contextOwnerId: "5359794d2a1e86c3741001f8",
+ *   contextOwnerSlug: "andy-warhol-skull",
+ *   contextOwnerType: OwnerType.artwork,
+ *   ownerId: "5359794d1a1e86c3740001f7",
+ *   ownerSlug: "pace-prints",
+ * })
+ * ```
+ */
+export const unfollowedPartner = (args: FollowedArgs): UnfollowedPartner => {
+  return follow(args, OwnerType.partner, true) as UnfollowedPartner
+}
+
 const follow = (
   {
     contextModule,
@@ -102,9 +184,9 @@ const follow = (
     ownerId,
     ownerSlug,
   }: FollowedArgs,
-  ownerType: OwnerType.artist | OwnerType.gene,
+  ownerType: FollowableEntity,
   isUnfollow?: boolean,
-): UnfollowedArtist | FollowedArtist | FollowedGene | UnfollowedGene => {
+): FollowEvents => {
   let action: ActionType
 
   switch (ownerType) {
@@ -114,8 +196,18 @@ const follow = (
         : ActionType.followedArtist
       break
     }
+    case OwnerType.fair: {
+      action = isUnfollow ? ActionType.unfollowedFair : ActionType.followedFair
+      break
+    }
     case OwnerType.gene: {
       action = isUnfollow ? ActionType.unfollowedGene : ActionType.followedGene
+      break
+    }
+    case OwnerType.partner: {
+      action = isUnfollow
+        ? ActionType.unfollowedPartner
+        : ActionType.followedPartner
     }
   }
 

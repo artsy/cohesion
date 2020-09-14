@@ -18,12 +18,6 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import {
-  FollowedArtist,
-  FollowedGene,
-  UnfollowedArtist,
-  UnfollowedGene,
-} from "./SavesAndFollows"
-import {
   TappedArtistGroup,
   TappedArtistSeriesGroup,
   TappedArtworkGroup,
@@ -37,6 +31,7 @@ import {
   TappedTabBar,
   TappedViewingRoomGroup,
 } from "./Tap"
+import { FollowEvents } from "./SavesAndFollows"
 import { TimeOnPage } from "./System"
 
 /**
@@ -55,8 +50,7 @@ export type Event =
   | ClickedFairGroup
   | ClickedMainArtworkGrid
   | FocusedOnConversationMessageInput
-  | FollowedArtist
-  | FollowedGene
+  | FollowEvents
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
@@ -73,8 +67,6 @@ export type Event =
   | TappedTabBar
   | TappedViewingRoomGroup
   | TimeOnPage
-  | UnfollowedArtist
-  | UnfollowedGene
 
 /**
  * The top-level actions an Event describes.
@@ -127,9 +119,17 @@ export enum ActionType {
    */
   followedArtist = "followedArtist",
   /**
+   * Corresponds to {@link FollowedFair}
+   */
+  followedFair = "followedFair",
+  /**
    * Corresponds to {@link FollowedGene}
    */
   followedGene = "followedGene",
+  /**
+   * Corresponds to {@link FollowedPartner}
+   */
+  followedPartner = "followedPartner",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
@@ -199,7 +199,15 @@ export enum ActionType {
    */
   unfollowedArtist = "unfollowedArtist",
   /**
-   * Corresponds to {@link UnfollowedArtist}
+   * Corresponds to {@link UnfollowedFair}
+   */
+  unfollowedFair = "unfollowedFair",
+  /**
+   * Corresponds to {@link UnfollowedGene}
    */
   unfollowedGene = "unfollowedGene",
+  /**
+   * Corresponds to {@link UnfollowedPartner}
+   */
+  unfollowedPartner = "unfollowedPartner",
 }

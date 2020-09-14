@@ -22,6 +22,7 @@ export enum OwnerType {
   consign = "consign",
   explore = "explore",
   fair = "fair",
+  fairs = "fairs",
   galleries = "galleries",
   home = "home",
   inbox = "inbox",
