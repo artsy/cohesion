@@ -1,3 +1,15 @@
+# v1.35.0 (Mon Sep 14 2020)
+
+#### 🚀  Enhancement
+
+- Follow profiles, fairs [#101](https://github.com/artsy/cohesion/pull/101) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.34.0 (Wed Sep 09 2020)
 
 #### 🚀  Enhancement
