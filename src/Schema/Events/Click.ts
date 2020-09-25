@@ -252,7 +252,7 @@ export interface ClickedMainArtworkGrid {
  *  ```
  *  {
  *    action: "clickedNavigationTab",
- *    context_module: "exhibitorsView",
+ *    context_module: "exhibitorsTab",
  *    context_page_owner_type: "fair",
  *    context_page_owner_id: "5e726bd22524980012caafb0",
  *    context_page_owner_slug: "arteba-special-edition",
@@ -280,7 +280,7 @@ export interface ClickedNavigationTab {
  *  ```
  *  {
  *    action: "clickedShowMore",
- *    context_module: "exhibitorsView",
+ *    context_module: "exhibitorsTab",
  *    context_page_owner_type: "fair",
  *    context_page_owner_id: "5e726bd22524980012caafb0",
  *    context_page_owner_slug: "arteba-special-edition",
