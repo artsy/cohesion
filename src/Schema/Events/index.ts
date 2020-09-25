@@ -143,6 +143,10 @@ export enum ActionType {
    */
   sentConversationMessage = "sentConversationMessage",
   /**
+   * Corresponds to {@link TappedArticleGroup}
+   */
+  tappedArticleGroup = "tappedArticleGroup",
+  /**
    * Corresponds to {@link TappedArtistGroup}
    */
   tappedArtistGroup = "tappedArtistGroup",
@@ -190,6 +194,14 @@ export enum ActionType {
    * Corresponds to {@link TappedViewingRoomGroup}
    */
   tappedViewingRoomGroup = "tappedViewingRoomGroup",
+  /**
+   * Corresponds to {@link TappedShowMore}
+   */
+  tappedShowMore = "tappedShowMore",
+  /**
+   * Corresponds to {@link TappedView}
+   */
+  tappedView = "tappedView",
   /**
    * Corresponds to {@link TimeOnPage}
    */

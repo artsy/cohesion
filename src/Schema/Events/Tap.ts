@@ -17,6 +17,30 @@ import { Tab } from "../Values/Tab"
  */
 
 /**
+ * A user taps a grouping of articles on iOS
+ *
+ *  This schema describes events sent to Segment from [[tappedArticleGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArticleGroup",
+ *    context_module: "relatedArticles",
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5e726bd22524980012caafb0",
+ *    context_screen_owner_slug: "arteba-special-edition",
+ *    destination_screen_owner_type: "article",
+ *    destination_screen_owner_id: "542f1ccc7261694847410400",
+ *    destination_screen_owner_slug: "acaw-acaw-presenter-charwei-tsai",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedArticleGroup extends TappedEntityGroup {
+  action: ActionType.tappedArticleGroup
+}
+
+/**
  * A user taps a grouping of artists on iOS
  *
  *  This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -190,6 +214,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
  */
 export interface TappedEntityGroup {
   action:
+    | ActionType.tappedArticleGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
@@ -342,4 +367,56 @@ export interface TappedTabBar {
  */
 export interface TappedViewingRoomGroup extends TappedEntityGroup {
   action: ActionType.tappedViewingRoomGroup
+}
+
+/**
+ * A user taps a Show More button on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedShowMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedShowMore",
+ *    context_module : "exhibitorsView",
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
+ *    context_screen_owner_slug: "latitude-art-fair-2020",
+ *    subject: "Show More"
+ *  }
+ * ```
+ */
+export interface TappedShowMore {
+  action: ActionType.tappedShowMore
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  /** The text of the tapped button */
+  subject: string
+}
+
+/**
+ * A user taps a different view on the same screen on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedView]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedView",
+ *    context_module : "exhibitorsView",
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
+ *    context_screen_owner_slug: "latitude-art-fair-2020"
+ *  }
+ * ```
+ */
+export interface TappedView {
+  action: ActionType.tappedView
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  subject: "string"
 }
