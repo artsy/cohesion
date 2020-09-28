@@ -21,6 +21,7 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import {
+  TappedArticleGroup,
   TappedArtistGroup,
   TappedArtistSeriesGroup,
   TappedArtworkGroup,
@@ -30,7 +31,9 @@ import {
   TappedExploreGroup,
   TappedFairGroup,
   TappedMainArtworkGrid,
+  TappedNavigationTab,
   TappedPromoSpace,
+  TappedShowMore,
   TappedTabBar,
   TappedViewingRoomGroup,
 } from "./Tap"
@@ -60,6 +63,7 @@ export type Event =
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
+  | TappedArticleGroup
   | TappedArtistGroup
   | TappedArtistSeriesGroup
   | TappedArtworkGroup
@@ -68,8 +72,10 @@ export type Event =
   | TappedExploreGroup
   | TappedFairGroup
   | TappedConsign
+  | TappedNavigationTab
   | TappedMainArtworkGrid
   | TappedPromoSpace
+  | TappedShowMore
   | TappedTabBar
   | TappedViewingRoomGroup
   | TimeOnPage
@@ -161,6 +167,10 @@ export enum ActionType {
    */
   sentConversationMessage = "sentConversationMessage",
   /**
+   * Corresponds to {@link TappedArticleGroup}
+   */
+  tappedArticleGroup = "tappedArticleGroup",
+  /**
    * Corresponds to {@link TappedArtistGroup}
    */
   tappedArtistGroup = "tappedArtistGroup",
@@ -208,6 +218,14 @@ export enum ActionType {
    * Corresponds to {@link TappedViewingRoomGroup}
    */
   tappedViewingRoomGroup = "tappedViewingRoomGroup",
+  /**
+   * Corresponds to {@link TappedShowMore}
+   */
+  tappedShowMore = "tappedShowMore",
+  /**
+   * Corresponds to {@link TappedNavigationTab}
+   */
+  tappedNavigationTab = "tappedNavigationTab",
   /**
    * Corresponds to {@link TimeOnPage}
    */
