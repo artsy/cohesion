@@ -18,6 +18,7 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import {
+  TappedArticleGroup,
   TappedArtistGroup,
   TappedArtistSeriesGroup,
   TappedArtworkGroup,
@@ -27,7 +28,9 @@ import {
   TappedExploreGroup,
   TappedFairGroup,
   TappedMainArtworkGrid,
+  TappedNavigationTab,
   TappedPromoSpace,
+  TappedShowMore,
   TappedTabBar,
   TappedViewingRoomGroup,
 } from "./Tap"
@@ -54,6 +57,7 @@ export type Event =
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
+  | TappedArticleGroup
   | TappedArtistGroup
   | TappedArtistSeriesGroup
   | TappedArtworkGroup
@@ -62,8 +66,10 @@ export type Event =
   | TappedExploreGroup
   | TappedFairGroup
   | TappedConsign
+  | TappedNavigationTab
   | TappedMainArtworkGrid
   | TappedPromoSpace
+  | TappedShowMore
   | TappedTabBar
   | TappedViewingRoomGroup
   | TimeOnPage
