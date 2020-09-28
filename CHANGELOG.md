@@ -1,3 +1,15 @@
+# v1.37.0 (Mon Sep 28 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1555] Analytics tracking for Fairs work on iOS [#105](https://github.com/artsy/cohesion/pull/105) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.36.0 (Mon Sep 28 2020)
 
 #### 🚀  Enhancement
