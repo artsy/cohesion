@@ -16,6 +16,30 @@ import { OwnerType, PageOwnerType } from "../Values/OwnerType"
  */
 
 /**
+ * A user clicks a grouping of articles on web
+ *
+ *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArticleGroup",
+ *    context_module: "relatedArticles",
+ *    context_page_owner_type: "fair",
+ *    context_page_owner_id: "5e726bd22524980012caafb0",
+ *    context_page_owner_slug: "arteba-special-edition",
+ *    destination_page_owner_type: "article",
+ *    destination_page_owner_id: "542f1ccc7261694847410400",
+ *    destination_page_owner_slug: "acaw-acaw-presenter-charwei-tsai",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedArticleGroup extends ClickedEntityGroup {
+  action: ActionType.clickedArticleGroup
+}
+
+/**
  * A user clicks a grouping of artists on web
  *
  *  This schema describes events sent to Segment from [[clickedEntityGroup]]
@@ -165,6 +189,7 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
  */
 export interface ClickedEntityGroup {
   action:
+    | ActionType.clickedArticleGroup
     | ActionType.clickedArtistGroup
     | ActionType.clickedArtistSeriesGroup
     | ActionType.clickedArtworkGroup
@@ -216,4 +241,58 @@ export interface ClickedMainArtworkGrid {
   destination_page_owner_id: string
   destination_page_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ * A user clicks on a navigation tab on web.
+ *
+ * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedNavigationTab",
+ *    context_module: "exhibitorsTab",
+ *    context_page_owner_type: "fair",
+ *    context_page_owner_id: "5e726bd22524980012caafb0",
+ *    context_page_owner_slug: "arteba-special-edition",
+ *    destination_path: "/arteba-special-edition/artworks",
+ *    subject: "Artworks"
+ *  }
+ * ```
+ */
+export interface ClickedNavigationTab {
+  action: ActionType.clickedNavigationTab
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_path: string
+  subject: string
+}
+
+/**
+ * A user clicks a show more button on web.
+ *
+ * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedShowMore",
+ *    context_module: "exhibitorsTab",
+ *    context_page_owner_type: "fair",
+ *    context_page_owner_id: "5e726bd22524980012caafb0",
+ *    context_page_owner_slug: "arteba-special-edition",
+ *    subject: "Show More"
+ *  }
+ * ```
+ */
+export interface ClickedShowMore {
+  action: ActionType.clickedShowMore
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  subject: string
 }

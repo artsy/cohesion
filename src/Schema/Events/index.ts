@@ -5,6 +5,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedArticleGroup,
   ClickedArtistGroup,
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
@@ -12,6 +13,8 @@ import {
   ClickedCollectionGroup,
   ClickedFairGroup,
   ClickedMainArtworkGrid,
+  ClickedNavigationTab,
+  ClickedShowMore,
 } from "./Click"
 import {
   FocusedOnConversationMessageInput,
@@ -42,6 +45,7 @@ import { TimeOnPage } from "./System"
 export type Event =
   | AuthImpression
   | CreatedAccount
+  | ClickedArticleGroup
   | ClickedArtistGroup
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
@@ -49,6 +53,8 @@ export type Event =
   | ClickedCollectionGroup
   | ClickedFairGroup
   | ClickedMainArtworkGrid
+  | ClickedNavigationTab
+  | ClickedShowMore
   | FocusedOnConversationMessageInput
   | FollowEvents
   | ResetYourPassword
@@ -79,6 +85,10 @@ export enum ActionType {
    */
   authImpression = "authImpression",
   /**
+   * Corresponds to {@link ClickedArticleGroup}
+   */
+  clickedArticleGroup = "clickedArticleGroup",
+  /**
    * Corresponds to {@link ClickedArtistGroup}
    */
   clickedArtistGroup = "clickedArtistGroup",
@@ -106,6 +116,14 @@ export enum ActionType {
    * Corresponds to {@link ClickedMainArtworkGrid}
    */
   clickedMainArtworkGrid = "clickedMainArtworkGrid",
+  /**
+   * Corresponds to {@link ClickedNavigationTab}
+   */
+  clickedNavigationTab = "clickedNavigationTab",
+  /**
+   * Corresponds to {@link ClickedShowMore}
+   */
+  clickedShowMore = "clickedShowMore",
   /**
    * Corresponds to {@link CreatedAccount}
    */
