@@ -1,3 +1,15 @@
+# v1.38.0 (Mon Sep 28 2020)
+
+#### 🚀  Enhancement
+
+- bugfix: Prevent tests from appearing in docs [#107](https://github.com/artsy/cohesion/pull/107) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.37.0 (Mon Sep 28 2020)
 
 #### 🚀  Enhancement
