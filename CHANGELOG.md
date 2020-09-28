@@ -1,3 +1,22 @@
+# v1.36.0 (Mon Sep 28 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1562] Analytics tracking for Fairs work on Web [#106](https://github.com/artsy/cohesion/pull/106) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- Update aws-s3 orb from 1.1.0 to v1.1.1 [#104](https://github.com/artsy/cohesion/pull/104) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.0.2 to v4.0.3 [#103](https://github.com/artsy/cohesion/pull/103) ([@renovate-bot](https://github.com/renovate-bot))
+- Update aws-s3 orb from 1.0.16 to v1.1.0 [#102](https://github.com/artsy/cohesion/pull/102) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- [@louislecluse](https://github.com/louislecluse)
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.35.0 (Mon Sep 14 2020)
 
 #### 🚀  Enhancement
