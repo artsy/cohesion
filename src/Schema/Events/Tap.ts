@@ -397,14 +397,14 @@ export interface TappedShowMore {
 }
 
 /**
- * A user taps a different view on the same screen on iOS
+ * A user taps a navigation tab on iOS
  *
  * This schema describes events sent to Segment from [[tappedView]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedView",
+ *    action: "tappedNavigationTab",
  *    context_module : "exhibitorsView",
  *    context_screen_owner_type: "fair",
  *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
@@ -412,8 +412,8 @@ export interface TappedShowMore {
  *  }
  * ```
  */
-export interface TappedView {
-  action: ActionType.tappedView
+export interface TappedNavigationTab {
+  action: ActionType.tappedNavigationTab
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string

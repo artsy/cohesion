@@ -199,9 +199,9 @@ export enum ActionType {
    */
   tappedShowMore = "tappedShowMore",
   /**
-   * Corresponds to {@link TappedView}
+   * Corresponds to {@link TappedNavigationTab}
    */
-  tappedView = "tappedView",
+  tappedNavigationTab = "tappedNavigationTab",
   /**
    * Corresponds to {@link TimeOnPage}
    */
