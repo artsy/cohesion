@@ -44,6 +44,8 @@ export enum OwnerType {
  */
 export type ScreenOwnerType =
   | OwnerType.allArtistSeries
+  | OwnerType.article
+  | OwnerType.articles
   | OwnerType.artist
   | OwnerType.artistSeries
   | OwnerType.artwork
