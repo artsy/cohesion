@@ -87,6 +87,7 @@ export enum ContextModule {
   trendingArtistsRail = "trendingArtistsRail",
   viewingRoom = "viewingRoom",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
+  worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",
 }
 
@@ -143,5 +144,6 @@ export type AuthContextModule =
   | ContextModule.tagHeader
   | ContextModule.topWorksRail
   | ContextModule.worksByPopularArtistsRail
+  | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksForSaleRail
   | ContextModule.viewingRoom
