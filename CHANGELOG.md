@@ -1,3 +1,15 @@
+# v1.39.0 (Fri Oct 02 2020)
+
+#### 🚀  Enhancement
+
+- Context Module for "Works by artist you follow" rail [#110](https://github.com/artsy/cohesion/pull/110) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v1.38.0 (Mon Sep 28 2020)
 
 #### 🚀  Enhancement
