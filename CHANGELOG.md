@@ -1,3 +1,15 @@
+# v1.40.0 (Mon Oct 05 2020)
+
+#### 🚀  Enhancement
+
+- Adds article screen owner type [#108](https://github.com/artsy/cohesion/pull/108) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.39.0 (Fri Oct 02 2020)
 
 #### 🚀  Enhancement
