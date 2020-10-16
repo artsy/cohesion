@@ -1,3 +1,21 @@
+# v1.42.0 (Fri Oct 16 2020)
+
+#### 🚀  Enhancement
+
+- Adds fairArtworks OwnerType for new screenview [#112](https://github.com/artsy/cohesion/pull/112) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- Update aws-s3 orb from 1.1.1 to v2 [#109](https://github.com/artsy/cohesion/pull/109) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.41.0 (Mon Oct 05 2020)
 
 #### 🚀  Enhancement
