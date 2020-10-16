@@ -22,6 +22,7 @@ export enum OwnerType {
   consign = "consign",
   explore = "explore",
   fair = "fair",
+  fairArtworks = "fairArtworks",
   fairs = "fairs",
   galleries = "galleries",
   home = "home",
@@ -59,6 +60,7 @@ export type ScreenOwnerType =
   | OwnerType.consign
   | OwnerType.explore
   | OwnerType.fair
+  | OwnerType.fairArtworks
   | OwnerType.home
   | OwnerType.inbox
   | OwnerType.partner
