@@ -18,6 +18,7 @@ export enum OwnerType {
   cityPicker = "cityPicker",
   collect = "collect",
   collection = "collection",
+  collections = "collections",
   consignmentSubmission = "consignmentSubmission",
   consign = "consign",
   explore = "explore",
@@ -34,6 +35,7 @@ export enum OwnerType {
   show = "show",
   savesAndFollows = "savesAndFollows",
   viewingRoom = "viewingRoom",
+  viewingRooms = "viewingRooms",
   viewingRoomArtworks = "viewingRoomArtworks",
   viewingRoomList = "viewingRoomList",
   viewingRoomArtworkPage = "viewingRoomArtworkPage",
@@ -88,6 +90,7 @@ export type PageOwnerType =
   | OwnerType.auctions
   | OwnerType.collect
   | OwnerType.collection
+  | OwnerType.collections
   | OwnerType.consign
   | OwnerType.fair
   | OwnerType.galleries
@@ -97,4 +100,6 @@ export type PageOwnerType =
   | OwnerType.sale
   | OwnerType.search
   | OwnerType.show
+  | OwnerType.viewingRoom
+  | OwnerType.viewingRooms
   | OwnerType.worksForYou
