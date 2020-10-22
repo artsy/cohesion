@@ -62,6 +62,7 @@ export enum ContextModule {
   otherWorksFromPartnerRail = "otherWorksFromPartnerRail",
   otherWorksFromShowRail = "otherWorksFromShowRail",
   otherWorksInAuctionRail = "otherWorksInAuctionRail",
+  partnerCard = "partnerCard",
   partnerHeader = "partnerHeader",
   pastFairs = "pastFairs",
   popularArtistsRail = "popularArtistsRail",
@@ -87,6 +88,7 @@ export enum ContextModule {
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
   viewingRoom = "viewingRoom",
+  viewingRoomCard = "viewingRoomCard",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",
@@ -131,6 +133,7 @@ export type AuthContextModule =
   | ContextModule.otherWorksFromPartnerRail
   | ContextModule.otherWorksFromShowRail
   | ContextModule.otherWorksInAuctionRail
+  | ContextModule.partnerCard
   | ContextModule.partnerHeader
   | ContextModule.pastFairs
   | ContextModule.popularArtistsRail
@@ -148,3 +151,4 @@ export type AuthContextModule =
   | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksForSaleRail
   | ContextModule.viewingRoom
+  | ContextModule.viewingRoomCard
