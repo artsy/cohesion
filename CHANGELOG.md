@@ -1,3 +1,15 @@
+# v1.44.0 (Thu Oct 22 2020)
+
+#### 🚀  Enhancement
+
+- Adds articleArtist contextModule [#114](https://github.com/artsy/cohesion/pull/114) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.43.0 (Thu Oct 22 2020)
 
 #### 🚀  Enhancement
