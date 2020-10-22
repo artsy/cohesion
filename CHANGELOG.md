@@ -1,3 +1,15 @@
+# v1.43.0 (Thu Oct 22 2020)
+
+#### 🚀  Enhancement
+
+- Add collections and viewingRooms to PageOwnerType [#113](https://github.com/artsy/cohesion/pull/113) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.42.0 (Fri Oct 16 2020)
 
 #### 🚀  Enhancement
