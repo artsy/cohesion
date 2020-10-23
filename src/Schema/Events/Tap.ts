@@ -264,6 +264,38 @@ export interface TappedConsign {
 }
 
 /**
+ * A user taps a fair card on a show screen
+ *
+ * This schema describes events sent to Segment from [[TappedFairCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedFairCard",
+ *    context_module: "fairCard",
+ *    context_screen_owner_type: "show",
+ *    context_screen_owner_id: "5df7daac8225960007129b4f",
+ *    context_screen_owner_slug: "mccormick-gallery-mccormick-gallery-at-palm-beach-modern-plus-contemporary-2020",
+ *    destination_screen_owner_type: "fair",
+ *    destination_screen_owner_id: "5df3e3fa485efe0012c37055",
+ *    destination_screen_owner_slug: "palm-beach-modern-plus-contemporary-2020",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedFairCard {
+  action: ActionType.tappedFairCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
  * A user taps on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
  * Note: This event is separate from [[tappedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
  *
@@ -419,4 +451,68 @@ export interface TappedNavigationTab {
   context_screen_owner_id: string
   context_screen_owner_slug: string
   subject: "string"
+}
+
+/**
+ * A user taps a partner card on a show screen
+ *
+ * This schema describes events sent to Segment from [[TappedPartnerCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedPartnerCard",
+ *    context_module: "partnerCard",
+ *    context_screen_owner_type: "show",
+ *    context_screen_owner_id: "5bb539507a931b299b243dd5",
+ *    context_screen_owner_slug: "mccormick-gallery-vidvuds-zviedris-old-cities-and-ancient-walls",
+ *    destination_screen_owner_type: "partner",
+ *    destination_screen_owner_id: "4e2ed4c42ccd3c000100924f",
+ *    destination_screen_owner_slug: "mccormick-gallery",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedPartnerCard {
+  action: ActionType.tappedPartnerCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
+ * A user taps a viewing room card on a show screen
+ *
+ * This schema describes events sent to Segment from [[TappedViewingRoomCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedViewingRoomCard",
+ *    context_module: "viewingRoomCard",
+ *    context_screen_owner_type: "show",
+ *    context_screen_owner_id: "541890237261692168870700",
+ *    context_screen_owner_slug: "susan-eley-fine-art-susan-eley-fine-art-at-art-silicon-valley-slash-san-francisco",
+ *    destination_screen_owner_type: "viewing-room",
+ *    destination_screen_owner_id: "95f7dcfd-1996-45e1-9aab-979c38b2de59",
+ *    destination_screen_owner_slug: "susan-eley-fine-art-counterbalance",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedViewingRoomCard {
+  action: ActionType.tappedViewingRoomCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
 }
