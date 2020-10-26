@@ -1,3 +1,15 @@
+# v1.45.0 (Mon Oct 26 2020)
+
+#### 🚀  Enhancement
+
+- Shows Refresh Tracking [#115](https://github.com/artsy/cohesion/pull/115) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v1.44.0 (Thu Oct 22 2020)
 
 #### 🚀  Enhancement
