@@ -19,6 +19,7 @@ export enum ContextModule {
   artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
   artworkSidebar = "artworkSidebar",
   artworksTab = "artworksTab",
+  associatedViewingRoom = "associatedViewingRoom",
   auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
   auctionRail = "auctionRail",
@@ -66,6 +67,8 @@ export enum ContextModule {
   pastFairs = "pastFairs",
   popularArtistsRail = "popularArtistsRail",
   popUpModal = "popUpModal",
+  presentingFair = "presentingFair",
+  presentingPartner = "presentingPartner",
   promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
@@ -105,6 +108,7 @@ export type AuthContextModule =
   | ContextModule.artworkGrid
   | ContextModule.artworkImage
   | ContextModule.artworkSidebar
+  | ContextModule.associatedViewingRoom
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
   | ContextModule.auctionResults
@@ -135,6 +139,8 @@ export type AuthContextModule =
   | ContextModule.pastFairs
   | ContextModule.popularArtistsRail
   | ContextModule.popUpModal
+  | ContextModule.presentingFair
+  | ContextModule.presentingPartner
   | ContextModule.recentlyViewedRail
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail

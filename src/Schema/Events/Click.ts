@@ -210,6 +210,38 @@ export interface ClickedEntityGroup {
 }
 
 /**
+ * A user clicks a fair card
+ *
+ * This schema describes events sent to Segment from [[ClickedFairCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedFairCard",
+ *    context_module: "fairCard",
+ *    context_page_owner_type: "show",
+ *    context_page_owner_id: "5df7daac8225960007129b4f",
+ *    context_page_owner_slug: "mccormick-gallery-mccormick-gallery-at-palm-beach-modern-plus-contemporary-2020",
+ *    destination_page_owner_type: "fair",
+ *    destination_page_owner_id: "5df3e3fa485efe0012c37055",
+ *    destination_page_owner_slug: "palm-beach-modern-plus-contemporary-2020",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedFairCard {
+  action: ActionType.clickedFairCard
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
  * A user clicks on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
  * Currently, this event only fires on our new artwork grids on the following pages: Collect, Collection, Artist works-for-sale, and Search Results.
  * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
@@ -272,6 +304,38 @@ export interface ClickedNavigationTab {
 }
 
 /**
+ * A user clicks a partner card
+ *
+ * This schema describes events sent to Segment from [[ClickedPartnerCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPartnerCard",
+ *    context_module: "partnerCard",
+ *    context_page_owner_type: "show",
+ *    context_page_owner_id: "5bb539507a931b299b243dd5",
+ *    context_page_owner_slug: "mccormick-gallery-vidvuds-zviedris-old-cities-and-ancient-walls",
+ *    destination_page_owner_type: "partner",
+ *    destination_page_owner_id: "4e2ed4c42ccd3c000100924f",
+ *    destination_page_owner_slug: "mccormick-gallery",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedPartnerCard {
+  action: ActionType.clickedPartnerCard
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
  * A user clicks a show more button on web.
  *
  * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
@@ -295,4 +359,36 @@ export interface ClickedShowMore {
   context_page_owner_id?: string
   context_page_owner_slug?: string
   subject: string
+}
+
+/**
+ * A user clicks a viewing room card
+ *
+ * This schema describes events sent to Segment from [[ClickedViewingRoomCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedViewingRoomCard",
+ *    context_module: "viewingRoomCard",
+ *    context_page_owner_type: "show",
+ *    context_page_owner_id: "541890237261692168870700",
+ *    context_page_owner_slug: "susan-eley-fine-art-susan-eley-fine-art-at-art-silicon-valley-slash-san-francisco",
+ *    destination_page_owner_type: "viewing-room",
+ *    destination_page_owner_id: "95f7dcfd-1996-45e1-9aab-979c38b2de59",
+ *    destination_page_owner_slug: "susan-eley-fine-art-counterbalance",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedViewingRoomCard {
+  action: ActionType.clickedViewingRoomCard
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
 }

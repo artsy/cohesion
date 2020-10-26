@@ -11,10 +11,13 @@ import {
   ClickedArtworkGroup,
   ClickedAuctionGroup,
   ClickedCollectionGroup,
+  ClickedFairCard,
   ClickedFairGroup,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
+  ClickedPartnerCard,
   ClickedShowMore,
+  ClickedViewingRoomCard,
 } from "./Click"
 import {
   FocusedOnConversationMessageInput,
@@ -29,12 +32,15 @@ import {
   TappedCollectionGroup,
   TappedConsign,
   TappedExploreGroup,
+  TappedFairCard,
   TappedFairGroup,
   TappedMainArtworkGrid,
   TappedNavigationTab,
+  TappedPartnerCard,
   TappedPromoSpace,
   TappedShowMore,
   TappedTabBar,
+  TappedViewingRoomCard,
   TappedViewingRoomGroup,
 } from "./Tap"
 import { FollowEvents } from "./SavesAndFollows"
@@ -54,10 +60,13 @@ export type Event =
   | ClickedArtworkGroup
   | ClickedAuctionGroup
   | ClickedCollectionGroup
+  | ClickedFairCard
   | ClickedFairGroup
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedPartnerCard
   | ClickedShowMore
+  | ClickedViewingRoomCard
   | FocusedOnConversationMessageInput
   | FollowEvents
   | ResetYourPassword
@@ -70,13 +79,16 @@ export type Event =
   | TappedAuctionGroup
   | TappedCollectionGroup
   | TappedExploreGroup
+  | TappedFairCard
   | TappedFairGroup
   | TappedConsign
   | TappedNavigationTab
   | TappedMainArtworkGrid
+  | TappedPartnerCard
   | TappedPromoSpace
   | TappedShowMore
   | TappedTabBar
+  | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TimeOnPage
 
@@ -115,6 +127,10 @@ export enum ActionType {
    */
   clickedCollectionGroup = "clickedCollectionGroup",
   /**
+   * Corresponds to {@link ClickedFairCard}
+   */
+  clickedFairCard = "clickedFairCard",
+  /**
    * Corresponds to {@link ClickedFairGroup}
    */
   clickedFairGroup = "clickedFairGroup",
@@ -127,9 +143,17 @@ export enum ActionType {
    */
   clickedNavigationTab = "clickedNavigationTab",
   /**
+   * Corresponds to {@link ClickedPartnerCard}
+   */
+  clickedPartnerCard = "clickedPartnerCard",
+  /**
    * Corresponds to {@link ClickedShowMore}
    */
   clickedShowMore = "clickedShowMore",
+  /**
+   * Corresponds to {@link ClickedViewingRoomCard}
+   */
+  clickedViewingRoomCard = "clickedViewingRoomCard",
   /**
    * Corresponds to {@link CreatedAccount}
    */
@@ -203,9 +227,17 @@ export enum ActionType {
    */
   tappedConsign = "tappedConsign",
   /**
+   * Corresponds to {@link TappedFairCard}
+   */
+  tappedFairCard = "tappedFairCard",
+  /**
    * Corresponds to {@link TappedMainArtworkGrid}
    */
   tappedMainArtworkGrid = "tappedMainArtworkGrid",
+  /**
+   * Corresponds to {@link TappedPartnerCard}
+   */
+  tappedPartnerCard = "tappedPartnerCard",
   /**
    * Corresponds to {@link TappedPromoSpace}
    */
@@ -214,6 +246,10 @@ export enum ActionType {
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
+  /**
+   * Corresponds to {@link TappedViewingRoomCard}
+   */
+  tappedViewingRoomCard = "tappedViewingRoomCard",
   /**
    * Corresponds to {@link TappedViewingRoomGroup}
    */
