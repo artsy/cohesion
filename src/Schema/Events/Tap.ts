@@ -264,7 +264,7 @@ export interface TappedConsign {
 }
 
 /**
- * A user taps a fair card on a show screen
+ * A user taps a fair card
  *
  * This schema describes events sent to Segment from [[TappedFairCard]]
  *
@@ -454,7 +454,7 @@ export interface TappedNavigationTab {
 }
 
 /**
- * A user taps a partner card on a show screen
+ * A user taps a partner card
  *
  * This schema describes events sent to Segment from [[TappedPartnerCard]]
  *
@@ -486,7 +486,7 @@ export interface TappedPartnerCard {
 }
 
 /**
- * A user taps a viewing room card on a show screen
+ * A user taps a viewing room card
  *
  * This schema describes events sent to Segment from [[TappedViewingRoomCard]]
  *

@@ -210,7 +210,7 @@ export interface ClickedEntityGroup {
 }
 
 /**
- * A user clicks a fair card on a show page
+ * A user clicks a fair card
  *
  * This schema describes events sent to Segment from [[ClickedFairCard]]
  *
@@ -304,7 +304,7 @@ export interface ClickedNavigationTab {
 }
 
 /**
- * A user clicks a partner card on a show page
+ * A user clicks a partner card
  *
  * This schema describes events sent to Segment from [[ClickedPartnerCard]]
  *
@@ -362,7 +362,7 @@ export interface ClickedShowMore {
 }
 
 /**
- * A user clicks a viewing room card on a show page
+ * A user clicks a viewing room card
  *
  * This schema describes events sent to Segment from [[ClickedViewingRoomCard]]
  *

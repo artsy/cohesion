@@ -19,6 +19,7 @@ export enum ContextModule {
   artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
   artworkSidebar = "artworkSidebar",
   artworksTab = "artworksTab",
+  associatedViewingRoom = "associatedViewingRoom",
   auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
   auctionRail = "auctionRail",
@@ -62,11 +63,12 @@ export enum ContextModule {
   otherWorksFromPartnerRail = "otherWorksFromPartnerRail",
   otherWorksFromShowRail = "otherWorksFromShowRail",
   otherWorksInAuctionRail = "otherWorksInAuctionRail",
-  partnerCard = "partnerCard",
   partnerHeader = "partnerHeader",
   pastFairs = "pastFairs",
   popularArtistsRail = "popularArtistsRail",
   popUpModal = "popUpModal",
+  presentingFair = "presentingFair",
+  presentingPartner = "presentingPartner",
   promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
@@ -88,7 +90,6 @@ export enum ContextModule {
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
   viewingRoom = "viewingRoom",
-  viewingRoomCard = "viewingRoomCard",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",
@@ -107,6 +108,7 @@ export type AuthContextModule =
   | ContextModule.artworkGrid
   | ContextModule.artworkImage
   | ContextModule.artworkSidebar
+  | ContextModule.associatedViewingRoom
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
   | ContextModule.auctionResults
@@ -133,11 +135,12 @@ export type AuthContextModule =
   | ContextModule.otherWorksFromPartnerRail
   | ContextModule.otherWorksFromShowRail
   | ContextModule.otherWorksInAuctionRail
-  | ContextModule.partnerCard
   | ContextModule.partnerHeader
   | ContextModule.pastFairs
   | ContextModule.popularArtistsRail
   | ContextModule.popUpModal
+  | ContextModule.presentingFair
+  | ContextModule.presentingPartner
   | ContextModule.recentlyViewedRail
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
@@ -151,4 +154,3 @@ export type AuthContextModule =
   | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksForSaleRail
   | ContextModule.viewingRoom
-  | ContextModule.viewingRoomCard
