@@ -69,6 +69,7 @@ export enum ContextModule {
   popUpModal = "popUpModal",
   presentingFair = "presentingFair",
   presentingPartner = "presentingPartner",
+  priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
@@ -141,6 +142,7 @@ export type AuthContextModule =
   | ContextModule.popUpModal
   | ContextModule.presentingFair
   | ContextModule.presentingPartner
+  | ContextModule.priceEstimate
   | ContextModule.recentlyViewedRail
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
