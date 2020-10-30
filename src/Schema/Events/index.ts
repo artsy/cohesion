@@ -179,6 +179,10 @@ export enum ActionType {
    */
   followedPartner = "followedPartner",
   /**
+   * Corresponds to {@link OnboardingUserInputData}
+   */
+  onboardingUserInputData = "onboardingUserInputData",
+  /**
    * Corresponds to {@link ResetYourPassword}
    */
   resetYourPassword = "resetYourPassword",
