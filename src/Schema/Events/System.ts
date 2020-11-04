@@ -1,6 +1,5 @@
 import { ActionType } from "."
-import { PageOwnerType } from "../Values/OwnerType"
-import { ScreenOwnerType } from "../Values/OwnerType"
+import { PageOwnerType, ScreenOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing system events
