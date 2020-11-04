@@ -29,6 +29,7 @@ export enum OwnerType {
   home = "home",
   inbox = "inbox",
   partner = "partner",
+  profile = "profile",
   sale = "sale",
   search = "search",
   sell = "sell",
@@ -66,6 +67,7 @@ export type ScreenOwnerType =
   | OwnerType.home
   | OwnerType.inbox
   | OwnerType.partner
+  | OwnerType.profile
   | OwnerType.sale
   | OwnerType.search
   | OwnerType.savesAndFollows
@@ -97,6 +99,7 @@ export type PageOwnerType =
   | OwnerType.gene
   | OwnerType.home
   | OwnerType.partner
+  | OwnerType.profile
   | OwnerType.sale
   | OwnerType.search
   | OwnerType.show

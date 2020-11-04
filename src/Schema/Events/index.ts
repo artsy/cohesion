@@ -45,6 +45,7 @@ import {
 } from "./Tap"
 import { FollowEvents } from "./SavesAndFollows"
 import { SaleScreenLoadComplete, TimeOnPage } from "./System"
+import { ToggledNotification } from "./Toggle"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -92,6 +93,7 @@ export type Event =
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TimeOnPage
+  | ToggledNotification
 
 /**
  * The top-level actions an Event describes.
@@ -271,6 +273,10 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
+  /**
+   * Corresponds to {@link ToggledNotification}
+   */
+  toggledNotification = "toggledNotification",
   /**
    * Corresponds to {@link UnfollowedArtist}
    */
