@@ -1,3 +1,20 @@
+# v1.46.0 (Wed Nov 04 2020)
+
+#### 🚀  Enhancement
+
+- Track sale_screen_load_complete [#119](https://github.com/artsy/cohesion/pull/119) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- Update dep typescript from 4.0.3 to v4.0.5 [#116](https://github.com/artsy/cohesion/pull/116) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.45.0 (Mon Oct 26 2020)
 
 #### 🚀  Enhancement
