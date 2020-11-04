@@ -22,6 +22,7 @@ export enum ContextModule {
   associatedViewingRoom = "associatedViewingRoom",
   auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
+  auctionHome = "auctionHome",
   auctionRail = "auctionRail",
   auctionResults = "auctionResults",
   auctionsInfo = "auctionsInfo",
@@ -111,6 +112,7 @@ export type AuthContextModule =
   | ContextModule.associatedViewingRoom
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
+  | ContextModule.auctionHome
   | ContextModule.auctionResults
   | ContextModule.auctionsInfo
   | ContextModule.bannerPopUp
