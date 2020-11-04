@@ -172,7 +172,7 @@ export type AuthService = "apple" | "email" | "facebook"
  *  {
  *    action: "onboardingUserInputData",
  *    context_module: "onboardingInterests",
- *    context_page_owner_type: "onboarding",
+ *    context_owner_type: "onboarding",
  *    data_input: "[learnAboutArt]"
  *  }
  * ```
@@ -180,6 +180,6 @@ export type AuthService = "apple" | "email" | "facebook"
 export interface OnboardingUserInputData {
   action: ActionType.onboardingUserInputData
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
+  context_owner_type: PageOwnerType
   data_input: string
 }
