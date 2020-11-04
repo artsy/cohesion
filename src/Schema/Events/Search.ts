@@ -17,16 +17,16 @@ import { OwnerType, PageOwnerType } from "../Values/OwnerType"
  *  {
  *    action: "focusedOnSearchInput",
  *    context_module: "header",
- *    context_page_owner_type: "home"
+ *    context_owner_type: "home"
  *  }
  * ```
  */
 export interface FocusedOnSearchInput {
   action: ActionType.focusedOnSearchInput
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
 }
 
 /**
@@ -39,7 +39,7 @@ export interface FocusedOnSearchInput {
  *  {
  *    action: "selectedItemFromSearch",
  *    context_module: "priceEstimate",
- *    context_page_owner_type: "consign",
+ *    context_owner_type: "consign",
  *    owner_type: "artist",
  *    owner_id: "5df3e3fa485efe0012c37055",
  *    owner_slug: "andy-warhol",
@@ -50,12 +50,12 @@ export interface FocusedOnSearchInput {
 export interface SelectedItemFromSearch {
   action: ActionType.selectedItemFromSearch
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
-  destination_page_owner_type?: PageOwnerType
-  destination_page_owner_id?: string
-  destination_page_owner_slug?: string
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  destination_owner_type?: PageOwnerType
+  destination_owner_id?: string
+  destination_owner_slug?: string
   owner_type: OwnerType
   owner_id: string
   owner_slug: string
@@ -72,8 +72,8 @@ export interface SelectedItemFromSearch {
  *  {
  *    action: "searchedWithNoResults",
  *    context_module: "header",
- *    context_page_owner_type: "home",
- *    destination_page_owner_type: "search",
+ *    context_owner_type: "home",
+ *    destination_owner_type: "search",
  *    query: "andhuwe"
  *  }
  * ```
@@ -81,9 +81,9 @@ export interface SelectedItemFromSearch {
 export interface SearchedWithNoResults {
   action: ActionType.searchedWithNoResults
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
-  destination_page_owner_type?: PageOwnerType
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  destination_owner_type?: PageOwnerType
   query: string
 }
