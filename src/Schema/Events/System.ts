@@ -1,5 +1,5 @@
 import { ActionType } from "."
-import { PageOwnerType } from "../Values/OwnerType"
+import { PageOwnerType, ScreenOwnerType } from "../Values/OwnerType"
 
 /**
  * Schemas describing system events
@@ -26,4 +26,32 @@ export interface TimeOnPage {
   context_page_owner_type?: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
+}
+
+/**
+ * A user loads a sale screen on the iOS app.
+ *
+ * This schema describes events sent to Segment from [[saleScreenLoadComplete]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "saleScreenLoadComplete",
+ *    context_screen_owner_type: "auction",
+ *    context_screen_owner_id: "5f841d4044f91e000fd0acc4",
+ *    context_screen_owner_slug: "finarte-modern-and-contemporary-art-8",
+ *    jump_to_lai_interface: true,
+ *    load_time_ms: 2000,
+ *    number_of_lots: 276
+ *  }
+ * ```
+ */
+export interface SaleScreenLoadComplete {
+  action: ActionType.saleScreenLoadComplete
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  jump_to_lai_interface: boolean
+  load_time_ms: number
+  number_of_lots: number
 }
