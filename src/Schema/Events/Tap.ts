@@ -358,6 +358,30 @@ export interface TappedPromoSpace {
 }
 
 /**
+ * A user taps "Register to bid" on an iOS sale (auction) page
+ *
+ * This schema describes events sent to Segment from [[tappedRegisterToBid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedRegisterToBid",
+ *    context_module: "auctionHome",
+ *    context_screen_owner_type: "sale",
+ *    context_screen_owner_id: "5f8085e733d847000e3af175",
+ *    context_screen_owner_slug: "forum-auctions-only-banksy-1"
+ *  }
+ * ```
+ */
+export interface TappedRegisterToBid {
+  action: ActionType.tappedRegisterToBid
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+}
+
+/**
  * A user taps an icon on the tab bar
  *
  * This schema describes events sent to Segment from [[tappedTabBar]]

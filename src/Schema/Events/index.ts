@@ -248,6 +248,10 @@ export enum ActionType {
    */
   tappedPromoSpace = "tappedPromoSpace",
   /**
+   * Corresponds to {@link TappedRegisterToBid}
+   */
+  tappedRegisterToBid = "tappedRegisterToBid",
+  /**
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
