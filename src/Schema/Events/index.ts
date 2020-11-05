@@ -44,7 +44,7 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { FollowEvents } from "./SavesAndFollows"
-import { TimeOnPage } from "./System"
+import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -70,6 +70,7 @@ export type Event =
   | FocusedOnConversationMessageInput
   | FollowEvents
   | ResetYourPassword
+  | SaleScreenLoadComplete
   | SentConversationMessage
   | SuccessfullyLoggedIn
   | TappedArticleGroup
@@ -187,6 +188,10 @@ export enum ActionType {
    */
   resetYourPassword = "resetYourPassword",
   /**
+   * Corresponds to {@link SaleScreenLoadComplete}
+   */
+  saleScreenLoadComplete = "saleScreenLoadComplete",
+  /**
    * Corresponds to {@link SearchedWithNoResults}
    */
   searchedWithNoResults = "searchedWithNoResults",
@@ -254,6 +259,10 @@ export enum ActionType {
    * Corresponds to {@link TappedPromoSpace}
    */
   tappedPromoSpace = "tappedPromoSpace",
+  /**
+   * Corresponds to {@link TappedRegisterToBid}
+   */
+  tappedRegisterToBid = "tappedRegisterToBid",
   /**
    * Corresponds to {@link TappedTabBar}
    */
