@@ -1,3 +1,15 @@
+# v1.47.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- Add tapped_register_to_bid event [#121](https://github.com/artsy/cohesion/pull/121) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.46.0 (Wed Nov 04 2020)
 
 #### 🚀  Enhancement
