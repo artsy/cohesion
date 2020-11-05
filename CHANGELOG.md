@@ -1,3 +1,15 @@
+# v1.48.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1656] Adds new search events [#117](https://github.com/artsy/cohesion/pull/117) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.47.0 (Thu Nov 05 2020)
 
 #### 🚀  Enhancement
