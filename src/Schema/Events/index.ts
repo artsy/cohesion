@@ -164,6 +164,10 @@ export enum ActionType {
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
   /**
+   * Corresponds to {@link FocusedOnSearchInput}
+   */
+  focusedOnSearchInput = "focusedOnSearchInput",
+  /**
    * Corresponds to {@link FollowedArtist}
    */
   followedArtist = "followedArtist",
@@ -188,13 +192,21 @@ export enum ActionType {
    */
   saleScreenLoadComplete = "saleScreenLoadComplete",
   /**
-   * Corresponds to {@link SuccessfullyLoggedIn}
+   * Corresponds to {@link SearchedWithNoResults}
    */
-  successfullyLoggedIn = "successfullyLoggedIn",
+  searchedWithNoResults = "searchedWithNoResults",
+  /**
+   * Corresponds to {@link SelectedItemFromSearch}
+   */
+  selectedItemFromSearch = "selectedItemFromSearch",
   /**
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
+  /**
+   * Corresponds to {@link SuccessfullyLoggedIn}
+   */
+  successfullyLoggedIn = "successfullyLoggedIn",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */
