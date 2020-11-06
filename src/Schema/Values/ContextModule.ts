@@ -53,6 +53,7 @@ export enum ContextModule {
   header = "header",
   intextTooltip = "intextTooltip",
   latestViewingRoomsRail = "latestViewingRoomsRail",
+  liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
   mainCarousel = "mainCarousel",
   minimalCTABanner = "minimalCTABanner",
@@ -132,6 +133,7 @@ export type AuthContextModule =
   | ContextModule.geneHeader
   | ContextModule.header
   | ContextModule.intextTooltip
+  | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
   | ContextModule.minimalCTABanner
