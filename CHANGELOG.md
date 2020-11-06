@@ -1,3 +1,15 @@
+# v1.50.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add liveAuctionRoom context module [#123](https://github.com/artsy/cohesion/pull/123) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.49.0 (Fri Nov 06 2020)
 
 #### 🚀  Enhancement
