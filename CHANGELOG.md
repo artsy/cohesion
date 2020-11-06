@@ -1,3 +1,15 @@
+# v1.49.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add context module for aboutThisAuction [#122](https://github.com/artsy/cohesion/pull/122) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.48.0 (Thu Nov 05 2020)
 
 #### 🚀  Enhancement
