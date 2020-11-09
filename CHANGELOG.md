@@ -1,3 +1,15 @@
+# v1.54.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1689] Adds clickedAppDownload event [#128](https://github.com/artsy/cohesion/pull/128) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.53.0 (Mon Nov 09 2020)
 
 #### 🚀  Enhancement
