@@ -19,9 +19,9 @@ export interface TappedRegisterToBidArgs {
  * ```
  * tappedRegisterToBid({
  *   contextModule: true,
- *   contextScreenOwnerType: "sale",
  *   contextScreenOwnerId: "5359794d2a1e86c3741001f8",
  *   contextScreenOwnerSlug "auction-slug":
+ *   contextScreenOwnerType: "sale",
  * })
  * ```
  */
@@ -35,8 +35,8 @@ export const tappedRegisterToBid = ({
   return {
     action: ActionType.tappedRegisterToBid,
     context_module: contextModule,
-    context_screen_owner_type: contextScreenOwnerType,
     context_screen_owner_id: contextScreenOwnerId,
     context_screen_owner_slug: contextScreenOwnerSlug,
+    context_screen_owner_type: contextScreenOwnerType,
   }
 }
