@@ -1,6 +1,7 @@
 import {
   AuthImpression,
   CreatedAccount,
+  OnboardingUserInputData,
   ResetYourPassword,
   SuccessfullyLoggedIn,
 } from "./Authentication"
@@ -69,6 +70,7 @@ export type Event =
   | ClickedViewingRoomCard
   | FocusedOnConversationMessageInput
   | FollowEvents
+  | OnboardingUserInputData
   | ResetYourPassword
   | SentConversationMessage
   | SuccessfullyLoggedIn
