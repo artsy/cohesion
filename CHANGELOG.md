@@ -1,3 +1,15 @@
+# v1.53.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- Fix/add saleinformation to owner types [#126](https://github.com/artsy/cohesion/pull/126) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.52.0 (Mon Nov 09 2020)
 
 #### 🚀  Enhancement
