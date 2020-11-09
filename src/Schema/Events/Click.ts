@@ -404,7 +404,7 @@ export interface ClickedViewingRoomCard {
  *    action: "clickedAppDownload",
  *    context_module: "sellFooter",
  *    context_page_owner_type: "consign",
- *    destination_path: "https://apps.apple.com/us/app/artsy-buy-sell-original-art/id703796080"
+ *    destination_path: "https://apps.apple.com/us/app/artsy-buy-sell-original-art/id703796080",
  *    subject: "Download the app"
  *  }
  * ```
