@@ -68,6 +68,7 @@ export type ScreenOwnerType =
   | OwnerType.inbox
   | OwnerType.partner
   | OwnerType.sale
+  | OwnerType.saleInformation
   | OwnerType.search
   | OwnerType.savesAndFollows
   | OwnerType.sell
