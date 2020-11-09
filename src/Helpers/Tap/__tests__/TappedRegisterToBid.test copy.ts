@@ -13,10 +13,10 @@ describe(tappedRegisterToBid, () => {
 
     expect(event).toEqual({
       action: "tappedRegisterToBid",
-      contextModule: "aboutThisAuction",
-      contextScreenOwnerId: "5359794d2a1e86c3741001f8",
-      contextScreenOwnerSlug: "auction-slug",
-      contextScreenOwnerType: "sale",
+      context_module: "aboutThisAuction",
+      context_screen_owner_id: "5359794d2a1e86c3741001f8",
+      context_screen_owner_slug: "auction-slug",
+      context_screen_owner_type: "sale",
     })
   })
 })
