@@ -5,6 +5,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
   ClickedArtistSeriesGroup,
@@ -54,6 +55,7 @@ import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 export type Event =
   | AuthImpression
   | CreatedAccount
+  | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
   | ClickedArtistSeriesGroup
@@ -103,6 +105,10 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link ClickedAppDownload}
+   */
+  clickedAppDownload = "clickedAppDownload",
   /**
    * Corresponds to {@link ClickedArticleGroup}
    */
