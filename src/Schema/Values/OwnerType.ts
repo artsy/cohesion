@@ -30,6 +30,7 @@ export enum OwnerType {
   inbox = "inbox",
   partner = "partner",
   sale = "sale",
+  saleInformation = "saleInformation",
   search = "search",
   sell = "sell",
   show = "show",
