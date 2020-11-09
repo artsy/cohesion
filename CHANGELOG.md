@@ -1,3 +1,15 @@
+# v1.51.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- feat: added tapped register to bid helper [#124](https://github.com/artsy/cohesion/pull/124) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.50.0 (Fri Nov 06 2020)
 
 #### 🚀  Enhancement
