@@ -9,8 +9,8 @@ import {
 export interface ClickedArtworkGroupArgs {
   contextModule: ContextModule
   contextPageOwnerType: PageOwnerType
-  contextPageOwnerId: string
-  contextPageOwnerSlug: string
+  contextPageOwnerId?: string
+  contextPageOwnerSlug?: string
   artworkID: string
   artworkSlug: string
   horizontalSlidePosition: number

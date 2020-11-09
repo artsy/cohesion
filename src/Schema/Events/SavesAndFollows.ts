@@ -1,6 +1,6 @@
-import { ActionType } from "."
 import { AuthContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Schemas describing save and follow events for all systems

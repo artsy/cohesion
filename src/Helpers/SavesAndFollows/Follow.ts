@@ -1,12 +1,12 @@
 import {
   ActionType,
   AuthContextModule,
-  FollowEvents,
   FollowableEntity,
   FollowedArtist,
   FollowedFair,
   FollowedGene,
   FollowedPartner,
+  FollowEvents,
   OwnerType,
   UnfollowedArtist,
   UnfollowedFair,

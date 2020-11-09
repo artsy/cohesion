@@ -4,7 +4,6 @@ import {
   OwnerType,
   TappedTabBar,
 } from "../../Schema"
-
 import { Tab } from "../../Schema/Values/Tab"
 
 export interface TappedTabBarArgs {

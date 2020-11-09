@@ -1,6 +1,6 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Schemas describing Search events

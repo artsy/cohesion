@@ -1,6 +1,6 @@
-import { ActionType } from "."
 import { AuthContextModule } from "../Values/ContextModule"
 import { AuthIntent } from "../Values/Intent"
+import { ActionType } from "."
 
 /**
  * Schemas describing authentication events
