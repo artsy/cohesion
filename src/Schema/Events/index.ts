@@ -23,6 +23,7 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
 } from "./Conversations"
+import { CommercialFilterParamsChanged } from "./FilterAndSort"
 import {
   TappedArticleGroup,
   TappedArtistGroup,
@@ -67,6 +68,7 @@ export type Event =
   | ClickedPartnerCard
   | ClickedShowMore
   | ClickedViewingRoomCard
+  | CommercialFilterParamsChanged
   | FocusedOnConversationMessageInput
   | FollowEvents
   | ResetYourPassword
@@ -155,6 +157,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedViewingRoomCard}
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
+  /**
+   * Corresponds to {@link CommercialFilterParamsChanged}
+   */
+  commercialFilterParamsChanged = "commercialFilterParamsChanged",
   /**
    * Corresponds to {@link CreatedAccount}
    */
