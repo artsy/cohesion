@@ -1,3 +1,15 @@
+# v1.52.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- fix: export tapped register to bid [#125](https://github.com/artsy/cohesion/pull/125) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.51.0 (Mon Nov 09 2020)
 
 #### 🚀  Enhancement
