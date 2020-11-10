@@ -1,3 +1,16 @@
+# v1.55.1 (Tue Nov 10 2020)
+
+#### 🐛  Bug Fix
+
+- Track push notification toggles [#120](https://github.com/artsy/cohesion/pull/120) ([@mikehrom](https://github.com/mikehrom) [@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 2
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.55.0 (Tue Nov 10 2020)
 
 #### 🚀  Enhancement
