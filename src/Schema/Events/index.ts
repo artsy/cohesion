@@ -5,6 +5,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
   ClickedArtistSeriesGroup,
@@ -55,6 +56,7 @@ import { ToggledNotification } from "./Toggle"
 export type Event =
   | AuthImpression
   | CreatedAccount
+  | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
   | ClickedArtistSeriesGroup
@@ -105,6 +107,10 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link ClickedAppDownload}
+   */
+  clickedAppDownload = "clickedAppDownload",
   /**
    * Corresponds to {@link ClickedArticleGroup}
    */
@@ -166,6 +172,10 @@ export enum ActionType {
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
   /**
+   * Corresponds to {@link FocusedOnSearchInput}
+   */
+  focusedOnSearchInput = "focusedOnSearchInput",
+  /**
    * Corresponds to {@link FollowedArtist}
    */
   followedArtist = "followedArtist",
@@ -190,13 +200,21 @@ export enum ActionType {
    */
   saleScreenLoadComplete = "saleScreenLoadComplete",
   /**
-   * Corresponds to {@link SuccessfullyLoggedIn}
+   * Corresponds to {@link SearchedWithNoResults}
    */
-  successfullyLoggedIn = "successfullyLoggedIn",
+  searchedWithNoResults = "searchedWithNoResults",
+  /**
+   * Corresponds to {@link SelectedItemFromSearch}
+   */
+  selectedItemFromSearch = "selectedItemFromSearch",
   /**
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
+  /**
+   * Corresponds to {@link SuccessfullyLoggedIn}
+   */
+  successfullyLoggedIn = "successfullyLoggedIn",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */
@@ -249,6 +267,10 @@ export enum ActionType {
    * Corresponds to {@link TappedPromoSpace}
    */
   tappedPromoSpace = "tappedPromoSpace",
+  /**
+   * Corresponds to {@link TappedRegisterToBid}
+   */
+  tappedRegisterToBid = "tappedRegisterToBid",
   /**
    * Corresponds to {@link TappedTabBar}
    */

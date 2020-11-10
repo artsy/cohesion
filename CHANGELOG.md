@@ -1,3 +1,111 @@
+# v1.55.0 (Tue Nov 10 2020)
+
+#### 🚀  Enhancement
+
+- Add helpers for ClickedArtworkGroup [#96](https://github.com/artsy/cohesion/pull/96) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.54.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1689] Adds clickedAppDownload event [#128](https://github.com/artsy/cohesion/pull/128) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.53.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- Fix/add saleinformation to owner types [#126](https://github.com/artsy/cohesion/pull/126) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.52.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- fix: export tapped register to bid [#125](https://github.com/artsy/cohesion/pull/125) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.51.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- feat: added tapped register to bid helper [#124](https://github.com/artsy/cohesion/pull/124) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.50.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add liveAuctionRoom context module [#123](https://github.com/artsy/cohesion/pull/123) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.49.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add context module for aboutThisAuction [#122](https://github.com/artsy/cohesion/pull/122) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.48.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1656] Adds new search events [#117](https://github.com/artsy/cohesion/pull/117) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.47.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- Add tapped_register_to_bid event [#121](https://github.com/artsy/cohesion/pull/121) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.46.0 (Wed Nov 04 2020)
 
 #### 🚀  Enhancement
