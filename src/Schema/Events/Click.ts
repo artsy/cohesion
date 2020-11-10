@@ -16,6 +16,30 @@ import { OwnerType, PageOwnerType } from "../Values/OwnerType"
  */
 
 /**
+ * A user clicks a grouping of articles on web
+ *
+ *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArticleGroup",
+ *    context_module: "relatedArticles",
+ *    context_page_owner_type: "fair",
+ *    context_page_owner_id: "5e726bd22524980012caafb0",
+ *    context_page_owner_slug: "arteba-special-edition",
+ *    destination_page_owner_type: "article",
+ *    destination_page_owner_id: "542f1ccc7261694847410400",
+ *    destination_page_owner_slug: "acaw-acaw-presenter-charwei-tsai",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedArticleGroup extends ClickedEntityGroup {
+  action: ActionType.clickedArticleGroup
+}
+
+/**
  * A user clicks a grouping of artists on web
  *
  *  This schema describes events sent to Segment from [[clickedEntityGroup]]
@@ -165,6 +189,7 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
  */
 export interface ClickedEntityGroup {
   action:
+    | ActionType.clickedArticleGroup
     | ActionType.clickedArtistGroup
     | ActionType.clickedArtistSeriesGroup
     | ActionType.clickedArtworkGroup
@@ -182,6 +207,38 @@ export interface ClickedEntityGroup {
   destination_page_owner_slug?: string
   horizontal_slide_position?: number
   type: EntityModuleType
+}
+
+/**
+ * A user clicks a fair card
+ *
+ * This schema describes events sent to Segment from [[ClickedFairCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedFairCard",
+ *    context_module: "fairCard",
+ *    context_page_owner_type: "show",
+ *    context_page_owner_id: "5df7daac8225960007129b4f",
+ *    context_page_owner_slug: "mccormick-gallery-mccormick-gallery-at-palm-beach-modern-plus-contemporary-2020",
+ *    destination_page_owner_type: "fair",
+ *    destination_page_owner_id: "5df3e3fa485efe0012c37055",
+ *    destination_page_owner_slug: "palm-beach-modern-plus-contemporary-2020",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedFairCard {
+  action: ActionType.clickedFairCard
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
 }
 
 /**
@@ -216,4 +273,148 @@ export interface ClickedMainArtworkGrid {
   destination_page_owner_id: string
   destination_page_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ * A user clicks on a navigation tab on web.
+ *
+ * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedNavigationTab",
+ *    context_module: "exhibitorsTab",
+ *    context_page_owner_type: "fair",
+ *    context_page_owner_id: "5e726bd22524980012caafb0",
+ *    context_page_owner_slug: "arteba-special-edition",
+ *    destination_path: "/arteba-special-edition/artworks",
+ *    subject: "Artworks"
+ *  }
+ * ```
+ */
+export interface ClickedNavigationTab {
+  action: ActionType.clickedNavigationTab
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_path: string
+  subject: string
+}
+
+/**
+ * A user clicks a partner card
+ *
+ * This schema describes events sent to Segment from [[ClickedPartnerCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPartnerCard",
+ *    context_module: "partnerCard",
+ *    context_page_owner_type: "show",
+ *    context_page_owner_id: "5bb539507a931b299b243dd5",
+ *    context_page_owner_slug: "mccormick-gallery-vidvuds-zviedris-old-cities-and-ancient-walls",
+ *    destination_page_owner_type: "partner",
+ *    destination_page_owner_id: "4e2ed4c42ccd3c000100924f",
+ *    destination_page_owner_slug: "mccormick-gallery",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedPartnerCard {
+  action: ActionType.clickedPartnerCard
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
+ * A user clicks a show more button on web.
+ *
+ * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedShowMore",
+ *    context_module: "exhibitorsTab",
+ *    context_page_owner_type: "fair",
+ *    context_page_owner_id: "5e726bd22524980012caafb0",
+ *    context_page_owner_slug: "arteba-special-edition",
+ *    subject: "Show More"
+ *  }
+ * ```
+ */
+export interface ClickedShowMore {
+  action: ActionType.clickedShowMore
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  subject: string
+}
+
+/**
+ * A user clicks a viewing room card
+ *
+ * This schema describes events sent to Segment from [[ClickedViewingRoomCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedViewingRoomCard",
+ *    context_module: "viewingRoomCard",
+ *    context_page_owner_type: "show",
+ *    context_page_owner_id: "541890237261692168870700",
+ *    context_page_owner_slug: "susan-eley-fine-art-susan-eley-fine-art-at-art-silicon-valley-slash-san-francisco",
+ *    destination_page_owner_type: "viewing-room",
+ *    destination_page_owner_id: "95f7dcfd-1996-45e1-9aab-979c38b2de59",
+ *    destination_page_owner_slug: "susan-eley-fine-art-counterbalance",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedViewingRoomCard {
+  action: ActionType.clickedViewingRoomCard
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
+ * A user clicks an app download link.
+ *
+ * This schema describes events sent to Segment from [[ClickedAppDownload]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAppDownload",
+ *    context_module: "sellFooter",
+ *    context_page_owner_type: "consign",
+ *    destination_path: "https://apps.apple.com/us/app/artsy-buy-sell-original-art/id703796080",
+ *    subject: "Download the app"
+ *  }
+ * ```
+ */
+export interface ClickedAppDownload {
+  action: ActionType.clickedAppDownload
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_path: string
+  subject: string
 }

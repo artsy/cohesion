@@ -6,6 +6,8 @@
  */
 export enum ContextModule {
   aboutTheWork = "aboutTheWork",
+  aboutThisAuction = "aboutThisAuction",
+  articleArtist = "articleArtist",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
   artistHighDemandGrid = "artistHighDemandGrid",
@@ -17,8 +19,11 @@ export enum ContextModule {
   artworkImage = "artworkImage",
   artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
   artworkSidebar = "artworkSidebar",
+  artworksTab = "artworksTab",
+  associatedViewingRoom = "associatedViewingRoom",
   auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
+  auctionHome = "auctionHome",
   auctionRail = "auctionRail",
   auctionResults = "auctionResults",
   auctionsInfo = "auctionsInfo",
@@ -30,7 +35,9 @@ export enum ContextModule {
   collectionRail = "collectionRail",
   collectionCard = "collectionCard",
   consignSubmissionFlow = "consignSubmissionFlow",
+  curatedHighlightsRail = "curatedHighlightsRail",
   currentShowsRail = "currentShowsRail",
+  exhibitorsTab = "exhibitorsTab",
   fairInfo = "fairInfo",
   fairsHeader = "fairsHeader",
   fairRail = "fairRail",
@@ -38,12 +45,15 @@ export enum ContextModule {
   featuredArtists = "featuredArtists",
   featuredArtistsRail = "featuredArtistsRail",
   featuredCollection = "featuredCollection",
+  featuredCollectionsRail = "featuredCollectionsRail",
   featuredViewingRoomsRail = "featuredViewingRoomsRail",
   footer = "footer",
+  galleryBoothRail = "galleryBoothRail",
   geneHeader = "geneHeader",
   header = "header",
   intextTooltip = "intextTooltip",
   latestViewingRoomsRail = "latestViewingRoomsRail",
+  liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
   mainCarousel = "mainCarousel",
   minimalCTABanner = "minimalCTABanner",
@@ -51,6 +61,7 @@ export enum ContextModule {
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
+  otherCollectionsRail = "otherCollectionsRail",
   otherWorksByArtistRail = "otherWorksByArtistRail",
   otherWorksFromPartnerRail = "otherWorksFromPartnerRail",
   otherWorksFromShowRail = "otherWorksFromShowRail",
@@ -59,12 +70,17 @@ export enum ContextModule {
   pastFairs = "pastFairs",
   popularArtistsRail = "popularArtistsRail",
   popUpModal = "popUpModal",
+  presentingFair = "presentingFair",
+  presentingPartner = "presentingPartner",
+  priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
   recommendedArtistsRail = "recommendedArtistsRail",
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
+  relatedArticles = "relatedArticles",
   relatedArtistsRail = "relatedArtistsRail",
+  relatedCollectionsRail = "relatedCollectionsRail",
   relatedWorksRail = "relatedWorksRail",
   saveWorksCTA = "saveWorksCTA",
   sellFooter = "sellFooter",
@@ -79,6 +95,7 @@ export enum ContextModule {
   trendingArtistsRail = "trendingArtistsRail",
   viewingRoom = "viewingRoom",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
+  worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",
 }
 
@@ -89,13 +106,16 @@ export type AuthContextModule =
   | ContextModule.aboutTheWork
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
+  | ContextModule.artistSeriesRail
   | ContextModule.artistsTab
   | ContextModule.artistsToFollowRail
   | ContextModule.artworkGrid
   | ContextModule.artworkImage
   | ContextModule.artworkSidebar
+  | ContextModule.associatedViewingRoom
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
+  | ContextModule.auctionHome
   | ContextModule.auctionResults
   | ContextModule.auctionsInfo
   | ContextModule.bannerPopUp
@@ -105,12 +125,15 @@ export type AuthContextModule =
   | ContextModule.consignSubmissionFlow
   | ContextModule.currentShowsRail
   | ContextModule.fairInfo
+  | ContextModule.fairRail
   | ContextModule.fairsHeader
+  | ContextModule.featuredArtists
   | ContextModule.featuredArtistsRail
   | ContextModule.footer
   | ContextModule.geneHeader
   | ContextModule.header
   | ContextModule.intextTooltip
+  | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
   | ContextModule.minimalCTABanner
@@ -122,13 +145,19 @@ export type AuthContextModule =
   | ContextModule.pastFairs
   | ContextModule.popularArtistsRail
   | ContextModule.popUpModal
+  | ContextModule.presentingFair
+  | ContextModule.presentingPartner
+  | ContextModule.priceEstimate
   | ContextModule.recentlyViewedRail
+  | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
   | ContextModule.relatedWorksRail
   | ContextModule.saveWorksCTA
   | ContextModule.showHeader
   | ContextModule.showInfo
   | ContextModule.tagHeader
+  | ContextModule.topWorksRail
   | ContextModule.worksByPopularArtistsRail
+  | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksForSaleRail
   | ContextModule.viewingRoom

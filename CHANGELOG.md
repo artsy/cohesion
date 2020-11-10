@@ -1,3 +1,369 @@
+# v1.54.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1689] Adds clickedAppDownload event [#128](https://github.com/artsy/cohesion/pull/128) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.53.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- Fix/add saleinformation to owner types [#126](https://github.com/artsy/cohesion/pull/126) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.52.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- fix: export tapped register to bid [#125](https://github.com/artsy/cohesion/pull/125) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.51.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- feat: added tapped register to bid helper [#124](https://github.com/artsy/cohesion/pull/124) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.50.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add liveAuctionRoom context module [#123](https://github.com/artsy/cohesion/pull/123) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.49.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add context module for aboutThisAuction [#122](https://github.com/artsy/cohesion/pull/122) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.48.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1656] Adds new search events [#117](https://github.com/artsy/cohesion/pull/117) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.47.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- Add tapped_register_to_bid event [#121](https://github.com/artsy/cohesion/pull/121) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.46.0 (Wed Nov 04 2020)
+
+#### 🚀  Enhancement
+
+- Track sale_screen_load_complete [#119](https://github.com/artsy/cohesion/pull/119) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- Update dep typescript from 4.0.3 to v4.0.5 [#116](https://github.com/artsy/cohesion/pull/116) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v1.45.0 (Mon Oct 26 2020)
+
+#### 🚀  Enhancement
+
+- Shows Refresh Tracking [#115](https://github.com/artsy/cohesion/pull/115) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
+# v1.44.0 (Thu Oct 22 2020)
+
+#### 🚀  Enhancement
+
+- Adds articleArtist contextModule [#114](https://github.com/artsy/cohesion/pull/114) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.43.0 (Thu Oct 22 2020)
+
+#### 🚀  Enhancement
+
+- Add collections and viewingRooms to PageOwnerType [#113](https://github.com/artsy/cohesion/pull/113) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.42.0 (Fri Oct 16 2020)
+
+#### 🚀  Enhancement
+
+- Adds fairArtworks OwnerType for new screenview [#112](https://github.com/artsy/cohesion/pull/112) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- Update aws-s3 orb from 1.1.1 to v2 [#109](https://github.com/artsy/cohesion/pull/109) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v1.41.0 (Mon Oct 05 2020)
+
+#### 🚀  Enhancement
+
+- Update cimg/python Docker tag to v3.9 [#111](https://github.com/artsy/cohesion/pull/111) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v1.40.0 (Mon Oct 05 2020)
+
+#### 🚀  Enhancement
+
+- Adds article screen owner type [#108](https://github.com/artsy/cohesion/pull/108) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.39.0 (Fri Oct 02 2020)
+
+#### 🚀  Enhancement
+
+- Context Module for "Works by artist you follow" rail [#110](https://github.com/artsy/cohesion/pull/110) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
+# v1.38.0 (Mon Sep 28 2020)
+
+#### 🚀  Enhancement
+
+- bugfix: Prevent tests from appearing in docs [#107](https://github.com/artsy/cohesion/pull/107) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.37.0 (Mon Sep 28 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1555] Analytics tracking for Fairs work on iOS [#105](https://github.com/artsy/cohesion/pull/105) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.36.0 (Mon Sep 28 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1562] Analytics tracking for Fairs work on Web [#106](https://github.com/artsy/cohesion/pull/106) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- Update aws-s3 orb from 1.1.0 to v1.1.1 [#104](https://github.com/artsy/cohesion/pull/104) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dep typescript from 4.0.2 to v4.0.3 [#103](https://github.com/artsy/cohesion/pull/103) ([@renovate-bot](https://github.com/renovate-bot))
+- Update aws-s3 orb from 1.0.16 to v1.1.0 [#102](https://github.com/artsy/cohesion/pull/102) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- [@louislecluse](https://github.com/louislecluse)
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v1.35.0 (Mon Sep 14 2020)
+
+#### 🚀  Enhancement
+
+- Follow profiles, fairs [#101](https://github.com/artsy/cohesion/pull/101) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.34.0 (Wed Sep 09 2020)
+
+#### 🚀  Enhancement
+
+- add clickedCollectionGroup helper [#100](https://github.com/artsy/cohesion/pull/100) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.33.5 (Wed Sep 02 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add recommendedArtistsRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.33.4 (Mon Aug 31 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add fairRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.33.3 (Thu Aug 27 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add topWorksRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.33.2 (Wed Aug 26 2020)
+
+#### 🐛  Bug Fix
+
+- FollowedGene / UnfollowedGene [#98](https://github.com/artsy/cohesion/pull/98) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.33.1 (Wed Aug 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Add artistSeriesRail to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.33.0 (Wed Aug 26 2020)
+
+#### 🚀  Enhancement
+
+- Adds allArtistSeries for iOS [#99](https://github.com/artsy/cohesion/pull/99) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.32.0 (Tue Aug 25 2020)
+
+#### 🚀  Enhancement
+
+- Add article and articles to OwnerType [#97](https://github.com/artsy/cohesion/pull/97) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.31.1 (Mon Aug 24 2020)
+
+#### ⚠️  Pushed to `master`
+
+- add featuredArtists to AuthContextModule ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.31.0 (Mon Aug 24 2020)
 
 #### 🚀  Enhancement

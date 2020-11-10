@@ -17,6 +17,30 @@ import { Tab } from "../Values/Tab"
  */
 
 /**
+ * A user taps a grouping of articles on iOS
+ *
+ *  This schema describes events sent to Segment from [[tappedArticleGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArticleGroup",
+ *    context_module: "relatedArticles",
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5e726bd22524980012caafb0",
+ *    context_screen_owner_slug: "arteba-special-edition",
+ *    destination_screen_owner_type: "article",
+ *    destination_screen_owner_id: "542f1ccc7261694847410400",
+ *    destination_screen_owner_slug: "acaw-acaw-presenter-charwei-tsai",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedArticleGroup extends TappedEntityGroup {
+  action: ActionType.tappedArticleGroup
+}
+
+/**
  * A user taps a grouping of artists on iOS
  *
  *  This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -190,6 +214,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
  */
 export interface TappedEntityGroup {
   action:
+    | ActionType.tappedArticleGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
@@ -236,6 +261,38 @@ export interface TappedConsign {
   destination_screen_owner_type: ScreenOwnerType
   /** The text of the tapped button */
   subject: string
+}
+
+/**
+ * A user taps a fair card
+ *
+ * This schema describes events sent to Segment from [[TappedFairCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedFairCard",
+ *    context_module: "fairCard",
+ *    context_screen_owner_type: "show",
+ *    context_screen_owner_id: "5df7daac8225960007129b4f",
+ *    context_screen_owner_slug: "mccormick-gallery-mccormick-gallery-at-palm-beach-modern-plus-contemporary-2020",
+ *    destination_screen_owner_type: "fair",
+ *    destination_screen_owner_id: "5df3e3fa485efe0012c37055",
+ *    destination_screen_owner_slug: "palm-beach-modern-plus-contemporary-2020",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedFairCard {
+  action: ActionType.tappedFairCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
 }
 
 /**
@@ -301,6 +358,30 @@ export interface TappedPromoSpace {
 }
 
 /**
+ * A user taps "Register to bid" on an iOS sale (auction) page
+ *
+ * This schema describes events sent to Segment from [[tappedRegisterToBid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedRegisterToBid",
+ *    context_module: "auctionHome",
+ *    context_screen_owner_type: "sale",
+ *    context_screen_owner_id: "5f8085e733d847000e3af175",
+ *    context_screen_owner_slug: "forum-auctions-only-banksy-1"
+ *  }
+ * ```
+ */
+export interface TappedRegisterToBid {
+  action: ActionType.tappedRegisterToBid
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+}
+
+/**
  * A user taps an icon on the tab bar
  *
  * This schema describes events sent to Segment from [[tappedTabBar]]
@@ -342,4 +423,120 @@ export interface TappedTabBar {
  */
 export interface TappedViewingRoomGroup extends TappedEntityGroup {
   action: ActionType.tappedViewingRoomGroup
+}
+
+/**
+ * A user taps a Show More button on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedShowMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedShowMore",
+ *    context_module : "exhibitorsView",
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
+ *    context_screen_owner_slug: "latitude-art-fair-2020",
+ *    subject: "Show More"
+ *  }
+ * ```
+ */
+export interface TappedShowMore {
+  action: ActionType.tappedShowMore
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  /** The text of the tapped button */
+  subject: string
+}
+
+/**
+ * A user taps a navigation tab on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedView]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNavigationTab",
+ *    context_module : "exhibitorsView",
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
+ *    context_screen_owner_slug: "latitude-art-fair-2020"
+ *  }
+ * ```
+ */
+export interface TappedNavigationTab {
+  action: ActionType.tappedNavigationTab
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  subject: "string"
+}
+
+/**
+ * A user taps a partner card
+ *
+ * This schema describes events sent to Segment from [[TappedPartnerCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedPartnerCard",
+ *    context_module: "partnerCard",
+ *    context_screen_owner_type: "show",
+ *    context_screen_owner_id: "5bb539507a931b299b243dd5",
+ *    context_screen_owner_slug: "mccormick-gallery-vidvuds-zviedris-old-cities-and-ancient-walls",
+ *    destination_screen_owner_type: "partner",
+ *    destination_screen_owner_id: "4e2ed4c42ccd3c000100924f",
+ *    destination_screen_owner_slug: "mccormick-gallery",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedPartnerCard {
+  action: ActionType.tappedPartnerCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
+ * A user taps a viewing room card
+ *
+ * This schema describes events sent to Segment from [[TappedViewingRoomCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedViewingRoomCard",
+ *    context_module: "viewingRoomCard",
+ *    context_screen_owner_type: "show",
+ *    context_screen_owner_id: "541890237261692168870700",
+ *    context_screen_owner_slug: "susan-eley-fine-art-susan-eley-fine-art-at-art-silicon-valley-slash-san-francisco",
+ *    destination_screen_owner_type: "viewing-room",
+ *    destination_screen_owner_id: "95f7dcfd-1996-45e1-9aab-979c38b2de59",
+ *    destination_screen_owner_slug: "susan-eley-fine-art-counterbalance",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedViewingRoomCard {
+  action: ActionType.tappedViewingRoomCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
 }

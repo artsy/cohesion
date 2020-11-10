@@ -4,6 +4,9 @@
  * @packageDocumentation
  */
 export enum OwnerType {
+  allArtistSeries = "allArtistSeries",
+  article = "article",
+  articles = "articles",
   artist = "artist",
   artists = "artists",
   artistSeries = "artistSeries",
@@ -15,19 +18,25 @@ export enum OwnerType {
   cityPicker = "cityPicker",
   collect = "collect",
   collection = "collection",
+  collections = "collections",
   consignmentSubmission = "consignmentSubmission",
   consign = "consign",
   explore = "explore",
   fair = "fair",
+  fairArtworks = "fairArtworks",
+  fairs = "fairs",
   galleries = "galleries",
   home = "home",
   inbox = "inbox",
   partner = "partner",
   sale = "sale",
+  saleInformation = "saleInformation",
   search = "search",
   sell = "sell",
+  show = "show",
   savesAndFollows = "savesAndFollows",
   viewingRoom = "viewingRoom",
+  viewingRooms = "viewingRooms",
   viewingRoomArtworks = "viewingRoomArtworks",
   viewingRoomList = "viewingRoomList",
   viewingRoomArtworkPage = "viewingRoomArtworkPage",
@@ -38,6 +47,9 @@ export enum OwnerType {
  * Owner types available in iOS
  */
 export type ScreenOwnerType =
+  | OwnerType.allArtistSeries
+  | OwnerType.article
+  | OwnerType.articles
   | OwnerType.artist
   | OwnerType.artistSeries
   | OwnerType.artwork
@@ -51,13 +63,16 @@ export type ScreenOwnerType =
   | OwnerType.consign
   | OwnerType.explore
   | OwnerType.fair
+  | OwnerType.fairArtworks
   | OwnerType.home
   | OwnerType.inbox
   | OwnerType.partner
   | OwnerType.sale
+  | OwnerType.saleInformation
   | OwnerType.search
   | OwnerType.savesAndFollows
   | OwnerType.sell
+  | OwnerType.show
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworks
   | OwnerType.viewingRoomList
@@ -68,6 +83,8 @@ export type ScreenOwnerType =
  * Owner types available in web/mobile web
  */
 export type PageOwnerType =
+  | OwnerType.article
+  | OwnerType.articles
   | OwnerType.artist
   | OwnerType.artists
   | OwnerType.artistSeries
@@ -75,6 +92,7 @@ export type PageOwnerType =
   | OwnerType.auctions
   | OwnerType.collect
   | OwnerType.collection
+  | OwnerType.collections
   | OwnerType.consign
   | OwnerType.fair
   | OwnerType.galleries
@@ -83,4 +101,7 @@ export type PageOwnerType =
   | OwnerType.partner
   | OwnerType.sale
   | OwnerType.search
+  | OwnerType.show
+  | OwnerType.viewingRoom
+  | OwnerType.viewingRooms
   | OwnerType.worksForYou
