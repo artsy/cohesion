@@ -1,3 +1,15 @@
+# v1.55.0 (Tue Nov 10 2020)
+
+#### 🚀  Enhancement
+
+- Add helpers for ClickedArtworkGroup [#96](https://github.com/artsy/cohesion/pull/96) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.54.0 (Mon Nov 09 2020)
 
 #### 🚀  Enhancement
