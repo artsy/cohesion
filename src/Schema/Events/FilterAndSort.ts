@@ -1,7 +1,40 @@
 import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
-import { FilterParams } from "../Values/FilterParams"
 import { OwnerType } from "../Values/OwnerType"
+
+/**
+ * Master list of filter params available in web and iOS, specific to the artwork grid
+ *
+ * Intended action by a user that triggered an event
+ * @packageDocumentation
+ */
+export interface CommercialFilterParams {
+  acquireable?: boolean
+  artist_id?: string
+  artistIDs?: string[]
+  atAuction?: boolean
+  color?: string
+  /**
+   * FIXME: this and other Range filters may be string[]
+   */
+  dimensionRange?: string
+  estimateRange?: string
+  forSale?: boolean
+  height?: string
+  includeArtworksByFollowedArtists?: boolean
+  inquireableOnly?: boolean
+  keyword?: string
+  majorPeriods?: string[]
+  medium?: string
+  offerable?: boolean
+  page?: number
+  partnerID?: string
+  priceRange?: string
+  sizes?: string[]
+  sort?: string
+  term?: string
+  width?: string
+}
 
 /**
  * A user applies filters to a filterable/sortable module
@@ -23,10 +56,10 @@ import { OwnerType } from "../Values/OwnerType"
  */
 export interface CommercialFilterParamsChanged {
   action: ActionType.commercialFilterParamsChanged
-  context_module: ContextModule
+  context_module: ContextModule.artworkGrid
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  current: FilterParams
-  changed: FilterParams
+  current: CommercialFilterParams
+  changed: CommercialFilterParams
 }
