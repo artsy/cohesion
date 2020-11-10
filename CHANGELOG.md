@@ -1,3 +1,15 @@
+# v1.56.0 (Tue Nov 10 2020)
+
+#### 🚀  Enhancement
+
+- Filter and sort tracking [#127](https://github.com/artsy/cohesion/pull/127) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.55.1 (Tue Nov 10 2020)
 
 #### 🐛  Bug Fix
