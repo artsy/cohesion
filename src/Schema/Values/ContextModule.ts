@@ -72,6 +72,7 @@ export enum ContextModule {
   popUpModal = "popUpModal",
   presentingFair = "presentingFair",
   presentingPartner = "presentingPartner",
+  pushNotifications = "pushNotifications",
   priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
