@@ -1,3 +1,15 @@
+# v1.57.0 (Wed Nov 11 2020)
+
+#### 🚀  Enhancement
+
+- add helper commercialFilterParamsChanged [#130](https://github.com/artsy/cohesion/pull/130) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.56.0 (Tue Nov 10 2020)
 
 #### 🚀  Enhancement
