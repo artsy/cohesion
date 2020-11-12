@@ -418,3 +418,29 @@ export interface ClickedAppDownload {
   destination_path: string
   subject: string
 }
+
+/**
+ * A user clicks the 'Add to Calendar' button on a timed-event page (auction, fair, etc.).
+ *
+ * This schema describes events sent to Segment from [[ClickedAddToCalendar]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAddToCalendar",
+ *    context_module: "auctionHome",
+ *    context_page_owner_type: "sale",
+ *    context_page_owner_id: "5f99e0ba4c24bc000d02b8d7",
+ *    context_page_owner_slug: "artsy-x-seoul-auction-contemporary-icons",
+ *    subject: "google"
+ *  }
+ * ```
+ */
+export interface ClickedAddToCalendar {
+  action: ActionType.clickedAddToCalendar
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  subject: "Google" | "Outlook" | "iCal"
+}

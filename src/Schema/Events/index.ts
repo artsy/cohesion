@@ -5,6 +5,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedAddToCalendar,
   ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
@@ -57,6 +58,7 @@ import { ToggledNotification } from "./Toggle"
 export type Event =
   | AuthImpression
   | CreatedAccount
+  | ClickedAddToCalendar
   | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
@@ -109,6 +111,10 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link ClickedAddToCalendar}
+   */
+  clickedAddToCalendar = "clickedAddToCalendar",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
