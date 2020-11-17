@@ -1,3 +1,4 @@
+import { AddToCalendar } from "./AddToCalendar"
 import {
   AuthImpression,
   CreatedAccount,
@@ -5,7 +6,6 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
-  ClickedAddToCalendar,
   ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
@@ -56,9 +56,9 @@ import { ToggledNotification } from "./Toggle"
  * Each event describes one ActionType
  */
 export type Event =
+  | AddToCalendar
   | AuthImpression
   | CreatedAccount
-  | ClickedAddToCalendar
   | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
@@ -112,9 +112,9 @@ export enum ActionType {
    */
   authImpression = "authImpression",
   /**
-   * Corresponds to {@link ClickedAddToCalendar}
+   * Corresponds to {@link AddToCalendar}
    */
-  clickedAddToCalendar = "clickedAddToCalendar",
+  addToCalendar = "addToCalendar",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
