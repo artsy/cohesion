@@ -1,3 +1,20 @@
+# v1.59.0 (Tue Nov 17 2020)
+
+#### 🚀  Enhancement
+
+- Track add_to_calendar event [#131](https://github.com/artsy/cohesion/pull/131) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- chore(deps): pin dependencies [#132](https://github.com/artsy/cohesion/pull/132) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.58.0 (Tue Nov 17 2020)
 
 #### 🚀  Enhancement
