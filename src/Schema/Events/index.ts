@@ -1,3 +1,4 @@
+import { AddToCalendar } from "./AddToCalendar"
 import {
   AuthImpression,
   CreatedAccount,
@@ -55,6 +56,7 @@ import { ToggledNotification } from "./Toggle"
  * Each event describes one ActionType
  */
 export type Event =
+  | AddToCalendar
   | AuthImpression
   | CreatedAccount
   | ClickedAppDownload
@@ -109,6 +111,10 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link AddToCalendar}
+   */
+  addToCalendar = "addToCalendar",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
