@@ -1,3 +1,15 @@
+# v1.58.0 (Tue Nov 17 2020)
+
+#### 🚀  Enhancement
+
+- feat: Add /Consign tracking helpers + eslint autofixers [#129](https://github.com/artsy/cohesion/pull/129) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v1.57.0 (Wed Nov 11 2020)
 
 #### 🚀  Enhancement
