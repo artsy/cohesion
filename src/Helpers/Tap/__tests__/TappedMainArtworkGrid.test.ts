@@ -1,8 +1,8 @@
-import {
-  TappedMainArtworkGridArgs,
-  tappedMainArtworkGrid,
-} from "../TappedMainArtworkGrid"
 import { OwnerType } from "../../../Schema"
+import {
+  tappedMainArtworkGrid,
+  TappedMainArtworkGridArgs,
+} from "../TappedMainArtworkGrid"
 
 describe("clickedEntityGroup", () => {
   let args: TappedMainArtworkGridArgs

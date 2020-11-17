@@ -1,8 +1,8 @@
-import {
-  ClickedMainArtworkGridArgs,
-  clickedMainArtworkGrid,
-} from "../ClickedMainArtworkGrid"
 import { OwnerType } from "../../../Schema"
+import {
+  clickedMainArtworkGrid,
+  ClickedMainArtworkGridArgs,
+} from "../ClickedMainArtworkGrid"
 
 describe("clickedEntityGroup", () => {
   let args: ClickedMainArtworkGridArgs

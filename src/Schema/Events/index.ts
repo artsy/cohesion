@@ -25,6 +25,8 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
+import { FollowEvents } from "./SavesAndFollows"
+import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
   TappedArticleGroup,
   TappedArtistGroup,
@@ -45,8 +47,6 @@ import {
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
 } from "./Tap"
-import { FollowEvents } from "./SavesAndFollows"
-import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import { ToggledNotification } from "./Toggle"
 
 /**

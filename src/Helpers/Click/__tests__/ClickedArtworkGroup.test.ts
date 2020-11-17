@@ -1,10 +1,10 @@
-import {
-  ClickedArtworkGroupArgs,
-  ClickedArtworkGroupHeaderArgs,
-  clickedArtworkGroup,
-  clickedArtworkGroupHeader,
-} from "../ClickedArtworkGroup"
 import { ContextModule, OwnerType } from "../../../Schema"
+import {
+  clickedArtworkGroup,
+  ClickedArtworkGroupArgs,
+  clickedArtworkGroupHeader,
+  ClickedArtworkGroupHeaderArgs,
+} from "../ClickedArtworkGroup"
 
 describe("clickedArtworkGroup", () => {
   let args: ClickedArtworkGroupArgs

@@ -1,7 +1,7 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
-import { PushNotificationType } from "../Values/PushNotificationType"
 import { ScreenOwnerType } from "../Values/OwnerType"
+import { PushNotificationType } from "../Values/PushNotificationType"
+import { ActionType } from "."
 
 /**
  * Schemas describing Toggle events

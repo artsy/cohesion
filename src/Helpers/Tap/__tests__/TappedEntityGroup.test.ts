@@ -1,5 +1,5 @@
 import { ContextModule, OwnerType } from "../../../Schema"
-import { TappedEntityGroupArgs, tappedEntityGroup } from "../TappedEntityGroup"
+import { tappedEntityGroup, TappedEntityGroupArgs } from "../TappedEntityGroup"
 
 describe("tappedEntityGroup", () => {
   let args: TappedEntityGroupArgs

@@ -1,6 +1,6 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Master list of filter params available in web and iOS, specific to the artwork grid

@@ -1,13 +1,13 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Schemas describing Click events
  * @packageDocumentation
- */
 
+ */
 /**
  *  A user clicks a grouping of entities on web
  *

@@ -16,12 +16,18 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "jest", "eslint-plugin-import"],
+  plugins: [
+    "@typescript-eslint",
+    "jest",
+    "simple-import-sort",
+    "sort-keys-fix",
+  ],
   root: true,
   rules: {
     "no-console": 1,
     "sort-keys": 1,
-    "sort-imports": 1,
+    "simple-import-sort/sort": "error",
+    "sort-keys-fix/sort-keys-fix": "warn",
     "spaced-comment": ["error", "always", { block: { balanced: true } }],
   },
 }

@@ -1,8 +1,8 @@
-import {
-  ClickedEntityGroupArgs,
-  clickedEntityGroup,
-} from "../ClickedEntityGroup"
 import { ContextModule, OwnerType } from "../../../Schema"
+import {
+  clickedEntityGroup,
+  ClickedEntityGroupArgs,
+} from "../ClickedEntityGroup"
 
 describe("clickedEntityGroup", () => {
   let args: ClickedEntityGroupArgs
