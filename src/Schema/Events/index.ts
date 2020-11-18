@@ -1,3 +1,4 @@
+import { AddToCalendar } from "./AddToCalendar"
 import {
   AuthImpression,
   CreatedAccount,
@@ -6,6 +7,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
   ClickedArtistSeriesGroup,
@@ -24,6 +26,9 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
 } from "./Conversations"
+import { CommercialFilterParamsChanged } from "./FilterAndSort"
+import { FollowEvents } from "./SavesAndFollows"
+import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
   TappedArticleGroup,
   TappedArtistGroup,
@@ -44,8 +49,7 @@ import {
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
 } from "./Tap"
-import { FollowEvents } from "./SavesAndFollows"
-import { TimeOnPage } from "./System"
+import { ToggledNotification } from "./Toggle"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -53,8 +57,10 @@ import { TimeOnPage } from "./System"
  * Each event describes one ActionType
  */
 export type Event =
+  | AddToCalendar
   | AuthImpression
   | CreatedAccount
+  | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
   | ClickedArtistSeriesGroup
@@ -68,10 +74,12 @@ export type Event =
   | ClickedPartnerCard
   | ClickedShowMore
   | ClickedViewingRoomCard
+  | CommercialFilterParamsChanged
   | FocusedOnConversationMessageInput
   | FollowEvents
   | OnboardingUserInputData
   | ResetYourPassword
+  | SaleScreenLoadComplete
   | SentConversationMessage
   | SuccessfullyLoggedIn
   | TappedArticleGroup
@@ -93,6 +101,7 @@ export type Event =
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TimeOnPage
+  | ToggledNotification
 
 /**
  * The top-level actions an Event describes.
@@ -104,6 +113,14 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link AddToCalendar}
+   */
+  addToCalendar = "addToCalendar",
+  /**
+   * Corresponds to {@link ClickedAppDownload}
+   */
+  clickedAppDownload = "clickedAppDownload",
   /**
    * Corresponds to {@link ClickedArticleGroup}
    */
@@ -157,6 +174,10 @@ export enum ActionType {
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
   /**
+   * Corresponds to {@link CommercialFilterParamsChanged}
+   */
+  commercialFilterParamsChanged = "commercialFilterParamsChanged",
+  /**
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
@@ -164,6 +185,10 @@ export enum ActionType {
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
+  /**
+   * Corresponds to {@link FocusedOnSearchInput}
+   */
+  focusedOnSearchInput = "focusedOnSearchInput",
   /**
    * Corresponds to {@link FollowedArtist}
    */
@@ -189,13 +214,25 @@ export enum ActionType {
    */
   resetYourPassword = "resetYourPassword",
   /**
-   * Corresponds to {@link SuccessfullyLoggedIn}
+   * Corresponds to {@link SaleScreenLoadComplete}
    */
-  successfullyLoggedIn = "successfullyLoggedIn",
+  saleScreenLoadComplete = "saleScreenLoadComplete",
+  /**
+   * Corresponds to {@link SearchedWithNoResults}
+   */
+  searchedWithNoResults = "searchedWithNoResults",
+  /**
+   * Corresponds to {@link SelectedItemFromSearch}
+   */
+  selectedItemFromSearch = "selectedItemFromSearch",
   /**
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
+  /**
+   * Corresponds to {@link SuccessfullyLoggedIn}
+   */
+  successfullyLoggedIn = "successfullyLoggedIn",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */
@@ -249,6 +286,10 @@ export enum ActionType {
    */
   tappedPromoSpace = "tappedPromoSpace",
   /**
+   * Corresponds to {@link TappedRegisterToBid}
+   */
+  tappedRegisterToBid = "tappedRegisterToBid",
+  /**
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
@@ -272,6 +313,10 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
+  /**
+   * Corresponds to {@link ToggledNotification}
+   */
+  toggledNotification = "toggledNotification",
   /**
    * Corresponds to {@link UnfollowedArtist}
    */

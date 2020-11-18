@@ -1,13 +1,13 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Schemas describing Click events
  * @packageDocumentation
- */
 
+ */
 /**
  *  A user clicks a grouping of entities on web
  *
@@ -391,4 +391,30 @@ export interface ClickedViewingRoomCard {
   destination_page_owner_id: string
   destination_page_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ * A user clicks an app download link.
+ *
+ * This schema describes events sent to Segment from [[ClickedAppDownload]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAppDownload",
+ *    context_module: "sellFooter",
+ *    context_page_owner_type: "consign",
+ *    destination_path: "https://apps.apple.com/us/app/artsy-buy-sell-original-art/id703796080",
+ *    subject: "Download the app"
+ *  }
+ * ```
+ */
+export interface ClickedAppDownload {
+  action: ActionType.clickedAppDownload
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_path: string
+  subject: string
 }

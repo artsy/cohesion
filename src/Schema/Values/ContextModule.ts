@@ -6,6 +6,7 @@
  */
 export enum ContextModule {
   aboutTheWork = "aboutTheWork",
+  aboutThisAuction = "aboutThisAuction",
   articleArtist = "articleArtist",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
@@ -22,6 +23,7 @@ export enum ContextModule {
   associatedViewingRoom = "associatedViewingRoom",
   auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
+  auctionHome = "auctionHome",
   auctionRail = "auctionRail",
   auctionResults = "auctionResults",
   auctionsInfo = "auctionsInfo",
@@ -37,9 +39,10 @@ export enum ContextModule {
   currentShowsRail = "currentShowsRail",
   exhibitorsTab = "exhibitorsTab",
   fairInfo = "fairInfo",
-  fairsHeader = "fairsHeader",
   fairRail = "fairRail",
   fairCard = "fairCard",
+  fairHome = "fairHome",
+  fairsHeader = "fairsHeader",
   featuredArtists = "featuredArtists",
   featuredArtistsRail = "featuredArtistsRail",
   featuredCollection = "featuredCollection",
@@ -51,6 +54,7 @@ export enum ContextModule {
   header = "header",
   intextTooltip = "intextTooltip",
   latestViewingRoomsRail = "latestViewingRoomsRail",
+  liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
   mainCarousel = "mainCarousel",
   minimalCTABanner = "minimalCTABanner",
@@ -73,6 +77,8 @@ export enum ContextModule {
   popUpModal = "popUpModal",
   presentingFair = "presentingFair",
   presentingPartner = "presentingPartner",
+  pushNotifications = "pushNotifications",
+  priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
@@ -115,6 +121,7 @@ export type AuthContextModule =
   | ContextModule.associatedViewingRoom
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
+  | ContextModule.auctionHome
   | ContextModule.auctionResults
   | ContextModule.auctionsInfo
   | ContextModule.bannerPopUp
@@ -132,6 +139,7 @@ export type AuthContextModule =
   | ContextModule.geneHeader
   | ContextModule.header
   | ContextModule.intextTooltip
+  | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
   | ContextModule.minimalCTABanner
@@ -145,6 +153,7 @@ export type AuthContextModule =
   | ContextModule.popUpModal
   | ContextModule.presentingFair
   | ContextModule.presentingPartner
+  | ContextModule.priceEstimate
   | ContextModule.recentlyViewedRail
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail

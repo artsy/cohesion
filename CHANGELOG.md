@@ -1,3 +1,194 @@
+# v1.59.0 (Tue Nov 17 2020)
+
+#### 🚀  Enhancement
+
+- Track add_to_calendar event [#131](https://github.com/artsy/cohesion/pull/131) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- chore(deps): pin dependencies [#132](https://github.com/artsy/cohesion/pull/132) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v1.58.0 (Tue Nov 17 2020)
+
+#### 🚀  Enhancement
+
+- feat: Add /Consign tracking helpers + eslint autofixers [#129](https://github.com/artsy/cohesion/pull/129) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
+# v1.57.0 (Wed Nov 11 2020)
+
+#### 🚀  Enhancement
+
+- add helper commercialFilterParamsChanged [#130](https://github.com/artsy/cohesion/pull/130) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.56.0 (Tue Nov 10 2020)
+
+#### 🚀  Enhancement
+
+- Filter and sort tracking [#127](https://github.com/artsy/cohesion/pull/127) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.55.1 (Tue Nov 10 2020)
+
+#### 🐛  Bug Fix
+
+- Track push notification toggles [#120](https://github.com/artsy/cohesion/pull/120) ([@mikehrom](https://github.com/mikehrom) [@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 2
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.55.0 (Tue Nov 10 2020)
+
+#### 🚀  Enhancement
+
+- Add helpers for ClickedArtworkGroup [#96](https://github.com/artsy/cohesion/pull/96) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
+# v1.54.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1689] Adds clickedAppDownload event [#128](https://github.com/artsy/cohesion/pull/128) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.53.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- Fix/add saleinformation to owner types [#126](https://github.com/artsy/cohesion/pull/126) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.52.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- fix: export tapped register to bid [#125](https://github.com/artsy/cohesion/pull/125) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.51.0 (Mon Nov 09 2020)
+
+#### 🚀  Enhancement
+
+- feat: added tapped register to bid helper [#124](https://github.com/artsy/cohesion/pull/124) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
+# v1.50.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add liveAuctionRoom context module [#123](https://github.com/artsy/cohesion/pull/123) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.49.0 (Fri Nov 06 2020)
+
+#### 🚀  Enhancement
+
+- Add context module for aboutThisAuction [#122](https://github.com/artsy/cohesion/pull/122) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.48.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1656] Adds new search events [#117](https://github.com/artsy/cohesion/pull/117) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
+# v1.47.0 (Thu Nov 05 2020)
+
+#### 🚀  Enhancement
+
+- Add tapped_register_to_bid event [#121](https://github.com/artsy/cohesion/pull/121) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v1.46.0 (Wed Nov 04 2020)
+
+#### 🚀  Enhancement
+
+- Track sale_screen_load_complete [#119](https://github.com/artsy/cohesion/pull/119) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- Update dep typescript from 4.0.3 to v4.0.5 [#116](https://github.com/artsy/cohesion/pull/116) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.45.0 (Mon Oct 26 2020)
 
 #### 🚀  Enhancement
