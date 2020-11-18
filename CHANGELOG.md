@@ -1,3 +1,16 @@
+# v1.60.0 (Wed Nov 18 2020)
+
+#### 🚀  Enhancement
+
+- [AS-1657] Adds onboarding event [#118](https://github.com/artsy/cohesion/pull/118) ([@abhitip](https://github.com/abhitip) [@eessex](https://github.com/eessex))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.59.0 (Tue Nov 17 2020)
 
 #### 🚀  Enhancement
