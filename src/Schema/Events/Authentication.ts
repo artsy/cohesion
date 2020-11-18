@@ -1,5 +1,7 @@
-import { AuthContextModule } from "../Values/ContextModule"
+
+import { AuthContextModule, ContextModule } from "../Values/ContextModule"
 import { AuthIntent } from "../Values/Intent"
+import { PageOwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
@@ -160,3 +162,25 @@ export type AuthTrigger = "click" | "timed"
  * the service the user used to authenticate
  */
 export type AuthService = "apple" | "email" | "facebook"
+
+/**
+ * A user provides us with important data during the onboarding flow
+ *
+ * This schema describes events sent to Segment from [[OnboardingUserInputData]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "onboardingUserInputData",
+ *    context_module: "onboardingInterests",
+ *    context_owner_type: "onboarding",
+ *    data_input: "[learnAboutArt]"
+ *  }
+ * ```
+ */
+export interface OnboardingUserInputData {
+  action: ActionType.onboardingUserInputData
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  data_input: string
+}

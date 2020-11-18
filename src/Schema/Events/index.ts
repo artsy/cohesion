@@ -2,6 +2,7 @@ import { AddToCalendar } from "./AddToCalendar"
 import {
   AuthImpression,
   CreatedAccount,
+  OnboardingUserInputData,
   ResetYourPassword,
   SuccessfullyLoggedIn,
 } from "./Authentication"
@@ -76,6 +77,7 @@ export type Event =
   | CommercialFilterParamsChanged
   | FocusedOnConversationMessageInput
   | FollowEvents
+  | OnboardingUserInputData
   | ResetYourPassword
   | SaleScreenLoadComplete
   | SentConversationMessage
@@ -203,6 +205,10 @@ export enum ActionType {
    * Corresponds to {@link FollowedPartner}
    */
   followedPartner = "followedPartner",
+  /**
+   * Corresponds to {@link OnboardingUserInputData}
+   */
+  onboardingUserInputData = "onboardingUserInputData",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
