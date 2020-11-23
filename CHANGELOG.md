@@ -1,3 +1,20 @@
+# v1.61.0 (Mon Nov 23 2020)
+
+#### 🚀  Enhancement
+
+- #trivial: Add to calendar helper [#135](https://github.com/artsy/cohesion/pull/135) ([@eessex](https://github.com/eessex))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.0.5 to v4.1.2 [#133](https://github.com/artsy/cohesion/pull/133) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.60.0 (Wed Nov 18 2020)
 
 #### 🚀  Enhancement
