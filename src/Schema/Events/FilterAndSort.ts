@@ -56,7 +56,7 @@ export interface AuctionResultsFilterParams {
 }
 
 /**
- * A user applies filters to a filterable/sortable artworks module
+ * A user applies filters to a filterable/sortable artworks or auction results module
  *
  * This schema describes events sent to Segment from [[CommercialFilterParamsChanged]]
  *
@@ -75,38 +75,10 @@ export interface AuctionResultsFilterParams {
  */
 export interface CommercialFilterParamsChanged {
   action: ActionType.commercialFilterParamsChanged
-  context_module: ContextModule.artworkGrid
+  context_module: ContextModule.artworkGrid | ContextModule.auctionResults
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  current: CommercialFilterParams
-  changed: CommercialFilterParams
-}
-
-/**
- * A user applies filters to a filterable/sortable auction results module
- *
- * This schema describes events sent to Segment from [[AuctionResultsFilterParamsChanged]]
- *
- *  @example
- *  ```
- *  {
- *    action: "auctionResultsFilterParamsChanged",
- *    context_module: "auctionResults",
- *    context_owner_type: "artist",
- *    context_owner_id: "51aa03df8b3b8177260002ab",
- *    context_owner_slug: "nicolas-party",
- *    changed: {createdAfterYear: 2016},
- *    current: {createdAfterYear: 2013}
- *  }
- * ```
- */
-export interface AuctionResultsFilterParamsChanged {
-  action: ActionType.auctionResultsFilterParamsChanged
-  context_module: ContextModule.auctionResults
-  context_owner_type: OwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  current: AuctionResultsFilterParams
-  changed: AuctionResultsFilterParams
+  current: CommercialFilterParams | AuctionResultsFilterParams
+  changed: CommercialFilterParams | AuctionResultsFilterParams
 }
