@@ -26,7 +26,10 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
 } from "./Conversations"
-import { CommercialFilterParamsChanged } from "./FilterAndSort"
+import {
+  AuctionResultsFilterParamsChanged,
+  CommercialFilterParamsChanged,
+} from "./FilterAndSort"
 import { FollowEvents } from "./SavesAndFollows"
 import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
@@ -35,6 +38,7 @@ import {
   TappedArtistSeriesGroup,
   TappedArtworkGroup,
   TappedAuctionGroup,
+  TappedAuctionResultGroup,
   TappedCollectionGroup,
   TappedConsign,
   TappedExploreGroup,
@@ -58,6 +62,7 @@ import { ToggledNotification } from "./Toggle"
  */
 export type Event =
   | AddToCalendar
+  | AuctionResultsFilterParamsChanged
   | AuthImpression
   | CreatedAccount
   | ClickedAppDownload
@@ -87,6 +92,7 @@ export type Event =
   | TappedArtistSeriesGroup
   | TappedArtworkGroup
   | TappedAuctionGroup
+  | TappedAuctionResultGroup
   | TappedCollectionGroup
   | TappedExploreGroup
   | TappedFairCard
@@ -117,6 +123,10 @@ export enum ActionType {
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
+  /**
+   * Corresponds to {@link AuctionResultsFilterParamsChanged}
+   */
+  auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
@@ -253,6 +263,10 @@ export enum ActionType {
    * Corresponds to {@link TappedAuctionGroup}
    */
   tappedAuctionGroup = "tappedAuctionGroup",
+  /**
+   * Corresponds to {@link TappedAuctionResultGroup}
+   */
+  tappedAuctionResultGroup = "tappedAuctionResultGroup",
   /**
    * Corresponds to {@link TappedCollectionGroup}
    */

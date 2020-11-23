@@ -37,7 +37,26 @@ export interface CommercialFilterParams {
 }
 
 /**
- * A user applies filters to a filterable/sortable module
+ * Master list of filter params available in web and iOS, specific to auction results
+ *
+ * Intended action by a user that triggered an event
+ * @packageDocumentation
+ */
+export interface AuctionResultsFilterParams {
+  allowEmptyCreatedDates?: boolean
+  categories?: string[]
+  createdAfterYear?: string
+  createdBeforeYear?: string
+  earliestCreatedYear?: string
+  latestCreatedYear?: string
+  organizations?: string[]
+  pageAndCursor?: string[]
+  sizes?: string[]
+  sort?: string
+}
+
+/**
+ * A user applies filters to a filterable/sortable artworks module
  *
  * This schema describes events sent to Segment from [[CommercialFilterParamsChanged]]
  *
@@ -62,4 +81,32 @@ export interface CommercialFilterParamsChanged {
   context_owner_slug?: string
   current: CommercialFilterParams
   changed: CommercialFilterParams
+}
+
+/**
+ * A user applies filters to a filterable/sortable auction results module
+ *
+ * This schema describes events sent to Segment from [[AuctionResultsFilterParamsChanged]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "auctionResultsFilterParamsChanged",
+ *    context_module: "auctionResults",
+ *    context_owner_type: "artist",
+ *    context_owner_id: "51aa03df8b3b8177260002ab",
+ *    context_owner_slug: "nicolas-party",
+ *    changed: {createdAfterYear: 2016},
+ *    current: {createdAfterYear: 2013}
+ *  }
+ * ```
+ */
+export interface AuctionResultsFilterParamsChanged {
+  action: ActionType.auctionResultsFilterParamsChanged
+  context_module: ContextModule.auctionResults
+  context_owner_type: OwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  current: AuctionResultsFilterParams
+  changed: AuctionResultsFilterParams
 }
