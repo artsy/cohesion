@@ -1,6 +1,6 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Schema describing 'Add to Calendar' events
