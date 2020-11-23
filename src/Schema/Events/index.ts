@@ -26,10 +26,7 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
 } from "./Conversations"
-import {
-  AuctionResultsFilterParamsChanged,
-  CommercialFilterParamsChanged,
-} from "./FilterAndSort"
+import { CommercialFilterParamsChanged } from "./FilterAndSort"
 import { FollowEvents } from "./SavesAndFollows"
 import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
@@ -62,7 +59,6 @@ import { ToggledNotification } from "./Toggle"
  */
 export type Event =
   | AddToCalendar
-  | AuctionResultsFilterParamsChanged
   | AuthImpression
   | CreatedAccount
   | ClickedAppDownload
@@ -123,10 +119,6 @@ export enum ActionType {
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
-  /**
-   * Corresponds to {@link AuctionResultsFilterParamsChanged}
-   */
-  auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
