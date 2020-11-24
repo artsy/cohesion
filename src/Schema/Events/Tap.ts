@@ -140,6 +140,29 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user taps a grouping of auction results on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAuctionResultGroup",
+ *    context_module: "auctionResults",
+ *    context_screen_owner_type: "artistInsights",
+ *    context_screen_owner_id: "51aa03df8b3b8177260002ab",
+ *    context_screen_owner_slug: "nicolas-party",
+ *    destination_screen_owner_type: "auctionResult",
+ *    destination_screen_owner_id: "6398282",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedAuctionResultGroup extends TappedEntityGroup {
+  action: ActionType.tappedAuctionResultGroup
+}
+
+/**
  * A user taps a grouping of collections on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -219,6 +242,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
+    | ActionType.tappedAuctionResultGroup
     | ActionType.tappedCollectionGroup
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup

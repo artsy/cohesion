@@ -37,7 +37,26 @@ export interface CommercialFilterParams {
 }
 
 /**
- * A user applies filters to a filterable/sortable module
+ * Master list of filter params available in web and iOS, specific to auction results
+ *
+ * Intended action by a user that triggered an event
+ * @packageDocumentation
+ */
+export interface AuctionResultsFilterParams {
+  allowEmptyCreatedDates?: boolean
+  categories?: string[]
+  createdAfterYear?: string
+  createdBeforeYear?: string
+  earliestCreatedYear?: string
+  latestCreatedYear?: string
+  organizations?: string[]
+  pageAndCursor?: string[]
+  sizes?: string[]
+  sort?: string
+}
+
+/**
+ * A user applies filters to a filterable/sortable artworks or auction results module
  *
  * This schema describes events sent to Segment from [[CommercialFilterParamsChanged]]
  *
@@ -56,10 +75,10 @@ export interface CommercialFilterParams {
  */
 export interface CommercialFilterParamsChanged {
   action: ActionType.commercialFilterParamsChanged
-  context_module: ContextModule.artworkGrid
+  context_module: ContextModule.artworkGrid | ContextModule.auctionResults
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  current: CommercialFilterParams
-  changed: CommercialFilterParams
+  current: CommercialFilterParams | AuctionResultsFilterParams
+  changed: CommercialFilterParams | AuctionResultsFilterParams
 }
