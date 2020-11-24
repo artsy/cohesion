@@ -1,3 +1,15 @@
+# v1.62.0 (Tue Nov 24 2020)
+
+#### 🚀  Enhancement
+
+- Add new events and contexts for auction results on iOS [#134](https://github.com/artsy/cohesion/pull/134) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.61.0 (Mon Nov 23 2020)
 
 #### 🚀  Enhancement
