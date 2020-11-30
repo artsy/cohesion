@@ -27,6 +27,12 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
+import {
+  AddCollectedArtwork,
+  DeleteCollectedArtwork,
+  EditCollectedArtwork,
+  TappedCollectedArtwork,
+} from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
 import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
@@ -59,6 +65,7 @@ import { ToggledNotification } from "./Toggle"
  */
 export type Event =
   | AddToCalendar
+  | AddCollectedArtwork
   | AuthImpression
   | CreatedAccount
   | ClickedAppDownload
@@ -76,6 +83,8 @@ export type Event =
   | ClickedShowMore
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
+  | DeleteCollectedArtwork
+  | EditCollectedArtwork
   | FocusedOnConversationMessageInput
   | FollowEvents
   | OnboardingUserInputData
@@ -89,6 +98,7 @@ export type Event =
   | TappedArtworkGroup
   | TappedAuctionGroup
   | TappedAuctionResultGroup
+  | TappedCollectedArtwork
   | TappedCollectionGroup
   | TappedExploreGroup
   | TappedFairCard
@@ -119,6 +129,10 @@ export enum ActionType {
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
+  /**
+   * Corresponds to {@link AddCollectedArtwork}
+   */
+  addCollectedArtwork = "addCollectedArtwork",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
@@ -183,6 +197,14 @@ export enum ActionType {
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
+  /**
+   * Corresponds to {@link DeleteCollectedArtwork}
+   */
+  deleteCollectedArtwork = "deleteCollectedArtwork",
+  /**
+   * Corresponds to {@link EditCollectedArtwork}
+   */
+  editCollectedArtwork = "editCollectedArtwork",
   /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
@@ -259,6 +281,10 @@ export enum ActionType {
    * Corresponds to {@link TappedAuctionResultGroup}
    */
   tappedAuctionResultGroup = "tappedAuctionResultGroup",
+  /**
+   * Corresponds to {@link TappedCollectedArtwork}
+   */
+  tappedCollectedArtwork = "tappedCollectedArtwork",
   /**
    * Corresponds to {@link TappedCollectionGroup}
    */

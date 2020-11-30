@@ -271,7 +271,7 @@ export type EntityModuleHeight = "single" | "double"
  *  ```
  *  {
  *    action: "tappedConsign",
- *    context_module : "sellHeader",
+ *    context_module: "sellHeader",
  *    context_screen_owner_type: "sell",
  *    destination_screen_owner_type: "consignmentSubmission",
  *    subject: "Start selling"
@@ -470,8 +470,8 @@ export interface TappedShowMore {
   action: ActionType.tappedShowMore
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id: string
-  context_screen_owner_slug: string
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
   /** The text of the tapped button */
   subject: string
 }
