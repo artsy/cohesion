@@ -38,6 +38,7 @@ export enum OwnerType {
   sell = "sell",
   show = "show",
   savesAndFollows = "savesAndFollows",
+  user = "user",
   viewingRoom = "viewingRoom",
   viewingRooms = "viewingRooms",
   viewingRoomArtworks = "viewingRoomArtworks",
@@ -109,6 +110,7 @@ export type PageOwnerType =
   | OwnerType.sale
   | OwnerType.search
   | OwnerType.show
+  | OwnerType.user
   | OwnerType.viewingRoom
   | OwnerType.viewingRooms
   | OwnerType.worksForYou
