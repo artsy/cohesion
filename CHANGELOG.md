@@ -1,3 +1,15 @@
+# v1.63.0 (Mon Nov 30 2020)
+
+#### 🚀  Enhancement
+
+- #trivial: Add user to OwnerTypes [#138](https://github.com/artsy/cohesion/pull/138) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.62.0 (Tue Nov 24 2020)
 
 #### 🚀  Enhancement
