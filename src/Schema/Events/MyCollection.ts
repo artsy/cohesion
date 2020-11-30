@@ -26,6 +26,7 @@ export interface AddCollectedArtwork {
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
   context_owner_id?: string
+  context_owner_slug?: string
 }
 
 /**
@@ -52,6 +53,7 @@ export interface EditCollectedArtwork {
   context_module: ContextModule.myCollectionArtwork
   context_owner_type: OwnerType.myCollectionArtwork
   context_owner_id?: string
+  context_owner_slug?: string
 }
 
 /**
@@ -78,6 +80,7 @@ export interface DeleteCollectedArtwork {
   context_module: ContextModule.myCollectionArtwork
   context_owner_type: OwnerType.myCollectionArtwork
   context_owner_id?: string
+  context_owner_slug?: string
 }
 
 /**
@@ -100,5 +103,8 @@ export interface TappedCollectedArtwork {
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
   context_owner_id?: string
+  context_owner_slug?: string
   destination_owner_type: OwnerType.myCollectionArtwork
+  destination_owner_id?: string
+  destination_owner_slug?: string
 }

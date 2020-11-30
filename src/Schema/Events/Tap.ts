@@ -320,6 +320,30 @@ export interface TappedFairCard {
 }
 
 /**
+ * A user taps an information bubble
+ *
+ * This schema describes events sent to Segment from [[TappedInfoBubble]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedInfoBubble",
+ *    context_module: "myCollectionArtwork",
+ *    context_screen_owner_type: "myCollectionArtwork",
+ *    subject: "auctionResults"
+ *  }
+ * ```
+ */
+export interface TappedInfoBubble {
+  action: ActionType.tappedInfoBubble
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  subject: "auctionResults" | "demandIndex"
+}
+
+/**
  * A user taps on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
  * Note: This event is separate from [[tappedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
  *
