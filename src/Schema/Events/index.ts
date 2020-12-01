@@ -52,6 +52,7 @@ import {
   TappedNavigationTab,
   TappedPartnerCard,
   TappedPromoSpace,
+  TappedSell,
   TappedShowMore,
   TappedTabBar,
   TappedViewingRoomCard,
@@ -110,6 +111,7 @@ export type Event =
   | TappedMainArtworkGrid
   | TappedPartnerCard
   | TappedPromoSpace
+  | TappedSell
   | TappedShowMore
   | TappedTabBar
   | TappedViewingRoomCard
@@ -292,6 +294,10 @@ export enum ActionType {
    */
   tappedCollectionGroup = "tappedCollectionGroup",
   /**
+   * Corresponds to {@link TappedConsign}
+   */
+  tappedConsign = "tappedConsign",
+  /**
    * Corresponds to {@link TappedExploreGroup}
    */
   tappedExploreGroup = "tappedExploreGroup",
@@ -299,10 +305,6 @@ export enum ActionType {
    * Corresponds to {@link TappedFairGroup}
    */
   tappedFairGroup = "tappedFairGroup",
-  /**
-   * Corresponds to {@link TappedConsign}
-   */
-  tappedConsign = "tappedConsign",
   /**
    * Corresponds to {@link TappedFairCard}
    */
@@ -316,6 +318,10 @@ export enum ActionType {
    */
   tappedMainArtworkGrid = "tappedMainArtworkGrid",
   /**
+   * Corresponds to {@link TappedNavigationTab}
+   */
+  tappedNavigationTab = "tappedNavigationTab",
+  /**
    * Corresponds to {@link TappedPartnerCard}
    */
   tappedPartnerCard = "tappedPartnerCard",
@@ -328,6 +334,14 @@ export enum ActionType {
    */
   tappedRegisterToBid = "tappedRegisterToBid",
   /**
+   * Corresponds to {@link TappedSell}
+   */
+  tappedSell = "tappedSell",
+  /**
+   * Corresponds to {@link TappedShowMore}
+   */
+  tappedShowMore = "tappedShowMore",
+  /**
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
@@ -339,14 +353,6 @@ export enum ActionType {
    * Corresponds to {@link TappedViewingRoomGroup}
    */
   tappedViewingRoomGroup = "tappedViewingRoomGroup",
-  /**
-   * Corresponds to {@link TappedShowMore}
-   */
-  tappedShowMore = "tappedShowMore",
-  /**
-   * Corresponds to {@link TappedNavigationTab}
-   */
-  tappedNavigationTab = "tappedNavigationTab",
   /**
    * Corresponds to {@link TimeOnPage}
    */

@@ -430,6 +430,32 @@ export interface TappedRegisterToBid {
 }
 
 /**
+ * A user taps a button that navigates to the Sell With Artsy home screen (not the 'sell' icon in the tab bar)
+ *
+ * This schema describes events sent to Segment from [[tappedSell]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedSell",
+ *    context_module: "myCollectionArtwork",
+ *    context_screen_owner_type: "myCollectionArtwork",
+ *    destination_screen_owner_type: "sell"
+ *    subject: "Learn more"
+ *  }
+ * ```
+ */
+export interface TappedSell {
+  action: ActionType.tappedSell
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: OwnerType.sell
+  subject: string
+}
+
+/**
  * A user taps an icon on the tab bar
  *
  * This schema describes events sent to Segment from [[tappedTabBar]]
