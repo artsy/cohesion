@@ -1,3 +1,15 @@
+# v1.64.0 (Tue Dec 01 2020)
+
+#### 🚀  Enhancement
+
+- Track critical myCollection events and contexts [#139](https://github.com/artsy/cohesion/pull/139) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.63.0 (Mon Nov 30 2020)
 
 #### 🚀  Enhancement
