@@ -60,6 +60,8 @@ export enum ContextModule {
   minimalCTABanner = "minimalCTABanner",
   moreFromThisSeries = "moreFromThisSeries",
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
+  myCollectionArtwork = "myCollectionArtwork",
+  myCollectionHome = "myCollectionHome",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   onboardingArtists = "onboardingArtists",

@@ -27,6 +27,12 @@ import {
   SentConversationMessage,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
+import {
+  AddCollectedArtwork,
+  DeleteCollectedArtwork,
+  EditCollectedArtwork,
+  TappedCollectedArtwork,
+} from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
 import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
@@ -41,10 +47,12 @@ import {
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
+  TappedInfoBubble,
   TappedMainArtworkGrid,
   TappedNavigationTab,
   TappedPartnerCard,
   TappedPromoSpace,
+  TappedSell,
   TappedShowMore,
   TappedTabBar,
   TappedViewingRoomCard,
@@ -59,6 +67,7 @@ import { ToggledNotification } from "./Toggle"
  */
 export type Event =
   | AddToCalendar
+  | AddCollectedArtwork
   | AuthImpression
   | CreatedAccount
   | ClickedAppDownload
@@ -76,6 +85,8 @@ export type Event =
   | ClickedShowMore
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
+  | DeleteCollectedArtwork
+  | EditCollectedArtwork
   | FocusedOnConversationMessageInput
   | FollowEvents
   | OnboardingUserInputData
@@ -89,15 +100,18 @@ export type Event =
   | TappedArtworkGroup
   | TappedAuctionGroup
   | TappedAuctionResultGroup
+  | TappedCollectedArtwork
   | TappedCollectionGroup
+  | TappedConsign
   | TappedExploreGroup
   | TappedFairCard
   | TappedFairGroup
-  | TappedConsign
+  | TappedInfoBubble
   | TappedNavigationTab
   | TappedMainArtworkGrid
   | TappedPartnerCard
   | TappedPromoSpace
+  | TappedSell
   | TappedShowMore
   | TappedTabBar
   | TappedViewingRoomCard
@@ -119,6 +133,10 @@ export enum ActionType {
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
+  /**
+   * Corresponds to {@link AddCollectedArtwork}
+   */
+  addCollectedArtwork = "addCollectedArtwork",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
@@ -183,6 +201,14 @@ export enum ActionType {
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
+  /**
+   * Corresponds to {@link DeleteCollectedArtwork}
+   */
+  deleteCollectedArtwork = "deleteCollectedArtwork",
+  /**
+   * Corresponds to {@link EditCollectedArtwork}
+   */
+  editCollectedArtwork = "editCollectedArtwork",
   /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
@@ -260,9 +286,17 @@ export enum ActionType {
    */
   tappedAuctionResultGroup = "tappedAuctionResultGroup",
   /**
+   * Corresponds to {@link TappedCollectedArtwork}
+   */
+  tappedCollectedArtwork = "tappedCollectedArtwork",
+  /**
    * Corresponds to {@link TappedCollectionGroup}
    */
   tappedCollectionGroup = "tappedCollectionGroup",
+  /**
+   * Corresponds to {@link TappedConsign}
+   */
+  tappedConsign = "tappedConsign",
   /**
    * Corresponds to {@link TappedExploreGroup}
    */
@@ -272,17 +306,21 @@ export enum ActionType {
    */
   tappedFairGroup = "tappedFairGroup",
   /**
-   * Corresponds to {@link TappedConsign}
-   */
-  tappedConsign = "tappedConsign",
-  /**
    * Corresponds to {@link TappedFairCard}
    */
   tappedFairCard = "tappedFairCard",
   /**
+   * Corresponds to {@link TappedInfoBubble}
+   */
+  tappedInfoBubble = "tappedInfoBubble",
+  /**
    * Corresponds to {@link TappedMainArtworkGrid}
    */
   tappedMainArtworkGrid = "tappedMainArtworkGrid",
+  /**
+   * Corresponds to {@link TappedNavigationTab}
+   */
+  tappedNavigationTab = "tappedNavigationTab",
   /**
    * Corresponds to {@link TappedPartnerCard}
    */
@@ -296,6 +334,14 @@ export enum ActionType {
    */
   tappedRegisterToBid = "tappedRegisterToBid",
   /**
+   * Corresponds to {@link TappedSell}
+   */
+  tappedSell = "tappedSell",
+  /**
+   * Corresponds to {@link TappedShowMore}
+   */
+  tappedShowMore = "tappedShowMore",
+  /**
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
@@ -307,14 +353,6 @@ export enum ActionType {
    * Corresponds to {@link TappedViewingRoomGroup}
    */
   tappedViewingRoomGroup = "tappedViewingRoomGroup",
-  /**
-   * Corresponds to {@link TappedShowMore}
-   */
-  tappedShowMore = "tappedShowMore",
-  /**
-   * Corresponds to {@link TappedNavigationTab}
-   */
-  tappedNavigationTab = "tappedNavigationTab",
   /**
    * Corresponds to {@link TimeOnPage}
    */

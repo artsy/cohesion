@@ -271,7 +271,7 @@ export type EntityModuleHeight = "single" | "double"
  *  ```
  *  {
  *    action: "tappedConsign",
- *    context_module : "sellHeader",
+ *    context_module: "sellHeader",
  *    context_screen_owner_type: "sell",
  *    destination_screen_owner_type: "consignmentSubmission",
  *    subject: "Start selling"
@@ -317,6 +317,30 @@ export interface TappedFairCard {
   destination_screen_owner_id: string
   destination_screen_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ * A user taps an information bubble
+ *
+ * This schema describes events sent to Segment from [[TappedInfoBubble]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedInfoBubble",
+ *    context_module: "myCollectionArtwork",
+ *    context_screen_owner_type: "myCollectionArtwork",
+ *    subject: "auctionResults"
+ *  }
+ * ```
+ */
+export interface TappedInfoBubble {
+  action: ActionType.tappedInfoBubble
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  subject: "auctionResults" | "demandIndex"
 }
 
 /**
@@ -406,6 +430,32 @@ export interface TappedRegisterToBid {
 }
 
 /**
+ * A user taps a button that navigates to the Sell With Artsy home screen (not the 'sell' icon in the tab bar)
+ *
+ * This schema describes events sent to Segment from [[tappedSell]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedSell",
+ *    context_module: "myCollectionArtwork",
+ *    context_screen_owner_type: "myCollectionArtwork",
+ *    destination_screen_owner_type: "sell"
+ *    subject: "Learn more"
+ *  }
+ * ```
+ */
+export interface TappedSell {
+  action: ActionType.tappedSell
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: OwnerType.sell
+  subject: string
+}
+
+/**
  * A user taps an icon on the tab bar
  *
  * This schema describes events sent to Segment from [[tappedTabBar]]
@@ -470,8 +520,8 @@ export interface TappedShowMore {
   action: ActionType.tappedShowMore
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id: string
-  context_screen_owner_slug: string
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
   /** The text of the tapped button */
   subject: string
 }
