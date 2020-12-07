@@ -47,6 +47,7 @@ import {
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
+  TappedInboxMessage,
   TappedInfoBubble,
   TappedMainArtworkGrid,
   TappedNavigationTab,
@@ -106,6 +107,7 @@ export type Event =
   | TappedExploreGroup
   | TappedFairCard
   | TappedFairGroup
+  | TappedInboxMessage
   | TappedInfoBubble
   | TappedNavigationTab
   | TappedMainArtworkGrid
@@ -309,6 +311,10 @@ export enum ActionType {
    * Corresponds to {@link TappedFairCard}
    */
   tappedFairCard = "tappedFairCard",
+  /**
+   * Corresponds to {@link TappedInboxMessage}
+   */
+  tappedInboxMessage = "tappedInboxMessage",
   /**
    * Corresponds to {@link TappedInfoBubble}
    */
