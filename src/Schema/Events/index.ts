@@ -34,6 +34,7 @@ import {
   TappedCollectedArtwork,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
+import { Screen } from "./Screen"
 import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
   TappedArticleGroup,
@@ -92,6 +93,7 @@ export type Event =
   | OnboardingUserInputData
   | ResetYourPassword
   | SaleScreenLoadComplete
+  | Screen
   | SentConversationMessage
   | SuccessfullyLoggedIn
   | TappedArticleGroup
@@ -245,6 +247,10 @@ export enum ActionType {
    * Corresponds to {@link SaleScreenLoadComplete}
    */
   saleScreenLoadComplete = "saleScreenLoadComplete",
+  /**
+   * Corresponds to {@link Screen}
+   */
+  screen = "screen",
   /**
    * Corresponds to {@link SearchedWithNoResults}
    */
