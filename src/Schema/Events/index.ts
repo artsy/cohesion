@@ -25,6 +25,7 @@ import {
 import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
+  TappedInboxConversation,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
 import {
@@ -47,7 +48,6 @@ import {
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
-  TappedInboxMessage,
   TappedInfoBubble,
   TappedMainArtworkGrid,
   TappedNavigationTab,
@@ -107,7 +107,7 @@ export type Event =
   | TappedExploreGroup
   | TappedFairCard
   | TappedFairGroup
-  | TappedInboxMessage
+  | TappedInboxConversation
   | TappedInfoBubble
   | TappedNavigationTab
   | TappedMainArtworkGrid
@@ -312,9 +312,9 @@ export enum ActionType {
    */
   tappedFairCard = "tappedFairCard",
   /**
-   * Corresponds to {@link TappedInboxMessage}
+   * Corresponds to {@link TappedInboxConversation}
    */
-  tappedInboxMessage = "tappedInboxMessage",
+  tappedInboxConversation = "tappedInboxConversation",
   /**
    * Corresponds to {@link TappedInfoBubble}
    */

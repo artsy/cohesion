@@ -54,6 +54,7 @@ export enum ContextModule {
   header = "header",
   inboxActiveBids = "inboxActiveBids",
   inboxClosedBids = "inboxClosedBids",
+  inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   intextTooltip = "intextTooltip",
   latestViewingRoomsRail = "latestViewingRoomsRail",

@@ -30,7 +30,7 @@ export enum OwnerType {
   galleries = "galleries",
   home = "home",
   inboxBids = "inboxBids",
-  inboxMessage = "inboxMessage",
+  inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   myCollection = "myCollection",
   myCollectionArtwork = "myCollectionArtwork",
@@ -76,7 +76,7 @@ export type ScreenOwnerType =
   | OwnerType.fairArtworks
   | OwnerType.home
   | OwnerType.inboxBids
-  | OwnerType.inboxMessage
+  | OwnerType.inboxConversation
   | OwnerType.inboxInquiries
   | OwnerType.myCollection
   | OwnerType.myCollectionArtwork
