@@ -5,10 +5,9 @@
  */
 
 export type Tab =
-  | "cityGuide"
-  | "favorites"
-  | "home"
-  | "messages"
-  | "profile"
-  | "search"
-  | "sell"
+  /**
+   * not currently in use:
+   *| "cityGuide"
+   *| "favorites"
+   */
+  "home" | "inbox" | "profile" | "search" | "sell"
