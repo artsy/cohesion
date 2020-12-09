@@ -1,3 +1,15 @@
+# v1.65.0 (Wed Dec 09 2020)
+
+#### 🚀  Enhancement
+
+- feat: helpers for My Collection tracking events [#143](https://github.com/artsy/cohesion/pull/143) ([@pepopowitz](https://github.com/pepopowitz))
+
+#### Authors: 1
+
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v1.64.0 (Tue Dec 01 2020)
 
 #### 🚀  Enhancement
