@@ -25,8 +25,6 @@ export interface AddCollectedArtwork {
   action: ActionType.addCollectedArtwork
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
-  context_owner_id?: string
-  context_owner_slug?: string
 }
 
 /**
@@ -44,7 +42,9 @@ export interface AddCollectedArtwork {
  *  {
  *    action: "editCollectedArtwork",
  *    context_module: "myCollectionArtwork",
- *    context_owner_type: "myCollectionArtwork"
+ *    context_owner_type: "myCollectionArtwork",
+ *    context_owner_id: "my-artwork-id",
+ *    context_owner_slug: "my-artwork-slug"
  *  }
  * ```
  */
@@ -52,8 +52,8 @@ export interface EditCollectedArtwork {
   action: ActionType.editCollectedArtwork
   context_module: ContextModule.myCollectionArtwork
   context_owner_type: OwnerType.myCollectionArtwork
-  context_owner_id?: string
-  context_owner_slug?: string
+  context_owner_id: string
+  context_owner_slug: string
 }
 
 /**
@@ -72,6 +72,8 @@ export interface EditCollectedArtwork {
  *    action: "deleteCollectedArtwork",
  *    context_module: "myCollectionArtwork",
  *    context_owner_type: "myCollectionArtwork"
+ *    context_owner_id: "my-artwork-id",
+ *    context_owner_slug: "my-artwork-slug"
  *  }
  * ```
  */
@@ -79,8 +81,8 @@ export interface DeleteCollectedArtwork {
   action: ActionType.deleteCollectedArtwork
   context_module: ContextModule.myCollectionArtwork
   context_owner_type: OwnerType.myCollectionArtwork
-  context_owner_id?: string
-  context_owner_slug?: string
+  context_owner_id: string
+  context_owner_slug: string
 }
 
 /**
@@ -93,8 +95,11 @@ export interface DeleteCollectedArtwork {
  *  {
  *    action: "tappedCollectedArtwork",
  *    context_module: "myCollectionHome",
- *    context_screen_owner_type: "myCollection",
- *    destination_screen_owner_type: "myCollectionArtwork"
+ *    context_owner_type: "myCollection",
+ *    context_owner_id: "my-collection-id"
+ *    destination_owner_type: "myCollectionArtwork"
+ *    destination_owner_id: "my-collection-artwork-id"
+ *    destination_owner_slug: "my-collection-artwork-slug"
  *  }
  * ```
  */
@@ -102,9 +107,8 @@ export interface TappedCollectedArtwork {
   action: ActionType.tappedCollectedArtwork
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
-  context_owner_id?: string
-  context_owner_slug?: string
+  context_owner_id: string
   destination_owner_type: OwnerType.myCollectionArtwork
-  destination_owner_id?: string
-  destination_owner_slug?: string
+  destination_owner_id: string
+  destination_owner_slug: string
 }
