@@ -1,3 +1,15 @@
+# v1.66.0 (Wed Dec 09 2020)
+
+#### 🚀  Enhancement
+
+- Tracked events for inbox on iOS [#141](https://github.com/artsy/cohesion/pull/141) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.65.0 (Wed Dec 09 2020)
 
 #### 🚀  Enhancement
