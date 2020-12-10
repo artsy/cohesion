@@ -1,3 +1,15 @@
+# v1.66.1 (Thu Dec 10 2020)
+
+#### 🐛  Bug Fix
+
+- feat: export my collection helpers [#144](https://github.com/artsy/cohesion/pull/144) ([@pepopowitz](https://github.com/pepopowitz))
+
+#### Authors: 1
+
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v1.66.0 (Wed Dec 09 2020)
 
 #### 🚀  Enhancement
