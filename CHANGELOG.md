@@ -1,3 +1,15 @@
+# v1.67.2 (Mon Dec 14 2020)
+
+#### 🐛  Bug Fix
+
+- chore: add tappedNavigationTab helper [#147](https://github.com/artsy/cohesion/pull/147) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.67.1 (Mon Dec 14 2020)
 
 #### 🐛  Bug Fix
