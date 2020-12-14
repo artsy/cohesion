@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user focuses on a search box
  *
- * This schema describes events sent to Segment from [[FocusedOnSearchInput]]
+ * This schema describes events sent to Segment from [[focusedOnSearchInput]]
  *
  *  @example
  *  ```
@@ -32,7 +32,7 @@ export interface FocusedOnSearchInput {
 /**
  * A user selects an item from search
  *
- * This schema describes events sent to Segment from [[SelectedItemFromSearch]]
+ * This schema describes events sent to Segment from [[selectedItemFromSearch]]
  *
  *  @example
  *  ```
@@ -65,7 +65,7 @@ export interface SelectedItemFromSearch {
 /**
  * A user searches with no results
  *
- * This schema describes events sent to Segment from [[SearchedWithNoResults]]
+ * This schema describes events sent to Segment from [[searchedWithNoResults]]
  *
  *  @example
  *  ```

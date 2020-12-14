@@ -290,7 +290,7 @@ export interface TappedConsign {
 /**
  * A user taps a fair card
  *
- * This schema describes events sent to Segment from [[TappedFairCard]]
+ * This schema describes events sent to Segment from [[tappedFairCard]]
  *
  *  @example
  *  ```
@@ -322,7 +322,7 @@ export interface TappedFairCard {
 /**
  * A user taps an information bubble
  *
- * This schema describes events sent to Segment from [[TappedInfoBubble]]
+ * This schema describes events sent to Segment from [[tappedInfoBubble]]
  *
  *  @example
  *  ```
@@ -554,7 +554,7 @@ export interface TappedNavigationTab {
 /**
  * A user taps a partner card
  *
- * This schema describes events sent to Segment from [[TappedPartnerCard]]
+ * This schema describes events sent to Segment from [[tappedPartnerCard]]
  *
  *  @example
  *  ```
@@ -586,7 +586,7 @@ export interface TappedPartnerCard {
 /**
  * A user taps a viewing room card
  *
- * This schema describes events sent to Segment from [[TappedViewingRoomCard]]
+ * This schema describes events sent to Segment from [[tappedViewingRoomCard]]
  *
  *  @example
  *  ```
@@ -613,4 +613,30 @@ export interface TappedViewingRoomCard {
   destination_screen_owner_id: string
   destination_screen_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ * A user taps into the identity verification flow on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedVerifyIdentity]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedVerifyIdentity",
+ *    context_module: "inboxActiveBids",
+ *    context_screen_owner_type: "inboxBids",
+ *    sale_id: "5fad78273c8451000d0c53b9"
+ *    subject: "Complete registration"
+ *  }
+ * ```
+ */
+export interface TappedVerifyIdentity {
+  action: ActionType.tappedVerifyIdentity
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  sale_id: string
+  subject: string
 }
