@@ -56,6 +56,7 @@ import {
   TappedSell,
   TappedShowMore,
   TappedTabBar,
+  TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
 } from "./Tap"
@@ -117,6 +118,7 @@ export type Event =
   | TappedSell
   | TappedShowMore
   | TappedTabBar
+  | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TimeOnPage
@@ -356,6 +358,10 @@ export enum ActionType {
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
+  /**
+   * Corresponds to {@link TappedVerifyIdentity}
+   */
+  tappedVerifyIdentity = "tappedVerifyIdentity",
   /**
    * Corresponds to {@link TappedViewingRoomCard}
    */

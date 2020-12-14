@@ -529,7 +529,7 @@ export interface TappedShowMore {
 /**
  * A user taps a navigation tab on iOS
  *
- * This schema describes events sent to Segment from [[tappedNavigationTab]]
+ * This schema describes events sent to Segment from [[TappedNavigationTab]]
  *
  *  @example
  *  ```
@@ -613,4 +613,30 @@ export interface TappedViewingRoomCard {
   destination_screen_owner_id: string
   destination_screen_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ * A user taps into the identity verification flow on iOS
+ *
+ * This schema describes events sent to Segment from [[TappedVerifyIdentity]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedVerifyIdentity",
+ *    context_module: "inboxActiveBids",
+ *    context_screen_owner_type: "inboxBids",
+ *    sale_id: "5fad78273c8451000d0c53b9"
+ *    subject: "Complete registration"
+ *  }
+ * ```
+ */
+export interface TappedVerifyIdentity {
+  action: ActionType.tappedVerifyIdentity
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  sale_id: string
+  subject: string
 }
