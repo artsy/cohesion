@@ -1,3 +1,15 @@
+# v1.67.4 (Mon Dec 14 2020)
+
+#### 🐛  Bug Fix
+
+- Track entry points to identity verification [#148](https://github.com/artsy/cohesion/pull/148) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.67.3 (Mon Dec 14 2020)
 
 #### 🐛  Bug Fix
