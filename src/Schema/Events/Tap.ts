@@ -529,7 +529,7 @@ export interface TappedShowMore {
 /**
  * A user taps a navigation tab on iOS
  *
- * This schema describes events sent to Segment from [[tappedView]]
+ * This schema describes events sent to Segment from [[tappedNavigationTab]]
  *
  *  @example
  *  ```
@@ -546,9 +546,9 @@ export interface TappedNavigationTab {
   action: ActionType.tappedNavigationTab
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id: string
-  context_screen_owner_slug: string
-  subject: "string"
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  subject?: string
 }
 
 /**
