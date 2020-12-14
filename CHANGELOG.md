@@ -1,3 +1,20 @@
+# v1.67.0 (Mon Dec 14 2020)
+
+#### 🚀  Enhancement
+
+- Track screen views [#142](https://github.com/artsy/cohesion/pull/142) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.1.2 to v4.1.3 [#145](https://github.com/artsy/cohesion/pull/145) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.66.1 (Thu Dec 10 2020)
 
 #### 🐛  Bug Fix
