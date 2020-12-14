@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user taps "add artwork" to add an artwork to My Collection.
  *
- * This schema describes events sent to Segment from [[AddCollectedArtwork]]
+ * This schema describes events sent to Segment from [[addCollectedArtwork]]
  *
  *  @example
  *  ```
@@ -35,7 +35,7 @@ export interface AddCollectedArtwork {
 /**
  * A user taps "Edit" to edit an artwork in My Collection.
  *
- * This schema describes events sent to Segment from [[EditCollectedArtwork]]
+ * This schema describes events sent to Segment from [[editCollectedArtwork]]
  *
  *  @example
  *  ```
@@ -64,7 +64,7 @@ export interface EditCollectedArtwork {
 /**
  * A user taps "delete artwork" to delete an artwork from My Collection.
  *
- * This schema describes events sent to Segment from [[DeleteCollectedArtwork]]
+ * This schema describes events sent to Segment from [[deleteCollectedArtwork]]
  *
  *  @example
  *  ```

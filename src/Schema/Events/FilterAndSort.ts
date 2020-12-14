@@ -58,7 +58,7 @@ export interface AuctionResultsFilterParams {
 /**
  * A user applies filters to a filterable/sortable artworks or auction results module
  *
- * This schema describes events sent to Segment from [[CommercialFilterParamsChanged]]
+ * This schema describes events sent to Segment from [[commercialFilterParamsChanged]]
  *
  *  @example
  *  ```

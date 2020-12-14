@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user clicks or taps the 'Add to Calendar' button on a timed-event page (auction, fair, etc.).
  *
- * This schema describes events sent to Segment from [[AddToCalendar]]
+ * This schema describes events sent to Segment from [[addToCalendar]]
  *
  *  @example
  *  ```

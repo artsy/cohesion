@@ -48,7 +48,7 @@ export interface SentConversationMessage {
 /**
  * A user taps an inquiry message within their inbox
  *
- * This schema describes events sent to Segment from [[TappedInboxConversation]]
+ * This schema describes events sent to Segment from [[tappedInboxConversation]]
  *
  *  @example
  *  ```
