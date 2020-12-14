@@ -1,3 +1,17 @@
+# v1.67.3 (Mon Dec 14 2020)
+
+#### 🐛  Bug Fix
+
+- Add context module for YourActiveBids [#149](https://github.com/artsy/cohesion/pull/149) ([@mikehrom](https://github.com/mikehrom))
+- chore: add helper for TappedInboxConversation [#150](https://github.com/artsy/cohesion/pull/150) ([@eessex](https://github.com/eessex))
+
+#### Authors: 2
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.67.2 (Mon Dec 14 2020)
 
 #### 🐛  Bug Fix
