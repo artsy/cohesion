@@ -109,6 +109,7 @@ export enum ContextModule {
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",
+  yourActiveBids = "yourActiveBids",
 }
 
 /**
