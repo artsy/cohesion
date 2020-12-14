@@ -1,3 +1,15 @@
+# v1.67.1 (Mon Dec 14 2020)
+
+#### 🐛  Bug Fix
+
+- Add optional properties for TappedNavigationTab [#146](https://github.com/artsy/cohesion/pull/146) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.67.0 (Mon Dec 14 2020)
 
 #### 🚀  Enhancement
