@@ -34,8 +34,7 @@ import {
   TappedCollectedArtwork,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
-import { Screen } from "./Screen"
-import { SaleScreenLoadComplete, TimeOnPage } from "./System"
+import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   TappedArticleGroup,
   TappedArtistGroup,
