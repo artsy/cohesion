@@ -96,7 +96,6 @@ export interface DeleteCollectedArtwork {
  *    action: "tappedCollectedArtwork",
  *    context_module: "myCollectionHome",
  *    context_owner_type: "myCollection",
- *    context_owner_id: "my-collection-id"
  *    destination_owner_type: "myCollectionArtwork"
  *    destination_owner_id: "my-collection-artwork-id"
  *    destination_owner_slug: "my-collection-artwork-slug"
@@ -107,8 +106,31 @@ export interface TappedCollectedArtwork {
   action: ActionType.tappedCollectedArtwork
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
-  context_owner_id: string
+  context_owner_id?: string
   destination_owner_type: OwnerType.myCollectionArtwork
   destination_owner_id: string
-  destination_owner_slug: string
+  destination_owner_slug?: string
+}
+
+/**
+ * A user taps the artwork image(s) within a MyCollectionArtwork screen
+ *
+ * This schema describes events sent to Segment from [[tappedCollectedArtworkImages]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCollectedArtworkImages",
+ *    context_module: "myCollectionArtwork",
+ *    context_owner_type: "myCollectionArtwork",
+ *    context_owner_id: "collected-artwork-id"
+ *  }
+ * ```
+ */
+export interface TappedCollectedArtworkImages {
+  action: ActionType.tappedCollectedArtworkImages
+  context_module: ContextModule.myCollectionArtwork
+  context_owner_type: OwnerType.myCollectionArtwork
+  context_owner_id: string
+  context_owner_slug?: string
 }
