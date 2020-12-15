@@ -1,3 +1,15 @@
+# v1.67.5 (Tue Dec 15 2020)
+
+#### 🐛  Bug Fix
+
+- Track taps on collected artwork images [#151](https://github.com/artsy/cohesion/pull/151) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.67.4 (Mon Dec 14 2020)
 
 #### 🐛  Bug Fix
