@@ -33,6 +33,7 @@ import {
   DeleteCollectedArtwork,
   EditCollectedArtwork,
   TappedCollectedArtwork,
+  TappedCollectedArtworkImages,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -104,6 +105,7 @@ export type Event =
   | TappedAuctionGroup
   | TappedAuctionResultGroup
   | TappedCollectedArtwork
+  | TappedCollectedArtworkImages
   | TappedCollectionGroup
   | TappedConsign
   | TappedExploreGroup
@@ -298,6 +300,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCollectedArtwork}
    */
   tappedCollectedArtwork = "tappedCollectedArtwork",
+  /**
+   * Corresponds to {@link TappedCollectedArtworkImages}
+   */
+  tappedCollectedArtworkImages = "tappedCollectedArtworkImages",
   /**
    * Corresponds to {@link TappedCollectionGroup}
    */
