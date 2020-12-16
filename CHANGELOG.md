@@ -1,3 +1,15 @@
+# v1.67.7 (Wed Dec 16 2020)
+
+#### 🐛  Bug Fix
+
+- feat: expose two more subjects for tappedInfoBubble [#153](https://github.com/artsy/cohesion/pull/153) ([@pepopowitz](https://github.com/pepopowitz))
+
+#### Authors: 1
+
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v1.67.6 (Wed Dec 16 2020)
 
 #### 🐛  Bug Fix
