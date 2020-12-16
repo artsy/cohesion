@@ -1,3 +1,15 @@
+# v1.67.6 (Wed Dec 16 2020)
+
+#### 🐛  Bug Fix
+
+- feat: helper for tappedCollectedArtworkImages [#152](https://github.com/artsy/cohesion/pull/152) ([@pepopowitz](https://github.com/pepopowitz))
+
+#### Authors: 1
+
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v1.67.5 (Tue Dec 15 2020)
 
 #### 🐛  Bug Fix
