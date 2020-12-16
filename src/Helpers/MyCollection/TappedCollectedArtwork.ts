@@ -13,7 +13,7 @@ export interface TappedCollectedArtworkArgs {
  *
  * @example
  * ```
- * tappedCollectionArtwork({
+ * tappedCollectedArtwork({
  *   contextOwnerId: "my-collection-id",
  *   destinationOwnerId: "my-artwork-id",
  *   destinationOwnerSlug: "my-artwork-slug",
