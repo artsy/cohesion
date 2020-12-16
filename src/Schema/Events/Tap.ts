@@ -340,7 +340,11 @@ export interface TappedInfoBubble {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
-  subject: "auctionResults" | "demandIndex"
+  subject:
+    | "auctionResults"
+    | "demandIndex"
+    | "priceEstimate"
+    | "artistMarketStatistics"
 }
 
 /**
