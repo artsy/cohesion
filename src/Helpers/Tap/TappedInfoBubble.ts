@@ -10,7 +10,11 @@ export interface TappedInfoBubbleArgs {
   contextScreenOwnerType: ScreenOwnerType
   contextScreenOwnerId?: string
   contextScreenOwnerSlug?: string
-  subject: "auctionResults" | "demandIndex"
+  subject:
+    | "auctionResults"
+    | "demandIndex"
+    | "priceEstimate"
+    | "artistMarketStatistics"
 }
 
 export const tappedInfoBubble = ({
