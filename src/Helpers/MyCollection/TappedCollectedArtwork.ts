@@ -2,7 +2,7 @@ import { ActionType, ContextModule, OwnerType } from "../../Schema"
 import { TappedCollectedArtwork } from "../../Schema/Events/MyCollection"
 
 export interface TappedCollectedArtworkArgs {
-  contextOwnerId: string
+  contextOwnerId?: string
   destinationOwnerId: string
   destinationOwnerSlug: string
 }
@@ -14,7 +14,6 @@ export interface TappedCollectedArtworkArgs {
  * @example
  * ```
  * tappedCollectedArtwork({
- *   contextOwnerId: "my-collection-id",
  *   destinationOwnerId: "my-artwork-id",
  *   destinationOwnerSlug: "my-artwork-slug",
  * })
