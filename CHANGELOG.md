@@ -1,3 +1,15 @@
+# v1.67.8 (Wed Dec 16 2020)
+
+#### 🐛  Bug Fix
+
+- chore: synchronize TappedCollectedArtwork helper API with schema [#154](https://github.com/artsy/cohesion/pull/154) ([@pepopowitz](https://github.com/pepopowitz))
+
+#### Authors: 1
+
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v1.67.7 (Wed Dec 16 2020)
 
 #### 🐛  Bug Fix
