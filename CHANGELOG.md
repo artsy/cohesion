@@ -1,3 +1,15 @@
+# v1.68.0 (Tue Dec 22 2020)
+
+#### 🚀  Enhancement
+
+- add my collection modules, asdf versions file #trivial [#155](https://github.com/artsy/cohesion/pull/155) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v1.67.8 (Wed Dec 16 2020)
 
 #### 🐛  Bug Fix
