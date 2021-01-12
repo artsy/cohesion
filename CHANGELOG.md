@@ -1,3 +1,15 @@
+# v1.68.2 (Tue Jan 12 2021)
+
+#### ⚠️  Pushed to `master`
+
+- Update pull_request_template.md ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v1.68.1 (Tue Jan 12 2021)
 
 #### ⚠️  Pushed to `master`
