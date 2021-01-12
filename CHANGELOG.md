@@ -1,3 +1,15 @@
+# v1.68.3 (Tue Jan 12 2021)
+
+#### 🐛  Bug Fix
+
+- add clickedShowMore helper [#156](https://github.com/artsy/cohesion/pull/156) ([@eessex](https://github.com/eessex))
+
+#### Authors: 1
+
+- Eve Essex ([@eessex](https://github.com/eessex))
+
+---
+
 # v1.68.2 (Tue Jan 12 2021)
 
 #### ⚠️  Pushed to `master`
