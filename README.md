@@ -7,7 +7,7 @@
 - **Docs:** https://cohesion.artsy.net
 - **Ci**: https://circleci.com/gh/artsy/cohesion
 - **[NPM](https://www.npmjs.com/package/@artsy/cohesion):** Package updates are published automatically on successful merges to master. Canaries are available on PR's from feature branches.
-- **Point People**: [@eessex][], [@abhitip][]
+- **Point People**: [@damassi][], [@abhitip][]
 
 ## Contributing
 
@@ -101,7 +101,7 @@ Engineers should use these helpers whenever sending analytics data to Segment, f
 [circleci]: https://circleci.com/gh/artsy/cohesion
 [npm_badge]: https://badge.fury.io/js/%40artsy%2Fcohesion.svg
 [npm]: https://www.npmjs.com/package/@artsy/2Fcohesion
-[@eessex]: https://github.com/eessex
+[@damassi]: https://github.com/damassi
 [@abhitip]: https://github.com/abhitip
 [yarn]: https://classic.yarnpkg.com/en/docs/install/#mac-stable
 [lowercamelcase]: https://wiki.c2.com/?LowerCamelCase
