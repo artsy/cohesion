@@ -12,6 +12,8 @@ export interface ClickedMainArtworkGridArgs {
   contextPageOwnerSlug?: string
   destinationPageOwnerId: string
   destinationPageOwnerSlug: string
+  position?: number
+  sort?: string
 }
 
 /**
@@ -34,6 +36,8 @@ export const clickedMainArtworkGrid = ({
   contextPageOwnerSlug,
   destinationPageOwnerId,
   destinationPageOwnerSlug,
+  position,
+  sort,
 }: ClickedMainArtworkGridArgs): ClickedMainArtworkGrid => {
   return {
     action: ActionType.clickedMainArtworkGrid,
@@ -44,6 +48,8 @@ export const clickedMainArtworkGrid = ({
     destination_page_owner_id: destinationPageOwnerId,
     destination_page_owner_slug: destinationPageOwnerSlug,
     destination_page_owner_type: OwnerType.artwork,
+    position,
+    sort,
     type: "thumbnail",
   }
 }

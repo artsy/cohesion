@@ -35,6 +35,8 @@ describe("clickedEntityGroup", () => {
       contextPageOwnerId: "5359794d1a1e86c3740001f6",
       contextPageOwnerSlug: "andy-warhol",
       contextPageOwnerType: OwnerType.artist,
+      position: 4,
+      sort: "PUBLISHED_AT_DESC",
     })
 
     expect(event).toEqual({
@@ -46,6 +48,8 @@ describe("clickedEntityGroup", () => {
       destination_page_owner_id: "5359794d1a1e86c3740001f7",
       destination_page_owner_slug: "andy-warhol-flower",
       destination_page_owner_type: "artwork",
+      position: 4,
+      sort: "PUBLISHED_AT_DESC",
       type: "thumbnail",
     })
   })
