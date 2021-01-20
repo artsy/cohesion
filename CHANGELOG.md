@@ -1,3 +1,25 @@
+# v1.69.0 (Wed Jan 20 2021)
+
+#### 🚀  Enhancement
+
+- feat: adds position and sort args to artwork click [#157](https://github.com/artsy/cohesion/pull/157) ([@dzucconi](https://github.com/dzucconi))
+
+#### ⚠️  Pushed to `master`
+
+- Update README.md ([@damassi](https://github.com/damassi))
+
+#### 🏠  Internal
+
+- Bump highlight.js from 10.0.3 to 10.4.1 [#140](https://github.com/artsy/cohesion/pull/140) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v1.68.3 (Tue Jan 12 2021)
 
 #### 🐛  Bug Fix
