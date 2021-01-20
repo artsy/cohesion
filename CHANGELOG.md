@@ -1,3 +1,15 @@
+# v1.70.0 (Wed Jan 20 2021)
+
+#### 🚀  Enhancement
+
+- feat: adds position and sort args to artwork tap [#158](https://github.com/artsy/cohesion/pull/158) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v1.69.0 (Wed Jan 20 2021)
 
 #### 🚀  Enhancement
