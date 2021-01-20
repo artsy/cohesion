@@ -273,6 +273,8 @@ export interface ClickedMainArtworkGrid {
   destination_page_owner_id: string
   destination_page_owner_slug: string
   type: "thumbnail"
+  position?: number
+  sort?: string
 }
 
 /**
