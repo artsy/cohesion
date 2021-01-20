@@ -12,6 +12,8 @@ export interface TappedMainArtworkGridArgs {
   contextScreenOwnerSlug?: string
   destinationScreenOwnerId: string
   destinationScreenOwnerSlug: string
+  position?: number
+  sort?: string
 }
 
 /**
@@ -34,6 +36,8 @@ export const tappedMainArtworkGrid = ({
   contextScreenOwnerSlug,
   destinationScreenOwnerId,
   destinationScreenOwnerSlug,
+  position,
+  sort,
 }: TappedMainArtworkGridArgs): TappedMainArtworkGrid => {
   return {
     action: ActionType.tappedMainArtworkGrid,
@@ -44,6 +48,8 @@ export const tappedMainArtworkGrid = ({
     destination_screen_owner_id: destinationScreenOwnerId,
     destination_screen_owner_slug: destinationScreenOwnerSlug,
     destination_screen_owner_type: OwnerType.artwork,
+    position,
+    sort,
     type: "thumbnail",
   }
 }

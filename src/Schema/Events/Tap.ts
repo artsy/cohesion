@@ -377,6 +377,8 @@ export interface TappedMainArtworkGrid {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id: string
   destination_screen_owner_slug: string
+  position?: number
+  sort?: string
   type: "thumbnail"
 }
 

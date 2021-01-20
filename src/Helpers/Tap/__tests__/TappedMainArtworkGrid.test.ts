@@ -35,6 +35,8 @@ describe("clickedEntityGroup", () => {
       contextScreenOwnerId: "5359794d1a1e86c3740001f6",
       contextScreenOwnerSlug: "andy-warhol",
       contextScreenOwnerType: OwnerType.artist,
+      position: 4,
+      sort: "-decayed_merch",
     })
 
     expect(event).toEqual({
@@ -46,6 +48,8 @@ describe("clickedEntityGroup", () => {
       destination_screen_owner_id: "5359794d1a1e86c3740001f7",
       destination_screen_owner_slug: "andy-warhol-flower",
       destination_screen_owner_type: "artwork",
+      position: 4,
+      sort: "-decayed_merch",
       type: "thumbnail",
     })
   })
