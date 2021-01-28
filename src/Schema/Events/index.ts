@@ -36,6 +36,7 @@ import {
   TappedCollectedArtworkImages,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
+import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   TappedArticleGroup,
@@ -97,6 +98,7 @@ export type Event =
   | SaleScreenLoadComplete
   | Screen
   | SentConversationMessage
+  | Share
   | SuccessfullyLoggedIn
   | TappedArticleGroup
   | TappedArtistGroup
@@ -268,6 +270,10 @@ export enum ActionType {
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
+  /**
+   * Corresponds to {@link Share}
+   */
+  share = "share",
   /**
    * Corresponds to {@link SuccessfullyLoggedIn}
    */
