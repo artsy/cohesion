@@ -1,3 +1,15 @@
+# v1.72.0 (Thu Feb 11 2021)
+
+#### 🚀  Enhancement
+
+- feat: add auctionResultSalePrice [#163](https://github.com/artsy/cohesion/pull/163) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.71.0 (Thu Feb 11 2021)
 
 #### 🚀  Enhancement
