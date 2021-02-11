@@ -26,6 +26,7 @@ export enum ContextModule {
   auctionCard = "auctionCard",
   auctionHome = "auctionHome",
   auctionRail = "auctionRail",
+  auctionResult = "auctionResult",
   auctionResults = "auctionResults",
   auctionsInfo = "auctionsInfo",
   bannerPopUp = "bannerPopUp",
@@ -131,6 +132,7 @@ export type AuthContextModule =
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
   | ContextModule.auctionHome
+  | ContextModule.auctionResult
   | ContextModule.auctionResults
   | ContextModule.auctionsInfo
   | ContextModule.bannerPopUp
