@@ -1,3 +1,22 @@
+# v1.71.0 (Thu Feb 11 2021)
+
+#### 🚀  Enhancement
+
+- Share [#162](https://github.com/artsy/cohesion/pull/162) ([@mikehrom](https://github.com/mikehrom) [@pvinis](https://github.com/pvinis))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.1.4 to v4.1.5 [#161](https://github.com/artsy/cohesion/pull/161) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dep typescript from 4.1.3 to v4.1.4 [#160](https://github.com/artsy/cohesion/pull/160) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 3
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.70.0 (Wed Jan 20 2021)
 
 #### 🚀  Enhancement
