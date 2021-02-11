@@ -1,3 +1,15 @@
+# v1.73.0 (Thu Feb 11 2021)
+
+#### 🚀  Enhancement
+
+- feat: add auction result context modules [#164](https://github.com/artsy/cohesion/pull/164) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v1.72.0 (Thu Feb 11 2021)
 
 #### 🚀  Enhancement
