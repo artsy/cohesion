@@ -1,6 +1,6 @@
 import { ContextModule } from "../Values/ContextModule"
+import { CustomService } from "../Values/CustomService"
 import { OwnerType } from "../Values/OwnerType"
-import { Service } from "../Values/Service"
 import { ActionType } from "."
 
 /**
@@ -20,7 +20,7 @@ import { ActionType } from "."
  *    context_module: "artworkImage",
  *    context_owner_type: "artwork",
  *    context_owner_id: "55ed8ca57261693d930000b8"
- *    service: "instagram"
+ *    service: "instagram_stories"
  *  }
  * ```
  */
@@ -30,5 +30,5 @@ export interface Share {
   context_owner_type: OwnerType
   context_owner_id: string
   context_owner_slug?: string
-  service: Service
+  service: CustomService | string
 }
