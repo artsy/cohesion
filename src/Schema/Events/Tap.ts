@@ -345,6 +345,7 @@ export interface TappedInfoBubble {
     | "demandIndex"
     | "priceEstimate"
     | "artistMarketStatistics"
+    | "auctionResultSalePrice"
 }
 
 /**

@@ -15,6 +15,7 @@ export interface TappedInfoBubbleArgs {
     | "demandIndex"
     | "priceEstimate"
     | "artistMarketStatistics"
+    | "auctionResultSalePrice"
 }
 
 export const tappedInfoBubble = ({
