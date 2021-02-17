@@ -34,6 +34,7 @@ export enum OwnerType {
   inboxInquiries = "inboxInquiries",
   myCollection = "myCollection",
   myCollectionArtwork = "myCollectionArtwork",
+  onboarding = "onboarding",
   partner = "partner",
   profile = "profile",
   sale = "sale",
@@ -80,6 +81,7 @@ export type ScreenOwnerType =
   | OwnerType.inboxInquiries
   | OwnerType.myCollection
   | OwnerType.myCollectionArtwork
+  | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
   | OwnerType.sale
@@ -113,6 +115,7 @@ export type PageOwnerType =
   | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home
+  | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
   | OwnerType.sale
