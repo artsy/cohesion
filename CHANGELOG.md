@@ -1,3 +1,15 @@
+# v1.74.0 (Wed Feb 17 2021)
+
+#### 🚀  Enhancement
+
+- Adds onboarding owner type [#165](https://github.com/artsy/cohesion/pull/165) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.73.0 (Thu Feb 11 2021)
 
 #### 🚀  Enhancement
