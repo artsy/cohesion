@@ -39,7 +39,7 @@ export interface TappedEntityGroupArgs {
 }
 
 /**
- *  A user taps a grouping of entities on iOS
+ *  A user taps a grouping of entities on App
  *
  *  The `action` type is inferred from `destinationScreenOwnerType`
  *

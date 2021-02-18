@@ -1,5 +1,5 @@
 /**
- * All push notification types available for iOS
+ * All push notification types available for App
  *
  * @packageDocumentation
  */

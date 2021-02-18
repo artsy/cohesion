@@ -1,5 +1,5 @@
 /**
- * All owner types available for iOS (screen) and web (page)
+ * All owner types available for App (screen) and web (page)
  *
  * @packageDocumentation
  */
@@ -55,7 +55,7 @@ export enum OwnerType {
 }
 
 /**
- * Owner types available in iOS
+ * Owner types available in App
  */
 export type ScreenOwnerType =
   | OwnerType.allArtistSeries

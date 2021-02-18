@@ -17,7 +17,7 @@ export interface TappedMainArtworkGridArgs {
 }
 
 /**
- *  A user taps an artwork in the main artworkGrid (iOS)
+ *  A user taps an artwork in the main artworkGrid (App)
  *
  * @example
  * ```

@@ -12,7 +12,7 @@ export interface TappedTabBarArgs {
 }
 
 /**
- * A user taps an icon in the Tab Bar within the iOS app
+ * A user taps an icon in the Tab Bar within the App app
  *
  * badge is true if present, false if not
  *

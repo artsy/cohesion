@@ -1,5 +1,5 @@
 /**
- * Master list of tabs available for the iOS app Tab Bar (footer navigation)
+ * Master list of tabs available for the App app Tab Bar (footer navigation)
  *
  * @packageDocumentation
  */
