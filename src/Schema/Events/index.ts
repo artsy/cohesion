@@ -13,13 +13,18 @@ import {
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
   ClickedAuctionGroup,
+  ClickedCollapseArrow,
   ClickedCollectionGroup,
+  ClickedEditArtwork,
+  ClickedExpandArrow,
   ClickedFairCard,
   ClickedFairGroup,
+  ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
   ClickedPartnerCard,
   ClickedShowMore,
+  ClickedSnooze,
   ClickedViewingRoomCard,
 } from "./Click"
 import {
@@ -80,11 +85,16 @@ export type Event =
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
   | ClickedAuctionGroup
+  | ClickedCollapseArrow
   | ClickedCollectionGroup
+  | ClickedEditArtwork
+  | ClickedExpandArrow
   | ClickedFairCard
   | ClickedFairGroup
+  | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedSnooze
   | ClickedPartnerCard
   | ClickedShowMore
   | ClickedViewingRoomCard
@@ -171,9 +181,21 @@ export enum ActionType {
    */
   clickedAuctionGroup = "clickedAuctionGroup",
   /**
+   * Corresponds to {@link ClickedCollapseArrow}
+   */
+  clickedCollapseArrow = "clickedCollapseArrow",
+  /**
    * Corresponds to {@link ClickedCollectionGroup}
    */
   clickedCollectionGroup = "clickedCollectionGroup",
+  /**
+   * Corresponds to {@link ClickedEditArtwork}
+   */
+  clickedEditArtwork = "clickedExpandArrow",
+  /**
+   * Corresponds to {@link ClickedExpandArrow}
+   */
+  clickedExpandArrow = "clickedExpandArrow",
   /**
    * Corresponds to {@link ClickedFairCard}
    */
@@ -183,6 +205,11 @@ export enum ActionType {
    */
   clickedFairGroup = "clickedFairGroup",
   /**
+   * Corresponds to {@link ClickedLoadMore}
+   */
+  clickedLoadMore = "clickedLoadMore",
+  /**
+  /**
    * Corresponds to {@link ClickedMainArtworkGrid}
    */
   clickedMainArtworkGrid = "clickedMainArtworkGrid",
@@ -190,6 +217,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedNavigationTab}
    */
   clickedNavigationTab = "clickedNavigationTab",
+  /**
+   * Corresponds to {@link ClickedSnooze}
+   */
+  clickedSnooze = "clickedSnooze",
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
