@@ -191,7 +191,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedEditArtwork}
    */
-  clickedEditArtwork = "clickedExpandArrow",
+  clickedEditArtwork = "clickedEditArtwork",
   /**
    * Corresponds to {@link ClickedExpandArrow}
    */
