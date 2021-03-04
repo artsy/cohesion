@@ -18,7 +18,7 @@ import { ActionType } from "."
  * ```
  */
 export interface AcceptOffer {
-  action: ActionType.AcceptOffer
+  action: ActionType.acceptOffer
   context_owner_type: OwnerType.reviewOffer
   impulse_conversation_id: string
   subject: string
@@ -40,7 +40,7 @@ export interface AcceptOffer {
  * ```
  */
 export interface CounterOffer {
-  action: ActionType.CounterOffer
+  action: ActionType.counterOffer
   context_owner_type: OwnerType.reviewOffer
   impulse_conversation_id: string
   subject: string
@@ -62,7 +62,7 @@ export interface CounterOffer {
  * ```
  */
 export interface DeclineOffer {
-  action: ActionType.DeclineOffer
+  action: ActionType.declineOffer
   context_owner_type: OwnerType.reviewOffer
   impulse_conversation_id: string
   subject: string
@@ -106,7 +106,7 @@ export interface FocusedOnConversationMessageInput {
  * ```
  */
 export interface MakeOffer {
-  action: ActionType.MakeOffer
+  action: ActionType.makeOffer
   context_owner_type: OwnerType.inboxConversation
   impulse_conversation_id: string
 }
@@ -177,7 +177,7 @@ export interface TappedInboxConversation {
  * ```
  */
 export interface ViewOffer {
-  action: ActionType.ViewOffer
+  action: ActionType.viewOffer
   context_owner_type: OwnerType.inboxConversation
   impulse_conversation_id: string
   subject: string
