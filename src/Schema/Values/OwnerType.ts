@@ -21,6 +21,7 @@ export enum OwnerType {
   collect = "collect",
   collection = "collection",
   collections = "collections",
+  confirmArtwork = "confirmArtwork",
   consignmentSubmission = "consignmentSubmission",
   consign = "consign",
   explore = "explore",
@@ -37,6 +38,7 @@ export enum OwnerType {
   onboarding = "onboarding",
   partner = "partner",
   profile = "profile",
+  reviewOffer = "reviewOffer",
   sale = "sale",
   saleInformation = "saleInformation",
   search = "search",
@@ -65,6 +67,7 @@ export type ScreenOwnerType =
   | OwnerType.artwork
   | OwnerType.auctionResult
   | OwnerType.auctions
+  | OwnerType.confirmArtwork
   | OwnerType.gene
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
@@ -84,6 +87,7 @@ export type ScreenOwnerType =
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
+  | OwnerType.reviewOffer
   | OwnerType.sale
   | OwnerType.saleInformation
   | OwnerType.search

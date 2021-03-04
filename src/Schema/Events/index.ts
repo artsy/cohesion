@@ -23,9 +23,14 @@ import {
   ClickedViewingRoomCard,
 } from "./Click"
 import {
+  AcceptOffer,
+  CounterOffer,
+  DeclineOffer,
   FocusedOnConversationMessageInput,
+  MakeOffer,
   SentConversationMessage,
   TappedInboxConversation,
+  ViewOffer,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
 import {
@@ -70,6 +75,7 @@ import { ToggledNotification } from "./Toggle"
  * Each event describes one ActionType
  */
 export type Event =
+  | AcceptOffer
   | AddToCalendar
   | AddCollectedArtwork
   | AuthImpression
@@ -89,10 +95,13 @@ export type Event =
   | ClickedShowMore
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
+  | CounterOffer
+  | DeclineOffer
   | DeleteCollectedArtwork
   | EditCollectedArtwork
   | FocusedOnConversationMessageInput
   | FollowEvents
+  | MakeOffer
   | OnboardingUserInputData
   | ResetYourPassword
   | SaleScreenLoadComplete
@@ -127,6 +136,7 @@ export type Event =
   | TappedViewingRoomGroup
   | TimeOnPage
   | ToggledNotification
+  | ViewOffer
 
 /**
  * The top-level actions an Event describes.
@@ -138,6 +148,10 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link AcceptOffer}
+   */
+  acceptOffer = "acceptOffer",
   /**
    * Corresponds to {@link AddToCalendar}
    */
@@ -207,9 +221,17 @@ export enum ActionType {
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
   /**
+   * Corresponds to {@link CounterOffer}
+   */
+  counterOffer = "counterOffer",
+  /**
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
+  /**
+   * Corresponds to {@link DeclineOffer}
+   */
+  declineOffer = "declineOffer",
   /**
    * Corresponds to {@link DeleteCollectedArtwork}
    */
@@ -242,6 +264,10 @@ export enum ActionType {
    * Corresponds to {@link FollowedPartner}
    */
   followedPartner = "followedPartner",
+  /**
+   * Corresponds to {@link MakeOffer}
+   */
+  makeOffer = "makeOffer",
   /**
    * Corresponds to {@link OnboardingUserInputData}
    */
@@ -406,4 +432,8 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedPartner}
    */
   unfollowedPartner = "unfollowedPartner",
+  /**
+   * Corresponds to {@link ViewOffer}
+   */
+  viewOffer = "viewOffer",
 }
