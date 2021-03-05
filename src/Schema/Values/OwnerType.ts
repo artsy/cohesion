@@ -76,6 +76,8 @@ export type ScreenOwnerType =
   | OwnerType.collection
   | OwnerType.consignmentSubmission
   | OwnerType.consign
+  | OwnerType.conversation
+  | OwnerType.conversationMakeOfferConfirmArtwork
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.fairArtworks
@@ -88,7 +90,6 @@ export type ScreenOwnerType =
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
-  | OwnerType.reviewOffer
   | OwnerType.sale
   | OwnerType.saleInformation
   | OwnerType.search
