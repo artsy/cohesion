@@ -3,72 +3,6 @@ import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
- * A user taps or clicks to accept an offer
- *
- * This schema describes events sent to Segment from [[acceptOffer]]
- *
- *  @example
- *  ```
- *  {
- *    action: "acceptOffer",
- *    context_owner_type: "inboxConversation"
- *    impulse_conversation_id: "198"
- *    subject: "Confirm & Pay"
- *  }
- * ```
- */
-export interface AcceptOffer {
-  action: ActionType.acceptOffer
-  context_owner_type: OwnerType.reviewOffer
-  impulse_conversation_id: string
-  subject: string
-}
-
-/**
- * A user taps or clicks to counter an offer
- *
- * This schema describes events sent to Segment from [[counterOffer]]
- *
- *  @example
- *  ```
- *  {
- *    action: "counterOffer",
- *    context_owner_type: "inboxConversation"
- *    impulse_conversation_id: "198"
- *    subject: "Send a counteroffer"
- *  }
- * ```
- */
-export interface CounterOffer {
-  action: ActionType.counterOffer
-  context_owner_type: OwnerType.reviewOffer
-  impulse_conversation_id: string
-  subject: string
-}
-
-/**
- * A user taps or clicks to decline an offer
- *
- * This schema describes events sent to Segment from [[declineOffer]]
- *
- *  @example
- *  ```
- *  {
- *    action: "declineOffer",
- *    context_owner_type: "inboxConversation"
- *    impulse_conversation_id: "198"
- *    subject: "Decline"
- *  }
- * ```
- */
-export interface DeclineOffer {
-  action: ActionType.declineOffer
-  context_owner_type: OwnerType.reviewOffer
-  impulse_conversation_id: string
-  subject: string
-}
-
-/**
  * Schemas describing Conversation events
  * @packageDocumentation
  */
@@ -88,26 +22,6 @@ export interface DeclineOffer {
  */
 export interface FocusedOnConversationMessageInput {
   action: ActionType.focusedOnConversationMessageInput
-  impulse_conversation_id: string
-}
-
-/**
- * A user taps or clicks the make offer button
- *
- * This schema describes events sent to Segment from [[makeOffer]]
- *
- *  @example
- *  ```
- *  {
- *    action: "makeOffer",
- *    context_owner_type: "inboxConversation"
- *    impulse_conversation_id: "198"
- *  }
- * ```
- */
-export interface MakeOffer {
-  action: ActionType.makeOffer
-  context_owner_type: OwnerType.inboxConversation
   impulse_conversation_id: string
 }
 
@@ -162,23 +76,43 @@ export interface TappedInboxConversation {
 }
 
 /**
- * A user taps or clicks to view an offer
+ * A user taps the make offer button
  *
- * This schema describes events sent to Segment from [[viewOffer]]
+ * This schema describes events sent to Segment from [[tappedMakeOffer]]
  *
  *  @example
  *  ```
  *  {
- *    action: "viewOffer",
+ *    action: "tappedMakeOffer",
  *    context_owner_type: "inboxConversation"
+ *    impulse_conversation_id: "198"
+ *  }
+ * ```
+ */
+export interface TappedMakeOffer {
+  action: ActionType.tappedMakeOffer
+  context_owner_type: OwnerType.conversation
+  impulse_conversation_id: string
+}
+
+/**
+ * A user taps to view an offer
+ *
+ * This schema describes events sent to Segment from [[tappedViewOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedViewOffer",
+ *    context_owner_type: "conversation"
  *    impulse_conversation_id: "198"
  *    subject: "Offer Accepted"
  *  }
  * ```
  */
-export interface ViewOffer {
-  action: ActionType.viewOffer
-  context_owner_type: OwnerType.inboxConversation
+export interface TappedViewOffer {
+  action: ActionType.tappedViewOffer
+  context_owner_type: OwnerType.conversation
   impulse_conversation_id: string
   subject: string
 }

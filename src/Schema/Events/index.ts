@@ -23,14 +23,11 @@ import {
   ClickedViewingRoomCard,
 } from "./Click"
 import {
-  AcceptOffer,
-  CounterOffer,
-  DeclineOffer,
   FocusedOnConversationMessageInput,
-  MakeOffer,
   SentConversationMessage,
   TappedInboxConversation,
-  ViewOffer,
+  TappedMakeOffer,
+  TappedViewOffer,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
 import {
@@ -75,7 +72,6 @@ import { ToggledNotification } from "./Toggle"
  * Each event describes one ActionType
  */
 export type Event =
-  | AcceptOffer
   | AddToCalendar
   | AddCollectedArtwork
   | AuthImpression
@@ -95,13 +91,10 @@ export type Event =
   | ClickedShowMore
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
-  | CounterOffer
-  | DeclineOffer
   | DeleteCollectedArtwork
   | EditCollectedArtwork
   | FocusedOnConversationMessageInput
   | FollowEvents
-  | MakeOffer
   | OnboardingUserInputData
   | ResetYourPassword
   | SaleScreenLoadComplete
@@ -126,6 +119,7 @@ export type Event =
   | TappedInfoBubble
   | TappedNavigationTab
   | TappedMainArtworkGrid
+  | TappedMakeOffer
   | TappedPartnerCard
   | TappedPromoSpace
   | TappedSell
@@ -134,9 +128,9 @@ export type Event =
   | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
+  | TappedViewOffer
   | TimeOnPage
   | ToggledNotification
-  | ViewOffer
 
 /**
  * The top-level actions an Event describes.
@@ -148,10 +142,6 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
-  /**
-   * Corresponds to {@link AcceptOffer}
-   */
-  acceptOffer = "acceptOffer",
   /**
    * Corresponds to {@link AddToCalendar}
    */
@@ -221,17 +211,9 @@ export enum ActionType {
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
   /**
-   * Corresponds to {@link CounterOffer}
-   */
-  counterOffer = "counterOffer",
-  /**
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
-  /**
-   * Corresponds to {@link DeclineOffer}
-   */
-  declineOffer = "declineOffer",
   /**
    * Corresponds to {@link DeleteCollectedArtwork}
    */
@@ -264,10 +246,6 @@ export enum ActionType {
    * Corresponds to {@link FollowedPartner}
    */
   followedPartner = "followedPartner",
-  /**
-   * Corresponds to {@link MakeOffer}
-   */
-  makeOffer = "makeOffer",
   /**
    * Corresponds to {@link OnboardingUserInputData}
    */
@@ -369,6 +347,10 @@ export enum ActionType {
    */
   tappedMainArtworkGrid = "tappedMainArtworkGrid",
   /**
+   * Corresponds to {@link TappedMakeOffer}
+   */
+  tappedMakeOffer = "tappedMakeOffer",
+  /**
    * Corresponds to {@link TappedNavigationTab}
    */
   tappedNavigationTab = "tappedNavigationTab",
@@ -409,6 +391,10 @@ export enum ActionType {
    */
   tappedViewingRoomGroup = "tappedViewingRoomGroup",
   /**
+   * Corresponds to {@link TappedViewOffer}
+   */
+  tappedViewOffer = "tappedViewOffer",
+  /**
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
@@ -432,8 +418,4 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedPartner}
    */
   unfollowedPartner = "unfollowedPartner",
-  /**
-   * Corresponds to {@link ViewOffer}
-   */
-  viewOffer = "viewOffer",
 }
