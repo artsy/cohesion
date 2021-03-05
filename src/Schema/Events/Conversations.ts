@@ -84,7 +84,7 @@ export interface TappedInboxConversation {
  *  ```
  *  {
  *    action: "tappedMakeOffer",
- *    context_owner_type: "inboxConversation"
+ *    context_owner_type: "conversation"
  *    impulse_conversation_id: "198"
  *  }
  * ```

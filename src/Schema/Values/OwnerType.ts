@@ -21,7 +21,6 @@ export enum OwnerType {
   collect = "collect",
   collection = "collection",
   collections = "collections",
-  confirmArtwork = "confirmArtwork",
   consignmentSubmission = "consignmentSubmission",
   consign = "consign",
   conversation = "conversation",
@@ -68,7 +67,6 @@ export type ScreenOwnerType =
   | OwnerType.artwork
   | OwnerType.auctionResult
   | OwnerType.auctions
-  | OwnerType.confirmArtwork
   | OwnerType.gene
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
