@@ -1,3 +1,21 @@
+# v1.75.0 (Wed Mar 10 2021)
+
+#### 🚀  Enhancement
+
+- [AS-1950] Inquiry checkout events [#169](https://github.com/artsy/cohesion/pull/169) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.2.2 to v4.2.3 [#170](https://github.com/artsy/cohesion/pull/170) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dep typescript from 4.1.5 to v4.2.2 [#167](https://github.com/artsy/cohesion/pull/167) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.74.0 (Wed Feb 17 2021)
 
 #### 🚀  Enhancement
