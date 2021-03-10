@@ -74,3 +74,45 @@ export interface TappedInboxConversation {
   artwork_id: string
   partner_id: string
 }
+
+/**
+ * A user taps the make offer button
+ *
+ * This schema describes events sent to Segment from [[tappedMakeOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedMakeOffer",
+ *    context_owner_type: "conversation"
+ *    impulse_conversation_id: "198"
+ *  }
+ * ```
+ */
+export interface TappedMakeOffer {
+  action: ActionType.tappedMakeOffer
+  context_owner_type: OwnerType.conversation
+  impulse_conversation_id: string
+}
+
+/**
+ * A user taps to view an offer
+ *
+ * This schema describes events sent to Segment from [[tappedViewOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedViewOffer",
+ *    context_owner_type: "conversation"
+ *    impulse_conversation_id: "198"
+ *    subject: "Offer Accepted"
+ *  }
+ * ```
+ */
+export interface TappedViewOffer {
+  action: ActionType.tappedViewOffer
+  context_owner_type: OwnerType.conversation
+  impulse_conversation_id: string
+  subject: string
+}

@@ -26,6 +26,8 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
   TappedInboxConversation,
+  TappedMakeOffer,
+  TappedViewOffer,
 } from "./Conversations"
 import { CommercialFilterParamsChanged } from "./FilterAndSort"
 import {
@@ -117,6 +119,7 @@ export type Event =
   | TappedInfoBubble
   | TappedNavigationTab
   | TappedMainArtworkGrid
+  | TappedMakeOffer
   | TappedPartnerCard
   | TappedPromoSpace
   | TappedSell
@@ -125,6 +128,7 @@ export type Event =
   | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
+  | TappedViewOffer
   | TimeOnPage
   | ToggledNotification
 
@@ -343,6 +347,10 @@ export enum ActionType {
    */
   tappedMainArtworkGrid = "tappedMainArtworkGrid",
   /**
+   * Corresponds to {@link TappedMakeOffer}
+   */
+  tappedMakeOffer = "tappedMakeOffer",
+  /**
    * Corresponds to {@link TappedNavigationTab}
    */
   tappedNavigationTab = "tappedNavigationTab",
@@ -382,6 +390,10 @@ export enum ActionType {
    * Corresponds to {@link TappedViewingRoomGroup}
    */
   tappedViewingRoomGroup = "tappedViewingRoomGroup",
+  /**
+   * Corresponds to {@link TappedViewOffer}
+   */
+  tappedViewOffer = "tappedViewOffer",
   /**
    * Corresponds to {@link TimeOnPage}
    */
