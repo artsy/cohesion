@@ -420,3 +420,115 @@ export interface ClickedAppDownload {
   destination_path: string
   subject: string
 }
+
+/**
+ * A partner clicks on Edit Artwork from CMS Checklist To-Do Items.
+ *
+ * This schema describes events sent to Segment from [[ClickedEditArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedEditArtwork",
+ *    context_module: "toDoList",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "artworks",
+ *    destination_page_owner_id: "5808b9a0cd530e658500008a",
+ *    destination_page_owner_slug: "maddalena-ambrosio-untitled"
+ *  }
+ * ```
+ */
+export interface ClickedEditArtwork {
+  action: ActionType.clickedEditArtwork
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  destination_path: string
+  type: "page"
+}
+
+/**
+ * A partner clicks on Snooze button from CMS Checklist To-Do Items.
+ *
+ * This schema describes events sent to Segment from [[ClickedSnooze]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSnooze",
+ *    context_module: "toDoList",
+ *    context_page_owner_type: "home"
+ *  }
+ * ```
+ */
+export interface ClickedSnooze {
+  action: ActionType.clickedSnooze
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+}
+
+/**
+ * A partner clicks on toggle down arrow, displaying checklist items
+ * from CMS Checklist To-Do Items.
+ *
+ * This schema describes events sent to Segment from [[ClickedExpandArrow]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedExpandArrow",
+ *    context_module: "toDoList",
+ *    context_page_owner_type: "home"
+ *  }
+ * ```
+ */
+export interface ClickedExpandArrow {
+  action: ActionType.clickedExpandArrow
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+}
+/**
+ * A partner clicks on toggle up arrow, hiding checklist items
+ * from CMS Checklist To-Do Items.
+ *
+ * This schema describes events sent to Segment from [[ClickedCollapseArrow]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCollapseArrow",
+ *    context_module: "toDoList",
+ *    context_page_owner_type: "home"
+ *  }
+ * ```
+ */
+export interface ClickedCollapseArrow {
+  action: ActionType.clickedCollapseArrow
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+}
+
+/**
+ * A partner clicks a load 5 more button from CMS To-Do list
+ * after completing daily tasks.
+ *
+ * This schema describes events sent to Segment from [[ClickedLoadMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedLoadMore",
+ *    context_module: "toDoList",
+ *    context_page_owner_type: "home"
+ *    subject: "Load 5 More"
+ *  }
+ * ```
+ */
+export interface ClickedLoadMore {
+  action: ActionType.clickedLoadMore
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  subject: string
+}
