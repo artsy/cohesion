@@ -1,3 +1,16 @@
+# v1.76.0 (Tue Mar 16 2021)
+
+#### 🚀  Enhancement
+
+- [AS-1940] New Checklist Events in Cohesion [#168](https://github.com/artsy/cohesion/pull/168) (brendamanganelli@ip-192-168-1-142.ec2.internal [@brendamanganelli](https://github.com/brendamanganelli))
+
+#### Authors: 2
+
+- [@brendamanganelli](https://github.com/brendamanganelli)
+- Brenda Manganelli (brendamanganelli@ip-192-168-1-142.ec2.internal)
+
+---
+
 # v1.75.0 (Wed Mar 10 2021)
 
 #### 🚀  Enhancement
