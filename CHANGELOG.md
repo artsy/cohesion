@@ -1,3 +1,15 @@
+# v1.77.0 (Thu Mar 18 2021)
+
+#### 🚀  Enhancement
+
+- Add inquiry checkout tap event [#171](https://github.com/artsy/cohesion/pull/171) ([@xtina-starr](https://github.com/xtina-starr))
+
+#### Authors: 1
+
+- Christina ([@xtina-starr](https://github.com/xtina-starr))
+
+---
+
 # v1.76.0 (Tue Mar 16 2021)
 
 #### 🚀  Enhancement
