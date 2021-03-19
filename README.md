@@ -95,7 +95,9 @@ export * from "./Events/MyNewEvent"
 
 The `/Helpers` directory contains javascript helpers that return schema-compliant analytics events, and provide some useful default values. Each helper corresponds to one event from `/Schema/Events`.
 
-Engineers should use these helpers whenever sending analytics data to Segment, for example, when creating an analytics event with `react-tracking`.
+Helpers are most useful as a way to handle complex transformations of input data into an output event. However, these are rare.
+
+In most cases, when writing code to send events, one can import the relevant interface and use that to ensure the properties take the correct form, without having to write a helper function.
 
 [circle_badge]: https://circleci.com/gh/artsy/cohesion.svg?style=svg
 [circleci]: https://circleci.com/gh/artsy/cohesion
