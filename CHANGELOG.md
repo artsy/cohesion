@@ -1,3 +1,15 @@
+# v1.78.0 (Fri Mar 19 2021)
+
+#### 🚀  Enhancement
+
+- Clarifies the use of helpers [#173](https://github.com/artsy/cohesion/pull/173) ([@sweir27](https://github.com/sweir27))
+
+#### Authors: 1
+
+- Sarah Weir ([@sweir27](https://github.com/sweir27))
+
+---
+
 # v1.77.0 (Thu Mar 18 2021)
 
 #### 🚀  Enhancement
