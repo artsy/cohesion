@@ -3,7 +3,7 @@ import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
- * Master list of filter params available in web and iOS, specific to the artwork grid
+ * Master list of filter params available in web and App, specific to the artwork grid
  *
  * Intended action by a user that triggered an event
  * @packageDocumentation
@@ -37,7 +37,7 @@ export interface CommercialFilterParams {
 }
 
 /**
- * Master list of filter params available in web and iOS, specific to auction results
+ * Master list of filter params available in web and App, specific to auction results
  *
  * Intended action by a user that triggered an event
  * @packageDocumentation

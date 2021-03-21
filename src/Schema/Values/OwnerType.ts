@@ -1,9 +1,11 @@
 /**
- * All owner types available for iOS (screen) and web (page)
+ * All owner types available for App (screen) and web (page)
  *
  * @packageDocumentation
  */
 export enum OwnerType {
+  aboutTheFair = "aboutTheFair",
+  aboutTheShow = "aboutTheShow",
   allArtistSeries = "allArtistSeries",
   article = "article",
   articles = "articles",
@@ -12,16 +14,35 @@ export enum OwnerType {
   artistInsights = "artistInsights",
   artistSeries = "artistSeries",
   artwork = "artwork",
+  artworkClassifications = "artworkClassifications",
   auctionResult = "auctionResult",
   auctions = "auctions",
+  bidFlowBillingAddressPage = "yourBillingAddress",
+  bidFlowConfirmBidPage = "confirmYourBid",
+  bidFlowMaxBidPage = "yourMaxBid",
+  bidFlowRegistration = "registration",
+  bidFlowRegistrationResultConfirmed = "registrationConfirmed",
+  bidFlowRegistrationResultError = "registrationError",
+  bidFlowRegistrationResultPending = "registrationPending",
+  bmwFairActivation = "bmwFairActivation",
   gene = "gene",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
+  cityGuideBMWList = "cityGuideBMWList",
+  CityGuideClosingSoonList = "CityGuideClosingSoonList",
+  cityGuideFairsList = "cityGuideFairsList",
+  cityGuideGalleriesList = "cityGuideGalleriesList",
+  cityGuideMuseumsList = "cityGuideMuseumsList",
+  cityGuideOpeningSoonList = "cityGuideOpeningSoonList",
+  cityGuideSavedList = "cityGuideSavedList",
   cityPicker = "cityPicker",
   collect = "collect",
   collection = "collection",
   collections = "collections",
+  consignmentsOverView = "consignmentsOverview",
+  consignmentsWelcome = "consignmentsWelcome",
   consignmentSubmission = "consignmentSubmission",
+  conversationPage = "conversation",
   consign = "consign",
   conversation = "conversation",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
@@ -29,8 +50,12 @@ export enum OwnerType {
   fair = "fair",
   fairArtworks = "fairArtworks",
   fairs = "fairs",
+  fairMoreInfo = "fairMoreInfo",
+  gallery = "gallery",
   galleries = "galleries",
   home = "home",
+  inquiry = "inquiry",
+  inbox = "inbox",
   inboxBids = "inboxBids",
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
@@ -44,6 +69,7 @@ export enum OwnerType {
   search = "search",
   sell = "sell",
   show = "show",
+  showMoreInfo = "moreInfo",
   savesAndFollows = "savesAndFollows",
   user = "user",
   viewingRoom = "viewingRoom",
@@ -55,9 +81,11 @@ export enum OwnerType {
 }
 
 /**
- * Owner types available in iOS
+ * Owner types available in App
  */
 export type ScreenOwnerType =
+  | OwnerType.aboutTheFair
+  | OwnerType.aboutTheShow
   | OwnerType.allArtistSeries
   | OwnerType.article
   | OwnerType.articles
@@ -65,21 +93,44 @@ export type ScreenOwnerType =
   | OwnerType.artistInsights
   | OwnerType.artistSeries
   | OwnerType.artwork
+  | OwnerType.artworkClassifications
   | OwnerType.auctionResult
   | OwnerType.auctions
+  | OwnerType.bidFlowBillingAddressPage
+  | OwnerType.bidFlowConfirmBidPage
+  | OwnerType.bidFlowMaxBidPage
+  | OwnerType.bidFlowRegistration
+  | OwnerType.bidFlowRegistrationResultConfirmed
+  | OwnerType.bidFlowRegistrationResultError
+  | OwnerType.bidFlowRegistrationResultPending
+  | OwnerType.bmwFairActivation
   | OwnerType.gene
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
+  | OwnerType.cityGuideBMWList
+  | OwnerType.CityGuideClosingSoonList
+  | OwnerType.cityGuideFairsList
+  | OwnerType.cityGuideGalleriesList
+  | OwnerType.cityGuideMuseumsList
+  | OwnerType.cityGuideOpeningSoonList
+  | OwnerType.cityGuideSavedList
   | OwnerType.cityPicker
   | OwnerType.collection
+  | OwnerType.consignmentsOverView
+  | OwnerType.consignmentsWelcome
   | OwnerType.consignmentSubmission
+  | OwnerType.conversationPage
   | OwnerType.consign
   | OwnerType.conversation
   | OwnerType.conversationMakeOfferConfirmArtwork
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.fairArtworks
+  | OwnerType.fairMoreInfo
+  | OwnerType.gallery
   | OwnerType.home
+  | OwnerType.inquiry
+  | OwnerType.inbox
   | OwnerType.inboxBids
   | OwnerType.inboxConversation
   | OwnerType.inboxInquiries
@@ -94,6 +145,7 @@ export type ScreenOwnerType =
   | OwnerType.savesAndFollows
   | OwnerType.sell
   | OwnerType.show
+  | OwnerType.showMoreInfo
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworks
   | OwnerType.viewingRoomList

@@ -1,7 +1,7 @@
 import { ActionType, TappedNavigationTab } from "../../Schema"
 
 /**
- * A user taps a navigation tab on iOS
+ * A user taps a navigation tab on App
  *
  *  @example
  *  ```

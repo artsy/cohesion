@@ -10,14 +10,14 @@ import { ActionType } from "."
  */
 
 /**
- *  A user taps a grouping of entities on iOS
+ *  A user taps a grouping of entities on App
  *
  *  Events are separated by entity type
  *
  */
 
 /**
- * A user taps a grouping of articles on iOS
+ * A user taps a grouping of articles on App
  *
  *  This schema describes events sent to Segment from [[tappedArticleGroup]]
  *
@@ -41,7 +41,7 @@ export interface TappedArticleGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of artists on iOS
+ * A user taps a grouping of artists on App
  *
  *  This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -65,7 +65,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of artist series on iOS. If the artist series was boosted by the curation team, then curation_boost will be set to true.
+ * A user taps a grouping of artist series on App. If the artist series was boosted by the curation team, then curation_boost will be set to true.
  *
  *  This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -92,7 +92,7 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of artworks on iOS
+ * A user taps a grouping of artworks on App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -116,7 +116,7 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of auctions on iOS
+ * A user taps a grouping of auctions on App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -140,7 +140,7 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of auction results on iOS
+ * A user taps a grouping of auction results on App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -163,7 +163,7 @@ export interface TappedAuctionResultGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of collections on iOS
+ * A user taps a grouping of collections on App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -207,7 +207,7 @@ export interface TappedExploreGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of fairs on iOS
+ * A user taps a grouping of fairs on App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -231,7 +231,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
 }
 
 /**
- * Shared interface for tapped group actions in iOS
+ * Shared interface for tapped group actions in App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  */
@@ -263,7 +263,7 @@ export interface TappedEntityGroup {
 export type EntityModuleHeight = "single" | "double"
 
 /**
- * A user taps a Consign button in iOS
+ * A user taps a Consign button in App
  *
  * This schema describes events sent to Segment from [[tappedConsign]]
  *
@@ -384,7 +384,7 @@ export interface TappedMainArtworkGrid {
 }
 
 /**
- * A user taps the promo space on the iOS home screen
+ * A user taps the promo space on the App home screen
  *
  * This schema describes events sent to Segment from [[tappedPromoSpace]]
  *
@@ -413,7 +413,7 @@ export interface TappedPromoSpace {
 }
 
 /**
- * A user taps "Register to bid" on an iOS sale (auction) page
+ * A user taps "Register to bid" on an App sale (auction) page
  *
  * This schema describes events sent to Segment from [[tappedRegisterToBid]]
  *
@@ -487,7 +487,7 @@ export interface TappedTabBar {
 }
 
 /**
- * A user taps a grouping of viewing rooms on iOS
+ * A user taps a grouping of viewing rooms on App
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -507,7 +507,7 @@ export interface TappedViewingRoomGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a Show More button on iOS
+ * A user taps a Show More button on App
  *
  * This schema describes events sent to Segment from [[tappedShowMore]]
  *
@@ -534,7 +534,7 @@ export interface TappedShowMore {
 }
 
 /**
- * A user taps a navigation tab on iOS
+ * A user taps a navigation tab on App
  *
  * This schema describes events sent to Segment from [[tappedNavigationTab]]
  *
@@ -623,7 +623,7 @@ export interface TappedViewingRoomCard {
 }
 
 /**
- * A user taps into the identity verification flow on iOS
+ * A user taps into the identity verification flow on App
  *
  * This schema describes events sent to Segment from [[tappedVerifyIdentity]]
  *

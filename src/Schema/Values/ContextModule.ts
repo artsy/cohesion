@@ -1,5 +1,5 @@
 /**
- * Master list of context modules available in web and iOS
+ * Master list of context modules available in web and App
  *
  * A component where an action is triggered
  * @packageDocumentation

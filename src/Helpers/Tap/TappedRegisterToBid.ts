@@ -13,7 +13,7 @@ export interface TappedRegisterToBidArgs {
 }
 
 /**
- * A user taps on register to bid button within the iOS app
+ * A user taps on register to bid button within the App app
  *
  * @example
  * ```

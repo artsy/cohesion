@@ -9,7 +9,7 @@ import { ActionType } from "."
  */
 
 /**
- * A user toggles push notification settings on/off on iOS
+ * A user toggles push notification settings on/off on App
  *
  *  This schema describes events sent to Segment from [[toggledNotification]]
  *

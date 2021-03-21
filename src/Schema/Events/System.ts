@@ -29,7 +29,7 @@ export interface TimeOnPage {
 }
 
 /**
- * A user loads a sale screen on the iOS app.
+ * A user loads a sale screen on the App app.
  *
  * This schema describes events sent to Segment from [[saleScreenLoadComplete]]
  *
@@ -57,7 +57,7 @@ export interface SaleScreenLoadComplete {
 }
 
 /**
- * A user views a screen on iOS
+ * A user views a screen on App
  *
  * This schema describes events sent to Segment from [[screen]]
  *
