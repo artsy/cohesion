@@ -13,10 +13,9 @@ import {
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
   ClickedAuctionGroup,
-  ClickedCollapseArrow,
   ClickedCollectionGroup,
   ClickedEditArtwork,
-  ClickedExpandArrow,
+  ClickedExpansionToggle,
   ClickedFairCard,
   ClickedFairGroup,
   ClickedLoadMore,
@@ -87,10 +86,9 @@ export type Event =
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
   | ClickedAuctionGroup
-  | ClickedCollapseArrow
   | ClickedCollectionGroup
   | ClickedEditArtwork
-  | ClickedExpandArrow
+  | ClickedExpansionToggle
   | ClickedFairCard
   | ClickedFairGroup
   | ClickedLoadMore
@@ -185,10 +183,6 @@ export enum ActionType {
    */
   clickedAuctionGroup = "clickedAuctionGroup",
   /**
-   * Corresponds to {@link ClickedCollapseArrow}
-   */
-  clickedCollapseArrow = "clickedCollapseArrow",
-  /**
    * Corresponds to {@link ClickedCollectionGroup}
    */
   clickedCollectionGroup = "clickedCollectionGroup",
@@ -197,9 +191,9 @@ export enum ActionType {
    */
   clickedEditArtwork = "clickedEditArtwork",
   /**
-   * Corresponds to {@link ClickedExpandArrow}
+   * Corresponds to {@link ClickedExpansionToggle}
    */
-  clickedExpandArrow = "clickedExpandArrow",
+  clickedExpansionToggle = "clickedExpansionToggle",
   /**
    * Corresponds to {@link ClickedFairCard}
    */
