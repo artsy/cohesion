@@ -1,3 +1,15 @@
+# v1.79.0 (Mon Mar 22 2021)
+
+#### 🚀  Enhancement
+
+- Chore(PX-3846): Clicked[Expand|Collapse]Arrow -> ClickedExpansionToggle [#172](https://github.com/artsy/cohesion/pull/172) ([@mdole](https://github.com/mdole))
+
+#### Authors: 1
+
+- Matt Dole ([@mdole](https://github.com/mdole))
+
+---
+
 # v1.78.0 (Fri Mar 19 2021)
 
 #### 🚀  Enhancement
