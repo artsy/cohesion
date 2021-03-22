@@ -513,3 +513,29 @@ export interface ClickedLoadMore {
   context_page_owner_type: PageOwnerType
   subject: string
 }
+
+/**
+ * A user clicks into the identity verification flow on web
+ *
+ * This schema describes events sent to Segment from [[clickedVerifyIdentity]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedVerifyIdentity",
+ *    context_module: "yourActiveBids",
+ *    context_page_owner_type: "auctions",
+ *    sale_id: "5fad78273c8451000d0c53b9"
+ *    subject: "Complete registration"
+ *  }
+ * ```
+ */
+export interface ClickedVerifyIdentity {
+  action: ActionType.clickedVerifyIdentity
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  sale_id: string
+  subject: string
+}
