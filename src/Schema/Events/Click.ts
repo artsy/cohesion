@@ -435,6 +435,7 @@ export interface ClickedAppDownload {
  *    destination_page_owner_type: "artworks",
  *    destination_page_owner_id: "5808b9a0cd530e658500008a",
  *    destination_page_owner_slug: "maddalena-ambrosio-untitled"
+ *    destination_path: "/artworks/maddalena-ambrosio-untitled/edit"
  *  }
  * ```
  */
@@ -470,42 +471,22 @@ export interface ClickedSnooze {
 }
 
 /**
- * A partner clicks on toggle down arrow, displaying checklist items
+ * A partner clicks on toggle arrow, displaying or hiding checklist items
  * from CMS Checklist To-Do Items.
  *
- * This schema describes events sent to Segment from [[ClickedExpandArrow]]
+ * This schema describes events sent to Segment from [[ClickedExpansionToggle]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedExpandArrow",
+ *    action: "clickedExpansionToggle",
  *    context_module: "toDoList",
  *    context_page_owner_type: "home"
  *  }
  * ```
  */
-export interface ClickedExpandArrow {
-  action: ActionType.clickedExpandArrow
-  context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-}
-/**
- * A partner clicks on toggle up arrow, hiding checklist items
- * from CMS Checklist To-Do Items.
- *
- * This schema describes events sent to Segment from [[ClickedCollapseArrow]]
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedCollapseArrow",
- *    context_module: "toDoList",
- *    context_page_owner_type: "home"
- *  }
- * ```
- */
-export interface ClickedCollapseArrow {
-  action: ActionType.clickedCollapseArrow
+export interface ClickedExpansionToggle {
+  action: ActionType.clickedExpansionToggle
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
 }
