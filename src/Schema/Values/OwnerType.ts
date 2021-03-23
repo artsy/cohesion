@@ -9,12 +9,11 @@ export enum OwnerType {
   articles = "articles",
   artist = "artist",
   artists = "artists",
-  artistInsights = "artistInsights",
+  artistAuctionResults = "artistAuctionResults",
   artistSeries = "artistSeries",
   artwork = "artwork",
   auctionResult = "auctionResult",
   auctions = "auctions",
-  gene = "gene",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
@@ -30,6 +29,7 @@ export enum OwnerType {
   fairArtworks = "fairArtworks",
   fairs = "fairs",
   galleries = "galleries",
+  gene = "gene",
   home = "home",
   inboxBids = "inboxBids",
   inboxConversation = "inboxConversation",
@@ -62,7 +62,7 @@ export type ScreenOwnerType =
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
-  | OwnerType.artistInsights
+  | OwnerType.artistAuctionResults
   | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctionResult
@@ -108,6 +108,7 @@ export type PageOwnerType =
   | OwnerType.articles
   | OwnerType.artist
   | OwnerType.artists
+  | OwnerType.artistAuctionResults
   | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctions

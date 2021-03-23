@@ -148,8 +148,8 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedAuctionResultGroup",
- *    context_module: "auctionResults",
- *    context_screen_owner_type: "artistInsights",
+ *    context_module: "artistAuctionResults",
+ *    context_screen_owner_type: "artistAuctionResults",
  *    context_screen_owner_id: "51aa03df8b3b8177260002ab",
  *    context_screen_owner_slug: "nicolas-party",
  *    destination_screen_owner_type: "auctionResult",
