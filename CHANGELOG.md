@@ -1,3 +1,15 @@
+# v1.80.1 (Wed Mar 24 2021)
+
+#### 🐛  Bug Fix
+
+- Auction results filtering [#174](https://github.com/artsy/cohesion/pull/174) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v1.80.0 (Tue Mar 23 2021)
 
 #### 🚀  Enhancement
