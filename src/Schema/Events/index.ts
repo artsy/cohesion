@@ -33,7 +33,10 @@ import {
   TappedMakeOffer,
   TappedViewOffer,
 } from "./Conversations"
-import { CommercialFilterParamsChanged } from "./FilterAndSort"
+import {
+  AuctionResultsFilterParamsChanged,
+  CommercialFilterParamsChanged,
+} from "./FilterAndSort"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -78,6 +81,7 @@ import { ToggledNotification } from "./Toggle"
 export type Event =
   | AddToCalendar
   | AddCollectedArtwork
+  | AuctionResultsFilterParamsChanged
   | AuthImpression
   | CreatedAccount
   | ClickedAppDownload
@@ -158,6 +162,10 @@ export enum ActionType {
    * Corresponds to {@link AddCollectedArtwork}
    */
   addCollectedArtwork = "addCollectedArtwork",
+  /**
+   * Corresponds to {@link AuctionResultsFilterParamsChanged}
+   */
+  auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
