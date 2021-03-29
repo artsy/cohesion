@@ -1,3 +1,15 @@
+# v1.81.0 (Mon Mar 29 2021)
+
+#### 🚀  Enhancement
+
+- [AS-1992] Adds new auctions page tracking [#176](https://github.com/artsy/cohesion/pull/176) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v1.80.1 (Wed Mar 24 2021)
 
 #### 🐛  Bug Fix
