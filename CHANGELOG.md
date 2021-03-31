@@ -1,3 +1,15 @@
+# v1.81.1 (Wed Mar 31 2021)
+
+#### ⚠️  Pushed to `master`
+
+- Make some props optional ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v1.81.0 (Mon Mar 29 2021)
 
 #### 🚀  Enhancement
