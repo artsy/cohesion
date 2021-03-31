@@ -58,8 +58,8 @@ export const clickedArtworkGroup = ({
 export interface ClickedArtworkGroupHeaderArgs {
   contextModule: ContextModule
   contextPageOwnerType: PageOwnerType
-  contextPageOwnerId: string
-  contextPageOwnerSlug: string
+  contextPageOwnerId?: string
+  contextPageOwnerSlug?: string
   destinationPageOwnerId: string
   destinationPageOwnerSlug: string
   destinationPageOwnerType: PageOwnerType
