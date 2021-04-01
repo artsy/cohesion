@@ -1,3 +1,15 @@
+# v1.82.0 (Thu Apr 01 2021)
+
+#### 🚀  Enhancement
+
+- Chore: Change babel config [#178](https://github.com/artsy/cohesion/pull/178) ([@mdole](https://github.com/mdole))
+
+#### Authors: 1
+
+- Matt Dole ([@mdole](https://github.com/mdole))
+
+---
+
 # v1.81.1 (Wed Mar 31 2021)
 
 #### ⚠️  Pushed to `master`
