@@ -7,6 +7,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedAddWorksToFair,
   ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
@@ -85,6 +86,7 @@ export type Event =
   | AuctionResultsFilterParamsChanged
   | AuthImpression
   | CreatedAccount
+  | ClickedAddWorksToFair
   | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
@@ -168,6 +170,10 @@ export enum ActionType {
    * Corresponds to {@link AuctionResultsFilterParamsChanged}
    */
   auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
+   /**
+   * Corresponds to {@link ClickedAddWorksToFair}
+   */
+    clickedAddWorksToFair = "clickedAddWorksToFair",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
