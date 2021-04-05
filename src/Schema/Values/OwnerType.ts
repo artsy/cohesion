@@ -38,6 +38,7 @@ export enum OwnerType {
   myCollectionArtwork = "myCollectionArtwork",
   onboarding = "onboarding",
   partner = "partner",
+  partnerShowsArtworks = "partnerShowsArtworks",
   profile = "profile",
   sale = "sale",
   saleInformation = "saleInformation",
@@ -122,6 +123,7 @@ export type PageOwnerType =
   | OwnerType.home
   | OwnerType.onboarding
   | OwnerType.partner
+  | OwnerType.partnerShowsArtworks
   | OwnerType.profile
   | OwnerType.sale
   | OwnerType.search

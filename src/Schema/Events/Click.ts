@@ -16,6 +16,33 @@ import { ActionType } from "."
  */
 
 /**
+ * A fair partner with an upcoming booth clicks on Add Works from CMS Checklist To-Do fair item.
+ *
+ *  This schema describes events sent to Segment from [[clickedAddWorksToFair]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAddWorksToFair",
+ *    context_module: "toDoList",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "partner_shows",
+ *    destination_page_owner_id: "603f847842d0c10007a960a8",
+ *    destination_page_owner_slug: "xavier-hufkens-xavier-hufkens-at-art-brussels-2021",
+ *    destination_path: "partner_shows/xavier-hufkens-xavier-hufkens-at-art-brussels-2021/artworks#show-add-artworks-modal"
+ *  }
+ * ```
+ */
+ export interface ClickedAddWorksToFair {
+  action: ActionType.clickedAddWorksToFair
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+  destination_path: string
+}
+/**
  * A user clicks a grouping of articles on web
  *
  *  This schema describes events sent to Segment from [[clickedEntityGroup]]
