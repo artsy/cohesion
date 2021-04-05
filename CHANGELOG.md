@@ -1,3 +1,16 @@
+# v1.83.0 (Mon Apr 05 2021)
+
+#### 🚀  Enhancement
+
+- Adds Fair Items Event to CMS Checklist [#179](https://github.com/artsy/cohesion/pull/179) (brenda@ip-192-168-1-144.ec2.internal [@brendamanganelli](https://github.com/brendamanganelli))
+
+#### Authors: 2
+
+- [@brendamanganelli](https://github.com/brendamanganelli)
+- Brenda Manganelli (brenda@ip-192-168-1-144.ec2.internal)
+
+---
+
 # v1.82.0 (Thu Apr 01 2021)
 
 #### 🚀  Enhancement
