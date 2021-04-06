@@ -1,3 +1,15 @@
+# v1.84.0 (Tue Apr 06 2021)
+
+#### 🚀  Enhancement
+
+- chore: add label and remove type from ClickedEditArtwork [#180](https://github.com/artsy/cohesion/pull/180) ([@mdole](https://github.com/mdole))
+
+#### Authors: 1
+
+- Matt Dole ([@mdole](https://github.com/mdole))
+
+---
+
 # v1.83.0 (Mon Apr 05 2021)
 
 #### 🚀  Enhancement
