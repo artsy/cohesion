@@ -170,10 +170,10 @@ export enum ActionType {
    * Corresponds to {@link AuctionResultsFilterParamsChanged}
    */
   auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
-   /**
+  /**
    * Corresponds to {@link ClickedAddWorksToFair}
    */
-    clickedAddWorksToFair = "clickedAddWorksToFair",
+  clickedAddWorksToFair = "clickedAddWorksToFair",
   /**
    * Corresponds to {@link ClickedAppDownload}
    */
