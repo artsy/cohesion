@@ -33,7 +33,7 @@ import { ActionType } from "."
  *  }
  * ```
  */
- export interface ClickedAddWorksToFair {
+export interface ClickedAddWorksToFair {
   action: ActionType.clickedAddWorksToFair
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
@@ -463,6 +463,7 @@ export interface ClickedAppDownload {
  *    destination_page_owner_id: "5808b9a0cd530e658500008a",
  *    destination_page_owner_slug: "maddalena-ambrosio-untitled"
  *    destination_path: "/artworks/maddalena-ambrosio-untitled/edit"
+ *    label: "Add images"
  *  }
  * ```
  */
@@ -474,7 +475,7 @@ export interface ClickedEditArtwork {
   destination_page_owner_id: string
   destination_page_owner_slug: string
   destination_path: string
-  type: "page"
+  label: string
 }
 
 /**
