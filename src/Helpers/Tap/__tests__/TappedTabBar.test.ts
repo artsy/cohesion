@@ -1,9 +1,11 @@
+import { OwnerType } from "../../../Schema"
 import { tappedTabBar } from "../TappedTabBar"
 
 describe(tappedTabBar, () => {
   it("Returns expected args", () => {
     const event = tappedTabBar({
       badge: false,
+      contextScreenOwnerType: OwnerType.home,
       tab: "sell",
     })
 
