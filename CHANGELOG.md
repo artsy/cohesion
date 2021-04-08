@@ -1,3 +1,20 @@
+# v1.85.0 (Thu Apr 08 2021)
+
+#### 🚀  Enhancement
+
+- [WIP] feat: add tracking contextScreenOwnerType [#182](https://github.com/artsy/cohesion/pull/182) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.2.3 to v4.2.4 [#181](https://github.com/artsy/cohesion/pull/181) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.84.0 (Tue Apr 06 2021)
 
 #### 🚀  Enhancement
