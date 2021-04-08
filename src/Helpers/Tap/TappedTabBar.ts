@@ -1,7 +1,7 @@
 import {
   ActionType,
   ContextModule,
-  OwnerType,
+  ScreenOwnerType,
   TappedTabBar,
 } from "../../Schema"
 import { Tab } from "../../Schema/Values/Tab"
@@ -9,6 +9,7 @@ import { Tab } from "../../Schema/Values/Tab"
 export interface TappedTabBarArgs {
   badge?: boolean
   tab: Tab
+  contextScreenOwnerType: ScreenOwnerType
 }
 
 /**
@@ -29,12 +30,13 @@ export interface TappedTabBarArgs {
 export const tappedTabBar = ({
   badge,
   tab,
+  contextScreenOwnerType
 }: TappedTabBarArgs): TappedTabBar => {
   return {
     action: ActionType.tappedTabBar,
     badge: badge || false,
     context_module: ContextModule.tabBar,
-    context_screen_owner_type: OwnerType.home,
+    context_screen_owner_type: contextScreenOwnerType,
     tab,
   }
 }
