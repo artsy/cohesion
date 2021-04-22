@@ -64,12 +64,14 @@ import {
   TappedInfoBubble,
   TappedMainArtworkGrid,
   TappedNavigationTab,
+  TappedNotableArtworksRailCard,
   TappedPartnerCard,
   TappedPromoSpace,
   TappedSell,
   TappedShowMore,
   TappedTabBar,
   TappedVerifyIdentity,
+  TappedViewAllArtistSeries,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
 } from "./Tap"
@@ -134,6 +136,7 @@ export type Event =
   | TappedInboxConversation
   | TappedInfoBubble
   | TappedNavigationTab
+  | TappedNotableArtworksRailCard
   | TappedMainArtworkGrid
   | TappedMakeOffer
   | TappedPartnerCard
@@ -142,6 +145,7 @@ export type Event =
   | TappedShowMore
   | TappedTabBar
   | TappedVerifyIdentity
+  | TappedViewAllArtistSeries
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TappedViewOffer
@@ -400,6 +404,10 @@ export enum ActionType {
    */
   tappedNavigationTab = "tappedNavigationTab",
   /**
+   * Corresponds to {@link TappedNotableArtworksRailCard}
+   */
+  tappedNotableArtworksRailCard = "tappedNotableArtworksRailCard",
+  /**
    * Corresponds to {@link TappedPartnerCard}
    */
   tappedPartnerCard = "tappedPartnerCard",
@@ -427,6 +435,10 @@ export enum ActionType {
    * Corresponds to {@link TappedVerifyIdentity}
    */
   tappedVerifyIdentity = "tappedVerifyIdentity",
+  /**
+   * Corresponds to {@link TappedViewAllArtistSeries}
+   */
+  tappedViewAllArtistSeries = "tappedViewAllArtistSeries",
   /**
    * Corresponds to {@link TappedViewingRoomCard}
    */

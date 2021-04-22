@@ -559,6 +559,38 @@ export interface TappedNavigationTab {
 }
 
 /**
+ * A user taps notable artworks rail card on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedNotableArtworksRailCard]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNotableArtworksRailCard",
+ *    context_module: "artistNotableWorksRail",
+ *    context_screen_owner_type: "artist",
+ *    context_screen_owner_id: "4dd1584de0091e000100207c",
+ *    context_screen_owner_slug: "banksy",
+ *    destination_screen_owner_type: "artwork",
+ *    destination_screen_owner_id: "60621517db3ab10012e7d09b",
+ *    destination_screen_owner_slug: "banksy-love-rat-signed-16",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedNotableArtworksRailCard {
+  action: ActionType.tappedNotableArtworksRailCard
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+  type: "thumbnail"
+}
+
+/**
  * A user taps a partner card
  *
  * This schema describes events sent to Segment from [[tappedPartnerCard]]
@@ -646,4 +678,34 @@ export interface TappedVerifyIdentity {
   context_screen_owner_slug?: string
   sale_id: string
   subject: string
+}
+
+/**
+ * A user taps view all artist series on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedVerifyIdentity]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedViewAllArtistSeries",
+ *    context_module: "artistSeriesMoreSeries",
+ *    context_screen_owner_type: "artist",
+ *    context_screen_owner_id: "4dd1584de0091e000100207c",
+ *    context_screen_owner_slug: "banksy",
+ *    destination_screen_owner_type: "allArtistSeries",
+ *    destination_screen_owner_id: "4dd1584de0091e000100207c",
+ *    destination_screen_owner_slug: "banksy",
+ *  }
+ * ```
+ */
+export interface TappedViewAllArtistSeries {
+  action: ActionType.tappedViewAllArtistSeries
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
 }
