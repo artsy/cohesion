@@ -30,7 +30,7 @@ export interface TappedTabBarArgs {
 export const tappedTabBar = ({
   badge,
   tab,
-  contextScreenOwnerType
+  contextScreenOwnerType,
 }: TappedTabBarArgs): TappedTabBar => {
   return {
     action: ActionType.tappedTabBar,
