@@ -1,3 +1,15 @@
+# v2.0.0 (Fri Apr 30 2021)
+
+#### 💥  Breaking Change
+
+- refactor(filter params): replace nested properties with a JSON string [#184](https://github.com/artsy/cohesion/pull/184) ([@anandaroop](https://github.com/anandaroop))
+
+#### Authors: 1
+
+- Anandaroop Roy ([@anandaroop](https://github.com/anandaroop))
+
+---
+
 # v1.85.0 (Thu Apr 08 2021)
 
 #### 🚀  Enhancement
