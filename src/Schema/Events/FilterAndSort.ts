@@ -3,59 +3,6 @@ import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
- * Master list of filter params available in web and iOS, specific to the artwork grid
- *
- * Intended action by a user that triggered an event
- * @packageDocumentation
- */
-export interface CommercialFilterParams {
-  acquireable?: boolean
-  artist_id?: string
-  artistIDs?: string[]
-  atAuction?: boolean
-  color?: string
-  /**
-   * FIXME: this and other Range filters may be string[]
-   */
-  dimensionRange?: string
-  estimateRange?: string
-  forSale?: boolean
-  height?: string
-  includeArtworksByFollowedArtists?: boolean
-  inquireableOnly?: boolean
-  keyword?: string
-  majorPeriods?: string[]
-  medium?: string
-  offerable?: boolean
-  page?: number
-  partnerID?: string
-  priceRange?: string
-  sizes?: string[]
-  sort?: string
-  term?: string
-  width?: string
-}
-
-/**
- * Master list of filter params available in web and iOS, specific to auction results
- *
- * Intended action by a user that triggered an event
- * @packageDocumentation
- */
-export interface AuctionResultsFilterParams {
-  allowEmptyCreatedDates?: boolean
-  categories?: string[]
-  createdAfterYear?: string
-  createdBeforeYear?: string
-  earliestCreatedYear?: string
-  latestCreatedYear?: string
-  organizations?: string[]
-  pageAndCursor?: string[]
-  sizes?: string[]
-  sort?: string
-}
-
-/**
  * A user applies filters to a filterable/sortable artwork grid
  *
  * This schema describes events sent to Segment from [[commercialFilterParamsChanged]]
@@ -68,8 +15,8 @@ export interface AuctionResultsFilterParams {
  *    context_owner_type: "artist",
  *    context_owner_id: "58ba65b1275b24421f80a102",
  *    context_owner_slug: "tugo-cheng",
- *    changed: {acquireable = 1; priceRange = "1000-5000";},
- *    current: {acquireable = 0; priceRange = "*-*";}
+ *    changed: '{"acquireable": 1, "priceRange": "1000-5000"}',
+ *    current: '{"acquireable": 0, "priceRange": "*-*"}'
  *  }
  * ```
  */
@@ -79,8 +26,8 @@ export interface CommercialFilterParamsChanged {
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  current: CommercialFilterParams
-  changed: CommercialFilterParams
+  current: string
+  changed: string
 }
 
 /**
@@ -96,8 +43,8 @@ export interface CommercialFilterParamsChanged {
  *    context_owner_type: "artist",
  *    context_owner_id: "510ade6c4926534fd80000e9",
  *    context_owner_slug: "alex-da-corte",
- *    changed: {createdAfterYear: 2014},
- *    current: {createdAfterYear: 2008; sort: "DATE_DESC"}
+ *    changed: '{"createdAfterYear": 2014}',
+ *    current: '{"createdAfterYear": 2008, "sort": "DATE_DESC"}'
  *  }
  * ```
  */
@@ -110,6 +57,6 @@ export interface AuctionResultsFilterParamsChanged {
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  current: AuctionResultsFilterParams
-  changed: AuctionResultsFilterParams
+  current: string
+  changed: string
 }

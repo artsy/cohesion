@@ -1,14 +1,13 @@
 import {
   ActionType,
-  CommercialFilterParams,
   CommercialFilterParamsChanged,
   ContextModule,
   OwnerType,
 } from "../../Schema"
 
 export interface CommercialFilterParamsChangedArgs {
-  current: CommercialFilterParams
-  changed: CommercialFilterParams
+  current: string
+  changed: string
   contextOwnerId?: string
   contextOwnerSlug?: string
   contextOwnerType: OwnerType
@@ -23,8 +22,8 @@ export interface CommercialFilterParamsChangedArgs {
  *   context_owner_type: OwnerType.artist,
  *   context_owner_id: "58ba65b1275b24421f80a102",
  *   context_owner_slug: "tugo-cheng",
- *   changed: {acquireable: 1, priceRange: "1000-5000"},
- *   current: {acquireable: 0, priceRange: "*-*"}
+ *   changed: '{"acquireable": 1, "priceRange": "1000-5000"}',
+ *   current: '{"acquireable": 0, "priceRange": "*-*"}'
  * })
  * ```
  */
