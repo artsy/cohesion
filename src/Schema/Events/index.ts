@@ -48,7 +48,7 @@ import {
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
 import { Share } from "./Share"
-import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
+import { SaleScreenLoadComplete, TimeOnPage } from "./System"
 import {
   TappedArticleGroup,
   TappedArtistGroup,
@@ -114,7 +114,6 @@ export type Event =
   | OnboardingUserInputData
   | ResetYourPassword
   | SaleScreenLoadComplete
-  | Screen
   | SentConversationMessage
   | Share
   | SuccessfullyLoggedIn
@@ -303,10 +302,6 @@ export enum ActionType {
    * Corresponds to {@link SaleScreenLoadComplete}
    */
   saleScreenLoadComplete = "saleScreenLoadComplete",
-  /**
-   * Corresponds to {@link Screen}
-   */
-  screen = "screen",
   /**
    * Corresponds to {@link SearchedWithNoResults}
    */
