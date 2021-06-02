@@ -8,6 +8,7 @@ export enum ContextModule {
   aboutTheWork = "aboutTheWork",
   aboutThisAuction = "aboutThisAuction",
   articleArtist = "articleArtist",
+  articleRail = "articleRail",
   artistAuctionResults = "artistAuctionResults",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
