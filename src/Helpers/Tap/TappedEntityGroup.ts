@@ -5,6 +5,7 @@ import {
   EntityModuleType,
   OwnerType,
   ScreenOwnerType,
+  TappedArticleGroup,
   TappedArtistGroup,
   TappedArtworkGroup,
   TappedAuctionGroup,
@@ -14,6 +15,7 @@ import {
 } from "../../Schema"
 
 export type TappedEntityDestinationType =
+  | OwnerType.article
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.collection
@@ -69,6 +71,7 @@ export const tappedEntityGroup = ({
   moduleHeight,
   type,
 }: TappedEntityGroupArgs):
+  | TappedArticleGroup
   | TappedArtistGroup
   | TappedArtworkGroup
   | TappedAuctionGroup
@@ -77,6 +80,9 @@ export const tappedEntityGroup = ({
   | TappedFairGroup => {
   let action: ActionType
   switch (destinationScreenOwnerType) {
+    case OwnerType.article:
+      action = ActionType.tappedArticleGroup
+      break
     case OwnerType.artist:
       action = ActionType.tappedArtistGroup
       break
