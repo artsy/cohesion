@@ -1,3 +1,20 @@
+# v2.1.0 (Wed Jun 02 2021)
+
+#### 🚀  Enhancement
+
+- feat: Add types for home screen article rail [#192](https://github.com/artsy/cohesion/pull/192) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.2.4 to v4.3.2 [#190](https://github.com/artsy/cohesion/pull/190) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.0.0 (Fri Apr 30 2021)
 
 #### 💥  Breaking Change
