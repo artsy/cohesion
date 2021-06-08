@@ -1,3 +1,15 @@
+# v2.2.0 (Tue Jun 08 2021)
+
+#### 🚀  Enhancement
+
+- feat: Add articles screen tab destination types [#193](https://github.com/artsy/cohesion/pull/193) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v2.1.0 (Wed Jun 02 2021)
 
 #### 🚀  Enhancement
