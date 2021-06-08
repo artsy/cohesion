@@ -16,6 +16,7 @@ import {
 
 export type TappedEntityDestinationType =
   | OwnerType.article
+  | OwnerType.articles
   | OwnerType.artist
   | OwnerType.artwork
   | OwnerType.collection
@@ -81,6 +82,9 @@ export const tappedEntityGroup = ({
   let action: ActionType
   switch (destinationScreenOwnerType) {
     case OwnerType.article:
+      action = ActionType.tappedArticleGroup
+      break
+    case OwnerType.articles:
       action = ActionType.tappedArticleGroup
       break
     case OwnerType.artist:
