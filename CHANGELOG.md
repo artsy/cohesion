@@ -1,3 +1,15 @@
+# v2.3.0 (Thu Jun 10 2021)
+
+#### 🚀  Enhancement
+
+- feat: Add articles context module [#194](https://github.com/artsy/cohesion/pull/194) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v2.2.0 (Tue Jun 08 2021)
 
 #### 🚀  Enhancement
