@@ -47,6 +47,7 @@ export interface ToggledNotification {
  *    action: "toggledSavedSearch",
  *    context_screen_owner_type: "artist",
  *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "anthony-hunter",
  *    modified: 1,
  *    original: 0,
  *    saved_search_id: "58de681f275b2464fcdde097"
@@ -57,6 +58,7 @@ export interface ToggledSavedSearch {
   action: ActionType.toggledSavedSearch
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
+  context_screen_owner_slug?: string
   modified: number
   original: number
   saved_search_id: string
