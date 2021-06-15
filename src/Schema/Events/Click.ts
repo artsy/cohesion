@@ -494,7 +494,6 @@ export interface ClickedNavigationTab {
   context_page_owner_id: string
 }
 
-
 /**
  * A user clicks a partner card
  *
