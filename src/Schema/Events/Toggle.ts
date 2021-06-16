@@ -50,7 +50,7 @@ export interface ToggledNotification {
  *    context_screen_owner_slug: "anthony-hunter",
  *    modified: 1,
  *    original: 0,
- *    saved_search_id: "58de681f275b2464fcdde097"
+ *    search_criteria_id: "58de681f275b2464fcdde097"
  *  }
  * ```
  */
@@ -61,5 +61,5 @@ export interface ToggledSavedSearch {
   context_screen_owner_slug?: string
   modified: number
   original: number
-  saved_search_id: string
+  search_criteria_id: string
 }
