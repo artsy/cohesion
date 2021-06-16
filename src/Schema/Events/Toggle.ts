@@ -59,7 +59,7 @@ export interface ToggledSavedSearch {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
-  modified: number
-  original: number
+  modified: boolean
+  original: boolean
   search_criteria_id: string
 }
