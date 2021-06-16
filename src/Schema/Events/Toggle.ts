@@ -48,8 +48,8 @@ export interface ToggledNotification {
  *    context_screen_owner_type: "artist",
  *    context_screen_owner_id: "58de681f275b2464fcdde097",
  *    context_screen_owner_slug: "anthony-hunter",
- *    modified: 1,
- *    original: 0,
+ *    modified: True,
+ *    original: False,
  *    search_criteria_id: "58de681f275b2464fcdde097"
  *  }
  * ```
