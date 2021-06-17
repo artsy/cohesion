@@ -1,3 +1,20 @@
+# v2.4.0 (Thu Jun 17 2021)
+
+#### 🚀  Enhancement
+
+- Saved Search 1.0 tracking [#195](https://github.com/artsy/cohesion/pull/195) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.3.2 to v4.3.3 [#197](https://github.com/artsy/cohesion/pull/197) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- [@louislecluse](https://github.com/louislecluse)
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.3.0 (Thu Jun 10 2021)
 
 #### 🚀  Enhancement
