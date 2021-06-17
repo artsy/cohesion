@@ -73,7 +73,7 @@ import {
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
 } from "./Tap"
-import { ToggledNotification } from "./Toggle"
+import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -147,6 +147,7 @@ export type Event =
   | TappedViewOffer
   | TimeOnPage
   | ToggledNotification
+  | ToggledSavedSearch
 
 /**
  * The top-level actions an Event describes.
@@ -447,6 +448,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledNotification}
    */
   toggledNotification = "toggledNotification",
+  /**
+   * Corresponds to {@link ToggledSavedSearch}
+   */
+  toggledSavedSearch = "toggledSavedSearch",
   /**
    * Corresponds to {@link UnfollowedArtist}
    */
