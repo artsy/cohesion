@@ -59,7 +59,7 @@ export interface SaleScreenLoadComplete {
 /**
  * A user views a screen on iOS
  *
- * This schema describes events sent to Segment from [[screen]]
+ * This schema describes events sent to Segment from [[screen]]. IMPORTANT: This event should fire in Segment as a Screen api call, not a Track api call of type:screen.
  *
  *  @example
  *  ```
