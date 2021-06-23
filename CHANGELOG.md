@@ -1,3 +1,20 @@
+# v2.5.0 (Wed Jun 23 2021)
+
+#### 🚀  Enhancement
+
+- Helpful comment about screen vs track API calls [#199](https://github.com/artsy/cohesion/pull/199) ([@mikehrom](https://github.com/mikehrom))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.3.3 to v4.3.4 [#198](https://github.com/artsy/cohesion/pull/198) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.4.0 (Thu Jun 17 2021)
 
 #### 🚀  Enhancement
