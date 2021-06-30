@@ -1,3 +1,16 @@
+# v2.6.0 (Wed Jun 30 2021)
+
+#### 🚀  Enhancement
+
+- feat: Add AuctionResultsForArtistsYouFollow context module [#200](https://github.com/artsy/cohesion/pull/200) (your_email@example.comJenqaaaaaaaaaa@gmail.comssh-keygen -t rsa -C Jenqaaaaaaaaaa@gmail.comgit config --global user.email your_email@example.comJenqaaaaaaaaaa@gmail.com [@JenqaaaBY](https://github.com/JenqaaaBY))
+
+#### Authors: 2
+
+- Yauheni (your_email@example.comJenqaaaaaaaaaa@gmail.comssh-keygen -t rsa -C Jenqaaaaaaaaaa@gmail.comgit config --global user.email your_email@example.comJenqaaaaaaaaaa@gmail.com)
+- Yauheni Zhukovich ([@JenqaaaBY](https://github.com/JenqaaaBY))
+
+---
+
 # v2.5.0 (Wed Jun 23 2021)
 
 #### 🚀  Enhancement
