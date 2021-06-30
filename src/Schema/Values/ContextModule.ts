@@ -31,6 +31,7 @@ export enum ContextModule {
   auctionRail = "auctionRail",
   auctionResult = "auctionResult",
   auctionResults = "auctionResults",
+  AuctionResultsForArtistsYouFollow = "AuctionResultsForArtistsYouFollow",
   auctionsInfo = "auctionsInfo",
   bannerPopUp = "bannerPopUp",
   browseFair = "browseFair",
