@@ -13,6 +13,7 @@ export enum OwnerType {
   artistSeries = "artistSeries",
   artwork = "artwork",
   auctionResult = "auctionResult",
+  auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctions = "auctions",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
