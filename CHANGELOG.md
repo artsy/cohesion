@@ -1,3 +1,21 @@
+# v2.7.0 (Thu Jul 01 2021)
+
+#### 🚀  Enhancement
+
+- feat: add auctionResultsForArtistsYouFollow to OwnerType.ts [#201](https://github.com/artsy/cohesion/pull/201) (your_email@example.comJenqaaaaaaaaaa@gmail.comssh-keygen -t rsa -C Jenqaaaaaaaaaa@gmail.comgit config --global user.email your_email@example.comJenqaaaaaaaaaa@gmail.com [@JenqaaaBY](https://github.com/JenqaaaBY))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.3.4 to v4.3.5 [#202](https://github.com/artsy/cohesion/pull/202) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 3
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+- Yauheni (your_email@example.comJenqaaaaaaaaaa@gmail.comssh-keygen -t rsa -C Jenqaaaaaaaaaa@gmail.comgit config --global user.email your_email@example.comJenqaaaaaaaaaa@gmail.com)
+- Yauheni Zhukovich ([@JenqaaaBY](https://github.com/JenqaaaBY))
+
+---
+
 # v2.6.0 (Wed Jun 30 2021)
 
 #### 🚀  Enhancement
