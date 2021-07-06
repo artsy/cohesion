@@ -22,6 +22,9 @@ import {
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
+  ClickedOnFrameMeasurements,
+  ClickedOnArtworkShippingUnitsDropdown,
+  ClickedOnArtworkShippingWeight,
   ClickedPartnerCard,
   ClickedShowMore,
   ClickedSnooze,
@@ -101,6 +104,9 @@ export type Event =
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedOnArtworkShippingWeight
+  | ClickedOnArtworkShippingUnitsDropdown
+  | ClickedOnFrameMeasurements
   | ClickedSnooze
   | ClickedPartnerCard
   | ClickedShowMore
@@ -232,6 +238,18 @@ export enum ActionType {
    * Corresponds to {@link ClickedNavigationTab}
    */
   clickedNavigationTab = "clickedNavigationTab",
+  /**
+   * Corresponds to {@link ClickedOnArtworkShippingUnitsDropdown}
+   */
+  clickedOnArtworkShippingUnitsDropdown = "clickedOnArtworkShippingUnitsDropdown",
+  /**
+   * Corresponds to {@link ClickedOnArtworkShippingWeight}
+   */
+  clickedOnArtworkShippingWeight = "clickedOnArtworkShippingWeight",
+  /**
+   * Corresponds to {@link ClickedOnFrameMeasurements}
+   */
+  clickedOnFrameMeasurements = "clickedOnFrameMeasurements",
   /**
    * Corresponds to {@link ClickedSnooze}
    */
