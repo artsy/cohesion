@@ -116,3 +116,8 @@ export interface TappedViewOffer {
   impulse_conversation_id: string
   subject: string
 }
+
+export interface TappedConfirmArtwork {
+  context_module: OwnerType.conversationMakeOfferConfirmArtwork
+  context_owner_type: OwnerType.conversation
+}
