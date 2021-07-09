@@ -1,3 +1,15 @@
+# v2.8.0 (Fri Jul 09 2021)
+
+#### 🚀  Enhancement
+
+- chore: updates schema and tracking method for inquiry make offer screen [#204](https://github.com/artsy/cohesion/pull/204) ([@ashleyjelks](https://github.com/ashleyjelks))
+
+#### Authors: 1
+
+- Ashley Jelks ([@ashleyjelks](https://github.com/ashleyjelks))
+
+---
+
 # v2.7.0 (Thu Jul 01 2021)
 
 #### 🚀  Enhancement
