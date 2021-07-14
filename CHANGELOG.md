@@ -1,3 +1,16 @@
+# v2.10.0 (Wed Jul 14 2021)
+
+#### 🚀  Enhancement
+
+- [PX-4111] - Adds new shipping flow events to Cohesion [#196](https://github.com/artsy/cohesion/pull/196) (brendamanganelli@ip-192-168-1-144.ec2.internal [@brendamanganelli](https://github.com/brendamanganelli))
+
+#### Authors: 2
+
+- [@brendamanganelli](https://github.com/brendamanganelli)
+- Brenda Manganelli (brendamanganelli@ip-192-168-1-144.ec2.internal)
+
+---
+
 # v2.9.0 (Fri Jul 09 2021)
 
 #### 🚀  Enhancement
