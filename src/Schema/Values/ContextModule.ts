@@ -113,11 +113,13 @@ export enum ContextModule {
   showInfo = "showInfo",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
+  standoutLots = "standoutLots",
   tabBar = "tabBar",
   tagHeader = "tagHeader",
   toDoList = "toDoList",
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
+  trendingLots = "trendingLots",
   upcomingAuctions = "upcomingAuctions",
   viewingRoom = "viewingRoom",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
@@ -183,8 +185,10 @@ export type AuthContextModule =
   | ContextModule.saveWorksCTA
   | ContextModule.showHeader
   | ContextModule.showInfo
+  | ContextModule.standoutLots
   | ContextModule.tagHeader
   | ContextModule.topWorksRail
+  | ContextModule.trendingLots
   | ContextModule.worksByPopularArtistsRail
   | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksForSaleRail
