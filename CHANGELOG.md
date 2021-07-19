@@ -1,3 +1,15 @@
+# v2.11.0 (Mon Jul 19 2021)
+
+#### 🚀  Enhancement
+
+- Added in trending Lots and standoutlots [#208](https://github.com/artsy/cohesion/pull/208) ([@The-Beez-Kneez](https://github.com/The-Beez-Kneez))
+
+#### Authors: 1
+
+- AL_Sutherland ([@The-Beez-Kneez](https://github.com/The-Beez-Kneez))
+
+---
+
 # v2.10.0 (Wed Jul 14 2021)
 
 #### 🚀  Enhancement
