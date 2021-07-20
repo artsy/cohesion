@@ -31,7 +31,7 @@ import { ActionType } from "."
  *  }
  * ```
  */
- export interface ClickedAddNewShippingAddress {
+export interface ClickedAddNewShippingAddress {
   action: ActionType.clickedAddNewShippingAddress
   context_module: ContextModule
   context_page_owner_type: string
@@ -227,7 +227,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedBuyerProtection {
+export interface ClickedBuyerProtection {
   action: ActionType.clickedBuyerProtection
   context_module: ContextModule
   context_page_owner_type: string
@@ -251,7 +251,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedChangePaymentMethod {
+export interface ClickedChangePaymentMethod {
   action: ActionType.clickedChangePaymentMethod
   context_module: ContextModule
   context_page_owner_type: string
@@ -273,7 +273,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedChangeShippingAddress {
+export interface ClickedChangeShippingAddress {
   action: ActionType.clickedChangeShippingAddress
   context_module: ContextModule
   context_page_owner_type: string
@@ -295,7 +295,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedChangeShippingMethod {
+export interface ClickedChangeShippingMethod {
   action: ActionType.clickedChangeShippingMethod
   context_module: ContextModule
   context_page_owner_type: string
@@ -319,7 +319,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedDeliveryMethod {
+export interface ClickedDeliveryMethod {
   action: ActionType.clickedDeliveryMethod
   context_module: ContextModule
   context_page_owner_type: string
@@ -487,7 +487,7 @@ export interface ClickedNavigationTab {
  *  }
  * ```
  */
- export interface ClickedOnSubmitOrder {
+export interface ClickedOnSubmitOrder {
   action: ActionType.clickedOnSubmitOrder
   context_module: ContextModule
   context_page_owner_type: string
@@ -542,7 +542,7 @@ export interface ClickedPartnerCard {
  *  }
  * ```
  */
- export interface ClickedShippingAddress {
+export interface ClickedShippingAddress {
   action: ActionType.clickedShippingAddress
   context_module: ContextModule
   context_page_owner_type: string
@@ -565,7 +565,7 @@ export interface ClickedPartnerCard {
  *  }
  * ```
  */
- export interface ClickedSelectShippingOption {
+export interface ClickedSelectShippingOption {
   action: ActionType.clickedSelectShippingOption
   context_module: ContextModule
   context_page_owner_type: string
@@ -775,4 +775,32 @@ export interface ClickedVerifyIdentity {
   context_page_owner_slug?: string
   sale_id: string
   subject: string
+}
+
+/**
+ * A user clicks the pagination on an artwork grid on web
+ *
+ * This schema describes events sent to Segment from [[clickedChangePage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedChangePage",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_page_owner_slug: "damien-hirst",
+ *    page_changed: 2
+ *    page_current: 1
+ *  }
+ * ```
+ */
+export interface ClickedChangePage {
+  action: ActionType.clickedChangePage
+  context_module: ContextModule.artworkGrid
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  page_changed: number
+  page_current: number
 }

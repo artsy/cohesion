@@ -16,6 +16,7 @@ import {
   ClickedArtworkGroup,
   ClickedAuctionGroup,
   ClickedBuyerProtection,
+  ClickedChangePage,
   ClickedChangePaymentMethod,
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
@@ -104,6 +105,7 @@ export type Event =
   | ClickedArtworkGroup
   | ClickedAuctionGroup
   | ClickedBuyerProtection
+  | ClickedChangePage
   | ClickedChangePaymentMethod
   | ClickedChangeShippingAddress
   | ClickedChangeShippingMethod
@@ -225,6 +227,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedBuyerProtection}
    */
   clickedBuyerProtection = "clickedBuyerProtection",
+  /**
+   * Corresponds to {@link ClickedChangePage}
+   */
+  clickedChangePage = "clickedChangePage",
   /**
    * Corresponds to {@link ClickedChangeShippingAddress}
    */
