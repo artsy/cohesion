@@ -16,6 +16,29 @@ import { ActionType } from "."
  */
 
 /**
+ *  User clicks to add new shipping address when entering the orders
+ *  checkout flow.
+ *
+ *  This schema describes events sent to Segment from [[clickedAddNewShippingAddress]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAddNewShippingAddress",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *  }
+ * ```
+ */
+export interface ClickedAddNewShippingAddress {
+  action: ActionType.clickedAddNewShippingAddress
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
  * A fair partner with an upcoming booth clicks on Add Works from CMS Checklist To-Do fair item.
  *
  *  This schema describes events sent to Segment from [[clickedAddWorksToFair]]
@@ -188,6 +211,123 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
 }
 
 /**
+ *  User clicks on Artsy's buyer protection link during their checkout flow.
+ *
+ *  This schema describes events sent to Segment from [[clickedBuyerProtection]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedBuyerProtection",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    destination_page_owner_type: "articles",
+ *    destination_page_owner_slug: "360048946973-How-does-Artsy-protect-me"
+ *  }
+ * ```
+ */
+export interface ClickedBuyerProtection {
+  action: ActionType.clickedBuyerProtection
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_slug: string
+}
+
+/**
+ *  User clicks on Change Payment Method on the orders review page.
+ *
+ *  This schema describes events sent to Segment from [[clickedChangePaymentMethod]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedChangePaymentMethod",
+ *    context_module: "OrdersReview",
+ *    context_page_owner_type: "orders-review",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *  }
+ * ```
+ */
+export interface ClickedChangePaymentMethod {
+  action: ActionType.clickedChangePaymentMethod
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
+ *  User clicks on Change Shipping Address on the orders review page.
+ *
+ *  This schema describes events sent to Segment from [[clickedChangeShippingAddress]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedChangeShippingAddress",
+ *    context_module: "OrdersReview",
+ *    context_page_owner_type: "orders-review",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *  }
+ * ```
+ */
+export interface ClickedChangeShippingAddress {
+  action: ActionType.clickedChangeShippingAddress
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
+ *  User clicks on Change Shipping Method on the orders review page.
+ *
+ *  This schema describes events sent to Segment from [[clickedChangePaymentMethod]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedChangeShippingMethod",
+ *    context_module: "OrdersReview",
+ *    context_page_owner_type: "orders-review",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *  }
+ * ```
+ */
+export interface ClickedChangeShippingMethod {
+  action: ActionType.clickedChangeShippingMethod
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
+ *  User selects delivery option (Shipping or Pick Up) when entering the orders
+ *  checkout flow.
+ *
+ *  This schema describes events sent to Segment from [[clickedDeliveryMethod]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedDeliveryMethod",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    subject: Pick up
+ *  }
+ * ```
+ */
+export interface ClickedDeliveryMethod {
+  action: ActionType.clickedDeliveryMethod
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+  subject: string
+}
+
+/**
  * A user clicks a grouping of fairs on web
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]
@@ -333,7 +473,7 @@ export interface ClickedNavigationTab {
 }
 
 /**
- * A Partner clicks on Artwork weight (without packaging) bar in the artwork edit page 
+ * A Partner clicks on Artwork weight (without packaging) bar in the artwork edit page
  * in CMS.
  *
  * This schema describes events sent to Segment from [[clickedOnArtworkShippingWeight]]
@@ -348,7 +488,7 @@ export interface ClickedNavigationTab {
  *  }
  * ```
  */
- export interface ClickedOnArtworkShippingWeight {
+export interface ClickedOnArtworkShippingWeight {
   action: ActionType.clickedNavigationTab
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
@@ -372,12 +512,12 @@ export interface ClickedNavigationTab {
  *  }
  * ```
  */
- export interface ClickedOnArtworkShippingUnitsDropdown {
+export interface ClickedOnArtworkShippingUnitsDropdown {
   action: ActionType.clickedNavigationTab
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
-  subject?: string 
+  subject?: string
 }
 
 /**
@@ -395,11 +535,33 @@ export interface ClickedNavigationTab {
  *  }
  * ```
  */
- export interface ClickedOnFrameMeasurements {
+export interface ClickedOnFrameMeasurements {
   action: ActionType.clickedNavigationTab
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
+}
+
+/**
+ *  User clicks on submit order on the orders review page.
+ *
+ *  This schema describes events sent to Segment from [[clickedOnSubmitOrder]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnSubmitOrder",
+ *    context_module: "OrdersReview",
+ *    context_page_owner_type: "orders-review",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *  }
+ * ```
+ */
+export interface ClickedOnSubmitOrder {
+  action: ActionType.clickedOnSubmitOrder
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
 }
 
 /**
@@ -432,6 +594,53 @@ export interface ClickedPartnerCard {
   destination_page_owner_id: string
   destination_page_owner_slug: string
   type: "thumbnail"
+}
+
+/**
+ *  User selects existing shipping address when entering the orders
+ *  checkout flow.
+ *
+ *  This schema describes events sent to Segment from [[clickedShippingAddress]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedShippingAddress",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *  }
+ * ```
+ */
+export interface ClickedShippingAddress {
+  action: ActionType.clickedShippingAddress
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
+ *  User chooses shipping option.
+ *
+ *  This schema describes events sent to Segment from [[clickedSelectShippingOption]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSelectShippingOption",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    subject: "UPS Ground"
+ *  }
+ * ```
+ */
+export interface ClickedSelectShippingOption {
+  action: ActionType.clickedSelectShippingOption
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+  subject: string
 }
 
 /**

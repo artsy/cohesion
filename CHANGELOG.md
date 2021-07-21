@@ -1,3 +1,52 @@
+# v2.11.0 (Mon Jul 19 2021)
+
+#### 🚀  Enhancement
+
+- Added in trending Lots and standoutlots [#208](https://github.com/artsy/cohesion/pull/208) ([@The-Beez-Kneez](https://github.com/The-Beez-Kneez))
+
+#### Authors: 1
+
+- AL_Sutherland ([@The-Beez-Kneez](https://github.com/The-Beez-Kneez))
+
+---
+
+# v2.10.0 (Wed Jul 14 2021)
+
+#### 🚀  Enhancement
+
+- [PX-4111] - Adds new shipping flow events to Cohesion [#196](https://github.com/artsy/cohesion/pull/196) (brendamanganelli@ip-192-168-1-144.ec2.internal [@brendamanganelli](https://github.com/brendamanganelli))
+
+#### Authors: 2
+
+- [@brendamanganelli](https://github.com/brendamanganelli)
+- Brenda Manganelli (brendamanganelli@ip-192-168-1-144.ec2.internal)
+
+---
+
+# v2.9.0 (Fri Jul 09 2021)
+
+#### 🚀  Enhancement
+
+- fix: exports TappedConfirmArtwork [#206](https://github.com/artsy/cohesion/pull/206) ([@ashleyjelks](https://github.com/ashleyjelks))
+
+#### Authors: 1
+
+- Ashley Jelks ([@ashleyjelks](https://github.com/ashleyjelks))
+
+---
+
+# v2.8.0 (Fri Jul 09 2021)
+
+#### 🚀  Enhancement
+
+- chore: updates schema and tracking method for inquiry make offer screen [#204](https://github.com/artsy/cohesion/pull/204) ([@ashleyjelks](https://github.com/ashleyjelks))
+
+#### Authors: 1
+
+- Ashley Jelks ([@ashleyjelks](https://github.com/ashleyjelks))
+
+---
+
 # v2.7.0 (Thu Jul 01 2021)
 
 #### 🚀  Enhancement

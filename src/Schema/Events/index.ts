@@ -7,6 +7,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  ClickedAddNewShippingAddress,
   ClickedAddWorksToFair,
   ClickedAppDownload,
   ClickedArticleGroup,
@@ -14,7 +15,12 @@ import {
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
   ClickedAuctionGroup,
+  ClickedBuyerProtection,
+  ClickedChangePaymentMethod,
+  ClickedChangeShippingAddress,
+  ClickedChangeShippingMethod,
   ClickedCollectionGroup,
+  ClickedDeliveryMethod,
   ClickedEditArtwork,
   ClickedExpansionToggle,
   ClickedFairCard,
@@ -22,10 +28,13 @@ import {
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
-  ClickedOnFrameMeasurements,
   ClickedOnArtworkShippingUnitsDropdown,
   ClickedOnArtworkShippingWeight,
+  ClickedOnFrameMeasurements,
+  ClickedOnSubmitOrder,
   ClickedPartnerCard,
+  ClickedSelectShippingOption,
+  ClickedShippingAddress,
   ClickedShowMore,
   ClickedSnooze,
   ClickedVerifyIdentity,
@@ -89,6 +98,7 @@ export type Event =
   | AuctionResultsFilterParamsChanged
   | AuthImpression
   | CreatedAccount
+  | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
   | ClickedAppDownload
   | ClickedArticleGroup
@@ -96,7 +106,12 @@ export type Event =
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
   | ClickedAuctionGroup
+  | ClickedBuyerProtection
+  | ClickedChangePaymentMethod
+  | ClickedChangeShippingAddress
+  | ClickedChangeShippingMethod
   | ClickedCollectionGroup
+  | ClickedDeliveryMethod
   | ClickedEditArtwork
   | ClickedExpansionToggle
   | ClickedFairCard
@@ -107,8 +122,11 @@ export type Event =
   | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
   | ClickedOnFrameMeasurements
+  | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedPartnerCard
+  | ClickedSelectShippingOption
+  | ClickedShippingAddress
   | ClickedShowMore
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
@@ -178,6 +196,10 @@ export enum ActionType {
    */
   auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
   /**
+   * Corresponds to {@link ClickedAddNewShippingAddress}
+   */
+  clickedAddNewShippingAddress = "clickedAddNewShippingAddress",
+  /**
    * Corresponds to {@link ClickedAddWorksToFair}
    */
   clickedAddWorksToFair = "clickedAddWorksToFair",
@@ -206,9 +228,29 @@ export enum ActionType {
    */
   clickedAuctionGroup = "clickedAuctionGroup",
   /**
+   * Corresponds to {@link ClickedBuyerProtection}
+   */
+  clickedBuyerProtection = "clickedBuyerProtection",
+  /**
+   * Corresponds to {@link ClickedChangeShippingAddress}
+   */
+  clickedChangeShippingAddress = "clickedChangeShippingAddress",
+  /**
+   * Corresponds to {@link ClickedChangeShippingMethod}
+   */
+  clickedChangeShippingMethod = "clickedChangeShippingMethod",
+  /**
+   * Corresponds to {@link ClickedChangePaymentMethod}
+   */
+  clickedChangePaymentMethod = "clickedChangePaymentMethod",
+  /**
    * Corresponds to {@link ClickedCollectionGroup}
    */
   clickedCollectionGroup = "clickedCollectionGroup",
+  /**
+   * Corresponds to {@link ClickedDeliveryMethod}
+   */
+  clickedDeliveryMethod = "clickedDeliveryMethod",
   /**
    * Corresponds to {@link ClickedEditArtwork}
    */
@@ -251,6 +293,10 @@ export enum ActionType {
    */
   clickedOnFrameMeasurements = "clickedOnFrameMeasurements",
   /**
+   * Corresponds to {@link ClickedOnSubmitOrder}
+   */
+  clickedOnSubmitOrder = "clickedOnSubmitOrder",
+  /**
    * Corresponds to {@link ClickedSnooze}
    */
   clickedSnooze = "clickedSnooze",
@@ -258,6 +304,14 @@ export enum ActionType {
    * Corresponds to {@link ClickedPartnerCard}
    */
   clickedPartnerCard = "clickedPartnerCard",
+  /**
+   * Corresponds to {@link ClickedSelecthippingOption}
+   */
+  clickedSelectShippingOption = "clickedSelectShippingOption",
+  /**
+   * Corresponds to {@link ClickedShippingAddress}
+   */
+  clickedShippingAddress = "clickedShippingAddress",
   /**
    * Corresponds to {@link ClickedShowMore}
    */

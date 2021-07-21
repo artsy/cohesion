@@ -77,6 +77,8 @@ export enum ContextModule {
   marketInsights = "marketInsights",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
+  ordersShipping = "ordersShipping",
+  ordersReview = "ordersReview",
   onboardingArtists = "onboardingArtists",
   onboardingBudget = "onboardingBudget",
   onboardingGenes = "onboardingGenes",
@@ -111,14 +113,16 @@ export enum ContextModule {
   showInfo = "showInfo",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
+  standoutLots = "standoutLots",
   tabBar = "tabBar",
   tagHeader = "tagHeader",
   toDoList = "toDoList",
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
+  trendingLots = "trendingLots",
   upcomingAuctions = "upcomingAuctions",
   viewingRoom = "viewingRoom",
-  voltArtworksEdit = 'voltArtworksEdit',
+  voltArtworksEdit = "voltArtworksEdit",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",
@@ -182,8 +186,10 @@ export type AuthContextModule =
   | ContextModule.saveWorksCTA
   | ContextModule.showHeader
   | ContextModule.showInfo
+  | ContextModule.standoutLots
   | ContextModule.tagHeader
   | ContextModule.topWorksRail
+  | ContextModule.trendingLots
   | ContextModule.worksByPopularArtistsRail
   | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksForSaleRail
