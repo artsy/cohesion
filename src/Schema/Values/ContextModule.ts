@@ -122,6 +122,7 @@ export enum ContextModule {
   trendingLots = "trendingLots",
   upcomingAuctions = "upcomingAuctions",
   viewingRoom = "viewingRoom",
+  voltArtworksEdit = "voltArtworksEdit",
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
   worksForSaleRail = "worksForSaleRail",

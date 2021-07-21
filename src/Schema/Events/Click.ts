@@ -31,7 +31,7 @@ import { ActionType } from "."
  *  }
  * ```
  */
- export interface ClickedAddNewShippingAddress {
+export interface ClickedAddNewShippingAddress {
   action: ActionType.clickedAddNewShippingAddress
   context_module: ContextModule
   context_page_owner_type: string
@@ -227,7 +227,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedBuyerProtection {
+export interface ClickedBuyerProtection {
   action: ActionType.clickedBuyerProtection
   context_module: ContextModule
   context_page_owner_type: string
@@ -251,7 +251,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedChangePaymentMethod {
+export interface ClickedChangePaymentMethod {
   action: ActionType.clickedChangePaymentMethod
   context_module: ContextModule
   context_page_owner_type: string
@@ -273,7 +273,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedChangeShippingAddress {
+export interface ClickedChangeShippingAddress {
   action: ActionType.clickedChangeShippingAddress
   context_module: ContextModule
   context_page_owner_type: string
@@ -295,7 +295,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedChangeShippingMethod {
+export interface ClickedChangeShippingMethod {
   action: ActionType.clickedChangeShippingMethod
   context_module: ContextModule
   context_page_owner_type: string
@@ -319,7 +319,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
- export interface ClickedDeliveryMethod {
+export interface ClickedDeliveryMethod {
   action: ActionType.clickedDeliveryMethod
   context_module: ContextModule
   context_page_owner_type: string
@@ -473,6 +473,76 @@ export interface ClickedNavigationTab {
 }
 
 /**
+ * A Partner clicks on Artwork weight (without packaging) bar in the artwork edit page
+ * in CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnArtworkShippingWeight]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnArtworkShippingWeight,
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *  }
+ * ```
+ */
+export interface ClickedOnArtworkShippingWeight {
+  action: ActionType.clickedNavigationTab
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+}
+
+/**
+ * A Partner clicks on Artwork weight dropdown to choose weight metric in the artwork edit page
+ * in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnArtworkShippingUnitsDropdown]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnArtworkShippingUnitsDropdown,
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    subject: "lb"
+ *  }
+ * ```
+ */
+export interface ClickedOnArtworkShippingUnitsDropdown {
+  action: ActionType.clickedNavigationTab
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  subject?: string
+}
+
+/**
+ * A Partner clicks on frame measurements fields in the CMS artworks edit page.
+ *
+ * This schema describes events sent to Segment from [[clickedOnFrameMeasurements]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnFrameMeasurements",
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *  }
+ * ```
+ */
+export interface ClickedOnFrameMeasurements {
+  action: ActionType.clickedNavigationTab
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+}
+
+/**
  *  User clicks on submit order on the orders review page.
  *
  *  This schema describes events sent to Segment from [[clickedOnSubmitOrder]]
@@ -487,7 +557,7 @@ export interface ClickedNavigationTab {
  *  }
  * ```
  */
- export interface ClickedOnSubmitOrder {
+export interface ClickedOnSubmitOrder {
   action: ActionType.clickedOnSubmitOrder
   context_module: ContextModule
   context_page_owner_type: string
@@ -542,7 +612,7 @@ export interface ClickedPartnerCard {
  *  }
  * ```
  */
- export interface ClickedShippingAddress {
+export interface ClickedShippingAddress {
   action: ActionType.clickedShippingAddress
   context_module: ContextModule
   context_page_owner_type: string
@@ -565,7 +635,7 @@ export interface ClickedPartnerCard {
  *  }
  * ```
  */
- export interface ClickedSelectShippingOption {
+export interface ClickedSelectShippingOption {
   action: ActionType.clickedSelectShippingOption
   context_module: ContextModule
   context_page_owner_type: string
