@@ -846,3 +846,31 @@ export interface ClickedVerifyIdentity {
   sale_id: string
   subject: string
 }
+
+/**
+ * A user clicks the pagination on an artwork grid on web
+ *
+ * This schema describes events sent to Segment from [[clickedChangePage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedChangePage",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_page_owner_slug: "damien-hirst",
+ *    page_changed: 2
+ *    page_current: 1
+ *  }
+ * ```
+ */
+export interface ClickedChangePage {
+  action: ActionType.clickedChangePage
+  context_module: ContextModule.artworkGrid
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  page_changed: number
+  page_current: number
+}
