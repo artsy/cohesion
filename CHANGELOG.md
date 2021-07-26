@@ -1,3 +1,15 @@
+# v2.13.0 (Mon Jul 26 2021)
+
+#### 🚀  Enhancement
+
+- Event for Page change [#207](https://github.com/artsy/cohesion/pull/207) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v2.12.0 (Wed Jul 21 2021)
 
 #### 🚀  Enhancement
