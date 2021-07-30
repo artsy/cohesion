@@ -47,6 +47,7 @@ export enum ContextModule {
   currentShowsRail = "currentShowsRail",
   exhibitorsTab = "exhibitorsTab",
   fairInfo = "fairInfo",
+  fairOrganizerHeader = "fairOrganizerHeader",
   fairRail = "fairRail",
   fairCard = "fairCard",
   fairHome = "fairHome",
@@ -156,6 +157,7 @@ export type AuthContextModule =
   | ContextModule.consignSubmissionFlow
   | ContextModule.currentShowsRail
   | ContextModule.fairInfo
+  | ContextModule.fairOrganizerHeader
   | ContextModule.fairRail
   | ContextModule.fairsHeader
   | ContextModule.featuredArtists
