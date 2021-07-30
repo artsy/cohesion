@@ -1,3 +1,20 @@
+# v2.14.0 (Fri Jul 30 2021)
+
+#### 🚀  Enhancement
+
+- Follow fair organizer Sign up modal Context module [#211](https://github.com/artsy/cohesion/pull/211) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- chore(deps): update auto orb from 1.3.2 to v1.4.0 [#210](https://github.com/artsy/cohesion/pull/210) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- [@louislecluse](https://github.com/louislecluse)
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.13.0 (Mon Jul 26 2021)
 
 #### 🚀  Enhancement
