@@ -546,19 +546,19 @@ export interface ClickedOnFrameMeasurements {
  * A Partner clicks on Artwork frame dimension dropdowns to choose either frame dimensions (H, W, D) or diameter
  * and/or frame metric in the artwork edit page in the CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnFrameMeasuremetsDropdown]]
+ * This schema describes events sent to Segment from [[clickedOnFrameMeasurementsDropdown]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedOnFrameMeasuremetsDropdown,
+ *    action: "clickedOnFrameMeasurementsDropdown,
  *    context_module: "voltArtworksEdit",
  *    context_page_owner_type: "artwork",
  *    context_page_owner_id: "60de173a47476c000fd5c4cc"
  *  }
  * ```
  */
- export interface ClickedOnFrameMeasuremetsDropdown {
+ export interface ClickedOnFrameMeasurementsDropdown {
   action: ActionType.clickedNavigationTab
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
