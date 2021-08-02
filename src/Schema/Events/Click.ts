@@ -481,7 +481,7 @@ export interface ClickedNavigationTab {
  *  @example
  *  ```
  *  {
- *    action: "clickedOnArtworkShippingWeight,
+ *    action: "clickedOnArtworkShippingWeight",
  *    context_module: "voltArtworksEdit",
  *    context_page_owner_type: "artwork",
  *    context_page_owner_id: "60de173a47476c000fd5c4cc"
@@ -489,7 +489,7 @@ export interface ClickedNavigationTab {
  * ```
  */
 export interface ClickedOnArtworkShippingWeight {
-  action: ActionType.clickedNavigationTab
+  action: ActionType.clickedOnArtworkShippingWeight
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
@@ -504,7 +504,7 @@ export interface ClickedOnArtworkShippingWeight {
  *  @example
  *  ```
  *  {
- *    action: "clickedOnArtworkShippingUnitsDropdown,
+ *    action: "clickedOnArtworkShippingUnitsDropdown",
  *    context_module: "voltArtworksEdit",
  *    context_page_owner_type: "artwork",
  *    context_page_owner_id: "60de173a47476c000fd5c4cc"
@@ -513,7 +513,7 @@ export interface ClickedOnArtworkShippingWeight {
  * ```
  */
 export interface ClickedOnArtworkShippingUnitsDropdown {
-  action: ActionType.clickedNavigationTab
+  action: ActionType.clickedOnArtworkShippingUnitsDropdown
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
@@ -558,7 +558,7 @@ export interface ClickedOnFrameMeasurements {
  *  }
  * ```
  */
- export interface ClickedOnFrameMeasurementsDropdown {
+export interface ClickedOnFrameMeasurementsDropdown {
   action: ActionType.clickedNavigationTab
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
