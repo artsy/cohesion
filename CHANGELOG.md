@@ -1,3 +1,17 @@
+# v2.15.0 (Mon Aug 02 2021)
+
+#### 🚀  Enhancement
+
+- [PX-4220] - Track analytics for weight & framed dimensions in CMS [#213](https://github.com/artsy/cohesion/pull/213) (brendamanganelli@Honor_View10-9492869ae990.localdomain [@pepopowitz](https://github.com/pepopowitz) [@brendamanganelli](https://github.com/brendamanganelli))
+
+#### Authors: 3
+
+- [@brendamanganelli](https://github.com/brendamanganelli)
+- Brenda Manganelli (brendamanganelli@Honor_View10-9492869ae990.localdomain)
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v2.14.0 (Fri Jul 30 2021)
 
 #### 🚀  Enhancement
