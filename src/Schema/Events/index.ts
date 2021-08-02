@@ -31,7 +31,8 @@ import {
   ClickedNavigationTab,
   ClickedOnArtworkShippingUnitsDropdown,
   ClickedOnArtworkShippingWeight,
-  ClickedOnFrameMeasurements,
+  ClickedOnFramedMeasurements,
+  ClickedOnFramedMeasurementsDropdown,
   ClickedOnSubmitOrder,
   ClickedPartnerCard,
   ClickedSelectShippingOption,
@@ -123,7 +124,8 @@ export type Event =
   | ClickedNavigationTab
   | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
-  | ClickedOnFrameMeasurements
+  | ClickedOnFramedMeasurements
+  | ClickedOnFramedMeasurementsDropdown
   | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedPartnerCard
@@ -295,9 +297,13 @@ export enum ActionType {
    */
   clickedOnArtworkShippingWeight = "clickedOnArtworkShippingWeight",
   /**
-   * Corresponds to {@link ClickedOnFrameMeasurements}
+   * Corresponds to {@link ClickedOnFramedMeasurements}
    */
-  clickedOnFrameMeasurements = "clickedOnFrameMeasurements",
+  clickedOnFramedMeasurements = "clickedOnFramedMeasurements",
+  /**
+   * Corresponds to {@link ClickedOnFramedMeasurementsDropdown}
+   */
+  clickedOnFramedMeasurementsDropdown = "clickedOnFramedMeasurementsDropdown",
   /**
    * Corresponds to {@link ClickedOnSubmitOrder}
    */
