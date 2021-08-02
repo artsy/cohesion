@@ -536,7 +536,7 @@ export interface ClickedOnArtworkShippingUnitsDropdown {
  * ```
  */
 export interface ClickedOnFramedMeasurements {
-  action: ActionType.clickedNavigationTab
+  action: ActionType.clickedOnFramedMeasurements
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
@@ -551,7 +551,7 @@ export interface ClickedOnFramedMeasurements {
  *  @example
  *  ```
  *  {
- *    action: "clickedOnFramedMeasurementsDropdown,
+ *    action: "clickedOnFramedMeasurementsDropdown",
  *    context_module: "voltArtworksEdit",
  *    context_page_owner_type: "artwork",
  *    context_page_owner_id: "60de173a47476c000fd5c4cc"
@@ -559,7 +559,7 @@ export interface ClickedOnFramedMeasurements {
  * ```
  */
 export interface ClickedOnFramedMeasurementsDropdown {
-  action: ActionType.clickedNavigationTab
+  action: ActionType.clickedOnFramedMeasurementsDropdown
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
