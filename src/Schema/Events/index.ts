@@ -52,6 +52,7 @@ import {
 import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
+  PriceDatabaseFilterParamsChanged,
 } from "./FilterAndSort"
 import {
   AddCollectedArtwork,
@@ -61,6 +62,10 @@ import {
   TappedCollectedArtworkImages,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
+import {
+  FocusedOnPriceDatabaseSearchInput,
+  SearchedPriceDatabase,
+} from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
@@ -138,11 +143,14 @@ export type Event =
   | DeleteCollectedArtwork
   | EditCollectedArtwork
   | FocusedOnConversationMessageInput
+  | FocusedOnPriceDatabaseSearchInput
   | FollowEvents
   | OnboardingUserInputData
+  | PriceDatabaseFilterParamsChanged
   | ResetYourPassword
   | SaleScreenLoadComplete
   | Screen
+  | SearchedPriceDatabase
   | SentConversationMessage
   | Share
   | SuccessfullyLoggedIn
@@ -361,6 +369,10 @@ export enum ActionType {
    */
   focusedOnSearchInput = "focusedOnSearchInput",
   /**
+   * Corresponds to {@link FocusedOnPriceDatabaseSearchInput}
+   */
+  focusedOnPriceDatabaseSearchInput = "focusedOnPriceDatabaseSearchInput",
+  /**
    * Corresponds to {@link FollowedArtist}
    */
   followedArtist = "followedArtist",
@@ -381,6 +393,10 @@ export enum ActionType {
    */
   onboardingUserInputData = "onboardingUserInputData",
   /**
+   * Corresponds to {@link PriceDatabaseFilterParamsChanged}
+   */
+  priceDatabaseFilterParamsChanged = "priceDatabaseFilterParamsChanged",
+  /**
    * Corresponds to {@link ResetYourPassword}
    */
   resetYourPassword = "resetYourPassword",
@@ -392,6 +408,10 @@ export enum ActionType {
    * Corresponds to {@link Screen}
    */
   screen = "screen",
+  /**
+   * Corresponds to {@link SearchedPriceDatabase}
+   */
+  searchedPriceDatabase = "searchedPriceDatabase",
   /**
    * Corresponds to {@link SearchedWithNoResults}
    */

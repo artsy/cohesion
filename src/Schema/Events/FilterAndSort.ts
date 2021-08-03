@@ -60,3 +60,27 @@ export interface AuctionResultsFilterParamsChanged {
   current: string
   changed: string
 }
+
+/**
+ * A user applies filters to a filterable/sortable Price Database module
+ *
+ * This schema describes events sent to Segment from [[priceDatabaseFilterParamsChanged]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "priceDatabaseFilterParamsChanged",
+ *    context_module: "priceDatabaseLanding",
+ *    context_owner_type: "priceDatabase",
+ *    changed: '{"medium": "painting"}',
+ *    current: '{"medium": "print", "size": "large"}'
+ *  }
+ * ```
+ */
+export interface PriceDatabaseFilterParamsChanged {
+  action: ActionType.priceDatabaseFilterParamsChanged
+  context_module: ContextModule.priceDatabaseLanding
+  context_owner_type: OwnerType.priceDatabase
+  current: string
+  changed: string
+}
