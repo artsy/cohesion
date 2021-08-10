@@ -61,6 +61,7 @@ import {
   TappedCollectedArtworkImages,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
+import { ConsignmentArtistFailed } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
@@ -135,6 +136,7 @@ export type Event =
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
+  | ConsignmentArtistFailed
   | DeleteCollectedArtwork
   | EditCollectedArtwork
   | FocusedOnConversationMessageInput
@@ -340,6 +342,10 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
+  /**
+   * Corresponds to {@link ConsignmentArtistFailed}
+   */
+  consignmentArtistFailed = "consignmentArtistFailed",
   /**
    * Corresponds to {@link CreatedAccount}
    */
