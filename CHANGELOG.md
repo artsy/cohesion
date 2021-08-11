@@ -1,3 +1,15 @@
+# v2.17.0 (Wed Aug 11 2021)
+
+#### 🚀  Enhancement
+
+- Event for failed artist search in the consignments flow [#216](https://github.com/artsy/cohesion/pull/216) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v2.16.0 (Wed Aug 11 2021)
 
 #### 🚀  Enhancement
