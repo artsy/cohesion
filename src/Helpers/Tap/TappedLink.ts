@@ -10,7 +10,9 @@ export interface TappedLinkArgs {
   contextScreenOwnerType: ScreenOwnerType
   contextScreenOwnerId?: string
   contextScreenOwnerSlug?: string
+  destinationScreenOwnerId?: string
   destinationScreenOwnerSlug: string
+  destinationScreenOwnerType?: ScreenOwnerType
 }
 
 export const tappedLink = ({
@@ -18,7 +20,9 @@ export const tappedLink = ({
   contextScreenOwnerType,
   contextScreenOwnerId,
   contextScreenOwnerSlug,
-  destinationScreenOwnerSlug
+  destinationScreenOwnerSlug,
+  destinationScreenOwnerId,
+  destinationScreenOwnerType
 }: TappedLinkArgs): TappedLink => {
   return {
     action: ActionType.tappedLink,
@@ -26,7 +30,9 @@ export const tappedLink = ({
     context_screen_owner_id: contextScreenOwnerId,
     context_screen_owner_slug: contextScreenOwnerSlug,
     context_screen_owner_type: contextScreenOwnerType,
+    destination_screen_owner_id: destinationScreenOwnerId,
     destination_screen_owner_slug: destinationScreenOwnerSlug,
+    destination_screen_owner_type: destinationScreenOwnerType,
     external: !isArtsyLink(destinationScreenOwnerSlug),
   }
 }
