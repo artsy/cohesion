@@ -87,3 +87,82 @@ export interface SearchedWithNoResults {
   destination_owner_type?: PageOwnerType
   query: string
 }
+
+/**
+ * A user queries the Artsy Price Database, including the artist_id, string queried, and applied filters
+ *
+ * This schema describes events sent to Segment from [[searchedPriceDatabase]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "searchedPriceDatabase",
+ *    context_module: "priceDatabaseLanding",
+ *    context_owner_type: "priceDatabase",
+ *    destination_owner_type: "artistAuctionResults",
+ *    destination_owner_id: "4e9746234e77d300010010c6",
+ *    destination_owner_slug: "franz-kline",
+ *    filters: "{"medium": "print", "size": "large"}"
+ *    query: "franz kline"
+ *
+ *  }
+ * ```
+ */
+export interface SearchedPriceDatabase {
+  action: ActionType.searchedPriceDatabase
+  context_module: ContextModule.priceDatabaseLanding
+  context_owner_type: OwnerType.priceDatabase
+  destination_owner_type: OwnerType.artistAuctionResults
+  destination_owner_id: string
+  destination_owner_slug: string
+  filters: string
+  query: string
+}
+
+/**
+ * A user focuses on the Artsy Price Database search box
+ *
+ * This schema describes events sent to Segment from [[focusedOnPriceDatabaseSearchInput]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "focusedOnPriceDatabaseSearchInput",
+ *    context_module: "priceDatabaseLanding",
+ *    context_owner_type: "priceDatabase"
+ *  }
+ * ```
+ */
+export interface FocusedOnPriceDatabaseSearchInput {
+  action: ActionType.focusedOnPriceDatabaseSearchInput
+  context_module: ContextModule.priceDatabaseLanding
+  context_owner_type: OwnerType.priceDatabase
+}
+
+/**
+ * A user selects an artist from the Price Database artist search
+ *
+ * This schema describes events sent to Segment from [[selectedItemFromPriceDatabaseSearch]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedItemFromPriceDatabaseSearch",
+ *    context_module: "priceDatabaseLanding",
+ *    context_owner_type: "priceDatabase",
+ *    owner_type: "artist",
+ *    owner_id: "5df3e3fa485efe0012c37055",
+ *    owner_slug: "andy-warhol",
+ *    query: "andy warhol"
+ *  }
+ * ```
+ */
+export interface SelectedItemFromPriceDatabaseSearch {
+  action: ActionType.selectedItemFromPriceDatabaseSearch
+  context_module: ContextModule.priceDatabaseLanding
+  context_owner_type: OwnerType.priceDatabase
+  owner_type: OwnerType.artist
+  owner_id: string
+  owner_slug: string
+  query: string
+}
