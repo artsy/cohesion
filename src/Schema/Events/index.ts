@@ -325,7 +325,7 @@ export enum ActionType {
    */
   clickedPartnerCard = "clickedPartnerCard",
   /**
-   * Corresponds to {@link ClickedSelecthippingOption}
+   * Corresponds to {@link ClickedSelectShippingOption}
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
   /**
@@ -420,6 +420,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
+  /**
+   * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
+   */
+  selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
    * Corresponds to {@link SentConversationMessage}
    */

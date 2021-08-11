@@ -96,6 +96,7 @@ export enum ContextModule {
   popUpModal = "popUpModal",
   presentingFair = "presentingFair",
   presentingPartner = "presentingPartner",
+  priceDatabase = "priceDatabase",
   priceDatabaseLanding = "priceDatabaseLanding",
   pushNotifications = "pushNotifications",
   priceEstimate = "priceEstimate",

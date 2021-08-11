@@ -89,7 +89,7 @@ export interface SearchedWithNoResults {
 }
 
 /**
- * A user queries the Artsy Price Database
+ * A user queries the Artsy Price Database, including the artist_id, string queried, and applied filters
  *
  * This schema describes events sent to Segment from [[searchedPriceDatabase]]
  *
@@ -102,6 +102,7 @@ export interface SearchedWithNoResults {
  *    destination_owner_type: "artistAuctionResults",
  *    destination_owner_id: "4e9746234e77d300010010c6",
  *    destination_owner_slug: "franz-kline",
+ *    filters: "{"medium": "print", "size": "large"}"
  *    query: "franz kline"
  *
  *  }
@@ -114,6 +115,7 @@ export interface SearchedPriceDatabase {
   destination_owner_type: OwnerType.artistAuctionResults
   destination_owner_id: string
   destination_owner_slug: string
+  filters: string
   query: string
 }
 
