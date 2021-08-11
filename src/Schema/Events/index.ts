@@ -52,6 +52,7 @@ import {
 import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
+  PriceDatabaseFilterParamsChanged,
 } from "./FilterAndSort"
 import {
   AddCollectedArtwork,
@@ -61,7 +62,15 @@ import {
   TappedCollectedArtworkImages,
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
-import { ConsignmentArtistFailed } from "./Search"
+import {
+  ConsignmentArtistFailed,
+  FocusedOnPriceDatabaseSearchInput,
+  FocusedOnSearchInput,
+  SearchedPriceDatabase,
+  SearchedWithNoResults,
+  SelectedItemFromPriceDatabaseSearch,
+  SelectedItemFromSearch,
+} from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
@@ -140,11 +149,18 @@ export type Event =
   | DeleteCollectedArtwork
   | EditCollectedArtwork
   | FocusedOnConversationMessageInput
+  | FocusedOnSearchInput
+  | FocusedOnPriceDatabaseSearchInput
   | FollowEvents
   | OnboardingUserInputData
+  | PriceDatabaseFilterParamsChanged
   | ResetYourPassword
   | SaleScreenLoadComplete
   | Screen
+  | SearchedPriceDatabase
+  | SearchedWithNoResults
+  | SelectedItemFromSearch
+  | SelectedItemFromPriceDatabaseSearch
   | SentConversationMessage
   | Share
   | SuccessfullyLoggedIn
@@ -319,7 +335,7 @@ export enum ActionType {
    */
   clickedPartnerCard = "clickedPartnerCard",
   /**
-   * Corresponds to {@link ClickedSelecthippingOption}
+   * Corresponds to {@link ClickedSelectShippingOption}
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
   /**
@@ -367,6 +383,10 @@ export enum ActionType {
    */
   focusedOnSearchInput = "focusedOnSearchInput",
   /**
+   * Corresponds to {@link FocusedOnPriceDatabaseSearchInput}
+   */
+  focusedOnPriceDatabaseSearchInput = "focusedOnPriceDatabaseSearchInput",
+  /**
    * Corresponds to {@link FollowedArtist}
    */
   followedArtist = "followedArtist",
@@ -387,6 +407,10 @@ export enum ActionType {
    */
   onboardingUserInputData = "onboardingUserInputData",
   /**
+   * Corresponds to {@link PriceDatabaseFilterParamsChanged}
+   */
+  priceDatabaseFilterParamsChanged = "priceDatabaseFilterParamsChanged",
+  /**
    * Corresponds to {@link ResetYourPassword}
    */
   resetYourPassword = "resetYourPassword",
@@ -399,6 +423,10 @@ export enum ActionType {
    */
   screen = "screen",
   /**
+   * Corresponds to {@link SearchedPriceDatabase}
+   */
+  searchedPriceDatabase = "searchedPriceDatabase",
+  /**
    * Corresponds to {@link SearchedWithNoResults}
    */
   searchedWithNoResults = "searchedWithNoResults",
@@ -406,6 +434,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
+  /**
+   * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
+   */
+  selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
    * Corresponds to {@link SentConversationMessage}
    */
