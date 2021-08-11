@@ -104,7 +104,6 @@ export interface SearchedWithNoResults {
  *    destination_owner_slug: "franz-kline",
  *    filters: "{"medium": "print", "size": "large"}"
  *    query: "franz kline"
- *
  *  }
  * ```
  */
@@ -165,4 +164,25 @@ export interface SelectedItemFromPriceDatabaseSearch {
   owner_id: string
   owner_slug: string
   query: string
+}
+
+/**
+ * A user searches for an artist in the consignment submission flow but receives an error and cannot search
+ *
+ * This schema describes events sent to Segment from [[consignmentArtistFailed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "consignmentArtistFailed",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consign",
+ *    query: "artist we are not accepting submissions for"
+ *  }
+ * ```
+ */
+export interface ConsignmentArtistFailed {
+  action: ActionType.consignmentArtistFailed
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consign
 }

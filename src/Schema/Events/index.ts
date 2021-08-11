@@ -63,9 +63,13 @@ import {
 } from "./MyCollection"
 import { FollowEvents } from "./SavesAndFollows"
 import {
+  ConsignmentArtistFailed,
   FocusedOnPriceDatabaseSearchInput,
+  FocusedOnSearchInput,
   SearchedPriceDatabase,
+  SearchedWithNoResults,
   SelectedItemFromPriceDatabaseSearch,
+  SelectedItemFromSearch,
 } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -141,9 +145,11 @@ export type Event =
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
+  | ConsignmentArtistFailed
   | DeleteCollectedArtwork
   | EditCollectedArtwork
   | FocusedOnConversationMessageInput
+  | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
   | FollowEvents
   | OnboardingUserInputData
@@ -152,6 +158,8 @@ export type Event =
   | SaleScreenLoadComplete
   | Screen
   | SearchedPriceDatabase
+  | SearchedWithNoResults
+  | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SentConversationMessage
   | Share
@@ -350,6 +358,10 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
+  /**
+   * Corresponds to {@link ConsignmentArtistFailed}
+   */
+  consignmentArtistFailed = "consignmentArtistFailed",
   /**
    * Corresponds to {@link CreatedAccount}
    */
