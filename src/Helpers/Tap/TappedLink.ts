@@ -37,6 +37,19 @@ export const tappedLink = ({
   }
 }
 
+/**
+ * Checks if a link is Artsy's according to how links are treated in Eigen
+ * Examples:
+ * 
+ * "/favorites"
+ * "https://artsy.net/favorites"
+ * "www.artsy.net/favorites"
+ * "favorites"
+ * "artsy.net/favorites"
+ * "anysubdomain.artsy.net"
+ * "notartsywebsite.com/favorites"
+ * "favorites/another"
+ */
 const isArtsyLink = (link: string): boolean => {
   try {
     const url = new URL(link)
@@ -45,13 +58,6 @@ const isArtsyLink = (link: string): boolean => {
     if (link.startsWith('/')) {
       return true
     }
-    // handle for:
-    // "www.artsy.net/something"
-    // "something"
-    // "artsy.net/something"
-    // "anysubdomain.artsy.net"
-    // "notartsywebsite.com/something"
-    // "something/anotherthing"
     const first = link.split('/')[0]
     return first.endsWith(".artsy.net") || first === "artsy.net"
   }
