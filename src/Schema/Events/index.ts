@@ -475,6 +475,10 @@ export enum ActionType {
    */
   tappedInfoBubble = "tappedInfoBubble",
   /**
+   * Corresponds to {@link TappedLink}
+   */
+   tappedLink = "tappedLink",
+  /**
    * Corresponds to {@link TappedMainArtworkGrid}
    */
   tappedMainArtworkGrid = "tappedMainArtworkGrid",
@@ -554,6 +558,4 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedPartner}
    */
   unfollowedPartner = "unfollowedPartner",
-
-  tappedLink = "tappedLink"
 }
