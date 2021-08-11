@@ -138,3 +138,31 @@ export interface FocusedOnPriceDatabaseSearchInput {
   context_module: ContextModule.priceDatabaseLanding
   context_owner_type: OwnerType.priceDatabase
 }
+
+/**
+ * A user selects an artist from the Price Database artist search
+ *
+ * This schema describes events sent to Segment from [[selectedItemFromPriceDatabaseSearch]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedItemFromPriceDatabaseSearch",
+ *    context_module: "priceDatabaseLanding",
+ *    context_owner_type: "priceDatabase",
+ *    owner_type: "artist",
+ *    owner_id: "5df3e3fa485efe0012c37055",
+ *    owner_slug: "andy-warhol",
+ *    query: "andy warhol"
+ *  }
+ * ```
+ */
+export interface SelectedItemFromPriceDatabaseSearch {
+  action: ActionType.selectedItemFromPriceDatabaseSearch
+  context_module: ContextModule.priceDatabaseLanding
+  context_owner_type: OwnerType.priceDatabase
+  owner_type: OwnerType.artist
+  owner_id: string
+  owner_slug: string
+  query: string
+}
