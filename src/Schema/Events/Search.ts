@@ -93,7 +93,7 @@ export interface SearchedWithNoResults {
  *
  * This schema describes events sent to Segment from [[searchedPriceDatabase]]
  *
- *  *  @example
+ *  @example
  *  ```
  *  {
  *    action: "searchedPriceDatabase",
