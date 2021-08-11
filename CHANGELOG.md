@@ -1,3 +1,15 @@
+# v2.16.0 (Wed Aug 11 2021)
+
+#### 🚀  Enhancement
+
+- Schema for Price Database web events [#214](https://github.com/artsy/cohesion/pull/214) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v2.15.0 (Mon Aug 02 2021)
 
 #### 🚀  Enhancement
