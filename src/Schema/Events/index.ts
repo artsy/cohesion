@@ -65,6 +65,7 @@ import { FollowEvents } from "./SavesAndFollows"
 import {
   FocusedOnPriceDatabaseSearchInput,
   SearchedPriceDatabase,
+  SelectedItemFromPriceDatabaseSearch,
 } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -151,6 +152,7 @@ export type Event =
   | SaleScreenLoadComplete
   | Screen
   | SearchedPriceDatabase
+  | SelectedItemFromPriceDatabaseSearch
   | SentConversationMessage
   | Share
   | SuccessfullyLoggedIn
