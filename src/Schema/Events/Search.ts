@@ -185,4 +185,5 @@ export interface ConsignmentArtistFailed {
   action: ActionType.consignmentArtistFailed
   context_module: ContextModule.consignSubmissionFlow
   context_owner_type: OwnerType.consign
+  query: string
 }
