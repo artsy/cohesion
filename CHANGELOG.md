@@ -1,3 +1,15 @@
+# v2.18.0 (Thu Aug 12 2021)
+
+#### 🚀  Enhancement
+
+- Add query param to consignmentArtistFailed [#219](https://github.com/artsy/cohesion/pull/219) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v2.17.0 (Wed Aug 11 2021)
 
 #### 🚀  Enhancement
