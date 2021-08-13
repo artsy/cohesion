@@ -82,6 +82,9 @@ import {
   TappedAuctionResultGroup,
   TappedCollectionGroup,
   TappedConsign,
+  TappedCreateAlert,
+  TappedDeleteSavedSearch,
+  TappedEditSavedSearch,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -174,6 +177,9 @@ export type Event =
   | TappedCollectedArtworkImages
   | TappedCollectionGroup
   | TappedConsign
+  | TappedCreateAlert
+  | TappedDeleteSavedSearch
+  | TappedEditSavedSearch
   | TappedExploreGroup
   | TappedFairCard
   | TappedFairGroup
@@ -490,6 +496,18 @@ export enum ActionType {
    * Corresponds to {@link TappedConsign}
    */
   tappedConsign = "tappedConsign",
+  /**
+   * Corresponds to {@link TappedCreateAlert}
+   */
+  tappedCreateAlert = "tappedCreateAlert",
+  /**
+   * Corresponds to {@link TappedEditSavedSearch}
+   */
+  tappedEditSavedSearch = "tappedEditSavedSearch",
+  /**
+   * Corresponds to {@link TappedDeleteSavedSearch}
+   */
+  tappedDeleteSavedSearch = "tappedDeleteSavedSearch",
   /**
    * Corresponds to {@link TappedExploreGroup}
    */
