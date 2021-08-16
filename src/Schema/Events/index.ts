@@ -61,6 +61,7 @@ import {
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
 } from "./MyCollection"
+import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
   ConsignmentArtistFailed,
@@ -83,8 +84,6 @@ import {
   TappedCollectionGroup,
   TappedConsign,
   TappedCreateAlert,
-  TappedDeleteSavedSearch,
-  TappedEditSavedSearch,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -150,7 +149,9 @@ export type Event =
   | CommercialFilterParamsChanged
   | ConsignmentArtistFailed
   | DeleteCollectedArtwork
+  | DeletedSavedSearch
   | EditCollectedArtwork
+  | EditedSavedSearch
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
@@ -178,8 +179,6 @@ export type Event =
   | TappedCollectionGroup
   | TappedConsign
   | TappedCreateAlert
-  | TappedDeleteSavedSearch
-  | TappedEditSavedSearch
   | TappedExploreGroup
   | TappedFairCard
   | TappedFairGroup
@@ -377,9 +376,17 @@ export enum ActionType {
    */
   deleteCollectedArtwork = "deleteCollectedArtwork",
   /**
+   * Corresponds to {@link DeletedSavedSearch}
+   */
+  deletedSavedSearch = "deletedSavedSearch",
+  /**
    * Corresponds to {@link EditCollectedArtwork}
    */
   editCollectedArtwork = "editCollectedArtwork",
+  /**
+   * Corresponds to {@link EditedSavedSearch}
+   */
+  editedSavedSearch = "editedSavedSearch",
   /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
@@ -500,14 +507,6 @@ export enum ActionType {
    * Corresponds to {@link TappedCreateAlert}
    */
   tappedCreateAlert = "tappedCreateAlert",
-  /**
-   * Corresponds to {@link TappedEditSavedSearch}
-   */
-  tappedEditSavedSearch = "tappedEditSavedSearch",
-  /**
-   * Corresponds to {@link TappedDeleteSavedSearch}
-   */
-  tappedDeleteSavedSearch = "tappedDeleteSavedSearch",
   /**
    * Corresponds to {@link TappedExploreGroup}
    */
