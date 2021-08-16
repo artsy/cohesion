@@ -1,3 +1,15 @@
+# v2.19.0 (Mon Aug 16 2021)
+
+#### 🚀  Enhancement
+
+- Saved Search M2 tracking [#220](https://github.com/artsy/cohesion/pull/220) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v2.18.0 (Thu Aug 12 2021)
 
 #### 🚀  Enhancement
