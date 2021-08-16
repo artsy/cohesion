@@ -647,3 +647,25 @@ export interface TappedVerifyIdentity {
   sale_id: string
   subject: string
 }
+
+/**
+ * A user taps "Create alert button" on an app
+ *
+ * This schema describes events sent to Segment from [[tappedCreateAlert]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCreateAlert",
+ *    context_screen_owner_type: "artist",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "anthony-hunter",
+ *  }
+ * ```
+ */
+export interface TappedCreateAlert {
+  action: ActionType.tappedCreateAlert
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}
