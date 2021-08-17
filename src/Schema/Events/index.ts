@@ -88,6 +88,7 @@ import {
   TappedFairCard,
   TappedFairGroup,
   TappedInfoBubble,
+  TappedLink,
   TappedMainArtworkGrid,
   TappedNavigationTab,
   TappedPartnerCard,
@@ -184,6 +185,7 @@ export type Event =
   | TappedFairGroup
   | TappedInboxConversation
   | TappedInfoBubble
+  | TappedLink
   | TappedNavigationTab
   | TappedMainArtworkGrid
   | TappedMakeOffer
@@ -527,6 +529,10 @@ export enum ActionType {
    * Corresponds to {@link TappedInfoBubble}
    */
   tappedInfoBubble = "tappedInfoBubble",
+  /**
+   * Corresponds to {@link TappedLink}
+   */
+   tappedLink = "tappedLink",
   /**
    * Corresponds to {@link TappedMainArtworkGrid}
    */

@@ -649,6 +649,34 @@ export interface TappedVerifyIdentity {
 }
 
 /**
+ * A user taps on any hyperlinked text
+ *
+ * This schema describes events sent to Segment from [[tappedLink]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedLink",
+ *    context_module: "inboxActiveBids",
+ *    context_screen_owner_type: "inboxBids",
+ *    destination_screen_owner_slug: "/favorites"
+ *    destination_path: '/favorites' 
+ *  }
+ * ```
+ */
+export interface TappedLink {
+  action: ActionType.tappedLink
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_path: string,
+  destination_screen_owner_type?: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+}
+
+/**
  * A user taps "Create alert button" on an app
  *
  * This schema describes events sent to Segment from [[tappedCreateAlert]]

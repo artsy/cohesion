@@ -71,6 +71,7 @@ export type ScreenOwnerType =
   | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctionResult
+  | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
   | OwnerType.gene
   | OwnerType.cityGuideGuide
