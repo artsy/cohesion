@@ -1,3 +1,15 @@
+# v2.19.1 (Tue Aug 17 2021)
+
+#### 🐛  Bug Fix
+
+- Enhancement(CX-1698): add link taps action and screen auctionResultsForArtistYouFollow to cohesion [#217](https://github.com/artsy/cohesion/pull/217) ([@lordkiz](https://github.com/lordkiz))
+
+#### Authors: 1
+
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v2.19.0 (Mon Aug 16 2021)
 
 #### 🚀  Enhancement
