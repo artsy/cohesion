@@ -1,3 +1,51 @@
+# v2.19.0 (Mon Aug 16 2021)
+
+#### 🚀  Enhancement
+
+- Saved Search M2 tracking [#220](https://github.com/artsy/cohesion/pull/220) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
+# v2.18.0 (Thu Aug 12 2021)
+
+#### 🚀  Enhancement
+
+- Add query param to consignmentArtistFailed [#219](https://github.com/artsy/cohesion/pull/219) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v2.17.0 (Wed Aug 11 2021)
+
+#### 🚀  Enhancement
+
+- Event for failed artist search in the consignments flow [#216](https://github.com/artsy/cohesion/pull/216) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
+# v2.16.0 (Wed Aug 11 2021)
+
+#### 🚀  Enhancement
+
+- Schema for Price Database web events [#214](https://github.com/artsy/cohesion/pull/214) ([@mikehrom](https://github.com/mikehrom))
+
+#### Authors: 1
+
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+
+---
+
 # v2.15.0 (Mon Aug 02 2021)
 
 #### 🚀  Enhancement

@@ -42,6 +42,7 @@ export enum OwnerType {
   onboarding = "onboarding",
   partner = "partner",
   partnerShowsArtworks = "partnerShowsArtworks",
+  priceDatabase = "priceDatabase",
   profile = "profile",
   sale = "sale",
   saleInformation = "saleInformation",
@@ -59,7 +60,7 @@ export enum OwnerType {
 }
 
 /**
- * Owner types available in iOS
+ * Owner types available in iOS/Android
  */
 export type ScreenOwnerType =
   | OwnerType.allArtistSeries
@@ -129,6 +130,7 @@ export type PageOwnerType =
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.partnerShowsArtworks
+  | OwnerType.priceDatabase
   | OwnerType.profile
   | OwnerType.sale
   | OwnerType.search
