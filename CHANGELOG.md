@@ -1,3 +1,15 @@
+# v2.20.0 (Wed Aug 18 2021)
+
+#### 🚀  Enhancement
+
+- Saved Search Owner type [#221](https://github.com/artsy/cohesion/pull/221) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v2.19.1 (Tue Aug 17 2021)
 
 #### 🐛  Bug Fix
