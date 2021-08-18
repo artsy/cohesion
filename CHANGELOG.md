@@ -1,3 +1,15 @@
+# v2.21.0 (Wed Aug 18 2021)
+
+#### 🚀  Enhancement
+
+- Booth tab context module [#222](https://github.com/artsy/cohesion/pull/222) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v2.20.0 (Wed Aug 18 2021)
 
 #### 🚀  Enhancement
