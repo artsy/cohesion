@@ -46,6 +46,7 @@ export enum OwnerType {
   profile = "profile",
   sale = "sale",
   saleInformation = "saleInformation",
+  savedSearch = "savedSearch",
   search = "search",
   sell = "sell",
   show = "show",
@@ -97,6 +98,7 @@ export type ScreenOwnerType =
   | OwnerType.profile
   | OwnerType.sale
   | OwnerType.saleInformation
+  | OwnerType.savedSearch
   | OwnerType.search
   | OwnerType.savesAndFollows
   | OwnerType.sell
