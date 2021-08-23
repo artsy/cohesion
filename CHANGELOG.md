@@ -1,3 +1,15 @@
+# v2.22.0 (Mon Aug 23 2021)
+
+#### 🚀  Enhancement
+
+- chore: add saved searches event type [#223](https://github.com/artsy/cohesion/pull/223) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v2.21.0 (Wed Aug 18 2021)
 
 #### 🚀  Enhancement
