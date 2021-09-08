@@ -1,3 +1,20 @@
+# v3.0.0 (Wed Sep 08 2021)
+
+#### 💥  Breaking Change
+
+- feature: Node 14 LTS [#225](https://github.com/artsy/cohesion/pull/225) ([@icirellik](https://github.com/icirellik))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.3.5 to v4.4.2 [#224](https://github.com/artsy/cohesion/pull/224) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Cameron Rollheiser ([@icirellik](https://github.com/icirellik))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v2.22.0 (Mon Aug 23 2021)
 
 #### 🚀  Enhancement
