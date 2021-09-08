@@ -1,3 +1,27 @@
+# v3.0.1 (Wed Sep 08 2021)
+
+#### 🐛  Bug Fix
+
+- chore: Update Renovate User [#228](https://github.com/artsy/cohesion/pull/228) ([@icirellik](https://github.com/icirellik))
+
+#### 🏠  Internal
+
+- Bump ws from 7.3.0 to 7.5.4 [#227](https://github.com/artsy/cohesion/pull/227) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- feature: Configure Dependabot Alerts [#226](https://github.com/artsy/cohesion/pull/226) ([@icirellik](https://github.com/icirellik))
+- Bump y18n from 4.0.0 to 4.0.1 [#177](https://github.com/artsy/cohesion/pull/177) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump handlebars from 4.7.6 to 4.7.7 [#186](https://github.com/artsy/cohesion/pull/186) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump lodash from 4.17.19 to 4.17.21 [#187](https://github.com/artsy/cohesion/pull/187) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump hosted-git-info from 2.8.8 to 2.8.9 [#188](https://github.com/artsy/cohesion/pull/188) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump browserslist from 4.11.1 to 4.16.6 [#189](https://github.com/artsy/cohesion/pull/189) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump path-parse from 1.0.6 to 1.0.7 [#218](https://github.com/artsy/cohesion/pull/218) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Cameron Rollheiser ([@icirellik](https://github.com/icirellik))
+
+---
+
 # v3.0.0 (Wed Sep 08 2021)
 
 #### 💥  Breaking Change
