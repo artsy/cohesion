@@ -352,6 +352,54 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 }
 
 /**
+ * A user clicks a grouping of galleries on web
+ *
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedGalleryGroup",
+ *    context_module: "featuredGalleries",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "gallery",
+ *    destination_page_owner_id: "5e726bd22524980012caafb0",
+ *    destination_page_owner_slug: "arteba-special-edition",
+ *    horizontal_slide_position: 2,
+ *    module_height: "double",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedGalleryGroup extends ClickedEntityGroup {
+  action: ActionType.clickedGalleryGroup
+}
+
+/**
+ * A user clicks a grouping of shows on web
+ *
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedShowGroup",
+ *    context_module: "featuredShows",
+ *    context_page_owner_type: "home",
+ *    destination_page_owner_type: "show",
+ *    destination_page_owner_id: "5e726bd22524980012caafb0",
+ *    destination_page_owner_slug: "arteba-special-edition",
+ *    horizontal_slide_position: 2,
+ *    module_height: "double",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedShowGroup extends ClickedEntityGroup {
+  action: ActionType.clickedShowGroup
+}
+
+/**
  * Shared interface for clicked group actions on web
  */
 export interface ClickedEntityGroup {
@@ -363,7 +411,9 @@ export interface ClickedEntityGroup {
     | ActionType.clickedAuctionGroup
     | ActionType.clickedCollectionGroup
     | ActionType.clickedFairGroup
+    | ActionType.clickedGalleryGroup
     | ActionType.clickedMainArtworkGrid
+    | ActionType.clickedShowGroup
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
@@ -896,4 +946,33 @@ export interface ClickedChangePage {
   context_page_owner_slug?: string
   page_changed: number
   page_current: number
+}
+
+/**
+ * A user clicks a promo space
+ *
+ * This schema describes events sent to Segment from [[clickedPromoSpace]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPromoSpace",
+ *    context_module: "banner",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_type: "collection",
+ *    destination_screen_owner_slug: "artists-impacted-museum-shows",
+ *    destination_path: "/collection/artists-impacted-museum-shows",
+ *    subject: "Browse by collection"
+ *  }
+ * ```
+ */
+export interface ClickedPromoSpace {
+  action: ActionType.clickedPromoSpace
+  context_module: ContextModule
+  context_screen_owner_type: PageOwnerType
+  destination_screen_owner_type?: PageOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  destination_path: string
+  subject: string
 }
