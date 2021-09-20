@@ -660,7 +660,7 @@ export interface TappedVerifyIdentity {
  *    context_module: "inboxActiveBids",
  *    context_screen_owner_type: "inboxBids",
  *    destination_screen_owner_slug: "/favorites"
- *    destination_path: '/favorites' 
+ *    destination_path: '/favorites'
  *  }
  * ```
  */
@@ -670,7 +670,7 @@ export interface TappedLink {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
-  destination_path: string,
+  destination_path: string
   destination_screen_owner_type?: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
