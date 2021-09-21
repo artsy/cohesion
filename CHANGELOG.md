@@ -1,3 +1,20 @@
+# v3.0.2 (Tue Sep 21 2021)
+
+#### 🐛  Bug Fix
+
+- [AS-2516] Adds new homepage tracking [#231](https://github.com/artsy/cohesion/pull/231) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.4.2 to v4.4.3 [#230](https://github.com/artsy/cohesion/pull/230) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v3.0.1 (Wed Sep 08 2021)
 
 #### 🐛  Bug Fix
