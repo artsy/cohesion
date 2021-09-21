@@ -24,7 +24,7 @@ export const tappedLink = ({
   destinationPath,
   destinationScreenOwnerSlug,
   destinationScreenOwnerId,
-  destinationScreenOwnerType
+  destinationScreenOwnerType,
 }: TappedLinkArgs): TappedLink => {
   return {
     action: ActionType.tappedLink,

@@ -26,6 +26,7 @@ import {
   ClickedExpansionToggle,
   ClickedFairCard,
   ClickedFairGroup,
+  ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
@@ -35,8 +36,10 @@ import {
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnSubmitOrder,
   ClickedPartnerCard,
+  ClickedPromoSpace,
   ClickedSelectShippingOption,
   ClickedShippingAddress,
+  ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
   ClickedVerifyIdentity,
@@ -132,6 +135,7 @@ export type Event =
   | ClickedExpansionToggle
   | ClickedFairCard
   | ClickedFairGroup
+  | ClickedGalleryGroup
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
@@ -142,8 +146,10 @@ export type Event =
   | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedPartnerCard
+  | ClickedPromoSpace
   | ClickedSelectShippingOption
   | ClickedShippingAddress
+  | ClickedShowGroup
   | ClickedShowMore
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
@@ -301,6 +307,10 @@ export enum ActionType {
    */
   clickedFairGroup = "clickedFairGroup",
   /**
+   * Corresponds to {@link ClickedFairGroup}
+   */
+  clickedGalleryGroup = "clickedGalleryGroup",
+  /**
    * Corresponds to {@link ClickedLoadMore}
    */
   clickedLoadMore = "clickedLoadMore",
@@ -342,6 +352,10 @@ export enum ActionType {
    */
   clickedPartnerCard = "clickedPartnerCard",
   /**
+   * Corresponds to {@link ClickedPromoSpace}
+   */
+  clickedPromoSpace = "clickedPromoSpace",
+  /**
    * Corresponds to {@link ClickedSelectShippingOption}
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
@@ -349,6 +363,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedShippingAddress}
    */
   clickedShippingAddress = "clickedShippingAddress",
+  /**
+   * Corresponds to {@link ClickedShowGroup}
+   */
+  clickedShowGroup = "clickedShowGroup",
   /**
    * Corresponds to {@link ClickedShowMore}
    */
@@ -532,7 +550,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link TappedLink}
    */
-   tappedLink = "tappedLink",
+  tappedLink = "tappedLink",
   /**
    * Corresponds to {@link TappedMainArtworkGrid}
    */
