@@ -160,7 +160,7 @@ export type AuthTrigger = "click" | "timed"
 /**
  * the service the user used to authenticate
  */
-export type AuthService = "apple" | "email" | "facebook"
+export type AuthService = "apple" | "email" | "facebook" | "google"
 
 /**
  * A user provides us with important data during the onboarding flow
