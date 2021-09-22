@@ -1,3 +1,15 @@
+# v4.0.0 (Wed Sep 22 2021)
+
+#### 💥  Breaking Change
+
+- Deprecate Helpers [#233](https://github.com/artsy/cohesion/pull/233) ([@pvinis](https://github.com/pvinis))
+
+#### Authors: 1
+
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v3.1.0 (Wed Sep 22 2021)
 
 #### 🚀  Enhancement
