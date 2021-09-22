@@ -1,7 +1,7 @@
 {
   "name": "@artsy/cohesion",
   "version": "3.0.2",
-  "description": "Analytics schema and library helpers",
+  "description": "Analytics schema",
   "main": "dist/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

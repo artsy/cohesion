@@ -1,6 +1,6 @@
 ## Cohesion [![CircleCI][circle_badge]][circleci] [![npm version][npm_badge]][npm]
 
-### Artsy's analytics schema &amp; event helpers
+### Artsy's analytics schema
 
 - **State:** In development
 - **GitHub:** https://github.com/artsy/cohesion
@@ -88,16 +88,6 @@ export * from "./Events/MyNewEvent"
 ```
 
 6. PR your changes. Once merged, the schema will be updated and your new event and values will be available to consumers of this package.
-
-7. Data analysts should request an engineer to construct a new event helper for the `/Helpers` directory (see below).
-
-## Helpers
-
-The `/Helpers` directory contains javascript helpers that return schema-compliant analytics events, and provide some useful default values. Each helper corresponds to one event from `/Schema/Events`.
-
-Helpers are most useful as a way to handle complex transformations of input data into an output event. However, these are rare.
-
-In most cases, when writing code to send events, one can import the relevant interface and use that to ensure the properties take the correct form, without having to write a helper function.
 
 [circle_badge]: https://circleci.com/gh/artsy/cohesion.svg?style=svg
 [circleci]: https://circleci.com/gh/artsy/cohesion

@@ -16,5 +16,5 @@ This PR resolves [CO-]
 <!-- 💡 This checklist is experimental. #cohesion warmly welcomes any feedback about the list or how it impacts your workflow -->
 
 - [ ] If I've added a new file to the tree I've exported it from the common `index.ts`
-- [ ] I've added comments with examples for any new interfaces or helpers and ensured that they're in the docs 
+- [ ] I've added comments with examples for any new interfaces and ensured that they're in the docs
 - [ ] No platform-specific terminology has been used outside of `click` and `tap` (platform is inferred by the DB storing events)
