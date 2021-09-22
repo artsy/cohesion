@@ -1,3 +1,15 @@
+# v3.1.0 (Wed Sep 22 2021)
+
+#### 🚀  Enhancement
+
+- feat: add google as auth service [#234](https://github.com/artsy/cohesion/pull/234) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v3.0.2 (Tue Sep 21 2021)
 
 #### 🐛  Bug Fix
