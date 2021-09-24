@@ -1,3 +1,21 @@
+# v4.1.0 (Fri Sep 24 2021)
+
+#### 🚀  Enhancement
+
+- removed clickedArtworkGroup helper [#236](https://github.com/artsy/cohesion/pull/236) ([@pvinis](https://github.com/pvinis))
+- remove tappedInfoBubble helper [#235](https://github.com/artsy/cohesion/pull/235) ([@pvinis](https://github.com/pvinis))
+
+#### 🏠  Internal
+
+- Bump tmpl from 1.0.4 to 1.0.5 [#232](https://github.com/artsy/cohesion/pull/232) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v4.0.0 (Wed Sep 22 2021)
 
 #### 💥  Breaking Change
