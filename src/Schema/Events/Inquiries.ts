@@ -1,7 +1,7 @@
 import { ActionType } from "../Event"
 
 /**
- * Schemas describing Inquiry events
+ * Schemas describing inquiry events
  * @packageDocumentation
  */
 
@@ -28,7 +28,7 @@ import { ActionType } from "../Event"
  * ```
  */
 
-export interface sentArtworkInquiry {
+export interface SentArtworkInquiry {
   action: ActionType.sentArtworkInquiry
   artwork_id: string
   artwork_slug: string

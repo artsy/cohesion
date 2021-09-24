@@ -16,6 +16,7 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
 } from "./Events/Conversations"
+import { SentArtworkInquiry } from "./Events/Inquiries"
 
 /**
  * The top-level actions an Event describes.
@@ -71,6 +72,10 @@ export enum ActionType {
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
+  /**
+   * Corresponds to {@link SentArtworkInquiry}
+   */
+  sentArtworkInquiry = "sentArtworkInquiry",
 }
 
 /**
@@ -91,3 +96,4 @@ export type Event =
   | TappedFairGroup
   | FocusedOnConversationMessageInput
   | SentConversationMessage
+  | SentArtworkInquiry
