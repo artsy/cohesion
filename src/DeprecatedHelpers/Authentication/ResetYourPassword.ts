@@ -30,6 +30,7 @@ export interface ResetYourPasswordArgs {
  *   triggerSeconds: 3
  * })
  * ```
+ * @deprecated
  */
 export const resetYourPassword = ({
   authRedirect,

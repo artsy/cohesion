@@ -72,6 +72,7 @@ export enum ContextModule {
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   intextTooltip = "intextTooltip",
+  inquiry = 'inquiry',
   latestViewingRoomsRail = "latestViewingRoomsRail",
   liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
@@ -176,6 +177,7 @@ export type AuthContextModule =
   | ContextModule.geneHeader
   | ContextModule.header
   | ContextModule.intextTooltip
+  | ContextModule.inquiry
   | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
