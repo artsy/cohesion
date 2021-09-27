@@ -32,6 +32,7 @@ export interface SuccessfullyLoggedInArgs {
  *   userId: "5bd8b675776bd6002c86526c"
  * })
  * ```
+ * @deprecated
  */
 export const successfullyLoggedIn = ({
   authRedirect,
