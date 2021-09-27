@@ -33,7 +33,7 @@ export interface SentArtworkInquiry {
   artwork_id: string
   artwork_slug: string
   inquiry_id: string
-  products: InquiryProduct
+  products: InquiryProduct[]
 }
 
 /**
@@ -43,4 +43,4 @@ export type InquiryProduct = {
   price: number
   product_id: string
   quantity: 1
-}[]
+}
