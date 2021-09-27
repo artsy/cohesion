@@ -1,3 +1,15 @@
+# v4.2.0 (Mon Sep 27 2021)
+
+#### 🚀  Enhancement
+
+- Fixes to types for new inquiry [#239](https://github.com/artsy/cohesion/pull/239) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.1.0 (Fri Sep 24 2021)
 
 #### 🚀  Enhancement
