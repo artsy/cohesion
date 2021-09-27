@@ -472,6 +472,10 @@ export enum ActionType {
    */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
+   * Corresponds to {@link sentArtworkInquiry}
+   */
+  sentArtworkInquiry = "sentArtworkInquiry",
+  /**
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
