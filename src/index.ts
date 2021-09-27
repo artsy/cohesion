@@ -1,2 +1,2 @@
-export * from "./Events"
+export * from "./DeprecatedHelpers"
 export * from "./Schema"
