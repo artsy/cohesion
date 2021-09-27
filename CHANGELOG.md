@@ -1,3 +1,15 @@
+# v4.4.0 (Mon Sep 27 2021)
+
+#### 🚀  Enhancement
+
+- Revert "Revert "Sent inquiry"" [#241](https://github.com/artsy/cohesion/pull/241) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.3.0 (Mon Sep 27 2021)
 
 #### 🚀  Enhancement
