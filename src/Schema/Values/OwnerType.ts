@@ -51,6 +51,7 @@ export enum OwnerType {
   search = "search",
   sell = "sell",
   show = "show",
+  shows = "shows",
   savesAndFollows = "savesAndFollows",
   user = "user",
   viewingRoom = "viewingRoom",
@@ -105,6 +106,7 @@ export type ScreenOwnerType =
   | OwnerType.savesAndFollows
   | OwnerType.sell
   | OwnerType.show
+  | OwnerType.shows
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworks
   | OwnerType.viewingRoomList
@@ -128,6 +130,7 @@ export type PageOwnerType =
   | OwnerType.collections
   | OwnerType.consign
   | OwnerType.fair
+  | OwnerType.fairs
   | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home

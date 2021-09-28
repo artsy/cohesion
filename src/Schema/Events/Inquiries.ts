@@ -1,4 +1,4 @@
-import { ActionType } from ".";
+import { ActionType } from "."
 
 /**
  * Schemas describing inquiry events
