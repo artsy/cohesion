@@ -157,6 +157,7 @@ export type AuthContextModule =
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
   | ContextModule.auctionHome
+  | ContextModule.auctionLots
   | ContextModule.auctionResult
   | ContextModule.auctionResults
   | ContextModule.auctionsInfo

@@ -142,6 +142,7 @@ export type PageOwnerType =
   | OwnerType.sale
   | OwnerType.search
   | OwnerType.show
+  | OwnerType.shows
   | OwnerType.user
   | OwnerType.viewingRoom
   | OwnerType.viewingRooms
