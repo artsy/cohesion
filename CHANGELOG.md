@@ -1,3 +1,15 @@
+# v4.4.1 (Wed Sep 29 2021)
+
+#### 🐛  Bug Fix
+
+- feature: Add missing Home props [#242](https://github.com/artsy/cohesion/pull/242) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.4.0 (Mon Sep 27 2021)
 
 #### 🚀  Enhancement
