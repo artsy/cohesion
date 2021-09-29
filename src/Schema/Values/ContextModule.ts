@@ -72,7 +72,7 @@ export enum ContextModule {
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   intextTooltip = "intextTooltip",
-  inquiry = 'inquiry',
+  inquiry = "inquiry",
   latestViewingRoomsRail = "latestViewingRoomsRail",
   liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
@@ -157,6 +157,7 @@ export type AuthContextModule =
   | ContextModule.auctionSidebar
   | ContextModule.auctionRail
   | ContextModule.auctionHome
+  | ContextModule.auctionLots
   | ContextModule.auctionResult
   | ContextModule.auctionResults
   | ContextModule.auctionsInfo
@@ -173,6 +174,7 @@ export type AuthContextModule =
   | ContextModule.fairsHeader
   | ContextModule.featuredArtists
   | ContextModule.featuredArtistsRail
+  | ContextModule.featuredGalleriesRail
   | ContextModule.footer
   | ContextModule.geneHeader
   | ContextModule.header
@@ -203,6 +205,7 @@ export type AuthContextModule =
   | ContextModule.standoutLots
   | ContextModule.tagHeader
   | ContextModule.topWorksRail
+  | ContextModule.trendingArtistsRail
   | ContextModule.trendingLots
   | ContextModule.worksByPopularArtistsRail
   | ContextModule.worksByArtistsYouFollowRail
