@@ -40,6 +40,14 @@ export enum OwnerType {
   myCollection = "myCollection",
   myCollectionArtwork = "myCollectionArtwork",
   onboarding = "onboarding",
+  ordersAccept = "orders-accept",
+  ordersCounter = "orders-counter",
+  ordersNewPayment = "orders-new-payment",
+  ordersOffer = "orders-offer",
+  ordersPayment = "orders-payment",
+  ordersRespond = "orders-respond",
+  ordersReview = "orders-review",
+  ordersShipping = "orders-shipping",
   partner = "partner",
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",
@@ -135,6 +143,14 @@ export type PageOwnerType =
   | OwnerType.gene
   | OwnerType.home
   | OwnerType.onboarding
+  | OwnerType.ordersAccept
+  | OwnerType.ordersCounter
+  | OwnerType.ordersNewPayment
+  | OwnerType.ordersOffer
+  | OwnerType.ordersPayment
+  | OwnerType.ordersRespond
+  | OwnerType.ordersReview
+  | OwnerType.ordersShipping
   | OwnerType.partner
   | OwnerType.partnerShowsArtworks
   | OwnerType.priceDatabase
