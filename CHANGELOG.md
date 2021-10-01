@@ -1,3 +1,15 @@
+# v4.5.0 (Fri Oct 01 2021)
+
+#### 🚀  Enhancement
+
+- feat: Add newWorksForYouRail context module and owner type [#244](https://github.com/artsy/cohesion/pull/244) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.4.1 (Wed Sep 29 2021)
 
 #### 🐛  Bug Fix
