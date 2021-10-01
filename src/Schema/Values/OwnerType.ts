@@ -39,6 +39,7 @@ export enum OwnerType {
   inboxInquiries = "inboxInquiries",
   myCollection = "myCollection",
   myCollectionArtwork = "myCollectionArtwork",
+  newWorksForYou = "newWorksForYou",
   onboarding = "onboarding",
   partner = "partner",
   partnerShowsArtworks = "partnerShowsArtworks",
