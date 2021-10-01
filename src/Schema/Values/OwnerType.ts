@@ -96,6 +96,7 @@ export type ScreenOwnerType =
   | OwnerType.inboxInquiries
   | OwnerType.myCollection
   | OwnerType.myCollectionArtwork
+  | OwnerType.newWorksForYou
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
