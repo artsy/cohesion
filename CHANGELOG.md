@@ -1,3 +1,15 @@
+# v4.6.0 (Fri Oct 01 2021)
+
+#### 🚀  Enhancement
+
+- feat: Add newWorksForYou screen owner type [#245](https://github.com/artsy/cohesion/pull/245) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.5.0 (Fri Oct 01 2021)
 
 #### 🚀  Enhancement
