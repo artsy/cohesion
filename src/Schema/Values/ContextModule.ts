@@ -85,6 +85,7 @@ export enum ContextModule {
   myCollectionHome = "myCollectionHome",
   marketInsights = "marketInsights",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
+  newWorksForYouRail = "newWorksForYouRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   ordersShipping = "ordersShipping",
   ordersReview = "ordersReview",
