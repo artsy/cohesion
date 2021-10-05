@@ -1,3 +1,15 @@
+# v4.7.0 (Tue Oct 05 2021)
+
+#### 🚀  Enhancement
+
+- chore(deps): update cimg/python docker tag to v3.10 [#246](https://github.com/artsy/cohesion/pull/246) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.6.0 (Fri Oct 01 2021)
 
 #### 🚀  Enhancement
