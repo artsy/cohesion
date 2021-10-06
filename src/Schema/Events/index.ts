@@ -492,6 +492,10 @@ export enum ActionType {
    */
   tappedArticleGroup = "tappedArticleGroup",
   /**
+   * Corresponds to {@link TappedShowGroup}
+   */
+  tappedShowGroup = "tappedShowGroup",
+  /**
    * Corresponds to {@link TappedArtistGroup}
    */
   tappedArtistGroup = "tappedArtistGroup",
