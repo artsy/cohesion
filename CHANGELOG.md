@@ -1,3 +1,15 @@
+# v4.8.0 (Wed Oct 06 2021)
+
+#### 🚀  Enhancement
+
+- Added show and shows [#247](https://github.com/artsy/cohesion/pull/247) ([@rajsam003](https://github.com/rajsam003))
+
+#### Authors: 1
+
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+
+---
+
 # v4.7.0 (Tue Oct 05 2021)
 
 #### 🚀  Enhancement
