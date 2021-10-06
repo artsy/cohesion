@@ -40,6 +40,10 @@ export interface TappedArticleGroup extends TappedEntityGroup {
   action: ActionType.tappedArticleGroup
 }
 
+export interface TappedShowGroup extends TappedEntityGroup {
+  action: ActionType.tappedShowGroup
+}
+
 /**
  * A user taps a grouping of artists on iOS
  *
@@ -238,6 +242,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
 export interface TappedEntityGroup {
   action:
     | ActionType.tappedArticleGroup
+    | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
