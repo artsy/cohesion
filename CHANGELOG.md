@@ -1,3 +1,15 @@
+# v4.9.0 (Wed Oct 06 2021)
+
+#### 🚀  Enhancement
+
+- chore: move shipping constants into cohesion [#243](https://github.com/artsy/cohesion/pull/243) ([@pepopowitz](https://github.com/pepopowitz))
+
+#### Authors: 1
+
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+
+---
+
 # v4.8.0 (Wed Oct 06 2021)
 
 #### 🚀  Enhancement
