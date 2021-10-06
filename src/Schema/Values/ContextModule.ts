@@ -20,12 +20,11 @@ export enum ContextModule {
   artistsToFollowRail = "artistsToFollowRail",
   artworkGrid = "artworkGrid",
   artworkImage = "artworkImage",
-  artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
   artworkMetadata = "artworkMetadata",
+  artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
   artworkSidebar = "artworkSidebar",
   artworksTab = "artworksTab",
   associatedViewingRoom = "associatedViewingRoom",
-  auctionSidebar = "auctionSidebar",
   auctionCard = "auctionCard",
   auctionHome = "auctionHome",
   auctionLots = "auctionLots",
@@ -34,6 +33,7 @@ export enum ContextModule {
   auctionResults = "auctionResults",
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctionResultsRail = "auctionResultsRail",
+  auctionSidebar = "auctionSidebar",
   auctionsInfo = "auctionsInfo",
   banner = "banner",
   bannerPopUp = "bannerPopUp",
@@ -41,19 +41,19 @@ export enum ContextModule {
   browseFair = "browseFair",
   categoryRail = "categoryRail",
   cityGuideCard = "cityGuideCard",
+  collectionCard = "collectionCard",
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",
-  collectionCard = "collectionCard",
   consignSubmissionFlow = "consignSubmissionFlow",
   curatedHighlightsRail = "curatedHighlightsRail",
   currentAuctions = "currentAuctions",
   currentShowsRail = "currentShowsRail",
   exhibitorsTab = "exhibitorsTab",
+  fairCard = "fairCard",
+  fairHome = "fairHome",
   fairInfo = "fairInfo",
   fairOrganizerHeader = "fairOrganizerHeader",
   fairRail = "fairRail",
-  fairCard = "fairCard",
-  fairHome = "fairHome",
   fairsHeader = "fairsHeader",
   featuredArtists = "featuredArtists",
   featuredArtistsRail = "featuredArtistsRail",
@@ -71,28 +71,34 @@ export enum ContextModule {
   inboxClosedBids = "inboxClosedBids",
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
-  intextTooltip = "intextTooltip",
   inquiry = "inquiry",
+  intextTooltip = "intextTooltip",
   latestViewingRoomsRail = "latestViewingRoomsRail",
   liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
   mainCarousel = "mainCarousel",
+  marketInsights = "marketInsights",
   marketNews = "marketNews",
   minimalCTABanner = "minimalCTABanner",
   moreFromThisSeries = "moreFromThisSeries",
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
   myCollectionArtwork = "myCollectionArtwork",
   myCollectionHome = "myCollectionHome",
-  marketInsights = "marketInsights",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
-  ordersShipping = "ordersShipping",
-  ordersReview = "ordersReview",
   onboardingArtists = "onboardingArtists",
   onboardingBudget = "onboardingBudget",
   onboardingGenes = "onboardingGenes",
   onboardingInterests = "onboardingInterests",
+  ordersAccept = "ordersAccept",
+  ordersCounter = "ordersCounter",
+  ordersNewPayment = "ordersNewPayment",
+  ordersOffer = "ordersOffer",
+  ordersPayment = "ordersPayment",
+  ordersRespond = "ordersRespond",
+  ordersReview = "ordersReview",
+  ordersShipping = "ordersShipping",
   otherCollectionsRail = "otherCollectionsRail",
   otherWorksByArtistRail = "otherWorksByArtistRail",
   otherWorksFromPartnerRail = "otherWorksFromPartnerRail",
@@ -107,9 +113,9 @@ export enum ContextModule {
   presentingPartner = "presentingPartner",
   priceDatabase = "priceDatabase",
   priceDatabaseLanding = "priceDatabaseLanding",
-  pushNotifications = "pushNotifications",
   priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
+  pushNotifications = "pushNotifications",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
   recommendedArtistsRail = "recommendedArtistsRail",
@@ -135,8 +141,8 @@ export enum ContextModule {
   upcomingAuctions = "upcomingAuctions",
   viewingRoom = "viewingRoom",
   voltArtworksEdit = "voltArtworksEdit",
-  worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksByArtistsYouFollowRail = "worksByArtistsYouFollowRail",
+  worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksForSaleRail = "worksForSaleRail",
   yourActiveBids = "yourActiveBids",
 }
@@ -155,12 +161,12 @@ export type AuthContextModule =
   | ContextModule.artworkImage
   | ContextModule.artworkSidebar
   | ContextModule.associatedViewingRoom
-  | ContextModule.auctionSidebar
-  | ContextModule.auctionRail
   | ContextModule.auctionHome
   | ContextModule.auctionLots
+  | ContextModule.auctionRail
   | ContextModule.auctionResult
   | ContextModule.auctionResults
+  | ContextModule.auctionSidebar
   | ContextModule.auctionsInfo
   | ContextModule.bannerPopUp
   | ContextModule.boothsTab
@@ -179,8 +185,8 @@ export type AuthContextModule =
   | ContextModule.footer
   | ContextModule.geneHeader
   | ContextModule.header
-  | ContextModule.intextTooltip
   | ContextModule.inquiry
+  | ContextModule.intextTooltip
   | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
@@ -208,7 +214,7 @@ export type AuthContextModule =
   | ContextModule.topWorksRail
   | ContextModule.trendingArtistsRail
   | ContextModule.trendingLots
-  | ContextModule.worksByPopularArtistsRail
-  | ContextModule.worksByArtistsYouFollowRail
-  | ContextModule.worksForSaleRail
   | ContextModule.viewingRoom
+  | ContextModule.worksByArtistsYouFollowRail
+  | ContextModule.worksByPopularArtistsRail
+  | ContextModule.worksForSaleRail
