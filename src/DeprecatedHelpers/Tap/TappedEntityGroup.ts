@@ -27,6 +27,8 @@ export type TappedEntityDestinationType =
   | OwnerType.savesAndFollows
   | OwnerType.gene
   | OwnerType.worksForYou
+  | OwnerType.show
+  | OwnerType.shows
 
 export interface TappedEntityGroupArgs {
   contextModule: ContextModule
