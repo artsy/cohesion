@@ -128,12 +128,4 @@ describe("tappedEntityGroup", () => {
     })
     expect(event.action).toEqual("tappedFairGroup")
   })
-
-  it("Constructs TappedShowGroup events", () => {
-    const event = tappedEntityGroup({
-      ...args,
-      destinationScreenOwnerType: OwnerType.show,
-    })
-    expect(event.action).toEqual("tappedShowGroup")
-  })
 })
