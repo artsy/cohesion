@@ -1,3 +1,15 @@
+# v4.10.0 (Thu Oct 07 2021)
+
+#### 🚀  Enhancement
+
+- Adding showsRail in Context module [#249](https://github.com/artsy/cohesion/pull/249) ([@rajsam003](https://github.com/rajsam003))
+
+#### Authors: 1
+
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+
+---
+
 # v4.9.0 (Wed Oct 06 2021)
 
 #### 🚀  Enhancement
