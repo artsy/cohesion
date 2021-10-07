@@ -129,6 +129,7 @@ export enum ContextModule {
   sellHeader = "sellHeader",
   showHeader = "showHeader",
   showInfo = "showInfo",
+  showsRail = "showsRail",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
   standoutLots = "standoutLots",
