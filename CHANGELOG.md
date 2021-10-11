@@ -1,3 +1,16 @@
+# v4.12.0 (Mon Oct 11 2021)
+
+#### 🚀  Enhancement
+
+- refactor(FX-3342): remove successfullyloggedin deprecated helper [#253](https://github.com/artsy/cohesion/pull/253) ([@gkartalis](https://github.com/gkartalis) [@pvinis](https://github.com/pvinis))
+
+#### Authors: 2
+
+- George Kartalis ([@gkartalis](https://github.com/gkartalis))
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v4.11.0 (Mon Oct 11 2021)
 
 #### 🚀  Enhancement
