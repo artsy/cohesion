@@ -1,3 +1,21 @@
+# v4.11.0 (Mon Oct 11 2021)
+
+#### 🚀  Enhancement
+
+- refactor(FX-3341): remove resetYourPassword deprecated helper [#252](https://github.com/artsy/cohesion/pull/252) ([@gkartalis](https://github.com/gkartalis))
+
+#### 🏠  Internal
+
+- chore(deps): update dep @artsy/auto-config from 1.0.2 to v1.1.0 [#237](https://github.com/artsy/cohesion/pull/237) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- George Kartalis ([@gkartalis](https://github.com/gkartalis))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.10.0 (Thu Oct 07 2021)
 
 #### 🚀  Enhancement
