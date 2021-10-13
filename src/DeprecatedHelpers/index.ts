@@ -1,6 +1,5 @@
 export * from "./AddToCalendar"
 export * from "./Share"
-export * from "./Authentication/AuthImpression"
 export * from "./Authentication/CreatedAccount"
 export * from "./Click/ClickedAppDownload"
 export * from "./Click/ClickedArticleGroup"
