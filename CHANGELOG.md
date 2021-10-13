@@ -1,3 +1,22 @@
+# v4.13.0 (Wed Oct 13 2021)
+
+#### 🚀  Enhancement
+
+- refactor(FX-2978): remove authImpression deprecated helper [#248](https://github.com/artsy/cohesion/pull/248) ([@araujobarret](https://github.com/araujobarret))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.4.3 to v4.4.4 [#254](https://github.com/artsy/cohesion/pull/254) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update auto orb from 1.4.0 to v2 [#250](https://github.com/artsy/cohesion/pull/250) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Carlos Alberto de Araujo Barreto ([@araujobarret](https://github.com/araujobarret))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.12.0 (Mon Oct 11 2021)
 
 #### 🚀  Enhancement
