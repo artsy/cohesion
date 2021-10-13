@@ -49,6 +49,7 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
   TappedInboxConversation,
+  TappedContactGallery, 
   TappedMakeOffer,
   TappedViewOffer,
 } from "./Conversations"
@@ -84,6 +85,8 @@ import {
   TappedArtworkGroup,
   TappedAuctionGroup,
   TappedAuctionResultGroup,
+  TappedBid,
+  TappedBuyNow, 
   TappedCollectionGroup,
   TappedConsign,
   TappedCreateAlert,
@@ -181,10 +184,13 @@ export type Event =
   | TappedArtworkGroup
   | TappedAuctionGroup
   | TappedAuctionResultGroup
+  | TappedBid
+  | TappedBuyNow
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
   | TappedCollectionGroup
   | TappedConsign
+  | TappedContactGallery
   | TappedCreateAlert
   | TappedExploreGroup
   | TappedFairCard
@@ -388,6 +394,10 @@ export enum ActionType {
    */
   consignmentArtistFailed = "consignmentArtistFailed",
   /**
+   * Corresponds to {@link ContactGallery}
+   */
+   contactGallery = "contactGallery",
+  /**
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
@@ -516,6 +526,14 @@ export enum ActionType {
    */
   tappedAuctionResultGroup = "tappedAuctionResultGroup",
   /**
+  * Corresponds to {@link TappedBid}
+  */
+   tappedBid = "tappedBid",
+  /**
+  * Corresponds to {@link TappedBuyNow}
+  */
+     tappedBuyNow = "tappedBuyNow",
+  /**
    * Corresponds to {@link TappedCollectedArtwork}
    */
   tappedCollectedArtwork = "tappedCollectedArtwork",
@@ -531,6 +549,10 @@ export enum ActionType {
    * Corresponds to {@link TappedConsign}
    */
   tappedConsign = "tappedConsign",
+  /**
+   * Corresponds to {@link TappedContactGallery}
+   */
+   tappedContactGallery = "tappedContactGallery",
   /**
    * Corresponds to {@link TappedCreateAlert}
    */
@@ -638,5 +660,5 @@ export enum ActionType {
   /**
    * Corresponds to {@link UnfollowedPartner}
    */
-  unfollowedPartner = "unfollowedPartner",
+  unfollowedPartner = "unfollowedPartner", 
 }

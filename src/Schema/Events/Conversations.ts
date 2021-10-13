@@ -2,6 +2,7 @@ import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
+
 /**
  * Schemas describing Conversation events
  * @packageDocumentation
@@ -76,7 +77,7 @@ export interface TappedInboxConversation {
 }
 
 /**
- * A user taps the make offer button
+ * A user taps the make offer button either on an artwork page (BNMO) or inquiry conversation. 
  *
  * This schema describes events sent to Segment from [[tappedMakeOffer]]
  *
@@ -91,8 +92,11 @@ export interface TappedInboxConversation {
  */
 export interface TappedMakeOffer {
   action: ActionType.tappedMakeOffer
-  context_owner_type: OwnerType.conversation
-  impulse_conversation_id: string
+  context_owner_type: OwnerType
+  context_owner_slug?: string
+  context_owner_id?: string
+  impulse_conversation_id?: string
+
 }
 
 /**
@@ -120,4 +124,28 @@ export interface TappedViewOffer {
 export interface TappedConfirmArtwork {
   context_module: OwnerType.conversationMakeOfferConfirmArtwork
   context_owner_type: OwnerType.conversation
+}
+
+/**
+ * A user taps on 'Contact Gallery' on an artwork page 
+ *
+ * This schema describes events sent to Segment from [[tappedContactGallery]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedContactGallery",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+
+ *  }
+ * ```
+ */
+
+export interface TappedContactGallery {
+  action: ActionType.tappedContactGallery
+  context_owner_type: OwnerType
+  context_owner_slug: string
+  context_owner_id: string
 }
