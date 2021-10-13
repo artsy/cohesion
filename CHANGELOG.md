@@ -1,3 +1,15 @@
+# v4.14.0 (Wed Oct 13 2021)
+
+#### 🚀  Enhancement
+
+- refactor(FX-3340): remove createdAccount deprecated helper [#251](https://github.com/artsy/cohesion/pull/251) ([@gkartalis](https://github.com/gkartalis))
+
+#### Authors: 1
+
+- George Kartalis ([@gkartalis](https://github.com/gkartalis))
+
+---
+
 # v4.13.0 (Wed Oct 13 2021)
 
 #### 🚀  Enhancement
