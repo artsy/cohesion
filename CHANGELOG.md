@@ -1,3 +1,15 @@
+# v4.15.0 (Thu Oct 14 2021)
+
+#### 🚀  Enhancement
+
+- Adding new events to Cohesion [#255](https://github.com/artsy/cohesion/pull/255) ([@audrey-thenot](https://github.com/audrey-thenot))
+
+#### Authors: 1
+
+- [@audrey-thenot](https://github.com/audrey-thenot)
+
+---
+
 # v4.14.0 (Wed Oct 13 2021)
 
 #### 🚀  Enhancement
