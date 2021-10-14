@@ -49,7 +49,6 @@ import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
   TappedInboxConversation,
-  TappedContactGallery, 
   TappedMakeOffer,
   TappedViewOffer,
 } from "./Conversations"
@@ -89,6 +88,7 @@ import {
   TappedBuyNow, 
   TappedCollectionGroup,
   TappedConsign,
+  TappedContactGallery, 
   TappedCreateAlert,
   TappedExploreGroup,
   TappedFairCard,

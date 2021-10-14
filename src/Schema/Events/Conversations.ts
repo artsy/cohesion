@@ -125,27 +125,3 @@ export interface TappedConfirmArtwork {
   context_module: OwnerType.conversationMakeOfferConfirmArtwork
   context_owner_type: OwnerType.conversation
 }
-
-/**
- * A user taps on 'Contact Gallery' on an artwork page 
- *
- * This schema describes events sent to Segment from [[tappedContactGallery]]
- *
- *  @example
- *  ```
- *  {
- *    action: "tappedContactGallery",
- *    context_owner_type: "Artwork",
- *    context_owner_slug: "radna-segal-pearl",
- *    context_owner_id: "6164889300d643000db86504",
-
- *  }
- * ```
- */
-
-export interface TappedContactGallery {
-  action: ActionType.tappedContactGallery
-  context_owner_type: OwnerType
-  context_owner_slug: string
-  context_owner_id: string
-}
