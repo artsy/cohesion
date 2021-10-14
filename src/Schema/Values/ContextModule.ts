@@ -16,6 +16,7 @@ export enum ContextModule {
   artistHighDemandGrid = "artistHighDemandGrid",
   artistRecentlySold = "artistRecentlySold",
   artistSeriesRail = "artistSeriesRail",
+  artistSeriesTab = "artistSeriesTab",
   artistsTab = "artistsTab",
   artistsToFollowRail = "artistsToFollowRail",
   artworkGrid = "artworkGrid",
@@ -35,6 +36,7 @@ export enum ContextModule {
   auctionResultsRail = "auctionResultsRail",
   auctionSidebar = "auctionSidebar",
   auctionsInfo = "auctionsInfo",
+  auctionTab = "auctionTab",
   banner = "banner",
   bannerPopUp = "bannerPopUp",
   boothsTab = "boothsTab",
@@ -55,6 +57,7 @@ export enum ContextModule {
   fairOrganizerHeader = "fairOrganizerHeader",
   fairRail = "fairRail",
   fairsHeader = "fairsHeader",
+  fairTab = "fairTab",
   featuredArtists = "featuredArtists",
   featuredArtistsRail = "featuredArtistsRail",
   featuredCollection = "featuredCollection",
@@ -65,6 +68,7 @@ export enum ContextModule {
   featuredViewingRoomsRail = "featuredViewingRoomsRail",
   footer = "footer",
   galleryBoothRail = "galleryBoothRail",
+  galleryTab = "galleryTab",
   geneHeader = "geneHeader",
   header = "header",
   inboxActiveBids = "inboxActiveBids",
@@ -130,12 +134,14 @@ export enum ContextModule {
   showHeader = "showHeader",
   showInfo = "showInfo",
   showsRail = "showsRail",
+  showTab = "showTab",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
   standoutLots = "standoutLots",
   tabBar = "tabBar",
   tagHeader = "tagHeader",
   toDoList = "toDoList",
+  topTab = "topTab",
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
   trendingLots = "trendingLots",
@@ -156,11 +162,13 @@ export type AuthContextModule =
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
   | ContextModule.artistSeriesRail
+  | ContextModule.artistSeriesTab
   | ContextModule.artistsTab
   | ContextModule.artistsToFollowRail
   | ContextModule.artworkGrid
   | ContextModule.artworkImage
   | ContextModule.artworkSidebar
+  | ContextModule.artworksTab
   | ContextModule.associatedViewingRoom
   | ContextModule.auctionHome
   | ContextModule.auctionLots
@@ -169,6 +177,7 @@ export type AuthContextModule =
   | ContextModule.auctionResults
   | ContextModule.auctionSidebar
   | ContextModule.auctionsInfo
+  | ContextModule.auctionTab
   | ContextModule.bannerPopUp
   | ContextModule.boothsTab
   | ContextModule.browseFair
@@ -180,10 +189,12 @@ export type AuthContextModule =
   | ContextModule.fairOrganizerHeader
   | ContextModule.fairRail
   | ContextModule.fairsHeader
+  | ContextModule.fairTab
   | ContextModule.featuredArtists
   | ContextModule.featuredArtistsRail
   | ContextModule.featuredGalleriesRail
   | ContextModule.footer
+  | ContextModule.galleryTab
   | ContextModule.geneHeader
   | ContextModule.header
   | ContextModule.inquiry
@@ -210,9 +221,11 @@ export type AuthContextModule =
   | ContextModule.saveWorksCTA
   | ContextModule.showHeader
   | ContextModule.showInfo
+  | ContextModule.showTab
   | ContextModule.standoutLots
   | ContextModule.tagHeader
   | ContextModule.topWorksRail
+  | ContextModule.topTab
   | ContextModule.trendingArtistsRail
   | ContextModule.trendingLots
   | ContextModule.viewingRoom
