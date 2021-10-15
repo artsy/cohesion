@@ -28,6 +28,7 @@ export interface CommercialFilterParamsChanged {
   context_owner_slug?: string
   current: string
   changed: string
+  query?: string
 }
 
 /**

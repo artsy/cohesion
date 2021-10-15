@@ -386,6 +386,7 @@ export interface TappedMainArtworkGrid {
   position?: number
   sort?: string
   type: "thumbnail"
+  query?: string
 }
 
 /**
@@ -561,6 +562,7 @@ export interface TappedNavigationTab {
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
   subject?: string
+  query?: string
 }
 
 /**
@@ -719,7 +721,6 @@ export interface TappedCreateAlert {
  * ```
  */
 
-
 export interface TappedBid {
   action: ActionType.tappedBid
   context_owner_type: ScreenOwnerType
@@ -767,12 +768,9 @@ export interface TappedBuyNow {
  * ```
  */
 
- export interface TappedContactGallery {
+export interface TappedContactGallery {
   action: ActionType.tappedContactGallery
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
 }
-
-
-
