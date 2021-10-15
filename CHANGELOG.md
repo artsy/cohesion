@@ -1,3 +1,15 @@
+# v4.16.0 (Fri Oct 15 2021)
+
+#### 🚀  Enhancement
+
+- Search revamp events [#256](https://github.com/artsy/cohesion/pull/256) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.15.0 (Thu Oct 14 2021)
 
 #### 🚀  Enhancement
