@@ -35,6 +35,7 @@ describe("clickedEntityGroup", () => {
       contextScreenOwnerId: "5359794d1a1e86c3740001f6",
       contextScreenOwnerSlug: "andy-warhol",
       contextScreenOwnerType: OwnerType.artist,
+      context_screen: "ArtistArtworks",
       position: 4,
       sort: "-decayed_merch",
     })
@@ -42,6 +43,7 @@ describe("clickedEntityGroup", () => {
     expect(event).toEqual({
       action: "tappedMainArtworkGrid",
       context_module: "artworkGrid",
+      context_screen: "ArtistArtworks",
       context_screen_owner_id: "5359794d1a1e86c3740001f6",
       context_screen_owner_slug: "andy-warhol",
       context_screen_owner_type: "artist",
