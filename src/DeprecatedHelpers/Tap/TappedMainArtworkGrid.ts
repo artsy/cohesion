@@ -14,6 +14,7 @@ export interface TappedMainArtworkGridArgs {
   destinationScreenOwnerSlug: string
   position?: number
   sort?: string
+  query?: string
 }
 
 /**
@@ -38,6 +39,7 @@ export const tappedMainArtworkGrid = ({
   destinationScreenOwnerSlug,
   position,
   sort,
+  query,
 }: TappedMainArtworkGridArgs): TappedMainArtworkGrid => {
   return {
     action: ActionType.tappedMainArtworkGrid,
@@ -51,5 +53,6 @@ export const tappedMainArtworkGrid = ({
     position,
     sort,
     type: "thumbnail",
+    query,
   }
 }
