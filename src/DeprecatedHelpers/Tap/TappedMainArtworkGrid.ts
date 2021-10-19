@@ -7,6 +7,7 @@ import {
 } from "../../Schema"
 
 export interface TappedMainArtworkGridArgs {
+  context_screen?: string
   contextScreenOwnerType: ScreenOwnerType
   contextScreenOwnerId?: string
   contextScreenOwnerSlug?: string
@@ -14,6 +15,7 @@ export interface TappedMainArtworkGridArgs {
   destinationScreenOwnerSlug: string
   position?: number
   sort?: string
+  query?: string
 }
 
 /**
@@ -31,6 +33,7 @@ export interface TappedMainArtworkGridArgs {
  * ```
  */
 export const tappedMainArtworkGrid = ({
+  context_screen,
   contextScreenOwnerType,
   contextScreenOwnerId,
   contextScreenOwnerSlug,
@@ -38,10 +41,12 @@ export const tappedMainArtworkGrid = ({
   destinationScreenOwnerSlug,
   position,
   sort,
+  query,
 }: TappedMainArtworkGridArgs): TappedMainArtworkGrid => {
   return {
     action: ActionType.tappedMainArtworkGrid,
     context_module: ContextModule.artworkGrid,
+    context_screen,
     context_screen_owner_id: contextScreenOwnerId,
     context_screen_owner_slug: contextScreenOwnerSlug,
     context_screen_owner_type: contextScreenOwnerType,
@@ -49,6 +54,7 @@ export const tappedMainArtworkGrid = ({
     destination_screen_owner_slug: destinationScreenOwnerSlug,
     destination_screen_owner_type: OwnerType.artwork,
     position,
+    query,
     sort,
     type: "thumbnail",
   }
