@@ -1,3 +1,15 @@
+# v4.17.0 (Tue Oct 19 2021)
+
+#### 🚀  Enhancement
+
+- feat: pass additional params to TappedMainArtworkGrid [#257](https://github.com/artsy/cohesion/pull/257) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.16.0 (Fri Oct 15 2021)
 
 #### 🚀  Enhancement
