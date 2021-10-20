@@ -1,3 +1,15 @@
+# v4.17.1 (Wed Oct 20 2021)
+
+#### 🐛  Bug Fix
+
+- fix: rename context_screen param to contextScreen for tappedMainArtworkGrid [#258](https://github.com/artsy/cohesion/pull/258) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.17.0 (Tue Oct 19 2021)
 
 #### 🚀  Enhancement
