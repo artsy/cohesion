@@ -32,10 +32,10 @@ describe("clickedEntityGroup", () => {
   it("Works with all args", () => {
     const event = tappedMainArtworkGrid({
       ...args,
+      contextScreen: "ArtistArtworks",
       contextScreenOwnerId: "5359794d1a1e86c3740001f6",
       contextScreenOwnerSlug: "andy-warhol",
       contextScreenOwnerType: OwnerType.artist,
-      context_screen: "ArtistArtworks",
       position: 4,
       sort: "-decayed_merch",
     })
