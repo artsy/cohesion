@@ -45,6 +45,7 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
 } from "./Click"
+import { ConsignmentSubmitted } from "./Consignments"
 import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
@@ -85,10 +86,10 @@ import {
   TappedAuctionGroup,
   TappedAuctionResultGroup,
   TappedBid,
-  TappedBuyNow, 
+  TappedBuyNow,
   TappedCollectionGroup,
   TappedConsign,
-  TappedContactGallery, 
+  TappedContactGallery,
   TappedCreateAlert,
   TappedExploreGroup,
   TappedFairCard,
@@ -158,6 +159,7 @@ export type Event =
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
   | ConsignmentArtistFailed
+  | ConsignmentSubmitted
   | DeleteCollectedArtwork
   | DeletedSavedSearch
   | EditCollectedArtwork
@@ -394,9 +396,13 @@ export enum ActionType {
    */
   consignmentArtistFailed = "consignmentArtistFailed",
   /**
+   * Corresponds to {@link ConsignmentSubmitted}
+   */
+  consignmentSubmitted = "consignmentSubmitted",
+  /**
    * Corresponds to {@link ContactGallery}
    */
-   contactGallery = "contactGallery",
+  contactGallery = "contactGallery",
   /**
    * Corresponds to {@link CreatedAccount}
    */
@@ -526,13 +532,13 @@ export enum ActionType {
    */
   tappedAuctionResultGroup = "tappedAuctionResultGroup",
   /**
-  * Corresponds to {@link TappedBid}
-  */
-   tappedBid = "tappedBid",
+   * Corresponds to {@link TappedBid}
+   */
+  tappedBid = "tappedBid",
   /**
-  * Corresponds to {@link TappedBuyNow}
-  */
-     tappedBuyNow = "tappedBuyNow",
+   * Corresponds to {@link TappedBuyNow}
+   */
+  tappedBuyNow = "tappedBuyNow",
   /**
    * Corresponds to {@link TappedCollectedArtwork}
    */
@@ -552,7 +558,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link TappedContactGallery}
    */
-   tappedContactGallery = "tappedContactGallery",
+  tappedContactGallery = "tappedContactGallery",
   /**
    * Corresponds to {@link TappedCreateAlert}
    */
@@ -660,5 +666,5 @@ export enum ActionType {
   /**
    * Corresponds to {@link UnfollowedPartner}
    */
-  unfollowedPartner = "unfollowedPartner", 
+  unfollowedPartner = "unfollowedPartner",
 }
