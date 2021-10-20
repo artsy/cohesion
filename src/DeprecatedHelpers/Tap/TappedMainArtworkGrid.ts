@@ -7,7 +7,7 @@ import {
 } from "../../Schema"
 
 export interface TappedMainArtworkGridArgs {
-  context_screen?: string
+  contextScreen?: string
   contextScreenOwnerType: ScreenOwnerType
   contextScreenOwnerId?: string
   contextScreenOwnerSlug?: string
@@ -33,7 +33,7 @@ export interface TappedMainArtworkGridArgs {
  * ```
  */
 export const tappedMainArtworkGrid = ({
-  context_screen,
+  contextScreen,
   contextScreenOwnerType,
   contextScreenOwnerId,
   contextScreenOwnerSlug,
@@ -46,7 +46,7 @@ export const tappedMainArtworkGrid = ({
   return {
     action: ActionType.tappedMainArtworkGrid,
     context_module: ContextModule.artworkGrid,
-    context_screen,
+    context_screen: contextScreen,
     context_screen_owner_id: contextScreenOwnerId,
     context_screen_owner_slug: contextScreenOwnerSlug,
     context_screen_owner_type: contextScreenOwnerType,
