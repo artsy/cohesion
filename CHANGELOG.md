@@ -1,3 +1,15 @@
+# v4.18.0 (Thu Oct 21 2021)
+
+#### 🚀  Enhancement
+
+- Adds consignmentSubmitted event [#259](https://github.com/artsy/cohesion/pull/259) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v4.17.1 (Wed Oct 20 2021)
 
 #### 🐛  Bug Fix
