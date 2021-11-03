@@ -28,5 +28,5 @@ export interface PromptForReview {
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-  subject: "ios" | "android"
+  platform: "ios" | "android"
 }
