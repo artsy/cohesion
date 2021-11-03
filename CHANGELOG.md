@@ -1,3 +1,15 @@
+# v4.19.0 (Wed Nov 03 2021)
+
+#### 🚀  Enhancement
+
+- feat(CX-2146): add promptForReview event [#260](https://github.com/artsy/cohesion/pull/260) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.18.0 (Thu Oct 21 2021)
 
 #### 🚀  Enhancement
