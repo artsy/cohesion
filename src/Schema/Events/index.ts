@@ -65,6 +65,7 @@ import {
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
 } from "./MyCollection"
+import { PromptForReview } from "./PromptForReview"
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
@@ -170,6 +171,7 @@ export type Event =
   | FollowEvents
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
+  | PromptForReview
   | ResetYourPassword
   | SaleScreenLoadComplete
   | Screen
@@ -459,6 +461,10 @@ export enum ActionType {
    * Corresponds to {@link PriceDatabaseFilterParamsChanged}
    */
   priceDatabaseFilterParamsChanged = "priceDatabaseFilterParamsChanged",
+  /**
+   * Corresponds to {@link PromptForReview}
+   */
+  promptForReview = "promptForReview",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
