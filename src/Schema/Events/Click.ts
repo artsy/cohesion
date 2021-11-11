@@ -976,3 +976,25 @@ export interface ClickedPromoSpace {
   destination_path: string
   subject: string
 }
+
+/**
+ * A user clicks create alert button
+ *
+ * This schema describes events sent to Segment from [[clickedCreateAlert]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCreateAlert",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "5359794d1a1e86c3740001f7",
+ *    context_page_owner_slug: "anthony-hunter",
+ *  }
+ * ```
+ */
+export interface ClickedCreateAlert {
+  action: ActionType.clickedCreateAlert
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+}

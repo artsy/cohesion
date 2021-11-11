@@ -21,6 +21,7 @@ import {
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
   ClickedCollectionGroup,
+  ClickedCreateAlert,
   ClickedDeliveryMethod,
   ClickedEditArtwork,
   ClickedExpansionToggle,
@@ -135,6 +136,7 @@ export type Event =
   | ClickedChangeShippingAddress
   | ClickedChangeShippingMethod
   | ClickedCollectionGroup
+  | ClickedCreateAlert
   | ClickedDeliveryMethod
   | ClickedEditArtwork
   | ClickedExpansionToggle
@@ -296,6 +298,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedCollectionGroup}
    */
   clickedCollectionGroup = "clickedCollectionGroup",
+  /**
+   * Corresponds to {@link ClickedCreateAlert}
+   */
+  clickedCreateAlert = "clickedCreateAlert",
   /**
    * Corresponds to {@link ClickedDeliveryMethod}
    */
