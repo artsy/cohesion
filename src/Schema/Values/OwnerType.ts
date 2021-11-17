@@ -49,7 +49,7 @@ export enum OwnerType {
   ordersRespond = "orders-respond",
   ordersReview = "orders-review",
   ordersShipping = "orders-shipping",
-  ordersSubmitted = "ordersSubmitted",
+  ordersSubmitted = "orders-submitted",
   partner = "partner",
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",
