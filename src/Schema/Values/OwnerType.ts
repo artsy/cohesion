@@ -49,6 +49,7 @@ export enum OwnerType {
   ordersRespond = "orders-respond",
   ordersReview = "orders-review",
   ordersShipping = "orders-shipping",
+  ordersSubmitted = "orders-submitted",
   partner = "partner",
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",
@@ -153,6 +154,7 @@ export type PageOwnerType =
   | OwnerType.ordersRespond
   | OwnerType.ordersReview
   | OwnerType.ordersShipping
+  | OwnerType.ordersSubmitted
   | OwnerType.partner
   | OwnerType.partnerShowsArtworks
   | OwnerType.priceDatabase
