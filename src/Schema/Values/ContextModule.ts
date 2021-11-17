@@ -103,6 +103,7 @@ export enum ContextModule {
   ordersRespond = "ordersRespond",
   ordersReview = "ordersReview",
   ordersShipping = "ordersShipping",
+  ordersSubmitted = "ordersSubmitted",
   otherCollectionsRail = "otherCollectionsRail",
   otherWorksByArtistRail = "otherWorksByArtistRail",
   otherWorksFromPartnerRail = "otherWorksFromPartnerRail",
