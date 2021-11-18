@@ -34,6 +34,7 @@ export enum ContextModule {
   auctionResults = "auctionResults",
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctionResultsRail = "auctionResultsRail",
+  auctionResultComparableWorks = "auctionResultComparableWorks",
   auctionSidebar = "auctionSidebar",
   auctionsInfo = "auctionsInfo",
   auctionTab = "auctionTab",
@@ -176,6 +177,7 @@ export type AuthContextModule =
   | ContextModule.auctionRail
   | ContextModule.auctionResult
   | ContextModule.auctionResults
+  | ContextModule.auctionResultComparableWorks
   | ContextModule.auctionSidebar
   | ContextModule.auctionsInfo
   | ContextModule.auctionTab
