@@ -1,3 +1,20 @@
+# v4.21.0 (Thu Nov 18 2021)
+
+#### 🚀  Enhancement
+
+- feat: Added auction result comparable works [#265](https://github.com/artsy/cohesion/pull/265) ([@rajsam003](https://github.com/rajsam003))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.4.4 to v4.5.2 [#264](https://github.com/artsy/cohesion/pull/264) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.20.0 (Wed Nov 17 2021)
 
 #### 🚀  Enhancement
