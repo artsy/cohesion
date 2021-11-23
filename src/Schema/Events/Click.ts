@@ -14,7 +14,6 @@ import { ActionType } from "."
  *  Events are separated by entity type
  *
  */
-
 /**
  *  User clicks to add new shipping address when entering the orders
  *  checkout flow.
@@ -520,6 +519,37 @@ export interface ClickedNavigationTab {
   context_page_owner_slug?: string
   destination_path: string
   subject: string
+}
+
+/**
+ *  User clicks in one of the price options on the offer page
+ *
+ *  This schema describes events sent to Segment from [[clickedOfferOption]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOfferOption",
+ *    flow: "Make Offer",
+ *    context_page_owner_type: "orders-offer",
+ *    context_page_owner_id: "dd0cbbb5-300b-4c49-92a1-fed55b077fa9",
+ *    order_id: "407dd09f-4afd-4aad-a6cc-1d6704dc2b11",
+ *    offer: "20% below the list price",
+ *    amount: 2000,
+ *    currency: "USD"
+ *  }
+ * ```
+ */
+ export interface ClickedOfferOption {
+  action: ActionType.clickedOfferOption
+  flow: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  order_id: string
+  offer: string
+  amount: number
+  currency: string
+
 }
 
 /**
