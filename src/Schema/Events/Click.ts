@@ -530,17 +530,26 @@ export interface ClickedNavigationTab {
  *  ```
  *  {
  *    action: "clickedOfferOption",
- *    context_module: "OrdersOffer",
+ *    flow: Make Offer
  *    context_page_owner_type: "orders-offer",
  *    context_page_owner_id: "dd0cbbb5-300b-4c49-92a1-fed55b077fa9"
+ *    order_id: "407dd09f-4afd-4aad-a6cc-1d6704dc2b11"
+ *    offer: [20% below the list price, 15% below the list price, 10% below the list price, low-end of range, midpoint of the range, top-end of the range, different amount]
+ *    amount: 2000
+ *    currency: USD
  *  }
  * ```
  */
  export interface ClickedOfferOption {
   action: ActionType.clickedOfferOption
-  context_module: ContextModule
+  flow: string
   context_page_owner_type: string
   context_page_owner_id: string
+  order_id: string
+  offer: string
+  amount: number
+  currency: string
+
 }
 
 /**
