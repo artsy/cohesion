@@ -1,3 +1,15 @@
+# v4.23.0 (Tue Nov 23 2021)
+
+#### 🚀  Enhancement
+
+- [AS-2774] Creating new event for the new offer submission flow [#266](https://github.com/artsy/cohesion/pull/266) (dayanetavares@Dayanes-MBP.fritz.box)
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.22.0 (Tue Nov 23 2021)
 
 #### 🚀  Enhancement
