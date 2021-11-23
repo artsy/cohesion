@@ -1,3 +1,15 @@
+# v4.22.0 (Tue Nov 23 2021)
+
+#### 🚀  Enhancement
+
+- Web Alert events [#262](https://github.com/artsy/cohesion/pull/262) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.21.0 (Thu Nov 18 2021)
 
 #### 🚀  Enhancement
