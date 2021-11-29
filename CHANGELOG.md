@@ -1,3 +1,16 @@
+# v4.25.0 (Mon Nov 29 2021)
+
+#### 🚀  Enhancement
+
+- [FX-3343] Remove deprecated clickedAppDownload helper [#261](https://github.com/artsy/cohesion/pull/261) ([@lidimayra](https://github.com/lidimayra) [@mdole](https://github.com/mdole))
+
+#### Authors: 2
+
+- Lidiane Taquehara ([@lidimayra](https://github.com/lidimayra))
+- Matt Dole ([@mdole](https://github.com/mdole))
+
+---
+
 # v4.24.0 (Mon Nov 29 2021)
 
 #### 🚀  Enhancement
