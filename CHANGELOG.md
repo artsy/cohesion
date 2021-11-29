@@ -1,3 +1,56 @@
+# v4.23.0 (Tue Nov 23 2021)
+
+#### 🚀  Enhancement
+
+- [AS-2774] Creating new event for the new offer submission flow [#266](https://github.com/artsy/cohesion/pull/266) (dayanetavares@Dayanes-MBP.fritz.box)
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
+# v4.22.0 (Tue Nov 23 2021)
+
+#### 🚀  Enhancement
+
+- Web Alert events [#262](https://github.com/artsy/cohesion/pull/262) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
+# v4.21.0 (Thu Nov 18 2021)
+
+#### 🚀  Enhancement
+
+- feat: Added auction result comparable works [#265](https://github.com/artsy/cohesion/pull/265) ([@rajsam003](https://github.com/rajsam003))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.4.4 to v4.5.2 [#264](https://github.com/artsy/cohesion/pull/264) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
+# v4.20.0 (Wed Nov 17 2021)
+
+#### 🚀  Enhancement
+
+- Added order submitted [#263](https://github.com/artsy/cohesion/pull/263) ([@rajsam003](https://github.com/rajsam003))
+
+#### Authors: 1
+
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+
+---
+
 # v4.19.0 (Wed Nov 03 2021)
 
 #### 🚀  Enhancement

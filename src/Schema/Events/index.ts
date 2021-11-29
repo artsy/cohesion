@@ -21,6 +21,7 @@ import {
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
   ClickedCollectionGroup,
+  ClickedCreateAlert,
   ClickedDeliveryMethod,
   ClickedEditArtwork,
   ClickedExpansionToggle,
@@ -30,6 +31,7 @@ import {
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
+  ClickedOfferOption,
   ClickedOnArtworkShippingUnitsDropdown,
   ClickedOnArtworkShippingWeight,
   ClickedOnFramedMeasurements,
@@ -135,6 +137,7 @@ export type Event =
   | ClickedChangeShippingAddress
   | ClickedChangeShippingMethod
   | ClickedCollectionGroup
+  | ClickedCreateAlert
   | ClickedDeliveryMethod
   | ClickedEditArtwork
   | ClickedExpansionToggle
@@ -144,6 +147,7 @@ export type Event =
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedOfferOption
   | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
   | ClickedOnFramedMeasurements
@@ -297,6 +301,10 @@ export enum ActionType {
    */
   clickedCollectionGroup = "clickedCollectionGroup",
   /**
+   * Corresponds to {@link ClickedCreateAlert}
+   */
+  clickedCreateAlert = "clickedCreateAlert",
+  /**
    * Corresponds to {@link ClickedDeliveryMethod}
    */
   clickedDeliveryMethod = "clickedDeliveryMethod",
@@ -336,6 +344,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedOnArtworkShippingUnitsDropdown}
    */
+   clickedOfferOption = "clickedOfferOption",
+   /**
+    * Corresponds to {@link ClickedOfferOption}
+    */
   clickedOnArtworkShippingUnitsDropdown = "clickedOnArtworkShippingUnitsDropdown",
   /**
    * Corresponds to {@link ClickedOnArtworkShippingWeight}

@@ -1,6 +1,5 @@
 export * from "./AddToCalendar"
 export * from "./Share"
-export * from "./Click/ClickedArticleGroup"
 export * from "./Click/ClickedArtistSeriesGroup"
 export * from "./Click/ClickedCollectionGroup"
 export * from "./Click/ClickedEntityGroup"
