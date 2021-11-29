@@ -1,3 +1,15 @@
+# v4.24.0 (Mon Nov 29 2021)
+
+#### 🚀  Enhancement
+
+- [FX-3344] Remove deprecated clickedArticleGroup helper [#267](https://github.com/artsy/cohesion/pull/267) ([@lidimayra](https://github.com/lidimayra))
+
+#### Authors: 1
+
+- Lidiane Taquehara ([@lidimayra](https://github.com/lidimayra))
+
+---
+
 # v4.23.0 (Tue Nov 23 2021)
 
 #### 🚀  Enhancement
