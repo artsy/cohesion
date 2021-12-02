@@ -124,6 +124,7 @@ export enum ContextModule {
   pushNotifications = "pushNotifications",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
+  recommendedArtistsRailV2 = "recommendedArtistsRailV2",
   recommendedArtistsRail = "recommendedArtistsRail",
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
   relatedArticles = "relatedArticles",
