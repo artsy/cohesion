@@ -1,3 +1,20 @@
+# v4.25.1 (Fri Dec 10 2021)
+
+#### 🐛  Bug Fix
+
+- chore(inclusive-language): Rename master -> main [#270](https://github.com/artsy/cohesion/pull/270) ([@damassi](https://github.com/damassi))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.5.2 to v4.5.3 [#269](https://github.com/artsy/cohesion/pull/269) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.25.0 (Mon Nov 29 2021)
 
 #### 🚀  Enhancement
