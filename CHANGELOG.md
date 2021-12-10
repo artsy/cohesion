@@ -808,7 +808,7 @@
 
 # v1.81.1 (Wed Mar 31 2021)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Make some props optional ([@damassi](https://github.com/damassi))
 
@@ -994,7 +994,7 @@
 
 - feat: adds position and sort args to artwork click [#157](https://github.com/artsy/cohesion/pull/157) ([@dzucconi](https://github.com/dzucconi))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Update README.md ([@damassi](https://github.com/damassi))
 
@@ -1024,7 +1024,7 @@
 
 # v1.68.2 (Tue Jan 12 2021)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Update pull_request_template.md ([@damassi](https://github.com/damassi))
 
@@ -1036,7 +1036,7 @@
 
 # v1.68.1 (Tue Jan 12 2021)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Create pull_request_template.md ([@damassi](https://github.com/damassi))
 
@@ -1625,7 +1625,7 @@
 
 # v1.33.5 (Wed Sep 02 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Add recommendedArtistsRail to AuthContextModule ([@eessex](https://github.com/eessex))
 
@@ -1637,7 +1637,7 @@
 
 # v1.33.4 (Mon Aug 31 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Add fairRail to AuthContextModule ([@eessex](https://github.com/eessex))
 
@@ -1649,7 +1649,7 @@
 
 # v1.33.3 (Thu Aug 27 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Add topWorksRail to AuthContextModule ([@eessex](https://github.com/eessex))
 
@@ -1673,7 +1673,7 @@
 
 # v1.33.1 (Wed Aug 26 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Add artistSeriesRail to AuthContextModule ([@eessex](https://github.com/eessex))
 
@@ -1709,7 +1709,7 @@
 
 # v1.31.1 (Mon Aug 24 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - add featuredArtists to AuthContextModule ([@eessex](https://github.com/eessex))
 
@@ -1725,9 +1725,9 @@
 
 - Use auth context for follow [#95](https://github.com/artsy/cohesion/pull/95) ([@eessex](https://github.com/eessex))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
-- Merge branch 'master' of https://github.com/artsy/cohesion ([@eessex](https://github.com/eessex))
+- Merge branch 'main' of https://github.com/artsy/cohesion ([@eessex](https://github.com/eessex))
 - include popularArtistsRail in AuthContextModule ([@eessex](https://github.com/eessex))
 
 #### Authors: 1
@@ -2060,7 +2060,7 @@
 
 # v1.6.2 (Thu Jun 11 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - casing hotfix ([@eessex](https://github.com/eessex))
 
@@ -2295,7 +2295,7 @@
 
 # v0.2.7 (Thu Apr 23 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - Add docs URL to Readme ([@eessex](https://github.com/eessex))
 
@@ -2328,12 +2328,12 @@
 
 # v0.2.5 (Wed Apr 22 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - only run tests from /src directory ([@eessex](https://github.com/eessex))
 - Fixes tests ([@abhitip](https://github.com/abhitip))
 - Event helpers match updated schema ([@abhitip](https://github.com/abhitip))
-- Merge branch 'master' of github.com:artsy/cohesion into reset-your-password ([@abhitip](https://github.com/abhitip))
+- Merge branch 'main' of github.com:artsy/cohesion into reset-your-password ([@abhitip](https://github.com/abhitip))
 - Enriches events with properties carried over from authImpression ([@abhitip](https://github.com/abhitip))
 - alphabetizes properties ([@abhitip](https://github.com/abhitip))
 - Adds resetYourPassword ([@abhitip](https://github.com/abhitip))
@@ -2347,7 +2347,7 @@
 
 # v0.2.4 (Wed Apr 22 2020)
 
-#### ⚠️  Pushed to `master`
+#### ⚠️  Pushed to `main`
 
 - fix example comment formatting ([@eessex](https://github.com/eessex))
 

@@ -6,7 +6,7 @@
 - **GitHub:** https://github.com/artsy/cohesion
 - **Docs:** https://cohesion.artsy.net
 - **Ci**: https://circleci.com/gh/artsy/cohesion
-- **[NPM](https://www.npmjs.com/package/@artsy/cohesion):** Package updates are published automatically on successful merges to master. Canaries are available on PR's from feature branches.
+- **[NPM](https://www.npmjs.com/package/@artsy/cohesion):** Package updates are published automatically on successful merges to main. Canaries are available on PR's from feature branches.
 - **Point People**: [@damassi][], [@abhitip][]
 
 ## Contributing
@@ -75,7 +75,7 @@ export interface MyNewEvent {
 }
 ```
 
-3. In `Schema/Events/index.ts`, add the new interface to the valid events master list, `Event`
+3. In `Schema/Events/index.ts`, add the new interface to the valid events main list, `Event`
 
 4. Add descriptive comments with examples to explain the use of your new event. Our documentation is generated automatically from in-code comments, find more information on syntax in the [`typedoc` docs][typedoc_docs].
 
