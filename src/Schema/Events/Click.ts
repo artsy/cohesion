@@ -540,7 +540,7 @@ export interface ClickedNavigationTab {
  *  }
  * ```
  */
- export interface ClickedOfferOption {
+export interface ClickedOfferOption {
   action: ActionType.clickedOfferOption
   flow: string
   context_page_owner_type: string
@@ -549,7 +549,6 @@ export interface ClickedNavigationTab {
   offer: string
   amount: number
   currency: string
-
 }
 
 /**
