@@ -1,3 +1,5 @@
+import { ContextModule } from "../Values/ContextModule"
+import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
@@ -14,6 +16,8 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "consignmentSubmitted",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consignmentSubmission",
  *    submission_id: "66355",
  *    user_email: "xx@gmail.com"
  *    user_id: "5bd8b675776bd6002c86526c"
@@ -22,6 +26,8 @@ import { ActionType } from "."
  */
 export interface ConsignmentSubmitted {
   action: ActionType.consignmentSubmitted
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consignmentSubmission
   submission_id: string
   user_email: string
   user_id?: string
@@ -36,6 +42,8 @@ export interface ConsignmentSubmitted {
  *  ```
  *  {
  *    action: "artworkDetailsCompleted",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consignmentSubmission",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
  *    user_id: "5cd6b173746be6109c86321d"
@@ -44,6 +52,8 @@ export interface ConsignmentSubmitted {
  */
 export interface ArtworkDetailsCompleted {
   action: ActionType.artworkDetailsCompleted
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consignmentSubmission
   submission_id: string
   user_email: string
   user_id?: string
@@ -58,6 +68,8 @@ export interface ArtworkDetailsCompleted {
  *  ```
  *  {
  *    action: "uploadPhotosCompleted",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consignmentSubmission",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
  *    user_id: "5cd6b173746be6109c86321d"
@@ -66,6 +78,8 @@ export interface ArtworkDetailsCompleted {
  */
 export interface UploadPhotosCompleted {
   action: ActionType.uploadPhotosCompleted
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consignmentSubmission
   submission_id: string
   user_email: string
   user_id?: string
@@ -80,6 +94,8 @@ export interface UploadPhotosCompleted {
  *  ```
  *  {
  *    action: "contactInformationCompleted",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consignmentSubmission",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
  *    user_id: "5cd6b173746be6109c86321d"
@@ -88,6 +104,8 @@ export interface UploadPhotosCompleted {
  */
 export interface ContactInformationCompleted {
   action: ActionType.contactInformationCompleted
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consignmentSubmission
   submission_id: string
   user_email: string
   user_id?: string
@@ -102,6 +120,8 @@ export interface ContactInformationCompleted {
  *  ```
  *  {
  *    action: "submitAnotherArtwork",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consignmentSubmission",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
  *    user_id: "5cd6b173746be6109c86321d"
@@ -110,6 +130,8 @@ export interface ContactInformationCompleted {
  */
 export interface SubmitAnotherArtwork {
   action: ActionType.submitAnotherArtwork
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consignmentSubmission
   submission_id: string
   user_email: string
   user_id?: string
@@ -124,6 +146,8 @@ export interface SubmitAnotherArtwork {
  *  ```
  *  {
  *    action: "viewArtworkMyCollection",
+ *    context_module: "consignSubmissionFlow",
+ *    context_owner_type: "consignmentSubmission",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
  *    user_id: "5cd6b173746be6109c86321d"
@@ -132,6 +156,8 @@ export interface SubmitAnotherArtwork {
  */
 export interface ViewArtworkMyCollection {
   action: ActionType.viewArtworkMyCollection
+  context_module: ContextModule.consignSubmissionFlow
+  context_owner_type: OwnerType.consignmentSubmission
   submission_id: string
   user_email: string
   user_id?: string
