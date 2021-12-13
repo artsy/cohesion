@@ -47,7 +47,14 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
 } from "./Click"
-import { ConsignmentSubmitted } from "./Consignments"
+import {
+  ArtworkDetailsCompleted,
+  ConsignmentSubmitted,
+  ContactInformationCompleted,
+  SubmitAnotherArtwork,
+  UploadPhotosCompleted,
+  ViewArtworkMyCollection,
+} from "./Consignments"
 import {
   FocusedOnConversationMessageInput,
   SentConversationMessage,
@@ -120,6 +127,7 @@ import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 export type Event =
   | AddToCalendar
   | AddCollectedArtwork
+  | ArtworkDetailsCompleted
   | AuctionResultsFilterParamsChanged
   | AuthImpression
   | CreatedAccount
@@ -165,6 +173,7 @@ export type Event =
   | CommercialFilterParamsChanged
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
+  | ContactInformationCompleted
   | DeleteCollectedArtwork
   | DeletedSavedSearch
   | EditCollectedArtwork
@@ -185,6 +194,7 @@ export type Event =
   | SelectedItemFromPriceDatabaseSearch
   | SentConversationMessage
   | Share
+  | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
   | TappedArticleGroup
   | TappedArtistGroup
@@ -221,6 +231,8 @@ export type Event =
   | TimeOnPage
   | ToggledNotification
   | ToggledSavedSearch
+  | UploadPhotosCompleted
+  | ViewArtworkMyCollection
 
 /**
  * The top-level actions an Event describes.
@@ -240,6 +252,10 @@ export enum ActionType {
    * Corresponds to {@link AddCollectedArtwork}
    */
   addCollectedArtwork = "addCollectedArtwork",
+  /**
+   * Corresponds to {@link ArtworkDetailsCompleted}
+   */
+  artworkDetailsCompleted = "artworkDetailsCompleted",
   /**
    * Corresponds to {@link AuctionResultsFilterParamsChanged}
    */
@@ -344,10 +360,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedOnArtworkShippingUnitsDropdown}
    */
-   clickedOfferOption = "clickedOfferOption",
-   /**
-    * Corresponds to {@link ClickedOfferOption}
-    */
+  clickedOfferOption = "clickedOfferOption",
+  /**
+   * Corresponds to {@link ClickedOfferOption}
+   */
   clickedOnArtworkShippingUnitsDropdown = "clickedOnArtworkShippingUnitsDropdown",
   /**
    * Corresponds to {@link ClickedOnArtworkShippingWeight}
@@ -413,6 +429,10 @@ export enum ActionType {
    * Corresponds to {@link ConsignmentSubmitted}
    */
   consignmentSubmitted = "consignmentSubmitted",
+  /**
+   * Corresponds to {@link ContactInformationCompleted}
+   */
+  contactInformationCompleted = "contactInformationCompleted",
   /**
    * Corresponds to {@link ContactGallery}
    */
@@ -517,6 +537,10 @@ export enum ActionType {
    * Corresponds to {@link Share}
    */
   share = "share",
+  /**
+   * Corresponds to {@link SubmitAnotherArtwork}
+   */
+  submitAnotherArtwork = "submitAnotherArtwork",
   /**
    * Corresponds to {@link SuccessfullyLoggedIn}
    */
@@ -685,4 +709,12 @@ export enum ActionType {
    * Corresponds to {@link UnfollowedPartner}
    */
   unfollowedPartner = "unfollowedPartner",
+  /**
+   * Corresponds to {@link UploadPhotosCompleted}
+   */
+  uploadPhotosCompleted = "uploadPhotosCompleted",
+  /**
+   * Corresponds to {@link ViewArtworkMyCollection}
+   */
+  viewArtworkMyCollection = "viewArtworkMyCollection",
 }
