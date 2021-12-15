@@ -1,3 +1,21 @@
+# v4.26.0 (Wed Dec 15 2021)
+
+#### 🚀  Enhancement
+
+- feat: add auth intent to create alert [#274](https://github.com/artsy/cohesion/pull/274) ([@dblandin](https://github.com/dblandin))
+
+#### 🏠  Internal
+
+- chore(deps): update yarn orb from 6.0.0 to v6.1.0 [#273](https://github.com/artsy/cohesion/pull/273) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dep typescript from 4.5.3 to v4.5.4 [#272](https://github.com/artsy/cohesion/pull/272) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Devon Blandin ([@dblandin](https://github.com/dblandin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.25.1 (Fri Dec 10 2021)
 
 #### 🐛  Bug Fix
