@@ -1,14 +1,14 @@
 version: 2.1
 
 orbs:
-  yarn: artsy/yarn@5.1.3
-  auto: artsy/auto@1.3.2
-  aws-s3: circleci/aws-s3@1.0.15
+  yarn: artsy/yarn@6.0.0
+  auto: artsy/auto@2.0.0
+  aws-s3: circleci/aws-s3@2.0.0
 
 jobs:
   upload-docs:
     docker:
-      - image: "cimg/python:3.8"
+      - image: "cimg/python:3.10"
     steps:
       - aws-s3/sync:
           arguments: --acl public-read
@@ -21,15 +21,15 @@ deploy: &deploy
     - yarn/run-script:
         script: pre-publish
 
-not_master: &not_master
+not_main: &not_main
   filters:
     branches:
-      ignore: master
+      ignore: main
 
-only_master: &only_master
+only_main: &only_main
   filters:
     branches:
-      only: master
+      only: main
 
 workflows:
   build_and_verify:
@@ -45,7 +45,7 @@ workflows:
           args: --runInBand
       # Pr builds
       - auto/publish-canary:
-          <<: *not_master
+          <<: *not_main
           <<: *deploy
           requires:
             - yarn/jest
@@ -53,7 +53,7 @@ workflows:
             - yarn/update-cache
       # Releases
       - auto/publish:
-          <<: *only_master
+          <<: *only_main
           <<: *deploy
           requires:
             - yarn/jest
@@ -61,7 +61,7 @@ workflows:
             - yarn/update-cache
             - build-docs
       - yarn/run:
-          <<: *only_master
+          <<: *only_main
           name: build-docs
           script: "docs"
           post-steps:
@@ -70,7 +70,7 @@ workflows:
                 paths:
                   - doc
       - upload-docs:
-          <<: *only_master
+          <<: *only_main
           context: static-sites-uploader
           requires:
             - build-docs

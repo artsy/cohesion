@@ -1,13 +1,13 @@
 ## Cohesion [![CircleCI][circle_badge]][circleci] [![npm version][npm_badge]][npm]
 
-### Artsy's analytics schema &amp; event helpers
+### Artsy's analytics schema
 
 - **State:** In development
 - **GitHub:** https://github.com/artsy/cohesion
 - **Docs:** https://cohesion.artsy.net
 - **Ci**: https://circleci.com/gh/artsy/cohesion
-- **[NPM](https://www.npmjs.com/package/@artsy/cohesion):** Package updates are published automatically on successful merges to master. Canaries are available on PR's from feature branches.
-- **Point People**: [@eessex][], [@abhitip][]
+- **[NPM](https://www.npmjs.com/package/@artsy/cohesion):** Package updates are published automatically on successful merges to main. Canaries are available on PR's from feature branches.
+- **Point People**: [@damassi][], [@abhitip][]
 
 ## Contributing
 
@@ -75,7 +75,7 @@ export interface MyNewEvent {
 }
 ```
 
-3. In `Schema/Events/index.ts`, add the new interface to the valid events master list, `Event`
+3. In `Schema/Events/index.ts`, add the new interface to the valid events main list, `Event`
 
 4. Add descriptive comments with examples to explain the use of your new event. Our documentation is generated automatically from in-code comments, find more information on syntax in the [`typedoc` docs][typedoc_docs].
 
@@ -89,19 +89,11 @@ export * from "./Events/MyNewEvent"
 
 6. PR your changes. Once merged, the schema will be updated and your new event and values will be available to consumers of this package.
 
-7. Data analysts should request an engineer to construct a new event helper for the `/Helpers` directory (see below).
-
-## Helpers
-
-The `/Helpers` directory contains javascript helpers that return schema-compliant analytics events, and provide some useful default values. Each helper corresponds to one event from `/Schema/Events`.
-
-Engineers should use these helpers whenever sending analytics data to Segment, for example, when creating an analytics event with `react-tracking`.
-
 [circle_badge]: https://circleci.com/gh/artsy/cohesion.svg?style=svg
 [circleci]: https://circleci.com/gh/artsy/cohesion
 [npm_badge]: https://badge.fury.io/js/%40artsy%2Fcohesion.svg
 [npm]: https://www.npmjs.com/package/@artsy/2Fcohesion
-[@eessex]: https://github.com/eessex
+[@damassi]: https://github.com/damassi
 [@abhitip]: https://github.com/abhitip
 [yarn]: https://classic.yarnpkg.com/en/docs/install/#mac-stable
 [lowercamelcase]: https://wiki.c2.com/?LowerCamelCase

@@ -1,2 +1,2 @@
-export * from "./Helpers"
+export * from "./DeprecatedHelpers"
 export * from "./Schema"

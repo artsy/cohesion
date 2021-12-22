@@ -1,7 +1,7 @@
 {
   "name": "@artsy/cohesion",
-  "version": "1.12.0",
-  "description": "Analytics schema and library helpers",
+  "version": "4.25.1",
+  "description": "Analytics schema",
   "main": "dist/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -25,7 +25,7 @@
     "watch": "concurrently --raw --kill-others 'yarn compile -w' 'yarn emit-types -w'"
   },
   "devDependencies": {
-    "@artsy/auto-config": "1.0.2",
+    "@artsy/auto-config": "1.1.0",
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.5",
@@ -39,15 +39,19 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-jest": "23.13.2",
+    "eslint-plugin-simple-import-sort": "5.0.3",
+    "eslint-plugin-sort-keys-fix": "1.1.1",
     "husky": "4.2.5",
     "jest": "26.0.1",
     "jest-junit": "10.0.0",
     "lint-staged": "10.1.7",
     "prettier": "2.0.5",
     "typedoc": "0.17.7",
-    "typescript": "3.9.5"
+    "typescript": "4.5.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "3"
+  },
   "jest": {
     "transform": {
       ".ts": "babel-jest"
