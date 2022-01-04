@@ -2,7 +2,6 @@ import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
-
 /**
  * Schemas describing Conversation events
  * @packageDocumentation
@@ -77,7 +76,7 @@ export interface TappedInboxConversation {
 }
 
 /**
- * A user taps the make offer button either on an artwork page (BNMO) or inquiry conversation. 
+ * A user taps the make offer button either on an artwork page (BNMO) or inquiry conversation.
  *
  * This schema describes events sent to Segment from [[tappedMakeOffer]]
  *
@@ -96,7 +95,6 @@ export interface TappedMakeOffer {
   context_owner_slug?: string
   context_owner_id?: string
   impulse_conversation_id?: string
-
 }
 
 /**

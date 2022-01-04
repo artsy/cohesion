@@ -138,20 +138,20 @@ export interface TappedCollectedArtworkImages {
 /**
  * A user taps on an artist in My Collection Add Artwork Add Artist
  *
- * This schema describes events sent to Segment from [[tappedVerifyIdentity]]
+ * This schema describes events sent to Segment from [[tappedMyCollectionAddArtworkArtist]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedVerifyIdentity",
- *    context_module: "inboxActiveBids",
- *    context_screen_owner_type: "inboxBids",
- *    sale_id: "5fad78273c8451000d0c53b9"
- *    subject: "Complete registration"
+ *    action: "tappedMyCollectionAddArtworkArtist",
+ *    context_module: "myCollectionAddArtworkArtist",
+ *    context_screen: "myCollectionAddArtworkAddArtist",
+ *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
+ *    context_screen_owner_slug: "andy-warhol"
  *  }
  * ```
  */
-export interface TappedArtistSearchResult {
+export interface TappedMyCollectionAddArtworkArtist {
   action: ActionType.tappedMyCollectionAddArtworkArtist
   context_screen: OwnerType.myCollectionAddArtworkArtist
   context_module: ContextModule.myCollectionAddArtworkAddArtist
