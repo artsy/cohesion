@@ -1,3 +1,64 @@
+# v4.27.0 (Tue Jan 04 2022)
+
+#### 🚀  Enhancement
+
+- feat: Add my collection add artwork events [#290](https://github.com/artsy/cohesion/pull/290) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### 🐛  Bug Fix
+
+- Track consignment submission flow steps [#271](https://github.com/artsy/cohesion/pull/271) (your_email@example.comJenqaaaaaaaaaa@gmail.comssh-keygen -t rsa -C Jenqaaaaaaaaaa@gmail.comgit config --global user.email your_email@example.comJenqaaaaaaaaaa@gmail.com [@renovate-bot](https://github.com/renovate-bot) [@MounirDhahri](https://github.com/MounirDhahri) [@artsyit](https://github.com/artsyit) [@ashleyjelks](https://github.com/ashleyjelks) [@artsy-peril[bot]](https://github.com/artsy-peril[bot]) [@brendamanganelli](https://github.com/brendamanganelli) [@louislecluse](https://github.com/louislecluse) [@The-Beez-Kneez](https://github.com/The-Beez-Kneez) [@mdole](https://github.com/mdole) [@mikehrom](https://github.com/mikehrom) [@lordkiz](https://github.com/lordkiz) [@dependabot[bot]](https://github.com/dependabot[bot]) [@dimatretyak](https://github.com/dimatretyak) [@icirellik](https://github.com/icirellik) [@abhitip](https://github.com/abhitip) [@pvinis](https://github.com/pvinis) [@anipetrov](https://github.com/anipetrov) [@dzucconi](https://github.com/dzucconi) [@damassi](https://github.com/damassi) [@olerichter00](https://github.com/olerichter00) [@rajsam003](https://github.com/rajsam003) [@pepopowitz](https://github.com/pepopowitz) [@araujobarret](https://github.com/araujobarret) [@gkartalis](https://github.com/gkartalis) [@audrey-thenot](https://github.com/audrey-thenot) [@iskounen](https://github.com/iskounen) [@lidimayra](https://github.com/lidimayra) dayanetavares@Dayanes-MBP.fritz.box)
+
+#### 🏠  Internal
+
+- chore(deps): update yarn orb from 6.0.0 to v6.1.0 [#289](https://github.com/artsy/cohesion/pull/289) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dep typescript from 4.5.3 to v4.5.4 [#288](https://github.com/artsy/cohesion/pull/288) ([@renovate-bot](https://github.com/renovate-bot))
+- Bump hosted-git-info from 2.8.8 to 2.8.9 [#282](https://github.com/artsy/cohesion/pull/282) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump highlight.js from 10.0.3 to 10.7.3 [#283](https://github.com/artsy/cohesion/pull/283) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### 🔩 Dependency Updates
+
+- Bump ws from 7.3.0 to 7.5.6 [#277](https://github.com/artsy/cohesion/pull/277) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump y18n from 4.0.0 to 4.0.3 [#276](https://github.com/artsy/cohesion/pull/276) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump browserslist from 4.11.1 to 4.19.1 [#279](https://github.com/artsy/cohesion/pull/279) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump lodash from 4.17.15 to 4.17.21 [#280](https://github.com/artsy/cohesion/pull/280) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump handlebars from 4.7.6 to 4.7.7 [#278](https://github.com/artsy/cohesion/pull/278) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump tmpl from 1.0.4 to 1.0.5 [#281](https://github.com/artsy/cohesion/pull/281) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump path-parse from 1.0.6 to 1.0.7 [#275](https://github.com/artsy/cohesion/pull/275) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 29
+
+- [@artsy-peril[bot]](https://github.com/artsy-peril[bot])
+- [@audrey-thenot](https://github.com/audrey-thenot)
+- [@brendamanganelli](https://github.com/brendamanganelli)
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@louislecluse](https://github.com/louislecluse)
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+- AL_Sutherland ([@The-Beez-Kneez](https://github.com/The-Beez-Kneez))
+- Ani Petrov ([@anipetrov](https://github.com/anipetrov))
+- Artsy ([@artsyit](https://github.com/artsyit))
+- Ashley Jelks ([@ashleyjelks](https://github.com/ashleyjelks))
+- Cameron Rollheiser ([@icirellik](https://github.com/icirellik))
+- Carlos Alberto de Araujo Barreto ([@araujobarret](https://github.com/araujobarret))
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+- Damon ([@dzucconi](https://github.com/dzucconi))
+- Dayane Tavares (dayanetavares@Dayanes-MBP.fritz.box)
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+- George Kartalis ([@gkartalis](https://github.com/gkartalis))
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+- Lidiane Taquehara ([@lidimayra](https://github.com/lidimayra))
+- Matt Dole ([@mdole](https://github.com/mdole))
+- mike hromchak ([@mikehrom](https://github.com/mikehrom))
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+- Ole ([@olerichter00](https://github.com/olerichter00))
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+- Steven Hicks ([@pepopowitz](https://github.com/pepopowitz))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+- Yauheni (your_email@example.comJenqaaaaaaaaaa@gmail.comssh-keygen -t rsa -C Jenqaaaaaaaaaa@gmail.comgit config --global user.email your_email@example.comJenqaaaaaaaaaa@gmail.com)
+
+---
+
 # v4.25.1 (Fri Dec 10 2021)
 
 #### 🐛  Bug Fix
