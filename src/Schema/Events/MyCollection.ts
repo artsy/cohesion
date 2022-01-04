@@ -134,3 +134,27 @@ export interface TappedCollectedArtworkImages {
   context_owner_id: string
   context_owner_slug?: string
 }
+
+/**
+ * A user taps on an artist in My Collection Add Artwork Add Artist
+ *
+ * This schema describes events sent to Segment from [[tappedMyCollectionAddArtworkArtist]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedMyCollectionAddArtworkArtist",
+ *    context_module: "myCollectionAddArtworkArtist",
+ *    context_screen: "myCollectionAddArtworkAddArtist",
+ *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
+ *    context_screen_owner_slug: "andy-warhol"
+ *  }
+ * ```
+ */
+export interface TappedMyCollectionAddArtworkArtist {
+  action: ActionType.tappedMyCollectionAddArtworkArtist
+  context_screen: OwnerType.myCollectionAddArtworkArtist
+  context_module: ContextModule.myCollectionAddArtworkAddArtist
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}

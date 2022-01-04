@@ -88,6 +88,7 @@ export enum ContextModule {
   moreFromThisSeries = "moreFromThisSeries",
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
   myCollectionArtwork = "myCollectionArtwork",
+  myCollectionAddArtworkAddArtist = "myCollectionAddArtworkAddArtist",
   myCollectionHome = "myCollectionHome",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
@@ -206,6 +207,7 @@ export type AuthContextModule =
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
   | ContextModule.minimalCTABanner
+  | ContextModule.myCollectionAddArtworkAddArtist
   | ContextModule.otherWorksByArtistRail
   | ContextModule.otherWorksFromPartnerRail
   | ContextModule.otherWorksFromShowRail
