@@ -544,6 +544,10 @@ export enum ActionType {
    */
   tappedCollectedArtwork = "tappedCollectedArtwork",
   /**
+   * Corresponds to {@link TappedArtistSearchResult}
+   */
+  tappedMyCollectionAddArtworkArtist = "tappedMyCollectionAddArtworkArtist",
+  /**
    * Corresponds to {@link TappedCollectedArtworkImages}
    */
   tappedCollectedArtworkImages = "tappedCollectedArtworkImages",
