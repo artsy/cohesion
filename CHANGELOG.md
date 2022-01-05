@@ -1,3 +1,15 @@
+# v4.28.0 (Wed Jan 05 2022)
+
+#### 🚀  Enhancement
+
+- chore: add createAlert to ContextModule [#291](https://github.com/artsy/cohesion/pull/291) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.27.0 (Tue Jan 04 2022)
 
 #### 🚀  Enhancement
