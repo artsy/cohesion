@@ -48,6 +48,7 @@ export enum ContextModule {
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",
   consignSubmissionFlow = "consignSubmissionFlow",
+  createAlert = "createAlert",
   curatedHighlightsRail = "curatedHighlightsRail",
   currentAuctions = "currentAuctions",
   currentShowsRail = "currentShowsRail",
