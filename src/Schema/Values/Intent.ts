@@ -8,6 +8,7 @@ export enum Intent {
   bid = "bid",
   buyNow = "buyNow",
   consign = "consign",
+  createAlert = "createAlert",
   followArtist = "followArtist",
   followPartner = "followPartner",
   followGene = "followGene",
@@ -38,6 +39,7 @@ export type AuthIntent =
   | Intent.bid
   | Intent.buyNow
   | Intent.consign
+  | Intent.createAlert
   | Intent.followArtist
   | Intent.followGene
   | Intent.followPartner
