@@ -1,3 +1,15 @@
+# v4.29.0 (Wed Jan 05 2022)
+
+#### 🚀  Enhancement
+
+- feat: add auth intent to create alert [#292](https://github.com/artsy/cohesion/pull/292) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.28.0 (Wed Jan 05 2022)
 
 #### 🚀  Enhancement
