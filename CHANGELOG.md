@@ -1,3 +1,15 @@
+# v4.30.0 (Thu Jan 06 2022)
+
+#### 🚀  Enhancement
+
+- feat(FX-3675): updates in TappedCreateAlert for improved saved search [#293](https://github.com/artsy/cohesion/pull/293) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.29.0 (Wed Jan 05 2022)
 
 #### 🚀  Enhancement
