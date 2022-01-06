@@ -696,6 +696,7 @@ export interface TappedLink {
  *    context_screen_owner_type: "artist",
  *    context_screen_owner_id: "58de681f275b2464fcdde097",
  *    context_screen_owner_slug: "anthony-hunter",
+ *    context_module: "artworkGrid",
  *  }
  * ```
  */
@@ -704,6 +705,7 @@ export interface TappedCreateAlert {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+  context_module?: ContextModule
 }
 
 /**
