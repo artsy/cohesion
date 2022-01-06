@@ -27,6 +27,7 @@ import {
   ClickedExpansionToggle,
   ClickedFairCard,
   ClickedFairGroup,
+  ClickedFAQ,
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
@@ -151,6 +152,7 @@ export type Event =
   | ClickedExpansionToggle
   | ClickedFairCard
   | ClickedFairGroup
+  | ClickedFAQ
   | ClickedGalleryGroup
   | ClickedLoadMore
   | ClickedMainArtworkGrid
@@ -340,6 +342,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedFairGroup}
    */
   clickedFairGroup = "clickedFairGroup",
+  /**
+   * Corresponds to {@link ClickedFAQ}
+   */
+  clickedFAQ = "clickedFAQ",
   /**
    * Corresponds to {@link ClickedFairGroup}
    */

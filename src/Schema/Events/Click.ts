@@ -1027,3 +1027,23 @@ export interface ClickedCreateAlert {
   context_page_owner_id?: string
   context_page_owner_slug?: string
 }
+
+/**
+ * A user clicks to expand a Frequently Asked Questions module.
+ *
+ * This schema describes events sent to Segment from [[clickedFAQ]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedFAQ",
+ *    context_page_owner_type: "consign",
+ *    subject: "When will I hear back from Artsy?"
+ *  }
+ * ```
+ */
+export interface ClickedFAQ {
+  action: ActionType.clickedFAQ
+  context_page_owner_type: PageOwnerType
+  subject: string
+}
