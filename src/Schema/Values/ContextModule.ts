@@ -136,6 +136,7 @@ export enum ContextModule {
   saveWorksCTA = "saveWorksCTA",
   sellFooter = "sellFooter",
   sellHeader = "sellHeader",
+  shareSheet = "shareSheet",
   showHeader = "showHeader",
   showInfo = "showInfo",
   showsRail = "showsRail",
