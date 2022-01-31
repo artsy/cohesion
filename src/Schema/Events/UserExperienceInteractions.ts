@@ -19,6 +19,7 @@ import { ActionType } from "."
  *    context_module: "artworkDetailsCompleted"
  *    context_screen_owner_type: "consignmentFlow",
  *    subject: "Artwork Details"
+ *    expand: TRUE
  *  }
  * ```
  */
@@ -29,4 +30,5 @@ export interface ToggledAccordion {
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
   subject: string
+  expand: boolean
 }
