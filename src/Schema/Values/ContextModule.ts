@@ -72,6 +72,7 @@ export enum ContextModule {
   featuredViewingRoomsRail = "featuredViewingRoomsRail",
   filterScreen = "filterScreen",
   footer = "footer",
+  frequentlyAskedQuestions = "frequentlyAskedQuestions",
   galleryBoothRail = "galleryBoothRail",
   galleryTab = "galleryTab",
   geneHeader = "geneHeader",
