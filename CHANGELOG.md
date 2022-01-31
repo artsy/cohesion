@@ -1,3 +1,20 @@
+# v4.31.0 (Mon Jan 31 2022)
+
+#### 🚀  Enhancement
+
+- chore: remove deprecated clickedArtistSeriesGroup helper [#298](https://github.com/artsy/cohesion/pull/298) ([@gkartalis](https://github.com/gkartalis))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.5.4 to v4.5.5 [#297](https://github.com/artsy/cohesion/pull/297) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- George Kartalis ([@gkartalis](https://github.com/gkartalis))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.30.0 (Thu Jan 06 2022)
 
 #### 🚀  Enhancement
