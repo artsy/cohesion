@@ -16,7 +16,7 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "consignmentSubmitted",
- *    context_module: "contactInformationCompleted",
+ *    context_module: "contactInformation",
  *    context_owner_type: "consignmentFlow",
  *    submission_id: "66355",
  *    user_email: "xx@gmail.com"
@@ -26,7 +26,7 @@ import { ActionType } from "."
  */
 export interface ConsignmentSubmitted {
   action: ActionType.consignmentSubmitted
-  context_module: ContextModule.contactInformationCompleted
+  context_module: ContextModule.contactInformation
   context_owner_type: OwnerType.consignmentFlow
   submission_id: string
   user_email: string
@@ -42,7 +42,7 @@ export interface ConsignmentSubmitted {
  *  ```
  *  {
  *    action: "artworkDetailsCompleted",
- *    context_module: "artworkDetailsCompleted",
+ *    context_module: "artworkDetails",
  *    context_owner_type: "consignmentFlow",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
@@ -52,7 +52,7 @@ export interface ConsignmentSubmitted {
  */
 export interface ArtworkDetailsCompleted {
   action: ActionType.artworkDetailsCompleted
-  context_module: ContextModule.artworkDetailsCompleted
+  context_module: ContextModule.artworkDetails
   context_owner_type: OwnerType.consignmentFlow
   submission_id: string
   user_email: string
@@ -68,7 +68,7 @@ export interface ArtworkDetailsCompleted {
  *  ```
  *  {
  *    action: "uploadPhotosCompleted",
- *    context_module: "uploadPhotosCompleted",
+ *    context_module: "uploadPhotos",
  *    context_owner_type: "consignmentFlow",
  *    submission_id: "52521",
  *    user_email: "kieranmbh@gmail.com"
@@ -78,7 +78,7 @@ export interface ArtworkDetailsCompleted {
  */
 export interface UploadPhotosCompleted {
   action: ActionType.uploadPhotosCompleted
-  context_module: ContextModule.uploadPhotosCompleted
+  context_module: ContextModule.uploadPhotos
   context_owner_type: OwnerType.consignmentFlow
   submission_id: string
   user_email: string
