@@ -50,7 +50,6 @@ import {
 import {
   ArtworkDetailsCompleted,
   ConsignmentSubmitted,
-  ContactInformationCompleted,
   SubmitAnotherArtwork,
   UploadPhotosCompleted,
   ViewArtworkMyCollection,
@@ -118,6 +117,7 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
+import { ToggledAccordion } from "./UserExperienceInteractions"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -173,7 +173,6 @@ export type Event =
   | CommercialFilterParamsChanged
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
-  | ContactInformationCompleted
   | DeleteCollectedArtwork
   | DeletedSavedSearch
   | EditCollectedArtwork
@@ -229,6 +228,7 @@ export type Event =
   | TappedViewingRoomGroup
   | TappedViewOffer
   | TimeOnPage
+  | ToggledAccordion
   | ToggledNotification
   | ToggledSavedSearch
   | UploadPhotosCompleted
@@ -689,6 +689,10 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
+  /**
+   * Corresponds to {@link ToggledAccordion}
+   */
+  toggledAccordion = "toggledAccordion",
   /**
    * Corresponds to {@link ToggledNotification}
    */
