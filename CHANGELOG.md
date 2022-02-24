@@ -1,3 +1,17 @@
+# v4.32.0 (Thu Feb 24 2022)
+
+#### 🚀  Enhancement
+
+- feat(cx-2353): events for request price estimate [#301](https://github.com/artsy/cohesion/pull/301) ([@lordkiz](https://github.com/lordkiz))
+- [AS-2900] Updates App submission flow events [#299](https://github.com/artsy/cohesion/pull/299) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.31.0 (Mon Jan 31 2022)
 
 #### 🚀  Enhancement
