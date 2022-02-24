@@ -72,6 +72,7 @@ import {
   EditCollectedArtwork,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
+  TappedRequestPriceEstimate
 } from "./MyCollection"
 import { PromptForReview } from "./PromptForReview"
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
@@ -220,6 +221,7 @@ export type Event =
   | TappedMakeOffer
   | TappedPartnerCard
   | TappedPromoSpace
+  | TappedRequestPriceEstimate
   | TappedSell
   | TappedShowMore
   | TappedTabBar
@@ -657,6 +659,10 @@ export enum ActionType {
    * Corresponds to {@link TappedRegisterToBid}
    */
   tappedRegisterToBid = "tappedRegisterToBid",
+  /**
+  * Corresponds to {@link TappedRequestPriceEstimate}
+  */
+   tappedRequestPriceEstimate = "tappedRequestPriceEstimate",
   /**
    * Corresponds to {@link TappedSell}
    */
