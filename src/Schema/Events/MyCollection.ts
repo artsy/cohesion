@@ -158,3 +158,30 @@ export interface TappedMyCollectionAddArtworkArtist {
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
 }
+
+/**
+ * A user taps on the “request a price estimate” banner
+ *
+ * This schema describes events sent to Segment from [[tappedRequestPriceEstimate]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedRequestPriceEstimate",
+ *    context_module: "myCollectionArtworkInsights",
+ *    context_screen: "myCollectionArtwork",
+ *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
+ *    context_screen_owner_slug: "andy-warhol"
+ *    demand_index: 8.9
+ *
+ *  }
+ * ```
+ */
+ export interface TappedRequestPriceEstimate {
+  action: ActionType.tappedRequestPriceEstimate
+  context_screen: OwnerType.myCollectionArtwork
+  context_module: ContextModule.myCollectionArtworkInsights
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  demand_index?: number
+}

@@ -94,6 +94,7 @@ export enum ContextModule {
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
   myCollectionArtwork = "myCollectionArtwork",
   myCollectionAddArtworkAddArtist = "myCollectionAddArtworkAddArtist",
+  myCollectionArtworkInsights = "myCollectionArtworkInsights",
   myCollectionHome = "myCollectionHome",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
