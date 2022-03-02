@@ -18,6 +18,7 @@ import { ActionType } from "."
  *    event: "get_variant",
  *    service: "unleash",
  *    experiment_name: "some_experiment_we_are_running",
+ *    enabled: true,
  *    variant_name: "some_variant_for_this_user"
  *    payload: "some_payload",
  *    context_owner_type: "artwork",
