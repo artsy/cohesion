@@ -1,3 +1,20 @@
+# v4.33.0 (Wed Mar 02 2022)
+
+#### 🚀  Enhancement
+
+- feat: Add myCollectionComparableWorks context module [#306](https://github.com/artsy/cohesion/pull/306) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.5.5 to v4.6.2 [#303](https://github.com/artsy/cohesion/pull/303) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.32.0 (Thu Feb 24 2022)
 
 #### 🚀  Enhancement
