@@ -15,33 +15,24 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "experiment",
- *    event: "get_variant",
  *    service: "unleash",
  *    experiment_name: "some_experiment_we_are_running",
- *    enabled: true,
- *    variant_name: "some_variant_for_this_user"
- *    payload: "some_payload",
+ *    variant_name: "cool_new_variant",
+ *    payload: "10", // optional
  *    context_owner_type: "artwork",
  *    context_owner_id: "55ed8ca57261693d930000b8",
  *  }
  * ```
  */
-export type Experiment = {
-  action: ActionType.experiment
+export interface ExperimentViewed {
+  action: ActionType.experimentViewed
   service: "unleash" | string
   experiment_name: string
-  enabled: string
+  variant_name: "control" | string // usually it will be "control" or the other names of the experiments
+  payload?: string                 // payload is used for variable values that can be sent to the clients as part of the variant
 
   context_owner_type: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
-} & (
-  | {
-      event: "get_flag"
-    }
-  | {
-      event: "get_variant"
-      variant_name: string
-      payload?: string
-    }
-)
+}
+
