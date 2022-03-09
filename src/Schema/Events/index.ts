@@ -540,6 +540,10 @@ export enum ActionType {
    */
   share = "share",
   /**
+   * Corresponds to {@link ExperimentViewed}
+   */
+  experimentViewed = "experimentViewed",
+  /**
    * Corresponds to {@link SubmitAnotherArtwork}
    */
   submitAnotherArtwork = "submitAnotherArtwork",
