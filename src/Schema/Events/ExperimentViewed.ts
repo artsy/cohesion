@@ -9,12 +9,12 @@ import { ActionType } from "."
 /**
  * A user received an experiment on Artsy.
  *
- * This schema describes events sent to Segment from [[Experiment]].
+ * This schema describes events sent to Segment from [[experimentViewed]].
  *
  *  @example
  *  ```
  *  {
- *    action: "experiment",
+ *    action: "experimentViewed",
  *    service: "unleash",
  *    experiment_name: "some_experiment_we_are_running",
  *    variant_name: "cool_new_variant",
