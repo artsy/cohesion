@@ -1,3 +1,16 @@
+# v4.34.1 (Wed Mar 09 2022)
+
+#### 🐛  Bug Fix
+
+- adding experiment [#304](https://github.com/artsy/cohesion/pull/304) ([@pvinis](https://github.com/pvinis) [@mc-jones](https://github.com/mc-jones))
+
+#### Authors: 2
+
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v4.34.0 (Wed Mar 09 2022)
 
 #### 🚀  Enhancement
