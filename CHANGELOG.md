@@ -1,3 +1,20 @@
+# v4.34.0 (Wed Mar 09 2022)
+
+#### 🚀  Enhancement
+
+- remove tappedViewOffer helper [#307](https://github.com/artsy/cohesion/pull/307) ([@pvinis](https://github.com/pvinis))
+
+#### 🏠  Internal
+
+- chore: update dependabot reviewers [#302](https://github.com/artsy/cohesion/pull/302) ([@ovasdi](https://github.com/ovasdi))
+
+#### Authors: 2
+
+- Ozzie Vasdi ([@ovasdi](https://github.com/ovasdi))
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+
+---
+
 # v4.33.0 (Wed Mar 02 2022)
 
 #### 🚀  Enhancement
