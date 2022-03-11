@@ -1,3 +1,15 @@
+# v4.35.0 (Fri Mar 11 2022)
+
+#### 🚀  Enhancement
+
+- fix: add missing export for ExperimentViewed [#309](https://github.com/artsy/cohesion/pull/309) ([@mc-jones](https://github.com/mc-jones))
+
+#### Authors: 1
+
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v4.34.1 (Wed Mar 09 2022)
 
 #### 🐛  Bug Fix
