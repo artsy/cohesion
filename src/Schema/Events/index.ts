@@ -1,5 +1,16 @@
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  BidPageView,
+  ClickedActiveBid,
+  ClickedRegisterToBid,
+  ConfirmBid,
+  ConfirmRegistrationPageview,
+  EnterLiveAuction,
+  MaxBidSelected,
+  RegistrationPageView,
+  RegistrationSubmitted,
+} from "./Auction"
+import {
   AuthImpression,
   CreatedAccount,
   OnboardingUserInputData,
@@ -72,7 +83,7 @@ import {
   EditCollectedArtwork,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
-  TappedRequestPriceEstimate
+  TappedRequestPriceEstimate,
 } from "./MyCollection"
 import { PromptForReview } from "./PromptForReview"
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
@@ -131,7 +142,9 @@ export type Event =
   | ArtworkDetailsCompleted
   | AuctionResultsFilterParamsChanged
   | AuthImpression
+  | BidPageView
   | CreatedAccount
+  | ClickedActiveBid
   | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
   | ClickedAppDownload
@@ -165,6 +178,7 @@ export type Event =
   | ClickedSnooze
   | ClickedPartnerCard
   | ClickedPromoSpace
+  | ClickedRegisterToBid
   | ClickedSelectShippingOption
   | ClickedShippingAddress
   | ClickedShowGroup
@@ -172,19 +186,25 @@ export type Event =
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
+  | ConfirmBid
+  | ConfirmRegistrationPageview
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
   | DeleteCollectedArtwork
   | DeletedSavedSearch
   | EditCollectedArtwork
   | EditedSavedSearch
+  | EnterLiveAuction
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
   | FollowEvents
+  | MaxBidSelected
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
+  | RegistrationPageView
+  | RegistrationSubmitted
   | ResetYourPassword
   | SaleScreenLoadComplete
   | Screen
@@ -262,6 +282,14 @@ export enum ActionType {
    * Corresponds to {@link AuctionResultsFilterParamsChanged}
    */
   auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
+  /**
+   * Corresponds to {@link BidPageView}
+   */
+  bidPageView = "bidPageView",
+  /**
+   * Corresponds to {@link ClickedActiveBid}
+   */
+  clickedActiveBid = "clickedActiveBid",
   /**
    * Corresponds to {@link ClickedAddNewShippingAddress}
    */
@@ -396,6 +424,10 @@ export enum ActionType {
    */
   clickedPromoSpace = "clickedPromoSpace",
   /**
+   * Corresponds to {@link ClickedRegisterToBid}
+   */
+  clickedRegisterToBid = "clickedRegisterToBid",
+  /**
    * Corresponds to {@link ClickedSelectShippingOption}
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
@@ -423,6 +455,14 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
+  /**
+   * Corresponds to {@link ConfirmBid}
+   */
+  confirmBid = "confirmBid",
+  /**
+   * Corresponds to {@link ConfirmRegistrationPageview}
+   */
+  confirmRegistrationPageview = "confirmRegistrationPageview",
   /**
    * Corresponds to {@link ConsignmentArtistFailed}
    */
@@ -460,6 +500,10 @@ export enum ActionType {
    */
   editedSavedSearch = "editedSavedSearch",
   /**
+   * Corresponds to {@link EnterLiveAuction}
+   */
+  enterLiveAuction = "enterLiveAuction",
+  /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
@@ -488,6 +532,10 @@ export enum ActionType {
    */
   followedPartner = "followedPartner",
   /**
+   * Corresponds to {@link MaxBidSelected}
+   */
+  maxBidSelected = "maxBidSelected",
+  /**
    * Corresponds to {@link OnboardingUserInputData}
    */
   onboardingUserInputData = "onboardingUserInputData",
@@ -499,6 +547,14 @@ export enum ActionType {
    * Corresponds to {@link PromptForReview}
    */
   promptForReview = "promptForReview",
+  /**
+   * Corresponds to {@link RegistrationPageView}
+   */
+  registrationPageView = "registrationPageView",
+  /**
+   * Corresponds to {@link RegistrationSubmitted}
+   */
+  registrationSubmitted = "registrationSubmitted",
   /**
    * Corresponds to {@link ResetYourPassword}
    */
@@ -664,9 +720,9 @@ export enum ActionType {
    */
   tappedRegisterToBid = "tappedRegisterToBid",
   /**
-  * Corresponds to {@link TappedRequestPriceEstimate}
-  */
-   tappedRequestPriceEstimate = "tappedRequestPriceEstimate",
+   * Corresponds to {@link TappedRequestPriceEstimate}
+   */
+  tappedRequestPriceEstimate = "tappedRequestPriceEstimate",
   /**
    * Corresponds to {@link TappedSell}
    */
