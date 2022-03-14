@@ -1,3 +1,15 @@
+# v4.36.0 (Mon Mar 14 2022)
+
+#### 🚀  Enhancement
+
+- feat(auction): Add auction events [#310](https://github.com/artsy/cohesion/pull/310) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.35.0 (Fri Mar 11 2022)
 
 #### 🚀  Enhancement
