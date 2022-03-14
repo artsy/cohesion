@@ -39,4 +39,3 @@ export interface ExperimentViewed {
   context_owner_id?: string
   context_owner_slug?: string
 }
-
