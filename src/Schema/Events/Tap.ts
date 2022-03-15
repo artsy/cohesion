@@ -777,3 +777,30 @@ export interface TappedContactGallery {
   context_owner_slug: string
   context_owner_id: string
 }
+
+/**
+ * A user taps a Skip button on My Collection add artwork flow
+ *
+ * This schema describes events sent to Segment from [[tappedSkip]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedSkip",
+ *    context_module : "skipButton",
+ *    context_screen_owner_type: "myCollectionAddArtworkArtist",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "anthony-hunter",
+ *    subject: "Skip choosing artwork"
+ *  }
+ * ```
+ */
+export interface TappedSkip {
+  action: ActionType.tappedSkip
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  /** The text of the tapped button */
+  subject: string
+}

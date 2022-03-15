@@ -124,6 +124,7 @@ import {
   TappedPromoSpace,
   TappedSell,
   TappedShowMore,
+  TappedSkip,
   TappedTabBar,
   TappedVerifyIdentity,
   TappedViewingRoomCard,
@@ -246,6 +247,7 @@ export type Event =
   | TappedRequestPriceEstimate
   | TappedSell
   | TappedShowMore
+  | TappedSkip
   | TappedTabBar
   | TappedVerifyIdentity
   | TappedViewingRoomCard
@@ -733,6 +735,10 @@ export enum ActionType {
    * Corresponds to {@link TappedShowMore}
    */
   tappedShowMore = "tappedShowMore",
+  /**
+   * Corresponds to {@link TappedSkip}
+   */
+  tappedSkip = "tappedSkip",
   /**
    * Corresponds to {@link TappedTabBar}
    */
