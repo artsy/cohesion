@@ -155,6 +155,7 @@ export enum ContextModule {
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
   trendingLots = "trendingLots",
+  troveArtworksRail = "troveArtworksRail",
   upcomingAuctions = "upcomingAuctions",
   uploadPhotos = "uploadPhotos",
   viewingRoom = "viewingRoom",
