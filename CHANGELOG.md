@@ -1,3 +1,15 @@
+# v4.37.0 (Tue Mar 15 2022)
+
+#### 🚀  Enhancement
+
+- chore: add ExperimentViewed to events [#311](https://github.com/artsy/cohesion/pull/311) ([@gkartalis](https://github.com/gkartalis))
+
+#### Authors: 1
+
+- George Kartalis ([@gkartalis](https://github.com/gkartalis))
+
+---
+
 # v4.36.0 (Mon Mar 14 2022)
 
 #### 🚀  Enhancement
