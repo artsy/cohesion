@@ -1,3 +1,15 @@
+# v4.38.0 (Tue Mar 15 2022)
+
+#### 🚀  Enhancement
+
+- feat: Add tapped skip event [#312](https://github.com/artsy/cohesion/pull/312) ([@rajsam003](https://github.com/rajsam003))
+
+#### Authors: 1
+
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+
+---
+
 # v4.37.0 (Tue Mar 15 2022)
 
 #### 🚀  Enhancement
