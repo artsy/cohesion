@@ -1,3 +1,15 @@
+# v4.39.0 (Tue Mar 15 2022)
+
+#### 🚀  Enhancement
+
+- (GRO-834) add trove rail to context modules [#313](https://github.com/artsy/cohesion/pull/313) ([@TMcMeans](https://github.com/TMcMeans))
+
+#### Authors: 1
+
+- TanjieM ([@TMcMeans](https://github.com/TMcMeans))
+
+---
+
 # v4.38.0 (Tue Mar 15 2022)
 
 #### 🚀  Enhancement
