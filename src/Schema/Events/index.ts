@@ -72,6 +72,7 @@ import {
   TappedMakeOffer,
   TappedViewOffer,
 } from "./Conversations"
+import { ExperimentViewed } from "./ExperimentViewed"
 import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
@@ -195,6 +196,7 @@ export type Event =
   | EditCollectedArtwork
   | EditedSavedSearch
   | EnterLiveAuction
+  | ExperimentViewed
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
