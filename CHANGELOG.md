@@ -1,3 +1,15 @@
+# v4.40.0 (Wed Mar 16 2022)
+
+#### 🚀  Enhancement
+
+- chore: add saved search/-es to PageOwnerType [#314](https://github.com/artsy/cohesion/pull/314) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.39.0 (Tue Mar 15 2022)
 
 #### 🚀  Enhancement
