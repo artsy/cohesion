@@ -165,6 +165,8 @@ export type PageOwnerType =
   | OwnerType.priceDatabase
   | OwnerType.profile
   | OwnerType.sale
+  | OwnerType.savedSearch
+  | OwnerType.savedSearches
   | OwnerType.search
   | OwnerType.show
   | OwnerType.shows
