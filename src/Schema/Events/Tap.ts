@@ -755,7 +755,7 @@ export interface TappedBuyNow {
 }
 
 /**
- * A user taps on 'Contact Gallery' on an artwork page 
+ * A user taps on 'Contact Gallery' on an artwork page
  *
  * This schema describes events sent to Segment from [[tappedContactGallery]]
  *
@@ -797,6 +797,61 @@ export interface TappedContactGallery {
  */
 export interface TappedSkip {
   action: ActionType.tappedSkip
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  /** The text of the tapped button */
+  subject: string
+}
+
+/**
+ * A user taps a Sell button in SWA banner on My Collection Artwork page
+ *
+ * This schema describes events sent to Segment from [[tappedSellArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedSellArtwork",
+ *    context_module : "myCollectionArtworkInsights", // or myCollectionArtworkAbout
+ *    context_screen_owner_type: "myCollectionAddArtworkArtist",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "anthony-hunter",
+ *    subject: "Skip choosing artwork"
+ *  }
+ * ```
+ */
+
+export interface TappedSellArtwork {
+  action: ActionType.tappedSellArtwork
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  /** The text of the tapped button */
+  subject: string
+}
+
+/**
+ * A user taps a Learn More button in SWA banner on My Collection Artwork page
+ *
+ * This schema describes events sent to Segment from [[tappedLearnMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedLearnMore",
+ *    context_module : "myCollectionArtworkInsights", // or myCollectionArtworkAbout
+ *    context_screen_owner_type: "fair",
+ *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
+ *    context_screen_owner_slug: "latitude-art-fair-2020",
+ *    subject: "Learn More"
+ *  }
+ * ```
+ */
+export interface TappedLearnMore {
+  action: ActionType.tappedLearnMore
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
