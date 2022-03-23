@@ -1,3 +1,15 @@
+# v4.41.0 (Wed Mar 23 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-2457): added TappedSellArtwork and TappedLearnMore events [#316](https://github.com/artsy/cohesion/pull/316) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.40.0 (Wed Mar 16 2022)
 
 #### 🚀  Enhancement
