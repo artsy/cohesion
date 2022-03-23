@@ -325,6 +325,10 @@ export enum ActionType {
    */
   clickedArticleGroup = "clickedArticleGroup",
   /**
+   * Corresponds to {@link ClickedArticleShare}
+   */
+  clickedArticleShare = "clickedArticleShare",
+  /**
    * Corresponds to {@link ClickedArtistGroup}
    */
   clickedArtistGroup = "clickedArtistGroup",
@@ -380,6 +384,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedExpansionToggle}
    */
   clickedExpansionToggle = "clickedExpansionToggle",
+  /**
+   * Corresponds to {@link ClickedExternalNewsSource}
+   */
+  clickedExternalNewsSource = "clickedExternalNewsSource",
   /**
    * Corresponds to {@link ClickedFairCard}
    */
@@ -438,6 +446,10 @@ export enum ActionType {
    */
   clickedPartnerCard = "clickedPartnerCard",
   /**
+   * Corresponds to {@link ClickedPlayVideo}
+   */
+  clickedPlayVideo = "clickedPlayVideo",
+  /**
    * Corresponds to {@link ClickedPromoSpace}
    */
    clickedPaymentMethod = "clickedPaymentMethod",
@@ -469,6 +481,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedShowMore}
    */
   clickedShowMore = "clickedShowMore",
+  /**
+   * Corresponds to {@link ClickedSponsorLink}
+   */
+  clickedSponsorLink = "clickedSponsorLink",
   /**
    * Corresponds to {@link ClickedVerifyIdentiity}
    */
@@ -557,6 +573,10 @@ export enum ActionType {
    * Corresponds to {@link FollowedPartner}
    */
   followedPartner = "followedPartner",
+  /**
+   * Corresponds to {@link Impression}
+   */
+  impression = "impression",
   /**
    * Corresponds to {@link MaxBidSelected}
    */

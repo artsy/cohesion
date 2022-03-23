@@ -1083,3 +1083,94 @@ export interface ClickedCreateAlert {
   context_page_owner_id?: string
   context_page_owner_slug?: string
 }
+
+/**
+ * A user clicks the external news source of an article
+ *
+ * This schema describes events sent to Segment from [[clickedExternalNewsSource]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedExternalNewsSource",
+ *    context_page_owner_type: "article",
+ *    context_page_owner_id: "62389c0a0b01c80022eb82a1",
+ *    context_page_owner_slug: "artsy-editorial-making-generative-art-changed-understanding",
+ *  }
+ * ```
+ */
+export interface ClickedExternalNewsSource {
+  action: ActionType.clickedExternalNewsSource
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+  destination_path: string
+}
+
+/**
+ * A user clicks on the sponsor of an article
+ *
+ * This schema describes events sent to Segment from [[clickedSponsorLink]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSponsorLink",
+ *    context_page_owner_type: "article",
+ *    context_page_owner_id: "62389c0a0b01c80022eb82a1",
+ *    context_page_owner_slug: "artsy-editorial-making-generative-art-changed-understanding",
+ *    destination_path: "https://www.bmw.com/",
+ *  }
+ * ```
+ */
+export interface ClickedSponsorLink {
+  action: ActionType.clickedSponsorLink
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+  destination_path: string
+}
+
+/**
+ * A user clicks to share an article
+ *
+ * This schema describes events sent to Segment from [[clickedArticleShare]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArticleShare",
+ *    context_page_owner_type: "article",
+ *    context_page_owner_id: "62389c0a0b01c80022eb82a1",
+ *    context_page_owner_slug: "artsy-editorial-making-generative-art-changed-understanding",
+ *  }
+ * ```
+ */
+export interface ClickedArticleShare {
+  action: ActionType.clickedArticleShare
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+}
+
+/**
+ * A user clicks to play a video
+ *
+ * This schema describes events sent to Segment from [[clickedPlayVideo]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPlayVideo",
+ *    context_page_owner_type: "article",
+ *    context_page_owner_id: "62389c0a0b01c80022eb82a1",
+ *    context_page_owner_slug: "artsy-editorial-making-generative-art-changed-understanding",
+ *  }
+ * ```
+ */
+export interface ClickedPlayVideo {
+  action: ActionType.clickedPlayVideo
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+}
