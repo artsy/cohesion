@@ -117,12 +117,14 @@ import {
   TappedFairCard,
   TappedFairGroup,
   TappedInfoBubble,
+  TappedLearnMore,
   TappedLink,
   TappedMainArtworkGrid,
   TappedNavigationTab,
   TappedPartnerCard,
   TappedPromoSpace,
   TappedSell,
+  TappedSellArtwork,
   TappedShowMore,
   TappedSkip,
   TappedTabBar,
@@ -246,7 +248,9 @@ export type Event =
   | TappedPromoSpace
   | TappedRequestPriceEstimate
   | TappedSell
+  | TappedSellArtwork
   | TappedShowMore
+  | TappedLearnMore
   | TappedSkip
   | TappedTabBar
   | TappedVerifyIdentity
@@ -732,9 +736,17 @@ export enum ActionType {
    */
   tappedSell = "tappedSell",
   /**
+   * Corresponds to {@link TappedSellArtwork}
+   */
+  tappedSellArtwork = "tappedSellArtwork",
+  /**
    * Corresponds to {@link TappedShowMore}
    */
   tappedShowMore = "tappedShowMore",
+  /**
+   * Corresponds to {@link TappedLearnMore}
+   */
+  tappedLearnMore = "tappedLearnMore",
   /**
    * Corresponds to {@link TappedSkip}
    */
