@@ -1,3 +1,15 @@
+# v4.42.0 (Wed Mar 23 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-2457): added myCollectionArtworkAbout context module [#317](https://github.com/artsy/cohesion/pull/317) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.41.0 (Wed Mar 23 2022)
 
 #### 🚀  Enhancement
