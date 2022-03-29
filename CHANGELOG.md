@@ -1,3 +1,22 @@
+# v4.43.0 (Tue Mar 29 2022)
+
+#### 🚀  Enhancement
+
+- feat: Add artworkRecommendationsRail context module [#321](https://github.com/artsy/cohesion/pull/321) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- Bump minimist from 1.2.5 to 1.2.6 [#320](https://github.com/artsy/cohesion/pull/320) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): update dep typescript from 4.6.2 to v4.6.3 [#319](https://github.com/artsy/cohesion/pull/319) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Ole ([@olerichter00](https://github.com/olerichter00))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.42.0 (Wed Mar 23 2022)
 
 #### 🚀  Enhancement
