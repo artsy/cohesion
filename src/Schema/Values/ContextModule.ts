@@ -24,6 +24,7 @@ export enum ContextModule {
   artworkImage = "artworkImage",
   artworkMetadata = "artworkMetadata",
   artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
+  artworkRecommendationsRail = "artworkRecommendationsRail",
   artworkSidebar = "artworkSidebar",
   artworksTab = "artworksTab",
   associatedViewingRoom = "associatedViewingRoom",
