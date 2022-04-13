@@ -49,6 +49,8 @@ import {
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnSubmitOrder,
   ClickedPartnerCard,
+  ClickedPaymentMethod,
+  ClickedPaymentDetails,
   ClickedPromoSpace,
   ClickedSelectShippingOption,
   ClickedShippingAddress,
@@ -181,6 +183,8 @@ export type Event =
   | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedPartnerCard
+  | ClickedPaymentMethod
+  | ClickedPaymentDetails
   | ClickedPromoSpace
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
@@ -430,6 +434,14 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPromoSpace}
    */
+   clickedPaymentMethod = "clickedPaymentMethod",
+   /**
+    * Corresponds to {@link ClickedPaymentMethod}
+    */
+    clickedPaymentDetails = "clickedPaymentDetails",
+    /**
+     * Corresponds to {@link ClickedPaymentDetails}
+     */
   clickedPromoSpace = "clickedPromoSpace",
   /**
    * Corresponds to {@link ClickedRegisterToBid}
