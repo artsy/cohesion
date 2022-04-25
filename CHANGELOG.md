@@ -1,3 +1,15 @@
+# v4.44.0 (Mon Apr 25 2022)
+
+#### 🚀  Enhancement
+
+- [TX-227] Creating events for the payment checkout flow [#322](https://github.com/artsy/cohesion/pull/322) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.43.0 (Tue Mar 29 2022)
 
 #### 🚀  Enhancement
