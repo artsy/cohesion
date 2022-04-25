@@ -699,6 +699,62 @@ export interface ClickedPartnerCard {
 }
 
 /**
+ *  User clicks in one of the payment options on the payment pageview
+ *
+ *  This schema describes events sent to Segment from [[clickedPaymentMethod]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPaymentMethod",
+ *    flow: "Make Offer",
+ *    context_page_owner_type: "orders-payment",
+ *    order_id: "407dd09f-4afd-4aad-a6cc-1d6704dc2b11",
+ *    subject: "click payment method",
+ *    payment method: "bank transfer"
+ *    amount: 2000,
+ *    currency: "USD"
+ *  }
+ * ```
+ */
+ export interface ClickedPaymentMethod {
+  action: ActionType.clickedPaymentMethod
+  flow: string
+  context_page_owner_type: string
+  order_id: string
+  subject: string
+  payment_method: string
+  amount: number
+  currency: string
+}
+
+/**
+ *  User clicks in one of the payment details on the payment pageview
+ *
+ *  This schema describes events sent to Segment from [[clickedPaymentDetails]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPaymentDetails",
+ *    flow: "Make Offer",
+ *    context_page_owner_type: "orders-payment",
+ *    order_id: "407dd09f-4afd-4aad-a6cc-1d6704dc2b11",
+ *    subject: "add another credit card",
+ *  }
+ * ```
+ */
+ export interface ClickedPaymentDetails {
+  action: ActionType.clickedPaymentDetails
+  flow: string
+  context_page_owner_type: string
+  order_id: string
+  subject: string
+}
+
+
+
+/**
  *  User selects existing shipping address when entering the orders
  *  checkout flow.
  *
