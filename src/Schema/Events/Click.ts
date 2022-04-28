@@ -1083,3 +1083,27 @@ export interface ClickedCreateAlert {
   context_page_owner_id?: string
   context_page_owner_slug?: string
 }
+
+/**
+ * A user clicks on "Submit an artwork" on the Sell with Artsy landing page
+ *
+ * This schema describes events sent to Segment from [[ClickedSubmitAnArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "ClickedSubmitAnArtwork",
+ *    context_module: "Header",
+ *    context_page_owner_type: "consign",
+ *    destination_path: "/consign/submission/artwork-details",
+ *    subject: "Submit an Artwork"
+ *  }
+ * ```
+ */
+ export interface ClickedSubmitAnArtwork {
+  action: ActionType.ClickedSubmitAnArtwork
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  destination_path: string
+  subject: string
+}
