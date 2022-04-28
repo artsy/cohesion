@@ -1101,7 +1101,7 @@ export interface ClickedCreateAlert {
  * ```
  */
  export interface ClickedSubmitAnArtwork {
-  action: ActionType.ClickedSubmitAnArtwork
+  action: ActionType.clickedSubmitAnArtwork
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   destination_path: string

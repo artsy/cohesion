@@ -57,6 +57,7 @@ import {
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
+  ClickedSubmitAnArtwork,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
 } from "./Click"
@@ -191,6 +192,7 @@ export type Event =
   | ClickedShippingAddress
   | ClickedShowGroup
   | ClickedShowMore
+  | ClickedSubmitAnArtwork
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | CommercialFilterParamsChanged
@@ -466,7 +468,11 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedVerifyIdentiity}
    */
-  clickedVerifyIdentity = "clickedVerifyIdentity",
+   clickedSubmitAnArtwork = "clickedSubmitAnArtwork",
+   /**
+    * Corresponds to {@link ClickedSubmitAnArtwork}
+    */
+   clickedVerifyIdentity = "clickedVerifyIdentity",
   /**
    * Corresponds to {@link ClickedViewingRoomCard}
    */
