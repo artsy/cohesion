@@ -1,3 +1,22 @@
+# v4.45.0 (Mon May 02 2022)
+
+#### 🚀  Enhancement
+
+- Adds auctionPageView and documentation [#315](https://github.com/artsy/cohesion/pull/315) ([@abhitip](https://github.com/abhitip))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.6.3 to v4.6.4 [#326](https://github.com/artsy/cohesion/pull/326) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update yarn orb from 6.1.0 to v6.2.0 [#324](https://github.com/artsy/cohesion/pull/324) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update auto orb from 2.0.0 to v2.1.0 [#323](https://github.com/artsy/cohesion/pull/323) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.44.0 (Mon Apr 25 2022)
 
 #### 🚀  Enhancement
