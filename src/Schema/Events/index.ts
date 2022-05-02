@@ -1,5 +1,6 @@
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  AuctionPageView,
   BidPageView,
   ClickedActiveBid,
   ClickedRegisterToBid,
@@ -146,6 +147,7 @@ export type Event =
   | AddToCalendar
   | AddCollectedArtwork
   | ArtworkDetailsCompleted
+  | AuctionPageView
   | AuctionResultsFilterParamsChanged
   | AuthImpression
   | BidPageView
@@ -290,6 +292,10 @@ export enum ActionType {
    * Corresponds to {@link ArtworkDetailsCompleted}
    */
   artworkDetailsCompleted = "artworkDetailsCompleted",
+  /**
+   * Corresponds to {@link AuctionPageView}
+   */
+  auctionPageView = "auctionPageView",
   /**
    * Corresponds to {@link AuctionResultsFilterParamsChanged}
    */
