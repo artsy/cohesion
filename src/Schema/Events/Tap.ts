@@ -743,6 +743,7 @@ export interface TappedBid {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
+ *    impulse_conversation_id: "198"
  *  }
  * ```
  */
@@ -752,6 +753,7 @@ export interface TappedBuyNow {
   context_owner_type: ScreenOwnerType
   context_owner_id: string
   context_owner_slug: string
+  impulse_conversation_id: string
 }
 
 /**
