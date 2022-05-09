@@ -123,3 +123,8 @@ export interface TappedConfirmArtwork {
   context_module: OwnerType.conversationMakeOfferConfirmArtwork
   context_owner_type: OwnerType.conversation
 }
+
+export interface TappedBuyNowConfirmArtwork {
+  context_module: OwnerType.conversationBuyNowConfirmArtwork
+  context_owner_type: OwnerType.conversation
+}
