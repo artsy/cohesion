@@ -28,7 +28,6 @@ export enum OwnerType {
   consign = "consign",
   conversation = "conversation",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
-  conversationBuyNowConfirmArtwork = "conversationBuyNowConfirmArtwork",
   explore = "explore",
   fair = "fair",
   fairArtworks = "fairArtworks",
@@ -100,7 +99,6 @@ export type ScreenOwnerType =
   | OwnerType.consign
   | OwnerType.conversation
   | OwnerType.conversationMakeOfferConfirmArtwork
-  | OwnerType.conversationBuyNowConfirmArtwork
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.fairArtworks

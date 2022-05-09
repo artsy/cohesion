@@ -753,7 +753,7 @@ export interface TappedBuyNow {
   context_owner_type: ScreenOwnerType
   context_owner_id: string
   context_owner_slug: string
-  impulse_conversation_id: string
+  impulse_conversation_id?: string
 }
 
 /**
