@@ -1,3 +1,15 @@
+# v4.46.0 (Tue May 10 2022)
+
+#### 🚀  Enhancement
+
+- [NX-3133] Adding impulse id to buy now tap [#327](https://github.com/artsy/cohesion/pull/327) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.45.0 (Mon May 02 2022)
 
 #### 🚀  Enhancement
