@@ -120,6 +120,6 @@ export interface TappedViewOffer {
 }
 
 export interface TappedConfirmArtwork {
-  context_module: OwnerType.conversationMakeOfferConfirmArtwork
+  context_module: string
   context_owner_type: OwnerType.conversation
 }
