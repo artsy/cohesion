@@ -717,7 +717,7 @@ export interface ClickedPartnerCard {
  *  }
  * ```
  */
- export interface ClickedPaymentMethod {
+export interface ClickedPaymentMethod {
   action: ActionType.clickedPaymentMethod
   flow: string
   context_page_owner_type: string
@@ -744,15 +744,13 @@ export interface ClickedPartnerCard {
  *  }
  * ```
  */
- export interface ClickedPaymentDetails {
+export interface ClickedPaymentDetails {
   action: ActionType.clickedPaymentDetails
   flow: string
   context_page_owner_type: string
   order_id: string
   subject: string
 }
-
-
 
 /**
  *  User selects existing shipping address when entering the orders
@@ -1173,4 +1171,30 @@ export interface ClickedPlayVideo {
   context_owner_id: string
   context_owner_slug: string
   context_owner_type: PageOwnerType
+}
+
+/**
+ * A user an entity within a tooltip. `type` will be an artist, gene, or partner.
+ *
+ * This schema describes events sent to Segment from [[clickedTooltip]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedTooltip",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_path: "/artist/damien-hirst",
+ *    type: "artist",
+ *  }
+ * ```
+ */
+export interface ClickedTooltip {
+  action: ActionType.clickedTooltip
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+  destination_path: string
+  type: string
 }

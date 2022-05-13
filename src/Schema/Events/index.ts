@@ -50,8 +50,8 @@ import {
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnSubmitOrder,
   ClickedPartnerCard,
-  ClickedPaymentMethod,
   ClickedPaymentDetails,
+  ClickedPaymentMethod,
   ClickedPromoSpace,
   ClickedSelectShippingOption,
   ClickedShippingAddress,
@@ -452,14 +452,14 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPromoSpace}
    */
-   clickedPaymentMethod = "clickedPaymentMethod",
-   /**
-    * Corresponds to {@link ClickedPaymentMethod}
-    */
-    clickedPaymentDetails = "clickedPaymentDetails",
-    /**
-     * Corresponds to {@link ClickedPaymentDetails}
-     */
+  clickedPaymentMethod = "clickedPaymentMethod",
+  /**
+   * Corresponds to {@link ClickedPaymentMethod}
+   */
+  clickedPaymentDetails = "clickedPaymentDetails",
+  /**
+   * Corresponds to {@link ClickedPaymentDetails}
+   */
   clickedPromoSpace = "clickedPromoSpace",
   /**
    * Corresponds to {@link ClickedRegisterToBid}
@@ -485,6 +485,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedSponsorLink}
    */
   clickedSponsorLink = "clickedSponsorLink",
+  /**
+   * Corresponds to {@link ClickedTooltip}
+   */
+  clickedTooltip = "clickedTooltip",
   /**
    * Corresponds to {@link ClickedVerifyIdentiity}
    */
