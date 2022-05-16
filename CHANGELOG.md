@@ -1,3 +1,15 @@
+# v4.47.0 (Mon May 16 2022)
+
+#### 🚀  Enhancement
+
+- feat: adds schema for article events [#318](https://github.com/artsy/cohesion/pull/318) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.46.0 (Tue May 10 2022)
 
 #### 🚀  Enhancement
