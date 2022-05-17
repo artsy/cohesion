@@ -1,3 +1,15 @@
+# v4.47.1 (Tue May 17 2022)
+
+#### 🐛  Bug Fix
+
+- fix: exposes impression [#328](https://github.com/artsy/cohesion/pull/328) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.47.0 (Mon May 16 2022)
 
 #### 🚀  Enhancement
