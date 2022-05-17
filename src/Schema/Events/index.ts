@@ -81,6 +81,7 @@ import {
   CommercialFilterParamsChanged,
   PriceDatabaseFilterParamsChanged,
 } from "./FilterAndSort"
+import { Impression } from "./Impression"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -210,6 +211,7 @@ export type Event =
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
   | FollowEvents
+  | Impression
   | MaxBidSelected
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
