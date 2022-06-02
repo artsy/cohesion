@@ -1,3 +1,20 @@
+# v4.48.0 (Thu Jun 02 2022)
+
+#### 🚀  Enhancement
+
+- new types for my collection [#330](https://github.com/artsy/cohesion/pull/330) ([@dariakoko](https://github.com/dariakoko))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.6.4 to v4.7.2 [#329](https://github.com/artsy/cohesion/pull/329) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.47.1 (Tue May 17 2022)
 
 #### 🐛  Bug Fix
