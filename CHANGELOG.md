@@ -1,3 +1,15 @@
+# v4.52.0 (Thu Jun 02 2022)
+
+#### 🚀  Enhancement
+
+- chore(CX-2610): add my collection insights context modules [#334](https://github.com/artsy/cohesion/pull/334) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.51.0 (Thu Jun 02 2022)
 
 #### 🚀  Enhancement
