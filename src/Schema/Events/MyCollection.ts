@@ -179,7 +179,6 @@ export interface TappedMyCollectionAddArtworkArtist {
  */
 export interface TappedRequestPriceEstimate {
   action: ActionType.tappedRequestPriceEstimate
-  context_screen: OwnerType.myCollectionArtwork
   context_module: ContextModule.myCollectionArtworkInsights
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
