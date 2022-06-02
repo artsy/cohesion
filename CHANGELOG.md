@@ -1,3 +1,15 @@
+# v4.51.0 (Thu Jun 02 2022)
+
+#### 🚀  Enhancement
+
+- fix example [#333](https://github.com/artsy/cohesion/pull/333) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.50.0 (Thu Jun 02 2022)
 
 #### 🚀  Enhancement
