@@ -816,6 +816,10 @@ export enum ActionType {
    */
   tappedViewOffer = "tappedViewOffer",
   /**
+   * Corresponds to {@link TappedUploadAnotherArtwork}
+   */
+  tappedUploadAnotherArtwork = "tappedUploadAnotherArtwork",
+  /**
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",

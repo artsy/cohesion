@@ -42,6 +42,7 @@ export enum OwnerType {
   myCollection = "myCollection",
   myCollectionArtwork = "myCollectionArtwork",
   myCollectionAddArtworkArtist = "myCollectionAddArtworkArtist",
+  myCollectionInsights = "myCollectionInsights",
   newWorksForYou = "newWorksForYou",
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
