@@ -8,8 +8,8 @@ export enum OwnerType {
   article = "article",
   articles = "articles",
   artist = "artist",
-  artists = "artists",
   artistAuctionResults = "artistAuctionResults",
+  artists = "artists",
   artistSeries = "artistSeries",
   artwork = "artwork",
   auction = "auction",
@@ -23,9 +23,9 @@ export enum OwnerType {
   collect = "collect",
   collection = "collection",
   collections = "collections",
+  consign = "consign",
   consignmentFlow = "consignmentFlow",
   consignmentSubmission = "consignmentSubmission",
-  consign = "consign",
   conversation = "conversation",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
   explore = "explore",
@@ -40,8 +40,10 @@ export enum OwnerType {
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   myCollection = "myCollection",
-  myCollectionArtwork = "myCollectionArtwork",
   myCollectionAddArtworkArtist = "myCollectionAddArtworkArtist",
+  myCollectionArtwork = "myCollectionArtwork",
+  myCollectionArtworkAbout = "MyCollectionArtworkAbout",
+  myCollectionArtworkInsights = "MyCollectionArtworkInsights",
   myCollectionInsights = "myCollectionInsights",
   newWorksForYou = "newWorksForYou",
   onboarding = "onboarding",
@@ -62,17 +64,17 @@ export enum OwnerType {
   saleInformation = "saleInformation",
   savedSearch = "savedSearch",
   savedSearches = "savedSearches",
+  savesAndFollows = "savesAndFollows",
   search = "search",
   sell = "sell",
   show = "show",
   shows = "shows",
-  savesAndFollows = "savesAndFollows",
   user = "user",
   viewingRoom = "viewingRoom",
-  viewingRooms = "viewingRooms",
+  viewingRoomArtworkPage = "viewingRoomArtworkPage",
   viewingRoomArtworks = "viewingRoomArtworks",
   viewingRoomList = "viewingRoomList",
-  viewingRoomArtworkPage = "viewingRoomArtworkPage",
+  viewingRooms = "viewingRooms",
   worksForYou = "worksForYou",
 }
 
@@ -90,27 +92,31 @@ export type ScreenOwnerType =
   | OwnerType.auctionResult
   | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
-  | OwnerType.gene
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
   | OwnerType.collection
+  | OwnerType.consign
   | OwnerType.consignmentFlow
   | OwnerType.consignmentSubmission
-  | OwnerType.consign
   | OwnerType.conversation
   | OwnerType.conversationMakeOfferConfirmArtwork
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.fairArtworks
+  | OwnerType.gene
   | OwnerType.home
   | OwnerType.inbox
   | OwnerType.inboxBids
   | OwnerType.inboxConversation
   | OwnerType.inboxInquiries
   | OwnerType.myCollection
-  | OwnerType.myCollectionArtwork
   | OwnerType.myCollectionAddArtworkArtist
+  | OwnerType.myCollectionArtwork
+  | OwnerType.myCollectionArtwork
+  | OwnerType.myCollectionArtworkAbout
+  | OwnerType.myCollectionArtworkInsights
+  | OwnerType.myCollectionInsights
   | OwnerType.newWorksForYou
   | OwnerType.onboarding
   | OwnerType.partner
@@ -119,15 +125,15 @@ export type ScreenOwnerType =
   | OwnerType.saleInformation
   | OwnerType.savedSearch
   | OwnerType.savedSearches
-  | OwnerType.search
   | OwnerType.savesAndFollows
+  | OwnerType.search
   | OwnerType.sell
   | OwnerType.show
   | OwnerType.shows
   | OwnerType.viewingRoom
+  | OwnerType.viewingRoomArtworkPage
   | OwnerType.viewingRoomArtworks
   | OwnerType.viewingRoomList
-  | OwnerType.viewingRoomArtworkPage
   | OwnerType.worksForYou
 
 /**
