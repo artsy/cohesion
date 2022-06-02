@@ -1,3 +1,15 @@
+# v4.49.0 (Thu Jun 02 2022)
+
+#### 🚀  Enhancement
+
+- add myCollectionMarketSignals module [#331](https://github.com/artsy/cohesion/pull/331) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.48.0 (Thu Jun 02 2022)
 
 #### 🚀  Enhancement
