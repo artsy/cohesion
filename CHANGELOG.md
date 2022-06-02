@@ -1,3 +1,15 @@
+# v4.50.0 (Thu Jun 02 2022)
+
+#### 🚀  Enhancement
+
+- remove context_screen from TappedRequestPriceEstimate interfase [#332](https://github.com/artsy/cohesion/pull/332) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.49.0 (Thu Jun 02 2022)
 
 #### 🚀  Enhancement
