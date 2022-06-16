@@ -169,17 +169,48 @@ export interface TappedMyCollectionAddArtworkArtist {
  *  {
  *    action: "tappedRequestPriceEstimate",
  *    context_module: "myCollectionArtworkInsights",
+ *    context_screen: "myCollectionArtworkInsights",
+ *    context_screen_owner_type: "myCollectionArtwork",
  *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
  *    context_screen_owner_slug: "andy-warhol"
  *    demand_index: 8.9
- *
  *  }
  * ```
  */
 export interface TappedRequestPriceEstimate {
   action: ActionType.tappedRequestPriceEstimate
   context_module: ContextModule.myCollectionArtworkInsights
+  context_screen: OwnerType.myCollectionArtworkInsights
+  context_screen_owner_type: OwnerType.myCollectionArtwork
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+  demand_index?: number
+}
+
+/**
+ * A request for a price estimate has been susessfully sent by a user
+ *
+ * This schema describes events sent to Segment from [[sentRequestPriceEstimate]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "sentRequestPriceEstimate",
+ *    context_module: "myCollectionArtworkInsights",
+ *    context_screen: "myCollectionArtworkInsights",
+ *    context_screen_owner_type: "myCollectionArtwork",
+ *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
+ *    context_screen_owner_slug: "andy-warhol"
+ *    demand_index: 8.9
+ *  }
+ * ```
+ */
+export interface SentRequestPriceEstimate {
+  action: ActionType.sentRequestPriceEstimate
+  context_module: ContextModule.myCollectionArtworkInsights
+  context_screen: OwnerType.myCollectionArtworkInsights
+  context_screen_owner_type: OwnerType.myCollectionArtwork
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
   demand_index?: number
 }
