@@ -86,6 +86,7 @@ import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
   EditCollectedArtwork,
+  SentRequestPriceEstimate,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
   TappedRequestPriceEstimate,
@@ -226,6 +227,7 @@ export type Event =
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SentConversationMessage
+  | SentRequestPriceEstimate
   | Share
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
@@ -643,6 +645,10 @@ export enum ActionType {
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
+  /**
+   * Corresponds to {@link SentRequestPriceEstimate}
+   */
+  sentRequestPriceEstimate = "sentRequestPriceEstimate",
   /**
    * Corresponds to {@link Share}
    */
