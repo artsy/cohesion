@@ -1,3 +1,20 @@
+# v4.53.0 (Thu Jun 16 2022)
+
+#### 🚀  Enhancement
+
+- feat: add SentRequestPriceEstimate interface, small ref [#336](https://github.com/artsy/cohesion/pull/336) ([@dariakoko](https://github.com/dariakoko))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.7.2 to v4.7.3 [#335](https://github.com/artsy/cohesion/pull/335) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.52.0 (Thu Jun 02 2022)
 
 #### 🚀  Enhancement
