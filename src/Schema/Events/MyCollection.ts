@@ -174,7 +174,6 @@ export interface TappedMyCollectionAddArtworkArtist {
  *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
  *    context_screen_owner_slug: "andy-warhol"
  *    demand_index: 8.9
- *
  *  }
  * ```
  */
@@ -203,7 +202,6 @@ export interface TappedRequestPriceEstimate {
  *    context_screen_owner_id: "5fad78273c8451000d0c53b9"
  *    context_screen_owner_slug: "andy-warhol"
  *    demand_index: 8.9
- *
  *  }
  * ```
  */
