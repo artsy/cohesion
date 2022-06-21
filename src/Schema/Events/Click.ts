@@ -1198,3 +1198,27 @@ export interface ClickedTooltip {
   destination_path: string
   type: string
 }
+
+/**
+ * A user clicks on the partner's website url on the partner page
+ *
+ * This schema describes events sent to Segment from [[clickedPartnerLink]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPartnerLink",
+ *    context_page_owner_type: "partner",
+ *    context_page_owner_id: "62389c0a0b01c80022eb82a1",
+ *    context_page_owner_slug: "heather-james-fine-art",
+ *    destination_path: "https://www.heatherjames.com/",
+ *  }
+ * ```
+ */
+export interface ClickedPartnerLink {
+  action: ActionType.clickedPartnerLink
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+  destination_path: string
+}
