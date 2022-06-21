@@ -1,3 +1,20 @@
+# v4.54.0 (Tue Jun 21 2022)
+
+#### 🚀  Enhancement
+
+- Partner url click [#339](https://github.com/artsy/cohesion/pull/339) ([@louislecluse](https://github.com/louislecluse))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.7.3 to v4.7.4 [#337](https://github.com/artsy/cohesion/pull/337) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@louislecluse](https://github.com/louislecluse)
+- [@renovate[bot]](https://github.com/renovate[bot])
+
+---
+
 # v4.53.0 (Thu Jun 16 2022)
 
 #### 🚀  Enhancement
