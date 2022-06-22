@@ -1,3 +1,15 @@
+# v4.55.0 (Wed Jun 22 2022)
+
+#### 🚀  Enhancement
+
+- chore: add Tag owner type [#338](https://github.com/artsy/cohesion/pull/338) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.54.0 (Tue Jun 21 2022)
 
 #### 🚀  Enhancement
