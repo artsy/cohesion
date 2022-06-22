@@ -69,6 +69,7 @@ export enum OwnerType {
   sell = "sell",
   show = "show",
   shows = "shows",
+  tag = "tag",
   user = "user",
   viewingRoom = "viewingRoom",
   viewingRoomArtworkPage = "viewingRoomArtworkPage",
@@ -130,6 +131,7 @@ export type ScreenOwnerType =
   | OwnerType.sell
   | OwnerType.show
   | OwnerType.shows
+  | OwnerType.tag
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworkPage
   | OwnerType.viewingRoomArtworks
@@ -177,6 +179,7 @@ export type PageOwnerType =
   | OwnerType.search
   | OwnerType.show
   | OwnerType.shows
+  | OwnerType.tag
   | OwnerType.user
   | OwnerType.viewingRoom
   | OwnerType.viewingRooms
