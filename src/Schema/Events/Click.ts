@@ -645,6 +645,77 @@ export interface ClickedOnFramedMeasurementsDropdown {
 }
 
 /**
+ * A Partner clicks on one of the options (Accept collector's offer, Send a counteroffer, Decline collector's offer) 
+ * for offers on the orders page on CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOfferActions]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOfferActions",
+ *    context_page_owner_type: "order",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    order_id: "60de173a47476c000fd5c4cc"
+ *    label: "Accept collector's offer"
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    flow: offer
+ *    partner_id: "60de173a47476c000fd5c4cc" 
+ *  }
+ * ```
+ */
+ export interface ClickedOfferActions {
+  action: ActionType.clickedOfferActions
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  order_id: string
+  label: string
+  artwork_id: string
+  flow: string
+  partner_id: string
+
+}
+
+/**
+ * A Partner clicks on one of the the CTAs on the orders page on the orders page on CMS.
+ * - Confirm order
+ * - Confirm shipping contact and confirm order
+ * - Accept offer
+ * - Confirm shipping contact and accept offer 
+ * - Decline offer
+ * - Send a counter offer
+ * - Confirm shipping contact and send counter offer
+ *
+ * This schema describes events sent to Segment from [[clickedOrderPage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOrderPage",
+ *    context_page_owner_type: "order",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    order_id: "60de173a47476c000fd5c4cc"
+ *    label: "Confirm order"
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    flow: buy
+ *    partner_id: "60de173a47476c000fd5c4cc" 
+ *  }
+ * ```
+ */
+ export interface ClickedOrderPage {
+  action: ActionType.clickedOrderPage
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  order_id: string
+  label: string
+  artwork_id: string
+  flow: string
+  partner_id: string  
+}
+
+/**
  *  User clicks on submit order on the orders review page.
  *
  *  This schema describes events sent to Segment from [[clickedOnSubmitOrder]]
