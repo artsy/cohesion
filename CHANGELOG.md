@@ -1,3 +1,20 @@
+# v4.56.0 (Tue Jul 05 2022)
+
+#### 🚀  Enhancement
+
+- [AS-3293] Adding new events for CMS tracking [#341](https://github.com/artsy/cohesion/pull/341) ([@daytavares](https://github.com/daytavares))
+
+#### 🔩 Dependency Updates
+
+- Bump jsdom from 16.2.2 to 16.7.0 [#340](https://github.com/artsy/cohesion/pull/340) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.55.0 (Wed Jun 22 2022)
 
 #### 🚀  Enhancement
