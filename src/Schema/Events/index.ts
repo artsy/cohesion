@@ -61,6 +61,8 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedOfferActions,
+  ClickedOrderPage,
 } from "./Click"
 import {
   ArtworkDetailsCompleted,
@@ -199,6 +201,8 @@ export type Event =
   | ClickedShowMore
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
+  | ClickedOfferActions
+  | ClickedOrderPage
   | CommercialFilterParamsChanged
   | ConfirmBid
   | ConfirmRegistrationPageview
@@ -507,6 +511,14 @@ export enum ActionType {
    * Corresponds to {@link ClickedViewingRoomCard}
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
+  /**
+   * Corresponds to {@link ClickedOfferActions}
+   */
+   clickedOfferActions = "clickedOfferActions",
+    /**
+   * Corresponds to {@link ClickedOrderPage}
+   */
+  clickedOrderPage = "clickedOrderPage",   
   /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
