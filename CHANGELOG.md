@@ -1,3 +1,15 @@
+# v4.57.0 (Thu Jul 07 2022)
+
+#### 🚀  Enhancement
+
+- chore[FX-3378]: deprecate addToCalendar helper function [#342](https://github.com/artsy/cohesion/pull/342) ([@mdole](https://github.com/mdole))
+
+#### Authors: 1
+
+- Matt Dole ([@mdole](https://github.com/mdole))
+
+---
+
 # v4.56.0 (Tue Jul 05 2022)
 
 #### 🚀  Enhancement
