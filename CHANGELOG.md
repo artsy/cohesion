@@ -1,3 +1,15 @@
+# v4.58.0 (Tue Jul 26 2022)
+
+#### 🚀  Enhancement
+
+- chore(deprecated-schema): Move deprecated schema from force [#343](https://github.com/artsy/cohesion/pull/343) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.57.0 (Thu Jul 07 2022)
 
 #### 🚀  Enhancement
