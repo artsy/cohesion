@@ -1,6 +1,5 @@
 import { AuthContextModule, ContextModule } from "../Values/ContextModule"
 import { AuthIntent } from "../Values/Intent"
-import { PageOwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
@@ -172,14 +171,44 @@ export type AuthService = "apple" | "email" | "facebook" | "google"
  *  {
  *    action: "onboardingUserInputData",
  *    context_module: "onboardingInterests",
- *    context_owner_type: "onboarding",
- *    data_input: "[learnAboutArt]"
+ *    data_input: "[developingArtTastes]"
  *  }
  * ```
  */
 export interface OnboardingUserInputData {
   action: ActionType.onboardingUserInputData
   context_module: ContextModule
-  context_owner_type: PageOwnerType
   data_input: string
+}
+
+/**
+ * A user starts the onboarding flow
+ *
+ * This schema describes events sent to Segment from [[startedOnboarding]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "startedOnboarding",
+ *  }
+ * ```
+ */
+export interface StartedOnboarding {
+  action: ActionType.startedOnboarding
+}
+
+/**
+ * A user completes the onboarding flow
+ *
+ * This schema describes events sent to Segment from [[completedOnboarding]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "completedOnboarding",
+ *  }
+ * ```
+ */
+export interface CompletedOnboarding {
+  action: ActionType.completedOnboarding
 }
