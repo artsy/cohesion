@@ -645,7 +645,7 @@ export interface ClickedOnFramedMeasurementsDropdown {
 }
 
 /**
- * A Partner clicks on one of the options (Accept collector's offer, Send a counteroffer, Decline collector's offer) 
+ * A Partner clicks on one of the options (Accept collector's offer, Send a counteroffer, Decline collector's offer)
  * for offers on the orders page on CMS.
  *
  * This schema describes events sent to Segment from [[clickedOfferActions]]
@@ -660,11 +660,11 @@ export interface ClickedOnFramedMeasurementsDropdown {
  *    label: "Accept collector's offer"
  *    artwork_id: "60de173a47476c000fd5c4cc"
  *    flow: offer
- *    partner_id: "60de173a47476c000fd5c4cc" 
+ *    partner_id: "60de173a47476c000fd5c4cc"
  *  }
  * ```
  */
- export interface ClickedOfferActions {
+export interface ClickedOfferActions {
   action: ActionType.clickedOfferActions
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
@@ -674,7 +674,6 @@ export interface ClickedOnFramedMeasurementsDropdown {
   artwork_id: string
   flow: string
   partner_id: string
-
 }
 
 /**
@@ -682,7 +681,7 @@ export interface ClickedOnFramedMeasurementsDropdown {
  * - Confirm order
  * - Confirm shipping contact and confirm order
  * - Accept offer
- * - Confirm shipping contact and accept offer 
+ * - Confirm shipping contact and accept offer
  * - Decline offer
  * - Send a counter offer
  * - Confirm shipping contact and send counter offer
@@ -699,11 +698,11 @@ export interface ClickedOnFramedMeasurementsDropdown {
  *    label: "Confirm order"
  *    artwork_id: "60de173a47476c000fd5c4cc"
  *    flow: buy
- *    partner_id: "60de173a47476c000fd5c4cc" 
+ *    partner_id: "60de173a47476c000fd5c4cc"
  *  }
  * ```
  */
- export interface ClickedOrderPage {
+export interface ClickedOrderPage {
   action: ActionType.clickedOrderPage
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
@@ -712,7 +711,7 @@ export interface ClickedOnFramedMeasurementsDropdown {
   label: string
   artwork_id: string
   flow: string
-  partner_id: string  
+  partner_id: string
 }
 
 /**

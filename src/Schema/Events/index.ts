@@ -43,12 +43,14 @@ import {
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedNavigationTab,
+  ClickedOfferActions,
   ClickedOfferOption,
   ClickedOnArtworkShippingUnitsDropdown,
   ClickedOnArtworkShippingWeight,
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnSubmitOrder,
+  ClickedOrderPage,
   ClickedPartnerCard,
   ClickedPartnerLink,
   ClickedPaymentDetails,
@@ -61,8 +63,6 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
-  ClickedOfferActions,
-  ClickedOrderPage,
 } from "./Click"
 import {
   ArtworkDetailsCompleted,
@@ -514,11 +514,11 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedOfferActions}
    */
-   clickedOfferActions = "clickedOfferActions",
-    /**
+  clickedOfferActions = "clickedOfferActions",
+  /**
    * Corresponds to {@link ClickedOrderPage}
    */
-  clickedOrderPage = "clickedOrderPage",   
+  clickedOrderPage = "clickedOrderPage",
   /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
