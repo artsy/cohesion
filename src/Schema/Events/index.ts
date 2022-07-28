@@ -13,9 +13,11 @@ import {
 } from "./Auction"
 import {
   AuthImpression,
+  CompletedOnboarding,
   CreatedAccount,
   OnboardingUserInputData,
   ResetYourPassword,
+  StartedOnboarding,
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
@@ -204,6 +206,7 @@ export type Event =
   | ClickedOfferActions
   | ClickedOrderPage
   | CommercialFilterParamsChanged
+  | CompletedOnboarding
   | ConfirmBid
   | ConfirmRegistrationPageview
   | ConsignmentArtistFailed
@@ -235,6 +238,7 @@ export type Event =
   | SentConversationMessage
   | SentRequestPriceEstimate
   | Share
+  | StartedOnboarding
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
   | TappedArticleGroup
@@ -524,6 +528,10 @@ export enum ActionType {
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
   /**
+   * Corresponds to {@link CompletedOnboarding}
+   */
+  completedOnboarding = "completedOnboarding",
+  /**
    * Corresponds to {@link ConfirmBid}
    */
   confirmBid = "confirmBid",
@@ -675,6 +683,10 @@ export enum ActionType {
    * Corresponds to {@link ExperimentViewed}
    */
   experimentViewed = "experimentViewed",
+  /**
+   * Corresponds to {@link SuccessfullyLoggedIn}
+   */
+  startedOnboarding = "startedOnboarding",
   /**
    * Corresponds to {@link SubmitAnotherArtwork}
    */

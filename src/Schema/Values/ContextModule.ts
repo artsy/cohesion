@@ -104,9 +104,8 @@ export enum ContextModule {
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
-  onboardingArtists = "onboardingArtists",
-  onboardingBudget = "onboardingBudget",
-  onboardingGenes = "onboardingGenes",
+  onboardingActivity = "onboardingActivity",
+  onboardingCollectorLevel = "onboardingCollectorLevel",
   onboardingInterests = "onboardingInterests",
   ordersAccept = "ordersAccept",
   ordersCounter = "ordersCounter",
@@ -223,6 +222,9 @@ export type AuthContextModule =
   | ContextModule.mainCarousel
   | ContextModule.minimalCTABanner
   | ContextModule.myCollectionAddArtworkAddArtist
+  | ContextModule.onboardingActivity
+  | ContextModule.onboardingCollectorLevel
+  | ContextModule.onboardingInterests
   | ContextModule.otherWorksByArtistRail
   | ContextModule.otherWorksFromPartnerRail
   | ContextModule.otherWorksFromShowRail
