@@ -1,3 +1,15 @@
+# v4.59.0 (Thu Jul 28 2022)
+
+#### 🚀  Enhancement
+
+- [GRO-1153] Updates onboarding data [#344](https://github.com/artsy/cohesion/pull/344) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v4.58.0 (Tue Jul 26 2022)
 
 #### 🚀  Enhancement
