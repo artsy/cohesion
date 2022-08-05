@@ -821,6 +821,39 @@ export interface ClickedPaymentDetails {
   order_id: string
   subject: string
 }
+/**
+ * After choosing Bank Transfer, when user clicks on save & continue 
+ * on the payment page, the balance account is checked
+ *
+ *  This schema describes events sent 
+ * to Segment from [[clickedBalanceAccountCheck]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedBalanceAccountCheck",
+ *    flow: "Make Offer",
+ *    context_page_owner_type: "orders-payment",
+ *    order_id: "407dd09f-4afd-4aad-a6cc-1d6704dc2b11"
+ *    amount: 2000,
+ *    currency: "USD"
+ *    payment_method: "bank transfer"
+ *    subject: "balance account check"
+ *    outcome: "sucess"
+ *  }
+ * ```
+ */
+ export interface ClickedBalanceAccountCheck {
+  action: ActionType.clickedBalanceAccountCheck
+  flow: string
+  context_page_owner_type: string
+  order_id: string
+  amount: number
+  currency: string
+  payment_method: string
+  subject: string
+  outcome: string
+}
 
 /**
  *  User selects existing shipping address when entering the orders
