@@ -831,7 +831,7 @@ export interface ClickedPaymentDetails {
  *  @example
  *  ```
  *  {
- *    action: "clickedBalanceAccountCheck",
+ *    action: "checkedAccountBalance",
  *    flow: "Make Offer",
  *    context_page_owner_type: "orders-payment",
  *    order_id: "407dd09f-4afd-4aad-a6cc-1d6704dc2b11"
@@ -843,8 +843,8 @@ export interface ClickedPaymentDetails {
  *  }
  * ```
  */
- export interface ClickedBalanceAccountCheck {
-  action: ActionType.clickedBalanceAccountCheck
+ export interface CheckedAccountBalance {
+  action: ActionType.checkedAccountBalance
   flow: string
   context_page_owner_type: string
   order_id: string

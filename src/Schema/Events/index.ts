@@ -57,7 +57,7 @@ import {
   ClickedPartnerLink,
   ClickedPaymentDetails,
   ClickedPaymentMethod,
-  ClickedBalanceAccountCheck,
+  CheckedAccountBalance,
   ClickedPromoSpace,
   ClickedSelectShippingOption,
   ClickedShippingAddress,
@@ -196,7 +196,7 @@ export type Event =
   | ClickedPartnerLink
   | ClickedPaymentMethod
   | ClickedPaymentDetails
-  | ClickedBalanceAccountCheck
+  | CheckedAccountBalance
   | ClickedPromoSpace
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
@@ -480,9 +480,9 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPaymentDetails}
    */
-   clickedBalanceAccountCheck = "clickedBalanceAccountCheck",
+   checkedAccountBalance = "checkedAccountBalance",
    /**
-    * Corresponds to {@link ClickedBalanceAccountCheck}
+    * Corresponds to {@link CheckedAccountBalance}
     */
   clickedPromoSpace = "clickedPromoSpace",
   /**
