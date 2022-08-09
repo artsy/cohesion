@@ -1,3 +1,15 @@
+# v4.61.0 (Tue Aug 09 2022)
+
+#### 🚀  Enhancement
+
+- feat(onboarding): add context module for onboarding follows and saves [#346](https://github.com/artsy/cohesion/pull/346) ([@TMcMeans](https://github.com/TMcMeans))
+
+#### Authors: 1
+
+- TanjieM ([@TMcMeans](https://github.com/TMcMeans))
+
+---
+
 # v4.60.0 (Tue Aug 09 2022)
 
 #### 🚀  Enhancement
