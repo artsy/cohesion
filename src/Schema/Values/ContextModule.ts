@@ -107,6 +107,7 @@ export enum ContextModule {
   onboardingActivity = "onboardingActivity",
   onboardingCollectorLevel = "onboardingCollectorLevel",
   onboardingInterests = "onboardingInterests",
+  onboardingFlow = "onboardingFlow",
   ordersAccept = "ordersAccept",
   ordersCounter = "ordersCounter",
   ordersNewPayment = "ordersNewPayment",
@@ -225,6 +226,7 @@ export type AuthContextModule =
   | ContextModule.onboardingActivity
   | ContextModule.onboardingCollectorLevel
   | ContextModule.onboardingInterests
+  | ContextModule.onboardingFlow
   | ContextModule.otherWorksByArtistRail
   | ContextModule.otherWorksFromPartnerRail
   | ContextModule.otherWorksFromShowRail
