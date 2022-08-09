@@ -1,3 +1,15 @@
+# v4.60.0 (Tue Aug 09 2022)
+
+#### 🚀  Enhancement
+
+- [AS-3324] Adding event for balance account check [#345](https://github.com/artsy/cohesion/pull/345) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.59.0 (Thu Jul 28 2022)
 
 #### 🚀  Enhancement
