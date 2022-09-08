@@ -822,10 +822,10 @@ export interface ClickedPaymentDetails {
   subject: string
 }
 /**
- * After choosing Bank Transfer, when user clicks on save & continue 
+ * After choosing Bank Transfer, when user clicks on save & continue
  * on the payment page, the balance account is checked
  *
- *  This schema describes events sent 
+ *  This schema describes events sent
  * to Segment from [[clickedBalanceAccountCheck]]
  *
  *  @example
@@ -843,7 +843,7 @@ export interface ClickedPaymentDetails {
  *  }
  * ```
  */
- export interface CheckedAccountBalance {
+export interface CheckedAccountBalance {
   action: ActionType.checkedAccountBalance
   flow: string
   context_page_owner_type: string

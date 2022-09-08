@@ -21,6 +21,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  CheckedAccountBalance,
   ClickedAddNewShippingAddress,
   ClickedAddWorksToFair,
   ClickedAppDownload,
@@ -57,7 +58,6 @@ import {
   ClickedPartnerLink,
   ClickedPaymentDetails,
   ClickedPaymentMethod,
-  CheckedAccountBalance,
   ClickedPromoSpace,
   ClickedSelectShippingOption,
   ClickedShippingAddress,
@@ -98,6 +98,14 @@ import {
   TappedRequestPriceEstimate,
 } from "./MyCollection"
 import { PromptForReview } from "./PromptForReview"
+import {
+  SearchedReverseImageWithNoResults,
+  SearchedReverseImageWithResults,
+  SelectedArtworkFromReverseImageSearch,
+  TappedPickImageFromLibrary,
+  TappedReverseImageSearch,
+  TappedToggleCameraFlash,
+} from "./ReverseImageSearch"
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
@@ -234,7 +242,10 @@ export type Event =
   | SaleScreenLoadComplete
   | Screen
   | SearchedPriceDatabase
+  | SearchedReverseImageWithNoResults
+  | SearchedReverseImageWithResults
   | SearchedWithNoResults
+  | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SentConversationMessage
@@ -267,14 +278,17 @@ export type Event =
   | TappedMainArtworkGrid
   | TappedMakeOffer
   | TappedPartnerCard
+  | TappedPickImageFromLibrary
   | TappedPromoSpace
   | TappedRequestPriceEstimate
+  | TappedReverseImageSearch
   | TappedSell
   | TappedSellArtwork
   | TappedShowMore
   | TappedLearnMore
   | TappedSkip
   | TappedTabBar
+  | TappedToggleCameraFlash
   | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
@@ -480,10 +494,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPaymentDetails}
    */
-   checkedAccountBalance = "checkedAccountBalance",
-   /**
-    * Corresponds to {@link CheckedAccountBalance}
-    */
+  checkedAccountBalance = "checkedAccountBalance",
+  /**
+   * Corresponds to {@link CheckedAccountBalance}
+   */
   clickedPromoSpace = "clickedPromoSpace",
   /**
    * Corresponds to {@link ClickedRegisterToBid}
@@ -658,9 +672,21 @@ export enum ActionType {
    */
   searchedPriceDatabase = "searchedPriceDatabase",
   /**
+   * Corresponds to {@link SearchedReverseImageWithNoResults}
+   */
+  searchedReverseImageWithNoResults = "searchedReverseImageWithNoResults",
+  /**
+   * Corresponds to {@link SearchedReverseImageWithResults}
+   */
+  searchedReverseImageWithResults = "searchedReverseImageWithResults",
+  /**
    * Corresponds to {@link SearchedWithNoResults}
    */
   searchedWithNoResults = "searchedWithNoResults",
+  /**
+   * Corresponds to {@link SelectedArtworkFromReverseImageSearch}
+   */
+  selectedArtworkFromReverseImageSearch = "selectedArtworkFromReverseImageSearch",
   /**
    * Corresponds to {@link SelectedItemFromSearch}
    */
@@ -806,6 +832,10 @@ export enum ActionType {
    */
   tappedPartnerCard = "tappedPartnerCard",
   /**
+   * Corresponds to {@link TappedPickImageFromLibrary}
+   */
+  tappedPickImageFromLibrary = "tappedPickImageFromLibrary",
+  /**
    * Corresponds to {@link TappedPromoSpace}
    */
   tappedPromoSpace = "tappedPromoSpace",
@@ -817,6 +847,10 @@ export enum ActionType {
    * Corresponds to {@link TappedRequestPriceEstimate}
    */
   tappedRequestPriceEstimate = "tappedRequestPriceEstimate",
+  /**
+   * Corresponds to {@link TappedReverseImageSearch}
+   */
+  tappedReverseImageSearch = "tappedReverseImageSearch",
   /**
    * Corresponds to {@link TappedSell}
    */
@@ -841,6 +875,10 @@ export enum ActionType {
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
+  /**
+   * Corresponds to {@link TappedToggleCameraFlash}
+   */
+  tappedToggleCameraFlash = "tappedToggleCameraFlash",
   /**
    * Corresponds to {@link TappedVerifyIdentity}
    */
