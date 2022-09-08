@@ -1,3 +1,20 @@
+# v4.62.0 (Thu Sep 08 2022)
+
+#### 🚀  Enhancement
+
+- feat(FX-4209): add events for reverse image search [#348](https://github.com/artsy/cohesion/pull/348) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.7.4 to v4.8.2 [#347](https://github.com/artsy/cohesion/pull/347) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.61.0 (Tue Aug 09 2022)
 
 #### 🚀  Enhancement
