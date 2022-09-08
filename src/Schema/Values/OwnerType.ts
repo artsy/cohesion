@@ -60,6 +60,7 @@ export enum OwnerType {
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",
   profile = "profile",
+  reverseImageSearch = "reverseImageSearch",
   sale = "sale",
   saleInformation = "saleInformation",
   savedSearch = "savedSearch",
