@@ -100,7 +100,7 @@ import {
 import { PromptForReview } from "./PromptForReview"
 import {
   SearchedReverseImageWithNoResults,
-  searchedReverseImageWithResults,
+  SearchedReverseImageWithResults,
   SelectedArtworkFromReverseImageSearch,
   TappedPickImageFromLibrary,
   TappedReverseImageSearch,
@@ -243,7 +243,7 @@ export type Event =
   | Screen
   | SearchedPriceDatabase
   | SearchedReverseImageWithNoResults
-  | searchedReverseImageWithResults
+  | SearchedReverseImageWithResults
   | SearchedWithNoResults
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch

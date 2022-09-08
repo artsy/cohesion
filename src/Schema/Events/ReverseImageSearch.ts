@@ -26,8 +26,8 @@ export interface TappedReverseImageSearch {
   action: ActionType.tappedReverseImageSearch
   context_screen_owner_type: ScreenOwnerType
   owner_type: ScreenOwnerType
-  owner_id?: string
-  owner_slug?: string
+  owner_id: string
+  owner_slug: string
 }
 
 /**
@@ -50,8 +50,8 @@ export interface TappedToggleCameraFlash {
   action: ActionType.tappedToggleCameraFlash
   context_screen_owner_type: ScreenOwnerType
   owner_type: ScreenOwnerType
-  owner_id?: string
-  owner_slug?: string
+  owner_id: string
+  owner_slug: string
 }
 
 /**
@@ -74,8 +74,8 @@ export interface TappedPickImageFromLibrary {
   action: ActionType.tappedPickImageFromLibrary
   context_screen_owner_type: ScreenOwnerType
   owner_type: ScreenOwnerType
-  owner_id?: string
-  owner_slug?: string
+  owner_id: string
+  owner_slug: string
 }
 
 /**
@@ -96,12 +96,12 @@ export interface TappedPickImageFromLibrary {
  *  }
  * ```
  */
-export interface searchedReverseImageWithResults {
+export interface SearchedReverseImageWithResults {
   action: ActionType.searchedReverseImageWithResults
   context_screen_owner_type?: ScreenOwnerType
   owner_type: ScreenOwnerType
-  owner_id?: string
-  owner_slug?: string
+  owner_id: string
+  owner_slug: string
   total_matches_count: number
   artwork_ids: string
 }
@@ -126,8 +126,8 @@ export interface SearchedReverseImageWithNoResults {
   action: ActionType.searchedReverseImageWithNoResults
   context_screen_owner_type: ScreenOwnerType
   owner_type: ScreenOwnerType
-  owner_id?: string
-  owner_slug?: string
+  owner_id: string
+  owner_slug: string
 }
 
 /**
@@ -154,9 +154,9 @@ export interface SearchedReverseImageWithNoResults {
 export interface SelectedArtworkFromReverseImageSearch {
   action: ActionType.selectedArtworkFromReverseImageSearch
   context_screen_owner_type: ScreenOwnerType
-  destination_owner_type?: ScreenOwnerType
+  destination_owner_type: ScreenOwnerType
   destination_owner_id?: string
-  destination_owner_slug?: string
+  destination_owner_slug: string
   owner_type: ScreenOwnerType
   owner_id: string
   owner_slug: string
