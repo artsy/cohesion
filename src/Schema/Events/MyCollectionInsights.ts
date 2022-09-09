@@ -99,3 +99,37 @@ export interface TappedMyCollectionInsightsMedianAuctionRailItem {
   artist_id: string
   selected_timeframe: string
 }
+
+/**
+ * A user taps on the MedianAuctionPriceChartCareerHighlight
+ *
+ * This schema describes events sent to Segment from [[tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight",
+ *    context_module: "myCollectionInsightsMedianAuctionPriceChart",
+ *    context_screen: "myCollectionInsightsMedianAuctionPrice",
+ *    context_screen_owner_type: "myCollectionInsightsMedianAuctionPrice",
+ *    context_screen_owner_id: "5fad78273c8451000d0c53b9",
+ *    context_screen_owner_slug: "andy-warhol",
+ *    artist_id: "5fad78273c8451000d0c53b9",
+ *    selected_category: "Painting"
+ *    selected_timeframe:"3 yrs"
+ *    year: 2019
+ *  }
+ * ```
+ */
+ export interface TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight {
+  action: ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
+  context_module: ContextModule.myCollectionInsightsMedianAuctionPriceChart
+  context_screen: OwnerType.myCollectionInsightsMedianAuctionPrice
+  context_screen_owner_type: OwnerType.myCollectionInsightsMedianAuctionPrice
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  artist_id: string
+  selected_category: string
+  selected_timeframe: string
+  year: number
+}

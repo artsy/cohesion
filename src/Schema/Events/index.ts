@@ -99,6 +99,7 @@ import {
 } from "./MyCollection"
 import {
   TappedMyCollectionInsightsMedianAuctionRailItem,
+  TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight,
   TappedMyCollectionInsightsMedianAuctionPriceChartCategory,
   TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
 } from "./MyCollectionInsights"
@@ -283,6 +284,7 @@ export type Event =
   | TappedMainArtworkGrid
   | TappedMakeOffer
   | TappedMyCollectionInsightsMedianAuctionRailItem
+  | TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
   | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
   | TappedPartnerCard
@@ -835,6 +837,10 @@ export enum ActionType {
    * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionRailItem}
    */
   tappedMyCollectionInsightsMedianAuctionRailItem = "tappedMyCollectionInsightsMedianAuctionRailItem",
+  /**
+   * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight}
+   */
+  tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight = 'tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight',
   /**
    * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartCategory}
    */
