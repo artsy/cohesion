@@ -120,6 +120,7 @@ export type ScreenOwnerType =
   | OwnerType.myCollectionArtworkAbout
   | OwnerType.myCollectionArtworkInsights
   | OwnerType.myCollectionInsights
+  | OwnerType.myCollectionInsightsMedianAuctionPrice
   | OwnerType.newWorksForYou
   | OwnerType.onboarding
   | OwnerType.partner
