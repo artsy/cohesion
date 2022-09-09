@@ -97,6 +97,11 @@ import {
   TappedCollectedArtworkImages,
   TappedRequestPriceEstimate,
 } from "./MyCollection"
+import {
+  TappedMyCollectionInsightsMedianAuctionRailItem,
+  TappedMyCollectionInsightsMedianAuctionPriceChartCategory,
+  TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
+} from "./MyCollectionInsights"
 import { PromptForReview } from "./PromptForReview"
 import {
   SearchedReverseImageWithNoResults,
@@ -277,6 +282,9 @@ export type Event =
   | TappedNavigationTab
   | TappedMainArtworkGrid
   | TappedMakeOffer
+  | TappedMyCollectionInsightsMedianAuctionRailItem
+  | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
+  | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
   | TappedPartnerCard
   | TappedPickImageFromLibrary
   | TappedPromoSpace
@@ -823,6 +831,19 @@ export enum ActionType {
    * Corresponds to {@link TappedMakeOffer}
    */
   tappedMakeOffer = "tappedMakeOffer",
+  /**
+   * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionRailItem}
+   */
+  tappedMyCollectionInsightsMedianAuctionRailItem = "tappedMyCollectionInsightsMedianAuctionRailItem",
+  /**
+   * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartCategory}
+   */
+  tappedMyCollectionInsightsMedianAuctionPriceChartCategory = 'TappedMyCollectionInsightsMedianAuctionPriceChartCategory',
+
+  /**
+   * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe}
+   */
+  tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe = 'tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe',
   /**
    * Corresponds to {@link TappedNavigationTab}
    */
