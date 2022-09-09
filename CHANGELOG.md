@@ -1,3 +1,15 @@
+# v4.62.1 (Thu Sep 08 2022)
+
+#### 🐛  Bug Fix
+
+- chore(FX-4209): reexport reverse image search events [#349](https://github.com/artsy/cohesion/pull/349) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak (Dzmitry Tratsiak) ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.62.0 (Thu Sep 08 2022)
 
 #### 🚀  Enhancement
