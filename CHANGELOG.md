@@ -1,3 +1,20 @@
+# v4.63.0 (Fri Sep 09 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-2918): Add MyCollectionInsigts Median Auction Price tracking [#351](https://github.com/artsy/cohesion/pull/351) ([@lordkiz](https://github.com/lordkiz))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.8.2 to v4.8.3 [#350](https://github.com/artsy/cohesion/pull/350) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.62.1 (Thu Sep 08 2022)
 
 #### 🐛  Bug Fix
