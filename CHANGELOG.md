@@ -1,3 +1,15 @@
+# v4.65.0 (Fri Sep 09 2022)
+
+#### 🚀  Enhancement
+
+- include myCollectionInsightsMedianAuctionPrice in ScreenOwnerType [#353](https://github.com/artsy/cohesion/pull/353) ([@lordkiz](https://github.com/lordkiz))
+
+#### Authors: 1
+
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.64.0 (Fri Sep 09 2022)
 
 #### 🚀  Enhancement
