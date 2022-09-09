@@ -1,3 +1,15 @@
+# v4.64.0 (Fri Sep 09 2022)
+
+#### 🚀  Enhancement
+
+- Add tracking for career highlight in price chart [#352](https://github.com/artsy/cohesion/pull/352) ([@lordkiz](https://github.com/lordkiz))
+
+#### Authors: 1
+
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.63.0 (Fri Sep 09 2022)
 
 #### 🚀  Enhancement
