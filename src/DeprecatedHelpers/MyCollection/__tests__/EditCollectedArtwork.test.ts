@@ -5,6 +5,7 @@ describe("MyCollection:EditCollectedArtwork", () => {
     const event = editCollectedArtwork({
       contextOwnerId: "1234567",
       contextOwnerSlug: "some-owner",
+      platform: "mobile",
     })
 
     expect(event).toEqual({
@@ -13,6 +14,7 @@ describe("MyCollection:EditCollectedArtwork", () => {
       context_owner_id: "1234567",
       context_owner_slug: "some-owner",
       context_owner_type: "myCollectionArtwork",
+      platform: "mobile",
     })
   })
 })
