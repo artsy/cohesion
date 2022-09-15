@@ -92,6 +92,7 @@ import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
   EditCollectedArtwork,
+  SaveCollectedArtwork,
   SentRequestPriceEstimate,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
@@ -246,6 +247,7 @@ export type Event =
   | RegistrationSubmitted
   | ResetYourPassword
   | SaleScreenLoadComplete
+  | SaveCollectedArtwork
   | Screen
   | SearchedPriceDatabase
   | SearchedReverseImageWithNoResults
@@ -676,6 +678,10 @@ export enum ActionType {
    * Corresponds to {@link SaleScreenLoadComplete}
    */
   saleScreenLoadComplete = "saleScreenLoadComplete",
+  /**
+   * Corresponds to {@link SaveCollectedArtwork}
+   */
+  saveCollectedArtwork = "saveCollectedArtwork",
   /**
    * Corresponds to {@link Screen}
    */
