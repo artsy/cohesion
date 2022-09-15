@@ -1,9 +1,13 @@
 import { ActionType, ContextModule, OwnerType } from "../../Schema"
-import { DeleteCollectedArtwork } from "../../Schema/Events/MyCollection"
+import {
+  DeleteCollectedArtwork,
+  Platform,
+} from "../../Schema/Events/MyCollection"
 
 export interface DeleteCollectedArtworkArgs {
   contextOwnerId: string
   contextOwnerSlug: string
+  platform: Platform
 }
 
 /**
@@ -20,6 +24,7 @@ export interface DeleteCollectedArtworkArgs {
 export const deleteCollectedArtwork = ({
   contextOwnerId,
   contextOwnerSlug,
+  platform,
 }: DeleteCollectedArtworkArgs): DeleteCollectedArtwork => {
   return {
     action: ActionType.deleteCollectedArtwork,
@@ -27,5 +32,6 @@ export const deleteCollectedArtwork = ({
     context_owner_id: contextOwnerId,
     context_owner_slug: contextOwnerSlug,
     context_owner_type: OwnerType.myCollectionArtwork,
+    platform,
   }
 }

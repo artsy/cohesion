@@ -1,9 +1,13 @@
 import { ActionType, ContextModule, OwnerType } from "../../Schema"
-import { EditCollectedArtwork } from "../../Schema/Events/MyCollection"
+import {
+  EditCollectedArtwork,
+  Platform,
+} from "../../Schema/Events/MyCollection"
 
 export interface EditCollectedArtworkArgs {
   contextOwnerId: string
   contextOwnerSlug: string
+  platform: Platform
 }
 
 /**
@@ -20,6 +24,7 @@ export interface EditCollectedArtworkArgs {
 export const editCollectedArtwork = ({
   contextOwnerId,
   contextOwnerSlug,
+  platform,
 }: EditCollectedArtworkArgs): EditCollectedArtwork => {
   return {
     action: ActionType.editCollectedArtwork,
@@ -27,5 +32,6 @@ export const editCollectedArtwork = ({
     context_owner_id: contextOwnerId,
     context_owner_slug: contextOwnerSlug,
     context_owner_type: OwnerType.myCollectionArtwork,
+    platform,
   }
 }

@@ -2,7 +2,7 @@ import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
-type Platform = "web" | "mobile"
+export type Platform = "web" | "mobile"
 
 /**
  * Schema describing 'Add Collected Artwork' events
