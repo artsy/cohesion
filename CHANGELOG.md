@@ -1,3 +1,15 @@
+# v4.66.0 (Mon Sep 19 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-2731): Add saveCollectedArtwork action to MyCollection events [#354](https://github.com/artsy/cohesion/pull/354) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.65.0 (Fri Sep 09 2022)
 
 #### 🚀  Enhancement
