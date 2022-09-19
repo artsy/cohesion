@@ -2,6 +2,8 @@ import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
+export type Platform = "web" | "mobile"
+
 /**
  * Schema describing 'Add Collected Artwork' events
  * @packageDocumentation
@@ -17,7 +19,8 @@ import { ActionType } from "."
  *  {
  *    action: "addCollectedArtwork",
  *    context_module: "myCollectionHome",
- *    context_owner_type: "myCollection"
+ *    context_owner_type: "myCollection",
+ *    platform: "mobile"
  *  }
  * ```
  */
@@ -25,6 +28,34 @@ export interface AddCollectedArtwork {
   action: ActionType.addCollectedArtwork
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
+  platform: Platform
+}
+
+/**
+ * Schema describing 'Save Collected Artwork' events
+ * @packageDocumentation
+ */
+
+/**
+ * A user taps "save artwork" to save an artwork to My Collection.
+ *
+ * This schema describes events sent to Segment from [[saveCollectedArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "saveCollectedArtwork",
+ *    context_module: "myCollectionHome",
+ *    context_owner_type: "myCollection",
+ *    platform: "mobile"
+ *  }
+ * ```
+ */
+export interface SaveCollectedArtwork {
+  action: ActionType.saveCollectedArtwork
+  context_module: ContextModule.myCollectionHome
+  context_owner_type: OwnerType.myCollection
+  platform: Platform
 }
 
 /**
@@ -45,6 +76,7 @@ export interface AddCollectedArtwork {
  *    context_owner_type: "myCollectionArtwork",
  *    context_owner_id: "my-artwork-id",
  *    context_owner_slug: "my-artwork-slug"
+ *    platform: "web"
  *  }
  * ```
  */
@@ -54,6 +86,7 @@ export interface EditCollectedArtwork {
   context_owner_type: OwnerType.myCollectionArtwork
   context_owner_id: string
   context_owner_slug: string
+  platform: Platform
 }
 
 /**
@@ -73,7 +106,8 @@ export interface EditCollectedArtwork {
  *    context_module: "myCollectionArtwork",
  *    context_owner_type: "myCollectionArtwork"
  *    context_owner_id: "my-artwork-id",
- *    context_owner_slug: "my-artwork-slug"
+ *    context_owner_slug: "my-artwork-slug",
+ *    platform: "web"
  *  }
  * ```
  */
@@ -83,6 +117,7 @@ export interface DeleteCollectedArtwork {
   context_owner_type: OwnerType.myCollectionArtwork
   context_owner_id: string
   context_owner_slug: string
+  platform: Platform
 }
 
 /**

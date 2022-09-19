@@ -57,7 +57,7 @@ export interface TappedMyCollectionInsightsMedianAuctionRailItem {
  *  }
  * ```
  */
- export interface TappedMyCollectionInsightsMedianAuctionPriceChartCategory {
+export interface TappedMyCollectionInsightsMedianAuctionPriceChartCategory {
   action: ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartCategory
   context_module: ContextModule.myCollectionInsightsMedianAuctionPriceChart
   context_screen: OwnerType.myCollectionInsightsMedianAuctionPrice
@@ -67,8 +67,6 @@ export interface TappedMyCollectionInsightsMedianAuctionRailItem {
   artist_id: string
   selected_category: string
 }
-
-
 
 /**
  * A user taps on the MedianAuctionPriceChartTimeframe
@@ -89,7 +87,7 @@ export interface TappedMyCollectionInsightsMedianAuctionRailItem {
  *  }
  * ```
  */
- export interface TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe {
+export interface TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe {
   action: ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
   context_module: ContextModule.myCollectionInsightsMedianAuctionPriceChart
   context_screen: OwnerType.myCollectionInsightsMedianAuctionPrice
@@ -121,7 +119,7 @@ export interface TappedMyCollectionInsightsMedianAuctionRailItem {
  *  }
  * ```
  */
- export interface TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight {
+export interface TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight {
   action: ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
   context_module: ContextModule.myCollectionInsightsMedianAuctionPriceChart
   context_screen: OwnerType.myCollectionInsightsMedianAuctionPrice

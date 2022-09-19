@@ -92,16 +92,17 @@ import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
   EditCollectedArtwork,
+  SaveCollectedArtwork,
   SentRequestPriceEstimate,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
   TappedRequestPriceEstimate,
 } from "./MyCollection"
 import {
-  TappedMyCollectionInsightsMedianAuctionRailItem,
   TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight,
   TappedMyCollectionInsightsMedianAuctionPriceChartCategory,
-  TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
+  TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe,
+  TappedMyCollectionInsightsMedianAuctionRailItem,
 } from "./MyCollectionInsights"
 import { PromptForReview } from "./PromptForReview"
 import {
@@ -246,6 +247,7 @@ export type Event =
   | RegistrationSubmitted
   | ResetYourPassword
   | SaleScreenLoadComplete
+  | SaveCollectedArtwork
   | Screen
   | SearchedPriceDatabase
   | SearchedReverseImageWithNoResults
@@ -317,17 +319,13 @@ export type Event =
  */
 export enum ActionType {
   /**
-   * Corresponds to {@link AuthImpression}
+   * Corresponds to {@link AddCollectedArtwork}
    */
-  authImpression = "authImpression",
+  addCollectedArtwork = "addCollectedArtwork",
   /**
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
-  /**
-   * Corresponds to {@link AddCollectedArtwork}
-   */
-  addCollectedArtwork = "addCollectedArtwork",
   /**
    * Corresponds to {@link ArtworkDetailsCompleted}
    */
@@ -341,9 +339,17 @@ export enum ActionType {
    */
   auctionResultsFilterParamsChanged = "auctionResultsFilterParamsChanged",
   /**
+   * Corresponds to {@link AuthImpression}
+   */
+  authImpression = "authImpression",
+  /**
    * Corresponds to {@link BidPageView}
    */
   bidPageView = "bidPageView",
+  /**
+   * Corresponds to {@link CheckedAccountBalance}
+   */
+  checkedAccountBalance = "checkedAccountBalance",
   /**
    * Corresponds to {@link ClickedActiveBid}
    */
@@ -393,6 +399,10 @@ export enum ActionType {
    */
   clickedChangePage = "clickedChangePage",
   /**
+   * Corresponds to {@link ClickedChangePaymentMethod}
+   */
+  clickedChangePaymentMethod = "clickedChangePaymentMethod",
+  /**
    * Corresponds to {@link ClickedChangeShippingAddress}
    */
   clickedChangeShippingAddress = "clickedChangeShippingAddress",
@@ -400,10 +410,6 @@ export enum ActionType {
    * Corresponds to {@link ClickedChangeShippingMethod}
    */
   clickedChangeShippingMethod = "clickedChangeShippingMethod",
-  /**
-   * Corresponds to {@link ClickedChangePaymentMethod}
-   */
-  clickedChangePaymentMethod = "clickedChangePaymentMethod",
   /**
    * Corresponds to {@link ClickedCollectionGroup}
    */
@@ -437,14 +443,13 @@ export enum ActionType {
    */
   clickedFairGroup = "clickedFairGroup",
   /**
-   * Corresponds to {@link ClickedFairGroup}
+   * Corresponds to {@link ClickedGalleryGroup}
    */
   clickedGalleryGroup = "clickedGalleryGroup",
   /**
    * Corresponds to {@link ClickedLoadMore}
    */
   clickedLoadMore = "clickedLoadMore",
-  /**
   /**
    * Corresponds to {@link ClickedMainArtworkGrid}
    */
@@ -454,11 +459,15 @@ export enum ActionType {
    */
   clickedNavigationTab = "clickedNavigationTab",
   /**
-   * Corresponds to {@link ClickedOnArtworkShippingUnitsDropdown}
+   * Corresponds to {@link ClickedOfferActions}
+   */
+  clickedOfferActions = "clickedOfferActions",
+  /**
+   * Corresponds to {@link ClickedOfferOption}
    */
   clickedOfferOption = "clickedOfferOption",
   /**
-   * Corresponds to {@link ClickedOfferOption}
+   * Corresponds to {@link ClickedOnArtworkShippingUnitsDropdown}
    */
   clickedOnArtworkShippingUnitsDropdown = "clickedOnArtworkShippingUnitsDropdown",
   /**
@@ -478,9 +487,9 @@ export enum ActionType {
    */
   clickedOnSubmitOrder = "clickedOnSubmitOrder",
   /**
-   * Corresponds to {@link ClickedSnooze}
+   * Corresponds to {@link ClickedOrderPage}
    */
-  clickedSnooze = "clickedSnooze",
+  clickedOrderPage = "clickedOrderPage",
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
@@ -490,23 +499,19 @@ export enum ActionType {
    */
   clickedPartnerLink = "clickedPartnerLink",
   /**
+   * Corresponds to {@link ClickedPaymentMethod}
+   */
+  clickedPaymentMethod = "clickedPaymentMethod",
+  /**
+   * Corresponds to {@link ClickedPaymentDetails}
+   */
+  clickedPaymentDetails = "clickedPaymentDetails",
+  /**
    * Corresponds to {@link ClickedPlayVideo}
    */
   clickedPlayVideo = "clickedPlayVideo",
   /**
    * Corresponds to {@link ClickedPromoSpace}
-   */
-  clickedPaymentMethod = "clickedPaymentMethod",
-  /**
-   * Corresponds to {@link ClickedPaymentMethod}
-   */
-  clickedPaymentDetails = "clickedPaymentDetails",
-  /**
-   * Corresponds to {@link ClickedPaymentDetails}
-   */
-  checkedAccountBalance = "checkedAccountBalance",
-  /**
-   * Corresponds to {@link CheckedAccountBalance}
    */
   clickedPromoSpace = "clickedPromoSpace",
   /**
@@ -530,6 +535,10 @@ export enum ActionType {
    */
   clickedShowMore = "clickedShowMore",
   /**
+   * Corresponds to {@link ClickedSnooze}
+   */
+  clickedSnooze = "clickedSnooze",
+  /**
    * Corresponds to {@link ClickedSponsorLink}
    */
   clickedSponsorLink = "clickedSponsorLink",
@@ -538,21 +547,13 @@ export enum ActionType {
    */
   clickedTooltip = "clickedTooltip",
   /**
-   * Corresponds to {@link ClickedVerifyIdentiity}
+   * Corresponds to {@link ClickedVerifyIdentity}
    */
   clickedVerifyIdentity = "clickedVerifyIdentity",
   /**
    * Corresponds to {@link ClickedViewingRoomCard}
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
-  /**
-   * Corresponds to {@link ClickedOfferActions}
-   */
-  clickedOfferActions = "clickedOfferActions",
-  /**
-   * Corresponds to {@link ClickedOrderPage}
-   */
-  clickedOrderPage = "clickedOrderPage",
   /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
@@ -578,13 +579,13 @@ export enum ActionType {
    */
   consignmentSubmitted = "consignmentSubmitted",
   /**
-   * Corresponds to {@link ContactInformationCompleted}
-   */
-  contactInformationCompleted = "contactInformationCompleted",
-  /**
    * Corresponds to {@link ContactGallery}
    */
   contactGallery = "contactGallery",
+  /**
+   * Corresponds to {@link ContactInformationCompleted}
+   */
+  contactInformationCompleted = "contactInformationCompleted",
   /**
    * Corresponds to {@link CreatedAccount}
    */
@@ -610,17 +611,21 @@ export enum ActionType {
    */
   enterLiveAuction = "enterLiveAuction",
   /**
+   * Corresponds to {@link ExperimentViewed}
+   */
+  experimentViewed = "experimentViewed",
+  /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
   focusedOnConversationMessageInput = "focusedOnConversationMessageInput",
   /**
-   * Corresponds to {@link FocusedOnSearchInput}
-   */
-  focusedOnSearchInput = "focusedOnSearchInput",
-  /**
    * Corresponds to {@link FocusedOnPriceDatabaseSearchInput}
    */
   focusedOnPriceDatabaseSearchInput = "focusedOnPriceDatabaseSearchInput",
+  /**
+   * Corresponds to {@link FocusedOnSearchInput}
+   */
+  focusedOnSearchInput = "focusedOnSearchInput",
   /**
    * Corresponds to {@link FollowedArtist}
    */
@@ -674,6 +679,10 @@ export enum ActionType {
    */
   saleScreenLoadComplete = "saleScreenLoadComplete",
   /**
+   * Corresponds to {@link SaveCollectedArtwork}
+   */
+  saveCollectedArtwork = "saveCollectedArtwork",
+  /**
    * Corresponds to {@link Screen}
    */
   screen = "screen",
@@ -698,13 +707,13 @@ export enum ActionType {
    */
   selectedArtworkFromReverseImageSearch = "selectedArtworkFromReverseImageSearch",
   /**
-   * Corresponds to {@link SelectedItemFromSearch}
-   */
-  selectedItemFromSearch = "selectedItemFromSearch",
-  /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
+  /**
+   * Corresponds to {@link SelectedItemFromSearch}
+   */
+  selectedItemFromSearch = "selectedItemFromSearch",
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */
@@ -722,11 +731,7 @@ export enum ActionType {
    */
   share = "share",
   /**
-   * Corresponds to {@link ExperimentViewed}
-   */
-  experimentViewed = "experimentViewed",
-  /**
-   * Corresponds to {@link SuccessfullyLoggedIn}
+   * Corresponds to {@link StartedOnboarding}
    */
   startedOnboarding = "startedOnboarding",
   /**
@@ -741,10 +746,6 @@ export enum ActionType {
    * Corresponds to {@link TappedArticleGroup}
    */
   tappedArticleGroup = "tappedArticleGroup",
-  /**
-   * Corresponds to {@link TappedShowGroup}
-   */
-  tappedShowGroup = "tappedShowGroup",
   /**
    * Corresponds to {@link TappedArtistGroup}
    */
@@ -778,10 +779,6 @@ export enum ActionType {
    */
   tappedCollectedArtwork = "tappedCollectedArtwork",
   /**
-   * Corresponds to {@link TappedMyCollectionAddArtworkArtist}
-   */
-  tappedMyCollectionAddArtworkArtist = "tappedMyCollectionAddArtworkArtist",
-  /**
    * Corresponds to {@link TappedCollectedArtworkImages}
    */
   tappedCollectedArtworkImages = "tappedCollectedArtworkImages",
@@ -806,13 +803,13 @@ export enum ActionType {
    */
   tappedExploreGroup = "tappedExploreGroup",
   /**
-   * Corresponds to {@link TappedFairGroup}
-   */
-  tappedFairGroup = "tappedFairGroup",
-  /**
    * Corresponds to {@link TappedFairCard}
    */
   tappedFairCard = "tappedFairCard",
+  /**
+   * Corresponds to {@link TappedFairGroup}
+   */
+  tappedFairGroup = "tappedFairGroup",
   /**
    * Corresponds to {@link TappedInboxConversation}
    */
@@ -821,6 +818,10 @@ export enum ActionType {
    * Corresponds to {@link TappedInfoBubble}
    */
   tappedInfoBubble = "tappedInfoBubble",
+  /**
+   * Corresponds to {@link TappedLearnMore}
+   */
+  tappedLearnMore = "tappedLearnMore",
   /**
    * Corresponds to {@link TappedLink}
    */
@@ -834,22 +835,25 @@ export enum ActionType {
    */
   tappedMakeOffer = "tappedMakeOffer",
   /**
-   * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionRailItem}
+   * Corresponds to {@link TappedMyCollectionAddArtworkArtist}
    */
-  tappedMyCollectionInsightsMedianAuctionRailItem = "tappedMyCollectionInsightsMedianAuctionRailItem",
+  tappedMyCollectionAddArtworkArtist = "tappedMyCollectionAddArtworkArtist",
   /**
    * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight}
    */
-  tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight = 'tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight',
+  tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight = "tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight",
   /**
    * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartCategory}
    */
-  tappedMyCollectionInsightsMedianAuctionPriceChartCategory = 'TappedMyCollectionInsightsMedianAuctionPriceChartCategory',
-
+  tappedMyCollectionInsightsMedianAuctionPriceChartCategory = "TappedMyCollectionInsightsMedianAuctionPriceChartCategory",
   /**
    * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe}
    */
-  tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe = 'tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe',
+  tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe = "tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe",
+  /**
+   * Corresponds to {@link TappedMyCollectionInsightsMedianAuctionRailItem}
+   */
+  tappedMyCollectionInsightsMedianAuctionRailItem = "tappedMyCollectionInsightsMedianAuctionRailItem",
   /**
    * Corresponds to {@link TappedNavigationTab}
    */
@@ -887,13 +891,13 @@ export enum ActionType {
    */
   tappedSellArtwork = "tappedSellArtwork",
   /**
+   * Corresponds to {@link TappedShowGroup}
+   */
+  tappedShowGroup = "tappedShowGroup",
+  /**
    * Corresponds to {@link TappedShowMore}
    */
   tappedShowMore = "tappedShowMore",
-  /**
-   * Corresponds to {@link TappedLearnMore}
-   */
-  tappedLearnMore = "tappedLearnMore",
   /**
    * Corresponds to {@link TappedSkip}
    */
@@ -906,6 +910,10 @@ export enum ActionType {
    * Corresponds to {@link TappedToggleCameraFlash}
    */
   tappedToggleCameraFlash = "tappedToggleCameraFlash",
+  /**
+   * Corresponds to {@link TappedUploadAnotherArtwork}
+   */
+  tappedUploadAnotherArtwork = "tappedUploadAnotherArtwork",
   /**
    * Corresponds to {@link TappedVerifyIdentity}
    */
@@ -922,10 +930,6 @@ export enum ActionType {
    * Corresponds to {@link TappedViewOffer}
    */
   tappedViewOffer = "tappedViewOffer",
-  /**
-   * Corresponds to {@link TappedUploadAnotherArtwork}
-   */
-  tappedUploadAnotherArtwork = "tappedUploadAnotherArtwork",
   /**
    * Corresponds to {@link TimeOnPage}
    */
