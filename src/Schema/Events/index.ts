@@ -1,5 +1,10 @@
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  ClickedActivityPanelNotificationItem,
+  ClickedActivityPanelTab,
+  ClickedNotificationsBell
+} from "./ActivityPanel"
+import {
   AuctionPageView,
   BidPageView,
   ClickedActiveBid,
@@ -176,6 +181,8 @@ export type Event =
   | BidPageView
   | CreatedAccount
   | ClickedActiveBid
+  | ClickedActivityPanelNotificationItem
+  | ClickedActivityPanelTab
   | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
   | ClickedAppDownload
@@ -200,6 +207,7 @@ export type Event =
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedNotificationsBell
   | ClickedOfferOption
   | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
@@ -355,6 +363,14 @@ export enum ActionType {
    */
   clickedActiveBid = "clickedActiveBid",
   /**
+   * Corresponds to {@link ClickedActivityPanelNotificationItem}
+   */
+  clickedActivityPanelNotificationItem = "clickedActivityPanelNotificationItem",
+  /**
+   * Corresponds to {@link ClickedActivityPanelTab}
+   */
+  clickedActivityPanelTab = "clickedActivityPanelTab",
+  /**
    * Corresponds to {@link ClickedAddNewShippingAddress}
    */
   clickedAddNewShippingAddress = "clickedAddNewShippingAddress",
@@ -458,6 +474,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedNavigationTab}
    */
   clickedNavigationTab = "clickedNavigationTab",
+  /**
+   * Corresponds to {@link ClickedNotificationsBell}
+   */
+  clickedNotificationsBell = "clickedNotificationsBell",
   /**
    * Corresponds to {@link ClickedOfferActions}
    */
