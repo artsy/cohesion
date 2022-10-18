@@ -1,3 +1,30 @@
+# v4.67.0 (Tue Oct 18 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-3066): Add MyC Insights web tracking events [#357](https://github.com/artsy/cohesion/pull/357) ([@MrSltun](https://github.com/MrSltun))
+
+#### 🐛  Bug Fix
+
+- Update pull_request_template.md [#305](https://github.com/artsy/cohesion/pull/305) ([@pvinis](https://github.com/pvinis))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.8.3 to v4.8.4 [#355](https://github.com/artsy/cohesion/pull/355) ([@renovate[bot]](https://github.com/renovate[bot]))
+- Bump ajv from 6.12.0 to 6.12.6 [#300](https://github.com/artsy/cohesion/pull/300) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump shelljs from 0.8.4 to 0.8.5 [#295](https://github.com/artsy/cohesion/pull/295) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): update dep @artsy/auto-config from 1.1.0 to v1.2.0 [#308](https://github.com/artsy/cohesion/pull/308) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 5
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Pavlos Vinieratos ([@pvinis](https://github.com/pvinis))
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v4.66.0 (Mon Sep 19 2022)
 
 #### 🚀  Enhancement
