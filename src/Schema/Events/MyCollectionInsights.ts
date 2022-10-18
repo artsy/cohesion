@@ -8,6 +8,32 @@ import { ActionType } from "."
  */
 
 /**
+ * A user clicks on My Collection Insights Median Auction Rail item.
+ *
+ * This schema describes events sent to Segment from [[clickedMyCollectionInsightsMedianAuctionRailItem]]
+ *
+ * @example
+ *  ```
+ *  {
+ *    action: "clickedMyCollectionInsightsMedianAuctionRailItem",
+ *    context_module: "myCollectionInsightsMedianAuctionRail",
+ *    context_screen: "myCollectionInsights",
+ *    context_screen_owner_type: "myCollectionInsights",
+ *    artist_id: "4212691337420",
+ *    category: "Print"
+ *  }
+ * ```
+ */
+export interface ClickedMyCollectionInsightsMedianAuctionRailItem {
+  action: ActionType.clickedMyCollectionInsightsMedianAuctionRailItem
+  context_module: ContextModule.myCollectionInsightsMedianAuctionRail
+  context_screen: OwnerType.myCollectionInsights
+  context_screen_owner_type: OwnerType.myCollectionInsights
+  artist_id: string
+  category: string
+}
+
+/**
  * A user taps on the MyCollectionInsightsMedianAuctionRailItem
  *
  * This schema describes events sent to Segment from [[tappedMyCollectionInsightsMedianAuctionRailItem]]
