@@ -455,6 +455,10 @@ export enum ActionType {
    */
   clickedMainArtworkGrid = "clickedMainArtworkGrid",
   /**
+   * Corresponds to {@link ClickedMyCollectionInsightsMedianAuctionRailItem}
+   */
+  clickedMyCollectionInsightsMedianAuctionRailItem = "clickedMyCollectionInsightsMedianAuctionRailItem",
+  /**
    * Corresponds to {@link ClickedNavigationTab}
    */
   clickedNavigationTab = "clickedNavigationTab",
