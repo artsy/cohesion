@@ -1,3 +1,15 @@
+# v4.68.0 (Wed Oct 19 2022)
+
+#### 🚀  Enhancement
+
+- feat(FX-4379): Activity Panel tracking events [#356](https://github.com/artsy/cohesion/pull/356) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.67.0 (Tue Oct 18 2022)
 
 #### 🚀  Enhancement
