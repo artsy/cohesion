@@ -1,3 +1,15 @@
+# v4.69.0 (Mon Oct 24 2022)
+
+#### 🚀  Enhancement
+
+- refactor: remove unused `user_id` field for `ActivityPanel` events [#358](https://github.com/artsy/cohesion/pull/358) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.68.0 (Wed Oct 19 2022)
 
 #### 🚀  Enhancement
