@@ -13,14 +13,12 @@ import { ActionType } from "."
  *  @example
  *  ```
  *  {
- *    action: "clickedNotificationsBell",
- *    user_id: "5bd8b675776bd6002c86526c"
+ *    action: "clickedNotificationsBell"
  *  }
  * ```
  */
 export interface ClickedNotificationsBell {
   action: ActionType.clickedNotificationsBell
-  user_id: string
 }
 
 /**
@@ -32,14 +30,12 @@ export interface ClickedNotificationsBell {
  *  ```
  *  {
  *    action: "clickedActivityPanelNotificationItem",
- *    user_id: "5bd8b675776bd6002c86526c",
  *    notification_type: "ARTWORK_ALERT"
  *  }
  * ```
  */
 export interface ClickedActivityPanelNotificationItem {
   action: ActionType.clickedActivityPanelNotificationItem
-  user_id: string
   notification_type: string
 }
 
@@ -52,13 +48,11 @@ export interface ClickedActivityPanelNotificationItem {
  *  ```
  *  {
  *    action: "clickedActivityPanelTab",
- *    user_id: "5bd8b675776bd6002c86526c",
  *    tab_name: "Alerts"
  *  }
  * ```
  */
 export interface ClickedActivityPanelTab {
   action: ActionType.clickedActivityPanelTab
-  user_id: string
   tab_name: string
 }

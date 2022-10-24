@@ -1,9 +1,9 @@
-import { AddToCalendar } from "./AddToCalendar"
 import {
   ClickedActivityPanelNotificationItem,
   ClickedActivityPanelTab,
-  ClickedNotificationsBell
+  ClickedNotificationsBell,
 } from "./ActivityPanel"
+import { AddToCalendar } from "./AddToCalendar"
 import {
   AuctionPageView,
   BidPageView,
