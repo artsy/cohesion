@@ -1,3 +1,15 @@
+# v4.71.0 (Thu Nov 03 2022)
+
+#### 🚀  Enhancement
+
+- Adds viewedVideo event [#360](https://github.com/artsy/cohesion/pull/360) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v4.70.0 (Thu Oct 27 2022)
 
 #### 🚀  Enhancement
