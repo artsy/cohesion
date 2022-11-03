@@ -144,6 +144,7 @@ import {
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { ToggledAccordion } from "./UserExperienceInteractions"
+import { ViewedVideo } from "./Video"
 
 /**
  * Master list of valid schemas for analytics actions
@@ -283,6 +284,7 @@ export type Event =
   | ToggledSavedSearch
   | UploadPhotosCompleted
   | ViewArtworkMyCollection
+  | ViewedVideo
 
 /**
  * The top-level actions an Event describes.
@@ -895,4 +897,8 @@ export enum ActionType {
    * Corresponds to {@link ViewArtworkMyCollection}
    */
   viewArtworkMyCollection = "viewArtworkMyCollection",
+  /**
+   * Corresponds to {@link ViewedVideo}
+   */
+  viewedVideo = "viewedVideo",
 }
