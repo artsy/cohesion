@@ -188,6 +188,26 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
 }
 
 /**
+ * A user clicks a result of auctions on web
+ *
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAuctionResultItem",
+ *    context_module: "artistAuctionResults",
+ *    context_page_owner_type: "home",
+ *    expanded: true
+ *  }
+ * ```
+ */
+export interface ClickedAuctionResultItem extends ClickedEntityGroup {
+  action: ActionType.clickedAuctionResultItem
+  expended: boolean
+}
+
+/**
  * A user clicks a grouping of collections on web
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]
@@ -408,6 +428,7 @@ export interface ClickedEntityGroup {
     | ActionType.clickedArtistSeriesGroup
     | ActionType.clickedArtworkGroup
     | ActionType.clickedAuctionGroup
+    | ActionType.clickedAuctionResultItem
     | ActionType.clickedCollectionGroup
     | ActionType.clickedFairGroup
     | ActionType.clickedGalleryGroup
