@@ -75,6 +75,7 @@ import {
 import {
   ArtworkDetailsCompleted,
   ConsignmentSubmitted,
+  ContactInformationCompleted,
   SubmitAnotherArtwork,
   UploadPhotosCompleted,
   ViewArtworkMyCollection,
@@ -237,6 +238,7 @@ export type Event =
   | ConfirmRegistrationPageview
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
+  | ContactInformationCompleted
   | DeleteCollectedArtwork
   | DeletedSavedSearch
   | EditCollectedArtwork
