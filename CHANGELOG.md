@@ -1,3 +1,15 @@
+# v4.72.0 (Thu Nov 10 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-3105): Tracking for ContactInformation SWA step [#361](https://github.com/artsy/cohesion/pull/361) ([@lordkiz](https://github.com/lordkiz))
+
+#### Authors: 1
+
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.71.0 (Thu Nov 03 2022)
 
 #### 🚀  Enhancement
