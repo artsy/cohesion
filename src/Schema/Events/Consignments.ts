@@ -80,9 +80,9 @@ export interface UploadPhotosCompleted {
   action: ActionType.uploadPhotosCompleted
   context_module: ContextModule.uploadPhotos
   context_owner_type: OwnerType.consignmentFlow
-  submission_id?: string
+  submission_id: string
   user_email: string
-  user_id?: string
+  user_id: string | undefined
 }
 
 /**
@@ -106,9 +106,9 @@ export interface UploadPhotosCompleted {
   action: ActionType.contactInformationCompleted
   context_module: ContextModule.contactInformation
   context_owner_type: OwnerType.consignmentFlow
-  submission_id?: string // submission_id may be undefined if this is the first step in submission flow
+  submission_id?: string // submission_id may be not be available if this is the first step in submission flow
   user_email: string
-  user_id?: string
+  user_id: string | undefined
 }
 
 /**
