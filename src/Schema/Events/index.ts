@@ -93,6 +93,7 @@ import {
   CommercialFilterParamsChanged,
   PriceDatabaseFilterParamsChanged,
 } from "./FilterAndSort"
+import { TappedExploreMyCollection } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
   AddCollectedArtwork,
@@ -288,6 +289,7 @@ export type Event =
   | TappedContactGallery
   | TappedCreateAlert
   | TappedExploreGroup
+  | TappedExploreMyCollection
   | TappedFairCard
   | TappedFairGroup
   | TappedInboxConversation
@@ -830,6 +832,10 @@ export enum ActionType {
    * Corresponds to {@link TappedExploreGroup}
    */
   tappedExploreGroup = "tappedExploreGroup",
+  /**
+   * Corresponds to {@link TappedExploreMyCollection}
+   */
+  tappedExploreMyCollection = "tappedExploreMyCollection",
   /**
    * Corresponds to {@link TappedFairCard}
    */

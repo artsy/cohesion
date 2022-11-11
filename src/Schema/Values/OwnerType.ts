@@ -46,6 +46,7 @@ export enum OwnerType {
   myCollectionArtworkInsights = "MyCollectionArtworkInsights",
   myCollectionInsights = "myCollectionInsights",
   myCollectionInsightsMedianAuctionPrice = "myCollectionInsightsMedianAuctionPrice",
+  myCollectionOnboarding = "myCollectionOnboarding",
   newWorksForYou = "newWorksForYou",
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
@@ -121,6 +122,7 @@ export type ScreenOwnerType =
   | OwnerType.myCollectionArtworkInsights
   | OwnerType.myCollectionInsights
   | OwnerType.myCollectionInsightsMedianAuctionPrice
+  | OwnerType.myCollectionOnboarding
   | OwnerType.newWorksForYou
   | OwnerType.onboarding
   | OwnerType.partner

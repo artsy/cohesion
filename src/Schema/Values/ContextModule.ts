@@ -56,6 +56,7 @@ export enum ContextModule {
   curatedHighlightsRail = "curatedHighlightsRail",
   currentAuctions = "currentAuctions",
   currentShowsRail = "currentShowsRail",
+  doMoreOnArtsy = "doMoreOnArtsy",
   exhibitorsTab = "exhibitorsTab",
   fairCard = "fairCard",
   fairHome = "fairHome",
@@ -206,6 +207,7 @@ export type AuthContextModule =
   | ContextModule.collectionDescription
   | ContextModule.consignSubmissionFlow
   | ContextModule.currentShowsRail
+  | ContextModule.doMoreOnArtsy
   | ContextModule.fairInfo
   | ContextModule.fairOrganizerHeader
   | ContextModule.fairRail
