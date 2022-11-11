@@ -93,7 +93,10 @@ import {
   CommercialFilterParamsChanged,
   PriceDatabaseFilterParamsChanged,
 } from "./FilterAndSort"
-import { TappedExploreMyCollection } from "./HomeFeedMyCollectionOnboarding"
+import {
+  MyCollectionOnboardingCompleted,
+  TappedExploreMyCollection,
+} from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
   AddCollectedArtwork,
@@ -252,6 +255,7 @@ export type Event =
   | FollowEvents
   | Impression
   | MaxBidSelected
+  | MyCollectionOnboardingCompleted
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
@@ -680,6 +684,10 @@ export enum ActionType {
    * Corresponds to {@link MaxBidSelected}
    */
   maxBidSelected = "maxBidSelected",
+  /**
+   * Corresponds to {@link MyCollectionOnboardingCompleted}
+   */
+  myCollectionOnboardingCompleted = "myCollectionOnboardingCompleted",
   /**
    * Corresponds to {@link OnboardingUserInputData}
    */
