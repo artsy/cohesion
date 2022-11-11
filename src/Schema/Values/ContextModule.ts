@@ -208,7 +208,6 @@ export type AuthContextModule =
   | ContextModule.collectionDescription
   | ContextModule.consignSubmissionFlow
   | ContextModule.currentShowsRail
-  | ContextModule.doMoreOnArtsy
   | ContextModule.fairInfo
   | ContextModule.fairOrganizerHeader
   | ContextModule.fairRail
