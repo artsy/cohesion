@@ -1,3 +1,15 @@
+# v4.73.0 (Sat Nov 12 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-3055): Add tappedExploreMyCollection and myCollectionOnboardingCompleted actions (hf my collection onboarding) [#362](https://github.com/artsy/cohesion/pull/362) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.72.0 (Thu Nov 10 2022)
 
 #### 🚀  Enhancement
