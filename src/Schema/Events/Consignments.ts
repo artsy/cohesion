@@ -102,7 +102,7 @@ export interface UploadPhotosCompleted {
  *  }
  * ```
  */
- export interface ContactInformationCompleted {
+export interface ContactInformationCompleted {
   action: ActionType.contactInformationCompleted
   context_module: ContextModule.contactInformation
   context_owner_type: OwnerType.consignmentFlow
