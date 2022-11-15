@@ -55,7 +55,7 @@ export interface MyCollectionOnboardingCompleted {
 /**
  * A user taps "Go to My Collection" on the flow's third screen.
  *
- * This schema describes events sent to Segment from [[myCollectionOnboardingCompleted]]
+ * This schema describes events sent to Segment from [[visitMyCollection]]
  *
  *  @example
  *  ```
@@ -68,6 +68,86 @@ export interface MyCollectionOnboardingCompleted {
  */
 export interface VisitMyCollection {
   action: ActionType.visitMyCollection
+  context_screen_owner_type: OwnerType.myCollectionOnboarding
+  context_module: ContextModule.myCollectionOnboarding
+}
+
+/**
+ * A user goes to the next onboarding screen.
+ *
+ * This schema describes events sent to Segment from [[myCollectionOnboardingScreen1]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "myCollectionOnboardingScreen1",
+ *    context_screen_owner_type: "myCollectionOnboarding"
+ *    context_module: "myCollectionOnboarding",
+ *  }
+ * ```
+ */
+export interface MyCollectionOnboardingScreen1 {
+  action: ActionType.myCollectionOnboardingScreen1
+  context_screen_owner_type: OwnerType.myCollectionOnboarding
+  context_module: ContextModule.myCollectionOnboarding
+}
+
+/**
+ * A user goes to the next onboarding screen.
+ *
+ * This schema describes events sent to Segment from [[myCollectionOnboardingScreen2]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "myCollectionOnboardingScreen2",
+ *    context_screen_owner_type: "myCollectionOnboarding"
+ *    context_module: "myCollectionOnboarding",
+ *  }
+ * ```
+ */
+export interface MyCollectionOnboardingScreen2 {
+  action: ActionType.myCollectionOnboardingScreen2
+  context_screen_owner_type: OwnerType.myCollectionOnboarding
+  context_module: ContextModule.myCollectionOnboarding
+}
+
+/**
+ * A user goes to the next onboarding screen.
+ *
+ * This schema describes events sent to Segment from [[myCollectionOnboardingScreen3]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "myCollectionOnboardingScreen3",
+ *    context_screen_owner_type: "myCollectionOnboarding"
+ *    context_module: "myCollectionOnboarding",
+ *  }
+ * ```
+ */
+export interface MyCollectionOnboardingScreen3 {
+  action: ActionType.myCollectionOnboardingScreen3
+  context_screen_owner_type: OwnerType.myCollectionOnboarding
+  context_module: ContextModule.myCollectionOnboarding
+}
+
+/**
+ * A user goes to the next onboarding screen.
+ *
+ * This schema describes events sent to Segment from [[myCollectionOnboardingScreen4]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "myCollectionOnboardingScreen4",
+ *    context_screen_owner_type: "myCollectionOnboarding"
+ *    context_module: "myCollectionOnboarding",
+ *  }
+ * ```
+ */
+export interface MyCollectionOnboardingScreen4 {
+  action: ActionType.myCollectionOnboardingScreen4
   context_screen_owner_type: OwnerType.myCollectionOnboarding
   context_module: ContextModule.myCollectionOnboarding
 }
