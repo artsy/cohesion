@@ -51,3 +51,23 @@ export interface MyCollectionOnboardingCompleted {
   destination_screen_owner_type: OwnerType.myCollectionOnboarding
   user_id: string
 }
+
+/**
+ * A user taps "Go to My Collection" on the flow's third screen.
+ *
+ * This schema describes events sent to Segment from [[myCollectionOnboardingCompleted]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "visitMyCollection",
+ *    context_screen_owner_type: "myCollectionOnboarding"
+ *    context_module: "myCollectionOnboarding",
+ *  }
+ * ```
+ */
+export interface VisitMyCollection {
+  action: ActionType.visitMyCollection
+  context_screen_owner_type: OwnerType.myCollectionOnboarding
+  context_module: ContextModule.myCollectionOnboarding
+}
