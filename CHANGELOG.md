@@ -1,3 +1,15 @@
+# v4.75.0 (Thu Nov 17 2022)
+
+#### 🚀  Enhancement
+
+- feat (CX-3066): Update My Collection insights tracking events [#365](https://github.com/artsy/cohesion/pull/365) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.74.0 (Thu Nov 17 2022)
 
 #### 🚀  Enhancement
