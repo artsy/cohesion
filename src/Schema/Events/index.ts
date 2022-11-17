@@ -95,12 +95,9 @@ import {
 } from "./FilterAndSort"
 import {
   MyCollectionOnboardingCompleted,
-  MyCollectionOnboardingScreen1,
-  MyCollectionOnboardingScreen2,
-  MyCollectionOnboardingScreen3,
-  MyCollectionOnboardingScreen4,
   TappedExploreMyCollection,
   VisitMyCollection,
+  VisitMyCollectionOnboardingSlide,
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
@@ -261,10 +258,6 @@ export type Event =
   | Impression
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
-  | MyCollectionOnboardingScreen1
-  | MyCollectionOnboardingScreen2
-  | MyCollectionOnboardingScreen3
-  | MyCollectionOnboardingScreen4
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
@@ -339,6 +332,7 @@ export type Event =
   | ViewArtworkMyCollection
   | ViewedVideo
   | VisitMyCollection
+  | VisitMyCollectionOnboardingSlide
 
 /**
  * The top-level actions an Event describes.
@@ -699,23 +693,6 @@ export enum ActionType {
    */
   myCollectionOnboardingCompleted = "myCollectionOnboardingCompleted",
   /**
-   * Corresponds to {@link MyCollectionOnboardingScreen1}
-   */
-  myCollectionOnboardingScreen1 = "myCollectionOnboardingScreen1",
-  /**
-   * Corresponds to {@link MyCollectionOnboardingScreen2}
-   */
-  myCollectionOnboardingScreen2 = "myCollectionOnboardingScreen2",
-  /**
-   * Corresponds to {@link MyCollectionOnboardingScreen3}
-   */
-  myCollectionOnboardingScreen3 = "myCollectionOnboardingScreen3",
-  /**
-   * Corresponds to {@link MyCollectionOnboardingScreen4}
-   */
-  myCollectionOnboardingScreen4 = "myCollectionOnboardingScreen4",
-
-  /**
    * Corresponds to {@link OnboardingUserInputData}
    */
   onboardingUserInputData = "onboardingUserInputData",
@@ -1047,4 +1024,8 @@ export enum ActionType {
    * Corresponds to {@link visitMyCollection}
    */
   visitMyCollection = "visitMyCollection",
+  /**
+   * Corresponds to {@link VisitMyCollectionOnboardingSlide}
+   */
+  visitMyCollectionOnboardingSlide = "visitMyCollectionOnboardingSlide",
 }
