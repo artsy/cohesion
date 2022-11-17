@@ -1,3 +1,20 @@
+# v4.74.0 (Thu Nov 17 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-3055):tracking hf my c onboarding part2 [#363](https://github.com/artsy/cohesion/pull/363) ([@dariakoko](https://github.com/dariakoko))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.8.4 to v4.9.3 [#364](https://github.com/artsy/cohesion/pull/364) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.73.0 (Sat Nov 12 2022)
 
 #### 🚀  Enhancement
