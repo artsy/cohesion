@@ -26,8 +26,13 @@ export type Platform = "web" | "mobile"
  */
 export interface AddCollectedArtwork {
   action: ActionType.addCollectedArtwork
-  context_module: ContextModule.myCollectionHome
-  context_owner_type: OwnerType.myCollection | OwnerType.myCollectionInsights
+  context_module:
+    | ContextModule.myCollectionHome
+    | ContextModule.myCollectionOnboarding
+  context_owner_type:
+    | OwnerType.myCollection
+    | OwnerType.myCollectionOnboarding
+    | OwnerType.myCollectionInsights
   platform: Platform
 }
 

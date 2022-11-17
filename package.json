@@ -1,6 +1,6 @@
 {
   "name": "@artsy/cohesion",
-  "version": "4.71.0",
+  "version": "4.74.0",
   "description": "Analytics schema",
   "main": "dist/index.js",
   "publishConfig": {
@@ -47,7 +47,7 @@
     "lint-staged": "10.1.7",
     "prettier": "2.0.5",
     "typedoc": "0.17.7",
-    "typescript": "4.8.4"
+    "typescript": "4.9.3"
   },
   "dependencies": {
     "core-js": "3"

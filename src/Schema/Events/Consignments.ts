@@ -80,7 +80,33 @@ export interface UploadPhotosCompleted {
   action: ActionType.uploadPhotosCompleted
   context_module: ContextModule.uploadPhotos
   context_owner_type: OwnerType.consignmentFlow
-  submission_id: string
+  submission_id?: string
+  user_email: string
+  user_id?: string
+}
+
+/**
+ * First or Final step of the consignment submission flow; user provides their contact information.
+ *
+ * This schema describes events sent to Segment from [[contactInformation]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "contactInformationCompleted",
+ *    context_module: "contactInformation",
+ *    context_owner_type: "consignmentFlow",
+ *    submission_id: "52521",
+ *    user_email: "kieranmbh@gmail.com"
+ *    user_id: "5cd6b173746be6109c86321d"
+ *  }
+ * ```
+ */
+export interface ContactInformationCompleted {
+  action: ActionType.contactInformationCompleted
+  context_module: ContextModule.contactInformation
+  context_owner_type: OwnerType.consignmentFlow
+  submission_id?: string // submission_id may be undefined if this is the first step in submission flow
   user_email: string
   user_id?: string
 }

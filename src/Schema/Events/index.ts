@@ -76,6 +76,7 @@ import {
 import {
   ArtworkDetailsCompleted,
   ConsignmentSubmitted,
+  ContactInformationCompleted,
   SubmitAnotherArtwork,
   UploadPhotosCompleted,
   ViewArtworkMyCollection,
@@ -93,6 +94,12 @@ import {
   CommercialFilterParamsChanged,
   PriceDatabaseFilterParamsChanged,
 } from "./FilterAndSort"
+import {
+  MyCollectionOnboardingCompleted,
+  TappedExploreMyCollection,
+  VisitMyCollection,
+  VisitMyCollectionOnboardingSlide,
+} from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
   AddCollectedArtwork,
@@ -239,6 +246,7 @@ export type Event =
   | ConfirmRegistrationPageview
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
+  | ContactInformationCompleted
   | DeleteCollectedArtwork
   | DeletedSavedSearch
   | EditCollectedArtwork
@@ -251,6 +259,7 @@ export type Event =
   | FollowEvents
   | Impression
   | MaxBidSelected
+  | MyCollectionOnboardingCompleted
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
@@ -288,6 +297,7 @@ export type Event =
   | TappedContactGallery
   | TappedCreateAlert
   | TappedExploreGroup
+  | TappedExploreMyCollection
   | TappedFairCard
   | TappedFairGroup
   | TappedInboxConversation
@@ -323,6 +333,8 @@ export type Event =
   | UploadPhotosCompleted
   | ViewArtworkMyCollection
   | ViewedVideo
+  | VisitMyCollection
+  | VisitMyCollectionOnboardingSlide
 
 /**
  * The top-level actions an Event describes.
@@ -683,6 +695,10 @@ export enum ActionType {
    */
   maxBidSelected = "maxBidSelected",
   /**
+   * Corresponds to {@link MyCollectionOnboardingCompleted}
+   */
+  myCollectionOnboardingCompleted = "myCollectionOnboardingCompleted",
+  /**
    * Corresponds to {@link OnboardingUserInputData}
    */
   onboardingUserInputData = "onboardingUserInputData",
@@ -834,6 +850,10 @@ export enum ActionType {
    * Corresponds to {@link TappedExploreGroup}
    */
   tappedExploreGroup = "tappedExploreGroup",
+  /**
+   * Corresponds to {@link TappedExploreMyCollection}
+   */
+  tappedExploreMyCollection = "tappedExploreMyCollection",
   /**
    * Corresponds to {@link TappedFairCard}
    */
@@ -1006,4 +1026,12 @@ export enum ActionType {
    * Corresponds to {@link ViewedVideo}
    */
   viewedVideo = "viewedVideo",
+  /**
+   * Corresponds to {@link visitMyCollection}
+   */
+  visitMyCollection = "visitMyCollection",
+  /**
+   * Corresponds to {@link VisitMyCollectionOnboardingSlide}
+   */
+  visitMyCollectionOnboardingSlide = "visitMyCollectionOnboardingSlide",
 }
