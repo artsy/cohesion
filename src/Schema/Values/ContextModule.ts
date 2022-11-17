@@ -101,6 +101,7 @@ export enum ContextModule {
   myCollectionArtworkAbout = "myCollectionArtworkAbout",
   myCollectionComparableWorks = "myCollectionComparableWorks",
   myCollectionHome = "myCollectionHome",
+  myCollectionInsights = "myCollectionInsights",
   myCollectionInsightsMedianAuctionRail = "myCollectionInsightsMedianAuctionRail",
   myCollectionInsightsMedianAuctionPriceChart = "myCollectionInsightsMedianAuctionPriceChart",
   myCollectionMarketSignals = "myCollectionMarketSignals",

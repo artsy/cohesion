@@ -165,6 +165,8 @@ export type PageOwnerType =
   | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home
+  | OwnerType.myCollectionArtworkInsights
+  | OwnerType.myCollectionInsights
   | OwnerType.onboarding
   | OwnerType.ordersAccept
   | OwnerType.ordersCounter

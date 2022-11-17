@@ -10,7 +10,7 @@ export type Platform = "web" | "mobile"
  */
 
 /**
- * A user taps "add artwork" to add an artwork to My Collection.
+ * A user taps or clicks "add artwork" to add an artwork to My Collection.
  *
  * This schema describes events sent to Segment from [[addCollectedArtwork]]
  *
@@ -29,7 +29,10 @@ export interface AddCollectedArtwork {
   context_module:
     | ContextModule.myCollectionHome
     | ContextModule.myCollectionOnboarding
-  context_owner_type: OwnerType.myCollection | OwnerType.myCollectionOnboarding
+  context_owner_type:
+    | OwnerType.myCollection
+    | OwnerType.myCollectionOnboarding
+    | OwnerType.myCollectionInsights
   platform: Platform
 }
 

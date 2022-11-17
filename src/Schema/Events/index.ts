@@ -35,6 +35,7 @@ import {
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
   ClickedAuctionGroup,
+  ClickedAuctionResultItem,
   ClickedBuyerProtection,
   ClickedChangePage,
   ClickedChangePaymentMethod,
@@ -199,6 +200,7 @@ export type Event =
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
   | ClickedAuctionGroup
+  | ClickedAuctionResultItem
   | ClickedBuyerProtection
   | ClickedChangePage
   | ClickedChangePaymentMethod
@@ -420,6 +422,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedAuctionGroup}
    */
   clickedAuctionGroup = "clickedAuctionGroup",
+  /**
+   *    * Corresponds to {@link ClickedAuctionResultItem}
+   */
+  clickedAuctionResultItem = "clickedAuctionResultItem",
   /**
    * Corresponds to {@link ClickedBuyerProtection}
    */
