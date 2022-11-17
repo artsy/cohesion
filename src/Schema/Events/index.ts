@@ -96,6 +96,8 @@ import {
 import {
   MyCollectionOnboardingCompleted,
   TappedExploreMyCollection,
+  VisitMyCollection,
+  VisitMyCollectionOnboardingSlide,
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
@@ -329,6 +331,8 @@ export type Event =
   | UploadPhotosCompleted
   | ViewArtworkMyCollection
   | ViewedVideo
+  | VisitMyCollection
+  | VisitMyCollectionOnboardingSlide
 
 /**
  * The top-level actions an Event describes.
@@ -1016,4 +1020,12 @@ export enum ActionType {
    * Corresponds to {@link ViewedVideo}
    */
   viewedVideo = "viewedVideo",
+  /**
+   * Corresponds to {@link visitMyCollection}
+   */
+  visitMyCollection = "visitMyCollection",
+  /**
+   * Corresponds to {@link VisitMyCollectionOnboardingSlide}
+   */
+  visitMyCollectionOnboardingSlide = "visitMyCollectionOnboardingSlide",
 }
