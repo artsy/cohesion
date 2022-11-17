@@ -196,7 +196,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  *  ```
  *  {
  *    action: "clickedAuctionResultItem",
- *    context_module: "artistAuctionResults",
+ *    context_module: "auctionResult",
  *    context_page_owner_type: "home",
  *    expanded: true
  *  }
