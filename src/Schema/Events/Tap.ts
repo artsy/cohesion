@@ -293,6 +293,26 @@ export interface TappedConsign {
 }
 
 /**
+ * A user taps on an Artsy curated collection on a search tab
+ *
+ * This schema describes events sent to Segment from [[tappedCuratedCollection]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "tappedCuratedCollection",
+ *   context_module: "searchTab",
+ *   slug: "trending-this-week"
+ * }
+ * ```
+ */
+export interface TappedCuratedCollection {
+  action: ActionType.tappedCuratedCollection
+  context_module: ContextModule.searchTab
+  collection_slug: string
+}
+
+/**
  * A user taps a fair card
  *
  * This schema describes events sent to Segment from [[tappedFairCard]]

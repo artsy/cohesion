@@ -152,6 +152,7 @@ import {
   TappedConsign,
   TappedContactGallery,
   TappedCreateAlert,
+  TappedCuratedCollection,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -296,6 +297,7 @@ export type Event =
   | TappedConsign
   | TappedContactGallery
   | TappedCreateAlert
+  | TappedCuratedCollection
   | TappedExploreGroup
   | TappedExploreMyCollection
   | TappedFairCard
@@ -846,6 +848,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCreateAlert}
    */
   tappedCreateAlert = "tappedCreateAlert",
+  /**
+   * Corresponds to {@link TappedCuratedCollection}
+   */
+  tappedCuratedCollection = "tappedCuratedCollection",
   /**
    * Corresponds to {@link TappedExploreGroup}
    */
