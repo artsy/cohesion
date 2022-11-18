@@ -1,3 +1,15 @@
+# v4.76.0 (Fri Nov 18 2022)
+
+#### 🚀  Enhancement
+
+- fix: update param name typo [#366](https://github.com/artsy/cohesion/pull/366) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.75.0 (Thu Nov 17 2022)
 
 #### 🚀  Enhancement
