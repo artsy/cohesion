@@ -204,7 +204,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  */
 export interface ClickedAuctionResultItem extends ClickedEntityGroup {
   action: ActionType.clickedAuctionResultItem
-  expended: boolean
+  expanded: boolean
 }
 
 /**
