@@ -1,3 +1,20 @@
+# v4.77.0 (Tue Nov 22 2022)
+
+#### 🚀  Enhancement
+
+- feat(FX-4446): track tap on curated collection on search tab [#367](https://github.com/artsy/cohesion/pull/367) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### 🏠  Internal
+
+- chore(deps): update yarn orb from 6.2.0 to v6.4.0 [#368](https://github.com/artsy/cohesion/pull/368) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.76.0 (Fri Nov 18 2022)
 
 #### 🚀  Enhancement
