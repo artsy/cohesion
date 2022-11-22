@@ -301,15 +301,23 @@ export interface TappedConsign {
  * ```
  * {
  *   action: "tappedCuratedCollection",
- *   context_module: "searchTab",
- *   slug: "trending-this-week"
+ *   context_module: "curatedCollections",
+ *   context_screen_owner_type: "search",
+ *   destination_screen_owner_type: "collection",
+ *   destination_screen_owner_slug: "trending-this-week",
+ *   destination_screen_owner_id: "d78e9a17-ccf6-4104-b4e9-95c18f6412df",
+ *   position: 1
  * }
  * ```
  */
 export interface TappedCuratedCollection {
   action: ActionType.tappedCuratedCollection
-  context_module: ContextModule.searchTab
-  collection_slug: string
+  context_module: ContextModule.curatedCollections
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_slug: string
+  destination_screen_owner_id: string
+  position: number
 }
 
 /**
