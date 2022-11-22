@@ -53,6 +53,7 @@ export enum ContextModule {
   consignSubmissionFlow = "consignSubmissionFlow",
   contactInformation = "contactInformation",
   createAlert = "createAlert",
+  curatedCollections = "curatedCollections",
   curatedHighlightsRail = "curatedHighlightsRail",
   currentAuctions = "currentAuctions",
   currentShowsRail = "currentShowsRail",

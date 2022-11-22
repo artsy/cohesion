@@ -293,6 +293,34 @@ export interface TappedConsign {
 }
 
 /**
+ * A user taps on an Artsy curated collection on a search tab
+ *
+ * This schema describes events sent to Segment from [[tappedCuratedCollection]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "tappedCuratedCollection",
+ *   context_module: "curatedCollections",
+ *   context_screen_owner_type: "search",
+ *   destination_screen_owner_type: "collection",
+ *   destination_screen_owner_slug: "trending-this-week",
+ *   destination_screen_owner_id: "d78e9a17-ccf6-4104-b4e9-95c18f6412df",
+ *   position: 1
+ * }
+ * ```
+ */
+export interface TappedCuratedCollection {
+  action: ActionType.tappedCuratedCollection
+  context_module: ContextModule.curatedCollections
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_slug: string
+  destination_screen_owner_id: string
+  position: number
+}
+
+/**
  * A user taps a fair card
  *
  * This schema describes events sent to Segment from [[tappedFairCard]]
