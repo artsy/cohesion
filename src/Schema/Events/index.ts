@@ -93,6 +93,7 @@ import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
   PriceDatabaseFilterParamsChanged,
+  SelectedRecentPriceRange,
 } from "./FilterAndSort"
 import {
   MyCollectionOnboardingCompleted,
@@ -277,6 +278,7 @@ export type Event =
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
+  | SelectedRecentPriceRange
   | SentConversationMessage
   | SentRequestPriceEstimate
   | Share
@@ -764,6 +766,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
+  /**
+   * Corresponds to {@link SelectedRecentPriceRange}
+   */
+  selectedRecentPriceRange = "selectedRecentPriceRange",
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */

@@ -85,3 +85,25 @@ export interface PriceDatabaseFilterParamsChanged {
   current: string
   changed: string
 }
+
+/**
+ * A user selects a recent price range from the price filter screen
+ *
+ * This schema describes events sent to Segment from [[selectedRecentPriceRange]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedRecentPriceRange",
+ *    context_module: "recentPriceRanges",
+ *    context_screen_owner_type: "artworkPriceFilter",
+ *    collector_profile_sourced: true
+ *  }
+ * ```
+ */
+export interface SelectedRecentPriceRange {
+  action: ActionType.selectedRecentPriceRange
+  context_module: ContextModule.recentPriceRanges
+  context_screen_owner_type: OwnerType.artworkPriceFilter
+  collector_profile_sourced: boolean 
+}
