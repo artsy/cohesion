@@ -142,6 +142,7 @@ export enum ContextModule {
   pushNotifications = "pushNotifications",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
+  recentPriceRanges = "recentPriceRanges",
   recommendedArtistsRail = "recommendedArtistsRail",
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
   relatedArticles = "relatedArticles",
@@ -245,6 +246,7 @@ export type AuthContextModule =
   | ContextModule.presentingPartner
   | ContextModule.priceEstimate
   | ContextModule.recentlyViewedRail
+  | ContextModule.recentPriceRanges
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
   | ContextModule.relatedWorksRail
