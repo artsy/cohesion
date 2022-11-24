@@ -1,3 +1,15 @@
+# v4.78.0 (Thu Nov 24 2022)
+
+#### 🚀  Enhancement
+
+- feat: add SelectedRecentPriceRange event for price filter [#369](https://github.com/artsy/cohesion/pull/369) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.77.0 (Tue Nov 22 2022)
 
 #### 🚀  Enhancement
