@@ -169,6 +169,7 @@ import {
   TappedShowMore,
   TappedSkip,
   TappedTabBar,
+  TappedTrendingArtist,
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
@@ -326,6 +327,7 @@ export type Event =
   | TappedSkip
   | TappedTabBar
   | TappedToggleCameraFlash
+  | TappedTrendingArtist
   | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
@@ -974,6 +976,10 @@ export enum ActionType {
    * Corresponds to {@link TappedToggleCameraFlash}
    */
   tappedToggleCameraFlash = "tappedToggleCameraFlash",
+  /**
+   * Corresponds to {@link TappedTrendingArtist}
+   */
+  tappedTrendingArtist = "tappedTrendingArtist",
   /**
    * Corresponds to {@link TappedUploadAnotherArtwork}
    */
