@@ -1,3 +1,20 @@
+# v4.79.0 (Fri Nov 25 2022)
+
+#### 🚀  Enhancement
+
+- chore(FX-4453): add `TappedTrendingArtist` event [#371](https://github.com/artsy/cohesion/pull/371) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### 🏠  Internal
+
+- Bump minimatch from 3.0.4 to 3.1.2 [#370](https://github.com/artsy/cohesion/pull/370) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Dima Tretyak ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.78.0 (Thu Nov 24 2022)
 
 #### 🚀  Enhancement
