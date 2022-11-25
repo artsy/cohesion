@@ -253,6 +253,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedFairGroup
     | ActionType.tappedViewingRoomGroup
     | ActionType.tappedTrendingArtist
+    | ActionType.tappedCuratedCollection
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -307,18 +308,12 @@ export interface TappedConsign {
  *   destination_screen_owner_type: "collection",
  *   destination_screen_owner_slug: "trending-this-week",
  *   destination_screen_owner_id: "d78e9a17-ccf6-4104-b4e9-95c18f6412df",
- *   position: 1
+ *   horizontal_slide_position: 1
  * }
  * ```
  */
-export interface TappedCuratedCollection {
+export interface TappedCuratedCollection extends TappedEntityGroup {
   action: ActionType.tappedCuratedCollection
-  context_module: ContextModule.curatedCollections
-  context_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_slug: string
-  destination_screen_owner_id: string
-  position: number
 }
 
 /**
