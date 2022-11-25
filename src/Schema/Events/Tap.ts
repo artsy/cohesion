@@ -252,7 +252,6 @@ export interface TappedEntityGroup {
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
     | ActionType.tappedViewingRoomGroup
-    | ActionType.tappedTrendingArtist
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -291,34 +290,6 @@ export interface TappedConsign {
   destination_screen_owner_type: ScreenOwnerType
   /** The text of the tapped button */
   subject: string
-}
-
-/**
- * A user taps on an Artsy curated collection on a search tab
- *
- * This schema describes events sent to Segment from [[tappedCuratedCollection]]
- *
- * @example
- * ```
- * {
- *   action: "tappedCuratedCollection",
- *   context_module: "curatedCollections",
- *   context_screen_owner_type: "search",
- *   destination_screen_owner_type: "collection",
- *   destination_screen_owner_slug: "trending-this-week",
- *   destination_screen_owner_id: "d78e9a17-ccf6-4104-b4e9-95c18f6412df",
- *   position: 1
- * }
- * ```
- */
-export interface TappedCuratedCollection {
-  action: ActionType.tappedCuratedCollection
-  context_module: ContextModule.curatedCollections
-  context_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_type: ScreenOwnerType
-  destination_screen_owner_slug: string
-  destination_screen_owner_id: string
-  position: number
 }
 
 /**
@@ -520,28 +491,6 @@ export interface TappedTabBar {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   tab: Tab
-}
-
-/**
- * A user taps a trending artist
- *
- * This schema describes events sent to Segment from [[tappedTrendingArtist]]
- *
- *  @example
- *  ```
- *  {
- *    action: "tappedTrendingArtist",
- *    context_module: "trendingArtistsRail",
- *    context_screen_owner_type: "search",
- *    destination_screen_owner_id: "4dd1584de0091e000100207c",
- *    destination_screen_owner_slug: "banksy",
- *    destination_screen_owner_type: "artist",
- *    horizontal_slide_position: 0
- *  }
- * ```
- */
-export interface TappedTrendingArtist extends TappedEntityGroup {
-  action: ActionType.tappedTrendingArtist
 }
 
 /**
