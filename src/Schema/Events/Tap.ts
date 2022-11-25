@@ -252,6 +252,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
     | ActionType.tappedViewingRoomGroup
+    | ActionType.tappedTrendingArtist
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -522,9 +523,9 @@ export interface TappedTabBar {
 }
 
 /**
- * A user taps on a trending artist on a search tab
+ * A user taps a trending artist
  *
- * This schema describes events sent to Segment from [[TappedTrendingArtist]]
+ * This schema describes events sent to Segment from [[tappedTrendingArtist]]
  *
  *  @example
  *  ```
@@ -532,21 +533,15 @@ export interface TappedTabBar {
  *    action: "tappedTrendingArtist",
  *    context_module: "trendingArtistsRail",
  *    context_screen_owner_type: "search",
- *    destination_screen_owner_type: "artist",
- *    destination_screen_owner_slug: "banksy",
  *    destination_screen_owner_id: "4dd1584de0091e000100207c",
- *    position: 0
+ *    destination_screen_owner_slug: "banksy",
+ *    destination_screen_owner_type: "artist",
+ *    horizontal_slide_position: 0
  *  }
  * ```
  */
-export interface TappedTrendingArtist {
+export interface TappedTrendingArtist extends TappedEntityGroup {
   action: ActionType.tappedTrendingArtist
-  context_module: ContextModule.trendingArtistsRail
-  context_screen_owner_type: OwnerType.search
-  destination_screen_owner_type: OwnerType.artist
-  destination_screen_owner_slug: string
-  destination_screen_owner_id: string
-  position: number
 }
 
 /**
