@@ -522,6 +522,34 @@ export interface TappedTabBar {
 }
 
 /**
+ * A user taps on a trending artist on a search tab
+ *
+ * This schema describes events sent to Segment from [[TappedTrendingArtist]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedTrendingArtist",
+ *    context_module: "trendingArtistsRail",
+ *    context_screen_owner_type: "search",
+ *    destination_screen_owner_type: "artist",
+ *    destination_screen_owner_slug: "banksy",
+ *    destination_screen_owner_id: "4dd1584de0091e000100207c",
+ *    position: 0
+ *  }
+ * ```
+ */
+export interface TappedTrendingArtist {
+  action: ActionType.tappedTrendingArtist
+  context_module: ContextModule.trendingArtistsRail
+  context_screen_owner_type: OwnerType.search
+  destination_screen_owner_type: OwnerType.artist
+  destination_screen_owner_slug: string
+  destination_screen_owner_id: string
+  position: number
+}
+
+/**
  * A user taps a grouping of viewing rooms on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
