@@ -153,7 +153,6 @@ import {
   TappedConsign,
   TappedContactGallery,
   TappedCreateAlert,
-  TappedCuratedCollection,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -169,7 +168,6 @@ import {
   TappedShowMore,
   TappedSkip,
   TappedTabBar,
-  TappedTrendingArtist,
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
@@ -300,7 +298,6 @@ export type Event =
   | TappedConsign
   | TappedContactGallery
   | TappedCreateAlert
-  | TappedCuratedCollection
   | TappedExploreGroup
   | TappedExploreMyCollection
   | TappedFairCard
@@ -327,7 +324,6 @@ export type Event =
   | TappedSkip
   | TappedTabBar
   | TappedToggleCameraFlash
-  | TappedTrendingArtist
   | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
@@ -857,10 +853,6 @@ export enum ActionType {
    */
   tappedCreateAlert = "tappedCreateAlert",
   /**
-   * Corresponds to {@link TappedCuratedCollection}
-   */
-  tappedCuratedCollection = "tappedCuratedCollection",
-  /**
    * Corresponds to {@link TappedExploreGroup}
    */
   tappedExploreGroup = "tappedExploreGroup",
@@ -976,10 +968,6 @@ export enum ActionType {
    * Corresponds to {@link TappedToggleCameraFlash}
    */
   tappedToggleCameraFlash = "tappedToggleCameraFlash",
-  /**
-   * Corresponds to {@link TappedTrendingArtist}
-   */
-  tappedTrendingArtist = "tappedTrendingArtist",
   /**
    * Corresponds to {@link TappedUploadAnotherArtwork}
    */
