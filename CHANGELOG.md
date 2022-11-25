@@ -1,3 +1,15 @@
+# v4.80.0 (Fri Nov 25 2022)
+
+#### 🚀  Enhancement
+
+- refactor: remove unused code [#373](https://github.com/artsy/cohesion/pull/373) ([@dimatretyak](https://github.com/dimatretyak))
+
+#### Authors: 1
+
+- Dima Tretyak ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.79.0 (Fri Nov 25 2022)
 
 #### 🚀  Enhancement
