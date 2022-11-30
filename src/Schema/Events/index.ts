@@ -88,6 +88,7 @@ import {
   TappedMakeOffer,
   TappedViewOffer,
 } from "./Conversations"
+import { ExceededUploadSize } from "./ExceededUploadSize"
 import { ExperimentViewed } from "./ExperimentViewed"
 import {
   AuctionResultsFilterParamsChanged,
@@ -254,6 +255,7 @@ export type Event =
   | EditedSavedSearch
   | EnterLiveAuction
   | ExperimentViewed
+  | ExceededUploadSize
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
@@ -660,6 +662,10 @@ export enum ActionType {
    * Corresponds to {@link ExperimentViewed}
    */
   experimentViewed = "experimentViewed",
+  /**
+   * Corresponds to {@link ExceededUploadSize}
+   */
+  exceededUploadSize = "exceededUploadSize",
   /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */

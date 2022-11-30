@@ -105,5 +105,5 @@ export interface SelectedRecentPriceRange {
   action: ActionType.selectedRecentPriceRange
   context_module: ContextModule.recentPriceRanges
   context_screen_owner_type: OwnerType.artworkPriceFilter
-  collector_profile_sourced: boolean 
+  collector_profile_sourced: boolean
 }
