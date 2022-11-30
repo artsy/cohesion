@@ -1,3 +1,15 @@
+# v4.81.0 (Wed Nov 30 2022)
+
+#### 🚀  Enhancement
+
+- chore(CX-3187): add exceeded upload size event type [#374](https://github.com/artsy/cohesion/pull/374) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.80.0 (Fri Nov 25 2022)
 
 #### 🚀  Enhancement
