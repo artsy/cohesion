@@ -173,6 +173,7 @@ import {
   TappedViewingRoomGroup,
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
+import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
 import { ToggledAccordion } from "./UserExperienceInteractions"
 import { ViewedVideo } from "./Video"
 
@@ -254,6 +255,7 @@ export type Event =
   | EditedSavedSearch
   | EnterLiveAuction
   | ExperimentViewed
+  | UploadSizeLimitExceeded
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
@@ -660,6 +662,10 @@ export enum ActionType {
    * Corresponds to {@link ExperimentViewed}
    */
   experimentViewed = "experimentViewed",
+  /**
+   * Corresponds to {@link UploadSizeLimitExceeded}
+   */
+  uploadSizeLimitExceeded = "uploadSizeLimitExceeded",
   /**
    * Corresponds to {@link FocusedOnConversationMessageInput}
    */
