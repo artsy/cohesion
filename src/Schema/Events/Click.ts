@@ -1346,3 +1346,28 @@ export interface ClickedPartnerLink {
   context_owner_type: PageOwnerType
   destination_path: string
 }
+
+/**
+ * A user clicks on "Download order summary" on the order page on CMS
+ *
+ * This schema describes events sent to Segment from [[clickedOrderSummary]]
+ *
+ *  @example
+ *  ```
+ *  {
+ action: "clickedOrderSummary",
+ *    context_page_owner_type: "order",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    label: "Download order summary"
+ *    flow: offer
+ *  }
+ * ```
+ */
+export interface ClickedOrderSummary {
+  action: ActionType.clickedOrderSummary
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: string
+  flow: string
+}
