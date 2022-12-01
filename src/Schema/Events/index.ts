@@ -60,6 +60,7 @@ import {
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
+  ClickedOrderSummary,
   ClickedPartnerCard,
   ClickedPartnerLink,
   ClickedPaymentDetails,
@@ -242,6 +243,7 @@ export type Event =
   | ClickedViewingRoomCard
   | ClickedOfferActions
   | ClickedOrderPage
+  | ClickedOrderSummary
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -538,6 +540,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedOrderPage}
    */
   clickedOrderPage = "clickedOrderPage",
+  /**
+   * Corresponds to {@link ClickedOrderSummary}
+   */
+  clickedOrderSummary = "clickedOrderSummary",
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
