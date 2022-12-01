@@ -1,3 +1,15 @@
+# v4.83.0 (Thu Dec 01 2022)
+
+#### 🚀  Enhancement
+
+- Track click on download order summary in CMS [#376](https://github.com/artsy/cohesion/pull/376) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.82.0 (Thu Dec 01 2022)
 
 #### 🚀  Enhancement
