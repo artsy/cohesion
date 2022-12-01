@@ -230,6 +230,7 @@ export type AuthContextModule =
   | ContextModule.mainCarousel
   | ContextModule.minimalCTABanner
   | ContextModule.myCollectionAddArtworkAddArtist
+  | ContextModule.myCollectionHome
   | ContextModule.onboardingActivity
   | ContextModule.onboardingCollectorLevel
   | ContextModule.onboardingInterests
