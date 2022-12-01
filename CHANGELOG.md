@@ -1,3 +1,15 @@
+# v4.82.0 (Thu Dec 01 2022)
+
+#### 🚀  Enhancement
+
+- feat: expand AuthContextModule type [#375](https://github.com/artsy/cohesion/pull/375) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.81.0 (Wed Nov 30 2022)
 
 #### 🚀  Enhancement
