@@ -1,3 +1,15 @@
+# v4.84.0 (Wed Dec 07 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-3203): Add Tracking For Inquiry Tap and Sent [#378](https://github.com/artsy/cohesion/pull/378) ([@lordkiz](https://github.com/lordkiz))
+
+#### Authors: 1
+
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.83.0 (Thu Dec 01 2022)
 
 #### 🚀  Enhancement
