@@ -158,3 +158,11 @@ export interface ViewArtworkMyCollection {
   user_email: string
   user_id?: string
 }
+
+export interface SentConsignmentInquiry {
+  action: ActionType.sentConsignmentInquiry
+  context_module: ContextModule.consignmentInquiryForm
+  context_screen: OwnerType.consignmentInquiry
+  context_screen_owner_type: OwnerType.consignmentInquiry
+  consignment_inquiry_id?: bigint
+}

@@ -78,6 +78,7 @@ import {
   ArtworkDetailsCompleted,
   ConsignmentSubmitted,
   ContactInformationCompleted,
+  SentConsignmentInquiry,
   SubmitAnotherArtwork,
   UploadPhotosCompleted,
   ViewArtworkMyCollection,
@@ -172,6 +173,7 @@ import {
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
+  TappedConsignmentInquiry
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -282,6 +284,7 @@ export type Event =
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SelectedRecentPriceRange
+  | SentConsignmentInquiry
   | SentConversationMessage
   | SentRequestPriceEstimate
   | Share
@@ -301,6 +304,7 @@ export type Event =
   | TappedCollectionGroup
   | TappedConsign
   | TappedContactGallery
+  | TappedConsignmentInquiry
   | TappedCreateAlert
   | TappedExploreGroup
   | TappedExploreMyCollection
@@ -785,6 +789,10 @@ export enum ActionType {
    */
   sentArtworkInquiry = "sentArtworkInquiry",
   /**
+   * Corresponds to {@link SentConsignmentInquiry}
+   */
+   sentConsignmentInquiry = "sentConsignmentInquiry",
+  /**
    * Corresponds to {@link SentConversationMessage}
    */
   sentConversationMessage = "sentConversationMessage",
@@ -860,6 +868,10 @@ export enum ActionType {
    * Corresponds to {@link TappedContactGallery}
    */
   tappedContactGallery = "tappedContactGallery",
+  /**
+   * Corresponds to {@link TappedConsignmentInquiry}
+   */
+  tappedConsignmentInquiry = "tappedConsignmentInquiry",
   /**
    * Corresponds to {@link TappedCreateAlert}
    */

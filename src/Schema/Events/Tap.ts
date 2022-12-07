@@ -836,6 +836,32 @@ export interface TappedSellArtwork {
 }
 
 /**
+ * A user taps a Get in Touch button to begin an Inquiry about Consignments
+ *
+ * This schema describes events sent to Segment from [[tappedConsignmentInquiry]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedConsignmentInquiry",
+ *    context_module : "sellHeader"
+ *    context_screen: "sell",
+ *    context_screen_owner_type: "sell",
+ *    subject: "Get in Touch"
+ *  }
+ * ```
+ */
+export interface TappedConsignmentInquiry {
+  action: ActionType.tappedConsignmentInquiry
+  context_module: ContextModule
+  context_screen: OwnerType
+  context_screen_owner_type: OwnerType
+  /** The text of the tapped button */
+  subject: string
+}
+
+
+/**
  * A user taps a Learn More button in SWA banner on My Collection Artwork page
  *
  * This schema describes events sent to Segment from [[tappedLearnMore]]
