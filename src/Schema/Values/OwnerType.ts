@@ -26,6 +26,7 @@ export enum OwnerType {
   collections = "collections",
   consign = "consign",
   consignmentFlow = "consignmentFlow",
+  consignmentInquiry = "consignmentInquiry",
   consignmentSubmission = "consignmentSubmission",
   conversation = "conversation",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
@@ -104,6 +105,7 @@ export type ScreenOwnerType =
   | OwnerType.collection
   | OwnerType.consign
   | OwnerType.consignmentFlow
+  | OwnerType.consignmentInquiry
   | OwnerType.consignmentSubmission
   | OwnerType.conversation
   | OwnerType.conversationMakeOfferConfirmArtwork
