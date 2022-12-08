@@ -1,3 +1,22 @@
+# v4.85.0 (Thu Dec 08 2022)
+
+#### 🚀  Enhancement
+
+- Change consignment_inquiry_id from bigint to number [#380](https://github.com/artsy/cohesion/pull/380) ([@lordkiz](https://github.com/lordkiz))
+
+#### 🏠  Internal
+
+- Bump decode-uri-component from 0.2.0 to 0.2.2 [#377](https://github.com/artsy/cohesion/pull/377) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): update dep typescript from 4.9.3 to v4.9.4 [#379](https://github.com/artsy/cohesion/pull/379) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.84.0 (Wed Dec 07 2022)
 
 #### 🚀  Enhancement
