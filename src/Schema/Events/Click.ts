@@ -1371,3 +1371,27 @@ export interface ClickedOrderSummary {
   label: string
   flow: string
 }
+
+/**
+ * A Partner clicks on price display dropdown to choose either exact price, price range or contact for price in the artwork edit page in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnPriceDisplayDropdown]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnPriceDisplayDropdown",
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    label: "exact_price"
+ *  }
+ * ```
+ */
+ export interface ClickedOnPriceDisplayDropdown {
+  action: ActionType.clickedOnPriceDisplayDropdown
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: string
+}
