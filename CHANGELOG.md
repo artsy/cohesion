@@ -1,3 +1,15 @@
+# v4.86.0 (Thu Dec 08 2022)
+
+#### 🚀  Enhancement
+
+- chore:add event for clicked on price display [#381](https://github.com/artsy/cohesion/pull/381) ([@nspinazz89](https://github.com/nspinazz89))
+
+#### Authors: 1
+
+- Nick Spinazze ([@nspinazz89](https://github.com/nspinazz89))
+
+---
+
 # v4.85.0 (Thu Dec 08 2022)
 
 #### 🚀  Enhancement
