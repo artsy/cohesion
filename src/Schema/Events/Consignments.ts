@@ -164,5 +164,5 @@ export interface SentConsignmentInquiry {
   context_module: ContextModule.consignmentInquiryForm
   context_screen: OwnerType.consignmentInquiry
   context_screen_owner_type: OwnerType.consignmentInquiry
-  consignment_inquiry_id?: bigint
+  consignment_inquiry_id?: number
 }
