@@ -75,6 +75,7 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
 } from "./Click"
+import { EditedUserProfile } from "./CollectorProfile"
 import {
   ArtworkDetailsCompleted,
   ConsignmentSubmitted,
@@ -154,6 +155,7 @@ import {
   TappedBuyNow,
   TappedCollectionGroup,
   TappedConsign,
+  TappedConsignmentInquiry,
   TappedContactGallery,
   TappedCreateAlert,
   TappedExploreGroup,
@@ -174,7 +176,6 @@ import {
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
-  TappedConsignmentInquiry
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -259,6 +260,7 @@ export type Event =
   | DeletedSavedSearch
   | EditCollectedArtwork
   | EditedSavedSearch
+  | EditedUserProfile
   | EnterLiveAuction
   | ExperimentViewed
   | UploadSizeLimitExceeded
@@ -671,6 +673,10 @@ export enum ActionType {
    */
   editedSavedSearch = "editedSavedSearch",
   /**
+   * Corresponds to {@link EditedUserProfile}
+   */
+  editedUserProfile = "editedUserProfile",
+  /**
    * Corresponds to {@link EnterLiveAuction}
    */
   enterLiveAuction = "enterLiveAuction",
@@ -797,7 +803,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link SentConsignmentInquiry}
    */
-   sentConsignmentInquiry = "sentConsignmentInquiry",
+  sentConsignmentInquiry = "sentConsignmentInquiry",
   /**
    * Corresponds to {@link SentConversationMessage}
    */
