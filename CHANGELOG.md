@@ -1,3 +1,15 @@
+# v4.87.0 (Tue Dec 20 2022)
+
+#### 🚀  Enhancement
+
+- feat(CX-3255): Add EditedUserProfile event [#383](https://github.com/artsy/cohesion/pull/383) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.86.0 (Thu Dec 08 2022)
 
 #### 🚀  Enhancement
