@@ -50,6 +50,7 @@ export enum ContextModule {
   collectionCard = "collectionCard",
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",
+  collectorProfile = "collectorProfile",
   consignmentInquiryForm = "consignmentInquiryForm",
   consignSubmissionFlow = "consignSubmissionFlow",
   contactInformation = "contactInformation",
@@ -210,6 +211,7 @@ export type AuthContextModule =
   | ContextModule.browseFair
   | ContextModule.categoryRail
   | ContextModule.collectionDescription
+  | ContextModule.collectorProfile
   | ContextModule.consignSubmissionFlow
   | ContextModule.currentShowsRail
   | ContextModule.fairInfo
