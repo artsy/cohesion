@@ -1,3 +1,15 @@
+# v4.88.0 (Tue Jan 03 2023)
+
+#### 🚀  Enhancement
+
+- feat(auth): adds scroll to auth trigger [#384](https://github.com/artsy/cohesion/pull/384) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.87.0 (Tue Dec 20 2022)
 
 #### 🚀  Enhancement
