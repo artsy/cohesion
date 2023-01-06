@@ -216,7 +216,7 @@ export interface TappedMyCollectionAddArtworkArtist {
  */
 export interface MyColectionAddNewArtistName {
   action: ActionType.addNewArtistName
-  context_screen: ContextModule.myCollection
+  context_module: ContextModule.myCollection
   context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
@@ -238,7 +238,7 @@ export interface MyColectionAddNewArtistName {
  */
 export interface MyCollectionSelectArtistFromSearch {
   action: ActionType.selectArtistFromSearch
-  context_screen: ContextModule.myCollection
+  context_mudule: ContextModule.myCollection
   context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
@@ -260,7 +260,7 @@ export interface MyCollectionSelectArtistFromSearch {
  */
 export interface MyCollectionAddArtworkDetails {
   action: ActionType.addArtworkDetails
-  context_screen: ContextModule.myCollection
+  context_module: ContextModule.myCollection
   context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
@@ -282,7 +282,7 @@ export interface MyCollectionAddArtworkDetails {
  */
 export interface MyCollectionSelectArtworkFromGrid {
   action: ActionType.selectArtworkFromGrid
-  context_screen: ContextModule.myCollection
+  context_module: ContextModule.myCollection
   context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
