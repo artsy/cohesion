@@ -209,7 +209,7 @@ export interface TappedMyCollectionAddArtworkArtist {
  *  {
  *    action: "addNewArtistName",
  *    context_module: "myCollection",
- *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    context_owner_type: "myCollectionUploadingFlow",
  *    platform: "web",
  *  }
  * ```
@@ -217,7 +217,7 @@ export interface TappedMyCollectionAddArtworkArtist {
 export interface MyColectionAddNewArtistName {
   action: ActionType.addNewArtistName
   context_module: ContextModule.myCollection
-  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
+  context_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
@@ -231,7 +231,7 @@ export interface MyColectionAddNewArtistName {
  *  {
  *    action: "selectArtistFromSearch",
  *    context_module: "myCollection",
- *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    context_owner_type: "myCollectionUploadingFlow",
  *    platform: "web",
  *  }
  * ```
@@ -239,7 +239,7 @@ export interface MyColectionAddNewArtistName {
 export interface MyCollectionSelectArtistFromSearch {
   action: ActionType.selectArtistFromSearch
   context_mudule: ContextModule.myCollection
-  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
+  context_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
@@ -253,7 +253,7 @@ export interface MyCollectionSelectArtistFromSearch {
  *  {
  *    action: "addArtworkDetails",
  *    context_module: "myCollection",
- *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    context_owner_type: "myCollectionUploadingFlow",
  *    platform: "web",
  *  }
  * ```
@@ -261,7 +261,7 @@ export interface MyCollectionSelectArtistFromSearch {
 export interface MyCollectionAddArtworkDetails {
   action: ActionType.addArtworkDetails
   context_module: ContextModule.myCollection
-  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
+  context_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
@@ -275,7 +275,7 @@ export interface MyCollectionAddArtworkDetails {
  *  {
  *    action: "selectArtworkFromGrid",
  *    context_module: "myCollection",
- *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    context_owner_type: "myCollectionUploadingFlow",
  *    platform: "web",
  *  }
  * ```
@@ -283,7 +283,7 @@ export interface MyCollectionAddArtworkDetails {
 export interface MyCollectionSelectArtworkFromGrid {
   action: ActionType.selectArtworkFromGrid
   context_module: ContextModule.myCollection
-  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
+  context_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
