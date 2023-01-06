@@ -1,3 +1,15 @@
+# v4.91.0 (Fri Jan 06 2023)
+
+#### 🚀  Enhancement
+
+- fix: Adjsut new My Collection event owner type [#388](https://github.com/artsy/cohesion/pull/388) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.90.0 (Fri Jan 06 2023)
 
 #### 🚀  Enhancement
