@@ -1,6 +1,6 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 export type Platform = "web" | "mobile"
 
@@ -216,8 +216,8 @@ export interface TappedMyCollectionAddArtworkArtist {
  */
 export interface MyColectionAddNewArtistName {
   action: ActionType.addNewArtistName
-  context_screen: OwnerType.myCollection
-  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  context_screen: ContextModule.myCollection
+  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
@@ -238,8 +238,8 @@ export interface MyColectionAddNewArtistName {
  */
 export interface MyCollectionSelectArtistFromSearch {
   action: ActionType.selectArtistFromSearch
-  context_screen: OwnerType.myCollection
-  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  context_screen: ContextModule.myCollection
+  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
@@ -260,8 +260,8 @@ export interface MyCollectionSelectArtistFromSearch {
  */
 export interface MyCollectionAddArtworkDetails {
   action: ActionType.addArtworkDetails
-  context_screen: OwnerType.myCollection
-  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  context_screen: ContextModule.myCollection
+  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
@@ -282,8 +282,8 @@ export interface MyCollectionAddArtworkDetails {
  */
 export interface MyCollectionSelectArtworkFromGrid {
   action: ActionType.selectArtworkFromGrid
-  context_screen: OwnerType.myCollection
-  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  context_screen: ContextModule.myCollection
+  context_screen_owner_type: OwnerType.myCollectionUploadingFlow
   platform: Platform
 }
 
