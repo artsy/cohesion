@@ -1,6 +1,6 @@
+import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType } from "../Values/OwnerType"
-import { ActionType } from "."
 
 export type Platform = "web" | "mobile"
 
@@ -197,6 +197,94 @@ export interface TappedMyCollectionAddArtworkArtist {
   context_module: ContextModule.myCollectionAddArtworkAddArtist
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+}
+
+/**
+ * Users clicks "Add their name" on the artist selection page
+ *
+ * This schema describes events sent to Segment from [[addNewArtistName]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "addNewArtistName",
+ *    context_module: "myCollection",
+ *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    platform: "web",
+ *  }
+ * ```
+ */
+export interface MyColectionAddNewArtistName {
+  action: ActionType.addNewArtistName
+  context_screen: OwnerType.myCollection
+  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  platform: Platform
+}
+
+/**
+ * Users selects artist from search on the artist selection page
+ *
+ * This schema describes events sent to Segment from [[selectArtistFromSearch]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectArtistFromSearch",
+ *    context_module: "myCollection",
+ *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    platform: "web",
+ *  }
+ * ```
+ */
+export interface MyCollectionSelectArtistFromSearch {
+  action: ActionType.selectArtistFromSearch
+  context_screen: OwnerType.myCollection
+  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  platform: Platform
+}
+
+/**
+ * Users clicks "Skip" button or "add artwork details" on the "Select an artwork" page
+ *
+ * This schema describes events sent to Segment from [[addArtworkDetails]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "addArtworkDetails",
+ *    context_module: "myCollection",
+ *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    platform: "web",
+ *  }
+ * ```
+ */
+export interface MyCollectionAddArtworkDetails {
+  action: ActionType.addArtworkDetails
+  context_screen: OwnerType.myCollection
+  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  platform: Platform
+}
+
+/**
+ * Users selects artwork from grid on the "Select an artwork" screen
+ *
+ * This schema describes events sent to Segment from [[selectArtworkFromGrid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectArtworkFromGrid",
+ *    context_module: "myCollection",
+ *    context_screen_owner_type: "myCollectionUploadingFlow",
+ *    platform: "web",
+ *  }
+ * ```
+ */
+export interface MyCollectionSelectArtworkFromGrid {
+  action: ActionType.selectArtworkFromGrid
+  context_screen: OwnerType.myCollection
+  context_screen_owner_type: ContextModule.myCollectionUploadingFlow
+  platform: Platform
 }
 
 /**

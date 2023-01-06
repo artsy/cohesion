@@ -357,9 +357,17 @@ export type Event =
  */
 export enum ActionType {
   /**
+   * Corresponds to {@link AddArtworkDetails}
+   */
+  addArtworkDetails = "addArtworkDetails",
+  /**
    * Corresponds to {@link AddCollectedArtwork}
    */
   addCollectedArtwork = "addCollectedArtwork",
+  /**
+   * Corresponds to {@link AddNewArtistName}
+   */
+  addNewArtistName = "addNewArtistName",
   /**
    * Corresponds to {@link AddToCalendar}
    */
@@ -780,6 +788,14 @@ export enum ActionType {
    * Corresponds to {@link SearchedWithNoResults}
    */
   searchedWithNoResults = "searchedWithNoResults",
+  /**
+   * Corresponds to {@link SelectArtistFromSearch}
+   */
+  selectArtistFromSearch = "selectArtistFromSearch",
+  /**
+   * Corresponds to {@link selectArtworkFromGrid}
+   */
+  selectArtworkFromGrid = "selectArtworkFromGrid",
   /**
    * Corresponds to {@link SelectedArtworkFromReverseImageSearch}
    */
