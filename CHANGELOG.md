@@ -1,3 +1,15 @@
+# v4.92.0 (Fri Jan 06 2023)
+
+#### 🚀  Enhancement
+
+- fix: Adjust new My Collection event keys [#389](https://github.com/artsy/cohesion/pull/389) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.91.0 (Fri Jan 06 2023)
 
 #### 🚀  Enhancement
