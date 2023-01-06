@@ -1,3 +1,20 @@
+# v4.89.0 (Fri Jan 06 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add events for new MyC web uploading flow [#386](https://github.com/artsy/cohesion/pull/386) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- Bump json5 from 2.1.3 to 2.2.3 [#385](https://github.com/artsy/cohesion/pull/385) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.88.0 (Tue Jan 03 2023)
 
 #### 🚀  Enhancement
