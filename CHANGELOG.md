@@ -1,3 +1,15 @@
+# v4.94.0 (Tue Jan 17 2023)
+
+#### 🚀  Enhancement
+
+- chore: add context module to ExperimentViewed [#391](https://github.com/artsy/cohesion/pull/391) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.93.0 (Tue Jan 17 2023)
 
 #### 🚀  Enhancement
