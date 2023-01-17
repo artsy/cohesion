@@ -1,3 +1,15 @@
+# v4.96.0 (Tue Jan 17 2023)
+
+#### 🚀  Enhancement
+
+- chore: add missing fields to ExperimentViewed [#393](https://github.com/artsy/cohesion/pull/393) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.95.0 (Tue Jan 17 2023)
 
 #### 🚀  Enhancement
