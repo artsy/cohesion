@@ -1,3 +1,15 @@
+# v4.93.0 (Tue Jan 17 2023)
+
+#### 🚀  Enhancement
+
+- chore: update experiment_viewed event to requirements asked by analytics [#390](https://github.com/artsy/cohesion/pull/390) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.92.0 (Fri Jan 06 2023)
 
 #### 🚀  Enhancement
