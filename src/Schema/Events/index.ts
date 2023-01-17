@@ -691,7 +691,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ExperimentViewed}
    */
-  experimentViewed = "experimentViewed",
+  experimentViewed = "experiment_viewed", // intentional snake case to match tracked event
   /**
    * Corresponds to {@link UploadSizeLimitExceeded}
    */
