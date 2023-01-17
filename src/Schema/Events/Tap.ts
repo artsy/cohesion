@@ -860,7 +860,6 @@ export interface TappedConsignmentInquiry {
   subject: string
 }
 
-
 /**
  * A user taps a Learn More button in SWA banner on My Collection Artwork page
  *
