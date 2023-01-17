@@ -38,6 +38,7 @@ export interface ExperimentViewed {
   payload?: string
   context_module?: ContextModule
   context_owner_type: OwnerType
+  context_owner_screen: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
 }
