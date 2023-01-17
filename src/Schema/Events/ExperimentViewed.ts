@@ -32,13 +32,14 @@ import { ActionType } from "."
 export interface ExperimentViewed {
   action: ActionType.experimentViewed
   experiment_name: string
+  service: "unleash"
   // usually "control" or "experiment"
   // can be checked https://unleash.artsy.net/projects/default/features/[feature-flag]/variants
   variant_name: string
   payload?: string
   context_module?: ContextModule
   context_owner_type: OwnerType
-  context_owner_screen: OwnerType
+  context_owner_screen?: OwnerType
   context_owner_id?: string
   context_owner_slug?: string
 }

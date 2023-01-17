@@ -1388,7 +1388,7 @@ export interface ClickedOrderSummary {
  *  }
  * ```
  */
- export interface ClickedOnPriceDisplayDropdown {
+export interface ClickedOnPriceDisplayDropdown {
   action: ActionType.clickedOnPriceDisplayDropdown
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
