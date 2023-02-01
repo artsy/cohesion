@@ -1,3 +1,20 @@
+# v4.97.0 (Wed Feb 01 2023)
+
+#### 🚀  Enhancement
+
+- feat: add upcoming auctions results rail [#395](https://github.com/artsy/cohesion/pull/395) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 4.9.4 to v4.9.5 [#394](https://github.com/artsy/cohesion/pull/394) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.96.0 (Tue Jan 17 2023)
 
 #### 🚀  Enhancement
