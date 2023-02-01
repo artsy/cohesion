@@ -43,7 +43,6 @@ export enum OwnerType {
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   myCollection = "myCollection",
-  myCollectionUploadingFlow = "myCollectionUploadingFlow",
   myCollectionAddArtworkArtist = "myCollectionAddArtworkArtist",
   myCollectionArtwork = "myCollectionArtwork",
   myCollectionArtworkAbout = "MyCollectionArtworkAbout",
@@ -51,6 +50,7 @@ export enum OwnerType {
   myCollectionInsights = "myCollectionInsights",
   myCollectionInsightsMedianAuctionPrice = "myCollectionInsightsMedianAuctionPrice",
   myCollectionOnboarding = "myCollectionOnboarding",
+  myCollectionUploadingFlow = "myCollectionUploadingFlow",
   newWorksForYou = "newWorksForYou",
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
@@ -77,6 +77,7 @@ export enum OwnerType {
   show = "show",
   shows = "shows",
   tag = "tag",
+  upcomingAuctions = "upcomingAuctions",
   user = "user",
   viewingRoom = "viewingRoom",
   viewingRoomArtworkPage = "viewingRoomArtworkPage",
@@ -134,8 +135,8 @@ export type ScreenOwnerType =
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
-  | OwnerType.sale
   | OwnerType.reverseImageSearch
+  | OwnerType.sale
   | OwnerType.saleInformation
   | OwnerType.savedSearch
   | OwnerType.savedSearches
@@ -145,6 +146,7 @@ export type ScreenOwnerType =
   | OwnerType.show
   | OwnerType.shows
   | OwnerType.tag
+  | OwnerType.upcomingAuctions
   | OwnerType.viewingRoom
   | OwnerType.viewingRoomArtworkPage
   | OwnerType.viewingRoomArtworks
@@ -158,8 +160,8 @@ export type PageOwnerType =
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
-  | OwnerType.artists
   | OwnerType.artistAuctionResults
+  | OwnerType.artists
   | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.auctions
