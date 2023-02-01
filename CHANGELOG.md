@@ -1,3 +1,15 @@
+# v4.99.0 (Wed Feb 01 2023)
+
+#### 🚀  Enhancement
+
+- feat: add curatedTrendingArtistsRail context module [#397](https://github.com/artsy/cohesion/pull/397) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.98.0 (Wed Feb 01 2023)
 
 #### 🚀  Enhancement
