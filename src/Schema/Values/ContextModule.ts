@@ -34,10 +34,10 @@ export enum ContextModule {
   auctionLots = "auctionLots",
   auctionRail = "auctionRail",
   auctionResult = "auctionResult",
+  auctionResultComparableWorks = "auctionResultComparableWorks",
   auctionResults = "auctionResults",
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctionResultsRail = "auctionResultsRail",
-  auctionResultComparableWorks = "auctionResultComparableWorks",
   auctionSidebar = "auctionSidebar",
   auctionsInfo = "auctionsInfo",
   auctionTab = "auctionTab",
@@ -54,6 +54,8 @@ export enum ContextModule {
   consignmentInquiryForm = "consignmentInquiryForm",
   consignSubmissionFlow = "consignSubmissionFlow",
   contactInformation = "contactInformation",
+  conversationBuyNowConfirmArtwork = "conversationBuyNowConfirmArtwork",
+  conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
   createAlert = "createAlert",
   curatedCollections = "curatedCollections",
   curatedHighlightsRail = "curatedHighlightsRail",
@@ -99,24 +101,24 @@ export enum ContextModule {
   moreFromThisSeries = "moreFromThisSeries",
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
   myCollection = "myCollection",
-  myCollectionArtwork = "myCollectionArtwork",
   myCollectionAddArtworkAddArtist = "myCollectionAddArtworkAddArtist",
-  myCollectionArtworkInsights = "myCollectionArtworkInsights",
+  myCollectionArtwork = "myCollectionArtwork",
   myCollectionArtworkAbout = "myCollectionArtworkAbout",
+  myCollectionArtworkInsights = "myCollectionArtworkInsights",
   myCollectionComparableWorks = "myCollectionComparableWorks",
   myCollectionHome = "myCollectionHome",
   myCollectionInsights = "myCollectionInsights",
-  myCollectionInsightsMedianAuctionRail = "myCollectionInsightsMedianAuctionRail",
   myCollectionInsightsMedianAuctionPriceChart = "myCollectionInsightsMedianAuctionPriceChart",
+  myCollectionInsightsMedianAuctionRail = "myCollectionInsightsMedianAuctionRail",
   myCollectionMarketSignals = "myCollectionMarketSignals",
   myCollectionOnboarding = "myCollectionOnboarding",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
-  newWorksForYouRail = "newWorksForYouRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
+  newWorksForYouRail = "newWorksForYouRail",
   onboardingActivity = "onboardingActivity",
   onboardingCollectorLevel = "onboardingCollectorLevel",
-  onboardingInterests = "onboardingInterests",
   onboardingFlow = "onboardingFlow",
+  onboardingInterests = "onboardingInterests",
   ordersAccept = "ordersAccept",
   ordersCounter = "ordersCounter",
   ordersNewPayment = "ordersNewPayment",
@@ -171,6 +173,7 @@ export enum ContextModule {
   trendingLots = "trendingLots",
   troveArtworksRail = "troveArtworksRail",
   upcomingAuctions = "upcomingAuctions",
+  upcomingAuctionsRail = "upcomingAuctionsRail",
   uploadPhotos = "uploadPhotos",
   viewingRoom = "viewingRoom",
   voltArtworksEdit = "voltArtworksEdit",
@@ -178,8 +181,6 @@ export enum ContextModule {
   worksByPopularArtistsRail = "worksByPopularArtistsRail",
   worksForSaleRail = "worksForSaleRail",
   yourActiveBids = "yourActiveBids",
-  conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
-  conversationBuyNowConfirmArtwork = "conversationBuyNowConfirmArtwork",
 }
 
 /**
@@ -202,8 +203,8 @@ export type AuthContextModule =
   | ContextModule.auctionLots
   | ContextModule.auctionRail
   | ContextModule.auctionResult
-  | ContextModule.auctionResults
   | ContextModule.auctionResultComparableWorks
+  | ContextModule.auctionResults
   | ContextModule.auctionSidebar
   | ContextModule.auctionsInfo
   | ContextModule.auctionTab
@@ -237,8 +238,8 @@ export type AuthContextModule =
   | ContextModule.myCollectionHome
   | ContextModule.onboardingActivity
   | ContextModule.onboardingCollectorLevel
-  | ContextModule.onboardingInterests
   | ContextModule.onboardingFlow
+  | ContextModule.onboardingInterests
   | ContextModule.otherWorksByArtistRail
   | ContextModule.otherWorksFromPartnerRail
   | ContextModule.otherWorksFromShowRail
@@ -261,8 +262,8 @@ export type AuthContextModule =
   | ContextModule.showTab
   | ContextModule.standoutLots
   | ContextModule.tagHeader
-  | ContextModule.topWorksRail
   | ContextModule.topTab
+  | ContextModule.topWorksRail
   | ContextModule.trendingArtistsRail
   | ContextModule.trendingLots
   | ContextModule.viewingRoom
