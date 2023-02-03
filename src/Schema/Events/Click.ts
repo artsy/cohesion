@@ -1399,7 +1399,7 @@ export interface ClickedOnPriceDisplayDropdown {
 /**
  * A Partner selects a filter on the conversations page in CMS.
  *
- * This schema describes events sent to Segment from [[selectedConversationsFilter]]
+ * This schema describes events sent to Segment from [[ClickedConversationsFilter]]
  *
  *  @example
  *  ```
@@ -1413,7 +1413,7 @@ export interface ClickedOnPriceDisplayDropdown {
  *  }
  * ```
  */
- export interface SelectedConversationsFilter {
+ export interface ClickedConversationsFilter {
   label: string
   context_module: string
   context_page_owner_type: PageOwnerType

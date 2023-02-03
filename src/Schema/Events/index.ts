@@ -62,6 +62,8 @@ import {
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
+  ClickedDismissInquiry,
+  ClickedMarkSpam,
   ClickedPartnerCard,
   ClickedPartnerLink,
   ClickedPaymentDetails,
