@@ -1395,3 +1395,88 @@ export interface ClickedOnPriceDisplayDropdown {
   context_page_owner_id?: string
   label: string
 }
+
+/**
+ * A Partner selects a filter on the conversations page in CMS.
+ *
+ * This schema describes events sent to Segment from [[selectedConversationsFilter]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    label: [selected filter all, selected filter new, selected filter replied],
+ *    context_module: "conversations",
+ *    context_page_owner_type: "conversation",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    partner_id: "35de173a47476c111fd5c4cc"
+ *  }
+ * ```
+ */
+ export interface SelectedConversationsFilter {
+  label: string
+  context_module: string
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  artwork_id: string
+  partner_id: string
+}
+
+/**
+ * Partner clicks on dismiss inquiry on the conversations page in CMS. 
+ * A pop up will open and then they can click on: Select a reason, Cancel, Dismiss inquiry 
+ *
+ * This schema describes events sent to Segment from [[clickedDismissInquiry]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    conversation_id: 123456
+ *    label: [select a reason, cancel dismiss inquiry, dismiss inquiry]
+ *    reason: [The artwork is no longer available, I already contacted this person, Other]
+ *    context_module: "conversations",
+ *    context_page_owner_type: "conversation",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    partner_id: "35de173a47476c111fd5c4cc"
+ *  }
+ * ```
+ */
+ export interface ClickedDismissInquiry {
+  conversation_id: string
+  label: string
+  reason: string
+  context_module: string
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  artwork_id: string
+  partner_id: string
+}
+/**
+ * Partner clicks on mark as spam on the conversations page in CMS. 
+ * A pop up will open and then they can click on: Cancel or Delete and Mark as Spam
+ *
+ * This schema describes events sent to Segment from [[clickedMarkSpam]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    conversation_id: 123456
+ *    label: [mark as spam, cancel mark as spam, delete and mark as spam]
+ *    context_module: "conversations",
+ *    context_page_owner_type: "conversation",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    partner_id: "35de173a47476c111fd5c4cc"
+ *  }
+ * ```
+ */
+ export interface ClickedMarkSpam {
+  conversation_id: string
+  label: string
+  context_module: string
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  artwork_id: string
+  partner_id: string
+}

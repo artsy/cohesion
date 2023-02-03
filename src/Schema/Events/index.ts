@@ -249,6 +249,8 @@ export type Event =
   | ClickedOfferActions
   | ClickedOrderPage
   | ClickedOrderSummary
+  | ClickedDismissInquiry
+  | ClickedMarkSpam
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -285,6 +287,7 @@ export type Event =
   | SearchedReverseImageWithResults
   | SearchedWithNoResults
   | SelectedArtworkFromReverseImageSearch
+  | SelectedConversationsFilter
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SelectedRecentPriceRange
@@ -567,6 +570,14 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
+   clickedDismissInquiry = "clickedDismissInquiry",
+  /**
+   * Corresponds to {@link ClickedDismissInquiry}
+   */
+   clickedMarkSpam = "clickedMarkSpam",
+  /**
+   * Corresponds to {@link ClickedMarkSpam}
+   */
   clickedPartnerCard = "clickedPartnerCard",
   /**
    * Corresponds to {@link ClickedPartnerLink}
@@ -803,6 +814,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
+   selectedConversationsFilter = "selectedConversationsFilter",
+   /**
+    * Corresponds to {@link SelectedConversationsFilter}
+    */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
    * Corresponds to {@link SelectedItemFromSearch}
