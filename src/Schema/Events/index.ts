@@ -76,6 +76,7 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedConversationsFilter
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -253,6 +254,7 @@ export type Event =
   | ClickedOrderSummary
   | ClickedDismissInquiry
   | ClickedMarkSpam
+  | ClickedConversationsFilter
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -289,7 +291,6 @@ export type Event =
   | SearchedReverseImageWithResults
   | SearchedWithNoResults
   | SelectedArtworkFromReverseImageSearch
-  | SelectedConversationsFilter
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SelectedRecentPriceRange
@@ -816,9 +817,9 @@ export enum ActionType {
   /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
-   selectedConversationsFilter = "selectedConversationsFilter",
+   clickedConversationsFilter = "clickedConversationsFilter",
    /**
-    * Corresponds to {@link SelectedConversationsFilter}
+    * Corresponds to {@link ClickedConversationsFilter}
     */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
