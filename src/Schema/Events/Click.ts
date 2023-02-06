@@ -1423,8 +1423,8 @@ export interface ClickedOnPriceDisplayDropdown {
 }
 
 /**
- * Partner clicks on dismiss inquiry on the conversations page in CMS. 
- * A pop up will open and then they can click on: Select a reason, Cancel, Dismiss inquiry 
+ * Partner clicks on dismiss inquiry modal on the conversations page in CMS.
+ * They can click on: Select a reason, Cancel, Dismiss inquiry 
  *
  * This schema describes events sent to Segment from [[clickedDismissInquiry]]
  *
@@ -1453,8 +1453,8 @@ export interface ClickedOnPriceDisplayDropdown {
   partner_id: string
 }
 /**
- * Partner clicks on mark as spam on the conversations page in CMS. 
- * A pop up will open and then they can click on: Cancel or Delete and Mark as Spam
+ * Partner clicks on mark as spam modal on the conversations page in CMS. 
+ * They can click on: Cancel or Delete and Mark as Spam
  *
  * This schema describes events sent to Segment from [[clickedMarkSpam]]
  *
