@@ -1,3 +1,15 @@
+# v4.100.0 (Tue Feb 07 2023)
+
+#### 🚀  Enhancement
+
+- [AS-3677] CMS conversation page events [#398](https://github.com/artsy/cohesion/pull/398) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.99.0 (Wed Feb 01 2023)
 
 #### 🚀  Enhancement
