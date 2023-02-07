@@ -62,6 +62,8 @@ import {
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
+  ClickedDismissInquiry,
+  ClickedMarkSpam,
   ClickedPartnerCard,
   ClickedPartnerLink,
   ClickedPaymentDetails,
@@ -74,6 +76,7 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedConversationsFilter
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -249,6 +252,9 @@ export type Event =
   | ClickedOfferActions
   | ClickedOrderPage
   | ClickedOrderSummary
+  | ClickedDismissInquiry
+  | ClickedMarkSpam
+  | ClickedConversationsFilter
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -567,6 +573,14 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
+   clickedDismissInquiry = "clickedDismissInquiry",
+  /**
+   * Corresponds to {@link ClickedDismissInquiry}
+   */
+   clickedMarkSpam = "clickedMarkSpam",
+  /**
+   * Corresponds to {@link ClickedMarkSpam}
+   */
   clickedPartnerCard = "clickedPartnerCard",
   /**
    * Corresponds to {@link ClickedPartnerLink}
@@ -803,6 +817,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
+   clickedConversationsFilter = "clickedConversationsFilter",
+   /**
+    * Corresponds to {@link ClickedConversationsFilter}
+    */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
    * Corresponds to {@link SelectedItemFromSearch}
