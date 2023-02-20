@@ -1,3 +1,15 @@
+# v4.101.0 (Mon Feb 20 2023)
+
+#### 🚀  Enhancement
+
+- Fixing CMS conversation - ClickedConversationsFilter [#399](https://github.com/artsy/cohesion/pull/399) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.100.0 (Tue Feb 07 2023)
 
 #### 🚀  Enhancement
