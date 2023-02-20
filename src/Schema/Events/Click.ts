@@ -1408,7 +1408,6 @@ export interface ClickedOnPriceDisplayDropdown {
  *    context_module: "conversations",
  *    context_page_owner_type: "conversation",
  *    context_page_owner_id: "60de173a47476c000fd5c4cc"
- *    artwork_id: "60de173a47476c000fd5c4cc"
  *    partner_id: "35de173a47476c111fd5c4cc"
  *  }
  * ```
@@ -1418,7 +1417,6 @@ export interface ClickedOnPriceDisplayDropdown {
   context_module: string
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
-  artwork_id: string
   partner_id: string
 }
 
