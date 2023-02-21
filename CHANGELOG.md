@@ -1,3 +1,15 @@
+# v4.102.0 (Tue Feb 21 2023)
+
+#### 🚀  Enhancement
+
+- [AS-3677] Adding action type [#400](https://github.com/artsy/cohesion/pull/400) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.101.0 (Mon Feb 20 2023)
 
 #### 🚀  Enhancement
