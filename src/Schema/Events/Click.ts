@@ -1413,8 +1413,8 @@ export interface ClickedOnPriceDisplayDropdown {
  *  }
  * ```
  */
- export interface ClickedConversationsFilter {
-  action: ActionType.clickedConversationsFilter 
+export interface ClickedConversationsFilter {
+  action: ActionType.clickedConversationsFilter
   label: string
   context_module: string
   context_page_owner_type: PageOwnerType
@@ -1424,7 +1424,7 @@ export interface ClickedOnPriceDisplayDropdown {
 
 /**
  * Partner clicks on dismiss inquiry modal on the conversations page in CMS.
- * They can click on: Select a reason, Cancel, Dismiss inquiry 
+ * They can click on: Select a reason, Cancel, Dismiss inquiry
  *
  * This schema describes events sent to Segment from [[clickedDismissInquiry]]
  *
@@ -1443,7 +1443,7 @@ export interface ClickedOnPriceDisplayDropdown {
  *  }
  * ```
  */
- export interface ClickedDismissInquiry {
+export interface ClickedDismissInquiry {
   action: ActionType.clickedDismissInquiry
   conversation_id: string
   label: string
@@ -1455,7 +1455,7 @@ export interface ClickedOnPriceDisplayDropdown {
   partner_id: string
 }
 /**
- * Partner clicks on mark as spam modal on the conversations page in CMS. 
+ * Partner clicks on mark as spam modal on the conversations page in CMS.
  * They can click on: Cancel or Delete and Mark as Spam
  *
  * This schema describes events sent to Segment from [[clickedMarkSpam]]
@@ -1474,7 +1474,7 @@ export interface ClickedOnPriceDisplayDropdown {
  *  }
  * ```
  */
- export interface ClickedMarkSpam {
+export interface ClickedMarkSpam {
   action: ActionType.clickedMarkSpam
   conversation_id: string
   label: string
@@ -1483,4 +1483,52 @@ export interface ClickedOnPriceDisplayDropdown {
   context_page_owner_id?: string
   artwork_id: string
   partner_id: string
+}
+
+/**
+ * A Partner clicks on the Buy Now checkbox for selecting selling options in the artwork edit page in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnBuyNowCheckbox]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnBuyNowCheckbox",
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    label: ["true", "false"]
+ *  }
+ * ```
+ */
+export interface ClickedOnBuyNowCheckbox {
+  action: ActionType.clickedOnBuyNowCheckbox
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: string
+}
+
+/**
+ * A Partner clicks on the Make Offer checkbox for selecting selling options in the artwork edit page in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnMakeOfferCheckbox]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnMakeOfferCheckbox",
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    label: ["true", "false"]
+ *  }
+ * ```
+ */
+export interface ClickedOnMakeOfferCheckbox {
+  action: ActionType.clickedOnMakeOfferCheckbox
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: string
 }

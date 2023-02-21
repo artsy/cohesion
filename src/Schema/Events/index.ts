@@ -42,8 +42,10 @@ import {
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
   ClickedCollectionGroup,
+  ClickedConversationsFilter,
   ClickedCreateAlert,
   ClickedDeliveryMethod,
+  ClickedDismissInquiry,
   ClickedEditArtwork,
   ClickedExpansionToggle,
   ClickedFairCard,
@@ -51,19 +53,20 @@ import {
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
+  ClickedMarkSpam,
   ClickedNavigationTab,
   ClickedOfferActions,
   ClickedOfferOption,
   ClickedOnArtworkShippingUnitsDropdown,
   ClickedOnArtworkShippingWeight,
+  ClickedOnBuyNowCheckbox,
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
+  ClickedOnMakeOfferCheckbox,
   ClickedOnPriceDisplayDropdown,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
-  ClickedDismissInquiry,
-  ClickedMarkSpam,
   ClickedPartnerCard,
   ClickedPartnerLink,
   ClickedPaymentDetails,
@@ -76,7 +79,6 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
-  ClickedConversationsFilter
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -231,8 +233,10 @@ export type Event =
   | ClickedOfferOption
   | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
+  | ClickedOnBuyNowCheckbox
   | ClickedOnFramedMeasurements
   | ClickedOnFramedMeasurementsDropdown
+  | ClickedOnMakeOfferCheckbox
   | ClickedOnPriceDisplayDropdown
   | ClickedOnSubmitOrder
   | ClickedSnooze
@@ -547,6 +551,10 @@ export enum ActionType {
    */
   clickedOnArtworkShippingWeight = "clickedOnArtworkShippingWeight",
   /**
+   * Corresponds to {@link ClickedOnBuyNowCheckbox}
+   */
+  clickedOnBuyNowCheckbox = "clickedOnBuyNowCheckbox",
+  /**
    * Corresponds to {@link ClickedOnFramedMeasurements}
    */
   clickedOnFramedMeasurements = "clickedOnFramedMeasurements",
@@ -554,6 +562,11 @@ export enum ActionType {
    * Corresponds to {@link ClickedOnFramedMeasurementsDropdown}
    */
   clickedOnFramedMeasurementsDropdown = "clickedOnFramedMeasurementsDropdown",
+  /**
+   * Corresponds to {@link ClickedOnMakeOfferCheckbox}
+   */
+  clickedOnMakeOfferCheckbox = "clickedOnMakeOfferCheckbox",
+  /**
   /**
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
@@ -573,11 +586,11 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
-   clickedDismissInquiry = "clickedDismissInquiry",
+  clickedDismissInquiry = "clickedDismissInquiry",
   /**
    * Corresponds to {@link ClickedDismissInquiry}
    */
-   clickedMarkSpam = "clickedMarkSpam",
+  clickedMarkSpam = "clickedMarkSpam",
   /**
    * Corresponds to {@link ClickedMarkSpam}
    */
@@ -817,10 +830,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
-   clickedConversationsFilter = "clickedConversationsFilter",
-   /**
-    * Corresponds to {@link ClickedConversationsFilter}
-    */
+  clickedConversationsFilter = "clickedConversationsFilter",
+  /**
+   * Corresponds to {@link ClickedConversationsFilter}
+   */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
    * Corresponds to {@link SelectedItemFromSearch}
