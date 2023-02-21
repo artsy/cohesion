@@ -1404,6 +1404,7 @@ export interface ClickedOnPriceDisplayDropdown {
  *  @example
  *  ```
  *  {
+ *    action: "clickedConversationsFilter",
  *    label: [selected filter all, selected filter new, selected filter replied],
  *    context_module: "conversations",
  *    context_page_owner_type: "conversation",
@@ -1413,6 +1414,7 @@ export interface ClickedOnPriceDisplayDropdown {
  * ```
  */
  export interface ClickedConversationsFilter {
+  action: ActionType.clickedConversationsFilter 
   label: string
   context_module: string
   context_page_owner_type: PageOwnerType
@@ -1429,6 +1431,7 @@ export interface ClickedOnPriceDisplayDropdown {
  *  @example
  *  ```
  *  {
+ *    action: "clickedDismissInquiry"
  *    conversation_id: 123456
  *    label: [select a reason, cancel dismiss inquiry, dismiss inquiry]
  *    reason: [The artwork is no longer available, I already contacted this person, Other]
@@ -1441,6 +1444,7 @@ export interface ClickedOnPriceDisplayDropdown {
  * ```
  */
  export interface ClickedDismissInquiry {
+  action: ActionType.clickedDismissInquiry
   conversation_id: string
   label: string
   reason: string
@@ -1459,6 +1463,7 @@ export interface ClickedOnPriceDisplayDropdown {
  *  @example
  *  ```
  *  {
+ *    action: clickedMarkSpam
  *    conversation_id: 123456
  *    label: [mark as spam, cancel mark as spam, delete and mark as spam]
  *    context_module: "conversations",
@@ -1470,6 +1475,7 @@ export interface ClickedOnPriceDisplayDropdown {
  * ```
  */
  export interface ClickedMarkSpam {
+  action: ActionType.clickedMarkSpam
   conversation_id: string
   label: string
   context_module: string
