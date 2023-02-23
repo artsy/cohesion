@@ -109,6 +109,7 @@ import {
   VisitMyCollectionOnboardingSlide,
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
+import { RailViewed } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -280,6 +281,7 @@ export type Event =
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
+  | RailViewed
   | RegistrationPageView
   | RegistrationSubmitted
   | ResetYourPassword
@@ -762,6 +764,10 @@ export enum ActionType {
    * Corresponds to {@link PromptForReview}
    */
   promptForReview = "promptForReview",
+  /**
+   * Corresponds to {@link RailViewed}
+   */
+  railViewed = "railViewed",
   /**
    * Corresponds to {@link RegistrationPageView}
    */
