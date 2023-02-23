@@ -42,8 +42,10 @@ import {
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
   ClickedCollectionGroup,
+  ClickedConversationsFilter,
   ClickedCreateAlert,
   ClickedDeliveryMethod,
+  ClickedDismissInquiry,
   ClickedEditArtwork,
   ClickedExpansionToggle,
   ClickedFairCard,
@@ -51,6 +53,7 @@ import {
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
+  ClickedMarkSpam,
   ClickedNavigationTab,
   ClickedOfferActions,
   ClickedOfferOption,
@@ -62,8 +65,6 @@ import {
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
-  ClickedDismissInquiry,
-  ClickedMarkSpam,
   ClickedPartnerCard,
   ClickedPartnerLink,
   ClickedPaymentDetails,
@@ -76,7 +77,6 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
-  ClickedConversationsFilter
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -573,11 +573,11 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
-   clickedDismissInquiry = "clickedDismissInquiry",
+  clickedDismissInquiry = "clickedDismissInquiry",
   /**
    * Corresponds to {@link ClickedDismissInquiry}
    */
-   clickedMarkSpam = "clickedMarkSpam",
+  clickedMarkSpam = "clickedMarkSpam",
   /**
    * Corresponds to {@link ClickedMarkSpam}
    */
@@ -817,10 +817,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
-   clickedConversationsFilter = "clickedConversationsFilter",
-   /**
-    * Corresponds to {@link ClickedConversationsFilter}
-    */
+  clickedConversationsFilter = "clickedConversationsFilter",
+  /**
+   * Corresponds to {@link ClickedConversationsFilter}
+   */
   selectedItemFromPriceDatabaseSearch = "selectedItemFromPriceDatabaseSearch",
   /**
    * Corresponds to {@link SelectedItemFromSearch}
