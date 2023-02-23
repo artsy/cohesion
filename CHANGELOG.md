@@ -1,3 +1,15 @@
+# v4.104.0 (Thu Feb 23 2023)
+
+#### 🚀  Enhancement
+
+- feat: add rail viewed event [#403](https://github.com/artsy/cohesion/pull/403) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.103.0 (Thu Feb 23 2023)
 
 #### 🚀  Enhancement
