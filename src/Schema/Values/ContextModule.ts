@@ -60,6 +60,7 @@ export enum ContextModule {
   curatedCollections = "curatedCollections",
   curatedHighlightsRail = "curatedHighlightsRail",
   curatedTrendingArtistsRail = "curatedTrendingArtistsRail",
+  curatorPicksRail = "curatorPicksRail",
   currentAuctions = "currentAuctions",
   currentShowsRail = "currentShowsRail",
   doMoreOnArtsy = "doMoreOnArtsy",
