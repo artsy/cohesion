@@ -1,3 +1,15 @@
+# v4.105.0 (Fri Feb 24 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add recentlyViewed owner type [#404](https://github.com/artsy/cohesion/pull/404) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.104.0 (Thu Feb 23 2023)
 
 #### 🚀  Enhancement
