@@ -1506,7 +1506,7 @@ export interface ClickedOnBuyNowCheckbox {
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
-  label: string
+  label: boolean
 }
 
 /**
@@ -1530,5 +1530,5 @@ export interface ClickedOnMakeOfferCheckbox {
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
-  label: string
+  label: boolean
 }
