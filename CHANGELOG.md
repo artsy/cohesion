@@ -1,3 +1,15 @@
+# v4.106.0 (Fri Feb 24 2023)
+
+#### 🚀  Enhancement
+
+- chore: PX-5429 adding new events for BN and MO [#401](https://github.com/artsy/cohesion/pull/401) ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+#### Authors: 1
+
+- Mitchell Henson ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+---
+
 # v4.105.0 (Fri Feb 24 2023)
 
 #### 🚀  Enhancement
