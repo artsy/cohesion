@@ -1484,3 +1484,51 @@ export interface ClickedMarkSpam {
   artwork_id: string
   partner_id: string
 }
+
+/**
+ * A Partner clicks on the Buy Now checkbox for selecting selling options in the artwork edit page in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnBuyNowCheckbox]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnBuyNowCheckbox",
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    label: ["true", "false"]
+ *  }
+ * ```
+ */
+export interface ClickedOnBuyNowCheckbox {
+  action: ActionType.clickedOnBuyNowCheckbox
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: boolean
+}
+
+/**
+ * A Partner clicks on the Make Offer checkbox for selecting selling options in the artwork edit page in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnMakeOfferCheckbox]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnMakeOfferCheckbox",
+ *    context_module: "voltArtworksEdit",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc"
+ *    label: ["true", "false"]
+ *  }
+ * ```
+ */
+export interface ClickedOnMakeOfferCheckbox {
+  action: ActionType.clickedOnMakeOfferCheckbox
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: boolean
+}
