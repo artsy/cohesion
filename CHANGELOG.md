@@ -1,3 +1,15 @@
+# v4.107.0 (Mon Feb 27 2023)
+
+#### 🚀  Enhancement
+
+- feat: add auctionLotsEndingSoonRail context module [#405](https://github.com/artsy/cohesion/pull/405) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.106.0 (Fri Feb 24 2023)
 
 #### 🚀  Enhancement
