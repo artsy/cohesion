@@ -1,3 +1,15 @@
+# v4.108.0 (Mon Feb 27 2023)
+
+#### 🚀  Enhancement
+
+- chore: add missing ImpressionTracking export to cohesion [#406](https://github.com/artsy/cohesion/pull/406) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.107.0 (Mon Feb 27 2023)
 
 #### 🚀  Enhancement
