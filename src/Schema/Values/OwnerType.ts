@@ -136,6 +136,7 @@ export type ScreenOwnerType =
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.profile
+  | OwnerType.recentlyViewed
   | OwnerType.reverseImageSearch
   | OwnerType.sale
   | OwnerType.saleInformation
