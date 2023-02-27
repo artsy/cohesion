@@ -1,3 +1,15 @@
+# v4.109.0 (Mon Feb 27 2023)
+
+#### 🚀  Enhancement
+
+- feat: ADd recentlyViewed to screen owner type [#407](https://github.com/artsy/cohesion/pull/407) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.108.0 (Mon Feb 27 2023)
 
 #### 🚀  Enhancement
