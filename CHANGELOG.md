@@ -1,3 +1,15 @@
+# v4.110.0 (Tue Feb 28 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add artworkRecommendations owner type [#408](https://github.com/artsy/cohesion/pull/408) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.109.0 (Mon Feb 27 2023)
 
 #### 🚀  Enhancement
