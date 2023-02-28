@@ -13,6 +13,7 @@ export enum OwnerType {
   artistSeries = "artistSeries",
   artwork = "artwork",
   artworkPriceFilter = "artworkPriceFilter",
+  artworkRecommendations = "artworkRecommendations",
   auction = "auction",
   auctionResult = "auctionResult",
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
@@ -100,6 +101,7 @@ export type ScreenOwnerType =
   | OwnerType.artistSeries
   | OwnerType.artwork
   | OwnerType.artworkPriceFilter
+  | OwnerType.artworkRecommendations
   | OwnerType.auctionResult
   | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
