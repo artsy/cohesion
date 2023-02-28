@@ -111,7 +111,7 @@ import {
   VisitMyCollectionOnboardingSlide,
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
-import { RailViewed } from "./ImpressionTracking"
+import { RailViewed, TooltipViewed } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -356,6 +356,7 @@ export type Event =
   | ToggledAccordion
   | ToggledNotification
   | ToggledSavedSearch
+  | TooltipViewed
   | UploadPhotosCompleted
   | ViewArtworkMyCollection
   | ViewedVideo
@@ -1093,6 +1094,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledSavedSearch}
    */
   toggledSavedSearch = "toggledSavedSearch",
+  /**
+   * Corresponds to {@link TooltipViewed}
+   */
+  tooltipViewed = "tooltipViewed",
   /**
    * Corresponds to {@link UnfollowedArtist}
    */
