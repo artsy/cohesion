@@ -1,3 +1,15 @@
+# v4.111.0 (Tue Feb 28 2023)
+
+#### 🚀  Enhancement
+
+- Adds tooltipViewed for progressive onboarding [#409](https://github.com/artsy/cohesion/pull/409) ([@abhitip](https://github.com/abhitip))
+
+#### Authors: 1
+
+- Abhiti Prabahar ([@abhitip](https://github.com/abhitip))
+
+---
+
 # v4.110.0 (Tue Feb 28 2023)
 
 #### 🚀  Enhancement
