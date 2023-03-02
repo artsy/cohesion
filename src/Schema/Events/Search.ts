@@ -187,3 +187,25 @@ export interface ConsignmentArtistFailed {
   context_owner_type: OwnerType.consign
   query: string
 }
+
+/**
+ * A user selects a quick navigation item within a search suggestion
+ *
+ * This schema describes events sent to Segment from [[searchSuggestionQuickNavigationItemSelected]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "searchSuggestionQuickNavigationItemSelected",
+ *    context_module: "header",
+ *    destination_path: "/artist/andy-warhol/works-for-sale",
+ *    label: "Auction Results"
+ *  }
+ *  ```
+ */
+export interface SearchSuggestionQuickNavigationItemSelected {
+  action: ActionType.searchSuggestionQuickNavigationItemSelected
+  context_module?: ContextModule
+  destination_path: string
+  label: "Artworks" | "Auction Results"
+}
