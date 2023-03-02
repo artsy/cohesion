@@ -1,3 +1,15 @@
+# v4.112.0 (Thu Mar 02 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add newWorksFromGalleriesYouFollow screen owner type [#410](https://github.com/artsy/cohesion/pull/410) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.111.0 (Tue Feb 28 2023)
 
 #### 🚀  Enhancement
