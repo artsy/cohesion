@@ -1,3 +1,15 @@
+# v4.113.0 (Thu Mar 02 2023)
+
+#### 🚀  Enhancement
+
+- feat: add searchSuggestionQuickNavigationItemSelected event [#411](https://github.com/artsy/cohesion/pull/411) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.112.0 (Thu Mar 02 2023)
 
 #### 🚀  Enhancement
