@@ -1,3 +1,15 @@
+# v4.116.0 (Fri Mar 03 2023)
+
+#### 🚀  Enhancement
+
+- fix: Move similarToRecentlyViewed to ScreenOwnerType [#414](https://github.com/artsy/cohesion/pull/414) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.115.0 (Fri Mar 03 2023)
 
 #### 🚀  Enhancement
