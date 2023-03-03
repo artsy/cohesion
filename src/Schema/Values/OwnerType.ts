@@ -152,6 +152,7 @@ export type ScreenOwnerType =
   | OwnerType.sell
   | OwnerType.show
   | OwnerType.shows
+  | OwnerType.similarToRecentlyViewed
   | OwnerType.tag
   | OwnerType.upcomingAuctions
   | OwnerType.viewingRoom
@@ -204,7 +205,6 @@ export type PageOwnerType =
   | OwnerType.search
   | OwnerType.show
   | OwnerType.shows
-  | OwnerType.similarToRecentlyViewed
   | OwnerType.tag
   | OwnerType.user
   | OwnerType.viewingRoom
