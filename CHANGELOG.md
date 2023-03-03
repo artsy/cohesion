@@ -1,3 +1,15 @@
+# v4.114.0 (Fri Mar 03 2023)
+
+#### 🚀  Enhancement
+
+- Feat(CX-3429): Add SWA ContextModules [#412](https://github.com/artsy/cohesion/pull/412) ([@lordkiz](https://github.com/lordkiz))
+
+#### Authors: 1
+
+- Kizito Egeonu ([@lordkiz](https://github.com/lordkiz))
+
+---
+
 # v4.113.0 (Thu Mar 02 2023)
 
 #### 🚀  Enhancement
