@@ -1,3 +1,15 @@
+# v4.115.0 (Fri Mar 03 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add similarToRecentlyViewed screen owner type [#413](https://github.com/artsy/cohesion/pull/413) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.114.0 (Fri Mar 03 2023)
 
 #### 🚀  Enhancement
