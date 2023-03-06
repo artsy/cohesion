@@ -191,20 +191,20 @@ export interface ConsignmentArtistFailed {
 /**
  * A user selects a quick navigation item within a search suggestion
  *
- * This schema describes events sent to Segment from [[searchSuggestionQuickNavigationItemSelected]]
+ * This schema describes events sent to Segment from [[selectedSearchSuggestionQuickNavigationItem]]
  *
  *  @example
  *  ```
  *  {
- *    action: "searchSuggestionQuickNavigationItemSelected",
+ *    action: "selectedSearchSuggestionQuickNavigationItem",
  *    context_module: "header",
  *    destination_path: "/artist/andy-warhol/works-for-sale",
  *    label: "Auction Results"
  *  }
  *  ```
  */
-export interface SearchSuggestionQuickNavigationItemSelected {
-  action: ActionType.searchSuggestionQuickNavigationItemSelected
+export interface SelectedSearchSuggestionQuickNavigationItem {
+  action: ActionType.selectedSearchSuggestionQuickNavigationItem
   context_module?: ContextModule
   destination_path: string
   label: "Artworks" | "Auction Results"
