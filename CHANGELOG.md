@@ -1,3 +1,16 @@
+# v4.117.0 (Mon Mar 06 2023)
+
+#### 🚀  Enhancement
+
+- chore: expose SelectedSearchSuggestionQuickNavigationItem [#415](https://github.com/artsy/cohesion/pull/415) ([@dblandin](https://github.com/dblandin))
+- chore: rename to SelectedSearchSuggestionQuickNavigationItem [#415](https://github.com/artsy/cohesion/pull/415) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.116.0 (Fri Mar 03 2023)
 
 #### 🚀  Enhancement
