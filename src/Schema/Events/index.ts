@@ -807,9 +807,9 @@ export enum ActionType {
    */
   screen = "screen",
   /**
-   * Corresponds to {@link SearchSuggestionQuickNavigationItemSelected}
+   * Corresponds to {@link SelectedSearchSuggestionQuickNavigationItem}
    */
-  searchSuggestionQuickNavigationItemSelected = "searchSuggestionQuickNavigationItemSelected",
+  selectedSearchSuggestionQuickNavigationItem = "selectedSearchSuggestionQuickNavigationItem",
   /**
    * Corresponds to {@link SearchedPriceDatabase}
    */
