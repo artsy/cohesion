@@ -147,6 +147,7 @@ import {
   SearchedWithNoResults,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
+  SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -300,6 +301,7 @@ export type Event =
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SelectedRecentPriceRange
+  | SelectedSearchSuggestionQuickNavigationItem
   | SentConsignmentInquiry
   | SentConversationMessage
   | SentRequestPriceEstimate
