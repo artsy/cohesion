@@ -1,3 +1,15 @@
+# v4.118.0 (Fri Mar 10 2023)
+
+#### 🚀  Enhancement
+
+- feat: add item viewed [#416](https://github.com/artsy/cohesion/pull/416) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.117.0 (Mon Mar 06 2023)
 
 #### 🚀  Enhancement
