@@ -111,7 +111,7 @@ import {
   VisitMyCollectionOnboardingSlide,
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
-import { RailViewed, TooltipViewed } from "./ImpressionTracking"
+import { ItemViewed, RailViewed, TooltipViewed } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -275,6 +275,7 @@ export type Event =
   | EditedUserProfile
   | EnterLiveAuction
   | ExperimentViewed
+  | ItemViewed
   | UploadSizeLimitExceeded
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
@@ -724,6 +725,10 @@ export enum ActionType {
    * Corresponds to {@link ExperimentViewed}
    */
   experimentViewed = "experiment_viewed", // intentional snake case to match tracked event
+  /**
+   * Corresponds to {@link ItemViewed}
+   */
+  itemViewed = "item_viewed", // intentional snake case to match tracked event
   /**
    * Corresponds to {@link UploadSizeLimitExceeded}
    */
