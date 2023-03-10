@@ -31,6 +31,29 @@ export interface RailViewed {
 }
 
 /**
+ * A user sees a an artwork in a rail
+ *
+ * This schema describes events sent to Segment from [[ItemViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "item_viewed",
+ *    context_screen: "home",
+ *    context_module: "newWorksforYouRail"
+ *    position: 2, // optional
+ *  }
+ * ```
+ *
+ */
+export interface ItemViewed {
+  action: ActionType.itemViewed
+  context_screen: OwnerType
+  context_module: ContextModule
+  position?: number
+}
+
+/**
  * A user viewed a tooltip. `type` will describe what tooltip it is (follow, edit-follows, etc.)
  *
  * This schema describes events sent to Segment from [[tooltipViewed]]
