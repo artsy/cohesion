@@ -1,3 +1,15 @@
+# v4.119.0 (Wed Mar 15 2023)
+
+#### 🚀  Enhancement
+
+- chore: add item type and id to ItemViewed [#417](https://github.com/artsy/cohesion/pull/417) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.118.0 (Fri Mar 10 2023)
 
 #### 🚀  Enhancement
