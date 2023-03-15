@@ -41,6 +41,8 @@ export interface RailViewed {
  *    action: "item_viewed",
  *    context_screen: "home",
  *    context_module: "newWorksforYouRail"
+ *    item_id: "artwork-id"
+ *    item_type: "artwork"
  *    position: 2, // optional
  *  }
  * ```
@@ -50,6 +52,8 @@ export interface ItemViewed {
   action: ActionType.itemViewed
   context_screen: OwnerType
   context_module: ContextModule
+  item_id: string
+  item_type: "artwork"
   position?: number
 }
 
