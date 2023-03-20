@@ -54,6 +54,7 @@ import {
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedMarkSpam,
+  ClickedMarkSold,
   ClickedNavigationTab,
   ClickedOfferActions,
   ClickedOfferOption,
@@ -260,6 +261,7 @@ export type Event =
   | ClickedOrderSummary
   | ClickedDismissInquiry
   | ClickedMarkSpam
+  | ClickedMarkSold
   | ClickedConversationsFilter
   | CommercialFilterParamsChanged
   | CompletedOnboarding
@@ -600,6 +602,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedMarkSpam}
    */
+   clickedMarkSold = "clickedMarkSold",
+   /**
+    * Corresponds to {@link ClickedMarkSold}
+    */
   clickedPartnerCard = "clickedPartnerCard",
   /**
    * Corresponds to {@link ClickedPartnerLink}
