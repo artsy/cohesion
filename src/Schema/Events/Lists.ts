@@ -1,4 +1,4 @@
-import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
 
 /**
@@ -15,18 +15,18 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "addedArtworkToArtworkList",
- *    context_page_owner_id: "641b795ae11bda000c80d58d",
- *    context_page_owner_slug: "banksy-gangsta-rat-unsigned-49",
- *    context_page_owner_type: "artwork",
+ *    context_owner_id: "641b795ae11bda000c80d58d",
+ *    context_owner_slug: "banksy-gangsta-rat-unsigned-49",
+ *    context_owner_type: "artwork",
  *    artwork_list_name: "List #1"
  *  }
  * ```
  */
 export interface AddedArtworkToArtworkList {
   action: ActionType.addedArtworkToArtworkList
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
-  context_page_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  context_owner_type: OwnerType
   artwork_list_name: string
 }
 
@@ -39,18 +39,18 @@ export interface AddedArtworkToArtworkList {
  *  ```
  *  {
  *    action: "createdArtworkList",
- *    context_page_owner_id: "641b795ae11bda000c80d58d",
- *    context_page_owner_slug: "banksy-gangsta-rat-unsigned-49",
- *    context_page_owner_type: "artwork",
+ *    context_owner_id: "641b795ae11bda000c80d58d",
+ *    context_owner_slug: "banksy-gangsta-rat-unsigned-49",
+ *    context_owner_type: "artwork",
  *    artwork_list_name: "List #1"
  *  }
  * ```
  */
 export interface CreatedArtworkList {
   action: ActionType.createdArtworkList
-  context_page_owner_id?: string
-  context_page_owner_slug?: string
-  context_page_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  context_owner_type: OwnerType
   artwork_list_name: string
 }
 
@@ -63,14 +63,14 @@ export interface CreatedArtworkList {
  *  ```
  *  {
  *    action: "deletedArtworkList",
- *    context_page_owner_type: "saves",
+ *    context_owner_type: "saves",
  *    artwork_list_name: "List #1"
  *  }
  * ```
  */
 export interface DeletedArtworkList {
   action: ActionType.deletedArtworkList
-  context_page_owner_type: OwnerType.saves
+  context_owner_type: OwnerType.saves
   artwork_list_name: string
 }
 
@@ -83,14 +83,14 @@ export interface DeletedArtworkList {
  *  ```
  *  {
  *    action: "editedArtworkList",
- *    context_page_owner_type: "saves",
+ *    context_owner_type: "saves",
  *    artwork_list_name: "List #1"
  *  }
  * ```
  */
 export interface EditedArtworkList {
   action: ActionType.editedArtworkList
-  context_page_owner_type: OwnerType.saves
+  context_owner_type: OwnerType.saves
   artwork_list_name: string
 }
 
@@ -103,13 +103,13 @@ export interface EditedArtworkList {
  *  ```
  *  {
  *    action: "viewedArtworkList",
- *    context_page_owner_type: "saves",
+ *    context_owner_type: "saves",
  *    artwork_list_name: "List #1"
  *  }
  * ```
  */
 export interface ViewedArtworkList {
   action: ActionType.viewedArtworkList
-  context_page_owner_type: OwnerType.saves
+  context_owner_type: OwnerType.saves
   artwork_list_name: string
 }
