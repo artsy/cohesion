@@ -1503,7 +1503,7 @@ export interface ClickedMarkSpam {
  *  }
  * ```
  */
- export interface ClickedMarkSold {
+export interface ClickedMarkSold {
   action: ActionType.clickedMarkSold
   conversation_id: string
   context_module: string
