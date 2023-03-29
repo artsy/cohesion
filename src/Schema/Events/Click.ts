@@ -1397,6 +1397,31 @@ export interface ClickedOnPriceDisplayDropdown {
 }
 
 /**
+ * A partner clicks the publish button on the artwork form page in CMS.
+ *
+ * This schema describes events sent to Segment from [[ClickedPublish]]
+ *
+ * @example
+ * ```
+ * {
+ *    action: "clickedPublish",
+ *    context_module: voltArtworksEdit ,
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "60de173a47476c000fd5c4cc",
+ *    label: "publish"
+ * }
+ * ```
+ */
+
+export interface ClickedPublish {
+  action: ActionType.clickedPublish
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  label: string
+}
+
+/**
  * A Partner selects a filter on the conversations page in CMS.
  *
  * This schema describes events sent to Segment from [[ClickedConversationsFilter]]
@@ -1503,7 +1528,7 @@ export interface ClickedMarkSpam {
  *  }
  * ```
  */
- export interface ClickedMarkSold {
+export interface ClickedMarkSold {
   action: ActionType.clickedMarkSold
   conversation_id: string
   context_module: string
