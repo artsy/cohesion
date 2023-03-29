@@ -53,8 +53,8 @@ import {
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
-  ClickedMarkSpam,
   ClickedMarkSold,
+  ClickedMarkSpam,
   ClickedNavigationTab,
   ClickedOfferActions,
   ClickedOfferOption,
@@ -73,6 +73,7 @@ import {
   ClickedPaymentDetails,
   ClickedPaymentMethod,
   ClickedPromoSpace,
+  ClickedPublish,
   ClickedSelectShippingOption,
   ClickedShippingAddress,
   ClickedShowGroup,
@@ -241,6 +242,7 @@ export type Event =
   | ClickedOnFramedMeasurementsDropdown
   | ClickedOnMakeOfferCheckbox
   | ClickedOnPriceDisplayDropdown
+  | ClickedPublish
   | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedPartnerCard
@@ -580,6 +582,10 @@ export enum ActionType {
    */
   clickedOnPriceDisplayDropdown = "clickedOnPriceDisplayDropdown",
   /**
+   * Corresponds to {@link ClickedPublish}
+   */
+  clickedPublish = "clickedPublish",
+  /**
    * Corresponds to {@link ClickedOnSubmitOrder}
    */
   clickedOnSubmitOrder = "clickedOnSubmitOrder",
@@ -602,10 +608,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedMarkSpam}
    */
-   clickedMarkSold = "clickedMarkSold",
-   /**
-    * Corresponds to {@link ClickedMarkSold}
-    */
+  clickedMarkSold = "clickedMarkSold",
+  /**
+   * Corresponds to {@link ClickedMarkSold}
+   */
   clickedPartnerCard = "clickedPartnerCard",
   /**
    * Corresponds to {@link ClickedPartnerLink}
