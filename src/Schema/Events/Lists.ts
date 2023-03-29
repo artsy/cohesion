@@ -18,7 +18,7 @@ import { ActionType } from "."
  *    context_owner_id: "641b795ae11bda000c80d58d",
  *    context_owner_slug: "banksy-gangsta-rat-unsigned-49",
  *    context_owner_type: "artwork",
- *    artwork_list_name: "List #1"
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
  *  }
  * ```
  */
@@ -27,7 +27,7 @@ export interface AddedArtworkToArtworkList {
   context_owner_id?: string
   context_owner_slug?: string
   context_owner_type: OwnerType
-  artwork_list_name: string
+  owner_id: string
 }
 
 /**
@@ -42,7 +42,7 @@ export interface AddedArtworkToArtworkList {
  *    context_owner_id: "641b795ae11bda000c80d58d",
  *    context_owner_slug: "banksy-gangsta-rat-unsigned-49",
  *    context_owner_type: "artwork",
- *    artwork_list_name: "List #1"
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
  *  }
  * ```
  */
@@ -51,7 +51,7 @@ export interface CreatedArtworkList {
   context_owner_id?: string
   context_owner_slug?: string
   context_owner_type: OwnerType
-  artwork_list_name: string
+  owner_id: string
 }
 
 /**
@@ -64,14 +64,14 @@ export interface CreatedArtworkList {
  *  {
  *    action: "deletedArtworkList",
  *    context_owner_type: "saves",
- *    artwork_list_name: "List #1"
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
  *  }
  * ```
  */
 export interface DeletedArtworkList {
   action: ActionType.deletedArtworkList
   context_owner_type: OwnerType.saves
-  artwork_list_name: string
+  owner_id: string
 }
 
 /**
@@ -84,14 +84,14 @@ export interface DeletedArtworkList {
  *  {
  *    action: "editedArtworkList",
  *    context_owner_type: "saves",
- *    artwork_list_name: "List #1"
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
  *  }
  * ```
  */
 export interface EditedArtworkList {
   action: ActionType.editedArtworkList
   context_owner_type: OwnerType.saves
-  artwork_list_name: string
+  owner_id: string
 }
 
 /**
@@ -104,12 +104,12 @@ export interface EditedArtworkList {
  *  {
  *    action: "viewedArtworkList",
  *    context_owner_type: "saves",
- *    artwork_list_name: "List #1"
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
  *  }
  * ```
  */
 export interface ViewedArtworkList {
   action: ActionType.viewedArtworkList
   context_owner_type: OwnerType.saves
-  artwork_list_name: string
+  owner_id: string
 }
