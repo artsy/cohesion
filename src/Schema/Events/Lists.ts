@@ -18,7 +18,8 @@ import { ActionType } from "."
  *    context_owner_id: "641b795ae11bda000c80d58d",
  *    context_owner_slug: "banksy-gangsta-rat-unsigned-49",
  *    context_owner_type: "artwork",
- *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
+ *    artwork_ids: ["641b795ae11bda000c80d58d"]
+ *    owner_ids: ["770fa47d-8cc8-4267-93e7-2808544d2a98"]
  *  }
  * ```
  */
@@ -27,7 +28,8 @@ export interface AddedArtworkToArtworkList {
   context_owner_id?: string
   context_owner_slug?: string
   context_owner_type: OwnerType
-  owner_id: string
+  artwork_ids: string[]
+  owner_ids: string[]
 }
 
 /**
