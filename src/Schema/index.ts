@@ -1,5 +1,6 @@
 export * from "./Events"
 export * from "./Events/AddToCalendar"
+export * from "./Events/ArtworkLists"
 export * from "./Events/Authentication"
 export * from "./Events/Click"
 export * from "./Events/CollectorProfile"

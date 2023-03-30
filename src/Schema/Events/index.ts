@@ -5,6 +5,13 @@ import {
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  AddedArtworkToArtworkList,
+  CreatedArtworkList,
+  DeletedArtworkList,
+  EditedArtworkList,
+  ViewedArtworkList,
+} from "./ArtworkLists"
+import {
   AuctionPageView,
   BidPageView,
   ClickedActiveBid,
@@ -53,8 +60,8 @@ import {
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
-  ClickedMarkSpam,
   ClickedMarkSold,
+  ClickedMarkSpam,
   ClickedNavigationTab,
   ClickedOfferActions,
   ClickedOfferOption,
@@ -196,6 +203,7 @@ import { ViewedVideo } from "./Video"
  * Each event describes one ActionType
  */
 export type Event =
+  | AddedArtworkToArtworkList
   | AddToCalendar
   | AddCollectedArtwork
   | ArtworkDetailsCompleted
@@ -204,6 +212,7 @@ export type Event =
   | AuthImpression
   | BidPageView
   | CreatedAccount
+  | CreatedArtworkList
   | ClickedActiveBid
   | ClickedActivityPanelNotificationItem
   | ClickedActivityPanelTab
@@ -271,8 +280,10 @@ export type Event =
   | ConsignmentSubmitted
   | ContactInformationCompleted
   | DeleteCollectedArtwork
+  | DeletedArtworkList
   | DeletedSavedSearch
   | EditCollectedArtwork
+  | EditedArtworkList
   | EditedSavedSearch
   | EditedUserProfile
   | EnterLiveAuction
@@ -364,6 +375,7 @@ export type Event =
   | TooltipViewed
   | UploadPhotosCompleted
   | ViewArtworkMyCollection
+  | ViewedArtworkList
   | ViewedVideo
   | VisitMyCollection
   | VisitMyCollectionOnboardingSlide
@@ -374,6 +386,10 @@ export type Event =
  * Each ActionType corresponds with a table in Redshift.
  */
 export enum ActionType {
+  /**
+   * Corresponds to {@link AddedArtworkToArtworkList}
+   */
+  addedArtworkToArtworkList = "addedArtworkToArtworkList",
   /**
    * Corresponds to {@link AddArtworkDetails}
    */
@@ -602,10 +618,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedMarkSpam}
    */
-   clickedMarkSold = "clickedMarkSold",
-   /**
-    * Corresponds to {@link ClickedMarkSold}
-    */
+  clickedMarkSold = "clickedMarkSold",
+  /**
+   * Corresponds to {@link ClickedMarkSold}
+   */
   clickedPartnerCard = "clickedPartnerCard",
   /**
    * Corresponds to {@link ClickedPartnerLink}
@@ -704,9 +720,17 @@ export enum ActionType {
    */
   createdAccount = "createdAccount",
   /**
+   * Corresponds to {@link CreatedArtworkList}
+   */
+  createdArtworkList = "createdArtworkList",
+  /**
    * Corresponds to {@link DeleteCollectedArtwork}
    */
   deleteCollectedArtwork = "deleteCollectedArtwork",
+  /**
+   * Corresponds to {@link DeletedArtworkList}
+   */
+  deletedArtworkList = "deletedArtworkList",
   /**
    * Corresponds to {@link DeletedSavedSearch}
    */
@@ -715,6 +739,10 @@ export enum ActionType {
    * Corresponds to {@link EditCollectedArtwork}
    */
   editCollectedArtwork = "editCollectedArtwork",
+  /**
+   * Corresponds to {@link EditedArtworkList}
+   */
+  editedArtworkList = "editedArtworkList",
   /**
    * Corresponds to {@link EditedSavedSearch}
    */
@@ -1139,6 +1167,10 @@ export enum ActionType {
    * Corresponds to {@link ViewArtworkMyCollection}
    */
   viewArtworkMyCollection = "viewArtworkMyCollection",
+  /**
+   * Corresponds to {@link ViewedArtworkList}
+   */
+  viewedArtworkList = "viewedArtworkList",
   /**
    * Corresponds to {@link ViewedVideo}
    */
