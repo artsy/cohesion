@@ -5,6 +5,13 @@ import {
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  AddedArtworkToArtworkList,
+  CreatedArtworkList,
+  DeletedArtworkList,
+  EditedArtworkList,
+  ViewedArtworkList,
+} from "./ArtworkLists"
+import {
   AuctionPageView,
   BidPageView,
   ClickedActiveBid,
@@ -113,13 +120,6 @@ import {
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import { ItemViewed, RailViewed, TooltipViewed } from "./ImpressionTracking"
-import {
-  AddedArtworkToArtworkList,
-  CreatedArtworkList,
-  DeletedArtworkList,
-  EditedArtworkList,
-  ViewedArtworkList,
-} from "./Lists"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
