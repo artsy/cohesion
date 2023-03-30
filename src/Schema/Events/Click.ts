@@ -18,7 +18,7 @@ import { ActionType } from "."
  *  User clicks to add new shipping address when entering the orders
  *  checkout flow.
  *
- *  This schema describes events sent to Segment from [[clickedAddNewShippingAddress]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedAddNewShippingAddress}
  *
  *  @example
  *  ```
@@ -40,7 +40,7 @@ export interface ClickedAddNewShippingAddress {
 /**
  * A fair partner with an upcoming booth clicks on Add Works from CMS Checklist To-Do fair item.
  *
- *  This schema describes events sent to Segment from [[clickedAddWorksToFair]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedAddWorksToFair}
  *
  *  @example
  *  ```
@@ -67,7 +67,7 @@ export interface ClickedAddWorksToFair {
 /**
  * A user clicks a grouping of articles on web
  *
- *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedArticleGroup}
  *
  *  @example
  *  ```
@@ -91,7 +91,7 @@ export interface ClickedArticleGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of artists on web
  *
- *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedArtistGroup}
  *
  *  @example
  *  ```
@@ -116,7 +116,7 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  *
  *  If the series is boosted by the curation team, set curation_boost to true.
  *
- *  This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedArtistSeriesGroup}
  *
  *  @example
  *  ```
@@ -142,9 +142,9 @@ export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
 
 /**
  * A user clicks a grouping of artworks on web. This includes all artwork groupings (i.e. artwork rails), except the main artwork grid on our core merchandising surfaces.
- * For our main artwork grids, we use the event [[clickedMainArtworkGrid]].
+ * For our main artwork grids, we use the event {@link ActionType.clickedMainArtworkGrid}.
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedArtworkGroup}
  *
  *  @example
  *  ```
@@ -167,7 +167,7 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of auctions on web
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedAuctionGroup}
  *
  *  @example
  *  ```
@@ -190,7 +190,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
 /**
  * A user clicks a result of auctions on web
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedAuctionResultItem}
  *
  *  @example
  *  ```
@@ -210,7 +210,7 @@ export interface ClickedAuctionResultItem extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of collections on web
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedCollectionGroup}
  *
  *  @example
  *  ```
@@ -232,7 +232,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
 /**
  *  User clicks on Artsy's buyer protection link during their checkout flow.
  *
- *  This schema describes events sent to Segment from [[clickedBuyerProtection]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedBuyerProtection}
  *
  *  @example
  *  ```
@@ -258,7 +258,7 @@ export interface ClickedBuyerProtection {
 /**
  *  User clicks on Change Payment Method on the orders review page.
  *
- *  This schema describes events sent to Segment from [[clickedChangePaymentMethod]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedChangePaymentMethod}
  *
  *  @example
  *  ```
@@ -280,7 +280,7 @@ export interface ClickedChangePaymentMethod {
 /**
  *  User clicks on Change Shipping Address on the orders review page.
  *
- *  This schema describes events sent to Segment from [[clickedChangeShippingAddress]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedChangeShippingAddress}
  *
  *  @example
  *  ```
@@ -302,7 +302,7 @@ export interface ClickedChangeShippingAddress {
 /**
  *  User clicks on Change Shipping Method on the orders review page.
  *
- *  This schema describes events sent to Segment from [[clickedChangePaymentMethod]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedChangePaymentMethod}
  *
  *  @example
  *  ```
@@ -325,7 +325,7 @@ export interface ClickedChangeShippingMethod {
  *  User selects delivery option (Shipping or Pick Up) when entering the orders
  *  checkout flow.
  *
- *  This schema describes events sent to Segment from [[clickedDeliveryMethod]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedDeliveryMethod}
  *
  *  @example
  *  ```
@@ -349,7 +349,7 @@ export interface ClickedDeliveryMethod {
 /**
  * A user clicks a grouping of fairs on web
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedFairGroup}
  *
  *  @example
  *  ```
@@ -373,7 +373,7 @@ export interface ClickedFairGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of galleries on web
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedGalleryGroup}
  *
  *  @example
  *  ```
@@ -397,7 +397,7 @@ export interface ClickedGalleryGroup extends ClickedEntityGroup {
 /**
  * A user clicks a grouping of shows on web
  *
- * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedShowGroup}
  *
  *  @example
  *  ```
@@ -449,7 +449,7 @@ export interface ClickedEntityGroup {
 /**
  * A user clicks a fair card
  *
- * This schema describes events sent to Segment from [[ClickedFairCard]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedFairCard}
  *
  *  @example
  *  ```
@@ -481,9 +481,9 @@ export interface ClickedFairCard {
 /**
  * A user clicks on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
  * Currently, this event only fires on our new artwork grids on the following pages: Collect, Collection, Artist works-for-sale, and Search Results.
- * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
+ * Note: This event is separate from {@link ActionType.clickedArtworkGroup} because it is an important and frequent event. Separating it out will make it easier for analysts to access.
  *
- * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedMainArtworkGrid}
  *
  *  @example
  *  ```
@@ -517,7 +517,7 @@ export interface ClickedMainArtworkGrid {
 /**
  * A user clicks on a navigation tab on web.
  *
- * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedMainArtworkGrid}
  *
  *  @example
  *  ```
@@ -545,7 +545,7 @@ export interface ClickedNavigationTab {
 /**
  *  User clicks in one of the price options on the offer page
  *
- *  This schema describes events sent to Segment from [[clickedOfferOption]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedOfferOption}
  *
  *  @example
  *  ```
@@ -576,7 +576,7 @@ export interface ClickedOfferOption {
  * A Partner clicks on Artwork weight (without packaging) bar in the artwork edit page
  * in CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnArtworkShippingWeight]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnArtworkShippingWeight}
  *
  *  @example
  *  ```
@@ -599,7 +599,7 @@ export interface ClickedOnArtworkShippingWeight {
  * A Partner clicks on Artwork weight dropdown to choose weight metric in the artwork edit page
  * in the CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnArtworkShippingUnitsDropdown]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnArtworkShippingUnitsDropdown}
  *
  *  @example
  *  ```
@@ -623,7 +623,7 @@ export interface ClickedOnArtworkShippingUnitsDropdown {
 /**
  * A Partner clicks on framed measurements fields in the CMS artworks edit page.
  *
- * This schema describes events sent to Segment from [[clickedOnFramedMeasurements]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnFramedMeasurements}
  *
  *  @example
  *  ```
@@ -646,7 +646,7 @@ export interface ClickedOnFramedMeasurements {
  * A Partner clicks on Artwork frame dimension dropdowns to choose either frame dimensions (H, W, D) or diameter
  * and/or frame metric in the artwork edit page in the CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnFramedMeasurementsDropdown]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnFramedMeasurementsDropdown}
  *
  *  @example
  *  ```
@@ -669,7 +669,7 @@ export interface ClickedOnFramedMeasurementsDropdown {
  * A Partner clicks on one of the options (Accept collector's offer, Send a counteroffer, Decline collector's offer)
  * for offers on the orders page on CMS.
  *
- * This schema describes events sent to Segment from [[clickedOfferActions]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOfferActions}
  *
  *  @example
  *  ```
@@ -707,7 +707,7 @@ export interface ClickedOfferActions {
  * - Send a counter offer
  * - Confirm shipping contact and send counter offer
  *
- * This schema describes events sent to Segment from [[clickedOrderPage]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOrderPage}
  *
  *  @example
  *  ```
@@ -738,7 +738,7 @@ export interface ClickedOrderPage {
 /**
  *  User clicks on submit order on the orders review page.
  *
- *  This schema describes events sent to Segment from [[clickedOnSubmitOrder]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedOnSubmitOrder}
  *
  *  @example
  *  ```
@@ -760,7 +760,7 @@ export interface ClickedOnSubmitOrder {
 /**
  * A user clicks a partner card
  *
- * This schema describes events sent to Segment from [[ClickedPartnerCard]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedPartnerCard}
  *
  *  @example
  *  ```
@@ -792,7 +792,7 @@ export interface ClickedPartnerCard {
 /**
  *  User clicks in one of the payment options on the payment pageview
  *
- *  This schema describes events sent to Segment from [[clickedPaymentMethod]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedPaymentMethod}
  *
  *  @example
  *  ```
@@ -822,7 +822,7 @@ export interface ClickedPaymentMethod {
 /**
  *  User clicks in one of the payment details on the payment pageview
  *
- *  This schema describes events sent to Segment from [[clickedPaymentDetails]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedPaymentDetails}
  *
  *  @example
  *  ```
@@ -847,7 +847,7 @@ export interface ClickedPaymentDetails {
  * on the payment page, the balance account is checked
  *
  *  This schema describes events sent
- * to Segment from [[clickedBalanceAccountCheck]]
+ * to Segment from {@link ActionType.checkedAccountBalance}
  *
  *  @example
  *  ```
@@ -880,7 +880,7 @@ export interface CheckedAccountBalance {
  *  User selects existing shipping address when entering the orders
  *  checkout flow.
  *
- *  This schema describes events sent to Segment from [[clickedShippingAddress]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedShippingAddress}
  *
  *  @example
  *  ```
@@ -902,7 +902,7 @@ export interface ClickedShippingAddress {
 /**
  *  User chooses shipping option.
  *
- *  This schema describes events sent to Segment from [[clickedSelectShippingOption]]
+ *  This schema describes events sent to Segment from {@link ActionType.clickedSelectShippingOption}
  *
  *  @example
  *  ```
@@ -926,7 +926,7 @@ export interface ClickedSelectShippingOption {
 /**
  * A user clicks a show more button on web.
  *
- * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedMainArtworkGrid}
  *
  *  @example
  *  ```
@@ -952,7 +952,7 @@ export interface ClickedShowMore {
 /**
  * A user clicks a viewing room card
  *
- * This schema describes events sent to Segment from [[ClickedViewingRoomCard]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedViewingRoomCard}
  *
  *  @example
  *  ```
@@ -984,7 +984,7 @@ export interface ClickedViewingRoomCard {
 /**
  * A user clicks an app download link.
  *
- * This schema describes events sent to Segment from [[ClickedAppDownload]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedAppDownload}
  *
  *  @example
  *  ```
@@ -1010,7 +1010,7 @@ export interface ClickedAppDownload {
 /**
  * A partner clicks on Edit Artwork from CMS Checklist To-Do Items.
  *
- * This schema describes events sent to Segment from [[ClickedEditArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedEditArtwork}
  *
  *  @example
  *  ```
@@ -1040,7 +1040,7 @@ export interface ClickedEditArtwork {
 /**
  * A partner clicks on Snooze button from CMS Checklist To-Do Items.
  *
- * This schema describes events sent to Segment from [[ClickedSnooze]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedSnooze}
  *
  *  @example
  *  ```
@@ -1061,7 +1061,7 @@ export interface ClickedSnooze {
  * A partner clicks on toggle arrow, displaying or hiding checklist items
  * from CMS Checklist To-Do Items.
  *
- * This schema describes events sent to Segment from [[ClickedExpansionToggle]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedExpansionToggle}
  *
  *  @example
  *  ```
@@ -1082,7 +1082,7 @@ export interface ClickedExpansionToggle {
  * A partner clicks a load 5 more button from CMS To-Do list
  * after completing daily tasks.
  *
- * This schema describes events sent to Segment from [[ClickedLoadMore]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedLoadMore}
  *
  *  @example
  *  ```
@@ -1104,7 +1104,7 @@ export interface ClickedLoadMore {
 /**
  * A user clicks into the identity verification flow on web
  *
- * This schema describes events sent to Segment from [[clickedVerifyIdentity]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedVerifyIdentity}
  *
  *  @example
  *  ```
@@ -1130,7 +1130,7 @@ export interface ClickedVerifyIdentity {
 /**
  * A user clicks the pagination on an artwork grid on web
  *
- * This schema describes events sent to Segment from [[clickedChangePage]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedChangePage}
  *
  *  @example
  *  ```
@@ -1158,7 +1158,7 @@ export interface ClickedChangePage {
 /**
  * A user clicks a promo space
  *
- * This schema describes events sent to Segment from [[clickedPromoSpace]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedPromoSpace}
  *
  *  @example
  *  ```
@@ -1187,7 +1187,7 @@ export interface ClickedPromoSpace {
 /**
  * A user clicks create alert button
  *
- * This schema describes events sent to Segment from [[clickedCreateAlert]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedCreateAlert}
  *
  *  @example
  *  ```
@@ -1209,7 +1209,7 @@ export interface ClickedCreateAlert {
 /**
  * A user clicks the external news source of an article
  *
- * This schema describes events sent to Segment from [[clickedExternalNewsSource]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedExternalNewsSource}
  *
  *  @example
  *  ```
@@ -1232,7 +1232,7 @@ export interface ClickedExternalNewsSource {
 /**
  * A user clicks on the sponsor of an article
  *
- * This schema describes events sent to Segment from [[clickedSponsorLink]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedSponsorLink}
  *
  *  @example
  *  ```
@@ -1256,7 +1256,7 @@ export interface ClickedSponsorLink {
 /**
  * A user clicks to share an article
  *
- * This schema describes events sent to Segment from [[clickedArticleShare]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedArticleShare}
  *
  *  @example
  *  ```
@@ -1278,7 +1278,7 @@ export interface ClickedArticleShare {
 /**
  * A user clicks to play a video
  *
- * This schema describes events sent to Segment from [[clickedPlayVideo]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedPlayVideo}
  *
  *  @example
  *  ```
@@ -1300,7 +1300,7 @@ export interface ClickedPlayVideo {
 /**
  * A user an entity within a tooltip. `type` will be an artist, gene, or partner.
  *
- * This schema describes events sent to Segment from [[clickedTooltip]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedTooltip}
  *
  *  @example
  *  ```
@@ -1326,7 +1326,7 @@ export interface ClickedTooltip {
 /**
  * A user clicks on the partner's website url on the partner page
  *
- * This schema describes events sent to Segment from [[clickedPartnerLink]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedPartnerLink}
  *
  *  @example
  *  ```
@@ -1350,7 +1350,7 @@ export interface ClickedPartnerLink {
 /**
  * A user clicks on "Download order summary" on the order page on CMS
  *
- * This schema describes events sent to Segment from [[clickedOrderSummary]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOrderSummary}
  *
  *  @example
  *  ```
@@ -1375,7 +1375,7 @@ export interface ClickedOrderSummary {
 /**
  * A Partner clicks on price display dropdown to choose either exact price, price range or contact for price in the artwork edit page in the CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnPriceDisplayDropdown]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnPriceDisplayDropdown}
  *
  *  @example
  *  ```
@@ -1399,7 +1399,7 @@ export interface ClickedOnPriceDisplayDropdown {
 /**
  * A Partner selects a filter on the conversations page in CMS.
  *
- * This schema describes events sent to Segment from [[ClickedConversationsFilter]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedConversationsFilter}
  *
  *  @example
  *  ```
@@ -1426,7 +1426,7 @@ export interface ClickedConversationsFilter {
  * Partner clicks on dismiss inquiry modal on the conversations page in CMS.
  * They can click on: Select a reason, Cancel, Dismiss inquiry
  *
- * This schema describes events sent to Segment from [[clickedDismissInquiry]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedDismissInquiry}
  *
  *  @example
  *  ```
@@ -1458,7 +1458,7 @@ export interface ClickedDismissInquiry {
  * Partner clicks on mark as spam modal on the conversations page in CMS.
  * They can click on: Cancel or Delete and Mark as Spam
  *
- * This schema describes events sent to Segment from [[clickedMarkSpam]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedMarkSpam}
  *
  *  @example
  *  ```
@@ -1488,7 +1488,7 @@ export interface ClickedMarkSpam {
  * User clicks on "Set this work as sold" on the dismiss inquiry modal on the CMS conversation page
  * after selecting the option "The work is no longer available"
  *
- * This schema describes events sent to Segment from [[clickedMarkSold]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedMarkSold}
  *
  *  @example
  *  ```
@@ -1516,7 +1516,7 @@ export interface ClickedMarkSold {
 /**
  * A Partner clicks on the Buy Now checkbox for selecting selling options in the artwork edit page in the CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnBuyNowCheckbox]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnBuyNowCheckbox}
  *
  *  @example
  *  ```
@@ -1540,7 +1540,7 @@ export interface ClickedOnBuyNowCheckbox {
 /**
  * A Partner clicks on the Make Offer checkbox for selecting selling options in the artwork edit page in the CMS.
  *
- * This schema describes events sent to Segment from [[clickedOnMakeOfferCheckbox]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedOnMakeOfferCheckbox}
  *
  *  @example
  *  ```

@@ -8,7 +8,7 @@ import { ActionType } from "."
 /**
  * A user clicked on a notifications bell.
  *
- * This schema describes events sent to Segment from [[clickedNotificationsBell]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedNotificationsBell}
  *
  *  @example
  *  ```
@@ -24,7 +24,7 @@ export interface ClickedNotificationsBell {
 /**
  * A user clicked on a notification in Activity Panel.
  *
- * This schema describes events sent to Segment from [[clickedActivityPanelNotificationItem]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedActivityPanelNotificationItem}
  *
  *  @example
  *  ```
@@ -42,7 +42,7 @@ export interface ClickedActivityPanelNotificationItem {
 /**
  * A user clicked on a tab in Activity Panel.
  *
- * This schema describes events sent to Segment from [[clickedActivityPanelTab]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedActivityPanelTab}
  *
  *  @example
  *  ```

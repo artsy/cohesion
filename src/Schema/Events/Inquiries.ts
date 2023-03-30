@@ -8,7 +8,7 @@ import { ActionType } from "."
 /**
  * A user successfully sends an artwork inquiry request to a partner.
  *
- * This schema describes events sent to Segment from [[sentArtworkInquiry]]
+ * This schema describes events sent to Segment from {@link ActionType.sentArtworkInquiry}
  *
  *  @example
  *  ```

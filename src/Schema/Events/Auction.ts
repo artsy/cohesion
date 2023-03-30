@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user viewed an auction page. This is a track event that fires in addition to the pageview event for marketing tool purposes.
  *
- * This schema describes events sent to Segment from [[auctionPageView]]
+ * This schema describes events sent to Segment from {@link ActionType.auctionPageView}
  *
  *  @example
  *  ```
@@ -32,7 +32,7 @@ export interface AuctionPageView {
 /**
  * A user viewed a bid page. This is a track event that fires in addition to the pageview event for marketing tool purposes.
  *
- * This schema describes events sent to Segment from [[bidPageView]]
+ * This schema describes events sent to Segment from {@link ActionType.bidPageView}
  *
  *  @example
  *  ```
@@ -56,7 +56,7 @@ export interface BidPageView {
 /**
  * A user clicked on one of their active bids.
  *
- * This schema describes events sent to Segment from [[clickedActiveBid]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedActiveBid}
  *
  *  @example
  *  ```
@@ -78,7 +78,7 @@ export interface ClickedActiveBid {
 /**
  * A user clicks to register to bid.
  *
- * This schema describes events sent to Segment from [[clickedRegisterToBid]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedRegisterToBid}
  *
  *  @example
  *  ```
@@ -102,7 +102,7 @@ export interface ClickedRegisterToBid {
 /**
  * A user confirms their bid.
  *
- * This schema describes events sent to Segment from [[confirmBid]]
+ * This schema describes events sent to Segment from {@link ActionType.confirmBid}
  *
  *  @example
  *  ```
@@ -122,7 +122,7 @@ export interface ConfirmBid {
 /**
  * A user views the confirm registration page. This is a track event that fires in addition to the pageview event for marketing tool purposes.
  *
- * This schema describes events sent to Segment from [[confirmRegistrationPageview]]
+ * This schema describes events sent to Segment from {@link ActionType.confirmRegistrationPageview}
  *
  *  @example
  *  ```
@@ -140,7 +140,7 @@ export interface ConfirmRegistrationPageview {
 /**
  * A user enters a live auction.
  *
- * This schema describes events sent to Segment from [[enterLiveAuction]]
+ * This schema describes events sent to Segment from {@link ActionType.enterLiveAuction}
  *
  *  @example
  *  ```
@@ -162,7 +162,7 @@ export interface EnterLiveAuction {
 /**
  * A user selects their max bid.
  *
- * This schema describes events sent to Segment from [[maxBidSelected]]
+ * This schema describes events sent to Segment from {@link ActionType.maxBidSelected}
  *
  *  @example
  *  ```
@@ -182,7 +182,7 @@ export interface MaxBidSelected {
 /**
  * A user views the auction registration page. This is a track event that fires in addition to the pageview event for marketing tool purposes.
  *
- * This schema describes events sent to Segment from [[registrationPageView]]
+ * This schema describes events sent to Segment from {@link ActionType.registrationPageView}
  *
  *  @example
  *  ```
@@ -200,7 +200,7 @@ export interface RegistrationPageView {
 /**
  * A user submits their auction registration.
  *
- * This schema describes events sent to Segment from [[registrationSubmitted]]
+ * This schema describes events sent to Segment from {@link ActionType.registrationSubmitted}
  *
  *  @example
  *  ```

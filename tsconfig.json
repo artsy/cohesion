@@ -18,7 +18,7 @@
   "typedocOptions": {
     "entryPoints": ["./src"],
     "out": "doc",
-    "exclude": ["src/**/index.ts", "src/**/__tests__/**/*.ts"],
+    "exclude": ["src/**/__tests__/**/*.ts"],
     "excludeExternals": true,
     "readme": "README.md"
   }

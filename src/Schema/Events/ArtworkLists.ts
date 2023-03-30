@@ -9,7 +9,7 @@ import { ActionType } from "."
 /**
  * When a user adds an artwork to an artwork list
  *
- * This schema describes events sent to Segment from [[addedArtworkToArtworkList]]
+ * This schema describes events sent to Segment from {@link ActionType.addedArtworkToArtworkList}
  *
  *  @example
  *  ```
@@ -35,7 +35,7 @@ export interface AddedArtworkToArtworkList {
 /**
  * When a user creates an artwork list
  *
- * This schema describes events sent to Segment from [[createdArtworkList]]
+ * This schema describes events sent to Segment from {@link ActionType.createdArtworkList}
  *
  *  @example
  *  ```
@@ -59,7 +59,7 @@ export interface CreatedArtworkList {
 /**
  * When a user edits an artwork list
  *
- * This schema describes events sent to Segment from [[deletedArtworkList]]
+ * This schema describes events sent to Segment from {@link ActionType.deletedArtworkList}
  *
  *  @example
  *  ```
@@ -79,7 +79,7 @@ export interface DeletedArtworkList {
 /**
  * When a user edits an artwork list
  *
- * This schema describes events sent to Segment from [[editedArtworkList]]
+ * This schema describes events sent to Segment from {@link ActionType.editedArtworkList}
  *
  *  @example
  *  ```
@@ -99,7 +99,7 @@ export interface EditedArtworkList {
 /**
  * When a user clicks to view an artwork list
  *
- * This schema describes events sent to Segment from [[viewedArtworkList]]
+ * This schema describes events sent to Segment from {@link ActionType.viewedArtworkList}
  *
  *  @example
  *  ```

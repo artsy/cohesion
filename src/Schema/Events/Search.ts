@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user focuses on a search box
  *
- * This schema describes events sent to Segment from [[focusedOnSearchInput]]
+ * This schema describes events sent to Segment from {@link ActionType.focusedOnSearchInput}
  *
  *  @example
  *  ```
@@ -32,7 +32,7 @@ export interface FocusedOnSearchInput {
 /**
  * A user selects an item from search
  *
- * This schema describes events sent to Segment from [[selectedItemFromSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.selectedItemFromSearch}
  *
  *  @example
  *  ```
@@ -65,7 +65,7 @@ export interface SelectedItemFromSearch {
 /**
  * A user searches with no results
  *
- * This schema describes events sent to Segment from [[searchedWithNoResults]]
+ * This schema describes events sent to Segment from {@link ActionType.searchedWithNoResults}
  *
  *  @example
  *  ```
@@ -91,7 +91,7 @@ export interface SearchedWithNoResults {
 /**
  * A user queries the Artsy Price Database, including the artist_id, string queried, and applied filters
  *
- * This schema describes events sent to Segment from [[searchedPriceDatabase]]
+ * This schema describes events sent to Segment from {@link ActionType.searchedPriceDatabase}
  *
  *  @example
  *  ```
@@ -121,7 +121,7 @@ export interface SearchedPriceDatabase {
 /**
  * A user focuses on the Artsy Price Database search box
  *
- * This schema describes events sent to Segment from [[focusedOnPriceDatabaseSearchInput]]
+ * This schema describes events sent to Segment from {@link ActionType.focusedOnPriceDatabaseSearchInput}
  *
  *  @example
  *  ```
@@ -141,7 +141,7 @@ export interface FocusedOnPriceDatabaseSearchInput {
 /**
  * A user selects an artist from the Price Database artist search
  *
- * This schema describes events sent to Segment from [[selectedItemFromPriceDatabaseSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.selectedItemFromPriceDatabaseSearch}
  *
  *  @example
  *  ```
@@ -169,7 +169,7 @@ export interface SelectedItemFromPriceDatabaseSearch {
 /**
  * A user searches for an artist in the consignment submission flow but receives an error and cannot search
  *
- * This schema describes events sent to Segment from [[consignmentArtistFailed]]
+ * This schema describes events sent to Segment from {@link ActionType.consignmentArtistFailed}
  *
  *  @example
  *  ```
@@ -191,7 +191,7 @@ export interface ConsignmentArtistFailed {
 /**
  * A user selects a quick navigation item within a search suggestion
  *
- * This schema describes events sent to Segment from [[selectedSearchSuggestionQuickNavigationItem]]
+ * This schema describes events sent to Segment from {@link ActionType.selectedSearchSuggestionQuickNavigationItem}
  *
  *  @example
  *  ```

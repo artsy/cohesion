@@ -124,11 +124,15 @@ import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
   EditCollectedArtwork,
+  MyColectionAddNewArtistName,
+  MyCollectionAddArtworkDetails,
+  MyCollectionSelectArtistFromSearch,
   SaveCollectedArtwork,
   SentRequestPriceEstimate,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
   TappedRequestPriceEstimate,
+  TappedUploadAnotherArtwork,
 } from "./MyCollection"
 import {
   TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight,
@@ -185,6 +189,7 @@ import {
   TappedPromoSpace,
   TappedSell,
   TappedSellArtwork,
+  TappedShowGroup,
   TappedShowMore,
   TappedSkip,
   TappedTabBar,
@@ -296,7 +301,10 @@ export type Event =
   | FollowEvents
   | Impression
   | MaxBidSelected
+  | MyCollectionAddArtworkDetails
+  | MyColectionAddNewArtistName
   | MyCollectionOnboardingCompleted
+  | MyCollectionSelectArtistFromSearch
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
@@ -356,9 +364,11 @@ export type Event =
   | TappedPickImageFromLibrary
   | TappedPromoSpace
   | TappedRequestPriceEstimate
+  | TappedUploadAnotherArtwork
   | TappedReverseImageSearch
   | TappedSell
   | TappedSellArtwork
+  | TappedShowGroup
   | TappedShowMore
   | TappedLearnMore
   | TappedSkip
@@ -391,7 +401,7 @@ export enum ActionType {
    */
   addedArtworkToArtworkList = "addedArtworkToArtworkList",
   /**
-   * Corresponds to {@link AddArtworkDetails}
+   * Corresponds to {@link MyCollectionAddArtworkDetails}
    */
   addArtworkDetails = "addArtworkDetails",
   /**
@@ -399,7 +409,7 @@ export enum ActionType {
    */
   addCollectedArtwork = "addCollectedArtwork",
   /**
-   * Corresponds to {@link AddNewArtistName}
+   * Corresponds to {@link MyColectionAddNewArtistName}
    */
   addNewArtistName = "addNewArtistName",
   /**
@@ -868,7 +878,7 @@ export enum ActionType {
    */
   searchedWithNoResults = "searchedWithNoResults",
   /**
-   * Corresponds to {@link SelectArtistFromSearch}
+   * Corresponds to {@link MyCollectionSelectArtistFromSearch}
    */
   selectArtistFromSearch = "selectArtistFromSearch",
   /**

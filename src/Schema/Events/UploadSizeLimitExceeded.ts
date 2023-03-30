@@ -9,7 +9,7 @@ import { ActionType } from "."
 /**
  * User has exceeded the upload size limit
  *
- * This schema describes events sent to Segment from [[uploadSizeLimitExceeded]].
+ * This schema describes events sent to Segment from {@link ActionType.uploadSizeLimitExceeded}.
  *
  *  @example
  *  ```

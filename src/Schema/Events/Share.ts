@@ -11,7 +11,7 @@ import { ActionType } from "."
 /**
  * A user shares a page on Artsy
  *
- * This schema describes events sent to Segment from [[Share]]
+ * This schema describes events sent to Segment from {@link ActionType.share}
  *
  *  @example
  *  ```

@@ -9,7 +9,7 @@ import { ActionType } from "."
 /**
  * A user has been on a page for 15 seconds.
  *
- * This schema describes events sent to Segment from [[timeOnPage]]
+ * This schema describes events sent to Segment from {@link ActionType.timeOnPage}
  *
  *  @example
  *  ```
@@ -31,7 +31,7 @@ export interface TimeOnPage {
 /**
  * A user loads a sale screen on the iOS app.
  *
- * This schema describes events sent to Segment from [[saleScreenLoadComplete]]
+ * This schema describes events sent to Segment from {@link ActionType.saleScreenLoadComplete}
  *
  *  @example
  *  ```
@@ -59,7 +59,7 @@ export interface SaleScreenLoadComplete {
 /**
  * A user views a screen on iOS
  *
- * This schema describes events sent to Segment from [[screen]]. IMPORTANT: This event should fire in Segment as a Screen api call, not a Track api call of type:screen.
+ * This schema describes events sent to Segment from {@link ActionType.screen}. IMPORTANT: This event should fire in Segment as a Screen api call, not a Track api call of type:screen.
  *
  *  @example
  *  ```

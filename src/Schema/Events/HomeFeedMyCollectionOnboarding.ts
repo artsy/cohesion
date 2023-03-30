@@ -5,7 +5,7 @@ import { ActionType } from "."
 /**
  * A user taps "Explore My Collection" (onboarding flow) on the "Do more on Artsy".
  *
- * This schema describes events sent to Segment from [[tappedExploreMyCollection]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedExploreMyCollection}
  *
  *  @example
  *  ```
@@ -29,7 +29,7 @@ export interface TappedExploreMyCollection {
 /**
  * A user completed onboarding (=reached the last screen).
  *
- * This schema describes events sent to Segment from [[myCollectionOnboardingCompleted]]
+ * This schema describes events sent to Segment from {@link ActionType.myCollectionOnboardingCompleted}
  *
  *  @example
  *  ```
@@ -55,7 +55,7 @@ export interface MyCollectionOnboardingCompleted {
 /**
  * A user taps "Go to My Collection" on the flow's third screen.
  *
- * This schema describes events sent to Segment from [[visitMyCollection]]
+ * This schema describes events sent to Segment from {@link ActionType.visitMyCollection}
  *
  *  @example
  *  ```
@@ -75,7 +75,7 @@ export interface VisitMyCollection {
 /**
  * A user goes to the next onboarding screen.
  *
- * This schema describes events sent to Segment from [[visitMyCollectionOnboardingSlide]]
+ * This schema describes events sent to Segment from {@link ActionType.visitMyCollectionOnboardingSlide}
  *
  *  @example
  *  ```

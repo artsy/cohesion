@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user received an experiment on Artsy.
  *
- * This schema describes events sent to Segment from [[experimentViewed]].
+ * This schema describes events sent to Segment from {@link ActionType.experimentViewed}.
  *
  *  @example
  *  ```

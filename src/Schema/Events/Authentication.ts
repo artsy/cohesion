@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user viewed an authentication form
  *
- * This schema describes events sent to Segment from [[authImpression]]
+ * This schema describes events sent to Segment from {@link ActionType.authImpression}
  *
  *  @example
  *  ```
@@ -40,7 +40,7 @@ export interface AuthImpression {
 /**
  * A user created an account
  *
- * This schema describes events sent to Segment from [[createdAccount]]
+ * This schema describes events sent to Segment from {@link ActionType.createdAccount}
  *
  *  @example
  *  ```
@@ -76,7 +76,7 @@ export interface CreatedAccount {
 /**
  * A user requested to reset their password for an existing account
  *
- * This schema describes events sent to Segment from [[resetYourPassword]]
+ * This schema describes events sent to Segment from {@link ActionType.resetYourPassword}
  *
  *  @example
  *  ```
@@ -108,7 +108,7 @@ export interface ResetYourPassword {
 /**
  * A user successfully logged in to their existing account
  *
- * This schema describes events sent to Segment from [[successfullyLoggedIn]]
+ * This schema describes events sent to Segment from {@link ActionType.successfullyLoggedIn}
  *
  *  @example
  *  ```
@@ -164,7 +164,7 @@ export type AuthService = "apple" | "email" | "facebook" | "google"
 /**
  * A user provides us with important data during the onboarding flow
  *
- * This schema describes events sent to Segment from [[OnboardingUserInputData]]
+ * This schema describes events sent to Segment from {@link ActionType.onboardingUserInputData}
  *
  *  @example
  *  ```
@@ -184,7 +184,7 @@ export interface OnboardingUserInputData {
 /**
  * A user starts the onboarding flow
  *
- * This schema describes events sent to Segment from [[startedOnboarding]]
+ * This schema describes events sent to Segment from {@link ActionType.startedOnboarding}
  *
  *  @example
  *  ```
@@ -200,7 +200,7 @@ export interface StartedOnboarding {
 /**
  * A user completes the onboarding flow
  *
- * This schema describes events sent to Segment from [[completedOnboarding]]
+ * This schema describes events sent to Segment from {@link ActionType.completedOnboarding}
  *
  *  @example
  *  ```

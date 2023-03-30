@@ -9,7 +9,7 @@ import { ActionType } from "."
 /**
  * A user edits a Saved Search from the edit alert screen on an app.
  *
- * This schema describes events sent to Segment from [[editedSavedSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.editedSavedSearch}
  *
  *  @example
  *  ```
@@ -33,7 +33,7 @@ export interface EditedSavedSearch {
 /**
  * A user deletes a Saved Search from the edit alert screen on an app.
  *
- * This schema describes events sent to Segment from [[deletedSavedSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.deletedSavedSearch}
  *
  *  @example
  *  ```

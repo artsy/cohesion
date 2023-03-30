@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user clicks on My Collection Insights Median Auction Rail item.
  *
- * This schema describes events sent to Segment from [[clickedMyCollectionInsightsMedianAuctionRailItem]]
+ * This schema describes events sent to Segment from {@link ActionType.clickedMyCollectionInsightsMedianAuctionRailItem}
  *
  * @example
  *  ```
@@ -36,7 +36,7 @@ export interface ClickedMyCollectionInsightsMedianAuctionRailItem {
 /**
  * A user taps on the MyCollectionInsightsMedianAuctionRailItem
  *
- * This schema describes events sent to Segment from [[tappedMyCollectionInsightsMedianAuctionRailItem]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMyCollectionInsightsMedianAuctionRailItem}
  *
  *  @example
  *  ```
@@ -67,7 +67,7 @@ export interface TappedMyCollectionInsightsMedianAuctionRailItem {
 /**
  * A user taps on the MedianAuctionPriceChartCategory
  *
- * This schema describes events sent to Segment from [[tappedMyCollectionInsightsMedianAuctionPriceChartCategory]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartCategory}
  *
  *  @example
  *  ```
@@ -97,7 +97,7 @@ export interface TappedMyCollectionInsightsMedianAuctionPriceChartCategory {
 /**
  * A user taps on the MedianAuctionPriceChartTimeframe
  *
- * This schema describes events sent to Segment from [[tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartTimeframe}
  *
  *  @example
  *  ```
@@ -127,7 +127,7 @@ export interface TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe {
 /**
  * A user taps on the MedianAuctionPriceChartCareerHighlight
  *
- * This schema describes events sent to Segment from [[tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight}
  *
  *  @example
  *  ```

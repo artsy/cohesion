@@ -12,7 +12,7 @@ export type Platform = "web" | "mobile"
 /**
  * A user taps or clicks "add artwork" to add an artwork to My Collection.
  *
- * This schema describes events sent to Segment from [[addCollectedArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.addCollectedArtwork}
  *
  *  @example
  *  ```
@@ -44,7 +44,7 @@ export interface AddCollectedArtwork {
 /**
  * A user taps "save artwork" to save an artwork to My Collection.
  *
- * This schema describes events sent to Segment from [[saveCollectedArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.saveCollectedArtwork}
  *
  *  @example
  *  ```
@@ -71,7 +71,7 @@ export interface SaveCollectedArtwork {
 /**
  * A user taps "Edit" to edit an artwork in My Collection.
  *
- * This schema describes events sent to Segment from [[editCollectedArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.editCollectedArtwork}
  *
  *  @example
  *  ```
@@ -102,7 +102,7 @@ export interface EditCollectedArtwork {
 /**
  * A user taps "delete artwork" to delete an artwork from My Collection.
  *
- * This schema describes events sent to Segment from [[deleteCollectedArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.deleteCollectedArtwork}
  *
  *  @example
  *  ```
@@ -128,7 +128,7 @@ export interface DeleteCollectedArtwork {
 /**
  * A user taps a collected artwork within My Collection
  *
- * This schema describes events sent to Segment from [[tappedCollectedArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedCollectedArtwork}
  *
  *  @example
  *  ```
@@ -155,7 +155,7 @@ export interface TappedCollectedArtwork {
 /**
  * A user taps the artwork image(s) within a MyCollectionArtwork screen
  *
- * This schema describes events sent to Segment from [[tappedCollectedArtworkImages]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedCollectedArtworkImages}
  *
  *  @example
  *  ```
@@ -178,7 +178,7 @@ export interface TappedCollectedArtworkImages {
 /**
  * A user taps on an artist in My Collection Add Artwork Add Artist
  *
- * This schema describes events sent to Segment from [[tappedMyCollectionAddArtworkArtist]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMyCollectionAddArtworkArtist}
  *
  *  @example
  *  ```
@@ -202,7 +202,7 @@ export interface TappedMyCollectionAddArtworkArtist {
 /**
  * Users clicks "Add their name" on the artist selection page
  *
- * This schema describes events sent to Segment from [[addNewArtistName]]
+ * This schema describes events sent to Segment from {@link ActionType.addNewArtistName}
  *
  *  @example
  *  ```
@@ -224,7 +224,7 @@ export interface MyColectionAddNewArtistName {
 /**
  * Users selects artist from search on the artist selection page
  *
- * This schema describes events sent to Segment from [[selectArtistFromSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.selectArtistFromSearch}
  *
  *  @example
  *  ```
@@ -246,7 +246,7 @@ export interface MyCollectionSelectArtistFromSearch {
 /**
  * Users clicks "Skip" button or "add artwork details" on the "Select an artwork" page
  *
- * This schema describes events sent to Segment from [[addArtworkDetails]]
+ * This schema describes events sent to Segment from {@link ActionType.addArtworkDetails}
  *
  *  @example
  *  ```
@@ -268,7 +268,7 @@ export interface MyCollectionAddArtworkDetails {
 /**
  * Users selects artwork from grid on the "Select an artwork" screen
  *
- * This schema describes events sent to Segment from [[selectArtworkFromGrid]]
+ * This schema describes events sent to Segment from {@link ActionType.selectArtworkFromGrid}
  *
  *  @example
  *  ```
@@ -290,7 +290,7 @@ export interface MyCollectionSelectArtworkFromGrid {
 /**
  * A user taps on the “request a price estimate” banner
  *
- * This schema describes events sent to Segment from [[tappedRequestPriceEstimate]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedRequestPriceEstimate}
  *
  *  @example
  *  ```
@@ -318,7 +318,7 @@ export interface TappedRequestPriceEstimate {
 /**
  * A request for a price estimate has been susessfully sent by a user
  *
- * This schema describes events sent to Segment from [[sentRequestPriceEstimate]]
+ * This schema describes events sent to Segment from {@link ActionType.sentRequestPriceEstimate}
  *
  *  @example
  *  ```
@@ -341,4 +341,22 @@ export interface SentRequestPriceEstimate {
   context_screen_owner_id: string
   context_screen_owner_slug: string
   demand_index?: number
+}
+
+/**
+ * Upload another artwork
+ *
+ * This schema describes events sent to Segment from {@link ActionType.tappedUploadAnotherArtwork}
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedUploadAnotherArtwork",
+ *    context_screen_owner_type: "myCollectionArtwork"
+ *  }
+ * ```
+ */
+export interface TappedUploadAnotherArtwork {
+  action: ActionType.tappedUploadAnotherArtwork
+  context_screen_owner_type: OwnerType
 }

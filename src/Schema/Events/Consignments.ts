@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user submits their consignment and triggers this backend consignment submission event.
  *
- * This schema describes events sent to Segment from [[consignmentSubmitted]]
+ * This schema describes events sent to Segment from {@link ActionType.consignmentSubmitted}
  *
  *  @example
  *  ```
@@ -36,7 +36,7 @@ export interface ConsignmentSubmitted {
 /**
  * First step of the consignment submission flow; user confirms details of their artwork.
  *
- * This schema describes events sent to Segment from [[artworkDetailsCompleted]]
+ * This schema describes events sent to Segment from {@link ActionType.artworkDetailsCompleted}
  *
  *  @example
  *  ```
@@ -62,7 +62,7 @@ export interface ArtworkDetailsCompleted {
 /**
  * Second step of the consignment submission flow; user uploads photos of their artwork.
  *
- * This schema describes events sent to Segment from [[uploadPhotosCompleted]]
+ * This schema describes events sent to Segment from {@link ActionType.uploadPhotosCompleted}
  *
  *  @example
  *  ```
@@ -88,7 +88,7 @@ export interface UploadPhotosCompleted {
 /**
  * First or Final step of the consignment submission flow; user provides their contact information.
  *
- * This schema describes events sent to Segment from [[contactInformation]]
+ * This schema describes events sent to Segment from {@link ActionType.contactInformationCompleted}
  *
  *  @example
  *  ```
@@ -114,7 +114,7 @@ export interface ContactInformationCompleted {
 /**
  * User clicks/taps to re-enter the submission flow after successfully submitting an artwork for consignment.
  *
- * This schema describes events sent to Segment from [[submitAnotherArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.submitAnotherArtwork}
  *
  *  @example
  *  ```
@@ -138,7 +138,7 @@ export interface SubmitAnotherArtwork {
 /**
  * User clicks/taps to view the artwork they just submitted in MyCollection.
  *
- * This schema describes events sent to Segment from [[viewArtworkMyCollection]]
+ * This schema describes events sent to Segment from {@link ActionType.viewArtworkMyCollection}
  *
  *  @example
  *  ```

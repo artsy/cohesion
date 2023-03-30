@@ -5,7 +5,7 @@ import { ActionType } from "."
 /**
  * A user applies filters to a filterable/sortable artwork grid
  *
- * This schema describes events sent to Segment from [[commercialFilterParamsChanged]]
+ * This schema describes events sent to Segment from {@link ActionType.commercialFilterParamsChanged}
  *
  *  @example
  *  ```
@@ -34,7 +34,7 @@ export interface CommercialFilterParamsChanged {
 /**
  * A user applies filters to a filterable/sortable auction results module
  *
- * This schema describes events sent to Segment from [[auctionResultsFilterParamsChanged]]
+ * This schema describes events sent to Segment from {@link ActionType.auctionResultsFilterParamsChanged}
  *
  *  @example
  *  ```
@@ -65,7 +65,7 @@ export interface AuctionResultsFilterParamsChanged {
 /**
  * A user applies filters to a filterable/sortable Price Database module
  *
- * This schema describes events sent to Segment from [[priceDatabaseFilterParamsChanged]]
+ * This schema describes events sent to Segment from {@link ActionType.priceDatabaseFilterParamsChanged}
  *
  *  @example
  *  ```
@@ -89,7 +89,7 @@ export interface PriceDatabaseFilterParamsChanged {
 /**
  * A user selects a recent price range from the price filter screen
  *
- * This schema describes events sent to Segment from [[selectedRecentPriceRange]]
+ * This schema describes events sent to Segment from {@link ActionType.selectedRecentPriceRange}
  *
  *  @example
  *  ```

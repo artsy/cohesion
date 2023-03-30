@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user focused on message input on a conversation
  *
- * This schema describes events sent to Segment from [[focusedOnConversationMessageInput]]
+ * This schema describes events sent to Segment from {@link ActionType.focusedOnConversationMessageInput}
  *
  *  @example
  *  ```
@@ -28,7 +28,7 @@ export interface FocusedOnConversationMessageInput {
 /**
  * A user successfully sends a message to partner from a conversation
  *
- * This schema describes events sent to Segment from [[sentConversationMessage]]
+ * This schema describes events sent to Segment from {@link ActionType.sentConversationMessage}
  *
  *  @example
  *  ```
@@ -48,7 +48,7 @@ export interface SentConversationMessage {
 /**
  * A user taps an inquiry message within their inbox
  *
- * This schema describes events sent to Segment from [[tappedInboxConversation]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedInboxConversation}
  *
  *  @example
  *  ```
@@ -78,7 +78,7 @@ export interface TappedInboxConversation {
 /**
  * A user taps the make offer button either on an artwork page (BNMO) or inquiry conversation.
  *
- * This schema describes events sent to Segment from [[tappedMakeOffer]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMakeOffer}
  *
  *  @example
  *  ```
@@ -100,7 +100,7 @@ export interface TappedMakeOffer {
 /**
  * A user taps to view an offer
  *
- * This schema describes events sent to Segment from [[tappedViewOffer]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedViewOffer}
  *
  *  @example
  *  ```

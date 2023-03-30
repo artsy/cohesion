@@ -36,7 +36,7 @@ export interface FollowedEntity {
 /**
  * A user has followed an artist.
  *
- * This schema describes events sent to Segment from [[followedArtist]]
+ * This schema describes events sent to Segment from {@link ActionType.followedArtist}
  *
  *  @example
  *  ```
@@ -59,7 +59,7 @@ export interface FollowedArtist extends FollowedEntity {
 /**
  * A user has followed a fair.
  *
- * This schema describes events sent to Segment from [[followedFair]]
+ * This schema describes events sent to Segment from {@link ActionType.followedFair}
  *
  *  @example
  *  ```
@@ -82,7 +82,7 @@ export interface FollowedFair extends FollowedEntity {
 /**
  * A user has followed a gene.
  *
- * This schema describes events sent to Segment from [[followedGene]]
+ * This schema describes events sent to Segment from {@link ActionType.followedGene}
  *
  *  @example
  *  ```
@@ -105,7 +105,7 @@ export interface FollowedGene extends FollowedEntity {
 /**
  * A user has followed a partner.
  *
- * This schema describes events sent to Segment from [[followedPartner]]
+ * This schema describes events sent to Segment from {@link ActionType.followedPartner}
  *
  *  @example
  *  ```
@@ -128,7 +128,7 @@ export interface FollowedPartner extends FollowedEntity {
 /**
  * A user has unfollowed an artist.
  *
- * This schema describes events sent to Segment from [[unfollowedArtist]]
+ * This schema describes events sent to Segment from {@link ActionType.unfollowedArtist}
  *
  *  @example
  *  ```
@@ -151,7 +151,7 @@ export interface UnfollowedArtist extends FollowedEntity {
 /**
  * A user has unfollowed a fair.
  *
- * This schema describes events sent to Segment from [[unfollowedFair]]
+ * This schema describes events sent to Segment from {@link ActionType.unfollowedFair}
  *
  *  @example
  *  ```
@@ -174,7 +174,7 @@ export interface UnfollowedFair extends FollowedEntity {
 /**
  * A user has unfollowed a gene.
  *
- * This schema describes events sent to Segment from [[unfollowedGene]]
+ * This schema describes events sent to Segment from {@link ActionType.unfollowedGene}
  *
  *  @example
  *  ```
@@ -197,7 +197,7 @@ export interface UnfollowedGene extends FollowedEntity {
 /**
  * A user has unfollowed a partner.
  *
- * This schema describes events sent to Segment from [[unfollowedPartner]]
+ * This schema describes events sent to Segment from {@link ActionType.unfollowedPartner}
  *
  *  @example
  *  ```

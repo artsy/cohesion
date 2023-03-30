@@ -9,7 +9,7 @@ import { ActionType } from "."
 /**
  * A user views a video.
  *
- * This schema describes events sent to Segment from [[viewedVideo]]
+ * This schema describes events sent to Segment from {@link ActionType.viewedVideo}
  *
  *  @example
  *  ```

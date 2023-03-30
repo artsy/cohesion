@@ -19,7 +19,7 @@ import { ActionType } from "."
 /**
  * A user taps a grouping of articles on iOS
  *
- *  This schema describes events sent to Segment from [[tappedArticleGroup]]
+ *  This schema describes events sent to Segment from {@link ActionType.tappedArticleGroup}
  *
  *  @example
  *  ```
@@ -47,7 +47,7 @@ export interface TappedShowGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of artists on iOS
  *
- *  This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *  This schema describes events sent to Segment from {@link ActionType.tappedArtistGroup}
  *
  *  @example
  *  ```
@@ -71,7 +71,7 @@ export interface TappedArtistGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of artist series on iOS. If the artist series was boosted by the curation team, then curation_boost will be set to true.
  *
- *  This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *  This schema describes events sent to Segment from {@link ActionType.tappedArtistSeriesGroup}
  *
  *  @example
  *  ```
@@ -98,7 +98,7 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of artworks on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedArtworkGroup}
  *
  *  @example
  *  ```
@@ -122,7 +122,7 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of auctions on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedAuctionGroup}
  *
  *  @example
  *  ```
@@ -146,7 +146,7 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of auction results on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedAuctionResultGroup}
  *
  *  @example
  *  ```
@@ -169,7 +169,7 @@ export interface TappedAuctionResultGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of collections on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedCollectionGroup}
  *
  *  @example
  *  ```
@@ -192,7 +192,7 @@ export interface TappedCollectionGroup extends TappedEntityGroup {
 /**
  * A user taps a grouped explore module (City Guide, for example)
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedExploreGroup}
  *
  *  @example
  *  ```
@@ -213,7 +213,7 @@ export interface TappedExploreGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of fairs on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedFairGroup}
  *
  *  @example
  *  ```
@@ -237,7 +237,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
 /**
  * Shared interface for tapped group actions in iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment
  */
 export interface TappedEntityGroup {
   action:
@@ -270,7 +270,7 @@ export type EntityModuleHeight = "single" | "double"
 /**
  * A user taps a Consign button in iOS
  *
- * This schema describes events sent to Segment from [[tappedConsign]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedConsign}
  *
  *  @example
  *  ```
@@ -295,7 +295,7 @@ export interface TappedConsign {
 /**
  * A user taps a fair card
  *
- * This schema describes events sent to Segment from [[tappedFairCard]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedFairCard}
  *
  *  @example
  *  ```
@@ -327,7 +327,7 @@ export interface TappedFairCard {
 /**
  * A user taps an information bubble
  *
- * This schema describes events sent to Segment from [[tappedInfoBubble]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedInfoBubble}
  *
  *  @example
  *  ```
@@ -355,9 +355,9 @@ export interface TappedInfoBubble {
 
 /**
  * A user taps on an artwork in the main artwork grid, which is the main product feed we can find on our core merchandising surfaces.
- * Note: This event is separate from [[tappedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
+ * Note: This event is separate from {@link ActionType.tappedArtworkGroup} because it is an important and frequent event. Separating it out will make it easier for analysts to access.
  *
- * This schema describes events sent to Segment from [[tappedMainArtworkGrid]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedMainArtworkGrid}
  *
  *  @example
  *  ```
@@ -393,7 +393,7 @@ export interface TappedMainArtworkGrid {
 /**
  * A user taps the promo space on the iOS home screen
  *
- * This schema describes events sent to Segment from [[tappedPromoSpace]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedPromoSpace}
  *
  *  @example
  *  ```
@@ -422,7 +422,7 @@ export interface TappedPromoSpace {
 /**
  * A user taps "Register to bid" on an iOS sale (auction) page
  *
- * This schema describes events sent to Segment from [[tappedRegisterToBid]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedRegisterToBid}
  *
  *  @example
  *  ```
@@ -446,7 +446,7 @@ export interface TappedRegisterToBid {
 /**
  * A user taps a button that navigates to the Sell With Artsy home screen (not the 'sell' icon in the tab bar)
  *
- * This schema describes events sent to Segment from [[tappedSell]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedSell}
  *
  *  @example
  *  ```
@@ -472,7 +472,7 @@ export interface TappedSell {
 /**
  * A user taps an icon on the tab bar
  *
- * This schema describes events sent to Segment from [[tappedTabBar]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedTabBar}
  *
  *  @example
  *  ```
@@ -496,7 +496,7 @@ export interface TappedTabBar {
 /**
  * A user taps a grouping of viewing rooms on iOS
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedViewingRoomGroup}
  *
  *  @example
  *  ```
@@ -516,7 +516,7 @@ export interface TappedViewingRoomGroup extends TappedEntityGroup {
 /**
  * A user taps a Show More button on iOS
  *
- * This schema describes events sent to Segment from [[tappedShowMore]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedShowMore}
  *
  *  @example
  *  ```
@@ -543,7 +543,7 @@ export interface TappedShowMore {
 /**
  * A user taps a navigation tab on iOS
  *
- * This schema describes events sent to Segment from [[tappedNavigationTab]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedNavigationTab}
  *
  *  @example
  *  ```
@@ -569,7 +569,7 @@ export interface TappedNavigationTab {
 /**
  * A user taps a partner card
  *
- * This schema describes events sent to Segment from [[tappedPartnerCard]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedPartnerCard}
  *
  *  @example
  *  ```
@@ -601,7 +601,7 @@ export interface TappedPartnerCard {
 /**
  * A user taps a viewing room card
  *
- * This schema describes events sent to Segment from [[tappedViewingRoomCard]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedViewingRoomCard}
  *
  *  @example
  *  ```
@@ -633,7 +633,7 @@ export interface TappedViewingRoomCard {
 /**
  * A user taps into the identity verification flow on iOS
  *
- * This schema describes events sent to Segment from [[tappedVerifyIdentity]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedVerifyIdentity}
  *
  *  @example
  *  ```
@@ -659,7 +659,7 @@ export interface TappedVerifyIdentity {
 /**
  * A user taps on any hyperlinked text
  *
- * This schema describes events sent to Segment from [[tappedLink]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedLink}
  *
  *  @example
  *  ```
@@ -687,7 +687,7 @@ export interface TappedLink {
 /**
  * A user taps "Create alert button" on an app
  *
- * This schema describes events sent to Segment from [[tappedCreateAlert]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedCreateAlert}
  *
  *  @example
  *  ```
@@ -711,7 +711,7 @@ export interface TappedCreateAlert {
 /**
  * A user taps "Bid" on an artwork page inside an Auction
  *
- * This schema describes events sent to Segment from [[tappedBid]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedBid}
  *
  *  @example
  *  ```
@@ -734,7 +734,7 @@ export interface TappedBid {
 /**
  * A user taps "Buy Now" on an artwork page (BNMO)
  *
- * This schema describes events sent to Segment from [[tappedBuyNow]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedBuyNow}
  *
  *  @example
  *  ```
@@ -759,7 +759,7 @@ export interface TappedBuyNow {
 /**
  * A user taps on 'Contact Gallery' on an artwork page
  *
- * This schema describes events sent to Segment from [[tappedContactGallery]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedContactGallery}
  *
  *  @example
  *  ```
@@ -783,7 +783,7 @@ export interface TappedContactGallery {
 /**
  * A user taps a Skip button on My Collection add artwork flow
  *
- * This schema describes events sent to Segment from [[tappedSkip]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedSkip}
  *
  *  @example
  *  ```
@@ -810,7 +810,7 @@ export interface TappedSkip {
 /**
  * A user taps a Sell button in SWA banner on My Collection Artwork page
  *
- * This schema describes events sent to Segment from [[tappedSellArtwork]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedSellArtwork}
  *
  *  @example
  *  ```
@@ -838,7 +838,7 @@ export interface TappedSellArtwork {
 /**
  * A user taps a Get in Touch button to begin an Inquiry about Consignments
  *
- * This schema describes events sent to Segment from [[tappedConsignmentInquiry]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedConsignmentInquiry}
  *
  *  @example
  *  ```
@@ -863,7 +863,7 @@ export interface TappedConsignmentInquiry {
 /**
  * A user taps a Learn More button in SWA banner on My Collection Artwork page
  *
- * This schema describes events sent to Segment from [[tappedLearnMore]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedLearnMore}
  *
  *  @example
  *  ```

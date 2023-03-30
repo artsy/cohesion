@@ -11,7 +11,7 @@ import { Platform } from "./MyCollection"
 /**
  * A user taps or clicks on "Save" when editing their collector profile info.
  *
- * This schema describes events sent to Segment from [[editedUserProfile]]
+ * This schema describes events sent to Segment from {@link ActionType.editedUserProfile}
  *
  *  @example
  *  ```

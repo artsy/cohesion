@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user sees a rail of content
  *
- * This schema describes events sent to Segment from [[RailViewed]].
+ * This schema describes events sent to Segment from {@link ActionType.railViewed}.
  *
  *  @example
  *  ```
@@ -33,7 +33,7 @@ export interface RailViewed {
 /**
  * A user sees a an artwork in a rail
  *
- * This schema describes events sent to Segment from [[ItemViewed]].
+ * This schema describes events sent to Segment from {@link ActionType.itemViewed}.
  *
  *  @example
  *  ```
@@ -60,7 +60,7 @@ export interface ItemViewed {
 /**
  * A user viewed a tooltip. `type` will describe what tooltip it is (follow, edit-follows, etc.)
  *
- * This schema describes events sent to Segment from [[tooltipViewed]]
+ * This schema describes events sent to Segment from {@link ActionType.tooltipViewed}
  *
  *  @example
  *  ```

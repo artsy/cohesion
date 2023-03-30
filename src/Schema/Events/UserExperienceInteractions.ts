@@ -10,7 +10,7 @@ import { ActionType } from "."
 /**
  * A user expands or collapses an accordion design, like in the consignments flow.
  *
- * This schema describes events sent to Segment from [[toggledAccordion]].
+ * This schema describes events sent to Segment from {@link ActionType.toggledAccordion}.
  *
  *  @example
  *  ```

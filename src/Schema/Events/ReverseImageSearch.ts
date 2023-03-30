@@ -9,7 +9,7 @@ import { ActionType } from "."
 /**
  * A user taps the reverse image search button on a fair or show screen
  *
- * This schema describes events sent to Segment from [[tappedReverseImageSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedReverseImageSearch}
  *
  *  @example
  *  ```
@@ -33,7 +33,7 @@ export interface TappedReverseImageSearch {
 /**
  * A user taps the flash button on the reverse image search camera screen
  *
- * This schema describes events sent to Segment from [[tappedToggleCameraFlash]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedToggleCameraFlash}
  *
  *  @example
  *  ```
@@ -57,7 +57,7 @@ export interface TappedToggleCameraFlash {
 /**
  * A user taps the library button on the reverse image search camera screen
  *
- * This schema describes events sent to Segment from [[tappedPickImageFromLibrary]]
+ * This schema describes events sent to Segment from {@link ActionType.tappedPickImageFromLibrary}
  *
  *  @example
  *  ```
@@ -81,7 +81,7 @@ export interface TappedPickImageFromLibrary {
 /**
  * A user searches with a reverse image query with results
  *
- * This schema describes events sent to Segment from [[searchedReverseImageWithResults]]
+ * This schema describes events sent to Segment from {@link ActionType.searchedReverseImageWithResults}
  *
  *  @example
  *  ```
@@ -109,7 +109,7 @@ export interface SearchedReverseImageWithResults {
 /**
  * A user searches with a reverse image query with no results
  *
- * This schema describes events sent to Segment from [[searchedReverseImageWithNoResults]]
+ * This schema describes events sent to Segment from {@link ActionType.searchedReverseImageWithNoResults}
  *
  *  @example
  *  ```
@@ -133,7 +133,7 @@ export interface SearchedReverseImageWithNoResults {
 /**
  * A user selects an artwork from reverse image search results
  *
- * This schema describes events sent to Segment from [[selectedArtworkFromReverseImageSearch]]
+ * This schema describes events sent to Segment from {@link ActionType.selectedArtworkFromReverseImageSearch}
  *
  *  @example
  *  ```

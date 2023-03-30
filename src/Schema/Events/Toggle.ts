@@ -11,7 +11,7 @@ import { ActionType } from "."
 /**
  * A user toggles push notification settings on/off on iOS
  *
- *  This schema describes events sent to Segment from [[toggledNotification]]
+ *  This schema describes events sent to Segment from {@link ActionType.toggledNotification}
  *
  *  @example
  *  ```
@@ -39,7 +39,7 @@ export interface ToggledNotification {
 /**
  * A user toggles a saved search on/off on an app or web
  *
- *  This schema describes events sent to Segment from [[toggledNotification]]
+ *  This schema describes events sent to Segment from {@link ActionType.toggledNotification}
  *
  *  @example
  *  ```
