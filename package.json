@@ -46,7 +46,7 @@
     "jest-junit": "10.0.0",
     "lint-staged": "10.1.7",
     "prettier": "2.0.5",
-    "typedoc": "0.17.7",
+    "typedoc": "0.23.28",
     "typescript": "5.0.2"
   },
   "dependencies": {
