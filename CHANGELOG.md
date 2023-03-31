@@ -1,3 +1,25 @@
+# v4.120.0 (Fri Mar 31 2023)
+
+#### 🚀  Enhancement
+
+- chore:  downgrade typescript [#425](https://github.com/artsy/cohesion/pull/425) ([@dimatretyak](https://github.com/dimatretyak))
+- feat(FX-4684): Event schema for Artwork Lists user interactions [#421](https://github.com/artsy/cohesion/pull/421) ([@dimatretyak](https://github.com/dimatretyak))
+- [AS-3848] Adding new event for mark as sold [#419](https://github.com/artsy/cohesion/pull/419) ([@daytavares](https://github.com/daytavares))
+
+#### 🏠  Internal
+
+- chore(deps): update dep typescript from 5.0.2 to v5.0.3 [#424](https://github.com/artsy/cohesion/pull/424) ([@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update yarn orb from 6.4.0 to v6.5.0 [#420](https://github.com/artsy/cohesion/pull/420) ([@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dep typescript from 4.9.5 to v5 [#418](https://github.com/artsy/cohesion/pull/418) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+- Dima Tretyak ([@dimatretyak](https://github.com/dimatretyak))
+
+---
+
 # v4.119.0 (Wed Mar 15 2023)
 
 #### 🚀  Enhancement
