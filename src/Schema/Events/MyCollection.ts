@@ -52,6 +52,7 @@ export interface AddCollectedArtwork {
  *    action: "saveCollectedArtwork",
  *    context_module: "myCollectionHome",
  *    context_owner_type: "myCollection",
+ *    artist_id: "andy-warhol",
  *    platform: "mobile"
  *  }
  * ```
@@ -60,6 +61,7 @@ export interface SaveCollectedArtwork {
   action: ActionType.saveCollectedArtwork
   context_module: ContextModule.myCollectionHome
   context_owner_type: OwnerType.myCollection
+  artist_id: string
   platform: Platform
 }
 
