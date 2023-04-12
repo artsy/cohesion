@@ -1,3 +1,15 @@
+# v4.123.0 (Wed Apr 12 2023)
+
+#### 🚀  Enhancement
+
+- chore: Add is_p1_artist to SaveCollectedArtwork event [#428](https://github.com/artsy/cohesion/pull/428) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.122.0 (Wed Apr 12 2023)
 
 #### 🚀  Enhancement
