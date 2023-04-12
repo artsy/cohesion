@@ -112,6 +112,7 @@ import {
   PriceDatabaseFilterParamsChanged,
   SelectedRecentPriceRange,
 } from "./FilterAndSort"
+import { TappedProductCapabilitiesGroup } from "./HomeFeedArtsyOnboarding"
 import {
   MyCollectionOnboardingCompleted,
   TappedExploreMyCollection,
@@ -354,6 +355,7 @@ export type Event =
   | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
   | TappedPartnerCard
   | TappedPickImageFromLibrary
+  | TappedProductCapabilitiesGroup
   | TappedPromoSpace
   | TappedRequestPriceEstimate
   | TappedReverseImageSearch
@@ -1059,6 +1061,10 @@ export enum ActionType {
    * Corresponds to {@link TappedPickImageFromLibrary}
    */
   tappedPickImageFromLibrary = "tappedPickImageFromLibrary",
+  /**
+   * Corresponds to {@link TappedProductCapabilitiesGroup}
+   */
+  tappedProductCapabilitiesGroup = "tappedProductCapabilitiesGroup",
   /**
    * Corresponds to {@link TappedPromoSpace}
    */
