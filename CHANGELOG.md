@@ -1,3 +1,15 @@
+# v4.122.0 (Wed Apr 12 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add price database screen owner type [#427](https://github.com/artsy/cohesion/pull/427) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.121.0 (Tue Apr 11 2023)
 
 #### 🚀  Enhancement
