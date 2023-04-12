@@ -1,3 +1,15 @@
+# v4.124.0 (Wed Apr 12 2023)
+
+#### 🚀  Enhancement
+
+- chore: add tappedProductCapabilitiesGroup event [#429](https://github.com/artsy/cohesion/pull/429) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.123.0 (Wed Apr 12 2023)
 
 #### 🚀  Enhancement
