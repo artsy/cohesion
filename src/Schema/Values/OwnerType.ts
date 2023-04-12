@@ -141,6 +141,7 @@ export type ScreenOwnerType =
   | OwnerType.newWorksFromGalleriesYouFollow
   | OwnerType.onboarding
   | OwnerType.partner
+  | OwnerType.priceDatabase
   | OwnerType.profile
   | OwnerType.recentlyViewed
   | OwnerType.reverseImageSearch
