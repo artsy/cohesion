@@ -1,3 +1,15 @@
+# v4.125.0 (Fri Apr 21 2023)
+
+#### 🚀  Enhancement
+
+- chore: add tracking event for clicking publish button in artwork form [#422](https://github.com/artsy/cohesion/pull/422) ([@JanaeHijaz](https://github.com/JanaeHijaz))
+
+#### Authors: 1
+
+- Janae Hijaz Edwards ([@JanaeHijaz](https://github.com/JanaeHijaz))
+
+---
+
 # v4.124.0 (Wed Apr 12 2023)
 
 #### 🚀  Enhancement
