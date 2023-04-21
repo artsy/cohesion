@@ -1416,8 +1416,7 @@ export interface ClickedOnPriceDisplayDropdown {
 export interface ClickedPublish {
   action: ActionType.clickedPublish
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
+  artwork_id: string
   label: string
 }
 
