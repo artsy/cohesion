@@ -1405,10 +1405,9 @@ export interface ClickedOnPriceDisplayDropdown {
  * ```
  * {
  *    action: "clickedPublish",
- *    context_module: voltArtworksEdit ,
- *    context_page_owner_type: "artwork",
- *    context_page_owner_id: "60de173a47476c000fd5c4cc",
- *    label: "publish"
+ *    context_module: "artworkDetails" ,
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    label: "Publish"
  * }
  * ```
  */
