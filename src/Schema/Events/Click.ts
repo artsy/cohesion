@@ -1123,7 +1123,7 @@ export interface ClickedVerifyIdentity {
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
-  sale_id: string
+  sale_id?: string
   subject: string
 }
 
