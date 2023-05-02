@@ -1,3 +1,15 @@
+# v4.125.1 (Tue May 02 2023)
+
+#### 🐛  Bug Fix
+
+- chore: make sale id optional for IDV [#430](https://github.com/artsy/cohesion/pull/430) ([@mdole](https://github.com/mdole))
+
+#### Authors: 1
+
+- Matt Dole ([@mdole](https://github.com/mdole))
+
+---
+
 # v4.125.0 (Fri Apr 21 2023)
 
 #### 🚀  Enhancement
