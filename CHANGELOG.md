@@ -1,3 +1,15 @@
+# v4.126.0 (Wed May 17 2023)
+
+#### 🚀  Enhancement
+
+- feat: adds schema for cookie consent manager [#432](https://github.com/artsy/cohesion/pull/432) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.125.1 (Tue May 02 2023)
 
 #### 🐛  Bug Fix
