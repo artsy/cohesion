@@ -106,6 +106,7 @@ import {
   TappedMakeOffer,
   TappedViewOffer,
 } from "./Conversations"
+import { SavedCookieConsentPreferences } from "./CookieConsent"
 import { ExperimentViewed } from "./ExperimentViewed"
 import {
   AuctionResultsFilterParamsChanged,
@@ -309,6 +310,7 @@ export type Event =
   | ResetYourPassword
   | SaleScreenLoadComplete
   | SaveCollectedArtwork
+  | SavedCookieConsentPreferences
   | Screen
   | SearchedPriceDatabase
   | SearchedReverseImageWithNoResults
@@ -851,6 +853,10 @@ export enum ActionType {
    * Corresponds to {@link SaveCollectedArtwork}
    */
   saveCollectedArtwork = "saveCollectedArtwork",
+  /**
+   * Corresponds to {@link SavedCookieConsentPreferences}
+   */
+  savedCookieConsentPreferences = "savedCookieConsentPreferences",
   /**
    * Corresponds to {@link Screen}
    */
