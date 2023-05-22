@@ -92,7 +92,8 @@ export interface TooltipViewed {
  *    action: "errorMessageViewed",
  *    context_owner_type: "orders",
  *    context_owner_id: "order-id",
- *    label: "This is an error",
+ *    title: "This is an error",
+ *    message: "Error message",
  *    error_code: "charge_authorization_failed"
  *  }
  * ```
@@ -102,6 +103,7 @@ export interface ErrorMessageViewed {
   action: ActionType.errorMessageViewed
   context_owner_id: string
   context_owner_type: OwnerType
-  label: string
+  title: string
+  message: string
   error_code: string
 }
