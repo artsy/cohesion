@@ -1,3 +1,15 @@
+# v4.127.0 (Wed May 24 2023)
+
+#### 🚀  Enhancement
+
+- Event to track errors [#431](https://github.com/artsy/cohesion/pull/431) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.126.0 (Wed May 17 2023)
 
 #### 🚀  Enhancement
