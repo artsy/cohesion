@@ -122,7 +122,12 @@ import {
   VisitMyCollectionOnboardingSlide,
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
-import { ItemViewed, RailViewed, TooltipViewed } from "./ImpressionTracking"
+import {
+  ErrorMessageViewed,
+  ItemViewed,
+  RailViewed,
+  TooltipViewed,
+} from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -291,6 +296,7 @@ export type Event =
   | EditedSavedSearch
   | EditedUserProfile
   | EnterLiveAuction
+  | ErrorMessageViewed
   | ExperimentViewed
   | ItemViewed
   | UploadSizeLimitExceeded
@@ -765,6 +771,10 @@ export enum ActionType {
    * Corresponds to {@link EnterLiveAuction}
    */
   enterLiveAuction = "enterLiveAuction",
+  /**
+   * Corresponds to {@link ErrorMessageViewed}
+   */
+  errorMessageViewed = "errorMessageViewed",
   /**
    * Corresponds to {@link ExperimentViewed}
    */

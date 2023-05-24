@@ -80,3 +80,32 @@ export interface TooltipViewed {
   context_owner_type: PageOwnerType
   type: string
 }
+
+/**
+ * A user sees a an error message
+ *
+ * This schema describes events sent to Segment from [[ErrorMessageViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "errorMessageViewed",
+ *    context_owner_type: "orders",
+ *    context_owner_id: "order-id",
+ *    title: "This is an error",
+ *    message: "Error message",
+ *    error_code: "charge_authorization_failed",
+ *    flow: "user submitting payment"
+ *  }
+ * ```
+ *
+ */
+export interface ErrorMessageViewed {
+  action: ActionType.errorMessageViewed
+  context_owner_id: string
+  context_owner_type: OwnerType
+  title: string
+  message: string
+  error_code?: string
+  flow: string
+}
