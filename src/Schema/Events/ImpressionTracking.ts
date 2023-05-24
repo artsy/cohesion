@@ -94,7 +94,8 @@ export interface TooltipViewed {
  *    context_owner_id: "order-id",
  *    title: "This is an error",
  *    message: "Error message",
- *    error_code: "charge_authorization_failed"
+ *    error_code: "charge_authorization_failed",
+ *    flow: "user submitting payment"
  *  }
  * ```
  *
@@ -105,5 +106,6 @@ export interface ErrorMessageViewed {
   context_owner_type: OwnerType
   title: string
   message: string
-  error_code: string
+  error_code?: string
+  flow: string
 }
