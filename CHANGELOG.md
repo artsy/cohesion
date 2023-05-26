@@ -1,3 +1,17 @@
+# v4.128.0 (Fri May 26 2023)
+
+#### 🚀  Enhancement
+
+- feat: add events schema for search pills [#433](https://github.com/artsy/cohesion/pull/433) ([@rajsam003](https://github.com/rajsam003))
+- feat: Add galleriesForYou screen owner type [#434](https://github.com/artsy/cohesion/pull/434) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 2
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+- Sam Raj ([@rajsam003](https://github.com/rajsam003))
+
+---
+
 # v4.127.0 (Wed May 24 2023)
 
 #### 🚀  Enhancement
