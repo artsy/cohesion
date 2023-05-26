@@ -86,6 +86,7 @@ export enum ContextModule {
   findTheArtYouWant = "findTheArtYouWant",
   footer = "footer",
   frequentlyAskedQuestions = "frequentlyAskedQuestions",
+  galleriesForYouBanner = "galleriesForYouBanner",
   galleryBoothRail = "galleryBoothRail",
   galleryTab = "galleryTab",
   geneHeader = "geneHeader",
