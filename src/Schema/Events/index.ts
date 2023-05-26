@@ -156,8 +156,6 @@ import {
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
-  ClickedOnLeftChevronIconOnSearchPills,
-  ClickedOnRightChevronIconOnSearchPills,
   ConsignmentArtistFailed,
   FocusedOnPriceDatabaseSearchInput,
   FocusedOnSearchInput,
@@ -261,8 +259,6 @@ export type Event =
   | ClickedOnFramedMeasurementsDropdown
   | ClickedOnMakeOfferCheckbox
   | ClickedOnPriceDisplayDropdown
-  | ClickedOnLeftChevronIconOnSearchPills
-  | ClickedOnRightChevronIconOnSearchPills
   | ClickedPublish
   | ClickedOnSubmitOrder
   | ClickedSnooze
@@ -921,18 +917,6 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
-  /**
-   * Corresponds to {@link SelectedPillFromSearch}
-   */
-  selectedPillFromSearch = "selectedPillFromSearch",
-  /**
-   * Corresponds to {@link ClickedOnRightChevronIconOnSearchPills}
-   */
-  clickedOnRightChevronIconOnSearchPills = "clickedOnRightChevronIconOnSearchPills",
-  /**
-   * Corresponds to {@link ClickedOnLeftChevronIconOnSearchPills}
-   */
-  clickedOnLeftChevronIconOnSearchPills = "clickedOnLeftChevronIconOnSearchPills",
   /**
    * Corresponds to {@link SelectedRecentPriceRange}
    */

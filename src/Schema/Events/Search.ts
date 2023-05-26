@@ -1,5 +1,6 @@
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { PillType } from "../Values/PillType"
 import { ActionType } from "."
 
 /**
@@ -38,6 +39,7 @@ export interface FocusedOnSearchInput {
  *  ```
  *  {
  *    action: "selectedItemFromSearch",
+ *    activePill: "top"
  *    context_module: "priceEstimate",
  *    context_owner_type: "consign",
  *    owner_type: "artist",
@@ -49,6 +51,7 @@ export interface FocusedOnSearchInput {
  */
 export interface SelectedItemFromSearch {
   action: ActionType.selectedItemFromSearch
+  activePill: PillType
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
@@ -71,6 +74,7 @@ export interface SelectedItemFromSearch {
  *  ```
  *  {
  *    action: "searchedWithNoResults",
+ *    activePill: "top"
  *    context_module: "header",
  *    context_owner_type: "home",
  *    destination_owner_type: "search",
@@ -80,6 +84,7 @@ export interface SelectedItemFromSearch {
  */
 export interface SearchedWithNoResults {
   action: ActionType.searchedWithNoResults
+  activePill: PillType
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
@@ -91,12 +96,13 @@ export interface SearchedWithNoResults {
 /**
  * A user selects search pill
  *
- * This schema describes events sent to Segment from [[selectedPillFromSearch]]
+ * This schema describes events sent to Segment from [[tappedNavigationTab]]
  *
  *  @example
  *  ```
  *  {
- *    action: "selectedPillFromSearch",
+ *    action: "tappedNavigationTab",
+ *    activePill: "artwork"
  *    context_module: "header",
  *    context_owner_type: "home",
  *    destination_owner_type: "search",
@@ -106,60 +112,8 @@ export interface SearchedWithNoResults {
  * ```
  */
 export interface SelectedPillFromSearch {
-  action: ActionType.selectedPillFromSearch
-  context_module: ContextModule
-  context_owner_type: PageOwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  destination_owner_type?: PageOwnerType
-  query: string
-  pill: string
-}
-
-/**
- * A user clicked on right chevron icon on search pills
- *
- * This schema describes events sent to Segment from [[clickedOnRightChevronIconOnSearchPills]]
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedOnRightChevronIconOnSearchPills",
- *    context_module: "header",
- *    context_owner_type: "home",
- *    destination_owner_type: "search",
- *    query: "andhuwe"
- *  }
- * ```
- */
-export interface ClickedOnRightChevronIconOnSearchPills {
-  action: ActionType.clickedOnRightChevronIconOnSearchPills
-  context_module: ContextModule
-  context_owner_type: PageOwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  destination_owner_type?: PageOwnerType
-  query: string
-}
-
-/**
- * A user clicked on left chevron icon on search pills
- *
- * This schema describes events sent to Segment from [[clickedOnLeftChevronIconOnSearchPills]]
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedOnLeftChevronIconOnSearchPills",
- *    context_module: "header",
- *    context_owner_type: "home",
- *    destination_owner_type: "search",
- *    query: "andhuwe"
- *  }
- * ```
- */
-export interface ClickedOnLeftChevronIconOnSearchPills {
-  action: ActionType.clickedOnLeftChevronIconOnSearchPills
+  action: ActionType.tappedNavigationTab
+  activePill: PillType
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
