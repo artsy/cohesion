@@ -38,7 +38,7 @@ export interface FocusedOnSearchInput {
  *  ```
  *  {
  *    action: "selectedItemFromSearch",
- *    context_module: "topTab",
+ *    context_module: "priceEstimate",
  *    context_owner_type: "consign",
  *    owner_type: "artist",
  *    owner_id: "5df3e3fa485efe0012c37055",
@@ -71,7 +71,7 @@ export interface SelectedItemFromSearch {
  *  ```
  *  {
  *    action: "searchedWithNoResults",
- *    context_module: "topTab",
+ *    context_module: "header",
  *    context_owner_type: "home",
  *    destination_owner_type: "search",
  *    query: "andhuwe"
