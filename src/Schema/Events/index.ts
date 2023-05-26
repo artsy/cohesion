@@ -163,7 +163,6 @@ import {
   SearchedWithNoResults,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
-  SelectedPillFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
 import { Share } from "./Share"
@@ -326,7 +325,6 @@ export type Event =
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
-  | SelectedPillFromSearch
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SentConsignmentInquiry

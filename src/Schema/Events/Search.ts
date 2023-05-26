@@ -89,33 +89,6 @@ export interface SearchedWithNoResults {
 }
 
 /**
- * A user selects search pill
- *
- * This schema describes events sent to Segment from [[tappedNavigationTab]]
- *
- *  @example
- *  ```
- *  {
- *    action: "tappedNavigationTab",
- *    context_module: "artworksTab",
- *    context_owner_type: "home",
- *    destination_owner_type: "search",
- *    query: "andhuwe"
- *    pill: "artwork"
- *  }
- * ```
- */
-export interface SelectedPillFromSearch {
-  action: ActionType.tappedNavigationTab
-  context_module: ContextModule
-  context_owner_type: PageOwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  destination_owner_type?: PageOwnerType
-  query: string
-}
-
-/**
  * A user queries the Artsy Price Database, including the artist_id, string queried, and applied filters
  *
  * This schema describes events sent to Segment from [[searchedPriceDatabase]]
