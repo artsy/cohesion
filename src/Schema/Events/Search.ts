@@ -1,6 +1,5 @@
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
-import { PillType } from "../Values/PillType"
 import { ActionType } from "."
 
 /**
@@ -39,8 +38,7 @@ export interface FocusedOnSearchInput {
  *  ```
  *  {
  *    action: "selectedItemFromSearch",
- *    activePill: "top"
- *    context_module: "priceEstimate",
+ *    context_module: "topTab",
  *    context_owner_type: "consign",
  *    owner_type: "artist",
  *    owner_id: "5df3e3fa485efe0012c37055",
@@ -51,7 +49,6 @@ export interface FocusedOnSearchInput {
  */
 export interface SelectedItemFromSearch {
   action: ActionType.selectedItemFromSearch
-  activePill: PillType
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
@@ -74,8 +71,7 @@ export interface SelectedItemFromSearch {
  *  ```
  *  {
  *    action: "searchedWithNoResults",
- *    activePill: "top"
- *    context_module: "header",
+ *    context_module: "topTab",
  *    context_owner_type: "home",
  *    destination_owner_type: "search",
  *    query: "andhuwe"
@@ -84,7 +80,6 @@ export interface SelectedItemFromSearch {
  */
 export interface SearchedWithNoResults {
   action: ActionType.searchedWithNoResults
-  activePill: PillType
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
@@ -102,8 +97,7 @@ export interface SearchedWithNoResults {
  *  ```
  *  {
  *    action: "tappedNavigationTab",
- *    activePill: "artwork"
- *    context_module: "header",
+ *    context_module: "artworksTab",
  *    context_owner_type: "home",
  *    destination_owner_type: "search",
  *    query: "andhuwe"
@@ -113,7 +107,6 @@ export interface SearchedWithNoResults {
  */
 export interface SelectedPillFromSearch {
   action: ActionType.tappedNavigationTab
-  activePill: PillType
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
