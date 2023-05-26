@@ -6,7 +6,6 @@ export const selectedItemFromSearch = (
 ): SelectedItemFromSearch => {
   return {
     action: ActionType.selectedItemFromSearch,
-    activePill: props.activePill,
     context_module: props.context_module,
     context_owner_id: props.context_owner_id,
     context_owner_slug: props.context_owner_slug,
