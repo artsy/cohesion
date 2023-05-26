@@ -11,6 +11,7 @@ export enum ContextModule {
   articleArtist = "articleArtist",
   articleRail = "articleRail",
   articles = "articles",
+  articleTab = "articleTab",
   artistAuctionResults = "artistAuctionResults",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
@@ -101,6 +102,7 @@ export enum ContextModule {
   mainCarousel = "mainCarousel",
   marketInsights = "marketInsights",
   marketNews = "marketNews",
+  marketingCollectionTab = "marketingCollectionTab",
   minimalCTABanner = "minimalCTABanner",
   moreFromThisSeries = "moreFromThisSeries",
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
@@ -196,6 +198,7 @@ export enum ContextModule {
  */
 export type AuthContextModule =
   | ContextModule.aboutTheWork
+  | ContextModule.articleTab
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
   | ContextModule.artistSeriesRail
@@ -242,6 +245,7 @@ export type AuthContextModule =
   | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
   | ContextModule.mainCarousel
+  | ContextModule.marketingCollectionTab
   | ContextModule.minimalCTABanner
   | ContextModule.myCollectionAddArtworkAddArtist
   | ContextModule.myCollectionHome
