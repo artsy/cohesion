@@ -1,3 +1,15 @@
+# v4.129.0 (Fri May 26 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add galleriesForYouBanner context module [#435](https://github.com/artsy/cohesion/pull/435) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.128.0 (Fri May 26 2023)
 
 #### 🚀  Enhancement
