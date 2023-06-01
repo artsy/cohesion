@@ -1,3 +1,15 @@
+# v4.130.0 (Thu Jun 01 2023)
+
+#### 🚀  Enhancement
+
+- feat(long-press): add event for long pressing artworks [#436](https://github.com/artsy/cohesion/pull/436) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v4.129.0 (Fri May 26 2023)
 
 #### 🚀  Enhancement
