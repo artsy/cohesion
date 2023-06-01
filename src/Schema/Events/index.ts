@@ -820,6 +820,10 @@ export enum ActionType {
    */
   impression = "impression",
   /**
+   * Corresponds to {@link LongPressedArtwork}
+   */
+  longPressedArtwork = "longPressedArtwork",
+  /**
    * Corresponds to {@link MaxBidSelected}
    */
   maxBidSelected = "maxBidSelected",

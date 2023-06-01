@@ -886,3 +886,27 @@ export interface TappedLearnMore {
   /** The text of the tapped button */
   subject: string
 }
+
+/**
+ * A user long presses an artwork in the app to show a menu
+ *
+ * This schema describes events sent to Segment from [[longPressedArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "longPressedArtwork",
+ *    context_module: "artworkGrid",
+ *    context_screen_owner_type: "artist",
+ *    context_owner_id: "6164889300d643000db86504",
+ *    context_owner_slug: "radna-segal-pearl",
+ *  }
+ * ```
+ */
+export interface LongPressedArtwork {
+  action: ActionType.longPressedArtwork
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}
