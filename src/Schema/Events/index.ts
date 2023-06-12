@@ -68,6 +68,7 @@ import {
   ClickedOnArtworkShippingUnitsDropdown,
   ClickedOnArtworkShippingWeight,
   ClickedOnBuyNowCheckbox,
+  ClickedOnDuplicateArtwork,
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnMakeOfferCheckbox,
@@ -257,6 +258,7 @@ export type Event =
   | ClickedOnFramedMeasurements
   | ClickedOnFramedMeasurementsDropdown
   | ClickedOnMakeOfferCheckbox
+  | ClickedOnDuplicateArtwork
   | ClickedOnPriceDisplayDropdown
   | ClickedPublish
   | ClickedOnSubmitOrder
@@ -603,6 +605,9 @@ export enum ActionType {
    */
   clickedOnMakeOfferCheckbox = "clickedOnMakeOfferCheckbox",
   /**
+   * Corresponds to {@link ClickedOnDuplicateArtwork}
+   */
+  clickedOnDuplicateArtwork = "clickedOnDuplicateArtwork",
   /**
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
