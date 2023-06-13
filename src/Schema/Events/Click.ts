@@ -1594,16 +1594,16 @@ export interface ClickedOnMakeOfferCheckbox {
  *  {
  *    action: "clickedOnDuplicateArtwork",
  *    context_module: "voltArtworksEdit",
- *    context_page_owner_type: "artwork",
- *    context_page_owner_id: "60de173a47476c000fd5c4cc"
- *    label: ["duplicate", "cancel"]
+ *    original_artwork_id: "60de173a47476c000fd5c4cc"
+ *    duplicate_artwork_id: "6487822214765c000d34cbe8"
+ *    label: ["duplicate", "cancel", "open modal"]
  *  }
  * ```
  */
 export interface ClickedOnDuplicateArtwork {
   action: ActionType.clickedOnDuplicateArtwork
   context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
+  original_artwork_id: string
+  duplicate_artwork_id?: string
   label: string
 }
