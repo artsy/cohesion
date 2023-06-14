@@ -1595,8 +1595,8 @@ export interface ClickedOnMakeOfferCheckbox {
  *    action: "clickedOnDuplicateArtwork",
  *    context_module: "voltArtworksEdit",
  *    original_artwork_id: "60de173a47476c000fd5c4cc"
- *    duplicate_artwork_id: "6487822214765c000d34cbe8"
- *    label: ["duplicate", "cancel", "open modal"]
+ *    label: "Duplicate"
+ *    flow: ["artworksList", "duplicateModal"]
  *  }
  * ```
  */
@@ -1604,6 +1604,6 @@ export interface ClickedOnDuplicateArtwork {
   action: ActionType.clickedOnDuplicateArtwork
   context_module: ContextModule
   original_artwork_id: string
-  duplicate_artwork_id?: string
   label: string
+  flow: string
 }
