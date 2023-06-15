@@ -1,3 +1,15 @@
+# v4.131.0 (Thu Jun 15 2023)
+
+#### 🚀  Enhancement
+
+- chore: PX-5596 adding new event for duplicate artwork functionality [#437](https://github.com/artsy/cohesion/pull/437) ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+#### Authors: 1
+
+- Mitchell Henson ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+---
+
 # v4.130.0 (Thu Jun 01 2023)
 
 #### 🚀  Enhancement
