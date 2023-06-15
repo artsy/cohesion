@@ -1583,3 +1583,27 @@ export interface ClickedOnMakeOfferCheckbox {
   context_page_owner_id?: string
   label: boolean
 }
+
+/**
+ * A Partner clicks on the Duplicate button for duplicating an artwork in the CMS.
+ *
+ * This schema describes events sent to Segment from [[clickedOnDuplicateArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnDuplicateArtwork",
+ *    context_module: "voltArtworksEdit",
+ *    original_artwork_id: "60de173a47476c000fd5c4cc"
+ *    label: "Duplicate"
+ *    flow: ["artworksList", "duplicateModal"]
+ *  }
+ * ```
+ */
+export interface ClickedOnDuplicateArtwork {
+  action: ActionType.clickedOnDuplicateArtwork
+  context_module: ContextModule
+  original_artwork_id: string
+  label: string
+  flow: string
+}
