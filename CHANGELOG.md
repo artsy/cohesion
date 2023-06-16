@@ -1,3 +1,15 @@
+# v4.132.0 (Fri Jun 16 2023)
+
+#### 🚀  Enhancement
+
+- feat(article): Add article mobile events [#439](https://github.com/artsy/cohesion/pull/439) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.131.0 (Thu Jun 15 2023)
 
 #### 🚀  Enhancement
