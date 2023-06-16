@@ -268,6 +268,30 @@ export interface TappedEntityGroup {
 export type EntityModuleHeight = "single" | "double"
 
 /**
+ * A user taps the Article Share button in iOS
+ *
+ * This schema describes events sent to Segment from [[tappedArticleShare]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArticleShare",
+ *    context_module: "article",
+ *    context_screen_owner_type: "article",
+ *    context_screen_owner_id: "some-article-id",
+ *    context_screen_owner_id: "some-article-slug",
+ *  }
+ * ```
+ */
+export interface TappedArticleShare {
+  action: ActionType.tappedArticleShare
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+}
+
+/**
  * A user taps a Consign button in iOS
  *
  * This schema describes events sent to Segment from [[tappedConsign]]
