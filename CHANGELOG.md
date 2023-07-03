@@ -1,3 +1,15 @@
+# v4.133.0 (Mon Jul 03 2023)
+
+#### 🚀  Enhancement
+
+- Add SearchedWithResults event [#440](https://github.com/artsy/cohesion/pull/440) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.132.0 (Fri Jun 16 2023)
 
 #### 🚀  Enhancement
