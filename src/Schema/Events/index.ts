@@ -162,6 +162,7 @@ import {
   FocusedOnSearchInput,
   SearchedPriceDatabase,
   SearchedWithNoResults,
+  SearchedWithResults,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
@@ -325,6 +326,7 @@ export type Event =
   | SearchedReverseImageWithNoResults
   | SearchedReverseImageWithResults
   | SearchedWithNoResults
+  | SearchedWithResults
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
@@ -902,6 +904,10 @@ export enum ActionType {
    * Corresponds to {@link SearchedWithNoResults}
    */
   searchedWithNoResults = "searchedWithNoResults",
+  /**
+   * Corresponds to {@link SearchedWithResults}
+   */
+  searchedWithResults = "searchedWithResults",
   /**
    * Corresponds to {@link SelectArtistFromSearch}
    */
