@@ -89,6 +89,7 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedValidationAddress,
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -285,6 +286,7 @@ export type Event =
   | ClickedMarkSpam
   | ClickedMarkSold
   | ClickedConversationsFilter
+  | ClickedValidationAddress
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -708,6 +710,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedViewingRoomCard}
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
+  /**
+   * Corresponds to {@link ClickedValidationAddress}
+   */
+  clickedValidationAddress = "clickedValidationAddress",
   /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
