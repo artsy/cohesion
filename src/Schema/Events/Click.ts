@@ -1608,7 +1608,7 @@ export interface ClickedOnDuplicateArtwork {
   flow: string
 }
 /**
- *  User clicks on one of the buttons on the validation address modal.
+ *  User clicks save & continue and the address validation modal pops up.
  *
  *  This schema describes events sent to Segment from [[clickedValidationAddress]]
  *
@@ -1620,13 +1620,36 @@ export interface ClickedOnDuplicateArtwork {
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    user_id: "61bcda16515b038ce5000104"
- *    subject: Check your delivery address
- *    label: Use This Address
  *  }
  * ```
  */
  export interface ClickedValidationAddress {
   action: ActionType.clickedValidationAddress
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+  user_id: string
+}
+/**
+ *  User clicks on one of the buttons on the validation address modal.
+ *
+ *  This schema describes events sent to Segment from [[clickedValidationAddressButtons]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedValidationAddressButtons",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    user_id: "61bcda16515b038ce5000104"
+ *    subject: Check your delivery address
+ *    label: Use This Address
+ *  }
+ * ```
+ */
+ export interface ClickedValidationAddressButtons {
+  action: ActionType.clickedValidationAddressButtons
   context_module: ContextModule
   context_page_owner_type: string
   context_page_owner_id: string
