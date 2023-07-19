@@ -89,6 +89,7 @@ import {
   ClickedSnooze,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedValidationAddressOptions,  
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -128,6 +129,7 @@ import {
   ItemViewed,
   RailViewed,
   TooltipViewed,
+  ValidationAddressViewed,
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
@@ -285,6 +287,7 @@ export type Event =
   | ClickedMarkSpam
   | ClickedMarkSold
   | ClickedConversationsFilter
+  | ClickedValidationAddressOptions 
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -315,6 +318,7 @@ export type Event =
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
   | RailViewed
+  | ValidationAddressViewed
   | RegistrationPageView
   | RegistrationSubmitted
   | ResetYourPassword
@@ -709,6 +713,10 @@ export enum ActionType {
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
   /**
+   * Corresponds to {@link ClickedValidationAddressOptions}
+   */
+  clickedValidationAddressOptions = "clickedValidationAddressOptions", 
+  /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
@@ -856,6 +864,10 @@ export enum ActionType {
    * Corresponds to {@link RailViewed}
    */
   railViewed = "railViewed",
+  /**
+  * Corresponds to {@link ValidationAddressViewed}
+  */
+  validationAddressViewed = "validationAddressViewed",
   /**
    * Corresponds to {@link RegistrationPageView}
    */
