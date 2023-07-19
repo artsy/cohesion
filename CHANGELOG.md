@@ -1,3 +1,22 @@
+# v4.134.0 (Wed Jul 19 2023)
+
+#### 🚀  Enhancement
+
+- [AS-4029] Adding new event to track address validation [#443](https://github.com/artsy/cohesion/pull/443) ([@daytavares](https://github.com/daytavares))
+
+#### 🏠  Internal
+
+- chore(deps): bump word-wrap from 1.2.3 to 1.2.4 [#444](https://github.com/artsy/cohesion/pull/444) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump semver from 5.7.1 to 5.7.2 [#442](https://github.com/artsy/cohesion/pull/442) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump tough-cookie from 4.0.0 to 4.1.3 [#441](https://github.com/artsy/cohesion/pull/441) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.133.0 (Mon Jul 03 2023)
 
 #### 🚀  Enhancement
