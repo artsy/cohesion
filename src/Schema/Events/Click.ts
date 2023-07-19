@@ -1621,6 +1621,7 @@ export interface ClickedOnDuplicateArtwork {
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    user_id: "61bcda16515b038ce5000104"
  *    subject: Check your delivery address
+ *    option: Recommended
  *    label: Use This Address
  *  }
  * ```
@@ -1632,5 +1633,6 @@ export interface ClickedOnDuplicateArtwork {
   context_page_owner_id: string
   user_id: string
   subject: string
+  option: string
   label: string
 }
