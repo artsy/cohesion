@@ -1636,3 +1636,30 @@ export interface ClickedOnDuplicateArtwork {
   option: string
   label: string
 }
+/**
+ *  User clicks in one of the options that closes the modal (buttons, x or away from the screen).
+ *
+ *  This schema describes events sent to Segment from [[clickedCloseValidationAddressModal]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCloseValidationAddressModal",
+ *    context_module: "OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    subject: Check your delivery address
+ *    option: Recommended
+ *    label: X
+ *  }
+ * ```
+ */
+ export interface ClickedCloseValidationAddressModal {
+  action: ActionType.clickedCloseValidationAddressModal
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+  subject: string
+  option: string
+  label: string
+}
