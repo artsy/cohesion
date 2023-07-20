@@ -1,3 +1,15 @@
+# v4.135.0 (Thu Jul 20 2023)
+
+#### 🚀  Enhancement
+
+- (feat): add modalType option to address validation event [#445](https://github.com/artsy/cohesion/pull/445) ([@TMcMeans](https://github.com/TMcMeans))
+
+#### Authors: 1
+
+- TanjieM ([@TMcMeans](https://github.com/TMcMeans))
+
+---
+
 # v4.134.0 (Wed Jul 19 2023)
 
 #### 🚀  Enhancement
