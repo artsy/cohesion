@@ -1,3 +1,15 @@
+# v4.136.0 (Fri Jul 21 2023)
+
+#### 🚀  Enhancement
+
+- [AS-4029] Adding new event to track close address validation modal [#446](https://github.com/artsy/cohesion/pull/446) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.135.0 (Thu Jul 20 2023)
 
 #### 🚀  Enhancement
