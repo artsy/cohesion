@@ -48,6 +48,7 @@ import {
   ClickedChangePaymentMethod,
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
+  ClickedCloseValidationAddressModal,
   ClickedCollectionGroup,
   ClickedConversationsFilter,
   ClickedCreateAlert,
@@ -62,6 +63,7 @@ import {
   ClickedMainArtworkGrid,
   ClickedMarkSold,
   ClickedMarkSpam,
+  ClickedNavBar,
   ClickedNavigationTab,
   ClickedOfferActions,
   ClickedOfferOption,
@@ -87,10 +89,10 @@ import {
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
+  ClickedUploadArtwork,
+  ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
-  ClickedValidationAddressOptions,
-  ClickedCloseValidationAddressModal,  
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -268,6 +270,7 @@ export type Event =
   | ClickedPublish
   | ClickedOnSubmitOrder
   | ClickedSnooze
+  | ClickedUploadArtwork
   | ClickedPartnerCard
   | ClickedPartnerLink
   | ClickedPaymentMethod
@@ -289,7 +292,7 @@ export type Event =
   | ClickedMarkSold
   | ClickedConversationsFilter
   | ClickedValidationAddressOptions
-  | ClickedCloseValidationAddressModal 
+  | ClickedCloseValidationAddressModal
   | CommercialFilterParamsChanged
   | CompletedOnboarding
   | ConfirmBid
@@ -653,6 +656,10 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedMarkSold}
    */
+  clickedNavBar = "clickedNavBar",
+  /**
+   * Corresponds to {@link ClickedNavBar}
+   */
   clickedPartnerCard = "clickedPartnerCard",
   /**
    * Corresponds to {@link ClickedPartnerLink}
@@ -699,6 +706,10 @@ export enum ActionType {
    */
   clickedSnooze = "clickedSnooze",
   /**
+   * Corresponds to {@link ClickedUploadArtwork}
+   */
+  ClickedUploadArtwork = "clickedUploadArtwork",
+  /**
    * Corresponds to {@link ClickedSponsorLink}
    */
   clickedSponsorLink = "clickedSponsorLink",
@@ -717,7 +728,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedValidationAddressOptions}
    */
-  clickedValidationAddressOptions = "clickedValidationAddressOptions", 
+  clickedValidationAddressOptions = "clickedValidationAddressOptions",
   /**
    * Corresponds to {@link ClickedCloseValidationAddressModal}
    */
@@ -871,8 +882,8 @@ export enum ActionType {
    */
   railViewed = "railViewed",
   /**
-  * Corresponds to {@link ValidationAddressViewed}
-  */
+   * Corresponds to {@link ValidationAddressViewed}
+   */
   validationAddressViewed = "validationAddressViewed",
   /**
    * Corresponds to {@link RegistrationPageView}

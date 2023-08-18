@@ -120,6 +120,7 @@ export enum ContextModule {
   myCollectionInsightsMedianAuctionRail = "myCollectionInsightsMedianAuctionRail",
   myCollectionMarketSignals = "myCollectionMarketSignals",
   myCollectionOnboarding = "myCollectionOnboarding",
+  navBar = "navBar",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
@@ -251,6 +252,7 @@ export type AuthContextModule =
   | ContextModule.minimalCTABanner
   | ContextModule.myCollectionAddArtworkAddArtist
   | ContextModule.myCollectionHome
+  | ContextModule.navBar
   | ContextModule.onboardingActivity
   | ContextModule.onboardingCollectorLevel
   | ContextModule.onboardingFlow

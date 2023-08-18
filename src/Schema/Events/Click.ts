@@ -1626,7 +1626,7 @@ export interface ClickedOnDuplicateArtwork {
  *  }
  * ```
  */
- export interface ClickedValidationAddressOptions {
+export interface ClickedValidationAddressOptions {
   action: ActionType.clickedValidationAddressOptions
   context_module: ContextModule
   context_page_owner_type: string
@@ -1654,7 +1654,7 @@ export interface ClickedOnDuplicateArtwork {
  *  }
  * ```
  */
- export interface ClickedCloseValidationAddressModal {
+export interface ClickedCloseValidationAddressModal {
   action: ActionType.clickedCloseValidationAddressModal
   context_module: ContextModule
   context_page_owner_type: string
@@ -1662,4 +1662,58 @@ export interface ClickedOnDuplicateArtwork {
   subject: string
   option: string
   label: string
+}
+
+/**
+ *  User clicks on the CMS nav bar
+ *
+ *  This schema describes events sent to Segment from [[clickedNavBar]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedNavBar",
+ *    context_module: "navBar"
+ *    context_page_owner_type: "orders",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    destination_path: "/artworks"
+ *    subject: "Artworks"
+ *  }
+ * ```
+ */
+export interface ClickedNavBar {
+  action: ActionType.clickedNavBar
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id?: string
+  destination_path: string
+  subject: string
+}
+
+/**
+ *  User clicks on Upload artwork button in CMS.
+ *
+ *  This schema describes events sent to Segment from [[clickedUploadArtwork]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedUploadArtwork",
+ *    context_module: "alerts-price"
+ *    context_page_owner_type: "demand",
+ *    context_page_owner_id: "",
+ *    artist_id: "4212691337420",
+ *    search_criteria_id: "4212691337420"
+ *    subject: "Upload Artworks"
+ *  }
+ * ```
+ */
+export interface ClickedUploadArtwork {
+  action: ActionType.clickedUploadArtwork
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id?: string
+  artist_id?: string
+  search_criteria_id?: string
+  subject: string
 }
