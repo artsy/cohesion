@@ -22,6 +22,7 @@ export enum ContextModule {
   artistSeriesTab = "artistSeriesTab",
   artistsTab = "artistsTab",
   artistsToFollowRail = "artistsToFollowRail",
+  artworkClosedLotHeader = "artworkClosedLotHeader",
   artworkDetails = "artworkDetails",
   artworkGrid = "artworkGrid",
   artworkImage = "artworkImage",
@@ -208,6 +209,7 @@ export type AuthContextModule =
   | ContextModule.artistSeriesTab
   | ContextModule.artistsTab
   | ContextModule.artistsToFollowRail
+  | ContextModule.artworkClosedLotHeader
   | ContextModule.artworkGrid
   | ContextModule.artworkImage
   | ContextModule.artworkSidebar
