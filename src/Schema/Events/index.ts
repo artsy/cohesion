@@ -257,6 +257,7 @@ export type Event =
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedNavBar
   | ClickedNotificationsBell
   | ClickedOfferOption
   | ClickedOnArtworkShippingWeight
