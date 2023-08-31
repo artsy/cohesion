@@ -1,3 +1,19 @@
+# v4.137.0 (Thu Aug 31 2023)
+
+#### 🚀  Enhancement
+
+- fix: saved alerts events [#450](https://github.com/artsy/cohesion/pull/450) ([@lidimayra](https://github.com/lidimayra))
+- chore: add `artworkClosedLotHeader` context module [#449](https://github.com/artsy/cohesion/pull/449) ([@dblandin](https://github.com/dblandin))
+- CMS alerts events tracking [#448](https://github.com/artsy/cohesion/pull/448) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 3
+
+- [@louislecluse](https://github.com/louislecluse)
+- devon blandin ([@dblandin](https://github.com/dblandin))
+- Lidiane Taquehara ([@lidimayra](https://github.com/lidimayra))
+
+---
+
 # v4.136.0 (Fri Jul 21 2023)
 
 #### 🚀  Enhancement
