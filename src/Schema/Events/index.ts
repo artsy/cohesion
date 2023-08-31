@@ -708,7 +708,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedUploadArtwork}
    */
-  ClickedUploadArtwork = "clickedUploadArtwork",
+  clickedUploadArtwork = "clickedUploadArtwork",
   /**
    * Corresponds to {@link ClickedSponsorLink}
    */
