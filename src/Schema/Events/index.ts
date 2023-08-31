@@ -257,6 +257,7 @@ export type Event =
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedNavigationTab
+  | ClickedNavBar
   | ClickedNotificationsBell
   | ClickedOfferOption
   | ClickedOnArtworkShippingWeight
@@ -708,7 +709,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedUploadArtwork}
    */
-  ClickedUploadArtwork = "clickedUploadArtwork",
+  clickedUploadArtwork = "clickedUploadArtwork",
   /**
    * Corresponds to {@link ClickedSponsorLink}
    */
