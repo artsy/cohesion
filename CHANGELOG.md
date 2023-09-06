@@ -1,3 +1,15 @@
+# v4.139.0 (Wed Sep 06 2023)
+
+#### 🚀  Enhancement
+
+- feat(demand): Add OwnerType.demand [#452](https://github.com/artsy/cohesion/pull/452) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.138.0 (Wed Sep 06 2023)
 
 #### 🚀  Enhancement
