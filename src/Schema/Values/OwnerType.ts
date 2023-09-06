@@ -31,6 +31,7 @@ export enum OwnerType {
   consignmentSubmission = "consignmentSubmission",
   conversation = "conversation",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
+  demand = "demand",
   editProfile = "editProfile",
   explore = "explore",
   fair = "fair",
@@ -182,6 +183,7 @@ export type PageOwnerType =
   | OwnerType.collection
   | OwnerType.collections
   | OwnerType.consign
+  | OwnerType.demand
   | OwnerType.editProfile
   | OwnerType.fair
   | OwnerType.fairs
