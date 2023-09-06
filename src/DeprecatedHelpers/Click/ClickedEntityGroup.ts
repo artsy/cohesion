@@ -20,6 +20,7 @@ export type ClickedEntityDestinationType =
   | OwnerType.auctions
   | OwnerType.gene
   | OwnerType.worksForYou
+  | OwnerType.newWorksFromGalleriesYouFollow
 
 export interface ClickedEntityGroupArgs {
   contextModule: ContextModule
@@ -75,6 +76,9 @@ export const clickedEntityGroup = ({
     case OwnerType.artwork:
     case OwnerType.gene:
     case OwnerType.worksForYou:
+      action = ActionType.clickedArtworkGroup
+      break
+    case OwnerType.newWorksFromGalleriesYouFollow:
       action = ActionType.clickedArtworkGroup
       break
     case OwnerType.collection:

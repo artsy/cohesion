@@ -216,3 +216,4 @@ export type PageOwnerType =
   | OwnerType.viewingRoom
   | OwnerType.viewingRooms
   | OwnerType.worksForYou
+  | OwnerType.newWorksFromGalleriesYouFollow
