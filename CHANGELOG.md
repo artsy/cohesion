@@ -1,3 +1,15 @@
+# v4.138.0 (Wed Sep 06 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add newWorksByGalleriesYouFollowRail to auth context modules [#451](https://github.com/artsy/cohesion/pull/451) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.137.0 (Thu Aug 31 2023)
 
 #### 🚀  Enhancement
