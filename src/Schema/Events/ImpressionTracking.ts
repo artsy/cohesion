@@ -130,7 +130,7 @@ export interface ErrorMessageViewed {
  * ```
  *
  */
- export interface ValidationAddressViewed {
+export interface ValidationAddressViewed {
   action: ActionType.validationAddressViewed
   context_module: string
   context_page_owner_type: string
