@@ -89,6 +89,7 @@ export enum ContextModule {
   footer = "footer",
   frequentlyAskedQuestions = "frequentlyAskedQuestions",
   galleriesForYouBanner = "galleriesForYouBanner",
+  galleriesNearYouRail = "galleriesNearYouRail",
   galleryBoothRail = "galleryBoothRail",
   galleryTab = "galleryTab",
   geneHeader = "geneHeader",
@@ -242,6 +243,7 @@ export type AuthContextModule =
   | ContextModule.featuredArtistsRail
   | ContextModule.featuredGalleriesRail
   | ContextModule.footer
+  | ContextModule.galleriesNearYouRail
   | ContextModule.galleryTab
   | ContextModule.geneHeader
   | ContextModule.header
