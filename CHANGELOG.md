@@ -1,3 +1,15 @@
+# v4.140.0 (Thu Sep 07 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add galleriesNearYouRail context module [#453](https://github.com/artsy/cohesion/pull/453) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.139.0 (Wed Sep 06 2023)
 
 #### 🚀  Enhancement
