@@ -1063,6 +1063,10 @@ export enum ActionType {
    */
   tappedCreateAlert = "tappedCreateAlert",
   /**
+   * Corresponds to {@link TappedCreateAlertHeader}
+   */
+  tappedCreateAlertHeader = "tappedCreateAlertHeader",
+  /**
    * Corresponds to {@link TappedExploreGroup}
    */
   tappedExploreGroup = "tappedExploreGroup",
