@@ -62,6 +62,7 @@ export enum ContextModule {
   conversationBuyNowConfirmArtwork = "conversationBuyNowConfirmArtwork",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
   createAlert = "createAlert",
+  createAlertHeader = "createAlertHeader",
   curatedCollections = "curatedCollections",
   curatedHighlightsRail = "curatedHighlightsRail",
   curatedTrendingArtistsRail = "curatedTrendingArtistsRail",
