@@ -13,6 +13,7 @@ export enum ContextModule {
   article = "article",
   articles = "articles",
   articleTab = "articleTab",
+  artistArtworksGridEnd = "artistArtworksGridEnd",
   artistAuctionResults = "artistAuctionResults",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
