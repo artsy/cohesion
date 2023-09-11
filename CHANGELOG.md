@@ -1,3 +1,15 @@
+# v4.141.0 (Mon Sep 11 2023)
+
+#### 🚀  Enhancement
+
+- chore: add artistArtworksGridEnd [#454](https://github.com/artsy/cohesion/pull/454) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.140.0 (Thu Sep 07 2023)
 
 #### 🚀  Enhancement
