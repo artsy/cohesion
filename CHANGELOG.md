@@ -1,3 +1,15 @@
+# v4.143.0 (Mon Sep 11 2023)
+
+#### 🚀  Enhancement
+
+- chore: added tappedCreateAlertHeader action type [#456](https://github.com/artsy/cohesion/pull/456) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.142.0 (Mon Sep 11 2023)
 
 #### 🚀  Enhancement
