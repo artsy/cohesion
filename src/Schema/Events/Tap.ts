@@ -167,6 +167,26 @@ export interface TappedAuctionResultGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user clicks the Browse Similar Artworks button on an closed auction artwork page
+ *
+ * This schema describes events sent to Segment from [[tappedBrowseSimilarArtworks]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedBrowseSimilarArtworks",
+ *    context_module: "artworkClosedLotHeader",
+ *    context_page_owner_type: "artwork",
+ *    context__owner_id: "5fad78273c8451000d0c53b9",
+ *    context_screen_owner_slug: "andy-warhol",
+ *  }
+ * ```
+ */
+export interface TappedBrowseSimilarArtworks extends TappedEntityGroup {
+  action: ActionType.tappedBrowseSimilarArtworks
+}
+
+/**
  * A user taps a grouping of collections on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -248,6 +268,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
     | ActionType.tappedAuctionResultGroup
+    | ActionType.tappedBrowseSimilarArtworks
     | ActionType.tappedCollectionGroup
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
