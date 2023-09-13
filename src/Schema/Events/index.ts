@@ -171,6 +171,9 @@ import {
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
+  AddressAutoCompletionWithResults,
+  AddressAutoCompletionWithNoResults,
+  SelectedItemFromAddressAutoCompletion,
 } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -222,6 +225,8 @@ export type Event =
   | AddedArtworkToArtworkList
   | AddToCalendar
   | AddCollectedArtwork
+  | AddressAutoCompletionWithResults
+  | AddressAutoCompletionWithNoResults
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
@@ -340,6 +345,7 @@ export type Event =
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
+  |SelectedItemFromAddressAutoCompletion
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SentConsignmentInquiry
@@ -434,6 +440,14 @@ export enum ActionType {
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
+  /**
+   * Corresponds to {@link AddressAutoCompletionWithResults}
+   */
+   addressAutoCompletionWithResults = "addressAutoCompletionWithResults",
+  /**
+   * Corresponds to {@link AddressAutoCompletionWithNoResults}
+   */
+   addressAutoCompletionWithNoResults = "addressAutoCompletionWithNoResults",
   /**
    * Corresponds to {@link ArtworkDetailsCompleted}
    */
@@ -962,6 +976,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
+  /**
+   * Corresponds to {@link SelectedItemFromAddressAutoCompletion}
+   */
+  selectedItemFromAddressAutoCompletion = "selectedItemFromAddressAutoCompletion",
   /**
    * Corresponds to {@link SelectedRecentPriceRange}
    */

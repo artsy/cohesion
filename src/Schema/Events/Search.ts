@@ -235,3 +235,77 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
   destination_path: string
   label: "Artworks" | "Auction Results"
 }
+
+/**
+ * A User fills shipping address and has auto completion with results
+ *
+ * This schema describes events sent to Segment from [[addressAutoCompletionWithResults]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "addressAutoCompletionWithResults",
+ *    context_module:"OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    input: "Weserstr."
+ *  }
+ * ```
+ */
+ export interface AddressAutoCompletionWithResults {
+  action: ActionType.addressAutoCompletionWithResults
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  input: string
+}
+
+/**
+ * A User fills shipping address and has auto completion with no results
+ *
+ * This schema describes events sent to Segment from [[addressAutoCompletionWithNoResults]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "addressAutoCompletionWithNoResults",
+ *    context_module:"OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    input: "Wes"
+ *  }
+ * ```
+ */
+ export interface AddressAutoCompletionWithNoResults {
+  action: ActionType.addressAutoCompletionWithNoResults
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  input: string
+}
+
+/**
+ * A User selects one address from the address auto completion options
+ *
+ * This schema describes events sent to Segment from [[selectedItemFromAddressAutoCompletion]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedItemFromAddressAutoCompletion",
+ *    context_module:"OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    input: "Wes"
+ *    item: "Weserstr."
+ *  }
+ * ```
+ */
+ export interface SelectedItemFromAddressAutoCompletion {
+  action: ActionType.selectedItemFromAddressAutoCompletion
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  input: string
+  item: string
+}
