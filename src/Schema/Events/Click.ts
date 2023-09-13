@@ -208,6 +208,24 @@ export interface ClickedAuctionResultItem extends ClickedEntityGroup {
 }
 
 /**
+ * A user clicks the Browse Similar Artworks button on an closed auction artwork page
+ *
+ * This schema describes events sent to Segment from [[clickedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedBrowseSimilarArtworks",
+ *    context_module: "artworkClosedLotHeader",
+ *    context_page_owner_type: "artwork",
+ *  }
+ * ```
+ */
+export interface ClickedBrowseSimilarArtworks extends ClickedEntityGroup {
+  acttion: ActionType.clickedBrowseSimilarArtworks
+}
+
+/**
  * A user clicks a grouping of collections on web
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]
