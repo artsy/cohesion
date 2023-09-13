@@ -1,3 +1,15 @@
+# v4.144.0 (Wed Sep 13 2023)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-255): add clickedBrowseSimilarArtworks action type [#458](https://github.com/artsy/cohesion/pull/458) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.143.0 (Mon Sep 11 2023)
 
 #### 🚀  Enhancement
