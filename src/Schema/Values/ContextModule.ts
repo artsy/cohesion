@@ -102,6 +102,7 @@ export enum ContextModule {
   inboxInquiries = "inboxInquiries",
   inquiry = "inquiry",
   intextTooltip = "intextTooltip",
+  latestActivityRail = "latestActivityRail",
   latestViewingRoomsRail = "latestViewingRoomsRail",
   liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
