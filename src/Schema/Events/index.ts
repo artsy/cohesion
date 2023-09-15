@@ -1,7 +1,7 @@
 import {
   ClickedActivityPanelNotificationItem,
   ClickedActivityPanelTab,
-  ClickedNotificationsBell,
+  ClickedNotificationsBell
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
@@ -175,6 +175,7 @@ import {
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
+  TappedActivityGroup,
   TappedArticleGroup,
   TappedArticleShare,
   TappedArtistGroup,
@@ -350,6 +351,7 @@ export type Event =
   | StartedOnboarding
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
+  | TappedActivityGroup
   | TappedArticleGroup
   | TappedArticleShare
   | TappedArtistGroup
@@ -1000,6 +1002,10 @@ export enum ActionType {
    * Corresponds to {@link SuccessfullyLoggedIn}
    */
   successfullyLoggedIn = "successfullyLoggedIn",
+  /**
+   * Corresponds to {@link TappedActivityGroup}
+   */
+  tappedActivityGroup = "tappedActivityGroup",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */
