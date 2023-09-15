@@ -1629,7 +1629,7 @@ export interface ClickedOnDuplicateArtwork {
 export interface ClickedValidationAddressOptions {
   action: ActionType.clickedValidationAddressOptions
   context_module: ContextModule
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   user_id: string
   subject: string
@@ -1657,7 +1657,7 @@ export interface ClickedValidationAddressOptions {
 export interface ClickedCloseValidationAddressModal {
   action: ActionType.clickedCloseValidationAddressModal
   context_module: ContextModule
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   subject: string
   option: string
@@ -1684,7 +1684,7 @@ export interface ClickedCloseValidationAddressModal {
 export interface ClickedNavBar {
   action: ActionType.clickedNavBar
   context_module: ContextModule
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   destination_path: string
   subject: string
@@ -1711,7 +1711,7 @@ export interface ClickedNavBar {
 export interface ClickedUploadArtwork {
   action: ActionType.clickedUploadArtwork
   context_module: ContextModule
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   artist_id?: string
   search_criteria_id?: string
