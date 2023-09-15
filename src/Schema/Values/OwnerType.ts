@@ -4,6 +4,7 @@
  * @packageDocumentation
  */
 export enum OwnerType {
+  activities = "activities",
   allArtistSeries = "allArtistSeries",
   article = "article",
   articles = "articles",
@@ -99,6 +100,7 @@ export enum OwnerType {
  * Owner types available in iOS/Android
  */
 export type ScreenOwnerType =
+  | OwnerType.activities
   | OwnerType.allArtistSeries
   | OwnerType.article
   | OwnerType.articles
