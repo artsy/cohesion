@@ -1002,7 +1002,7 @@ export enum ActionType {
    * Corresponds to {@link SuccessfullyLoggedIn}
    */
   successfullyLoggedIn = "successfullyLoggedIn",
-    /**
+  /**
    * Corresponds to {@link TappedActivityGroup}
    */
   tappedActivityGroup = "tappedActivityGroup",
