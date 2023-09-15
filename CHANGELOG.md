@@ -1,3 +1,15 @@
+# v4.146.0 (Fri Sep 15 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add activities to TappedEntityDestinationType [#460](https://github.com/artsy/cohesion/pull/460) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.145.0 (Fri Sep 15 2023)
 
 #### 🚀  Enhancement
