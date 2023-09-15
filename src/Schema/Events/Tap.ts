@@ -1,8 +1,8 @@
+import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, ScreenOwnerType } from "../Values/OwnerType"
 import { Tab } from "../Values/Tab"
-import { ActionType } from "."
 
 /**
  * Schemas describing Tap events
@@ -38,6 +38,10 @@ import { ActionType } from "."
  */
 export interface TappedArticleGroup extends TappedEntityGroup {
   action: ActionType.tappedArticleGroup
+}
+
+export interface TappedActivityGroup extends TappedEntityGroup {
+  action: ActionType.tappedActivityGroup
 }
 
 export interface TappedShowGroup extends TappedEntityGroup {
@@ -261,6 +265,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
  */
 export interface TappedEntityGroup {
   action:
+    | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
     | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
