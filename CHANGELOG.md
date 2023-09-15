@@ -1,3 +1,15 @@
+# v4.145.0 (Fri Sep 15 2023)
+
+#### 🚀  Enhancement
+
+- feat: Add activityRail context module & activities screen owner type [#459](https://github.com/artsy/cohesion/pull/459) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.144.0 (Wed Sep 13 2023)
 
 #### 🚀  Enhancement
