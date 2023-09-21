@@ -165,14 +165,13 @@ import {
   ConsignmentArtistFailed,
   FocusedOnPriceDatabaseSearchInput,
   FocusedOnSearchInput,
+  FocusedOutAddresssBox,
   SearchedPriceDatabase,
   SearchedWithNoResults,
   SearchedWithResults,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
-  AddressAutoCompletionWithResults,
-  AddressAutoCompletionWithNoResults,
   SelectedItemFromAddressAutoCompletion,
 } from "./Search"
 import { Share } from "./Share"
@@ -225,8 +224,6 @@ export type Event =
   | AddedArtworkToArtworkList
   | AddToCalendar
   | AddCollectedArtwork
-  | AddressAutoCompletionWithResults
-  | AddressAutoCompletionWithNoResults
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
@@ -321,6 +318,7 @@ export type Event =
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
+  | FocusedOutAddresssBox
   | FollowEvents
   | Impression
   | MaxBidSelected
@@ -440,14 +438,6 @@ export enum ActionType {
    * Corresponds to {@link AddToCalendar}
    */
   addToCalendar = "addToCalendar",
-  /**
-   * Corresponds to {@link AddressAutoCompletionWithResults}
-   */
-   addressAutoCompletionWithResults = "addressAutoCompletionWithResults",
-  /**
-   * Corresponds to {@link AddressAutoCompletionWithNoResults}
-   */
-   addressAutoCompletionWithNoResults = "addressAutoCompletionWithNoResults",
   /**
    * Corresponds to {@link ArtworkDetailsCompleted}
    */
@@ -848,6 +838,10 @@ export enum ActionType {
    * Corresponds to {@link FocusedOnSearchInput}
    */
   focusedOnSearchInput = "focusedOnSearchInput",
+  /**
+   * Corresponds to {@link FocusedOutAddresssBox}
+   */
+   focusedOutAddresssBox = "focusedOutAddresssBox",
   /**
    * Corresponds to {@link FollowedArtist}
    */

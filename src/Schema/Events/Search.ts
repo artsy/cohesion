@@ -237,14 +237,14 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
 }
 
 /**
- * A User fills shipping address and has auto completion with results
+ * A user focuses out an address line box when there is input
  *
- * This schema describes events sent to Segment from [[addressAutoCompletionWithResults]]
+ * This schema describes events sent to Segment from [[focusedOutAddresssBox]]
  *
  *  @example
  *  ```
  *  {
- *    action: "addressAutoCompletionWithResults",
+ *    action: "focusedOutAddresssBox",
  *    context_module:"OrdersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
@@ -252,32 +252,8 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *  }
  * ```
  */
- export interface AddressAutoCompletionWithResults {
-  action: ActionType.addressAutoCompletionWithResults
-  context_module: ContextModule
-  context_owner_type: PageOwnerType
-  context_owner_id?: string
-  input: string
-}
-
-/**
- * A User fills shipping address and has auto completion with no results
- *
- * This schema describes events sent to Segment from [[addressAutoCompletionWithNoResults]]
- *
- *  @example
- *  ```
- *  {
- *    action: "addressAutoCompletionWithNoResults",
- *    context_module:"OrdersShipping",
- *    context_page_owner_type: "orders-shipping",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
- *    input: "Wes"
- *  }
- * ```
- */
- export interface AddressAutoCompletionWithNoResults {
-  action: ActionType.addressAutoCompletionWithNoResults
+ export interface FocusedOutAddresssBox {
+  action: ActionType.focusedOutAddresssBox
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
@@ -298,6 +274,8 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    input: "Wes"
  *    item: "Weserstr."
+ *    fetches: 3
+ *    results: 2
  *  }
  * ```
  */
@@ -308,4 +286,6 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
   context_owner_id?: string
   input: string
   item: string
+  fecthes: number
+  results: number
 }
