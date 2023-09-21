@@ -1727,23 +1727,19 @@ export interface ClickedUploadArtwork {
  *  ```
  *  {
  *    action: "clickedVerifiedRepresentative",
- *    context_module: "alerts-price"
+ *    context_module: ""
  *    context_page_owner_type: PageOwnerType
- *    context_page_owner_id?: string
- *    context_page_owner_slug?: string
- *    artist_id?: string
+ *    context_page_owner_id?: "artist_id"
  *    destination_page_owner_type: PageOwnerType
- *    destination_page_owner_id?: string
- *    destination_page_owner_slug?: string
+ *    destination_page_owner_id?: "partner_id"
  *  }
  * ```
  */
 export interface ClickedVerifiedRepresentative {
   action: ActionType.clickedVerifiedRepresentative
-  context_module: ContextModule
+  context_module?: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
-  context_page_owner_slug?: string
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id: string
 }

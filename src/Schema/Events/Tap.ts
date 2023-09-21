@@ -960,3 +960,29 @@ export interface LongPressedArtwork {
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
 }
+
+/**
+ *  User taps on the gallery representation pill under featured representation on the artist page 
+ *
+ *  This schema describes events sent to Segment from [[tappeddVerifiedRepresentative]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedVerifiedRepresentative",
+ *    context_module: ""
+ *    context_screen_owner_type: PageOwnerType
+ *    context_screen_owner_id?: "artist_id"
+ *    destination_screen_owner_type: PageOwnerType
+ *    destination_screen_owner_id?: "partner_id"
+ *  }
+ * ```
+ */
+export interface TappedVerifiedRepresentative {
+  action: ActionType.tappedVerifiedRepresentative
+  context_module?: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+}

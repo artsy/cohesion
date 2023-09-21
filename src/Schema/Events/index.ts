@@ -1223,6 +1223,10 @@ export enum ActionType {
    */
   tappedViewOffer = "tappedViewOffer",
   /**
+   * Corresponds to {@link TappedVerifiedRepresentative}
+   */
+  tappedVerifiedRepresentative = "tappedVerifiedRepresentative",
+  /**
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
