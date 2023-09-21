@@ -739,6 +739,10 @@ export enum ActionType {
    */
   clickedCloseValidationAddressModal = "clickedCloseValidationAddressModal",
   /**
+   * Corresponds to {@link ClickedVerifiedRepresentative}
+   */
+  clickedVerifiedRepresentative = "clickedVerifiedRepresentative",
+  /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
