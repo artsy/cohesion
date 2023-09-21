@@ -1,3 +1,15 @@
+# v4.148.0 (Thu Sep 21 2023)
+
+#### 🚀  Enhancement
+
+- DIA-112 Adding tracking of clicks on the gallery verified rep pill [#462](https://github.com/artsy/cohesion/pull/462) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.147.0 (Fri Sep 15 2023)
 
 #### 🚀  Enhancement
