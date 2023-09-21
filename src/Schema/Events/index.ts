@@ -739,6 +739,10 @@ export enum ActionType {
    */
   clickedCloseValidationAddressModal = "clickedCloseValidationAddressModal",
   /**
+   * Corresponds to {@link ClickedVerifiedRepresentative}
+   */
+  clickedVerifiedRepresentative = "clickedVerifiedRepresentative",
+  /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
@@ -1218,6 +1222,10 @@ export enum ActionType {
    * Corresponds to {@link TappedViewOffer}
    */
   tappedViewOffer = "tappedViewOffer",
+  /**
+   * Corresponds to {@link TappedVerifiedRepresentative}
+   */
+  tappedVerifiedRepresentative = "tappedVerifiedRepresentative",
   /**
    * Corresponds to {@link TimeOnPage}
    */

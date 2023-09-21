@@ -1717,3 +1717,29 @@ export interface ClickedUploadArtwork {
   search_criteria_id?: string
   subject: string
 }
+
+/**
+ *  User clicks on the gallery representation pill under featured representation on the artist page 
+ *
+ *  This schema describes events sent to Segment from [[clickedVerifiedRepresentative]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedVerifiedRepresentative",
+ *    context_module: ""
+ *    context_page_owner_type: PageOwnerType
+ *    context_page_owner_id?: "artist_id"
+ *    destination_page_owner_type: PageOwnerType
+ *    destination_page_owner_id?: "partner_id"
+ *  }
+ * ```
+ */
+export interface ClickedVerifiedRepresentative {
+  action: ActionType.clickedVerifiedRepresentative
+  context_module?: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+}
