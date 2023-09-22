@@ -162,10 +162,11 @@ import {
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
+  AddressAutoCompletionResult,
   ConsignmentArtistFailed,
+  EditedAutocompletedAddress,
   FocusedOnPriceDatabaseSearchInput,
   FocusedOnSearchInput,
-  FocusedOutAddresssBox,
   SearchedPriceDatabase,
   SearchedWithNoResults,
   SearchedWithResults,
@@ -224,6 +225,7 @@ export type Event =
   | AddedArtworkToArtworkList
   | AddToCalendar
   | AddCollectedArtwork
+  | AddressAutoCompletionResult
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
@@ -308,6 +310,7 @@ export type Event =
   | DeletedSavedSearch
   | EditCollectedArtwork
   | EditedArtworkList
+  | EditedAutocompletedAddress
   | EditedSavedSearch
   | EditedUserProfile
   | EnterLiveAuction
@@ -318,7 +321,6 @@ export type Event =
   | FocusedOnConversationMessageInput
   | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
-  | FocusedOutAddresssBox
   | FollowEvents
   | Impression
   | MaxBidSelected
@@ -430,6 +432,10 @@ export enum ActionType {
    * Corresponds to {@link AddCollectedArtwork}
    */
   addCollectedArtwork = "addCollectedArtwork",
+  /**
+   * Corresponds to {@link AddressAutoCompletionResult}
+   */
+   addressAutoCompletionResult = "addressAutoCompletionResult",
   /**
    * Corresponds to {@link AddNewArtistName}
    */
@@ -795,6 +801,10 @@ export enum ActionType {
    */
   editCollectedArtwork = "editCollectedArtwork",
   /**
+   * Corresponds to {@link EditedAutocompletedAddress}
+   */
+   editedAutocompletedAddress = "editedAutocompletedAddress",
+  /**
    * Corresponds to {@link EditedArtworkList}
    */
   editedArtworkList = "editedArtworkList",
@@ -838,10 +848,6 @@ export enum ActionType {
    * Corresponds to {@link FocusedOnSearchInput}
    */
   focusedOnSearchInput = "focusedOnSearchInput",
-  /**
-   * Corresponds to {@link FocusedOutAddresssBox}
-   */
-   focusedOutAddresssBox = "focusedOutAddresssBox",
   /**
    * Corresponds to {@link FollowedArtist}
    */
