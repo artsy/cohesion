@@ -345,7 +345,7 @@ export type Event =
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
-  |SelectedItemFromAddressAutoCompletion
+  | SelectedItemFromAddressAutoCompletion
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SentConsignmentInquiry
