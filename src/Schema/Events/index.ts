@@ -435,7 +435,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link AddressAutoCompletionResult}
    */
-   addressAutoCompletionResult = "addressAutoCompletionResult",
+  addressAutoCompletionResult = "addressAutoCompletionResult",
   /**
    * Corresponds to {@link AddNewArtistName}
    */
@@ -803,7 +803,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link EditedAutocompletedAddress}
    */
-   editedAutocompletedAddress = "editedAutocompletedAddress",
+  editedAutocompletedAddress = "editedAutocompletedAddress",
   /**
    * Corresponds to {@link EditedArtworkList}
    */
