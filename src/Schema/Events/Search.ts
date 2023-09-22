@@ -309,6 +309,5 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
-  input: string
   field: string
 }
