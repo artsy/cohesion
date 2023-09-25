@@ -1,3 +1,15 @@
+# v4.149.0 (Mon Sep 25 2023)
+
+#### 🚀  Enhancement
+
+- [AS-4137] Address auto completion tracking [#457](https://github.com/artsy/cohesion/pull/457) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.148.0 (Thu Sep 21 2023)
 
 #### 🚀  Enhancement
