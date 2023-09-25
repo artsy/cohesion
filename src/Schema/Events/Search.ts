@@ -237,7 +237,7 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
 }
 
 /**
- * User fills shipping address and has/or not auto completion with results
+ * User fills address and has/or not auto completion with results
  * 
  * This schema describes events sent to Segment from [[addressAutoCompletionResult]]
  *
