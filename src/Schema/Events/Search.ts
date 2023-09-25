@@ -235,3 +235,79 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
   destination_path: string
   label: "Artworks" | "Auction Results"
 }
+
+/**
+ * User fills address and has/or not auto completion with results
+ * 
+ * This schema describes events sent to Segment from [[addressAutoCompletionResult]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "addressAutoCompletionResult",
+ *    context_module:"OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    input: "Weserstr."
+ *    suggested_addresses_results: 3 
+ *  }
+ * ```
+ */
+ export interface AddressAutoCompletionResult {
+  action: ActionType.addressAutoCompletionResult
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  input: string
+  suggested_addresses_results: number 
+}
+
+/**
+ * A User selects one address from the address auto completion options
+ *
+ * This schema describes events sent to Segment from [[selectedItemFromAddressAutoCompletion]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedItemFromAddressAutoCompletion",
+ *    context_module:"OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    input: "Wes"
+ *    item: "Weserstr."
+ *  }
+ * ```
+ */
+ export interface SelectedItemFromAddressAutoCompletion {
+  action: ActionType.selectedItemFromAddressAutoCompletion
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  input: string
+  item: string
+}
+
+/**
+ * User edits a suggested address
+ *
+ * This schema describes events sent to Segment from [[editedAutocompletedAddress]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "editedAutocompletedAddress",
+ *    context_module:"OrdersShipping",
+ *    context_page_owner_type: "orders-shipping",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    field: "Address line 2"
+ *  }
+ * ```
+ */
+ export interface EditedAutocompletedAddress {
+  action: ActionType.editedAutocompletedAddress
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  field: string
+}

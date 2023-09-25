@@ -162,7 +162,9 @@ import {
 import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
+  AddressAutoCompletionResult,
   ConsignmentArtistFailed,
+  EditedAutocompletedAddress,
   FocusedOnPriceDatabaseSearchInput,
   FocusedOnSearchInput,
   SearchedPriceDatabase,
@@ -171,6 +173,7 @@ import {
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
+  SelectedItemFromAddressAutoCompletion,
 } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -224,6 +227,7 @@ export type Event =
   | AddedArtworkToArtworkList
   | AddToCalendar
   | AddCollectedArtwork
+  | AddressAutoCompletionResult
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
@@ -308,6 +312,7 @@ export type Event =
   | DeletedSavedSearch
   | EditCollectedArtwork
   | EditedArtworkList
+  | EditedAutocompletedAddress
   | EditedSavedSearch
   | EditedUserProfile
   | EnterLiveAuction
@@ -342,6 +347,7 @@ export type Event =
   | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
+  | SelectedItemFromAddressAutoCompletion
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SentConsignmentInquiry
@@ -430,6 +436,10 @@ export enum ActionType {
    * Corresponds to {@link AddCollectedArtwork}
    */
   addCollectedArtwork = "addCollectedArtwork",
+  /**
+   * Corresponds to {@link AddressAutoCompletionResult}
+   */
+  addressAutoCompletionResult = "addressAutoCompletionResult",
   /**
    * Corresponds to {@link AddNewArtistName}
    */
@@ -799,6 +809,10 @@ export enum ActionType {
    */
   editCollectedArtwork = "editCollectedArtwork",
   /**
+   * Corresponds to {@link EditedAutocompletedAddress}
+   */
+  editedAutocompletedAddress = "editedAutocompletedAddress",
+  /**
    * Corresponds to {@link EditedArtworkList}
    */
   editedArtworkList = "editedArtworkList",
@@ -970,6 +984,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
+  /**
+   * Corresponds to {@link SelectedItemFromAddressAutoCompletion}
+   */
+  selectedItemFromAddressAutoCompletion = "selectedItemFromAddressAutoCompletion",
   /**
    * Corresponds to {@link SelectedRecentPriceRange}
    */
