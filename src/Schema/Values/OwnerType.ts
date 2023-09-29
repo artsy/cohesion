@@ -136,6 +136,7 @@ export type ScreenOwnerType =
   | OwnerType.inboxBids
   | OwnerType.inboxConversation
   | OwnerType.inboxInquiries
+  | OwnerType.lotsByArtistsYouFollow
   | OwnerType.myCollection
   | OwnerType.myCollectionAddArtworkArtist
   | OwnerType.myCollectionArtwork
