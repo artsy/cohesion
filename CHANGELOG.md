@@ -1,3 +1,15 @@
+# v4.150.0 (Fri Sep 29 2023)
+
+#### 🚀  Enhancement
+
+- feat: add lotsByArtistsYouFollow [#463](https://github.com/artsy/cohesion/pull/463) ([@gkartalis](https://github.com/gkartalis))
+
+#### Authors: 1
+
+- George ([@gkartalis](https://github.com/gkartalis))
+
+---
+
 # v4.149.0 (Mon Sep 25 2023)
 
 #### 🚀  Enhancement
