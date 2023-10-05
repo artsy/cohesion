@@ -1,3 +1,15 @@
+# v4.152.0 (Thu Oct 05 2023)
+
+#### 🚀  Enhancement
+
+- Fix examples for address auto completion events [#465](https://github.com/artsy/cohesion/pull/465) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.151.0 (Fri Sep 29 2023)
 
 #### 🚀  Enhancement
