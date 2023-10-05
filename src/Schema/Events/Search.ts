@@ -246,8 +246,8 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *  {
  *    action: "addressAutoCompletionResult",
  *    context_module:"OrdersShipping",
- *    context_page_owner_type: "orders-shipping",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_owner_type: "orders-shipping",
+ *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    input: "Weserstr."
  *    suggested_addresses_results: 3 
  *  }
@@ -272,8 +272,8 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *  {
  *    action: "selectedItemFromAddressAutoCompletion",
  *    context_module:"OrdersShipping",
- *    context_page_owner_type: "orders-shipping",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_owner_type: "orders-shipping",
+ *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    input: "Wes"
  *    item: "Weserstr."
  *  }
@@ -298,8 +298,8 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *  {
  *    action: "editedAutocompletedAddress",
  *    context_module:"OrdersShipping",
- *    context_page_owner_type: "orders-shipping",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_owner_type: "orders-shipping",
+ *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    field: "Address line 2"
  *  }
  * ```
