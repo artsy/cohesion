@@ -753,9 +753,9 @@ export enum ActionType {
    */
   clickedVerifiedRepresentative = "clickedVerifiedRepresentative",
   /**
-   * Corresponds to {@link ClickedRelatedCategory}
+   * Corresponds to {@link ClickedGene}
    */
-  clickedRelatedCategory = "clickedRelatedCategory",
+  clickedGene = "clickedGene",
   /**
    * Corresponds to {@link ClickedHighlightAchievement}
    */
@@ -1253,9 +1253,9 @@ export enum ActionType {
    */
   tappedVerifiedRepresentative = "tappedVerifiedRepresentative",
   /**
-   * Corresponds to {@link TappedRelatedCategory}
+   * Corresponds to {@link TappedGene}
    */
-  tappedRelatedCategory = "tappedRelatedCategory",
+  tappedGene = "tappedGene",
   /**
    * Corresponds to {@link TappedHighlightAchievement}
    */

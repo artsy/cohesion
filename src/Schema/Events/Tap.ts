@@ -990,12 +990,12 @@ export interface TappedVerifiedRepresentative {
 /**
  * A user taps one of the related categories (genes) in the artist about tab
  *
- * This schema describes events sent to Segment from [[tappedRelatedCategory]]
+ * This schema describes events sent to Segment from [[tappedGene]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedRelatedCategory",
+ *    action: "tappedGene",
  *    context_module : "Young British Artists",
  *    context_screen_owner_type: "Artwork",
  *    context_screen_owner_id: "58de681f275b2464fcdde097",
@@ -1006,8 +1006,8 @@ export interface TappedVerifiedRepresentative {
  *  }
  * ```
  */
-export interface TappedRelatedCategory {
-  action: ActionType.tappedRelatedCategory
+export interface TappedGene {
+  action: ActionType.tappedGene
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string

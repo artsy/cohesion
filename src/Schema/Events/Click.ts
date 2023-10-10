@@ -1747,12 +1747,12 @@ export interface ClickedVerifiedRepresentative {
 /**
  * A user clicks one of the related categories(genes) in the artist about tab
  *
- *  This schema describes events sent to Segment from [[clickedRelatedCategory]]
+ *  This schema describes events sent to Segment from [[clickedGene]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedRelatedCategory",
+ *    action: "clickedGene",
  *    context_module : "Young British Artists",
  *    context_screen_owner_type: "Artwork",
  *    context_screen_owner_id: "58de681f275b2464fcdde097",
@@ -1763,14 +1763,14 @@ export interface ClickedVerifiedRepresentative {
  *  }
  * ```
  */
-export interface ClickedRelatedCategory {
-  action: ActionType.clickedRelatedCategory
+export interface ClickedGene {
+  action: ActionType.clickedGene
   context_module: ContextModule
-  context_screen_owner_type: PageOwnerType
-  context_screen_owner_id: string
-  context_screen_owner_slug?: string
-  destination_screen_owner_type: PageOwnerType
-  destination_screen_owner_id: string
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
   subject?: string
 }
 
@@ -1796,7 +1796,7 @@ export interface ClickedRelatedCategory {
 export interface ClickedHighlightAchievement {
   action: ActionType.clickedHighlightAchievement
   context_module: ContextModule
-  context_screen_owner_type: PageOwnerType
-  context_screen_owner_id: string
-  context_screen_owner_slug?: string
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
 }
