@@ -1754,11 +1754,11 @@ export interface ClickedVerifiedRepresentative {
  *  {
  *    action: "clickedGene",
  *    context_module : "Young British Artists",
- *    context_screen_owner_type: "Artwork",
- *    context_screen_owner_id: "58de681f275b2464fcdde097",
- *    context_screen_owner_slug: "damien-hirst",
- *    destination_screen_owner_type: "Gene"
- *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *    context_page_owner_type: "Artwork",
+ *    context_page_owner_id: "58de681f275b2464fcdde097",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_page_owner_type: "Gene"
+ *    destination_page_owner_id: "58de681f275b2464fcdde097"
  *    subject: ""
  *  }
  * ```
@@ -1784,11 +1784,11 @@ export interface ClickedGene {
  *  {
  *    action: "clickedHighlightAchievement",
  *    context_module : "Active Secondary Market",
- *    context_screen_owner_type: "Artwork",
- *    context_screen_owner_id: "58de681f275b2464fcdde097",
- *    context_screen_owner_slug: "damien-hirst",
- *    destination_screen_owner_type: "Gene"
- *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *    context_page_owner_type: "Artwork",
+ *    context_page_owner_id: "58de681f275b2464fcdde097",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_page_owner_type: "Gene"
+ *    destination_page_owner_id: "58de681f275b2464fcdde097"
  *    subject: ""
  *  }
  * ```
