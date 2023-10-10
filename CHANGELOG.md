@@ -1,3 +1,15 @@
+# v4.153.0 (Tue Oct 10 2023)
+
+#### 🚀  Enhancement
+
+- DIA-207 Adding tracking for genes clicks and Highlights on the artist page [#466](https://github.com/artsy/cohesion/pull/466) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.152.0 (Thu Oct 05 2023)
 
 #### 🚀  Enhancement
