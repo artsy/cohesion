@@ -753,6 +753,14 @@ export enum ActionType {
    */
   clickedVerifiedRepresentative = "clickedVerifiedRepresentative",
   /**
+   * Corresponds to {@link ClickedRelatedCategory}
+   */
+  clickedRelatedCategory = "clickedRelatedCategory",
+  /**
+   * Corresponds to {@link ClickedHighlightAchievement}
+   */
+  clickedHighlightAchievement = "clickedHighlightAchievement",
+  /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
@@ -1244,6 +1252,14 @@ export enum ActionType {
    * Corresponds to {@link TappedVerifiedRepresentative}
    */
   tappedVerifiedRepresentative = "tappedVerifiedRepresentative",
+  /**
+   * Corresponds to {@link TappedRelatedCategory}
+   */
+  tappedRelatedCategory = "tappedRelatedCategory",
+  /**
+   * Corresponds to {@link TappedHighlightAchievement}
+   */
+  tappedHighlightAchievement = "tappedHighlightAchievement",
   /**
    * Corresponds to {@link TimeOnPage}
    */

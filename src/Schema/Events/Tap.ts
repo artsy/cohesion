@@ -986,3 +986,61 @@ export interface TappedVerifiedRepresentative {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id: string
 }
+
+/**
+ * A user taps one of the related categories (genes) in the artist about tab
+ *
+ * This schema describes events sent to Segment from [[tappedRelatedCategory]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedRelatedCategory",
+ *    context_module : "Young British Artists",
+ *    context_screen_owner_type: "Artwork",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "damien-hirst",
+ *    destination_screen_owner_type: "Gene"
+ *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *    subject: ""
+ *  }
+ * ```
+ */
+export interface TappedRelatedCategory {
+  action: ActionType.tappedRelatedCategory
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+  /** The text of the tapped button */
+  subject: string
+}
+
+/**
+ * A user taps one of the Highlight and Achievement toggles in the artist header
+ *
+ * This schema describes events sent to Segment from [[tappedHighlightAchievement]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedHighlightAchievement",
+ *    context_module : "Active Secondary Market",
+ *    context_screen_owner_type: "Artwork",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "damien-hirst",
+ *    destination_screen_owner_type: "Gene"
+ *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *    subject: ""
+ *  }
+ * ```
+ */
+export interface TappedHighlightAchievement {
+  action: ActionType.tappedHighlightAchievement
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+}

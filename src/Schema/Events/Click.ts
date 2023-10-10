@@ -1743,3 +1743,60 @@ export interface ClickedVerifiedRepresentative {
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id: string
 }
+
+/**
+ * A user clicks one of the related categories(genes) in the artist about tab
+ *
+ *  This schema describes events sent to Segment from [[clickedRelatedCategory]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedRelatedCategory",
+ *    context_module : "Young British Artists",
+ *    context_screen_owner_type: "Artwork",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "damien-hirst",
+ *    destination_screen_owner_type: "Gene"
+ *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *    subject: ""
+ *  }
+ * ```
+ */
+export interface ClickedRelatedCategory {
+  action: ActionType.clickedRelatedCategory
+  context_module: ContextModule
+  context_screen_owner_type: PageOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type: PageOwnerType
+  destination_screen_owner_id: string
+  subject?: string
+}
+
+/**
+ * A user clicks one of the Highlight and Achievement toggles in the artist header
+ *
+ * This schema describes events sent to Segment from [[clickedHighlightAchievement]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedHighlightAchievement",
+ *    context_module : "Active Secondary Market",
+ *    context_screen_owner_type: "Artwork",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    context_screen_owner_slug: "damien-hirst",
+ *    destination_screen_owner_type: "Gene"
+ *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *    subject: ""
+ *  }
+ * ```
+ */
+export interface ClickedHighlightAchievement {
+  action: ActionType.clickedHighlightAchievement
+  context_module: ContextModule
+  context_screen_owner_type: PageOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+}
