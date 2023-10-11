@@ -1,3 +1,15 @@
+# v4.154.0 (Wed Oct 11 2023)
+
+#### 🚀  Enhancement
+
+- chore(deps): update cimg/python docker tag to v3.12 [#467](https://github.com/artsy/cohesion/pull/467) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 1
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+
+---
+
 # v4.153.0 (Tue Oct 10 2023)
 
 #### 🚀  Enhancement
