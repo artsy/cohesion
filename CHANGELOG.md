@@ -1,3 +1,15 @@
+# v4.155.0 (Tue Oct 24 2023)
+
+#### 🚀  Enhancement
+
+- Demand 1.1 tracking [#469](https://github.com/artsy/cohesion/pull/469) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.154.0 (Wed Oct 11 2023)
 
 #### 🚀  Enhancement
