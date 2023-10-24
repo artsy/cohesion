@@ -1719,7 +1719,7 @@ export interface ClickedUploadArtwork {
 }
 
 /**
- *  User clicks on the gallery representation pill under featured representation on the artist page 
+ *  User clicks on the gallery representation pill under featured representation on the artist page
  *
  *  This schema describes events sent to Segment from [[clickedVerifiedRepresentative]]
  *
@@ -1799,4 +1799,54 @@ export interface ClickedHighlightAchievement {
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
+}
+
+/**
+ * A user clicks expand filter panel in CMS
+ *
+ * This schema describes events sent to Segment from [[clickedExpandFilterPanel]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "ClickedExpandFilterPanel",
+ *    context_page_owner_type: "Demand",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: ""
+ *    label: "Filters"
+ *  }
+ * ```
+ */
+export interface ClickedExpandFilterPanel {
+  action: ActionType.clickedExpandFilterPanel
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  label: string
+}
+
+/**
+ * A user clicks a filter in the alert filter panel
+ *
+ * This schema describes events sent to Segment from [[ClickedAlertsFilters]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "ClickedAlertsFilters",
+ *    context_page_owner_type: "Demand",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    changed: "{"represented_artists":["true"]}"
+ *    current: "{}"
+ *  }
+ * ```
+ */
+export interface ClickedAlertsFilters {
+  action: ActionType.clickedAlertsFilters
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  changed: string
+  current: string
 }

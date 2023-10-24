@@ -1,7 +1,7 @@
 import {
   ClickedActivityPanelNotificationItem,
   ClickedActivityPanelTab,
-  ClickedNotificationsBell
+  ClickedNotificationsBell,
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
@@ -36,6 +36,7 @@ import {
   CheckedAccountBalance,
   ClickedAddNewShippingAddress,
   ClickedAddWorksToFair,
+  ClickedAlertsFilters,
   ClickedAppDownload,
   ClickedArticleGroup,
   ClickedArtistGroup,
@@ -55,6 +56,7 @@ import {
   ClickedDeliveryMethod,
   ClickedDismissInquiry,
   ClickedEditArtwork,
+  ClickedExpandFilterPanel,
   ClickedExpansionToggle,
   ClickedFairCard,
   ClickedFairGroup,
@@ -170,10 +172,10 @@ import {
   SearchedPriceDatabase,
   SearchedWithNoResults,
   SearchedWithResults,
+  SelectedItemFromAddressAutoCompletion,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
-  SelectedItemFromAddressAutoCompletion,
 } from "./Search"
 import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -240,6 +242,7 @@ export type Event =
   | ClickedActivityPanelTab
   | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
+  | ClickedAlertsFilters
   | ClickedAppDownload
   | ClickedArticleGroup
   | ClickedArtistGroup
@@ -256,6 +259,7 @@ export type Event =
   | ClickedCreateAlert
   | ClickedDeliveryMethod
   | ClickedEditArtwork
+  | ClickedExpandFilterPanel
   | ClickedExpansionToggle
   | ClickedFairCard
   | ClickedFairGroup
@@ -493,6 +497,10 @@ export enum ActionType {
    */
   clickedAddWorksToFair = "clickedAddWorksToFair",
   /**
+   * Corresponds to {@link ClickedAlertsFilters}
+   */
+  clickedAlertsFilters = "clickedAlertsFilters",
+  /**
    * Corresponds to {@link ClickedAppDownload}
    */
   clickedAppDownload = "clickedAppDownload",
@@ -564,6 +572,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedExpansionToggle}
    */
   clickedExpansionToggle = "clickedExpansionToggle",
+  /**
+   * Corresponds to {@link ClickedExpandFilterPanel}
+   */
+  clickedExpandFilterPanel = "clickedExpandFilterPanel",
   /**
    * Corresponds to {@link ClickedExternalNewsSource}
    */
