@@ -1,3 +1,16 @@
+# v4.157.0 (Wed Nov 15 2023)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-375): add ContextModule and OwnerType for alerts filters [#471](https://github.com/artsy/cohesion/pull/471) ([@dariakoko](https://github.com/dariakoko) [@dblandin](https://github.com/dblandin))
+
+#### Authors: 2
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.156.0 (Wed Nov 15 2023)
 
 #### 🚀  Enhancement
