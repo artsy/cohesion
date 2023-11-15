@@ -6,6 +6,8 @@
 export enum OwnerType {
   activities = "activities",
   allArtistSeries = "allArtistSeries",
+  alerts = "alerts",
+  alertDetails = "alertDetails",
   alertConfirmation = "alertConfirmation",
   alertFilters = "alertFilters",
   article = "article",
@@ -105,6 +107,10 @@ export enum OwnerType {
 export type ScreenOwnerType =
   | OwnerType.activities
   | OwnerType.allArtistSeries
+  | OwnerType.alerts
+  | OwnerType.alertDetails
+  | OwnerType.alertConfirmation
+  | OwnerType.alertFilters
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
