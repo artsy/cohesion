@@ -1,8 +1,8 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, ScreenOwnerType } from "../Values/OwnerType"
 import { Tab } from "../Values/Tab"
+import { ActionType } from "."
 
 /**
  * Schemas describing Tap events
@@ -962,7 +962,7 @@ export interface LongPressedArtwork {
 }
 
 /**
- *  User taps on the gallery representation pill under featured representation on the artist page 
+ *  User taps on the gallery representation pill under featured representation on the artist page
  *
  *  This schema describes events sent to Segment from [[tappeddVerifiedRepresentative]]
  *

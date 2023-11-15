@@ -6,6 +6,8 @@
 export enum OwnerType {
   activities = "activities",
   allArtistSeries = "allArtistSeries",
+  alertConfirmation = "alertConfirmation",
+  alertFilters = "alertFilters",
   article = "article",
   articles = "articles",
   artist = "artist",
