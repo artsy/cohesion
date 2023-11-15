@@ -238,6 +238,7 @@ export type AuthContextModule =
   | ContextModule.collectionDescription
   | ContextModule.collectorProfile
   | ContextModule.consignSubmissionFlow
+  | ContextModule.createAlert
   | ContextModule.currentShowsRail
   | ContextModule.fairInfo
   | ContextModule.fairOrganizerHeader
