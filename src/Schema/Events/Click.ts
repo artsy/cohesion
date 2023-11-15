@@ -14,6 +14,29 @@ import { ActionType } from "."
  *  Events are separated by entity type
  *
  */
+
+/**
+ *  User clicks "Add Filters" button within the alert create/edit flow.
+ *
+ *  This schema describes events sent to Segment from [[clickedAddFilters]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAddFilters",
+ *    context_module: "alertDetails",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b92b34eb68a1b2c0003f4"
+ *  }
+ * ```
+ */
+export interface ClickedAddFilters {
+  action: ActionType.clickedAddFilters
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+}
+
 /**
  *  User clicks to add new shipping address when entering the orders
  *  checkout flow.

@@ -1,8 +1,8 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, ScreenOwnerType } from "../Values/OwnerType"
 import { Tab } from "../Values/Tab"
+import { ActionType } from "."
 
 /**
  * Schemas describing Tap events
@@ -15,6 +15,24 @@ import { Tab } from "../Values/Tab"
  *  Events are separated by entity type
  *
  */
+
+/**
+ *  User taps "Add Filters" button within the alert create/edit flow.
+ *
+ *  This schema describes events sent to Segment from [[tappedAddFilters]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAddFilters",
+ *    context_screen_owner_type: "alertDetails",
+ *  }
+ * ```
+ */
+export interface TappedAddFilters {
+  action: ActionType.tappedAddFilters
+  context_screen_owner_type: ScreenOwnerType
+}
 
 /**
  * A user taps a grouping of articles on iOS
@@ -962,7 +980,7 @@ export interface LongPressedArtwork {
 }
 
 /**
- *  User taps on the gallery representation pill under featured representation on the artist page 
+ *  User taps on the gallery representation pill under featured representation on the artist page
  *
  *  This schema describes events sent to Segment from [[tappeddVerifiedRepresentative]]
  *
