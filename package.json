@@ -1,6 +1,6 @@
 {
   "name": "@artsy/cohesion",
-  "version": "4.155.0",
+  "version": "4.156.0",
   "description": "Analytics schema",
   "main": "dist/index.js",
   "publishConfig": {
