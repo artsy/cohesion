@@ -1,3 +1,15 @@
+# v4.156.0 (Wed Nov 15 2023)
+
+#### 🚀  Enhancement
+
+- chore: Add createAlert to AuthContextModule [#470](https://github.com/artsy/cohesion/pull/470) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.155.0 (Tue Oct 24 2023)
 
 #### 🚀  Enhancement
