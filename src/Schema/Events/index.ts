@@ -34,6 +34,7 @@ import {
 } from "./Authentication"
 import {
   CheckedAccountBalance,
+  ClickedAddFilters,
   ClickedAddNewShippingAddress,
   ClickedAddWorksToFair,
   ClickedAlertsFilters,
@@ -181,6 +182,7 @@ import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   TappedActivityGroup,
+  TappedAddFilters,
   TappedArticleGroup,
   TappedArticleShare,
   TappedArtistGroup,
@@ -240,6 +242,7 @@ export type Event =
   | ClickedActiveBid
   | ClickedActivityPanelNotificationItem
   | ClickedActivityPanelTab
+  | ClickedAddFilters
   | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
   | ClickedAlertsFilters
@@ -362,6 +365,7 @@ export type Event =
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
   | TappedActivityGroup
+  | TappedAddFilters
   | TappedArticleGroup
   | TappedArticleShare
   | TappedArtistGroup
@@ -488,6 +492,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedActivityPanelTab}
    */
   clickedActivityPanelTab = "clickedActivityPanelTab",
+  /**
+   * Corresponds to {@link ClickedAddFilters}
+   */
+  clickedAddFilters = "clickedAddFilters",
   /**
    * Corresponds to {@link ClickedAddNewShippingAddress}
    */
@@ -1048,6 +1056,10 @@ export enum ActionType {
    * Corresponds to {@link TappedActivityGroup}
    */
   tappedActivityGroup = "tappedActivityGroup",
+  /**
+   * Corresponds to {@link TappedAddFilters}
+   */
+  tappedAddFilters = "tappedAddFilters",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */

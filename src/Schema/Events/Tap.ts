@@ -17,6 +17,24 @@ import { ActionType } from "."
  */
 
 /**
+ *  User taps "Add Filters" button within the alert create/edit flow.
+ *
+ *  This schema describes events sent to Segment from [[tappedAddFilters]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAddFilters",
+ *    context_screen_owner_type: "alertDetails",
+ *  }
+ * ```
+ */
+export interface TappedAddFilters {
+  action: ActionType.tappedAddFilters
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
  * A user taps a grouping of articles on iOS
  *
  *  This schema describes events sent to Segment from [[tappedArticleGroup]]
