@@ -185,6 +185,7 @@ export type ScreenOwnerType =
  * Owner types available in web/mobile web
  */
 export type PageOwnerType =
+  | OwnerType.alertConfirmation
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
