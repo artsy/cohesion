@@ -1,3 +1,20 @@
+# v4.158.0 (Tue Nov 21 2023)
+
+#### 🚀  Enhancement
+
+- PR to update the version number [#474](https://github.com/artsy/cohesion/pull/474) ([@dariakoko](https://github.com/dariakoko))
+
+#### 🏠  Internal
+
+- add OwnerType.alertConfirmation to PageOwnerType [#473](https://github.com/artsy/cohesion/pull/473) ([@dariakoko](https://github.com/dariakoko))
+- chore: remove TappedAddFilters event, modify ClickedAddFilters event [#472](https://github.com/artsy/cohesion/pull/472) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.157.0 (Wed Nov 15 2023)
 
 #### 🚀  Enhancement
