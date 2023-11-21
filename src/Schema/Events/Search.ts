@@ -238,7 +238,7 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
 
 /**
  * User fills address and has/or not auto completion with results
- * 
+ *
  * This schema describes events sent to Segment from [[addressAutoCompletionResult]]
  *
  *  @example
@@ -249,17 +249,17 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *    context_owner_type: "orders-shipping",
  *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    input: "Weserstr."
- *    suggested_addresses_results: 3 
+ *    suggested_addresses_results: 3
  *  }
  * ```
  */
- export interface AddressAutoCompletionResult {
+export interface AddressAutoCompletionResult {
   action: ActionType.addressAutoCompletionResult
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
   input: string
-  suggested_addresses_results: number 
+  suggested_addresses_results: number
 }
 
 /**
@@ -279,7 +279,7 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *  }
  * ```
  */
- export interface SelectedItemFromAddressAutoCompletion {
+export interface SelectedItemFromAddressAutoCompletion {
   action: ActionType.selectedItemFromAddressAutoCompletion
   context_module: ContextModule
   context_owner_type: PageOwnerType
@@ -304,7 +304,7 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *  }
  * ```
  */
- export interface EditedAutocompletedAddress {
+export interface EditedAutocompletedAddress {
   action: ActionType.editedAutocompletedAddress
   context_module: ContextModule
   context_owner_type: PageOwnerType

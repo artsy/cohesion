@@ -182,7 +182,6 @@ import { Share } from "./Share"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   TappedActivityGroup,
-  TappedAddFilters,
   TappedArticleGroup,
   TappedArticleShare,
   TappedArtistGroup,
@@ -365,7 +364,6 @@ export type Event =
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
   | TappedActivityGroup
-  | TappedAddFilters
   | TappedArticleGroup
   | TappedArticleShare
   | TappedArtistGroup
@@ -1056,10 +1054,6 @@ export enum ActionType {
    * Corresponds to {@link TappedActivityGroup}
    */
   tappedActivityGroup = "tappedActivityGroup",
-  /**
-   * Corresponds to {@link TappedAddFilters}
-   */
-  tappedAddFilters = "tappedAddFilters",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */
