@@ -1015,6 +1015,10 @@ export enum ActionType {
    */
   selectedItemFromAddressAutoCompletion = "selectedItemFromAddressAutoCompletion",
   /**
+   * Corresponds to {@link SelectedSuggestedFilter}
+   */
+  selectedSuggestedFilter = "selectedSuggestedFilter",
+  /**
    * Corresponds to {@link SelectedRecentPriceRange}
    */
   selectedRecentPriceRange = "selectedRecentPriceRange",
