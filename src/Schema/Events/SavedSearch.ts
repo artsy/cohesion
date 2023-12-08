@@ -49,3 +49,23 @@ export interface DeletedSavedSearch {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
 }
+
+/**
+ * User taps on a suggested saved search pill
+ *
+ * This schema describes events sent to Segment from [[selectedSuggestedFilter]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedSuggestedFilter",
+ *    context_module: "createAlert",
+ *    subject: "additionalGeneIDs",
+ *  }
+ * ```
+ */
+export interface SelectedSuggestedFilter {
+  action: ActionType.selectedSuggestedFilter
+  context_module: "createAlert" | "editAlert"
+  subject?: string
+}

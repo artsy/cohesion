@@ -38,6 +38,7 @@ export enum OwnerType {
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
   createAlert = "createAlert",
   demand = "demand",
+  editAlert = "editAlert",
   editProfile = "editProfile",
   explore = "explore",
   fair = "fair",
