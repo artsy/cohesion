@@ -1,3 +1,20 @@
+# v4.159.0 (Fri Dec 08 2023)
+
+#### 🚀  Enhancement
+
+- feat: add selected suggested filter event [#475](https://github.com/artsy/cohesion/pull/475) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### 🏠  Internal
+
+- chore(deps): bump @babel/traverse from 7.9.5 to 7.23.2 [#468](https://github.com/artsy/cohesion/pull/468) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.158.0 (Tue Nov 21 2023)
 
 #### 🚀  Enhancement
