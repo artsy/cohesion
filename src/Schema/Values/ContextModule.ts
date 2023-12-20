@@ -76,6 +76,7 @@ export enum ContextModule {
   currentAuctions = "currentAuctions",
   currentShowsRail = "currentShowsRail",
   doMoreOnArtsy = "doMoreOnArtsy",
+  editAlert = "editAlert",
   exhibitorsTab = "exhibitorsTab",
   fairCard = "fairCard",
   fairHome = "fairHome",
