@@ -162,7 +162,11 @@ import {
   TappedReverseImageSearch,
   TappedToggleCameraFlash,
 } from "./ReverseImageSearch"
-import { DeletedSavedSearch, EditedSavedSearch } from "./SavedSearch"
+import {
+  DeletedSavedSearch,
+  EditedAlert,
+  EditedSavedSearch,
+} from "./SavedSearch"
 import { FollowEvents } from "./SavesAndFollows"
 import {
   AddressAutoCompletionResult,
@@ -314,6 +318,7 @@ export type Event =
   | ConsignmentSubmitted
   | ContactInformationCompleted
   | DeleteCollectedArtwork
+  | EditedAlert
   | DeletedArtworkList
   | DeletedSavedSearch
   | EditCollectedArtwork
@@ -842,6 +847,10 @@ export enum ActionType {
    * Corresponds to {@link EditedArtworkList}
    */
   editedArtworkList = "editedArtworkList",
+  /**
+   * Corresponds to {@link editedAlert}
+   */
+  editedAlert = "editedAlert",
   /**
    * Corresponds to {@link EditedSavedSearch}
    */

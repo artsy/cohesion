@@ -134,6 +134,7 @@ export type ScreenOwnerType =
   | OwnerType.conversation
   | OwnerType.conversationMakeOfferConfirmArtwork
   | OwnerType.createAlert
+  | OwnerType.editAlert
   | OwnerType.editProfile
   | OwnerType.explore
   | OwnerType.fair

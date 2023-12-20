@@ -31,6 +31,26 @@ export interface EditedSavedSearch {
 }
 
 /**
+ * A user edits an Alert from the edit alert screen on an app.
+ *
+ * This schema describes events sent to Segment from [[editedAlert]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "editedAlert",
+ *    context_screen_owner_type: "editAlert",
+ *    saved_search_id: "58de681f275b2464fcdde097",
+ *  }
+ * ```
+ */
+export interface EditedAlert {
+  action: ActionType.editedAlert
+  context_screen_owner_type: ScreenOwnerType
+  saved_search_id?: string
+}
+
+/**
  * A user deletes a Saved Search from the edit alert screen on an app.
  *
  * This schema describes events sent to Segment from [[deletedSavedSearch]]
@@ -41,6 +61,7 @@ export interface EditedSavedSearch {
  *    action: "deletedSavedSearch",
  *    context_screen_owner_type: "savedSearch",
  *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    saved_search_id: "search_id"
  *  }
  * ```
  */
@@ -48,6 +69,7 @@ export interface DeletedSavedSearch {
   action: ActionType.deletedSavedSearch
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
+  saved_search_id?: string
 }
 
 /**
