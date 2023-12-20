@@ -1,3 +1,15 @@
+# v4.160.0 (Wed Dec 20 2023)
+
+#### 🚀  Enhancement
+
+- ONYX(ONYX-588): add details for edit alert tracking [#476](https://github.com/artsy/cohesion/pull/476) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.159.0 (Fri Dec 08 2023)
 
 #### 🚀  Enhancement
