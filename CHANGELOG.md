@@ -1,3 +1,15 @@
+# v4.161.0 (Thu Dec 21 2023)
+
+#### 🚀  Enhancement
+
+- Folio tracking [#477](https://github.com/artsy/cohesion/pull/477) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.160.0 (Wed Dec 20 2023)
 
 #### 🚀  Enhancement
