@@ -122,6 +122,13 @@ import {
   PriceDatabaseFilterParamsChanged,
   SelectedRecentPriceRange,
 } from "./FilterAndSort"
+import {
+  AddedToAlbum,
+  CompletedOfflineSync,
+  CreatedAlbum,
+  SentContent,
+  ToggledPresentationModeSetting,
+} from "./Folio"
 import { TappedProductCapabilitiesGroup } from "./HomeFeedArtsyOnboarding"
 import {
   MyCollectionOnboardingCompleted,
@@ -232,6 +239,7 @@ import { ViewedVideo } from "./Video"
  */
 export type Event =
   | AddedArtworkToArtworkList
+  | AddedToAlbum
   | AddToCalendar
   | AddCollectedArtwork
   | AddressAutoCompletionResult
@@ -311,12 +319,14 @@ export type Event =
   | ClickedValidationAddressOptions
   | ClickedCloseValidationAddressModal
   | CommercialFilterParamsChanged
+  | CompletedOfflineSync
   | CompletedOnboarding
   | ConfirmBid
   | ConfirmRegistrationPageview
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
   | ContactInformationCompleted
+  | CreatedAlbum
   | DeleteCollectedArtwork
   | EditedAlert
   | DeletedArtworkList
@@ -361,6 +371,7 @@ export type Event =
   | SelectedItemFromAddressAutoCompletion
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
+  | SentContent
   | SentConsignmentInquiry
   | SentConversationMessage
   | SentRequestPriceEstimate
@@ -420,6 +431,7 @@ export type Event =
   | TimeOnPage
   | ToggledAccordion
   | ToggledNotification
+  | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
   | UploadPhotosCompleted
@@ -439,6 +451,10 @@ export enum ActionType {
    * Corresponds to {@link AddedArtworkToArtworkList}
    */
   addedArtworkToArtworkList = "addedArtworkToArtworkList",
+  /**
+   * Corresponds to {@link AddedToAlbum}
+   */
+  addedToAlbum = "addedToAlbum",
   /**
    * Corresponds to {@link AddArtworkDetails}
    */
@@ -788,6 +804,10 @@ export enum ActionType {
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
   /**
+   * Corresponds to {@link CompletedOfflineSync}
+   */
+  completedOfflineSync = "completedOfflineSync",
+  /**
    * Corresponds to {@link CompletedOnboarding}
    */
   completedOnboarding = "completedOnboarding",
@@ -815,6 +835,10 @@ export enum ActionType {
    * Corresponds to {@link ContactInformationCompleted}
    */
   contactInformationCompleted = "contactInformationCompleted",
+  /**
+   * Corresponds to {@link CreatedAlbum}
+   */
+  createdAlbum = "createdAlbum",
   /**
    * Corresponds to {@link CreatedAccount}
    */
@@ -975,6 +999,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedSearchSuggestionQuickNavigationItem}
    */
   selectedSearchSuggestionQuickNavigationItem = "selectedSearchSuggestionQuickNavigationItem",
+  /**
+   * Corresponds to {@link SentContent}
+   */
+  sentContent = "sentContent",
   /**
    * Corresponds to {@link SearchedPriceDatabase}
    */
@@ -1303,6 +1331,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledNotification}
    */
   toggledNotification = "toggledNotification",
+  /**
+   * Corresponds to {@link ToggledPresentationModeSetting}
+   */
+  toggledPresentationModeSetting = "toggledPresentationModeSetting",
   /**
    * Corresponds to {@link ToggledSavedSearch}
    */
