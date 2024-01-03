@@ -79,7 +79,6 @@ export enum OwnerType {
   priceDatabase = "priceDatabase",
   profile = "profile",
   recentlyViewed = "recentlyViewed",
-  reverseImageSearch = "reverseImageSearch",
   sale = "sale",
   saleInformation = "saleInformation",
   savedSearch = "savedSearch",
@@ -163,7 +162,6 @@ export type ScreenOwnerType =
   | OwnerType.priceDatabase
   | OwnerType.profile
   | OwnerType.recentlyViewed
-  | OwnerType.reverseImageSearch
   | OwnerType.sale
   | OwnerType.saleInformation
   | OwnerType.savedSearch
