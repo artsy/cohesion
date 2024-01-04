@@ -1,3 +1,15 @@
+# v4.162.0 (Thu Jan 04 2024)
+
+#### 🚀  Enhancement
+
+- chore(ONYX-535): Clean up analytic events related to TinEye (reverse image) search [#478](https://github.com/artsy/cohesion/pull/478) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.161.0 (Thu Dec 21 2023)
 
 #### 🚀  Enhancement
