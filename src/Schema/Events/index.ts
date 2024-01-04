@@ -162,14 +162,6 @@ import {
 } from "./MyCollectionInsights"
 import { PromptForReview } from "./PromptForReview"
 import {
-  SearchedReverseImageWithNoResults,
-  SearchedReverseImageWithResults,
-  SelectedArtworkFromReverseImageSearch,
-  TappedPickImageFromLibrary,
-  TappedReverseImageSearch,
-  TappedToggleCameraFlash,
-} from "./ReverseImageSearch"
-import {
   DeletedSavedSearch,
   EditedAlert,
   EditedSavedSearch,
@@ -361,11 +353,8 @@ export type Event =
   | SavedCookieConsentPreferences
   | Screen
   | SearchedPriceDatabase
-  | SearchedReverseImageWithNoResults
-  | SearchedReverseImageWithResults
   | SearchedWithNoResults
   | SearchedWithResults
-  | SelectedArtworkFromReverseImageSearch
   | SelectedItemFromSearch
   | SelectedItemFromPriceDatabaseSearch
   | SelectedItemFromAddressAutoCompletion
@@ -412,18 +401,15 @@ export type Event =
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
   | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
   | TappedPartnerCard
-  | TappedPickImageFromLibrary
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
   | TappedRequestPriceEstimate
-  | TappedReverseImageSearch
   | TappedSell
   | TappedSellArtwork
   | TappedShowMore
   | TappedLearnMore
   | TappedSkip
   | TappedTabBar
-  | TappedToggleCameraFlash
   | TappedVerifyIdentity
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
@@ -1008,14 +994,6 @@ export enum ActionType {
    */
   searchedPriceDatabase = "searchedPriceDatabase",
   /**
-   * Corresponds to {@link SearchedReverseImageWithNoResults}
-   */
-  searchedReverseImageWithNoResults = "searchedReverseImageWithNoResults",
-  /**
-   * Corresponds to {@link SearchedReverseImageWithResults}
-   */
-  searchedReverseImageWithResults = "searchedReverseImageWithResults",
-  /**
    * Corresponds to {@link SearchedWithNoResults}
    */
   searchedWithNoResults = "searchedWithNoResults",
@@ -1031,10 +1009,6 @@ export enum ActionType {
    * Corresponds to {@link selectArtworkFromGrid}
    */
   selectArtworkFromGrid = "selectArtworkFromGrid",
-  /**
-   * Corresponds to {@link SelectedArtworkFromReverseImageSearch}
-   */
-  selectedArtworkFromReverseImageSearch = "selectedArtworkFromReverseImageSearch",
   /**
    * Corresponds to {@link SelectedItemFromPriceDatabaseSearch}
    */
@@ -1236,10 +1210,6 @@ export enum ActionType {
    */
   tappedPartnerCard = "tappedPartnerCard",
   /**
-   * Corresponds to {@link TappedPickImageFromLibrary}
-   */
-  tappedPickImageFromLibrary = "tappedPickImageFromLibrary",
-  /**
    * Corresponds to {@link TappedProductCapabilitiesGroup}
    */
   tappedProductCapabilitiesGroup = "tappedProductCapabilitiesGroup",
@@ -1255,10 +1225,6 @@ export enum ActionType {
    * Corresponds to {@link TappedRequestPriceEstimate}
    */
   tappedRequestPriceEstimate = "tappedRequestPriceEstimate",
-  /**
-   * Corresponds to {@link TappedReverseImageSearch}
-   */
-  tappedReverseImageSearch = "tappedReverseImageSearch",
   /**
    * Corresponds to {@link TappedSell}
    */
@@ -1283,10 +1249,6 @@ export enum ActionType {
    * Corresponds to {@link TappedTabBar}
    */
   tappedTabBar = "tappedTabBar",
-  /**
-   * Corresponds to {@link TappedToggleCameraFlash}
-   */
-  tappedToggleCameraFlash = "tappedToggleCameraFlash",
   /**
    * Corresponds to {@link TappedUploadAnotherArtwork}
    */
