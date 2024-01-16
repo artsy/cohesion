@@ -1888,7 +1888,7 @@ export interface ClickedAlertsFilters {
  */
  export interface ClickedStartSendingOffers {
   action: ActionType.clickedStartSendingOffers
-  context_page_owner_type: PageOwnerType
+  context_page_owner_type: string
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
