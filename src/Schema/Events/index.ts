@@ -255,6 +255,7 @@ export type Event =
   | ClickedActivityPanelNotificationItem
   | ClickedActivityPanelTab
   | ClickedAddFilters
+  | ClickedAddMissingArtworksDetails
   | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
   | ClickedAlertsFilters
