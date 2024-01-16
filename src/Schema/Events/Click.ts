@@ -1878,7 +1878,7 @@ export interface ClickedAlertsFilters {
  *  @example
  *  ```
  *  {
- *    action: "ClickedAlertsFilters",
+ *    action: "clickedStartSendingOffers",
  *    context_page_owner_type: "Home",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
