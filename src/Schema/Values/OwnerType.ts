@@ -87,6 +87,7 @@ export enum OwnerType {
   savesAndFollows = "savesAndFollows",
   search = "search",
   sell = "sell",
+  sendOffers = "sendOffers",
   show = "show",
   shows = "shows",
   similarToRecentlyViewed = "similarToRecentlyViewed",
@@ -226,6 +227,7 @@ export type PageOwnerType =
   | OwnerType.savedSearches
   | OwnerType.saves
   | OwnerType.search
+  | OwnerType.sendOffers
   | OwnerType.show
   | OwnerType.shows
   | OwnerType.tag

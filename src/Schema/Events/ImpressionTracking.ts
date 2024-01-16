@@ -151,6 +151,7 @@ export interface ValidationAddressViewed {
  *  {
  *    action: "sendOffersBannerViewed",
  *    context_module: "Home",
+ *    context_page_owner_type: "home"
  *    partner_id: "61bcda16515b038ce5000104"
  *  }
  * ```
@@ -159,6 +160,7 @@ export interface ValidationAddressViewed {
 export interface SendOffersBannerViewed {
   action: ActionType.sendOffersBannerViewed
   context_module: string
+  context_page_owner_type: PageOwnerType
   partner_id: string
 }
 
@@ -172,7 +174,7 @@ export interface SendOffersBannerViewed {
  *  {
  *    action: "sendOffersModalViewed"
  *    context_module:"Send offers"
- *    context_page_owner_type: "send-offers"
+ *    context_page_owner_type: "sendOffers"
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104"
@@ -186,7 +188,7 @@ export interface SendOffersBannerViewed {
  export interface SendOffersModalViewed {
   action: ActionType.sendOffersModalViewed
   context_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug: string
   partner_id: string
@@ -205,7 +207,7 @@ export interface SendOffersBannerViewed {
  *  {
  *    action: "sendOffersErrorMessage"
  *    context_module:"Send offers"
- *    context_page_owner_type: "send-offers"
+ *    context_page_owner_type: "sendOffers"
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104"
@@ -220,7 +222,7 @@ export interface SendOffersBannerViewed {
  export interface SendOffersErrorMessage {
   action: ActionType.sendOffersErrorMessage
   context_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug: string
   partner_id: string

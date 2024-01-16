@@ -1888,7 +1888,7 @@ export interface ClickedAlertsFilters {
  */
  export interface ClickedStartSendingOffers {
   action: ActionType.clickedStartSendingOffers
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
@@ -1904,7 +1904,7 @@ export interface ClickedAlertsFilters {
  *  {
  *    action: "clickedSendOffer",
  *    context_module: "Send offers",
- *    context_page_owner_type: "send-offers",
+ *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
@@ -1919,7 +1919,7 @@ export interface ClickedAlertsFilters {
  export interface ClickedSendOffer {
   action: ActionType.clickedSendOffer
   context_page_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
@@ -1940,7 +1940,7 @@ export interface ClickedAlertsFilters {
  *  {
  *    action: "clickedAddMissingArtworksDetails",
  *    context_module: "Send offers",
- *    context_page_owner_type: "send-offers",
+ *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
@@ -1955,7 +1955,7 @@ export interface ClickedAlertsFilters {
  export interface ClickedAddMissingArtworksDetails {
   action: ActionType.clickedAddMissingArtworksDetails
   context_page_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
@@ -1977,7 +1977,7 @@ export interface ClickedAlertsFilters {
  *  {
  *    action: "clickedOnPagination",
  *    context_module: "Send offers",
- *    context_page_owner_type: "send-offers",
+ *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
@@ -1990,7 +1990,7 @@ export interface ClickedAlertsFilters {
  export interface ClickedOnPagination {
   action: ActionType.clickedOnPagination
   context_page_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
@@ -2009,7 +2009,7 @@ export interface ClickedAlertsFilters {
  *  {
  *    action: "clickedSendOfferCollectors",
  *    context_module: "Send offers",
- *    context_page_owner_type: "send-offers",
+ *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
@@ -2022,7 +2022,7 @@ export interface ClickedAlertsFilters {
  export interface ClickedSendOfferCollectors {
   action: ActionType.clickedSendOfferCollectors
   context_page_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
@@ -2041,7 +2041,7 @@ export interface ClickedAlertsFilters {
  *  {
  *    action: "clickedOnSendOffersIcons",
  *    context_module: "Send offers",
- *    context_page_owner_type: "send-offers",
+ *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
@@ -2052,7 +2052,7 @@ export interface ClickedAlertsFilters {
  export interface ClickedOnSendOffersIcons {
   action: ActionType.clickedOnSendOffersIcons
   context_page_module: string
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
