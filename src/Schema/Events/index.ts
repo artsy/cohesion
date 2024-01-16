@@ -35,6 +35,7 @@ import {
 import {
   CheckedAccountBalance,
   ClickedAddFilters,
+  ClickedAddMissingArtworksDetails,
   ClickedAddNewShippingAddress,
   ClickedAddWorksToFair,
   ClickedAlertsFilters,
@@ -77,7 +78,9 @@ import {
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnMakeOfferCheckbox,
+  ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
+  ClickedOnSendOffersIcons,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
@@ -88,10 +91,13 @@ import {
   ClickedPromoSpace,
   ClickedPublish,
   ClickedSelectShippingOption,
+  ClickedSendOffer,
+  ClickedSendOfferCollectors,
   ClickedShippingAddress,
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
+  ClickedStartSendingOffers,
   ClickedUploadArtwork,
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
@@ -141,6 +147,9 @@ import {
   ErrorMessageViewed,
   ItemViewed,
   RailViewed,
+  SendOffersBannerViewed,
+  SendOffersErrorMessage,
+  SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
 } from "./ImpressionTracking"
@@ -283,8 +292,10 @@ export type Event =
   | ClickedOnFramedMeasurementsDropdown
   | ClickedOnMakeOfferCheckbox
   | ClickedOnDuplicateArtwork
+  | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
   | ClickedPublish
+  | ClickedOnSendOffersIcons
   | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedUploadArtwork
@@ -296,9 +307,12 @@ export type Event =
   | ClickedPromoSpace
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
+  | ClickedSendOffer
+  | ClickedSendOfferCollectors
   | ClickedShippingAddress
   | ClickedShowGroup
   | ClickedShowMore
+  | ClickedStartSendingOffers
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | ClickedOfferActions
@@ -360,6 +374,9 @@ export type Event =
   | SelectedItemFromAddressAutoCompletion
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
+  | SendOffersBannerViewed
+  | SendOffersErrorMessage
+  | SendOffersModalViewed
   | SentContent
   | SentConsignmentInquiry
   | SentConversationMessage
@@ -501,6 +518,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedAddFilters}
    */
   clickedAddFilters = "clickedAddFilters",
+  /**
+   * Corresponds to {@link ClickedAddMissingArtworksDetails}
+   */
+  clickedAddMissingArtworksDetails = "clickedAddMissingArtworksDetails",  
   /**
    * Corresponds to {@link ClickedAddNewShippingAddress}
    */
@@ -662,6 +683,10 @@ export enum ActionType {
    */
   clickedOnDuplicateArtwork = "clickedOnDuplicateArtwork",
   /**
+   * Corresponds to {@link ClickedOnPagination}
+   */
+  clickedOnPagination = "clickedOnPagination",  
+  /**
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
   clickedOnPriceDisplayDropdown = "clickedOnPriceDisplayDropdown",
@@ -669,6 +694,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedPublish}
    */
   clickedPublish = "clickedPublish",
+  /**
+   * Corresponds to {@link ClickedOnSendOffersIcons}
+   */
+  clickedOnSendOffersIcons = "clickedOnSendOffersIcons",
   /**
    * Corresponds to {@link ClickedOnSubmitOrder}
    */
@@ -730,6 +759,14 @@ export enum ActionType {
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
   /**
+   * Corresponds to {@link ClickedSendOffer}
+   */
+  clickedSendOffer = "clickedSendOffer",
+  /**
+   * Corresponds to {@link ClickedSendOfferCollectors}
+   */
+  clickedSendOfferCollectors = "clickedSendOfferCollectors",
+  /**
    * Corresponds to {@link ClickedShippingAddress}
    */
   clickedShippingAddress = "clickedShippingAddress",
@@ -738,8 +775,12 @@ export enum ActionType {
    */
   clickedShowGroup = "clickedShowGroup",
   /**
-   * Corresponds to {@link ClickedShowMore}
+   * Corresponds to {@link ClickedStartSendingOffers}
    */
+  clickedStartSendingOffers = "clickedStartSendingOffers",
+  /**
+  * Corresponds to {@link ClickedShowMore}
+  */
   clickedShowMore = "clickedShowMore",
   /**
    * Corresponds to {@link ClickedSnooze}
@@ -1033,6 +1074,18 @@ export enum ActionType {
    * Corresponds to {@link SelectedRecentPriceRange}
    */
   selectedRecentPriceRange = "selectedRecentPriceRange",
+  /**
+   * Corresponds to {@link SendOffersBannerViewed}
+   */
+  sendOffersBannerViewed = "sendOffersBannerViewed",
+  /**
+   * Corresponds to {@link SendOffersErrorMessage}
+   */
+  sendOffersErrorMessage = "sendOffersErrorMessage",
+  /**
+   * Corresponds to {@link SendOffersModalViewed}
+   */
+  sendOffersModalViewed = "sendOffersModalViewed",  
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */

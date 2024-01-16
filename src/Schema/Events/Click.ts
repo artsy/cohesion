@@ -1869,3 +1869,192 @@ export interface ClickedAlertsFilters {
   changed: string
   current: string
 }
+
+/**
+ * A user clicks on Start Sendind Offers on the marketing banner in CMS
+ *
+ * This schema describes events sent to Segment from [[ClickedStartSendingOffers]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "ClickedAlertsFilters",
+ *    context_page_owner_type: "Home",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104"
+ *  }
+ * ```
+ */
+ export interface ClickedStartSendingOffers {
+  action: ActionType.clickedStartSendingOffers
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  partner_id: string
+}
+
+/**
+ * A user clicks on Send Offer on the Send Offers page in CMS
+ *
+ * This schema describes events sent to Segment from [[ClickedSendOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSendOffer",
+ *    context_module: "Send offers",
+ *    context_page_owner_type: "send-offers",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104", 
+ *    arwork_id: "60de173a47476c000fd5c4cc",
+ *    price: $20,000,
+ *    last_offer_sent: 20,
+ *    new_saves: 5,
+ *    page: 1
+ *  }
+ * ```
+ */
+ export interface ClickedSendOffer {
+  action: ActionType.clickedSendOffer
+  context_page_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  partner_id: string
+  artwork_id: string
+  price: number
+  last_offer_sent: number
+  new_saves: number
+  page: number
+}
+
+/**
+ * A user clicks on Add Missing Artworks Details on the Send Offers page in CMS
+ *
+ * This schema describes events sent to Segment from [[ClickedAddMissingArtworksDetails]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAddMissingArtworksDetails",
+ *    context_module: "Send offers",
+ *    context_page_owner_type: "send-offers",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104", 
+ *    arwork_id: "60de173a47476c000fd5c4cc",
+ *    price: $20,000,
+ *    last_offer_sent: 20,
+ *    new_saves: 5,
+ *    page: 1
+ *  }
+ * ```
+ */
+ export interface ClickedAddMissingArtworksDetails {
+  action: ActionType.clickedAddMissingArtworksDetails
+  context_page_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  partner_id: string
+  artwork_id: string
+  price: number
+  last_offer_sent: number
+  new_saves: number
+  page: number
+}
+
+
+/**
+ * A user clicks on pagination on the Send Offers page in CMS
+ *
+ * This schema describes events sent to Segment from [[ClickedOnPagination]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnPagination",
+ *    context_module: "Send offers",
+ *    context_page_owner_type: "send-offers",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104", 
+ *    label: "1",
+ *    current_page: 1,
+ *    next_page: 2
+ *  }
+ * ```
+ */
+ export interface ClickedOnPagination {
+  action: ActionType.clickedOnPagination
+  context_page_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  partner_id: string
+  label: string
+  current_page: number
+  next_page: number
+}
+
+/**
+ * A user clicks on Send Offers to Collectors in the modal for partner offers.
+ *
+ * This schema describes events sent to Segment from [[ClickedSendOfferCollectors]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSendOfferCollectors",
+ *    context_module: "Send offers",
+ *    context_page_owner_type: "send-offers",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104", 
+ *    arwork_id: "60de173a47476c000fd5c4cc",
+ *    price: $20,000,
+ *    collectors: 4
+ *  }
+ * ```
+ */
+ export interface ClickedSendOfferCollectors {
+  action: ActionType.clickedSendOfferCollectors
+  context_page_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  partner_id: string
+  artwork_id: string
+  price: number
+  collectors: number
+}
+
+/**
+ * A user clicks on Send Offers to Collectors in the modal for partner offers.
+ *
+ * This schema describes events sent to Segment from [[ClickedOnSendOffersIcons]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnSendOffersIcons",
+ *    context_module: "Send offers",
+ *    context_page_owner_type: "send-offers",
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104", 
+ *    label: "saves"
+ *  }
+ * ```
+ */
+ export interface ClickedOnSendOffersIcons {
+  action: ActionType.clickedOnSendOffersIcons
+  context_page_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  partner_id: string
+  label: string
+}

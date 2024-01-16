@@ -140,3 +140,92 @@ export interface ValidationAddressViewed {
   subject: string
   option: string
 }
+
+/**
+ * User sees banner "Make an offer, connect now" in CMS.
+ *
+ * This schema describes events sent to Segment from [[SendOffersBannerViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "sendOffersBannerViewed",
+ *    context_module: "Home",
+ *    partner_id: "61bcda16515b038ce5000104"
+ *  }
+ * ```
+ *
+ */
+export interface SendOffersBannerViewed {
+  action: ActionType.sendOffersBannerViewed
+  context_module: string
+  partner_id: string
+}
+
+/**
+ * User sees modal send offers after clicking on Send Offer in CMS.
+ *
+ * This schema describes events sent to Segment from [[SendOffersModalViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "sendOffersModalViewed"
+ *    context_module:"Send offers"
+ *    context_page_owner_type: "send-offers"
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104"
+ *    arwork_id: "60de173a47476c000fd5c4cc"
+ *    price: $20,000
+ *    collectors: 4
+ *  }
+ * ```
+ *
+ */
+ export interface SendOffersModalViewed {
+  action: ActionType.sendOffersModalViewed
+  context_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug: string
+  partner_id: string
+  artwork_id: string
+  price: number
+  collectors: number
+}
+
+/**
+ * User sees an error message on the send offers modal if inputs a not acceptable price in CMS
+ *
+ * This schema describes events sent to Segment from [[SendOffersErrorMessage]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "sendOffersErrorMessage"
+ *    context_module:"Send offers"
+ *    context_page_owner_type: "send-offers"
+ *    context_page_owner_id: "",
+ *    context_page_owner_slug: "",
+ *    partner_id: "61bcda16515b038ce5000104"
+ *    arwork_id: "60de173a47476c000fd5c4cc"
+ *    price: $20,000
+ *    collectors: 4
+ *    message: "Offer amount within displayed price range"
+ *  }
+ * ```
+ *
+ */
+ export interface SendOffersErrorMessage {
+  action: ActionType.sendOffersErrorMessage
+  context_module: string
+  context_page_owner_type: string
+  context_page_owner_id: string
+  context_page_owner_slug: string
+  partner_id: string
+  artwork_id: string
+  price: number
+  collectors: number
+  message: string
+}
