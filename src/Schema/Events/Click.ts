@@ -1884,7 +1884,8 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104",
  *    user_id: "55bcda16515b038ce5033104",
- *    title: "Make an offer, connect now"
+ *    title: "Make an offer, connect now",
+ *    label: "Start Sending Offers"
  *  }
  * ```
  */
@@ -1896,6 +1897,7 @@ export interface ClickedAlertsFilters {
   partner_id: string
   user_id: string
   title: string
+  label: string
 }
 
 /**
@@ -1912,7 +1914,7 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
- *    arwork_id: "60de173a47476c000fd5c4cc",
+ *    artwork_id: "60de173a47476c000fd5c4cc",
  *    price: $20,000,
  *    last_offer_sent: 20,
  *    new_saves: 5,
@@ -2048,8 +2050,8 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
- *    partner_id: "61bcda16515b038ce5000104", 
- *    label: "saves"
+ *    partner_id: "61bcda16515b038ce5000104"
+ *    artwork_id: "60de173a47476c000fd5c4cc"
  *  }
  * ```
  */
@@ -2060,5 +2062,5 @@ export interface ClickedAlertsFilters {
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
-  label: string
+  artwork_id: string
 }
