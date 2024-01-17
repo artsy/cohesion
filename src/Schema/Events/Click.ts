@@ -1873,36 +1873,40 @@ export interface ClickedAlertsFilters {
 /**
  * A user clicks on Start Sendind Offers on the marketing banner in CMS
  *
- * This schema describes events sent to Segment from [[ClickedStartSendingOffers]]
+ * This schema describes events sent to Segment from [[ClickedMarketingModal]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedStartSendingOffers",
+ *    action: "clickedMarketingModal",
  *    context_page_owner_type: "Home",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
- *    partner_id: "61bcda16515b038ce5000104"
+ *    partner_id: "61bcda16515b038ce5000104",
+ *    user_id: "55bcda16515b038ce5033104",
+ *    title: "Make an offer, connect now"
  *  }
  * ```
  */
- export interface ClickedStartSendingOffers {
-  action: ActionType.clickedStartSendingOffers
+ export interface ClickedMarketingModal {
+  action: ActionType.clickedMarketingModal
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug?: string
   partner_id: string
+  user_id: string
+  title: string
 }
 
 /**
- * A user clicks on Send Offer on the Send Offers page in CMS
+ * A user clicks on the CTA to start with a partner offer on the Send Offers page in CMS
  *
- * This schema describes events sent to Segment from [[ClickedSendOffer]]
+ * This schema describes events sent to Segment from [[ClickedStartPartnerOffer]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedSendOffer",
+ *    action: "clickedStartPartnerOffer",
  *    context_module: "Send offers",
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
@@ -1916,8 +1920,8 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedSendOffer {
-  action: ActionType.clickedSendOffer
+ export interface ClickedStartPartnerOffer {
+  action: ActionType.clickedStartPartnerOffer
   context_page_module: string
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
@@ -2000,14 +2004,14 @@ export interface ClickedAlertsFilters {
 }
 
 /**
- * A user clicks on Send Offers to Collectors in the modal for partner offers.
+ * A user clicks on the CTA to send offers to collectors in the modal for partner offers.
  *
- * This schema describes events sent to Segment from [[ClickedSendOfferCollectors]]
+ * This schema describes events sent to Segment from [[ClickedSendPartnerOffer]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedSendOfferCollectors",
+ *    action: "clickedSendPartnerOffer",
  *    context_module: "Send offers",
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
@@ -2019,8 +2023,8 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedSendOfferCollectors {
-  action: ActionType.clickedSendOfferCollectors
+ export interface ClickedSendPartnerOffer {
+  action: ActionType.clickedSendPartnerOffer
   context_page_module: string
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
@@ -2032,14 +2036,14 @@ export interface ClickedAlertsFilters {
 }
 
 /**
- * A user clicks on Send Offers to Collectors in the modal for partner offers.
+ * A user clicks on the link to update artworks details in the modal for partner offers.
  *
- * This schema describes events sent to Segment from [[ClickedOnSendOffersIcons]]
+ * This schema describes events sent to Segment from [[ClickedUpdateArtwork]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedOnSendOffersIcons",
+ *    action: "clickedUpdateArtwork",
  *    context_module: "Send offers",
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
@@ -2049,8 +2053,8 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedOnSendOffersIcons {
-  action: ActionType.clickedOnSendOffersIcons
+ export interface ClickedUpdateArtwork {
+  action: ActionType.clickedUpdateArtwork
   context_page_module: string
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string

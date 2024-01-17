@@ -65,6 +65,7 @@ import {
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
+  ClickedMarketingModal,
   ClickedMarkSold,
   ClickedMarkSpam,
   ClickedNavBar,
@@ -80,7 +81,6 @@ import {
   ClickedOnMakeOfferCheckbox,
   ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
-  ClickedOnSendOffersIcons,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
@@ -91,14 +91,14 @@ import {
   ClickedPromoSpace,
   ClickedPublish,
   ClickedSelectShippingOption,
-  ClickedSendOffer,
-  ClickedSendOfferCollectors,
+  ClickedSendPartnerOffer,
   ClickedShippingAddress,
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
-  ClickedStartSendingOffers,
+  ClickedStartPartnerOffer,
   ClickedUploadArtwork,
+  ClickedUpdateArtwork,
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
@@ -282,6 +282,7 @@ export type Event =
   | ClickedGalleryGroup
   | ClickedLoadMore
   | ClickedMainArtworkGrid
+  | ClickedMarketingModal
   | ClickedNavigationTab
   | ClickedNavBar
   | ClickedNotificationsBell
@@ -296,7 +297,6 @@ export type Event =
   | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
   | ClickedPublish
-  | ClickedOnSendOffersIcons
   | ClickedOnSubmitOrder
   | ClickedSnooze
   | ClickedUploadArtwork
@@ -308,12 +308,11 @@ export type Event =
   | ClickedPromoSpace
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
-  | ClickedSendOffer
-  | ClickedSendOfferCollectors
+  | ClickedSendPartnerOffer
   | ClickedShippingAddress
   | ClickedShowGroup
   | ClickedShowMore
-  | ClickedStartSendingOffers
+  | ClickedStartPartnerOffer
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | ClickedOfferActions
@@ -323,6 +322,7 @@ export type Event =
   | ClickedMarkSpam
   | ClickedMarkSold
   | ClickedConversationsFilter
+  | ClickedUpdateArtwork
   | ClickedValidationAddressOptions
   | ClickedCloseValidationAddressModal
   | CommercialFilterParamsChanged
@@ -696,10 +696,6 @@ export enum ActionType {
    */
   clickedPublish = "clickedPublish",
   /**
-   * Corresponds to {@link ClickedOnSendOffersIcons}
-   */
-  clickedOnSendOffersIcons = "clickedOnSendOffersIcons",
-  /**
    * Corresponds to {@link ClickedOnSubmitOrder}
    */
   clickedOnSubmitOrder = "clickedOnSubmitOrder",
@@ -760,13 +756,13 @@ export enum ActionType {
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
   /**
-   * Corresponds to {@link ClickedSendOffer}
+   * Corresponds to {@link ClickedStartPartnerOffer}
    */
-  clickedSendOffer = "clickedSendOffer",
+  clickedStartPartnerOffer = "clickedStartPartnerOffer",
   /**
-   * Corresponds to {@link ClickedSendOfferCollectors}
+   * Corresponds to {@link ClickedSendPartnerOffer}
    */
-  clickedSendOfferCollectors = "clickedSendOfferCollectors",
+  clickedSendPartnerOffer = "clickedSendPartnerOffer",
   /**
    * Corresponds to {@link ClickedShippingAddress}
    */
@@ -776,9 +772,9 @@ export enum ActionType {
    */
   clickedShowGroup = "clickedShowGroup",
   /**
-   * Corresponds to {@link ClickedStartSendingOffers}
+   * Corresponds to {@link ClickedMarketingModal}
    */
-  clickedStartSendingOffers = "clickedStartSendingOffers",
+  clickedMarketingModal = "clickedMarketingModal",
   /**
   * Corresponds to {@link ClickedShowMore}
   */
@@ -799,6 +795,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedTooltip}
    */
   clickedTooltip = "clickedTooltip",
+  /**
+   * Corresponds to {@link ClickedUpdateArtwork}
+   */
+  clickedUpdateArtwork = "clickedUpdateArtwork",
   /**
    * Corresponds to {@link ClickedVerifyIdentity}
    */
