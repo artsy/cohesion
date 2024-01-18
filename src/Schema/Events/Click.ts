@@ -1988,8 +1988,7 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_slug: "",
  *    partner_id: "61bcda16515b038ce5000104", 
  *    label: "1",
- *    current_page: 1,
- *    next_page: 2
+ *    current_page: 1
  *  }
  * ```
  */
@@ -2002,7 +2001,6 @@ export interface ClickedAlertsFilters {
   partner_id: string
   label: string
   current_page: number
-  next_page: number
 }
 
 /**
