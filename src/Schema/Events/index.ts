@@ -35,6 +35,7 @@ import {
 import {
   CheckedAccountBalance,
   ClickedAddFilters,
+  ClickedAddMissingArtworksDetails,
   ClickedAddNewShippingAddress,
   ClickedAddWorksToFair,
   ClickedAlertsFilters,
@@ -64,6 +65,7 @@ import {
   ClickedGalleryGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
+  ClickedMarketingModal,
   ClickedMarkSold,
   ClickedMarkSpam,
   ClickedNavBar,
@@ -77,6 +79,7 @@ import {
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
   ClickedOnMakeOfferCheckbox,
+  ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
@@ -88,11 +91,14 @@ import {
   ClickedPromoSpace,
   ClickedPublish,
   ClickedSelectShippingOption,
+  ClickedSendPartnerOffer,
   ClickedShippingAddress,
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
+  ClickedStartPartnerOffer,
   ClickedUploadArtwork,
+  ClickedUpdateArtwork,
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
@@ -141,6 +147,9 @@ import {
   ErrorMessageViewed,
   ItemViewed,
   RailViewed,
+  SendOffersBannerViewed,
+  SendOffersErrorMessage,
+  SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
 } from "./ImpressionTracking"
@@ -246,6 +255,7 @@ export type Event =
   | ClickedActivityPanelNotificationItem
   | ClickedActivityPanelTab
   | ClickedAddFilters
+  | ClickedAddMissingArtworksDetails
   | ClickedAddNewShippingAddress
   | ClickedAddWorksToFair
   | ClickedAlertsFilters
@@ -272,6 +282,7 @@ export type Event =
   | ClickedGalleryGroup
   | ClickedLoadMore
   | ClickedMainArtworkGrid
+  | ClickedMarketingModal
   | ClickedNavigationTab
   | ClickedNavBar
   | ClickedNotificationsBell
@@ -283,6 +294,7 @@ export type Event =
   | ClickedOnFramedMeasurementsDropdown
   | ClickedOnMakeOfferCheckbox
   | ClickedOnDuplicateArtwork
+  | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
   | ClickedPublish
   | ClickedOnSubmitOrder
@@ -296,9 +308,11 @@ export type Event =
   | ClickedPromoSpace
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
+  | ClickedSendPartnerOffer
   | ClickedShippingAddress
   | ClickedShowGroup
   | ClickedShowMore
+  | ClickedStartPartnerOffer
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | ClickedOfferActions
@@ -308,6 +322,7 @@ export type Event =
   | ClickedMarkSpam
   | ClickedMarkSold
   | ClickedConversationsFilter
+  | ClickedUpdateArtwork
   | ClickedValidationAddressOptions
   | ClickedCloseValidationAddressModal
   | CommercialFilterParamsChanged
@@ -360,6 +375,9 @@ export type Event =
   | SelectedItemFromAddressAutoCompletion
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
+  | SendOffersBannerViewed
+  | SendOffersErrorMessage
+  | SendOffersModalViewed
   | SentContent
   | SentConsignmentInquiry
   | SentConversationMessage
@@ -501,6 +519,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedAddFilters}
    */
   clickedAddFilters = "clickedAddFilters",
+  /**
+   * Corresponds to {@link ClickedAddMissingArtworksDetails}
+   */
+  clickedAddMissingArtworksDetails = "clickedAddMissingArtworksDetails",  
   /**
    * Corresponds to {@link ClickedAddNewShippingAddress}
    */
@@ -662,6 +684,10 @@ export enum ActionType {
    */
   clickedOnDuplicateArtwork = "clickedOnDuplicateArtwork",
   /**
+   * Corresponds to {@link ClickedOnPagination}
+   */
+  clickedOnPagination = "clickedOnPagination",  
+  /**
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
   clickedOnPriceDisplayDropdown = "clickedOnPriceDisplayDropdown",
@@ -730,6 +756,14 @@ export enum ActionType {
    */
   clickedSelectShippingOption = "clickedSelectShippingOption",
   /**
+   * Corresponds to {@link ClickedStartPartnerOffer}
+   */
+  clickedStartPartnerOffer = "clickedStartPartnerOffer",
+  /**
+   * Corresponds to {@link ClickedSendPartnerOffer}
+   */
+  clickedSendPartnerOffer = "clickedSendPartnerOffer",
+  /**
    * Corresponds to {@link ClickedShippingAddress}
    */
   clickedShippingAddress = "clickedShippingAddress",
@@ -738,8 +772,12 @@ export enum ActionType {
    */
   clickedShowGroup = "clickedShowGroup",
   /**
-   * Corresponds to {@link ClickedShowMore}
+   * Corresponds to {@link ClickedMarketingModal}
    */
+  clickedMarketingModal = "clickedMarketingModal",
+  /**
+  * Corresponds to {@link ClickedShowMore}
+  */
   clickedShowMore = "clickedShowMore",
   /**
    * Corresponds to {@link ClickedSnooze}
@@ -757,6 +795,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedTooltip}
    */
   clickedTooltip = "clickedTooltip",
+  /**
+   * Corresponds to {@link ClickedUpdateArtwork}
+   */
+  clickedUpdateArtwork = "clickedUpdateArtwork",
   /**
    * Corresponds to {@link ClickedVerifyIdentity}
    */
@@ -1033,6 +1075,18 @@ export enum ActionType {
    * Corresponds to {@link SelectedRecentPriceRange}
    */
   selectedRecentPriceRange = "selectedRecentPriceRange",
+  /**
+   * Corresponds to {@link SendOffersBannerViewed}
+   */
+  sendOffersBannerViewed = "sendOffersBannerViewed",
+  /**
+   * Corresponds to {@link SendOffersErrorMessage}
+   */
+  sendOffersErrorMessage = "sendOffersErrorMessage",
+  /**
+   * Corresponds to {@link SendOffersModalViewed}
+   */
+  sendOffersModalViewed = "sendOffersModalViewed",  
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */
