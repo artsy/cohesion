@@ -1,3 +1,15 @@
+# v4.163.0 (Thu Jan 18 2024)
+
+#### 🚀  Enhancement
+
+- [AS-4346] Adding new events for partners offers [#479](https://github.com/artsy/cohesion/pull/479) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.162.0 (Thu Jan 04 2024)
 
 #### 🚀  Enhancement
