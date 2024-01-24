@@ -5,6 +5,7 @@
  */
 export enum OwnerType {
   activities = "activities",
+  activity = "activity",
   allArtistSeries = "allArtistSeries",
   alerts = "alerts",
   alertDetails = "alertDetails",
@@ -107,6 +108,7 @@ export enum OwnerType {
  */
 export type ScreenOwnerType =
   | OwnerType.activities
+  | OwnerType.activity
   | OwnerType.allArtistSeries
   | OwnerType.alerts
   | OwnerType.alertDetails
@@ -186,6 +188,8 @@ export type ScreenOwnerType =
  * Owner types available in web/mobile web
  */
 export type PageOwnerType =
+  | OwnerType.activities
+  | OwnerType.activity
   | OwnerType.alertConfirmation
   | OwnerType.article
   | OwnerType.articles
