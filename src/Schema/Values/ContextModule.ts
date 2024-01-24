@@ -8,6 +8,7 @@ export enum ContextModule {
   aboutTheWork = "aboutTheWork",
   aboutThisAuction = "aboutThisAuction",
   adServer = "adServer",
+  activity = "activity",
   activityRail = "activityRail",
   alertConfirmation = "alertConfirmation",
   alertDetails = "alertDetails",
@@ -211,6 +212,7 @@ export enum ContextModule {
  * Limited ContextModules available for web authentication events
  */
 export type AuthContextModule =
+  | ContextModule.activity
   | ContextModule.aboutTheWork
   | ContextModule.articleTab
   | ContextModule.artistHeader
