@@ -1,3 +1,15 @@
+# v4.165.0 (Wed Jan 24 2024)
+
+#### 🚀  Enhancement
+
+- feat: Add activity context module [#482](https://github.com/artsy/cohesion/pull/482) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.164.0 (Wed Jan 24 2024)
 
 #### 🚀  Enhancement
