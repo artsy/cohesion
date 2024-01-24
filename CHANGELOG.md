@@ -1,3 +1,20 @@
+# v4.164.0 (Wed Jan 24 2024)
+
+#### 🚀  Enhancement
+
+- feat: Add page and screen owner types for activities and activity [#481](https://github.com/artsy/cohesion/pull/481) ([@olerichter00](https://github.com/olerichter00))
+
+#### 🏠  Internal
+
+- chore(deps): update auto orb from 2.1.0 to v2.2.0 [#480](https://github.com/artsy/cohesion/pull/480) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.163.0 (Thu Jan 18 2024)
 
 #### 🚀  Enhancement
