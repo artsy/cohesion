@@ -185,7 +185,7 @@ export interface SendOffersBannerViewed {
  * ```
  *
  */
- export interface SendOffersModalViewed {
+export interface SendOffersModalViewed {
   action: ActionType.sendOffersModalViewed
   context_module: string
   context_page_owner_type: PageOwnerType
@@ -219,7 +219,7 @@ export interface SendOffersBannerViewed {
  * ```
  *
  */
- export interface SendOffersErrorMessage {
+export interface SendOffersErrorMessage {
   action: ActionType.sendOffersErrorMessage
   context_module: string
   context_page_owner_type: PageOwnerType

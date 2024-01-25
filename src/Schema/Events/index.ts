@@ -97,8 +97,8 @@ import {
   ClickedShowMore,
   ClickedSnooze,
   ClickedStartPartnerOffer,
-  ClickedUploadArtwork,
   ClickedUpdateArtwork,
+  ClickedUploadArtwork,
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
@@ -522,7 +522,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedAddMissingArtworksDetails}
    */
-  clickedAddMissingArtworksDetails = "clickedAddMissingArtworksDetails",  
+  clickedAddMissingArtworksDetails = "clickedAddMissingArtworksDetails",
   /**
    * Corresponds to {@link ClickedAddNewShippingAddress}
    */
@@ -686,7 +686,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedOnPagination}
    */
-  clickedOnPagination = "clickedOnPagination",  
+  clickedOnPagination = "clickedOnPagination",
   /**
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
@@ -776,8 +776,8 @@ export enum ActionType {
    */
   clickedMarketingModal = "clickedMarketingModal",
   /**
-  * Corresponds to {@link ClickedShowMore}
-  */
+   * Corresponds to {@link ClickedShowMore}
+   */
   clickedShowMore = "clickedShowMore",
   /**
    * Corresponds to {@link ClickedSnooze}
@@ -1086,7 +1086,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link SendOffersModalViewed}
    */
-  sendOffersModalViewed = "sendOffersModalViewed",  
+  sendOffersModalViewed = "sendOffersModalViewed",
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */
@@ -1235,6 +1235,10 @@ export enum ActionType {
    * Corresponds to {@link TappedMakeOffer}
    */
   tappedMakeOffer = "tappedMakeOffer",
+  /**
+   * Corresponds to {@link TappedMenuItem}
+   */
+  tappeMenuItem = "tappeMenuItem",
   /**
    * Corresponds to {@link TappedMyCollectionAddArtworkArtist}
    */

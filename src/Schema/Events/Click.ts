@@ -1889,7 +1889,7 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedMarketingModal {
+export interface ClickedMarketingModal {
   action: ActionType.clickedMarketingModal
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
@@ -1913,7 +1913,7 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
- *    partner_id: "61bcda16515b038ce5000104", 
+ *    partner_id: "61bcda16515b038ce5000104",
  *    artwork_id: "60de173a47476c000fd5c4cc",
  *    price: $20,000,
  *    last_offer_sent: 20,
@@ -1922,7 +1922,7 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedStartPartnerOffer {
+export interface ClickedStartPartnerOffer {
   action: ActionType.clickedStartPartnerOffer
   context_page_module: string
   context_page_owner_type: PageOwnerType
@@ -1949,7 +1949,7 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
- *    partner_id: "61bcda16515b038ce5000104", 
+ *    partner_id: "61bcda16515b038ce5000104",
  *    arwork_id: "60de173a47476c000fd5c4cc",
  *    price: $20,000,
  *    last_offer_sent: 20,
@@ -1958,7 +1958,7 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedAddMissingArtworksDetails {
+export interface ClickedAddMissingArtworksDetails {
   action: ActionType.clickedAddMissingArtworksDetails
   context_page_module: string
   context_page_owner_type: PageOwnerType
@@ -1971,7 +1971,6 @@ export interface ClickedAlertsFilters {
   new_saves: number
   page: number
 }
-
 
 /**
  * A user clicks on pagination on the Send Offers page in CMS
@@ -1986,13 +1985,13 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
- *    partner_id: "61bcda16515b038ce5000104", 
+ *    partner_id: "61bcda16515b038ce5000104",
  *    label: "1",
  *    current_page: 1
  *  }
  * ```
  */
- export interface ClickedOnPagination {
+export interface ClickedOnPagination {
   action: ActionType.clickedOnPagination
   context_page_module: string
   context_page_owner_type: PageOwnerType
@@ -2016,14 +2015,14 @@ export interface ClickedAlertsFilters {
  *    context_page_owner_type: "sendOffers",
  *    context_page_owner_id: "",
  *    context_page_owner_slug: "",
- *    partner_id: "61bcda16515b038ce5000104", 
+ *    partner_id: "61bcda16515b038ce5000104",
  *    arwork_id: "60de173a47476c000fd5c4cc",
  *    price: $20,000,
  *    collectors: 4
  *  }
  * ```
  */
- export interface ClickedSendPartnerOffer {
+export interface ClickedSendPartnerOffer {
   action: ActionType.clickedSendPartnerOffer
   context_page_module: string
   context_page_owner_type: PageOwnerType
@@ -2053,7 +2052,7 @@ export interface ClickedAlertsFilters {
  *  }
  * ```
  */
- export interface ClickedUpdateArtwork {
+export interface ClickedUpdateArtwork {
   action: ActionType.clickedUpdateArtwork
   context_page_module: string
   context_page_owner_type: PageOwnerType
