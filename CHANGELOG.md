@@ -1,3 +1,15 @@
+# v4.166.0 (Thu Jan 25 2024)
+
+#### 🚀  Enhancement
+
+- feat: add selected suggested filter event [#483](https://github.com/artsy/cohesion/pull/483) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.165.0 (Wed Jan 24 2024)
 
 #### 🚀  Enhancement
