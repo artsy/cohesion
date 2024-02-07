@@ -1,3 +1,15 @@
+# v4.167.0 (Wed Feb 07 2024)
+
+#### 🚀  Enhancement
+
+- chore(folio): Update types [#484](https://github.com/artsy/cohesion/pull/484) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.166.0 (Thu Jan 25 2024)
 
 #### 🚀  Enhancement
