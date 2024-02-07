@@ -6,6 +6,7 @@
 export enum OwnerType {
   activities = "activities",
   activity = "activity",
+  album = "album",
   allArtistSeries = "allArtistSeries",
   alerts = "alerts",
   alertDetails = "alertDetails",
@@ -108,6 +109,7 @@ export enum OwnerType {
  * Owner types available in iOS/Android
  */
 export type ScreenOwnerType =
+  | OwnerType.album
   | OwnerType.activities
   | OwnerType.activity
   | OwnerType.allArtistSeries

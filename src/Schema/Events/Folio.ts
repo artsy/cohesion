@@ -18,6 +18,8 @@ import { ActionType } from "."
  *    context_screen_owner_type: "artwork",
  *    context_screen_owner_id: "id"
  *    context_screen_owner_slug: "slug"
+ *    artwork_id: ["id"]
+ *    album_id: "id"
  *  }
  * ```
  */
@@ -26,6 +28,8 @@ export interface SentContent {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+  artwork_id: string[]
+  album_id: string
 }
 
 /**
@@ -59,7 +63,7 @@ export interface CreatedAlbum {
  *  ```
  *  {
  *    action: "addedToAlbum",
- *    context_screen_owner_type: "artwork",
+ *    context_screen_owner_type: "album",
  *    context_screen_owner_id: "id"
  *    context_screen_owner_slug: "slug"
  *    album_name: "My Album"
