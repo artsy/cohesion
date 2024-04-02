@@ -1340,6 +1340,10 @@ export enum ActionType {
    */
   tappedHighlightAchievement = "tappedHighlightAchievement",
   /**
+   * Corresponds to {@link TappedNewsSection}
+   */
+  tappedNewsSection = "tappedNewsSection",
+  /**
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
