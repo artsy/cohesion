@@ -1037,3 +1037,29 @@ export interface TappedHighlightAchievement {
   context_screen_owner_id: string
   context_screen_owner_slug?: string
 }
+
+/**
+ * A user taps the dedicated section to news in the app
+ *
+ * This schema describes events sent to Segment from [[tappedNewsSection]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNewsSection",
+ *    context_module : "", Home or News
+ *    context_screen_owner_type: "Home",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    destination_screen_owner_type: "Artwork"
+ *    destination_screen_owner_id: "58de681f275b2464fcdde097"
+ *  }
+ * ```
+ */
+export interface TappedNewsSection {
+  action: ActionType.tappedNewsSection
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_id: string
+}
