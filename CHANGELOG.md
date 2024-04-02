@@ -1,3 +1,15 @@
+# v4.168.0 (Tue Apr 02 2024)
+
+#### 🚀  Enhancement
+
+- Adding event tracking for news taps on app [#486](https://github.com/artsy/cohesion/pull/486) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.167.0 (Wed Feb 07 2024)
 
 #### 🚀  Enhancement
