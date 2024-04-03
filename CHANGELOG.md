@@ -1,3 +1,15 @@
+# v4.169.0 (Wed Apr 03 2024)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-804): add lotsForYouRail and topAuctionLotsRail [#487](https://github.com/artsy/cohesion/pull/487) ([@tam-kis](https://github.com/tam-kis))
+
+#### Authors: 1
+
+- Tam ([@tam-kis](https://github.com/tam-kis))
+
+---
+
 # v4.168.0 (Tue Apr 02 2024)
 
 #### 🚀  Enhancement
