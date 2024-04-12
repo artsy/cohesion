@@ -55,6 +55,7 @@ export enum OwnerType {
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
   lotsByArtistsYouFollow = "lotsByArtistsYouFollow",
+  lotsForYou = "lotsForYou",
   myCollection = "myCollection",
   myCollectionAddArtworkArtist = "myCollectionAddArtworkArtist",
   myCollectionArtwork = "myCollectionArtwork",
@@ -152,6 +153,7 @@ export type ScreenOwnerType =
   | OwnerType.inboxConversation
   | OwnerType.inboxInquiries
   | OwnerType.lotsByArtistsYouFollow
+  | OwnerType.lotsForYou
   | OwnerType.myCollection
   | OwnerType.myCollectionAddArtworkArtist
   | OwnerType.myCollectionArtwork
