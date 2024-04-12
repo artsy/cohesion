@@ -1,3 +1,15 @@
+# v4.170.0 (Fri Apr 12 2024)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-803): add lotsForYou OwnerType [#488](https://github.com/artsy/cohesion/pull/488) ([@tam-kis](https://github.com/tam-kis))
+
+#### Authors: 1
+
+- Tam ([@tam-kis](https://github.com/tam-kis))
+
+---
+
 # v4.169.0 (Wed Apr 03 2024)
 
 #### 🚀  Enhancement
