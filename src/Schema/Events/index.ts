@@ -78,9 +78,13 @@ import {
   ClickedOnDuplicateArtwork,
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
+  ClickedOnGalleryName,
+  ClickedOnLearnMore,
   ClickedOnMakeOfferCheckbox,
   ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
+  ClickedOnPrivateListing,
+  ClickedOnReadMore,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
   ClickedOrderSummary,
@@ -290,12 +294,16 @@ export type Event =
   | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
   | ClickedOnBuyNowCheckbox
+  | ClickedOnDuplicateArtwork
   | ClickedOnFramedMeasurements
   | ClickedOnFramedMeasurementsDropdown
+  | ClickedOnGalleryName
+  | ClickedOnLearnMore
   | ClickedOnMakeOfferCheckbox
-  | ClickedOnDuplicateArtwork
   | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
+  | ClickedOnPrivateListing
+  | ClickedOnReadMore
   | ClickedPublish
   | ClickedOnSubmitOrder
   | ClickedSnooze
@@ -668,6 +676,10 @@ export enum ActionType {
    */
   clickedOnBuyNowCheckbox = "clickedOnBuyNowCheckbox",
   /**
+   * Corresponds to {@link ClickedOnDuplicateArtwork}
+   */
+  clickedOnDuplicateArtwork = "clickedOnDuplicateArtwork",
+  /**
    * Corresponds to {@link ClickedOnFramedMeasurements}
    */
   clickedOnFramedMeasurements = "clickedOnFramedMeasurements",
@@ -676,13 +688,17 @@ export enum ActionType {
    */
   clickedOnFramedMeasurementsDropdown = "clickedOnFramedMeasurementsDropdown",
   /**
+   * Corresponds to {@link ClickedOnGalleryName}
+   */
+  clickedOnGalleryName = "clickedOnGalleryName",
+  /**
+   * Corresponds to {@link ClickedOnLearnMore}
+   */
+  clickedOnLearnMore = "clickedOnLearnMore",
+  /**
    * Corresponds to {@link ClickedOnMakeOfferCheckbox}
    */
   clickedOnMakeOfferCheckbox = "clickedOnMakeOfferCheckbox",
-  /**
-   * Corresponds to {@link ClickedOnDuplicateArtwork}
-   */
-  clickedOnDuplicateArtwork = "clickedOnDuplicateArtwork",
   /**
    * Corresponds to {@link ClickedOnPagination}
    */
@@ -692,9 +708,17 @@ export enum ActionType {
    */
   clickedOnPriceDisplayDropdown = "clickedOnPriceDisplayDropdown",
   /**
+   * Corresponds to {@link ClickedOnPrivateListing}
+   */
+  clickedOnPrivateListing = "clickedOnPrivateListing",
+  /**
    * Corresponds to {@link ClickedPublish}
    */
   clickedPublish = "clickedPublish",
+  /**
+   * Corresponds to {@link ClickedOnReadMore}
+   */
+  clickedOnReadMore = "clickedOnReadMore",
   /**
    * Corresponds to {@link ClickedOnSubmitOrder}
    */
