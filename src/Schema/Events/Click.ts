@@ -2061,3 +2061,95 @@ export interface ClickedUpdateArtwork {
   partner_id: string
   artwork_id: string
 }
+
+/**
+ * A user clicks on the read more link on the private artwork page.
+ *
+ * This schema describes events sent to Segment from [[ClickedOnReadMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnReadMore",
+ *    context_module: "About the work" | "About the artist" | "Sidebar",
+ *    subject: "Read more"
+ *    type: "Link"
+ *  }
+ * ```
+ */
+export interface ClickedOnReadMore {
+  action: ActionType.clickedOnReadMore
+  context_module: string
+  subject: string
+  type: string
+}
+
+/**
+ * A user clicks on the learn more link on the private artwork page.
+ *
+ * This schema describes events sent to Segment from [[ClickedOnLearnMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnLearnMore",
+ *    context_module: "Sidebar",
+ *    subject: "Learn more"
+ *    type: "Link"
+ *    flow: "Shipping" | "Artsy Guarantee"
+ *  }
+ * ```
+ */
+export interface ClickedOnLearnMore {
+  action: ActionType.clickedOnLearnMore
+  context_module: string
+  subject: string
+  type: string
+  flow: string
+}
+
+/**
+ * A user clicks on the Gallery name on the private artwork page.
+ *
+ * This schema describes events sent to Segment from [[ClickedOnGalleryName]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOnGalleryName",
+ *    context_module: "Sidebar",
+ *    subject: "Gallery Name"
+ *    type: "Link"
+ *    flow: "Exclusive Access"
+ *  }
+ * ```
+ */
+export interface ClickedOnGalleryName {
+  action: ActionType.clickedOnGalleryName
+  context_module: string
+  subject: string
+  type: string
+  flow: string
+}
+
+/**
+ * A user clicks on the private listing in the artwork header on the private artwork page.
+ *
+ * This schema describes events sent to Segment from [[ClickedOnPrivateListing]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "ClickedOnPrivateListing",
+ *    context_module: "artworkHeader",
+ *    subject: "Private listing"
+ *    type: "Link"
+ *  }
+ * ```
+ */
+export interface ClickedOnPrivateListing {
+  action: ActionType.clickedOnPrivateListing
+  context_module: string
+  subject: string
+  type: string
+}
