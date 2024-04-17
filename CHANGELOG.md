@@ -1,3 +1,15 @@
+# v4.171.0 (Wed Apr 17 2024)
+
+#### 🚀  Enhancement
+
+- chore: AMBER-591 - add private artwork tracking methods [#489](https://github.com/artsy/cohesion/pull/489) ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+#### Authors: 1
+
+- Mitchell Henson ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+---
+
 # v4.170.0 (Fri Apr 12 2024)
 
 #### 🚀  Enhancement
