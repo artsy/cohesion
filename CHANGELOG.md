@@ -1,3 +1,15 @@
+# v4.172.0 (Fri Apr 19 2024)
+
+#### 🚀  Enhancement
+
+- chore: private artwork tracking updates [#490](https://github.com/artsy/cohesion/pull/490) ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+#### Authors: 1
+
+- Mitchell Henson ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+---
+
 # v4.171.0 (Wed Apr 17 2024)
 
 #### 🚀  Enhancement
