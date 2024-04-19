@@ -78,12 +78,10 @@ import {
   ClickedOnDuplicateArtwork,
   ClickedOnFramedMeasurements,
   ClickedOnFramedMeasurementsDropdown,
-  ClickedOnGalleryName,
   ClickedOnLearnMore,
   ClickedOnMakeOfferCheckbox,
   ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
-  ClickedOnPrivateListing,
   ClickedOnReadMore,
   ClickedOnSubmitOrder,
   ClickedOrderPage,
@@ -297,12 +295,10 @@ export type Event =
   | ClickedOnDuplicateArtwork
   | ClickedOnFramedMeasurements
   | ClickedOnFramedMeasurementsDropdown
-  | ClickedOnGalleryName
   | ClickedOnLearnMore
   | ClickedOnMakeOfferCheckbox
   | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
-  | ClickedOnPrivateListing
   | ClickedOnReadMore
   | ClickedPublish
   | ClickedOnSubmitOrder
@@ -688,10 +684,6 @@ export enum ActionType {
    */
   clickedOnFramedMeasurementsDropdown = "clickedOnFramedMeasurementsDropdown",
   /**
-   * Corresponds to {@link ClickedOnGalleryName}
-   */
-  clickedOnGalleryName = "clickedOnGalleryName",
-  /**
    * Corresponds to {@link ClickedOnLearnMore}
    */
   clickedOnLearnMore = "clickedOnLearnMore",
@@ -707,10 +699,6 @@ export enum ActionType {
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
   clickedOnPriceDisplayDropdown = "clickedOnPriceDisplayDropdown",
-  /**
-   * Corresponds to {@link ClickedOnPrivateListing}
-   */
-  clickedOnPrivateListing = "clickedOnPrivateListing",
   /**
    * Corresponds to {@link ClickedPublish}
    */
