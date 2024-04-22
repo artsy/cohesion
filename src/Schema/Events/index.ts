@@ -104,6 +104,7 @@ import {
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedViewWork
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -229,6 +230,7 @@ import {
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
+  TappedViewWork
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -329,6 +331,7 @@ export type Event =
   | ClickedUpdateArtwork
   | ClickedValidationAddressOptions
   | ClickedCloseValidationAddressModal
+  | ClickedViewWork
   | CommercialFilterParamsChanged
   | CompletedOfflineSync
   | CompletedOnboarding
@@ -436,6 +439,7 @@ export type Event =
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TappedViewOffer
+  | TappedViewWork
   | TimeOnPage
   | ToggledAccordion
   | ToggledNotification
@@ -819,6 +823,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedViewingRoomCard}
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
+  /**
+   * Corresponds to {@link ClickedViewWork}
+   */
+   clickedViewWork = "clickedViewWork",
   /**
    * Corresponds to {@link ClickedValidationAddressOptions}
    */
@@ -1339,6 +1347,10 @@ export enum ActionType {
    * Corresponds to {@link TappedViewOffer}
    */
   tappedViewOffer = "tappedViewOffer",
+  /**
+   * Corresponds to {@link TappedViewWork}
+   */
+   tappedViewWork = "tappedViewWork",
   /**
    * Corresponds to {@link TappedVerifiedRepresentative}
    */

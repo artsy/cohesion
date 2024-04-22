@@ -67,6 +67,7 @@ export enum OwnerType {
   myCollectionUploadingFlow = "myCollectionUploadingFlow",
   newWorksForYou = "newWorksForYou",
   newWorksFromGalleriesYouFollow = "newWorksFromGalleriesYouFollow",
+  notification = "notification",
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
   ordersCounter = "orders-counter",
@@ -165,6 +166,7 @@ export type ScreenOwnerType =
   | OwnerType.myCollectionOnboarding
   | OwnerType.newWorksForYou
   | OwnerType.newWorksFromGalleriesYouFollow
+  | OwnerType.notification
   | OwnerType.onboarding
   | OwnerType.partner
   | OwnerType.priceDatabase

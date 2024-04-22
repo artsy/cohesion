@@ -138,6 +138,7 @@ export enum ContextModule {
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
+  notification = "notification",
   onboardingActivity = "onboardingActivity",
   onboardingCollectorLevel = "onboardingCollectorLevel",
   onboardingFlow = "onboardingFlow",
@@ -273,6 +274,7 @@ export type AuthContextModule =
   | ContextModule.myCollectionHome
   | ContextModule.navBar
   | ContextModule.newWorksByGalleriesYouFollowRail
+  | ContextModule.notification
   | ContextModule.onboardingActivity
   | ContextModule.onboardingCollectorLevel
   | ContextModule.onboardingFlow
