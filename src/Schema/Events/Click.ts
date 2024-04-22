@@ -2110,7 +2110,7 @@ export interface ClickedOnLearnMore {
 /**
  * A user clicks on View Work on the notification page.
  *
- * This schema describes events sent to Segment from [[ClickedOnLearnMore]]
+ * This schema describes events sent to Segment from [[clickedViewWork]]
  *
  *  @example
  *  ```

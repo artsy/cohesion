@@ -230,6 +230,7 @@ import {
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
+  TappedViewWork
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -438,6 +439,7 @@ export type Event =
   | TappedViewingRoomCard
   | TappedViewingRoomGroup
   | TappedViewOffer
+  | TappedViewWork
   | TimeOnPage
   | ToggledAccordion
   | ToggledNotification
@@ -1345,6 +1347,10 @@ export enum ActionType {
    * Corresponds to {@link TappedViewOffer}
    */
   tappedViewOffer = "tappedViewOffer",
+  /**
+   * Corresponds to {@link TappedViewWork}
+   */
+   tappedViewWork = "tappedViewWork",
   /**
    * Corresponds to {@link TappedVerifiedRepresentative}
    */
