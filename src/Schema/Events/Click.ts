@@ -2107,3 +2107,27 @@ export interface ClickedOnLearnMore {
   type: string
   flow: string
 }
+/**
+ * A user clicks on View Work on the notification page.
+ *
+ * This schema describes events sent to Segment from [[ClickedOnLearnMore]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedViewWork",
+ *    context_owner_type: "notifications",
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
+ *    artwork_id: "6617b3410c1cd2000c6e11c7"
+ *    notication_type: "offers" | "all" | "alerts" | "follows"
+ *  }
+ * ```
+ */
+ export interface ClickedViewWork {
+  action: ActionType.clickedViewWork
+  context_owner_type: string
+  owner_id: string
+  artwork_id: string
+  notication_type: string
+}
+

@@ -104,6 +104,7 @@ import {
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
+  ClickedViewWork
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -329,6 +330,7 @@ export type Event =
   | ClickedUpdateArtwork
   | ClickedValidationAddressOptions
   | ClickedCloseValidationAddressModal
+  | ClickedViewWork
   | CommercialFilterParamsChanged
   | CompletedOfflineSync
   | CompletedOnboarding
@@ -819,6 +821,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedViewingRoomCard}
    */
   clickedViewingRoomCard = "clickedViewingRoomCard",
+  /**
+   * Corresponds to {@link ClickedViewWork}
+   */
+   clickedViewWork = "clickedViewWork",
   /**
    * Corresponds to {@link ClickedValidationAddressOptions}
    */
