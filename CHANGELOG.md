@@ -1,3 +1,15 @@
+# v4.173.0 (Mon Apr 22 2024)
+
+#### 🚀  Enhancement
+
+- [AS-4497] Adding tracking to notification page [#491](https://github.com/artsy/cohesion/pull/491) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.172.0 (Fri Apr 19 2024)
 
 #### 🚀  Enhancement
