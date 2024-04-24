@@ -1073,11 +1073,11 @@ export interface TappedNewsSection {
  *  ```
  *  {
  *    action: "tappedViewWork",
- *    context_module : "Notifications"
- *    context_screen_owner_type: "notifications",
+ *    context_module : "Notification"
+ *    context_screen_owner_type: "notification",
  *    context_screen_owner_id: ""770fa47d-8cc8-4267-93e7-2808544d2a98"",
  *    artwork_id: "6617b3410c1cd2000c6e11c7"
- *    notication_type: "offers" | "all" | "alerts" | "follows"
+ *    notification_type: "offers" | "all" | "alerts" | "follows"
  *  }
  * ```
  */
@@ -1087,5 +1087,5 @@ export interface TappedNewsSection {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string
   artwork_id: string
-  notication_type: string
+  notification_type: string
 }
