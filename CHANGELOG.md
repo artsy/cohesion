@@ -1,3 +1,15 @@
+# v4.175.0 (Wed Apr 24 2024)
+
+#### 🚀  Enhancement
+
+- [AS-4497] Add flow to tapped buy now [#493](https://github.com/artsy/cohesion/pull/493) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.174.0 (Wed Apr 24 2024)
 
 #### 🚀  Enhancement
