@@ -1,3 +1,15 @@
+# v4.174.0 (Wed Apr 24 2024)
+
+#### 🚀  Enhancement
+
+- Fix artwork view event [#492](https://github.com/artsy/cohesion/pull/492) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.173.0 (Mon Apr 22 2024)
 
 #### 🚀  Enhancement
