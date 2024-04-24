@@ -786,7 +786,7 @@ export interface TappedBid {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
- *    impulse_conversation_id: "198"
+ *    impulse_conversation_id: "198",
  *    flow: "Buy now" | "Partner offer"
  *  }
  * ```
