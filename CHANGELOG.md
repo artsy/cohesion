@@ -1,3 +1,15 @@
+# v4.176.0 (Fri Apr 26 2024)
+
+#### 🚀  Enhancement
+
+- [AS-4453] Adding description to event View Work [#494](https://github.com/artsy/cohesion/pull/494) ([@daytavares](https://github.com/daytavares))
+
+#### Authors: 1
+
+- Dayane Tavares ([@daytavares](https://github.com/daytavares))
+
+---
+
 # v4.175.0 (Wed Apr 24 2024)
 
 #### 🚀  Enhancement
