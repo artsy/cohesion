@@ -1077,7 +1077,7 @@ export interface TappedNewsSection {
  *    action: "tappedViewWork",
  *    context_module : "Notification"
  *    context_screen_owner_type: "notification",
- *    context_screen_owner_id: ""770fa47d-8cc8-4267-93e7-2808544d2a98"",
+ *    context_screen_owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98", (it will change depending on the notification type. For offers, we are using partner offer id)
  *    artwork_id: "6617b3410c1cd2000c6e11c7"
  *    notification_type: "offers" | "all" | "alerts" | "follows"
  *  }
