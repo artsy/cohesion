@@ -21,6 +21,7 @@ import { ActionType } from "."
  *    submission_id: "66355",
  *    user_email: "xx@gmail.com"
  *    user_id: "5bd8b675776bd6002c86526c"
+ *    fieldsProvided: ["artistId", "title", "height", "width", "depth", "year"]
  *  }
  * ```
  */
@@ -31,6 +32,7 @@ export interface ConsignmentSubmitted {
   submission_id: string
   user_email: string
   user_id?: string
+  fieldsProvided: string[]
 }
 
 /**
