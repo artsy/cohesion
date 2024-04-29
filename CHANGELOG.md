@@ -1,3 +1,15 @@
+# v4.177.0 (Mon Apr 29 2024)
+
+#### 🚀  Enhancement
+
+- chore: add fieldsProvided to event ConsignmentSubmitted [#495](https://github.com/artsy/cohesion/pull/495) ([@tam-kis](https://github.com/tam-kis))
+
+#### Authors: 1
+
+- Tam ([@tam-kis](https://github.com/tam-kis))
+
+---
+
 # v4.176.0 (Fri Apr 26 2024)
 
 #### 🚀  Enhancement
