@@ -1,3 +1,15 @@
+# v4.178.0 (Fri May 03 2024)
+
+#### 🚀  Enhancement
+
+- chore: add missing auth context [#496](https://github.com/artsy/cohesion/pull/496) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.177.0 (Mon Apr 29 2024)
 
 #### 🚀  Enhancement
