@@ -1083,7 +1083,7 @@ export interface TappedNewsSection {
  *  }
  * ```
  */
- export interface TappedViewWork {
+export interface TappedViewWork {
   action: ActionType.tappedViewWork
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType

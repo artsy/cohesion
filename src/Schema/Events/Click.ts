@@ -2123,11 +2123,10 @@ export interface ClickedOnLearnMore {
  *  }
  * ```
  */
- export interface ClickedViewWork {
+export interface ClickedViewWork {
   action: ActionType.clickedViewWork
   context_owner_type: string
   owner_id: string
   artwork_id: string
   notification_type: string
 }
-
