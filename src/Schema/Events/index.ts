@@ -104,7 +104,7 @@ import {
   ClickedValidationAddressOptions,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
-  ClickedViewWork
+  ClickedViewWork,
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -230,7 +230,7 @@ import {
   TappedVerifyIdentity,
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
-  TappedViewWork
+  TappedViewWork,
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -826,7 +826,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link ClickedViewWork}
    */
-   clickedViewWork = "clickedViewWork",
+  clickedViewWork = "clickedViewWork",
   /**
    * Corresponds to {@link ClickedValidationAddressOptions}
    */
@@ -1350,7 +1350,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link TappedViewWork}
    */
-   tappedViewWork = "tappedViewWork",
+  tappedViewWork = "tappedViewWork",
   /**
    * Corresponds to {@link TappedVerifiedRepresentative}
    */

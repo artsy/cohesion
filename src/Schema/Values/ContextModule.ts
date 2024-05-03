@@ -184,6 +184,7 @@ export enum ContextModule {
   sellHeader = "sellHeader",
   sellHowItWorks = "sellHowItWorks",
   sellMeetTheSpecialists = "sellMeetTheSpecialists",
+  sellStickyFooter = "sellStickyFooter",
   sellSpeakToTheTeam = "sellSpeakToTheTeam",
   showHeader = "showHeader",
   showInfo = "showInfo",
@@ -309,3 +310,8 @@ export type AuthContextModule =
   | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksByPopularArtistsRail
   | ContextModule.worksForSaleRail
+  | ContextModule.sell
+  | ContextModule.sellHeader
+  | ContextModule.sellFooter
+  | ContextModule.sellHowItWorks
+  | ContextModule.sellStickyFooter
