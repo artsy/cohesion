@@ -798,7 +798,7 @@ export interface TappedBuyNow {
   context_owner_id: string
   context_owner_slug: string
   impulse_conversation_id?: string
-  flow: string
+  flow?: "Buy now" | "Partner offer"
 }
 
 /**
