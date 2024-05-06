@@ -1,3 +1,15 @@
+# v4.180.0 (Mon May 06 2024)
+
+#### 🚀  Enhancement
+
+- chore: Adds optional flow metadata to TappedLearnMore interface [#498](https://github.com/artsy/cohesion/pull/498) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.179.0 (Mon May 06 2024)
 
 #### 🚀  Enhancement
