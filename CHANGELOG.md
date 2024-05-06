@@ -1,3 +1,15 @@
+# v4.179.0 (Mon May 06 2024)
+
+#### 🚀  Enhancement
+
+- fix: broken TappedBuyNow flow type [#497](https://github.com/artsy/cohesion/pull/497) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.178.0 (Fri May 03 2024)
 
 #### 🚀  Enhancement
