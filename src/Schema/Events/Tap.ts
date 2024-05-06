@@ -918,7 +918,8 @@ export interface TappedConsignmentInquiry {
  *    context_screen_owner_type: "fair",
  *    context_screen_owner_id: "5f4d80c972737e000deff1ed",
  *    context_screen_owner_slug: "latitude-art-fair-2020",
- *    subject: "Learn More"
+ *    subject: "Learn More",
+ *    flow: "Artsy Guarantee"
  *  }
  * ```
  */
@@ -930,6 +931,7 @@ export interface TappedLearnMore {
   context_screen_owner_slug?: string
   /** The text of the tapped button */
   subject: string
+  flow?: string
 }
 
 /**
