@@ -580,6 +580,10 @@ export enum ActionType {
    */
   clickedBuyerProtection = "clickedBuyerProtection",
   /**
+   * Corresponds to {@link ClickedBuyNow}
+   */
+  clickedBuyNow = "clickedBuyNow",
+  /**
    * Corresponds to {@link ClickedChangePage}
    */
   clickedChangePage = "clickedChangePage",
