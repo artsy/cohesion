@@ -275,6 +275,33 @@ export interface ClickedBuyerProtection {
 }
 
 /**
+ * User clicks "Purchase" on an artwork page (BNMO)
+ *
+ * This schema describes events sent to Segment from [[clickedBuyNow]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedBuyNow",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+ *    impulse_conversation_id: "198",
+ *    flow: "Buy now" | "Partner offer"
+ *  }
+ * ```
+ */
+
+export interface ClickedBuyNow {
+  action: ActionType.clickedBuyNow
+  context_owner_type: OwnerType.artwork
+  context_owner_slug: string
+  context_owner_id: string
+  impulse_conversation_id?: string
+  flow?: string
+}
+
+/**
  *  User clicks on Change Payment Method on the orders review page.
  *
  *  This schema describes events sent to Segment from [[clickedChangePaymentMethod]]
