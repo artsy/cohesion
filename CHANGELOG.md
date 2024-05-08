@@ -1,3 +1,15 @@
+# v4.182.0 (Wed May 08 2024)
+
+#### 🚀  Enhancement
+
+- fix: updates the context_owner_type for ClickedBuyNow event [#500](https://github.com/artsy/cohesion/pull/500) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.181.0 (Wed May 08 2024)
 
 #### 🚀  Enhancement
