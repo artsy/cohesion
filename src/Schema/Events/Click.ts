@@ -294,7 +294,7 @@ export interface ClickedBuyerProtection {
 
 export interface ClickedBuyNow {
   action: ActionType.clickedBuyNow
-  context_owner_type: OwnerType.artwork
+  context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
   impulse_conversation_id?: string
