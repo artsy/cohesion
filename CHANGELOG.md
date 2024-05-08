@@ -1,3 +1,15 @@
+# v4.181.0 (Wed May 08 2024)
+
+#### 🚀  Enhancement
+
+- feat: add ClickedBuyNow in events schema [#499](https://github.com/artsy/cohesion/pull/499) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.180.0 (Mon May 06 2024)
 
 #### 🚀  Enhancement
