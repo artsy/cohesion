@@ -1,3 +1,15 @@
+# v4.183.0 (Mon May 13 2024)
+
+#### 🚀  Enhancement
+
+- chore: add newWorksForYouRail to auth context modules [#501](https://github.com/artsy/cohesion/pull/501) ([@egdbear](https://github.com/egdbear))
+
+#### Authors: 1
+
+- Dejan ([@egdbear](https://github.com/egdbear))
+
+---
+
 # v4.182.0 (Wed May 08 2024)
 
 #### 🚀  Enhancement
