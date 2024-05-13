@@ -275,6 +275,7 @@ export type AuthContextModule =
   | ContextModule.myCollectionHome
   | ContextModule.navBar
   | ContextModule.newWorksByGalleriesYouFollowRail
+  | ContextModule.newWorksForYouRail
   | ContextModule.notification
   | ContextModule.onboardingActivity
   | ContextModule.onboardingCollectorLevel
