@@ -1,3 +1,15 @@
+# v4.184.0 (Wed May 15 2024)
+
+#### 🚀  Enhancement
+
+- fix(ONYX-969): add lotsForYouRail, topAuctionLotsRail to AuthContextModule [#502](https://github.com/artsy/cohesion/pull/502) ([@tam-kis](https://github.com/tam-kis))
+
+#### Authors: 1
+
+- Tam ([@tam-kis](https://github.com/tam-kis))
+
+---
+
 # v4.183.0 (Mon May 13 2024)
 
 #### 🚀  Enhancement
