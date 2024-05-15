@@ -268,6 +268,7 @@ export type AuthContextModule =
   | ContextModule.intextTooltip
   | ContextModule.liveAuctionRoom
   | ContextModule.liveAuctionsRail
+  | ContextModule.lotsForYouRail
   | ContextModule.mainCarousel
   | ContextModule.marketingCollectionTab
   | ContextModule.minimalCTABanner
@@ -303,6 +304,7 @@ export type AuthContextModule =
   | ContextModule.showTab
   | ContextModule.standoutLots
   | ContextModule.tagHeader
+  | ContextModule.topAuctionLotsRail
   | ContextModule.topTab
   | ContextModule.topWorksRail
   | ContextModule.trendingArtistsRail
