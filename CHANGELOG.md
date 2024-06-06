@@ -1,3 +1,15 @@
+# v4.185.0 (Thu Jun 06 2024)
+
+#### 🚀  Enhancement
+
+- chore: Add new submission artwork form owner types [#503](https://github.com/artsy/cohesion/pull/503) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.184.0 (Wed May 15 2024)
 
 #### 🚀  Enhancement
