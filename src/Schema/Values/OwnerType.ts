@@ -19,19 +19,6 @@ export enum OwnerType {
   artists = "artists",
   artistSeries = "artistSeries",
   artwork = "artwork",
-
-  artworkFormStart = "artworkFormStart",
-  artworkFormSelectArtist = "artworkFormSelectArtist",
-  artworkFormAddTitle = "artworkFormAddTitle",
-  artworkFormAddPhotos = "artworkFormAddPhotos",
-  artworkFormAddDetails = "artworkFormAddDetails",
-  artworkFormPurchaseHistory = "artworkFormPurchaseHistory",
-  artworkFormAddDimensions = "artworkFormAddDimensions",
-  artworkFormAddPhoneNumber = "artworkFormAddPhoneNumber",
-  artworkFormCompleteYourSubmission = "artworkFormCompleteYourSubmission",
-  artworkFormArtistRejected = "artworkFormArtistRejected",
-  artworkFormSelectArtworkMyCollectionArtwork = "artworkFormSelectArtworkMyCollectionArtwork",
-
   artworkPriceFilter = "artworkPriceFilter",
   artworkRecommendations = "artworkRecommendations",
   auction = "auction",
@@ -109,6 +96,19 @@ export enum OwnerType {
   show = "show",
   shows = "shows",
   similarToRecentlyViewed = "similarToRecentlyViewed",
+
+  submitArtworkStepStart = "submitArtworkStepStart",
+  submitArtworkStepSelectArtist = "submitArtworkStepSelectArtist",
+  submitArtworkStepAddTitle = "submitArtworkStepAddTitle",
+  submitArtworkStepAddPhotos = "submitArtworkStepAddPhotos",
+  submitArtworkStepAddDetails = "submitArtworkStepAddDetails",
+  submitArtworkStepPurchaseHistory = "submitArtworkStepPurchaseHistory",
+  submitArtworkStepAddDimensions = "submitArtworkStepAddDimensions",
+  submitArtworkStepAddPhoneNumber = "submitArtworkStepAddPhoneNumber",
+  submitArtworkStepCompleteYourSubmission = "submitArtworkStepCompleteYourSubmission",
+  submitArtworkStepArtistRejected = "submitArtworkStepArtistRejected",
+  submitArtworkStepSelectArtworkMyCollectionArtwork = "submitArtworkStepSelectArtworkMyCollectionArtwork",
+
   tag = "tag",
   upcomingAuctions = "upcomingAuctions",
   user = "user",
@@ -138,19 +138,6 @@ export type ScreenOwnerType =
   | OwnerType.artistAuctionResults
   | OwnerType.artistSeries
   | OwnerType.artwork
-
-  | OwnerType.artworkFormStart
-  | OwnerType.artworkFormSelectArtist
-  | OwnerType.artworkFormAddTitle
-  | OwnerType.artworkFormAddPhotos
-  | OwnerType.artworkFormAddDetails
-  | OwnerType.artworkFormPurchaseHistory
-  | OwnerType.artworkFormAddDimensions
-  | OwnerType.artworkFormAddPhoneNumber
-  | OwnerType.artworkFormCompleteYourSubmission
-  | OwnerType.artworkFormArtistRejected
-  | OwnerType.artworkFormSelectArtworkMyCollectionArtwork
-
   | OwnerType.artworkPriceFilter
   | OwnerType.artworkRecommendations
   | OwnerType.auctionResult
@@ -209,6 +196,17 @@ export type ScreenOwnerType =
   | OwnerType.settings
   | OwnerType.show
   | OwnerType.shows
+  | OwnerType.submitArtworkStepStart
+  | OwnerType.submitArtworkStepSelectArtist
+  | OwnerType.submitArtworkStepAddTitle
+  | OwnerType.submitArtworkStepAddPhotos
+  | OwnerType.submitArtworkStepAddDetails
+  | OwnerType.submitArtworkStepPurchaseHistory
+  | OwnerType.submitArtworkStepAddDimensions
+  | OwnerType.submitArtworkStepAddPhoneNumber
+  | OwnerType.submitArtworkStepCompleteYourSubmission
+  | OwnerType.submitArtworkStepArtistRejected
+  | OwnerType.submitArtworkStepSelectArtworkMyCollectionArtwork
   | OwnerType.similarToRecentlyViewed
   | OwnerType.tag
   | OwnerType.upcomingAuctions
@@ -232,19 +230,6 @@ export type PageOwnerType =
   | OwnerType.artists
   | OwnerType.artistSeries
   | OwnerType.artwork
-
-  | OwnerType.artworkFormStart
-  | OwnerType.artworkFormSelectArtist
-  | OwnerType.artworkFormAddTitle
-  | OwnerType.artworkFormAddPhotos
-  | OwnerType.artworkFormAddDetails
-  | OwnerType.artworkFormPurchaseHistory
-  | OwnerType.artworkFormAddDimensions
-  | OwnerType.artworkFormAddPhoneNumber
-  | OwnerType.artworkFormCompleteYourSubmission
-  | OwnerType.artworkFormArtistRejected
-  | OwnerType.artworkFormSelectArtworkMyCollectionArtwork
-
   | OwnerType.auctions
   | OwnerType.collect
   | OwnerType.collection
@@ -281,6 +266,17 @@ export type PageOwnerType =
   | OwnerType.sendOffers
   | OwnerType.show
   | OwnerType.shows
+  | OwnerType.submitArtworkStepStart
+  | OwnerType.submitArtworkStepSelectArtist
+  | OwnerType.submitArtworkStepAddTitle
+  | OwnerType.submitArtworkStepAddPhotos
+  | OwnerType.submitArtworkStepAddDetails
+  | OwnerType.submitArtworkStepPurchaseHistory
+  | OwnerType.submitArtworkStepAddDimensions
+  | OwnerType.submitArtworkStepAddPhoneNumber
+  | OwnerType.submitArtworkStepCompleteYourSubmission
+  | OwnerType.submitArtworkStepArtistRejected
+  | OwnerType.submitArtworkStepSelectArtworkMyCollectionArtwork
   | OwnerType.tag
   | OwnerType.user
   | OwnerType.viewingRoom
