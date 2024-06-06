@@ -1,3 +1,15 @@
+# v4.186.0 (Thu Jun 06 2024)
+
+#### 🚀  Enhancement
+
+- fix: Rename `artworkForm*` owner types to `submitArtworkStep*` [#504](https://github.com/artsy/cohesion/pull/504) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.185.0 (Thu Jun 06 2024)
 
 #### 🚀  Enhancement
