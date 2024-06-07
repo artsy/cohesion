@@ -848,6 +848,14 @@ export enum ActionType {
    */
   clickedGene = "clickedGene",
   /**
+   * Corresponds to {@link ClickedConversationHistoryItem}
+   */
+  clickedConversationHistoryItem = "clickedConversationHistoryItem",
+  /**
+   * Corresponds to {@link ClickedViewFullConversationHistory}
+   */
+  clickedViewFullConversationHistory = "clickedViewFullConversationHistory",
+  /**
    * Corresponds to {@link ClickedHighlightAchievement}
    */
   clickedHighlightAchievement = "clickedHighlightAchievement",
