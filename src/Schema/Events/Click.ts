@@ -2157,3 +2157,21 @@ export interface ClickedViewWork {
   artwork_id: string
   notification_type: string
 }
+
+export interface ClickedConversationHistoryItem {
+  action: ActionType.clickedConversationHistoryItem
+  context_page_module: string
+  context_page_owner_id: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  partner_id: string
+  inquiry_id: string
+}
+
+export interface ClickedViewFullConversationHistory {
+  action: ActionType.clickedViewFullConversationHistory
+  context_page_module: string
+  context_page_owner_id: string
+  partner_id: string
+  inquiry_id: string
+}
