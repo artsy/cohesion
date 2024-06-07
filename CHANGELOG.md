@@ -1,3 +1,15 @@
+# v4.187.0 (Fri Jun 07 2024)
+
+#### 🚀  Enhancement
+
+- feat: adds events for conversation history [#505](https://github.com/artsy/cohesion/pull/505) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.186.0 (Thu Jun 06 2024)
 
 #### 🚀  Enhancement
