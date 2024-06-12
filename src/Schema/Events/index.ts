@@ -9,6 +9,7 @@ import {
   CreatedArtworkList,
   DeletedArtworkList,
   EditedArtworkList,
+  EditedArtworkListPrivacy,
   ViewedArtworkList,
 } from "./ArtworkLists"
 import {
@@ -347,6 +348,7 @@ export type Event =
   | DeletedSavedSearch
   | EditCollectedArtwork
   | EditedArtworkList
+  | EditedArtworkListPrivacy
   | EditedAutocompletedAddress
   | EditedSavedSearch
   | EditedUserProfile
@@ -931,6 +933,10 @@ export enum ActionType {
    * Corresponds to {@link EditedArtworkList}
    */
   editedArtworkList = "editedArtworkList",
+  /**
+   * Corresponds to {@link EditedArtworkListPrivacy}
+   */
+   editedArtworkListPrivacy = "editedArtworkListPrivacy",
   /**
    * Corresponds to {@link editedAlert}
    */
