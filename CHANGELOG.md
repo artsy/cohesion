@@ -1,3 +1,15 @@
+# v4.188.0 (Thu Jun 13 2024)
+
+#### 🚀  Enhancement
+
+- feat: adds whats new context module [#506](https://github.com/artsy/cohesion/pull/506) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.187.0 (Fri Jun 07 2024)
 
 #### 🚀  Enhancement
