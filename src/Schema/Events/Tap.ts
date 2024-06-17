@@ -1104,7 +1104,7 @@ export interface TappedViewWork {
 export interface TappedCompleteYourProfile {
   action: ActionType.tappedCompleteYourProfile
   context_module: ContextModule
-  context_screen_owner_type: PageOwnerType
+  context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string
   context_screen_owner_slug?: string
   user_id: string
