@@ -1,3 +1,15 @@
+# v4.189.0 (Mon Jun 17 2024)
+
+#### 🚀  Enhancement
+
+- Adding tracking for Complete your profile prompt on web and app [#507](https://github.com/artsy/cohesion/pull/507) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.188.0 (Thu Jun 13 2024)
 
 #### 🚀  Enhancement
