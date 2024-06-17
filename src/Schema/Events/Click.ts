@@ -2175,3 +2175,19 @@ export interface ClickedViewFullConversationHistory {
   partner_id: string
   inquiry_id: string
 }
+
+/**
+ * A user clicks on the complete your profile prompt within the activity pannel
+ *
+ * This schema describes events sent to Segment from [[clickedCompleteYourProfile]]
+ *
+ */
+
+export interface ClickedCompleteYourProfile {
+  action: ActionType.clickedCompleteYourProfile
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  user_id: string
+}

@@ -1093,3 +1093,20 @@ export interface TappedViewWork {
   artwork_id: string
   notification_type: string
 }
+
+/**
+ * A user taps on the complete your profile prompt within the activity pannel
+ *
+ * This schema describes events sent to Segment from [[tappedCompleteYourProfile]]
+ *
+ */
+
+export interface TappedCompleteYourProfile {
+  action: ActionType.tappedCompleteYourProfile
+  context_module: ContextModule
+  context_screen_owner_type: PageOwnerType
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+  user_id: string
+}
+

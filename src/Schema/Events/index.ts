@@ -604,6 +604,10 @@ export enum ActionType {
    */
   clickedCollectionGroup = "clickedCollectionGroup",
   /**
+   * Corresponds to {@link ClickedCompleteYourProfile}
+   */
+  clickedCompleteYourProfile = "clickedCompleteYourProfile",
+  /**
    * Corresponds to {@link ClickedCreateAlert}
    */
   clickedCreateAlert = "clickedCreateAlert",
@@ -1207,6 +1211,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCollectionGroup}
    */
   tappedCollectionGroup = "tappedCollectionGroup",
+  /**
+   * Corresponds to {@link TappedCompleteYourProfile}
+   */
+  tappedCompleteYourProfile = "tappedCompleteYourProfile",
   /**
    * Corresponds to {@link TappedConsign}
    */
