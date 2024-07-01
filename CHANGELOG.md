@@ -1,3 +1,20 @@
+# v4.190.0 (Mon Jul 01 2024)
+
+#### 🚀  Enhancement
+
+- amending CollectorProfiles for the new flow [#509](https://github.com/artsy/cohesion/pull/509) ([@leodmz](https://github.com/leodmz))
+
+#### 🏠  Internal
+
+- Bump ws from 7.5.8 to 7.5.10 [#508](https://github.com/artsy/cohesion/pull/508) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.189.0 (Mon Jun 17 2024)
 
 #### 🚀  Enhancement
