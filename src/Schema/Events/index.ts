@@ -1123,6 +1123,10 @@ export enum ActionType {
    * Corresponds to {@link SendOffersModalViewed}
    */
   sendOffersModalViewed = "sendOffersModalViewed",
+    /**
+   * Corresponds to {@link EditProfileModalViewed}
+   */
+    editProfileModalViewed = "editProfileModalViewed",
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */
