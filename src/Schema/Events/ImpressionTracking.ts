@@ -244,7 +244,9 @@ export interface SendOffersErrorMessage {
  *    action: "editProfileModalViewed",
  *    context_module: "add artwork" or "add profession/location"
  *    context_page_owner_type: "home"
- *    partner_id: "61bcda16515b038ce5000104"
+ *    user_id: "61bcda16515b038ce5000104"
+ *    inquiry_id: "61bcda16515b038ce5000104"
+ *    platform: "web" 
  *  }
  * ```
  *
