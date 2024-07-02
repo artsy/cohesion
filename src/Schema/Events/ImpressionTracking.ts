@@ -1,6 +1,7 @@
 import { ContextModule } from "../Values/ContextModule"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
+import { Platform } from "./MyCollection"
 
 /**
  * Schemas describing rail_viewed events
@@ -230,4 +231,31 @@ export interface SendOffersErrorMessage {
   price: number
   collectors: number
   message: string
+}
+
+/**
+ * User sees the edit profile modal after sending an inquiry
+ *
+ * This schema describes events sent to Segment from [[EditProfileModalViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "editProfileModalViewed",
+ *    context_module: "add artwork" or "add profession/location"
+ *    context_page_owner_type: "home"
+ *    user_id: "61bcda16515b038ce5000104"
+ *    inquiry_id: "61bcda16515b038ce5000104"
+ *    platform: "web" 
+ *  }
+ * ```
+ *
+ */
+export interface EditProfileModalViewed {
+  action: ActionType.editProfileModalViewed
+  context_module: string
+  context_page_owner_type: PageOwnerType
+  user_id: string
+  inquiry_id: string
+  platform: Platform
 }

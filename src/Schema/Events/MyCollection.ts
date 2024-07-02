@@ -201,6 +201,7 @@ export interface TappedMyCollectionAddArtworkArtist {
   context_module: ContextModule.myCollectionAddArtworkAddArtist
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
+  platform: Platform
 }
 
 /**

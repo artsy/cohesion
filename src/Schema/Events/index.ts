@@ -155,6 +155,7 @@ import {
   SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
+  EditProfileModalViewed,
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
@@ -353,6 +354,7 @@ export type Event =
   | EnterLiveAuction
   | ErrorMessageViewed
   | ExperimentViewed
+  | EditProfileModalViewed
   | ItemViewed
   | UploadSizeLimitExceeded
   | FocusedOnConversationMessageInput
@@ -1123,6 +1125,10 @@ export enum ActionType {
    * Corresponds to {@link SendOffersModalViewed}
    */
   sendOffersModalViewed = "sendOffersModalViewed",
+    /**
+   * Corresponds to {@link EditProfileModalViewed}
+   */
+    editProfileModalViewed = "editProfileModalViewed",
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */
