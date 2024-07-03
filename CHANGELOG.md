@@ -1,3 +1,15 @@
+# v4.191.0 (Wed Jul 03 2024)
+
+#### 🚀  Enhancement
+
+- feat: Adding tracking for User prompting flow [#510](https://github.com/artsy/cohesion/pull/510) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.190.0 (Mon Jul 01 2024)
 
 #### 🚀  Enhancement
