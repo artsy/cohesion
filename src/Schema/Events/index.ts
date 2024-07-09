@@ -105,6 +105,8 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
   ClickedViewWork,
+  ClickedDownloadAppHeader,
+  ClickedDownloadAppFooter
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -333,6 +335,8 @@ export type Event =
   | ClickedValidationAddressOptions
   | ClickedCloseValidationAddressModal
   | ClickedViewWork
+  | ClickedDownloadAppFooter
+  | ClickedDownloadAppHeader
   | CommercialFilterParamsChanged
   | CompletedOfflineSync
   | CompletedOnboarding
@@ -869,6 +873,14 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
+    /**
+   * Corresponds to {@link clickedDownloadAppFooter}
+   */
+  clickedDownloadAppFooter = "clickedDownloadAppFooter",
+    /**
+   * Corresponds to {@link clickedDownloadAppHeader}
+   */
+    clickedDownloadAppHeader = "clickedDownloadAppHeader",
   /**
    * Corresponds to {@link CompletedOfflineSync}
    */
