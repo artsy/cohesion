@@ -1,3 +1,15 @@
+# v4.192.0 (Tue Jul 09 2024)
+
+#### 🚀  Enhancement
+
+- feat: amending impression tracking for collector profile prompt [#511](https://github.com/artsy/cohesion/pull/511) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.191.0 (Wed Jul 03 2024)
 
 #### 🚀  Enhancement
