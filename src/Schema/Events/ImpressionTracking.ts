@@ -253,7 +253,7 @@ export interface SendOffersErrorMessage {
  */
 export interface EditProfileModalViewed {
   action: ActionType.editProfileModalViewed
-  context_module: string
+  context_module: ContextModule
   context_page_owner_type: PageOwnerType
   user_id: string
   inquiry_id: string
