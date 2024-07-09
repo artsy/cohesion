@@ -242,7 +242,7 @@ export interface SendOffersErrorMessage {
  *  ```
  *  {
  *    action: "editProfileModalViewed",
- *    context_module: "add artwork" or "add profession/location"
+ *    context_module: "inquiry"
  *    context_page_owner_type: "home"
  *    user_id: "61bcda16515b038ce5000104"
  *    inquiry_id: "61bcda16515b038ce5000104"
@@ -253,7 +253,7 @@ export interface SendOffersErrorMessage {
  */
 export interface EditProfileModalViewed {
   action: ActionType.editProfileModalViewed
-  context_module: string
+  context_module: ContextModule
   context_page_owner_type: PageOwnerType
   user_id: string
   inquiry_id: string
