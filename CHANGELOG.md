@@ -1,3 +1,15 @@
+# v4.194.0 (Wed Jul 10 2024)
+
+#### 🚀  Enhancement
+
+- chore: add new submit artwork form owner types [#514](https://github.com/artsy/cohesion/pull/514) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.193.1 (Wed Jul 10 2024)
 
 #### 🐛  Bug Fix
