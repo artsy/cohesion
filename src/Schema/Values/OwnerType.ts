@@ -108,6 +108,10 @@ export enum OwnerType {
   submitArtworkStepCompleteYourSubmission = "submitArtworkStepCompleteYourSubmission",
   submitArtworkStepArtistRejected = "submitArtworkStepArtistRejected",
   submitArtworkStepSelectArtworkMyCollectionArtwork = "submitArtworkStepSelectArtworkMyCollectionArtwork",
+  submitArtworkStepShippingLocation = "submitArtworkStepShippingLocation",
+  submitArtworkStepFrameInformation = "submitArtworkStepFrameInformation",
+  submitArtworkStepAddtionalDocuments = "submitArtworkStepAddtionalDocuments",
+  submitArtworkStepCondition = "submitArtworkStepCondition",
 
   tag = "tag",
   upcomingAuctions = "upcomingAuctions",
@@ -207,6 +211,10 @@ export type ScreenOwnerType =
   | OwnerType.submitArtworkStepCompleteYourSubmission
   | OwnerType.submitArtworkStepArtistRejected
   | OwnerType.submitArtworkStepSelectArtworkMyCollectionArtwork
+  | OwnerType.submitArtworkStepShippingLocation
+  | OwnerType.submitArtworkStepFrameInformation
+  | OwnerType.submitArtworkStepAddtionalDocuments
+  | OwnerType.submitArtworkStepCondition
   | OwnerType.similarToRecentlyViewed
   | OwnerType.tag
   | OwnerType.upcomingAuctions
@@ -277,6 +285,10 @@ export type PageOwnerType =
   | OwnerType.submitArtworkStepCompleteYourSubmission
   | OwnerType.submitArtworkStepArtistRejected
   | OwnerType.submitArtworkStepSelectArtworkMyCollectionArtwork
+  | OwnerType.submitArtworkStepShippingLocation
+  | OwnerType.submitArtworkStepFrameInformation
+  | OwnerType.submitArtworkStepAddtionalDocuments
+  | OwnerType.submitArtworkStepCondition
   | OwnerType.tag
   | OwnerType.user
   | OwnerType.viewingRoom
