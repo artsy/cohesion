@@ -2191,3 +2191,33 @@ export interface ClickedCompleteYourProfile {
   context_page_owner_slug?: string
   user_id: string
 }
+
+/**
+ * A user clicks on the header taking them to the app store 
+ *
+ * This schema describes events sent to Segment from [[clickedDownloadAppHeader]]
+ *
+ */
+
+export interface ClickedDownloadAppHeader {
+  action: ActionType.clickedDownloadAppHeader
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  user_id: string
+}
+
+/**
+ * A user clicks on the footer taking them to the app store 
+ *
+ * This schema describes events sent to Segment from [[clickedDownloadAppFooter]]
+ *
+ */
+
+export interface ClickedDownloadAppFooter {
+  action: ActionType.clickedDownloadAppFooter
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug?: string
+  user_id: string
+}
