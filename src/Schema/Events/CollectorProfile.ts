@@ -25,8 +25,7 @@ import { Platform } from "./MyCollection"
  */
 export interface EditedUserProfile {
   action: ActionType.editedUserProfile
-  context_module: ContextModule
-  context_screen: OwnerType
+  context_screen: ContextModule
   context_screen_owner_type: OwnerType
   platform: Platform
 }
