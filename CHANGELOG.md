@@ -1,3 +1,15 @@
+# v4.193.1 (Wed Jul 10 2024)
+
+#### 🐛  Bug Fix
+
+- fix: reverting EditedUserProfile event [#513](https://github.com/artsy/cohesion/pull/513) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.193.0 (Wed Jul 10 2024)
 
 #### 🚀  Enhancement
