@@ -168,6 +168,7 @@ import {
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
   TappedRequestPriceEstimate,
+  TappedMyCollectionAddArtworkArtist,
 } from "./MyCollection"
 import {
   TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight,
@@ -431,6 +432,7 @@ export type Event =
   | TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
   | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
+  | TappedMyCollectionAddArtworkArtist
   | TappedPartnerCard
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
