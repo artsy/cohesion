@@ -1,3 +1,15 @@
+# v4.195.0 (Mon Jul 22 2024)
+
+#### 🚀  Enhancement
+
+- fix: adding export to redshift for TappedMyCollectionAddArtworkArtist [#515](https://github.com/artsy/cohesion/pull/515) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.194.0 (Wed Jul 10 2024)
 
 #### 🚀  Enhancement
