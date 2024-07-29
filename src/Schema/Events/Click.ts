@@ -1,4 +1,3 @@
-import { CollectorSignalsValues } from "../Values/CollectorSignals"
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
@@ -181,10 +180,11 @@ export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
-export interface ClickedArtworkGroup
-  extends ClickedEntityGroup,
-    CollectorSignalsValues {
+export interface ClickedArtworkGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtworkGroup
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -203,13 +203,16 @@ export interface ClickedArtworkGroup
  *    destination_page_owner_slug: "forum-auctions-colour-theory-4",
  *    horizontal_slide_position: 3,
  *    type: "thumbnail"
+ *    signal_lot_watcher_count: 2,
+ *    signal_bid_count: 1
  *  }
  * ```
  */
-export interface ClickedAuctionGroup
-  extends ClickedEntityGroup,
-    CollectorSignalsValues {
+export interface ClickedAuctionGroup extends ClickedEntityGroup {
   action: ActionType.clickedAuctionGroup
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -299,13 +302,16 @@ export interface ClickedBuyerProtection {
  * ```
  */
 
-export interface ClickedBuyNow extends CollectorSignalsValues {
+export interface ClickedBuyNow {
   action: ActionType.clickedBuyNow
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
   impulse_conversation_id?: string
   flow?: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -319,14 +325,18 @@ export interface ClickedBuyNow extends CollectorSignalsValues {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
-export interface ClickedContactGallery extends CollectorSignalsValues {
+export interface ClickedContactGallery {
   action: ActionType.tappedContactGallery
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /** A user taps "Bid" on an artwork page inside an Auction
@@ -340,13 +350,18 @@ export interface ClickedContactGallery extends CollectorSignalsValues {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
+ *    signal_lot_watcher_count: 2,
+ *    signal_bid_count: 1
  *  }
  */
-export interface ClickedBid extends CollectorSignalsValues {
+export interface ClickedBid {
   action: ActionType.clickedBid
   context_owner_type: OwnerType
   context_owner_id: string
   context_owner_slug: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -595,7 +610,7 @@ export interface ClickedFairCard {
  *  }
  * ```
  */
-export interface ClickedMainArtworkGrid extends CollectorSignalsValues {
+export interface ClickedMainArtworkGrid {
   action: ActionType.clickedMainArtworkGrid
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
@@ -607,6 +622,9 @@ export interface ClickedMainArtworkGrid extends CollectorSignalsValues {
   type: "thumbnail"
   position?: number
   sort?: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**

@@ -1,4 +1,3 @@
-import { CollectorSignalsValues } from "../Values/CollectorSignals"
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, ScreenOwnerType } from "../Values/OwnerType"
@@ -110,13 +109,15 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  *    horizontal_slide_position: 1,
  *    module_height: "single",
  *    type: "thumbnail"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
-export interface TappedArtworkGroup
-  extends TappedEntityGroup,
-    CollectorSignalsValues {
+export interface TappedArtworkGroup extends TappedEntityGroup {
   action: ActionType.tappedArtworkGroup
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -136,13 +137,16 @@ export interface TappedArtworkGroup
  *    horizontal_slide_position: 3,
  *    module_height: "double",
  *    type: "thumbnail"
+ *    signal_lot_watcher_count: 2,
+ *    signal_bid_count: 1
  *  }
  * ```
  */
-export interface TappedAuctionGroup
-  extends TappedEntityGroup,
-    CollectorSignalsValues {
+export interface TappedAuctionGroup extends TappedEntityGroup {
   action: ActionType.tappedAuctionGroup
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -419,10 +423,11 @@ export interface TappedInfoBubble {
  *    destination_screen_owner_id: "53188b0d8b3b8192bb0005ae",
  *    destination_screen_owner_slug: "damien-hirst-anatomy-of-an-angel",
  *    type: "thumbnail"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
-export interface TappedMainArtworkGrid extends CollectorSignalsValues {
+export interface TappedMainArtworkGrid {
   action: ActionType.tappedMainArtworkGrid
   context_module: ContextModule
   context_screen?: string
@@ -436,6 +441,9 @@ export interface TappedMainArtworkGrid extends CollectorSignalsValues {
   sort?: string
   type: "thumbnail"
   query?: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -768,15 +776,20 @@ export interface TappedCreateAlert {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
+ *    signal_lot_watcher_count: 2,
+ *    signal_bid_count: 1
  *  }
  * ```
  */
 
-export interface TappedBid extends CollectorSignalsValues {
+export interface TappedBid {
   action: ActionType.tappedBid
   context_owner_type: ScreenOwnerType
   context_owner_id: string
   context_owner_slug: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -793,17 +806,21 @@ export interface TappedBid extends CollectorSignalsValues {
  *    context_owner_id: "6164889300d643000db86504",
  *    impulse_conversation_id: "198",
  *    flow: "Buy now" | "Partner offer"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
 
-export interface TappedBuyNow extends CollectorSignalsValues {
+export interface TappedBuyNow {
   action: ActionType.tappedBuyNow
   context_owner_type: ScreenOwnerType
   context_owner_id: string
   context_owner_slug: string
   impulse_conversation_id?: string
   flow?: "Buy now" | "Partner offer"
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -818,16 +835,19 @@ export interface TappedBuyNow extends CollectorSignalsValues {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
-
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
 
-export interface TappedContactGallery extends CollectorSignalsValues {
+export interface TappedContactGallery {
   action: ActionType.tappedContactGallery
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
