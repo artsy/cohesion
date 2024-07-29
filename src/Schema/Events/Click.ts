@@ -1,3 +1,4 @@
+import { CollectorSignalsValues } from "../Values/CollectorSignals"
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
@@ -176,10 +177,13 @@ export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
  *    destination_page_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
-export interface ClickedArtworkGroup extends ClickedEntityGroup {
+export interface ClickedArtworkGroup
+  extends ClickedEntityGroup,
+    CollectorSignalsValues {
   action: ActionType.clickedArtworkGroup
 }
 
@@ -202,7 +206,9 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  *  }
  * ```
  */
-export interface ClickedAuctionGroup extends ClickedEntityGroup {
+export interface ClickedAuctionGroup
+  extends ClickedEntityGroup,
+    CollectorSignalsValues {
   action: ActionType.clickedAuctionGroup
 }
 
@@ -288,17 +294,40 @@ export interface ClickedBuyerProtection {
  *    context_owner_id: "6164889300d643000db86504",
  *    impulse_conversation_id: "198",
  *    flow: "Buy now" | "Partner offer"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
 
-export interface ClickedBuyNow {
+export interface ClickedBuyNow extends CollectorSignalsValues {
   action: ActionType.clickedBuyNow
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
   impulse_conversation_id?: string
   flow?: string
+}
+
+/**
+ * User clicks "Contact Gallery" on an artwork page (BNMO)
+ *
+ * This schema describes events sent to Segment from [[clickedContactGallery]]
+ * @example
+ * ```
+ *  {
+ *    action: "tappedContactGallery",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+ *  }
+ * ```
+ */
+
+export interface ClickedContactGallery extends CollectorSignalsValues {
+  action: ActionType.tappedContactGallery
+  context_owner_type: OwnerType
+  context_owner_slug: string
+  context_owner_id: string
 }
 
 /**
@@ -543,10 +572,11 @@ export interface ClickedFairCard {
  *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
  *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
  *    type: "thumbnail"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
-export interface ClickedMainArtworkGrid {
+export interface ClickedMainArtworkGrid extends CollectorSignalsValues {
   action: ActionType.clickedMainArtworkGrid
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
@@ -2193,7 +2223,7 @@ export interface ClickedCompleteYourProfile {
 }
 
 /**
- * A user clicks on the header taking them to the app store 
+ * A user clicks on the header taking them to the app store
  *
  * This schema describes events sent to Segment from [[clickedDownloadAppHeader]]
  *
@@ -2208,7 +2238,7 @@ export interface ClickedDownloadAppHeader {
 }
 
 /**
- * A user clicks on the footer taking them to the app store 
+ * A user clicks on the footer taking them to the app store
  *
  * This schema describes events sent to Segment from [[clickedDownloadAppFooter]]
  *

@@ -1,3 +1,4 @@
+import { CollectorSignalsValues } from "../Values/CollectorSignals"
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, ScreenOwnerType } from "../Values/OwnerType"
@@ -112,7 +113,9 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  *  }
  * ```
  */
-export interface TappedArtworkGroup extends TappedEntityGroup {
+export interface TappedArtworkGroup
+  extends TappedEntityGroup,
+    CollectorSignalsValues {
   action: ActionType.tappedArtworkGroup
 }
 
@@ -417,7 +420,7 @@ export interface TappedInfoBubble {
  *  }
  * ```
  */
-export interface TappedMainArtworkGrid {
+export interface TappedMainArtworkGrid extends CollectorSignalsValues {
   action: ActionType.tappedMainArtworkGrid
   context_module: ContextModule
   context_screen?: string
@@ -767,7 +770,7 @@ export interface TappedCreateAlert {
  * ```
  */
 
-export interface TappedBid {
+export interface TappedBid extends CollectorSignalsValues {
   action: ActionType.tappedBid
   context_owner_type: ScreenOwnerType
   context_owner_id: string
@@ -792,7 +795,7 @@ export interface TappedBid {
  * ```
  */
 
-export interface TappedBuyNow {
+export interface TappedBuyNow extends CollectorSignalsValues {
   action: ActionType.tappedBuyNow
   context_owner_type: ScreenOwnerType
   context_owner_id: string
@@ -818,7 +821,7 @@ export interface TappedBuyNow {
  * ```
  */
 
-export interface TappedContactGallery {
+export interface TappedContactGallery extends CollectorSignalsValues {
   action: ActionType.tappedContactGallery
   context_owner_type: OwnerType
   context_owner_slug: string
@@ -1109,4 +1112,3 @@ export interface TappedCompleteYourProfile {
   context_screen_owner_slug?: string
   user_id: string
 }
-

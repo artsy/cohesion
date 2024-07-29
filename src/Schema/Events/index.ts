@@ -57,6 +57,8 @@ import {
   ClickedCreateAlert,
   ClickedDeliveryMethod,
   ClickedDismissInquiry,
+  ClickedDownloadAppFooter,
+  ClickedDownloadAppHeader,
   ClickedEditArtwork,
   ClickedExpandFilterPanel,
   ClickedExpansionToggle,
@@ -105,8 +107,6 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
   ClickedViewWork,
-  ClickedDownloadAppHeader,
-  ClickedDownloadAppFooter
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -149,6 +149,7 @@ import {
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
+  EditProfileModalViewed,
   ErrorMessageViewed,
   ItemViewed,
   RailViewed,
@@ -157,7 +158,6 @@ import {
   SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
-  EditProfileModalViewed,
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
@@ -167,8 +167,8 @@ import {
   SentRequestPriceEstimate,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
-  TappedRequestPriceEstimate,
   TappedMyCollectionAddArtworkArtist,
+  TappedRequestPriceEstimate,
 } from "./MyCollection"
 import {
   TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight,
@@ -616,6 +616,10 @@ export enum ActionType {
    */
   clickedCompleteYourProfile = "clickedCompleteYourProfile",
   /**
+   * Corresponds to {@link ClickedCompleteYourProfile}
+   */
+  clickedContactGallery = "clickedContactGallery",
+  /**
    * Corresponds to {@link ClickedCreateAlert}
    */
   clickedCreateAlert = "clickedCreateAlert",
@@ -875,14 +879,14 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
-    /**
+  /**
    * Corresponds to {@link clickedDownloadAppFooter}
    */
   clickedDownloadAppFooter = "clickedDownloadAppFooter",
-    /**
+  /**
    * Corresponds to {@link clickedDownloadAppHeader}
    */
-    clickedDownloadAppHeader = "clickedDownloadAppHeader",
+  clickedDownloadAppHeader = "clickedDownloadAppHeader",
   /**
    * Corresponds to {@link CompletedOfflineSync}
    */
@@ -1139,10 +1143,10 @@ export enum ActionType {
    * Corresponds to {@link SendOffersModalViewed}
    */
   sendOffersModalViewed = "sendOffersModalViewed",
-    /**
+  /**
    * Corresponds to {@link EditProfileModalViewed}
    */
-    editProfileModalViewed = "editProfileModalViewed",
+  editProfileModalViewed = "editProfileModalViewed",
   /**
    * Corresponds to {@link sentArtworkInquiry}
    */
