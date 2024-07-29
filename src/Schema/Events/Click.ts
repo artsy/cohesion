@@ -315,19 +315,38 @@ export interface ClickedBuyNow extends CollectorSignalsValues {
  * @example
  * ```
  *  {
- *    action: "tappedContactGallery",
+ *    action: "clickedContactGallery",
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
  *  }
  * ```
  */
-
 export interface ClickedContactGallery extends CollectorSignalsValues {
   action: ActionType.tappedContactGallery
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
+}
+
+/** A user taps "Bid" on an artwork page inside an Auction
+ *
+ * This schema describes events sent to Segment from [[tappedBid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedBid",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+ *  }
+ */
+export interface ClickedBid extends CollectorSignalsValues {
+  action: ActionType.clickedBid
+  context_owner_type: OwnerType
+  context_owner_id: string
+  context_owner_slug: string
 }
 
 /**

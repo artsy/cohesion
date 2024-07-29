@@ -139,7 +139,9 @@ export interface TappedArtworkGroup
  *  }
  * ```
  */
-export interface TappedAuctionGroup extends TappedEntityGroup {
+export interface TappedAuctionGroup
+  extends TappedEntityGroup,
+    CollectorSignalsValues {
   action: ActionType.tappedAuctionGroup
 }
 

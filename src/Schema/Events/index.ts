@@ -582,6 +582,10 @@ export enum ActionType {
   /**
    *    * Corresponds to {@link ClickedAuctionResultItem}
    */
+  /**
+   * Corresponds to {@link ClickedBid}
+   */
+  clickedBid = "clickedBid",
   clickedAuctionResultItem = "clickedAuctionResultItem",
   /**
    * Corresponds to {@link ClickedBuyerProtection}
