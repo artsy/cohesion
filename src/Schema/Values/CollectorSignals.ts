@@ -3,6 +3,7 @@ type CollectorSignalLabel =
   | "Showing now"
   | "Bidding live now"
   | "Time left to bid"
+  | "Curator's Pick"
 
 /**
  * Mixin for interacting with an artwork with visible collector signals.
