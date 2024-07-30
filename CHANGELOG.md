@@ -1,3 +1,15 @@
+# v4.196.0 (Tue Jul 30 2024)
+
+#### 🚀  Enhancement
+
+- chore(EMI-1969): Collector signals schema [#516](https://github.com/artsy/cohesion/pull/516) ([@erikdstock](https://github.com/erikdstock))
+
+#### Authors: 1
+
+- Erik ([@erikdstock](https://github.com/erikdstock))
+
+---
+
 # v4.195.0 (Mon Jul 22 2024)
 
 #### 🚀  Enhancement
