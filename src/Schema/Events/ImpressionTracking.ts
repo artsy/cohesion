@@ -246,7 +246,7 @@ export interface SendOffersErrorMessage {
  *    context_page_owner_type: "home"
  *    user_id: "61bcda16515b038ce5000104"
  *    inquiry_id: "61bcda16515b038ce5000104"
- *    platform: "web" 
+ *    platform: "web"
  *  }
  * ```
  *

@@ -176,11 +176,15 @@ export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
  *    destination_page_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
 export interface ClickedArtworkGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtworkGroup
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -199,11 +203,16 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  *    destination_page_owner_slug: "forum-auctions-colour-theory-4",
  *    horizontal_slide_position: 3,
  *    type: "thumbnail"
+ *    signal_lot_watcher_count: 2,
+ *    signal_bid_count: 1
  *  }
  * ```
  */
 export interface ClickedAuctionGroup extends ClickedEntityGroup {
   action: ActionType.clickedAuctionGroup
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -288,6 +297,7 @@ export interface ClickedBuyerProtection {
  *    context_owner_id: "6164889300d643000db86504",
  *    impulse_conversation_id: "198",
  *    flow: "Buy now" | "Partner offer"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
@@ -299,6 +309,59 @@ export interface ClickedBuyNow {
   context_owner_id: string
   impulse_conversation_id?: string
   flow?: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
+}
+
+/**
+ * User clicks "Contact Gallery" on an artwork page (BNMO)
+ *
+ * This schema describes events sent to Segment from [[clickedContactGallery]]
+ * @example
+ * ```
+ *  {
+ *    action: "clickedContactGallery",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+ *    signal_labels: ["Limited-Time Offer"],
+ *  }
+ * ```
+ */
+export interface ClickedContactGallery {
+  action: ActionType.tappedContactGallery
+  context_owner_type: OwnerType
+  context_owner_slug: string
+  context_owner_id: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
+}
+
+/** A user taps "Bid" on an artwork page inside an Auction
+ *
+ * This schema describes events sent to Segment from [[tappedBid]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedBid",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+ *    signal_lot_watcher_count: 2,
+ *    signal_bid_count: 1
+ *  }
+ */
+export interface ClickedBid {
+  action: ActionType.clickedBid
+  context_owner_type: OwnerType
+  context_owner_id: string
+  context_owner_slug: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -543,6 +606,7 @@ export interface ClickedFairCard {
  *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
  *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
  *    type: "thumbnail"
+ *    signal_labels: ["Limited-Time Offer"],
  *  }
  * ```
  */
@@ -558,6 +622,9 @@ export interface ClickedMainArtworkGrid {
   type: "thumbnail"
   position?: number
   sort?: string
+  signal_labels?: string[]
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
@@ -2193,7 +2260,7 @@ export interface ClickedCompleteYourProfile {
 }
 
 /**
- * A user clicks on the header taking them to the app store 
+ * A user clicks on the header taking them to the app store
  *
  * This schema describes events sent to Segment from [[clickedDownloadAppHeader]]
  *
@@ -2208,7 +2275,7 @@ export interface ClickedDownloadAppHeader {
 }
 
 /**
- * A user clicks on the footer taking them to the app store 
+ * A user clicks on the footer taking them to the app store
  *
  * This schema describes events sent to Segment from [[clickedDownloadAppFooter]]
  *
