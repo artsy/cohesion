@@ -1,3 +1,15 @@
+# v4.197.0 (Mon Aug 05 2024)
+
+#### 🚀  Enhancement
+
+- feat: Add submitArtworkStepCompleteYourSubmissionPostApproval owner type [#517](https://github.com/artsy/cohesion/pull/517) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.196.0 (Tue Jul 30 2024)
 
 #### 🚀  Enhancement
