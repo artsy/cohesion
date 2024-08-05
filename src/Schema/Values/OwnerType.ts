@@ -112,6 +112,7 @@ export enum OwnerType {
   submitArtworkStepFrameInformation = "submitArtworkStepFrameInformation",
   submitArtworkStepAddtionalDocuments = "submitArtworkStepAddtionalDocuments",
   submitArtworkStepCondition = "submitArtworkStepCondition",
+  submitArtworkStepCompleteYourSubmissionPostApproval = "submitArtworkStepCompleteYourSubmissionPostApproval",
 
   tag = "tag",
   upcomingAuctions = "upcomingAuctions",
@@ -215,6 +216,7 @@ export type ScreenOwnerType =
   | OwnerType.submitArtworkStepFrameInformation
   | OwnerType.submitArtworkStepAddtionalDocuments
   | OwnerType.submitArtworkStepCondition
+  | OwnerType.submitArtworkStepCompleteYourSubmissionPostApproval
   | OwnerType.similarToRecentlyViewed
   | OwnerType.tag
   | OwnerType.upcomingAuctions
@@ -289,6 +291,7 @@ export type PageOwnerType =
   | OwnerType.submitArtworkStepFrameInformation
   | OwnerType.submitArtworkStepAddtionalDocuments
   | OwnerType.submitArtworkStepCondition
+  | OwnerType.submitArtworkStepCompleteYourSubmissionPostApproval
   | OwnerType.tag
   | OwnerType.user
   | OwnerType.viewingRoom
