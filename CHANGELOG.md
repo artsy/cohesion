@@ -1,3 +1,15 @@
+# v4.198.0 (Tue Aug 06 2024)
+
+#### 🚀  Enhancement
+
+- fix: updating the app upsell tracking events [#518](https://github.com/artsy/cohesion/pull/518) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.197.0 (Mon Aug 05 2024)
 
 #### 🚀  Enhancement
