@@ -2269,9 +2269,9 @@ export interface ClickedCompleteYourProfile {
 export interface ClickedDownloadAppHeader {
   action: ActionType.clickedDownloadAppHeader
   context_page_owner_type: PageOwnerType
-  context_page_owner_id: string
+  context_page_owner_id?: string
   context_page_owner_slug?: string
-  user_id: string
+  user_id?: string
 }
 
 /**
@@ -2284,7 +2284,7 @@ export interface ClickedDownloadAppHeader {
 export interface ClickedDownloadAppFooter {
   action: ActionType.clickedDownloadAppFooter
   context_page_owner_type: PageOwnerType
-  context_page_owner_id: string
+  context_page_owner_id?: string
   context_page_owner_slug?: string
-  user_id: string
+  user_id?: string
 }
