@@ -176,13 +176,13 @@ export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
  *    destination_page_owner_slug: "romain-jacquet-lagreze-makeshift-garden-hong-kong",
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
- *    signal_labels: ["Limited-Time Offer"],
+ *    signal_label: "Limited-Time Offer",
  *  }
  * ```
  */
 export interface ClickedArtworkGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtworkGroup
-  signal_labels?: string[]
+  signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
 }
@@ -210,7 +210,7 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  */
 export interface ClickedAuctionGroup extends ClickedEntityGroup {
   action: ActionType.clickedAuctionGroup
-  signal_labels?: string[]
+  signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
 }
@@ -297,7 +297,7 @@ export interface ClickedBuyerProtection {
  *    context_owner_id: "6164889300d643000db86504",
  *    impulse_conversation_id: "198",
  *    flow: "Buy now" | "Partner offer"
- *    signal_labels: ["Limited-Time Offer"],
+ *    signal_label: "Limited-Time Offer",
  *  }
  * ```
  */
@@ -309,7 +309,7 @@ export interface ClickedBuyNow {
   context_owner_id: string
   impulse_conversation_id?: string
   flow?: string
-  signal_labels?: string[]
+  signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
 }
@@ -325,7 +325,7 @@ export interface ClickedBuyNow {
  *    context_owner_type: "Artwork",
  *    context_owner_slug: "radna-segal-pearl",
  *    context_owner_id: "6164889300d643000db86504",
- *    signal_labels: ["Limited-Time Offer"],
+ *    signal_label: "Limited-Time Offer",
  *  }
  * ```
  */
@@ -334,7 +334,7 @@ export interface ClickedContactGallery {
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
-  signal_labels?: string[]
+  signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
 }
@@ -359,7 +359,7 @@ export interface ClickedBid {
   context_owner_type: OwnerType
   context_owner_id: string
   context_owner_slug: string
-  signal_labels?: string[]
+  signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
 }
@@ -606,7 +606,7 @@ export interface ClickedFairCard {
  *    destination_page_owner_id: "53188b0d8b3b8192bb0005ae",
  *    destination_page_owner_slug: "damien-hirst-anatomy-of-an-angel",
  *    type: "thumbnail"
- *    signal_labels: ["Limited-Time Offer"],
+ *    signal_label: "Limited-Time Offer",
  *  }
  * ```
  */
@@ -622,7 +622,7 @@ export interface ClickedMainArtworkGrid {
   type: "thumbnail"
   position?: number
   sort?: string
-  signal_labels?: string[]
+  signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
 }
