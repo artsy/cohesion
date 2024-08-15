@@ -1,3 +1,15 @@
+# v4.199.0 (Thu Aug 15 2024)
+
+#### 🚀  Enhancement
+
+- chore(EMI-2035): update collector signals schema - one label max. [#519](https://github.com/artsy/cohesion/pull/519) ([@erikdstock](https://github.com/erikdstock))
+
+#### Authors: 1
+
+- Erik ([@erikdstock](https://github.com/erikdstock))
+
+---
+
 # v4.198.0 (Tue Aug 06 2024)
 
 #### 🚀  Enhancement
