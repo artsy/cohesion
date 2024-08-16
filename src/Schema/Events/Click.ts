@@ -330,7 +330,7 @@ export interface ClickedBuyNow {
  * ```
  */
 export interface ClickedContactGallery {
-  action: ActionType.tappedContactGallery
+  action: ActionType.clickedContactGallery
   context_owner_type: OwnerType
   context_owner_slug: string
   context_owner_id: string
@@ -339,9 +339,9 @@ export interface ClickedContactGallery {
   signal_bid_count?: number
 }
 
-/** A user taps "Bid" on an artwork page inside an Auction
+/** A user clicks "Bid" on an artwork page inside an Auction
  *
- * This schema describes events sent to Segment from [[tappedBid]]
+ * This schema describes events sent to Segment from [[clickedBid]]
  *
  *  @example
  *  ```
