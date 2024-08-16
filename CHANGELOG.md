@@ -1,3 +1,15 @@
+# v4.200.0 (Fri Aug 16 2024)
+
+#### 🚀  Enhancement
+
+- fix: clickedContactGallery wrongly said tapped [#520](https://github.com/artsy/cohesion/pull/520) ([@erikdstock](https://github.com/erikdstock))
+
+#### Authors: 1
+
+- Erik ([@erikdstock](https://github.com/erikdstock))
+
+---
+
 # v4.199.0 (Thu Aug 15 2024)
 
 #### 🚀  Enhancement
