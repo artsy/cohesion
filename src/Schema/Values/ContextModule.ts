@@ -11,6 +11,7 @@ export enum ContextModule {
   adServer = "adServer",
   activity = "activity",
   activityRail = "activityRail",
+  alertsAll = "alertsAll",
   alertConfirmation = "alertConfirmation",
   alertDetails = "alertDetails",
   alertFilters = "alertFilters",
