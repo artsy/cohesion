@@ -149,6 +149,8 @@ export enum AuthModalType {
   login = "login",
   /** Sign up for a new account */
   signup = "signup",
+  /** Fill out your email to enter the signup or login flow */
+  welcome = "welcome",
 }
 
 /**
