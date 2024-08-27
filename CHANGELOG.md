@@ -1,3 +1,15 @@
+# v4.202.0 (Tue Aug 27 2024)
+
+#### 🚀  Enhancement
+
+- feat: adding a value for the new first step of the signup flow [#523](https://github.com/artsy/cohesion/pull/523) ([@leodmz](https://github.com/leodmz))
+
+#### Authors: 1
+
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.201.0 (Fri Aug 23 2024)
 
 #### 🚀  Enhancement
