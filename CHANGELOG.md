@@ -1,3 +1,15 @@
+# v4.203.0 (Tue Sep 10 2024)
+
+#### 🚀  Enhancement
+
+- feat: add TappedHeroUnitsGroup [#524](https://github.com/artsy/cohesion/pull/524) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.202.0 (Tue Aug 27 2024)
 
 #### 🚀  Enhancement
