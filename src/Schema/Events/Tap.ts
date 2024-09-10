@@ -93,6 +93,30 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user taps a grouping of hero units
+ *
+ *  This schema describes events sent to Segment from [[tappedHeroUnitsGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedHeroUnitsGroup",
+ *    context_module: "home-view-section-hero-units-rail",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_screen_owner_type: Collection,
+ *    destination_screen_owner_url: "fair/fair-name"
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedHeroUnitsGroup extends TappedEntityGroup {
+  action: ActionType.tappedHeroUnitsGroup
+  destination_screen_owner_url: string
+}
+
+/**
  * A user taps a grouping of artworks on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -280,6 +304,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
     | ActionType.tappedViewingRoomGroup
+    | ActionType.tappedHeroUnitsGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
