@@ -114,12 +114,12 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of hero units
  *
- *  This schema describes events sent to Segment from [[tappedHeroUnitsGroup]]
+ *  This schema describes events sent to Segment from [[tappedHeroUnitGroup]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedHeroUnitsGroup",
+ *    action: "tappedHeroUnitGroup",
  *    context_module: "heroUnitsRail",
  *    context_screen_owner_type: "home",
  *    destination_path: "/collection/art-for-large-spaces",
@@ -128,8 +128,8 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  *  }
  * ```
  */
-export interface TappedHeroUnitsGroup extends TappedEntityGroup {
-  action: ActionType.tappedHeroUnitsGroup
+export interface TappedHeroUnitGroup extends TappedEntityGroup {
+  action: ActionType.tappedHeroUnitGroup
   destination_path?: string
 }
 
@@ -321,7 +321,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
     | ActionType.tappedViewingRoomGroup
-    | ActionType.tappedHeroUnitsGroup
+    | ActionType.tappedHeroUnitGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string

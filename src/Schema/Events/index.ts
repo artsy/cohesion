@@ -1280,9 +1280,9 @@ export enum ActionType {
    */
   tappedFairGroup = "tappedFairGroup",
   /**
-   * Corresponds to {@link TappedHeroUnitsGroup}
+   * Corresponds to {@link TappedHeroUnitGroup}
    */
-  tappedHeroUnitsGroup = "tappedHeroUnitsGroup",
+  tappedHeroUnitGroup = "tappedHeroUnitGroup",
   /**
    * Corresponds to {@link TappedInboxConversation}
    */
