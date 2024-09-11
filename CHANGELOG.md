@@ -1,3 +1,16 @@
+# v4.204.0 (Wed Sep 11 2024)
+
+#### 🚀  Enhancement
+
+- chore: TappedHeroUnitsGroup > TappedHeroUnitGroup [#525](https://github.com/artsy/cohesion/pull/525) ([@dblandin](https://github.com/dblandin))
+- chore: tappedActivityGroup + tappedHeroUnitsGroup > destination_path [#525](https://github.com/artsy/cohesion/pull/525) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.203.0 (Tue Sep 10 2024)
 
 #### 🚀  Enhancement
