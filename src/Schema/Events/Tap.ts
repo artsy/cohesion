@@ -33,8 +33,27 @@ export interface TappedArticleGroup extends TappedEntityGroup {
   action: ActionType.tappedArticleGroup
 }
 
+/**
+ * A user taps a grouping of activity items
+ *
+ *  This schema describes events sent to Segment from [[tappedActivityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedActivityGroup",
+ *    context_module: "activityRail",
+ *    context_screen_owner_type: "home",
+ *    destination_path: "/show/grimm-fools-errand",
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+
 export interface TappedActivityGroup extends TappedEntityGroup {
   action: ActionType.tappedActivityGroup
+  destination_path?: string
 }
 
 export interface TappedShowGroup extends TappedEntityGroup {
@@ -101,11 +120,9 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedHeroUnitsGroup",
- *    context_module: "home-view-section-hero-units-rail",
+ *    context_module: "heroUnitsRail",
  *    context_screen_owner_type: "home",
- *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
- *    destination_screen_owner_type: Collection,
- *    destination_screen_owner_url: "fair/fair-name"
+ *    destination_path: "/collection/art-for-large-spaces",
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
@@ -113,7 +130,7 @@ export interface TappedArtistSeriesGroup extends TappedEntityGroup {
  */
 export interface TappedHeroUnitsGroup extends TappedEntityGroup {
   action: ActionType.tappedHeroUnitsGroup
-  destination_screen_owner_url: string
+  destination_path?: string
 }
 
 /**
@@ -309,7 +326,7 @@ export interface TappedEntityGroup {
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
   context_screen_owner_slug?: string
-  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type?: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
   curation_boost?: boolean

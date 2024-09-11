@@ -106,6 +106,7 @@ export enum ContextModule {
   galleryTab = "galleryTab",
   geneHeader = "geneHeader",
   header = "header",
+  heroUnitsRail = "heroUnitsRail",
   inboxActiveBids = "inboxActiveBids",
   inboxClosedBids = "inboxClosedBids",
   inboxConversation = "inboxConversation",
@@ -265,6 +266,7 @@ export type AuthContextModule =
   | ContextModule.galleryTab
   | ContextModule.geneHeader
   | ContextModule.header
+  | ContextModule.heroUnitsRail
   | ContextModule.inquiry
   | ContextModule.intextTooltip
   | ContextModule.liveAuctionRoom
