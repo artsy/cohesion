@@ -34,6 +34,30 @@ export interface TappedArticleGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user taps a grouping of news on App
+ *
+ *  This schema describes events sent to Segment from [[tappedNewsGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNewsGroup",
+ *    context_module: "articleRail",
+ *    context_screen_owner_type: "home",
+ *    context_screen_owner_id: "5e726bd22524980012caafb0",
+ *    context_screen_owner_slug: "arteba-special-edition",
+ *    destination_screen_owner_type: "article",
+ *    destination_screen_owner_id: "542f1ccc7261694847410400",
+ *    destination_screen_owner_slug: "acaw-acaw-presenter-charwei-tsai",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedNewsGroup extends TappedEntityGroup {
+  action: ActionType.tappedNewsGroup
+}
+
+/**
  * A user taps a grouping of activity items
  *
  *  This schema describes events sent to Segment from [[tappedActivityGroup]]
@@ -310,7 +334,6 @@ export interface TappedEntityGroup {
   action:
     | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
-    | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
@@ -320,8 +343,10 @@ export interface TappedEntityGroup {
     | ActionType.tappedCollectionGroup
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
-    | ActionType.tappedViewingRoomGroup
     | ActionType.tappedHeroUnitGroup
+    | ActionType.tappedNewsGroup
+    | ActionType.tappedShowGroup
+    | ActionType.tappedViewingRoomGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -331,6 +356,7 @@ export interface TappedEntityGroup {
   destination_screen_owner_slug?: string
   curation_boost?: boolean
   horizontal_slide_position?: number
+  vertical_slide_position?: number
   module_height?: EntityModuleHeight
   type: EntityModuleType
 }
