@@ -44,12 +44,11 @@ export interface TappedArticleGroup extends TappedEntityGroup {
  *    action: "tappedNewsGroup",
  *    context_module: "articleRail",
  *    context_screen_owner_type: "home",
- *    context_screen_owner_id: "5e726bd22524980012caafb0",
- *    context_screen_owner_slug: "arteba-special-edition",
  *    destination_screen_owner_type: "article",
  *    destination_screen_owner_id: "542f1ccc7261694847410400",
  *    destination_screen_owner_slug: "acaw-acaw-presenter-charwei-tsai",
  *    type: "thumbnail"
+ *    vertical_slide_position: 1
  *  }
  * ```
  */
