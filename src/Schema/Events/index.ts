@@ -2,6 +2,7 @@ import {
   ClickedActivityPanelNotificationItem,
   ClickedActivityPanelTab,
   ClickedNotificationsBell,
+  TappedNotificationsBell
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
@@ -426,6 +427,7 @@ export type Event =
   | TappedInfoBubble
   | TappedLink
   | TappedNavigationTab
+  | TappedNotificationsBell
   | TappedMainArtworkGrid
   | TappedMakeOffer
   | TappedMyCollectionInsightsMedianAuctionRailItem
@@ -1335,6 +1337,10 @@ export enum ActionType {
    * Corresponds to {@link TappedNavigationTab}
    */
   tappedNavigationTab = "tappedNavigationTab",
+  /**
+   * Corresponds to {@link TappedNotificationsBell}
+   */
+  tappedNotificationsBell = "tappedNotificationsBell",
   /**
    * Corresponds to {@link TappedPartnerCard}
    */
