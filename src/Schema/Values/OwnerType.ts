@@ -56,6 +56,7 @@ export enum OwnerType {
   inboxInquiries = "inboxInquiries",
   lotsByArtistsYouFollow = "lotsByArtistsYouFollow",
   lotsForYou = "lotsForYou",
+  marketNews = "marketNews",
   myCollection = "myCollection",
   myCollectionAddArtworkArtist = "myCollectionAddArtworkArtist",
   myCollectionArtwork = "myCollectionArtwork",
@@ -173,6 +174,7 @@ export type ScreenOwnerType =
   | OwnerType.inboxInquiries
   | OwnerType.lotsByArtistsYouFollow
   | OwnerType.lotsForYou
+  | OwnerType.marketNews
   | OwnerType.myCollection
   | OwnerType.myCollectionAddArtworkArtist
   | OwnerType.myCollectionArtwork
@@ -252,6 +254,7 @@ export type PageOwnerType =
   | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home
+  | OwnerType.marketNews
   | OwnerType.myCollectionArtworkInsights
   | OwnerType.myCollectionInsights
   | OwnerType.onboarding
