@@ -22,6 +22,22 @@ export interface ClickedNotificationsBell {
 }
 
 /**
+ * A user tapped on a notifications bell.
+ *
+ * This schema describes events sent to Segment from [[tappedNotificationsBell]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNotificationsBell"
+ *  }
+ * ```
+ */
+export interface TappedNotificationsBell {
+  action: ActionType.tappedNotificationsBell
+}
+
+/**
  * A user clicked on a notification in Activity Panel.
  *
  * This schema describes events sent to Segment from [[clickedActivityPanelNotificationItem]]
