@@ -1,3 +1,16 @@
+# v4.205.0 (Thu Sep 19 2024)
+
+#### 🚀  Enhancement
+
+- chore: add `marketNews` as PageOwner type page/screen) [#527](https://github.com/artsy/cohesion/pull/527) ([@dblandin](https://github.com/dblandin))
+- chore: add tappedNotificationsBell event [#528](https://github.com/artsy/cohesion/pull/528) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.204.0 (Wed Sep 11 2024)
 
 #### 🚀  Enhancement
