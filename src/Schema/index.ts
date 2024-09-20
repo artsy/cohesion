@@ -1,4 +1,5 @@
 export * from "./Events"
+export * from "./Events/ActivityPanel"
 export * from "./Events/AddToCalendar"
 export * from "./Events/ArtworkLists"
 export * from "./Events/Authentication"
