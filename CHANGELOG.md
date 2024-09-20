@@ -1,3 +1,15 @@
+# v4.206.0 (Fri Sep 20 2024)
+
+#### 🚀  Enhancement
+
+- chore: export Events/ActivityPanel [#529](https://github.com/artsy/cohesion/pull/529) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.205.0 (Thu Sep 19 2024)
 
 #### 🚀  Enhancement
