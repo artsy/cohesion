@@ -1,3 +1,15 @@
+# v4.207.0 (Wed Sep 25 2024)
+
+#### 🚀  Enhancement
+
+- chore: add artistArticles ScreenOwnerType [#530](https://github.com/artsy/cohesion/pull/530) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.206.0 (Fri Sep 20 2024)
 
 #### 🚀  Enhancement
