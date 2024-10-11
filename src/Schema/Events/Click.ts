@@ -1812,21 +1812,25 @@ export interface ClickedNavBar {
  *  ```
  *  {
  *    action: "clickedUploadArtwork",
- *    context_module: "alerts-price"
- *    context_page_owner_type: "demand",
- *    context_page_owner_id: "",
+ *    alert_page_rank: 1,
  *    artist_id: "4212691337420",
- *    search_criteria_id: "4212691337420"
+ *    context_module: "alerts-price",
+ *    context_page_owner_id: "",
+ *    context_page_owner_type: "demand",
+ *    partner_search_criteria_id: "123abc",
+ *    search_criteria_id: "4212691337420",
  *    subject: "Upload Artworks"
  *  }
  * ```
  */
 export interface ClickedUploadArtwork {
   action: ActionType.clickedUploadArtwork
-  context_module: ContextModule
-  context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
+  alert_page_rank?: number
   artist_id?: string
+  context_module: ContextModule
+  context_page_owner_id?: string
+  context_page_owner_type: PageOwnerType
+  partner_search_criteria_id?: string
   search_criteria_id?: string
   subject: string
 }
