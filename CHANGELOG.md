@@ -1,3 +1,15 @@
+# v4.208.0 (Fri Oct 18 2024)
+
+#### 🚀  Enhancement
+
+- feat(DIA-815): added "tap" to AuthTrigger [#532](https://github.com/artsy/cohesion/pull/532) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.207.0 (Wed Sep 25 2024)
 
 #### 🚀  Enhancement
