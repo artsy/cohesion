@@ -1,3 +1,15 @@
+# v4.209.0 (Mon Oct 21 2024)
+
+#### 🚀  Enhancement
+
+- chore: Add more data to event when publishing matching work from demand AMBER-1090 [#531](https://github.com/artsy/cohesion/pull/531) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
 # v4.208.0 (Fri Oct 18 2024)
 
 #### 🚀  Enhancement
