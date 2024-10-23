@@ -214,6 +214,7 @@ import {
   TappedBrowseSimilarArtworks,
   TappedBuyNow,
   TappedChangePaymentMethod,
+  TappedClearNotification,
   TappedCollectionGroup,
   TappedConsign,
   TappedConsignmentInquiry,
@@ -227,6 +228,7 @@ import {
   TappedLink,
   TappedMainArtworkGrid,
   TappedNavigationTab,
+  TappedNotification,
   TappedPartnerCard,
   TappedPromoSpace,
   TappedSell,
@@ -416,6 +418,7 @@ export type Event =
   | TappedBrowseSimilarArtworks
   | TappedBuyNow
   | TappedChangePaymentMethod
+  | TappedClearNotification
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
   | TappedCollectionGroup
@@ -431,6 +434,7 @@ export type Event =
   | TappedInfoBubble
   | TappedLink
   | TappedNavigationTab
+  | TappedNotification
   | TappedNotificationsBell
   | TappedMainArtworkGrid
   | TappedMakeOffer
@@ -1238,6 +1242,10 @@ export enum ActionType {
    */
   tappedBuyNow = "tappedBuyNow",
   /**
+   * Corresponds to {@link TappedClearNotification}
+   */
+  tappedClearNotification = "tappedClearNotification",
+  /**
    * Corresponds to {@link TappedCollectedArtwork}
    */
   tappedCollectedArtwork = "tappedCollectedArtwork",
@@ -1349,6 +1357,10 @@ export enum ActionType {
    * Corresponds to {@link TappedNavigationTab}
    */
   tappedNavigationTab = "tappedNavigationTab",
+  /**
+   * Corresponds to {@link TappedNotification}
+   */
+  tappedNotification = "tappedNotification",
   /**
    * Corresponds to {@link TappedNotificationsBell}
    */

@@ -1,3 +1,15 @@
+# v4.210.0 (Wed Oct 23 2024)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2098): Add tappedNotification and tappedClearNotification to the schema [#533](https://github.com/artsy/cohesion/pull/533) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.209.0 (Mon Oct 21 2024)
 
 #### 🚀  Enhancement
