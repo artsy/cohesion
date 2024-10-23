@@ -234,6 +234,32 @@ export interface TappedBrowseSimilarArtworks extends TappedEntityGroup {
 }
 
 /**
+ * A user taps on clear (or swipes away) on a task notification in the app
+ *
+ * This schema describes events sent to Segment from [[tappedClearNotification]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedClearNotification",
+ *    context_module : "Home",
+ *    context_screen_owner_type: "Home",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    notification_id: "23424132",
+ *    notification_category: "send_wire"
+ *  }
+ * ```
+ */
+export interface TappedClearNotification {
+  action: ActionType.tappedClearNotification
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  notification_id: string
+  notification_category: string
+}
+
+/**
  * A user taps a grouping of collections on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -1133,6 +1159,32 @@ export interface TappedNewsSection {
   context_screen_owner_id: string
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id: string
+}
+
+/**
+ * A user taps on a task notification in the app
+ *
+ * This schema describes events sent to Segment from [[tappedNotification]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNotification",
+ *    context_module : "Home",
+ *    context_screen_owner_type: "Home",
+ *    context_screen_owner_id: "58de681f275b2464fcdde097",
+ *    notification_id: "23424132",
+ *    notification_category: "send_wire"
+ *  }
+ * ```
+ */
+export interface TappedNotification {
+  action: ActionType.tappedNotification
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  notification_id: string
+  notification_category: string
 }
 
 /**
