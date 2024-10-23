@@ -244,6 +244,7 @@ export interface TappedBrowseSimilarArtworks extends TappedEntityGroup {
  *    action: "tappedClearNotification",
  *    context_module : "Home",
  *    context_screen_owner_type: "Home",
+ *    destination_path: "/orders/123",
  *    notification_id: "23424132",
  *    notification_category: "send_wire"
  *  }
@@ -253,6 +254,7 @@ export interface TappedClearNotification {
   action: ActionType.tappedClearNotification
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
+  destination_path: string
   notification_id: string
   notification_category: string
 }
@@ -1170,6 +1172,7 @@ export interface TappedNewsSection {
  *    action: "tappedNotification",
  *    context_module : "Home",
  *    context_screen_owner_type: "Home",
+ *    destination_path: "/orders/123",
  *    notification_id: "23424132",
  *    notification_category: "send_wire"
  *  }
@@ -1179,6 +1182,7 @@ export interface TappedNotification {
   action: ActionType.tappedNotification
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
+  destination_path: string
   notification_id: string
   notification_category: string
 }
