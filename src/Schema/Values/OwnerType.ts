@@ -33,6 +33,7 @@ export enum OwnerType {
   collect = "collect",
   collection = "collection",
   collections = "collections",
+  collectionsCategory = "collectionsCategory",
   consign = "consign",
   consignmentFlow = "consignmentFlow",
   consignmentInquiry = "consignmentInquiry",

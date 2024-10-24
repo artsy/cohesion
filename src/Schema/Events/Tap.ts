@@ -328,6 +328,50 @@ export interface TappedFairGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user taps a grouped explore module (City Guide, for example)
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCardsGroup",
+ *    context_module: "exploreBySection",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_type: "collectionsCategory",
+ *    destination_screen_owner_slug: "alex-katz-black-dress",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedCardsGroup extends TappedEntityGroup {
+  action: ActionType.tappedCardsGroup
+}
+
+/**
+ * A user taps a grouped explore module (City Guide, for example)
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCardsChipsGroup",
+ *    context_module: "discoverSomethingNewSection",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_type: "collection",
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
+ *    destination_screen_owner_slug: "alex-katz-black-dress",
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedCardsChipsGroup extends TappedEntityGroup {
+  action: ActionType.tappedCardsChipsGroup
+}
+
+/**
  * Shared interface for tapped group actions in iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -336,6 +380,8 @@ export interface TappedEntityGroup {
   action:
     | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
+    | ActionType.tappedCardsGroup
+    | ActionType.tappedCardsChipsGroup
     | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
