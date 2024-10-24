@@ -328,7 +328,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouped card (Explore By, Discover Something new)
+ * A user taps a grouping of cards
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
@@ -336,12 +336,12 @@ export interface TappedFairGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedCardGroup",
- *    context_module: "exploreBySection" | discoverSomethingNewSection,
+ *    context_module: "exploreBy",
  *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "collectionsCategory" | "collection",
- *    destination_screen_owner_id: "5359794d1a1e86c3740001f7" | undefined,
+ *    destination_screen_owner_type: "collectionsCategory",
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
  *    destination_screen_owner_slug: "artworks-under-1000",
- *    horizontal_slide_position: 1 | undefined,
+ *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
  * ```
