@@ -1,3 +1,15 @@
+# v4.211.0 (Thu Oct 24 2024)
+
+#### 🚀  Enhancement
+
+- feat(DIA-863): add discoverSomethingNewSection and exploreBySection modules [#535](https://github.com/artsy/cohesion/pull/535) ([@araujobarret](https://github.com/araujobarret))
+
+#### Authors: 1
+
+- Carlos ([@araujobarret](https://github.com/araujobarret))
+
+---
+
 # v4.210.0 (Wed Oct 23 2024)
 
 #### 🚀  Enhancement
