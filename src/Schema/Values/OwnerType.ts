@@ -73,6 +73,7 @@ export enum OwnerType {
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
   ordersCounter = "orders-counter",
+  ordersHistory = "orders-history",
   ordersNewPayment = "orders-new-payment",
   ordersOffer = "orders-offer",
   ordersPayment = "orders-payment",

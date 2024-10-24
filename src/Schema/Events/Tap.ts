@@ -1228,3 +1228,28 @@ export interface TappedCompleteYourProfile {
   context_screen_owner_slug?: string
   user_id: string
 }
+
+/**
+ * A user taps to request a chage of payment method for the order/orders
+ *
+ * This schema describes event sent to Segment from [[tappedChangePaymentMethod]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedChangePaymentMethod",
+ *    context_module : "ordersHistory" | "paymentFailed"
+ *    context_screen "orders-history" | "home",
+ *    item_id: "order-id" | ""
+ *    item_type: "order" | "orders"
+ *  }
+ * ```
+ */
+
+export interface TappedChangePaymentMethod {
+  action: ActionType.tappedChangePaymentMethod
+  context_module: ContextModule
+  context_screen: OwnerType
+  idem_id: string
+  item_type: string
+}

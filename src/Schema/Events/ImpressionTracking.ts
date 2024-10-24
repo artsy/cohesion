@@ -259,3 +259,28 @@ export interface EditProfileModalViewed {
   inquiry_id: string
   platform: Platform
 }
+
+/**
+ * User sees the banner in the app
+ *
+ * This schema describes events sent to Segment from [[BannerViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "bannerViewed",
+ *    context_screen: "home",
+ *    context_module: "paymentFailed",
+ *    item_type: "order" | "orders"
+ *    item_id: "order-id" | ""
+ *  }
+ * ```
+ *
+ */
+export interface BannerViewed {
+  action: ActionType.bannerViewed
+  context_screen: OwnerType
+  context_module: ContextModule
+  idem_id: string
+  item_type: string
+}

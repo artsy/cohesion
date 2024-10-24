@@ -373,8 +373,8 @@ export interface ClickedBid {
  *  ```
  *  {
  *    action: "clickedChangePaymentMethod",
- *    context_module: "OrdersReview",
- *    context_page_owner_type: "orders-review",
+ *    context_module: "OrdersReview" | "OrdersHistory",
+ *    context_page_owner_type: "orders-review" | "orders-history",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *  }
  * ```

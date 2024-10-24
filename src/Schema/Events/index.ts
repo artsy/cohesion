@@ -150,6 +150,7 @@ import {
 } from "./HomeFeedMyCollectionOnboarding"
 import { Impression } from "./Impression"
 import {
+  BannerViewed,
   EditProfileModalViewed,
   ErrorMessageViewed,
   ItemViewed,
@@ -212,6 +213,7 @@ import {
   TappedBid,
   TappedBrowseSimilarArtworks,
   TappedBuyNow,
+  TappedChangePaymentMethod,
   TappedClearNotification,
   TappedCollectionGroup,
   TappedConsign,
@@ -259,6 +261,7 @@ export type Event =
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
   | AuthImpression
+  | BannerViewed
   | BidPageView
   | CreatedAccount
   | CreatedArtworkList
@@ -414,6 +417,7 @@ export type Event =
   | TappedBid
   | TappedBrowseSimilarArtworks
   | TappedBuyNow
+  | TappedChangePaymentMethod
   | TappedClearNotification
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
@@ -517,6 +521,10 @@ export enum ActionType {
    * Corresponds to {@link AuthImpression}
    */
   authImpression = "authImpression",
+  /**
+   * Corresponds to {@link BannerViewed}
+   */
+  bannerViewed = "bannerViewed",
   /**
    * Corresponds to {@link BidPageView}
    */
@@ -1241,6 +1249,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCollectedArtwork}
    */
   tappedCollectedArtwork = "tappedCollectedArtwork",
+  /**
+   * Corresponds to {@link TappedChangePaymentMethod}
+   */
+  tappedChangePaymentMethod = "tappedChangePaymentMethod",
   /**
    * Corresponds to {@link TappedCollectedArtworkImages}
    */
