@@ -1,3 +1,15 @@
+# v4.212.0 (Thu Oct 24 2024)
+
+#### 🚀  Enhancement
+
+- feat: update events definition to track update failed payments [#534](https://github.com/artsy/cohesion/pull/534) ([@oxaudo](https://github.com/oxaudo))
+
+#### Authors: 1
+
+- Oksana ([@oxaudo](https://github.com/oxaudo))
+
+---
+
 # v4.211.0 (Thu Oct 24 2024)
 
 #### 🚀  Enhancement
