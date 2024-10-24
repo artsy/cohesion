@@ -214,6 +214,7 @@ import {
   TappedBrowseSimilarArtworks,
   TappedBuyNow,
   TappedChangePaymentMethod,
+  TappedCardGroup,
   TappedClearNotification,
   TappedCollectionGroup,
   TappedConsign,
@@ -418,6 +419,7 @@ export type Event =
   | TappedBrowseSimilarArtworks
   | TappedBuyNow
   | TappedChangePaymentMethod
+  | TappedCardGroup
   | TappedClearNotification
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
@@ -1241,6 +1243,10 @@ export enum ActionType {
    * Corresponds to {@link TappedBuyNow}
    */
   tappedBuyNow = "tappedBuyNow",
+  /**
+   * Corresponds to {@link TappedCardGroup}
+   */
+  tappedCardGroup = "tappedCardGroup",
   /**
    * Corresponds to {@link TappedClearNotification}
    */
