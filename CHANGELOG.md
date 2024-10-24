@@ -1,3 +1,15 @@
+# v4.214.0 (Thu Oct 24 2024)
+
+#### 🚀  Enhancement
+
+- fix: typo error [#537](https://github.com/artsy/cohesion/pull/537) ([@oxaudo](https://github.com/oxaudo))
+
+#### Authors: 1
+
+- Oksana ([@oxaudo](https://github.com/oxaudo))
+
+---
+
 # v4.213.0 (Thu Oct 24 2024)
 
 #### 🚀  Enhancement
