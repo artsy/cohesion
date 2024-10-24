@@ -359,7 +359,7 @@ export interface TappedEntityGroup {
   action:
     | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
-    | ActionType.tappedCardsGroup
+    | ActionType.tappedCardGroup
     | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
