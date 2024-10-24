@@ -157,6 +157,7 @@ export type ScreenOwnerType =
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
   | OwnerType.collection
+  | OwnerType.collectionsCategory
   | OwnerType.consign
   | OwnerType.consignmentFlow
   | OwnerType.consignmentInquiry
