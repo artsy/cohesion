@@ -281,6 +281,6 @@ export interface BannerViewed {
   action: ActionType.bannerViewed
   context_screen: OwnerType
   context_module: ContextModule
-  idem_id: string
+  item_id: string
   item_type: string
 }
