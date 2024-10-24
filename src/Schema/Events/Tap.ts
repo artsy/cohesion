@@ -328,47 +328,26 @@ export interface TappedFairGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouped explore module (City Guide, for example)
+ * A user taps a grouped card (Explore By, Discover Something new)
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedCardsGroup",
- *    context_module: "exploreBySection",
+ *    action: "tappedCardGroup",
+ *    context_module: "exploreBySection" | discoverSomethingNewSection,
  *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "collectionsCategory",
- *    destination_screen_owner_slug: "alex-katz-black-dress",
+ *    destination_screen_owner_type: "collectionsCategory" | "collection",
+ *    destination_screen_owner_id: "5359794d1a1e86c3740001f7" | undefined,
+ *    destination_screen_owner_slug: "artworks-under-1000",
+ *    horizontal_slide_position: 1 | undefined,
  *    type: "thumbnail"
  *  }
  * ```
  */
-export interface TappedCardsGroup extends TappedEntityGroup {
-  action: ActionType.tappedCardsGroup
-}
-
-/**
- * A user taps a grouped explore module (City Guide, for example)
- *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
- *
- *  @example
- *  ```
- *  {
- *    action: "tappedCardsChipsGroup",
- *    context_module: "discoverSomethingNewSection",
- *    context_screen_owner_type: "home",
- *    destination_screen_owner_type: "collection",
- *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
- *    destination_screen_owner_slug: "alex-katz-black-dress",
- *    horizontal_slide_position: 1,
- *    type: "thumbnail"
- *  }
- * ```
- */
-export interface TappedCardsChipsGroup extends TappedEntityGroup {
-  action: ActionType.tappedCardsChipsGroup
+export interface TappedCardGroup extends TappedEntityGroup {
+  action: ActionType.tappedCardGroup
 }
 
 /**
@@ -381,7 +360,6 @@ export interface TappedEntityGroup {
     | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
     | ActionType.tappedCardsGroup
-    | ActionType.tappedCardsChipsGroup
     | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
