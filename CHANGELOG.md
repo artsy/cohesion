@@ -1,3 +1,15 @@
+# v4.213.0 (Thu Oct 24 2024)
+
+#### 🚀  Enhancement
+
+- feat(DIA-863): add tap events to the new home view cards [#536](https://github.com/artsy/cohesion/pull/536) ([@araujobarret](https://github.com/araujobarret))
+
+#### Authors: 1
+
+- Carlos ([@araujobarret](https://github.com/araujobarret))
+
+---
+
 # v4.212.0 (Thu Oct 24 2024)
 
 #### 🚀  Enhancement
