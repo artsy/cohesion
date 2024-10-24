@@ -1274,6 +1274,6 @@ export interface TappedChangePaymentMethod {
   action: ActionType.tappedChangePaymentMethod
   context_module: ContextModule
   context_screen: OwnerType
-  idem_id: string
+  item_id: string
   item_type: string
 }
