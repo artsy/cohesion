@@ -372,6 +372,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedFairGroup
     | ActionType.tappedViewingRoomGroup
     | ActionType.tappedHeroUnitGroup
+    | ActionType.tappedTaskGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -1188,12 +1189,12 @@ export interface TappedNewsSection {
 /**
  * A user taps on a task notification in the app
  *
- * This schema describes events sent to Segment from [[tappedNotification]]
+ * This schema describes events sent to Segment from [[tappedTaskGroup]]
  *
  *  @example
  *  ```
  *  {
- *    action: "tappedNotification",
+ *    action: "tappedTaskGroup",
  *    context_module : "Home",
  *    context_screen_owner_type: "Home",
  *    destination_path: "/orders/123",
@@ -1202,10 +1203,8 @@ export interface TappedNewsSection {
  *  }
  * ```
  */
-export interface TappedNotification {
-  action: ActionType.tappedNotification
-  context_module: ContextModule
-  context_screen_owner_type: ScreenOwnerType
+export interface TappedTaskGroup extends TappedEntityGroup {
+  action: ActionType.tappedTaskGroup
   destination_path: string
   notification_id: string
   notification_category: string
