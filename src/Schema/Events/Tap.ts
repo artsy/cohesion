@@ -245,8 +245,8 @@ export interface TappedBrowseSimilarArtworks extends TappedEntityGroup {
  *    context_module : "Home",
  *    context_screen_owner_type: "Home",
  *    destination_path: "/orders/123",
- *    notification_id: "23424132",
- *    notification_category: "send_wire"
+ *    task_id: "23424132",
+ *    task_type: "send_wire"
  *  }
  * ```
  */
@@ -255,8 +255,8 @@ export interface TappedClearTask {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   destination_path: string
-  notification_id: string
-  notification_category: string
+  task_id: string
+  task_type: string
 }
 
 /**
@@ -1198,16 +1198,16 @@ export interface TappedNewsSection {
  *    context_module : "Home",
  *    context_screen_owner_type: "Home",
  *    destination_path: "/orders/123",
- *    notification_id: "23424132",
- *    notification_category: "send_wire"
+ *    task_id: "23424132",
+ *    task_type: "send_wire"
  *  }
  * ```
  */
 export interface TappedTaskGroup extends TappedEntityGroup {
   action: ActionType.tappedTaskGroup
   destination_path: string
-  notification_id: string
-  notification_category: string
+  task_id: string
+  task_type: string
 }
 
 /**
