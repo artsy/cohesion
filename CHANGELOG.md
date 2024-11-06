@@ -1,3 +1,15 @@
+# v4.215.0 (Wed Nov 06 2024)
+
+#### 🚀  Enhancement
+
+- feat: add tappedTaskGroup and tappedClearTask [#538](https://github.com/artsy/cohesion/pull/538) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.214.0 (Thu Oct 24 2024)
 
 #### 🚀  Enhancement
