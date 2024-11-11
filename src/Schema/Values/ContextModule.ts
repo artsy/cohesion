@@ -48,6 +48,7 @@ export enum ContextModule {
   auctionLots = "auctionLots",
   auctionLotsEndingSoonRail = "auctionLotsEndingSoonRail",
   auctionRail = "auctionRail",
+  auctionRegistration = "auctionRegistration",
   auctionResult = "auctionResult",
   auctionResultComparableWorks = "auctionResultComparableWorks",
   auctionResults = "auctionResults",
