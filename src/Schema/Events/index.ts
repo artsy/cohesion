@@ -60,6 +60,7 @@ import {
   ClickedDismissInquiry,
   ClickedDownloadAppFooter,
   ClickedDownloadAppHeader,
+  ClickedEditAlert,
   ClickedEditArtwork,
   ClickedExpandFilterPanel,
   ClickedExpansionToggle,
@@ -290,6 +291,7 @@ export type Event =
   | ClickedCreateAlert
   | ClickedDeliveryMethod
   | ClickedEditArtwork
+  | ClickedEditAlert
   | ClickedExpandFilterPanel
   | ClickedExpansionToggle
   | ClickedFairCard
@@ -651,6 +653,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedEditArtwork}
    */
   clickedEditArtwork = "clickedEditArtwork",
+  /**
+   * Corresponds to {@link ClickedEditAlert}
+   */
+  clickedEditAlert = "clickedEditAlert",
   /**
    * Corresponds to {@link ClickedExpansionToggle}
    */

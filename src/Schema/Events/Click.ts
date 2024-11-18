@@ -1,7 +1,7 @@
+import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
-import { ActionType } from "."
 
 /**
  * Schemas describing Click events
@@ -1148,6 +1148,27 @@ export interface ClickedEditArtwork {
   destination_page_owner_slug: string
   destination_path: string
   label: string
+}
+
+/**
+ * A user clicks on "Edit Alert" on the list of alerts
+ *
+ * This schema describes events sent to Segment from [[ClickedEditAlert]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedEditAlert",
+ *    alert_id: "alert-id"
+ *    context_module: "savedSearches",
+ *    context_page_owner_type: "savedSearches",
+ *  }
+ * ```
+ */
+export interface ClickedEditAlert {
+  action: ActionType.clickedEditAlert
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
 }
 
 /**
