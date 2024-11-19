@@ -1,3 +1,15 @@
+# v4.217.0 (Tue Nov 19 2024)
+
+#### 🚀  Enhancement
+
+- chore(EMI-2159): add context module for auction registration [#539](https://github.com/artsy/cohesion/pull/539) ([@erikdstock](https://github.com/erikdstock))
+
+#### Authors: 1
+
+- Erik ([@erikdstock](https://github.com/erikdstock))
+
+---
+
 # v4.216.0 (Tue Nov 19 2024)
 
 #### 🚀  Enhancement
