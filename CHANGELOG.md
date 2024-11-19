@@ -1,3 +1,15 @@
+# v4.216.0 (Tue Nov 19 2024)
+
+#### 🚀  Enhancement
+
+- feat: added tappedGlobalSearchBar [#541](https://github.com/artsy/cohesion/pull/541) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.215.0 (Wed Nov 06 2024)
 
 #### 🚀  Enhancement
