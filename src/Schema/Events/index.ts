@@ -224,6 +224,7 @@ import {
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
+  TappedGlobalSearchBar,
   TappedInfoBubble,
   TappedLearnMore,
   TappedLink,
@@ -253,19 +254,18 @@ import { ViewedVideo } from "./Video"
  * Each event describes one ActionType
  */
 export type Event =
+  | AddCollectedArtwork
   | AddedArtworkToArtworkList
   | AddedToAlbum
-  | AddToCalendar
-  | AddCollectedArtwork
   | AddressAutoCompletionResult
+  | AddToCalendar
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
   | AuthImpression
   | BannerViewed
   | BidPageView
-  | CreatedAccount
-  | CreatedArtworkList
+  | CheckedAccountBalance
   | ClickedActiveBid
   | ClickedActivityPanelNotificationItem
   | ClickedActivityPanelTab
@@ -286,9 +286,14 @@ export type Event =
   | ClickedChangePaymentMethod
   | ClickedChangeShippingAddress
   | ClickedChangeShippingMethod
+  | ClickedCloseValidationAddressModal
   | ClickedCollectionGroup
+  | ClickedConversationsFilter
   | ClickedCreateAlert
   | ClickedDeliveryMethod
+  | ClickedDismissInquiry
+  | ClickedDownloadAppFooter
+  | ClickedDownloadAppHeader
   | ClickedEditArtwork
   | ClickedExpandFilterPanel
   | ClickedExpansionToggle
@@ -298,12 +303,15 @@ export type Event =
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedMarketingModal
-  | ClickedNavigationTab
+  | ClickedMarkSold
+  | ClickedMarkSpam
   | ClickedNavBar
+  | ClickedNavigationTab
   | ClickedNotificationsBell
+  | ClickedOfferActions
   | ClickedOfferOption
-  | ClickedOnArtworkShippingWeight
   | ClickedOnArtworkShippingUnitsDropdown
+  | ClickedOnArtworkShippingWeight
   | ClickedOnBuyNowCheckbox
   | ClickedOnDuplicateArtwork
   | ClickedOnFramedMeasurements
@@ -313,38 +321,29 @@ export type Event =
   | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
   | ClickedOnReadMore
-  | ClickedPublish
   | ClickedOnSubmitOrder
-  | ClickedSnooze
-  | ClickedUploadArtwork
+  | ClickedOrderPage
+  | ClickedOrderSummary
   | ClickedPartnerCard
   | ClickedPartnerLink
-  | ClickedPaymentMethod
   | ClickedPaymentDetails
-  | CheckedAccountBalance
+  | ClickedPaymentMethod
   | ClickedPromoSpace
+  | ClickedPublish
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
   | ClickedSendPartnerOffer
   | ClickedShippingAddress
   | ClickedShowGroup
   | ClickedShowMore
+  | ClickedSnooze
   | ClickedStartPartnerOffer
+  | ClickedUpdateArtwork
+  | ClickedUploadArtwork
+  | ClickedValidationAddressOptions
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
-  | ClickedOfferActions
-  | ClickedOrderPage
-  | ClickedOrderSummary
-  | ClickedDismissInquiry
-  | ClickedMarkSpam
-  | ClickedMarkSold
-  | ClickedConversationsFilter
-  | ClickedUpdateArtwork
-  | ClickedValidationAddressOptions
-  | ClickedCloseValidationAddressModal
   | ClickedViewWork
-  | ClickedDownloadAppFooter
-  | ClickedDownloadAppHeader
   | CommercialFilterParamsChanged
   | CompletedOfflineSync
   | CompletedOnboarding
@@ -353,34 +352,34 @@ export type Event =
   | ConsignmentArtistFailed
   | ConsignmentSubmitted
   | ContactInformationCompleted
+  | CreatedAccount
   | CreatedAlbum
+  | CreatedArtworkList
   | DeleteCollectedArtwork
-  | EditedAlert
   | DeletedArtworkList
   | DeletedSavedSearch
   | EditCollectedArtwork
+  | EditedAlert
   | EditedArtworkList
   | EditedAutocompletedAddress
   | EditedSavedSearch
   | EditedUserProfile
+  | EditProfileModalViewed
   | EnterLiveAuction
   | ErrorMessageViewed
   | ExperimentViewed
-  | EditProfileModalViewed
-  | ItemViewed
-  | UploadSizeLimitExceeded
   | FocusedOnConversationMessageInput
-  | FocusedOnSearchInput
   | FocusedOnPriceDatabaseSearchInput
+  | FocusedOnSearchInput
   | FollowEvents
   | Impression
+  | ItemViewed
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
   | OnboardingUserInputData
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
   | RailViewed
-  | ValidationAddressViewed
   | RegistrationPageView
   | RegistrationSubmitted
   | ResetYourPassword
@@ -391,16 +390,16 @@ export type Event =
   | SearchedPriceDatabase
   | SearchedWithNoResults
   | SearchedWithResults
-  | SelectedItemFromSearch
-  | SelectedItemFromPriceDatabaseSearch
   | SelectedItemFromAddressAutoCompletion
+  | SelectedItemFromPriceDatabaseSearch
+  | SelectedItemFromSearch
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SendOffersBannerViewed
   | SendOffersErrorMessage
   | SendOffersModalViewed
-  | SentContent
   | SentConsignmentInquiry
+  | SentContent
   | SentConversationMessage
   | SentRequestPriceEstimate
   | Share
@@ -418,32 +417,34 @@ export type Event =
   | TappedBid
   | TappedBrowseSimilarArtworks
   | TappedBuyNow
-  | TappedChangePaymentMethod
   | TappedCardGroup
+  | TappedChangePaymentMethod
   | TappedClearTask
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
   | TappedCollectionGroup
   | TappedConsign
-  | TappedContactGallery
   | TappedConsignmentInquiry
+  | TappedContactGallery
   | TappedCreateAlert
   | TappedExploreGroup
   | TappedExploreMyCollection
   | TappedFairCard
   | TappedFairGroup
+  | TappedGlobalSearchBar
   | TappedInboxConversation
   | TappedInfoBubble
+  | TappedLearnMore
   | TappedLink
-  | TappedNavigationTab
-  | TappedNotificationsBell
   | TappedMainArtworkGrid
   | TappedMakeOffer
-  | TappedMyCollectionInsightsMedianAuctionRailItem
+  | TappedMyCollectionAddArtworkArtist
   | TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
   | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
-  | TappedMyCollectionAddArtworkArtist
+  | TappedMyCollectionInsightsMedianAuctionRailItem
+  | TappedNavigationTab
+  | TappedNotificationsBell
   | TappedPartnerCard
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
@@ -451,7 +452,6 @@ export type Event =
   | TappedSell
   | TappedSellArtwork
   | TappedShowMore
-  | TappedLearnMore
   | TappedSkip
   | TappedTabBar
   | TappedTaskGroup
@@ -467,6 +467,8 @@ export type Event =
   | ToggledSavedSearch
   | TooltipViewed
   | UploadPhotosCompleted
+  | UploadSizeLimitExceeded
+  | ValidationAddressViewed
   | ViewArtworkMyCollection
   | ViewedArtworkList
   | ViewedVideo
@@ -1443,6 +1445,10 @@ export enum ActionType {
    * Corresponds to {@link TappedVerifiedRepresentative}
    */
   tappedVerifiedRepresentative = "tappedVerifiedRepresentative",
+  /**
+   * Corresponds to {@link TappedGlobalSearchBar}
+   */
+  tappedGlobalSearchBar = "tappedGlobalSearchBar",
   /**
    * Corresponds to {@link TappedGene}
    */

@@ -1276,3 +1276,14 @@ export interface TappedChangePaymentMethod {
   item_id: string
   item_type: string
 }
+
+/**
+ * A user taps on the global search bar
+ *
+ * This schema describes events sent to Segment from [[tappedGlobalSearchBar]]
+ *
+ */
+export interface TappedGlobalSearchBar {
+  action: ActionType.tappedGlobalSearchBar
+  context_screen_owner_type: ScreenOwnerType
+}
