@@ -1167,6 +1167,7 @@ export interface ClickedEditArtwork {
  */
 export interface ClickedEditAlert {
   action: ActionType.clickedEditAlert
+  alert_id: string
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
 }
