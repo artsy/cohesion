@@ -1,3 +1,15 @@
+# v4.218.0 (Thu Nov 21 2024)
+
+#### 🚀  Enhancement
+
+- feat: Add ClickedEditAlert event [#540](https://github.com/artsy/cohesion/pull/540) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.217.0 (Tue Nov 19 2024)
 
 #### 🚀  Enhancement
