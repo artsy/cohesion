@@ -115,3 +115,27 @@ export interface ViewedArtworkList {
   context_owner_type: OwnerType.saves
   owner_id: string
 }
+
+/**
+ * User clicks on the toggle to edit artworks list privacy
+ *
+ * This schema describes events sent to Segment from [[editedArtworkListPrivacy]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "editedArtworkListPrivacy",
+ *    context_owner_type: "saves",
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98",
+ *    privacy: "Private"
+ *    artwork_list_id: "b9725f09-9369-4e1a-9e8a-bc0fe9da9645"
+ *  }
+ * ```
+ */
+ export interface EditedArtworkListPrivacy {
+  action: ActionType.editedArtworkListPrivacy
+  context_owner_type: OwnerType.saves
+  owner_id: string
+  privacy: string
+  artwork_list_id: string
+}
