@@ -56,6 +56,7 @@ export enum OwnerType {
   inboxBids = "inboxBids",
   inboxConversation = "inboxConversation",
   inboxInquiries = "inboxInquiries",
+  infiniteDiscovery = "infiniteDiscovery",
   lotsByArtistsYouFollow = "lotsByArtistsYouFollow",
   lotsForYou = "lotsForYou",
   marketNews = "marketNews",
