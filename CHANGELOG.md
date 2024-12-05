@@ -1,3 +1,15 @@
+# v4.219.0 (Thu Dec 05 2024)
+
+#### 🚀  Enhancement
+
+- feat(DIA-1014): add owner type and context module for infinite discovery [#542](https://github.com/artsy/cohesion/pull/542) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.218.0 (Thu Nov 21 2024)
 
 #### 🚀  Enhancement
