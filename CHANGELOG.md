@@ -1,3 +1,15 @@
+# v4.220.0 (Mon Dec 16 2024)
+
+#### 🚀  Enhancement
+
+- feat: [DIA-1030] Click on web hero unit [#543](https://github.com/artsy/cohesion/pull/543) ([@louislecluse](https://github.com/louislecluse))
+
+#### Authors: 1
+
+- [@louislecluse](https://github.com/louislecluse)
+
+---
+
 # v4.219.0 (Thu Dec 05 2024)
 
 #### 🚀  Enhancement
