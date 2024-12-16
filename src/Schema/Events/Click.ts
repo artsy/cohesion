@@ -1,7 +1,7 @@
-import { ActionType } from "."
 import { ContextModule } from "../Values/ContextModule"
 import { EntityModuleType } from "../Values/EntityModuleType"
 import { OwnerType, PageOwnerType } from "../Values/OwnerType"
+import { ActionType } from "."
 
 /**
  * Schemas describing Click events
@@ -2313,4 +2313,32 @@ export interface ClickedDownloadAppFooter {
   context_page_owner_id?: string
   context_page_owner_slug?: string
   user_id?: string
+}
+
+/**
+ * A user clicks the hero unit on the home page on web
+ *
+ * This schema describes events sent to Segment from [[ClickedHeroUnitGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedHeroUnitGroup",
+ *    context_module: "heroUnitsRail",
+ *    context_page_owner_type: "home",
+ *    destination_path: "",
+ *    horizontal_slide_position: 1,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface ClickedHeroUnitGroup {
+  action: ActionType.clickedHeroUnitGroup
+  context_module: string
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  destination_path: string
+  horizontal_slide_position: number
+  type: string
 }
