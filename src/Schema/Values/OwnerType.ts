@@ -12,6 +12,7 @@ export enum OwnerType {
   alertDetails = "alertDetails",
   alertConfirmation = "alertConfirmation",
   alertFilters = "alertFilters",
+  alertsInfoModal = "alertsInfoModal",
   article = "article",
   articles = "articles",
   artist = "artist",
@@ -48,6 +49,7 @@ export enum OwnerType {
   fair = "fair",
   fairArtworks = "fairArtworks",
   fairs = "fairs",
+  follows = "follows",
   galleries = "galleries",
   galleriesForYou = "galleriesForYou",
   gene = "gene",
@@ -93,6 +95,7 @@ export enum OwnerType {
   savedSearch = "savedSearch",
   savedSearches = "savedSearches",
   saves = "saves",
+  savesInfoModal = "savesInfoModal",
   savesAndFollows = "savesAndFollows",
   search = "search",
   settings = "settings",
@@ -142,6 +145,7 @@ export type ScreenOwnerType =
   | OwnerType.alertDetails
   | OwnerType.alertConfirmation
   | OwnerType.alertFilters
+  | OwnerType.alertsInfoModal
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
@@ -203,6 +207,7 @@ export type ScreenOwnerType =
   | OwnerType.savedSearch
   | OwnerType.savedSearches
   | OwnerType.saves
+  | OwnerType.savesInfoModal
   | OwnerType.savesAndFollows
   | OwnerType.search
   | OwnerType.sell
@@ -257,6 +262,7 @@ export type PageOwnerType =
   | OwnerType.editProfile
   | OwnerType.fair
   | OwnerType.fairs
+  | OwnerType.follows
   | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home

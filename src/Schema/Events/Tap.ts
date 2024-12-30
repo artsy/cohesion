@@ -496,6 +496,10 @@ export interface TappedInfoBubble {
     | "priceEstimate"
     | "artistMarketStatistics"
     | "auctionResultSalePrice"
+    | "alertsHeader"
+    | "followsHeader"
+    | "signalYourInterestToGalleries"
+
 }
 
 /**
