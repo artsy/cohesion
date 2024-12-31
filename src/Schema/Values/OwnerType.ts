@@ -175,6 +175,7 @@ export type ScreenOwnerType =
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.fairArtworks
+  | OwnerType.follows
   | OwnerType.galleriesForYou
   | OwnerType.gene
   | OwnerType.home
@@ -262,7 +263,6 @@ export type PageOwnerType =
   | OwnerType.editProfile
   | OwnerType.fair
   | OwnerType.fairs
-  | OwnerType.follows
   | OwnerType.galleries
   | OwnerType.gene
   | OwnerType.home
