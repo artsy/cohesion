@@ -1,3 +1,15 @@
+# v4.222.0 (Tue Dec 31 2024)
+
+#### 🚀  Enhancement
+
+- chore: adjust ScreenOwnerType [#545](https://github.com/artsy/cohesion/pull/545) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.221.0 (Tue Dec 31 2024)
 
 #### 🚀  Enhancement
