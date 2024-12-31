@@ -1,3 +1,15 @@
+# v4.221.0 (Tue Dec 31 2024)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-1458): add missing tracking data [#544](https://github.com/artsy/cohesion/pull/544) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.220.0 (Mon Dec 16 2024)
 
 #### 🚀  Enhancement
