@@ -1,3 +1,15 @@
+# v4.223.0 (Fri Jan 10 2025)
+
+#### 🚀  Enhancement
+
+- feat: add artistArtworksCreateAlertPromptMessage context module [#546](https://github.com/artsy/cohesion/pull/546) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.222.0 (Tue Dec 31 2024)
 
 #### 🚀  Enhancement
