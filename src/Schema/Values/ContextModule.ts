@@ -8,24 +8,24 @@ export enum ContextModule {
   aboutTheWork = "aboutTheWork",
   aboutThisAuction = "aboutThisAuction",
   account = "account",
-  adServer = "adServer",
   activity = "activity",
   activityRail = "activityRail",
   actNow = "actNow",
+  adServer = "adServer",
   alertConfirmation = "alertConfirmation",
   alertDetails = "alertDetails",
   alertFilters = "alertFilters",
   alertsAll = "alertsAll",
   alertsList = "alertsList",
-  alertsWithPrice = "alertsWithPrice",
   alertsWithoutPrice = "alertsWithoutPrice",
+  alertsWithPrice = "alertsWithPrice",
+  article = "article",
   articleArtist = "articleArtist",
   articleRail = "articleRail",
-  article = "article",
   articles = "articles",
   articleTab = "articleTab",
-  artistArtworksGridEnd = "artistArtworksGridEnd",
   artistArtworksCreateAlertPromptMessage = "artistArtworksCreateAlertPromptMessage",
+  artistArtworksGridEnd = "artistArtworksGridEnd",
   artistAuctionResults = "artistAuctionResults",
   artistCard = "artistCard",
   artistHeader = "artistHeader",
@@ -126,9 +126,9 @@ export enum ContextModule {
   liveAuctionsRail = "liveAuctionsRail",
   lotsForYouRail = "lotsForYouRail",
   mainCarousel = "mainCarousel",
+  marketingCollectionTab = "marketingCollectionTab",
   marketInsights = "marketInsights",
   marketNews = "marketNews",
-  marketingCollectionTab = "marketingCollectionTab",
   minimalCTABanner = "minimalCTABanner",
   moreFromThisSeries = "moreFromThisSeries",
   moreSeriesByThisArtist = "moreSeriesByThisArtist",
@@ -181,6 +181,7 @@ export enum ContextModule {
   priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
   pushNotifications = "pushNotifications",
+  quickLinks = "quickLinks",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
   recentPriceRanges = "recentPriceRanges",
@@ -197,8 +198,8 @@ export enum ContextModule {
   sellHeader = "sellHeader",
   sellHowItWorks = "sellHowItWorks",
   sellMeetTheSpecialists = "sellMeetTheSpecialists",
-  sellStickyFooter = "sellStickyFooter",
   sellSpeakToTheTeam = "sellSpeakToTheTeam",
+  sellStickyFooter = "sellStickyFooter",
   showHeader = "showHeader",
   showInfo = "showInfo",
   showsRail = "showsRail",
@@ -230,8 +231,8 @@ export enum ContextModule {
  * Limited ContextModules available for web authentication events
  */
 export type AuthContextModule =
-  | ContextModule.activity
   | ContextModule.aboutTheWork
+  | ContextModule.activity
   | ContextModule.articleTab
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
@@ -307,12 +308,18 @@ export type AuthContextModule =
   | ContextModule.presentingFair
   | ContextModule.presentingPartner
   | ContextModule.priceEstimate
+  | ContextModule.quickLinks
   | ContextModule.recentlyViewedRail
   | ContextModule.recentPriceRanges
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
   | ContextModule.relatedWorksRail
   | ContextModule.saveWorksCTA
+  | ContextModule.sell
+  | ContextModule.sellFooter
+  | ContextModule.sellHeader
+  | ContextModule.sellHowItWorks
+  | ContextModule.sellStickyFooter
   | ContextModule.showHeader
   | ContextModule.showInfo
   | ContextModule.showTab
@@ -327,8 +334,3 @@ export type AuthContextModule =
   | ContextModule.worksByArtistsYouFollowRail
   | ContextModule.worksByPopularArtistsRail
   | ContextModule.worksForSaleRail
-  | ContextModule.sell
-  | ContextModule.sellHeader
-  | ContextModule.sellFooter
-  | ContextModule.sellHowItWorks
-  | ContextModule.sellStickyFooter

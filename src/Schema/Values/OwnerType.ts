@@ -7,12 +7,12 @@ export enum OwnerType {
   activities = "activities",
   activity = "activity",
   album = "album",
-  allArtistSeries = "allArtistSeries",
-  alerts = "alerts",
-  alertDetails = "alertDetails",
   alertConfirmation = "alertConfirmation",
+  alertDetails = "alertDetails",
   alertFilters = "alertFilters",
+  alerts = "alerts",
   alertsInfoModal = "alertsInfoModal",
+  allArtistSeries = "allArtistSeries",
   article = "article",
   articles = "articles",
   artist = "artist",
@@ -89,39 +89,38 @@ export enum OwnerType {
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",
   profile = "profile",
+  quickLinks = "quickLinks",
   recentlyViewed = "recentlyViewed",
   sale = "sale",
   saleInformation = "saleInformation",
   savedSearch = "savedSearch",
   savedSearches = "savedSearches",
   saves = "saves",
-  savesInfoModal = "savesInfoModal",
   savesAndFollows = "savesAndFollows",
+  savesInfoModal = "savesInfoModal",
   search = "search",
-  settings = "settings",
   sell = "sell",
   sendOffers = "sendOffers",
+  settings = "settings",
   show = "show",
   shows = "shows",
   similarToRecentlyViewed = "similarToRecentlyViewed",
-
-  submitArtworkStepStart = "submitArtworkStepStart",
-  submitArtworkStepSelectArtist = "submitArtworkStepSelectArtist",
-  submitArtworkStepAddTitle = "submitArtworkStepAddTitle",
-  submitArtworkStepAddPhotos = "submitArtworkStepAddPhotos",
   submitArtworkStepAddDetails = "submitArtworkStepAddDetails",
-  submitArtworkStepPurchaseHistory = "submitArtworkStepPurchaseHistory",
   submitArtworkStepAddDimensions = "submitArtworkStepAddDimensions",
   submitArtworkStepAddPhoneNumber = "submitArtworkStepAddPhoneNumber",
-  submitArtworkStepCompleteYourSubmission = "submitArtworkStepCompleteYourSubmission",
+  submitArtworkStepAddPhotos = "submitArtworkStepAddPhotos",
+  submitArtworkStepAddtionalDocuments = "submitArtworkStepAddtionalDocuments",
+  submitArtworkStepAddTitle = "submitArtworkStepAddTitle",
   submitArtworkStepArtistRejected = "submitArtworkStepArtistRejected",
+  submitArtworkStepCompleteYourSubmission = "submitArtworkStepCompleteYourSubmission",
+  submitArtworkStepCompleteYourSubmissionPostApproval = "submitArtworkStepCompleteYourSubmissionPostApproval",
+  submitArtworkStepCondition = "submitArtworkStepCondition",
+  submitArtworkStepFrameInformation = "submitArtworkStepFrameInformation",
+  submitArtworkStepPurchaseHistory = "submitArtworkStepPurchaseHistory",
+  submitArtworkStepSelectArtist = "submitArtworkStepSelectArtist",
   submitArtworkStepSelectArtworkMyCollectionArtwork = "submitArtworkStepSelectArtworkMyCollectionArtwork",
   submitArtworkStepShippingLocation = "submitArtworkStepShippingLocation",
-  submitArtworkStepFrameInformation = "submitArtworkStepFrameInformation",
-  submitArtworkStepAddtionalDocuments = "submitArtworkStepAddtionalDocuments",
-  submitArtworkStepCondition = "submitArtworkStepCondition",
-  submitArtworkStepCompleteYourSubmissionPostApproval = "submitArtworkStepCompleteYourSubmissionPostApproval",
-
+  submitArtworkStepStart = "submitArtworkStepStart",
   tag = "tag",
   upcomingAuctions = "upcomingAuctions",
   user = "user",
@@ -137,15 +136,15 @@ export enum OwnerType {
  * Owner types available in iOS/Android
  */
 export type ScreenOwnerType =
-  | OwnerType.album
   | OwnerType.activities
   | OwnerType.activity
-  | OwnerType.allArtistSeries
-  | OwnerType.alerts
-  | OwnerType.alertDetails
+  | OwnerType.album
   | OwnerType.alertConfirmation
+  | OwnerType.alertDetails
   | OwnerType.alertFilters
+  | OwnerType.alerts
   | OwnerType.alertsInfoModal
+  | OwnerType.allArtistSeries
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
@@ -202,36 +201,37 @@ export type ScreenOwnerType =
   | OwnerType.partner
   | OwnerType.priceDatabase
   | OwnerType.profile
+  | OwnerType.quickLinks
   | OwnerType.recentlyViewed
   | OwnerType.sale
   | OwnerType.saleInformation
   | OwnerType.savedSearch
   | OwnerType.savedSearches
   | OwnerType.saves
-  | OwnerType.savesInfoModal
   | OwnerType.savesAndFollows
+  | OwnerType.savesInfoModal
   | OwnerType.search
   | OwnerType.sell
   | OwnerType.settings
   | OwnerType.show
   | OwnerType.shows
-  | OwnerType.submitArtworkStepStart
-  | OwnerType.submitArtworkStepSelectArtist
-  | OwnerType.submitArtworkStepAddTitle
-  | OwnerType.submitArtworkStepAddPhotos
+  | OwnerType.similarToRecentlyViewed
   | OwnerType.submitArtworkStepAddDetails
-  | OwnerType.submitArtworkStepPurchaseHistory
   | OwnerType.submitArtworkStepAddDimensions
   | OwnerType.submitArtworkStepAddPhoneNumber
-  | OwnerType.submitArtworkStepCompleteYourSubmission
+  | OwnerType.submitArtworkStepAddPhotos
+  | OwnerType.submitArtworkStepAddtionalDocuments
+  | OwnerType.submitArtworkStepAddTitle
   | OwnerType.submitArtworkStepArtistRejected
+  | OwnerType.submitArtworkStepCompleteYourSubmission
+  | OwnerType.submitArtworkStepCompleteYourSubmissionPostApproval
+  | OwnerType.submitArtworkStepCondition
+  | OwnerType.submitArtworkStepFrameInformation
+  | OwnerType.submitArtworkStepPurchaseHistory
+  | OwnerType.submitArtworkStepSelectArtist
   | OwnerType.submitArtworkStepSelectArtworkMyCollectionArtwork
   | OwnerType.submitArtworkStepShippingLocation
-  | OwnerType.submitArtworkStepFrameInformation
-  | OwnerType.submitArtworkStepAddtionalDocuments
-  | OwnerType.submitArtworkStepCondition
-  | OwnerType.submitArtworkStepCompleteYourSubmissionPostApproval
-  | OwnerType.similarToRecentlyViewed
+  | OwnerType.submitArtworkStepStart
   | OwnerType.tag
   | OwnerType.upcomingAuctions
   | OwnerType.viewingRoom
