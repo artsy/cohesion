@@ -1,3 +1,15 @@
+# v4.224.0 (Wed Jan 15 2025)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-1489): add ContextModule and OwnerType quickLinks [#547](https://github.com/artsy/cohesion/pull/547) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.223.0 (Fri Jan 10 2025)
 
 #### 🚀  Enhancement
