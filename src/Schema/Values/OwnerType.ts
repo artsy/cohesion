@@ -71,6 +71,7 @@ export enum OwnerType {
   myCollectionInsightsMedianAuctionPrice = "myCollectionInsightsMedianAuctionPrice",
   myCollectionOnboarding = "myCollectionOnboarding",
   myCollectionUploadingFlow = "myCollectionUploadingFlow",
+  navigationPills = "navigationPills",
   newWorksForYou = "newWorksForYou",
   newWorksFromGalleriesYouFollow = "newWorksFromGalleriesYouFollow",
   notification = "notification",
@@ -89,7 +90,6 @@ export enum OwnerType {
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",
   profile = "profile",
-  quickLinks = "quickLinks",
   recentlyViewed = "recentlyViewed",
   sale = "sale",
   saleInformation = "saleInformation",
@@ -194,6 +194,7 @@ export type ScreenOwnerType =
   | OwnerType.myCollectionInsights
   | OwnerType.myCollectionInsightsMedianAuctionPrice
   | OwnerType.myCollectionOnboarding
+  | OwnerType.navigationPills
   | OwnerType.newWorksForYou
   | OwnerType.newWorksFromGalleriesYouFollow
   | OwnerType.notification
@@ -201,7 +202,6 @@ export type ScreenOwnerType =
   | OwnerType.partner
   | OwnerType.priceDatabase
   | OwnerType.profile
-  | OwnerType.quickLinks
   | OwnerType.recentlyViewed
   | OwnerType.sale
   | OwnerType.saleInformation

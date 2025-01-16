@@ -145,6 +145,7 @@ export enum ContextModule {
   myCollectionMarketSignals = "myCollectionMarketSignals",
   myCollectionOnboarding = "myCollectionOnboarding",
   navBar = "navBar",
+  navigationPills = "navigationPills",
   newWorksByArtistsYouFollowRail = "newWorksByArtistsYouFollowRail",
   newWorksByGalleriesYouFollowRail = "newWorksByGalleriesYouFollowRail",
   newWorksForYouRail = "newWorksForYouRail",
@@ -181,7 +182,6 @@ export enum ContextModule {
   priceEstimate = "priceEstimate",
   promoSpace = "promoSpace",
   pushNotifications = "pushNotifications",
-  quickLinks = "quickLinks",
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
   recentPriceRanges = "recentPriceRanges",
@@ -290,6 +290,7 @@ export type AuthContextModule =
   | ContextModule.myCollectionAddArtworkAddArtist
   | ContextModule.myCollectionHome
   | ContextModule.navBar
+  | ContextModule.navigationPills
   | ContextModule.newWorksByGalleriesYouFollowRail
   | ContextModule.newWorksForYouRail
   | ContextModule.notification
@@ -308,7 +309,6 @@ export type AuthContextModule =
   | ContextModule.presentingFair
   | ContextModule.presentingPartner
   | ContextModule.priceEstimate
-  | ContextModule.quickLinks
   | ContextModule.recentlyViewedRail
   | ContextModule.recentPriceRanges
   | ContextModule.recommendedArtistsRail
