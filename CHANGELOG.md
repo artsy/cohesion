@@ -1,3 +1,15 @@
+# v4.226.0 (Fri Jan 17 2025)
+
+#### 🚀  Enhancement
+
+- chore: fix typo [#550](https://github.com/artsy/cohesion/pull/550) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.225.0 (Fri Jan 17 2025)
 
 #### 🚀  Enhancement
