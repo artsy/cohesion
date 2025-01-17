@@ -1,3 +1,15 @@
+# v4.227.0 (Fri Jan 17 2025)
+
+#### 🚀  Enhancement
+
+- chore: add CreateAlertReminderMessageViewed [#551](https://github.com/artsy/cohesion/pull/551) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.226.0 (Fri Jan 17 2025)
 
 #### 🚀  Enhancement
