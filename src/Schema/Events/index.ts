@@ -162,6 +162,7 @@ import {
   SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
+  CreateAlertReminderMessageViewed
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
@@ -357,6 +358,7 @@ export type Event =
   | ConsignmentSubmitted
   | ContactInformationCompleted
   | CreatedAccount
+  | CreateAlertReminderMessageViewed
   | CreatedAlbum
   | CreatedArtworkList
   | DeleteCollectedArtwork
@@ -961,6 +963,10 @@ export enum ActionType {
    * Corresponds to {@link CreatedAccount}
    */
   createdAccount = "createdAccount",
+  /**
+   * Corresponds to {@link CreateAlertReminderMessageViewed}
+   */
+  createAlertReminderMessageViewed = "createAlertReminderMessageViewed",
   /**
    * Corresponds to {@link CreatedArtworkList}
    */

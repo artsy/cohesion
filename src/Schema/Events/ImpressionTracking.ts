@@ -284,3 +284,25 @@ export interface BannerViewed {
   item_id: string
   item_type: string
 }
+
+
+/**
+ * User sees the banner in the app
+ *
+ * This schema describes events sent to Segment from [[CreateAlertReminderMessageViewed]].
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "CreateAlertReminderMessageViewed",
+ *    context_screen: "artist",
+ *    context_module: "artistArtworksCreateAlertReminderMessage",
+ *  }
+ * ```
+ *
+ */
+export interface CreateAlertReminderMessageViewed {
+  action: ActionType.createAlertReminderMessageViewed
+  context_screen: OwnerType.artist
+  context_module: ContextModule.artistArtworksCreateAlertReminderMessage
+}
