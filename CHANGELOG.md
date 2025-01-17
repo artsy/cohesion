@@ -1,3 +1,15 @@
+# v4.225.0 (Fri Jan 17 2025)
+
+#### 🚀  Enhancement
+
+- chore: add artistArtworksCreateAlertRemindertMessage [#549](https://github.com/artsy/cohesion/pull/549) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.224.0 (Wed Jan 15 2025)
 
 #### 🚀  Enhancement
