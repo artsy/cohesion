@@ -24,7 +24,7 @@ export enum ContextModule {
   articleRail = "articleRail",
   articles = "articles",
   articleTab = "articleTab",
-  artistArtworksCreateAlertPromptMessage = "artistArtworksCreateAlertPromptMessage",
+  artistArtworksCreateAlertRemindertMessage = "artistArtworksCreateAlertRemindertMessage",
   artistArtworksGridEnd = "artistArtworksGridEnd",
   artistAuctionResults = "artistAuctionResults",
   artistCard = "artistCard",
