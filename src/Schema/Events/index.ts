@@ -133,6 +133,7 @@ import { ExperimentViewed } from "./ExperimentViewed"
 import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
+  CommercialFilterSelectedAll,
   PriceDatabaseFilterParamsChanged,
   SelectedRecentPriceRange,
 } from "./FilterAndSort"
@@ -350,6 +351,7 @@ export type Event =
   | ClickedViewingRoomCard
   | ClickedViewWork
   | CommercialFilterParamsChanged
+  | CommercialFilterSelectedAll
   | CompletedOfflineSync
   | CompletedOnboarding
   | ConfirmBid
@@ -915,6 +917,10 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
+  /**
+   * Corresponds to {@link CommercialFilterSelectedAll}
+   */
+  commercialFilterSelectedAll = "commercialFilterSelectedAll",
   /**
    * Corresponds to {@link clickedDownloadAppFooter}
    */
