@@ -1,3 +1,15 @@
+# v4.228.0 (Fri Jan 31 2025)
+
+#### 🚀  Enhancement
+
+- feat: add commercialFilterSelectedAll event [#552](https://github.com/artsy/cohesion/pull/552) ([@anandaroop](https://github.com/anandaroop))
+
+#### Authors: 1
+
+- Anandaroop Roy ([@anandaroop](https://github.com/anandaroop))
+
+---
+
 # v4.227.0 (Fri Jan 17 2025)
 
 #### 🚀  Enhancement
