@@ -32,6 +32,34 @@ export interface CommercialFilterParamsChanged {
 }
 
 /**
+ * A user filters an artwork grid facet by keyword, and then selects all resulting options
+ *
+ * This schema describes events sent to Segment from [[commercialFilterSelectedAll]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "commercialFilterSelectedAll",
+ *    context_module: "artworkGrid",
+ *    context_owner_type: "artist",
+ *    context_owner_id: "58ba65b1275b24421f80a102",
+ *    context_owner_slug: "tugo-cheng",
+ *    facet: "locationCities",
+ *    query: "africa",
+ *  }
+ * ```
+ */
+export interface CommercialFilterSelectedAll {
+  action: ActionType.commercialFilterSelectedAll
+  context_module: ContextModule.artworkGrid
+  context_owner_type: OwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  facet: string
+  query: string
+}
+
+/**
  * A user applies filters to a filterable/sortable auction results module
  *
  * This schema describes events sent to Segment from [[auctionResultsFilterParamsChanged]]
@@ -107,3 +135,4 @@ export interface SelectedRecentPriceRange {
   context_screen_owner_type: OwnerType.artworkPriceFilter
   collector_profile_sourced: boolean
 }
+
