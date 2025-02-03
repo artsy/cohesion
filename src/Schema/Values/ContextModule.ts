@@ -37,6 +37,7 @@ export enum ContextModule {
   artistsToFollowRail = "artistsToFollowRail",
   artworkClosedLotHeader = "artworkClosedLotHeader",
   artworkDetails = "artworkDetails",
+  artworkForm = "artworkForm",
   artworkGrid = "artworkGrid",
   artworkImage = "artworkImage",
   artworkMetadata = "artworkMetadata",

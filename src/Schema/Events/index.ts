@@ -766,6 +766,10 @@ export enum ActionType {
    */
   clickedPublish = "clickedPublish",
   /**
+   * Corresponds to {@link ClickedSave}
+   */
+  clickedSave = "clickedSave",
+  /**
    * Corresponds to {@link ClickedOnReadMore}
    */
   clickedOnReadMore = "clickedOnReadMore",
