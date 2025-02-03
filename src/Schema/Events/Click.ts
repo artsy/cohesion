@@ -1555,6 +1555,29 @@ export interface ClickedPublish {
 }
 
 /**
+ * A partner clicks the save button on the artwork form page in CMS.
+ *
+ * This schema describes events sent to Segment from [[ClickedSave]]
+ *
+ * @example
+ * ```
+ * {
+ *    action: "clickedSave",
+ *    context_module: "artworkDetails" ,
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    label: "Save"
+ * }
+ * ```
+ */
+
+export interface ClickedSave {
+  action: ActionType.clickedSave
+  context_module: ContextModule
+  artwork_id: string
+  label: string
+}
+
+/**
  * A Partner selects a filter on the conversations page in CMS.
  *
  * This schema describes events sent to Segment from [[ClickedConversationsFilter]]
