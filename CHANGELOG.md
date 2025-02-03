@@ -1,3 +1,15 @@
+# v4.229.0 (Mon Feb 03 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add click event for saving an artwork in CMS edit form AMBER-1268 [#553](https://github.com/artsy/cohesion/pull/553) ([@jonallured](https://github.com/jonallured))
+
+#### Authors: 1
+
+- Jon Allured ([@jonallured](https://github.com/jonallured))
+
+---
+
 # v4.228.0 (Fri Jan 31 2025)
 
 #### 🚀  Enhancement
