@@ -1540,7 +1540,7 @@ export interface ClickedOnPriceDisplayDropdown {
  * ```
  * {
  *    action: "clickedPublish",
- *    context_module: "artworkDetails" ,
+ *    context_module: "artworkForm" ,
  *    artwork_id: "60de173a47476c000fd5c4cc"
  *    label: "Publish"
  * }
@@ -1563,7 +1563,7 @@ export interface ClickedPublish {
  * ```
  * {
  *    action: "clickedSave",
- *    context_module: "artworkDetails" ,
+ *    context_module: "artworkForm" ,
  *    artwork_id: "60de173a47476c000fd5c4cc"
  *    label: "Save"
  * }
