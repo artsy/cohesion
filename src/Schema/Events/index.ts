@@ -154,6 +154,7 @@ import {
 import { Impression } from "./Impression"
 import {
   BannerViewed,
+  CreateAlertReminderMessageViewed,
   EditProfileModalViewed,
   ErrorMessageViewed,
   ItemViewed,
@@ -163,7 +164,6 @@ import {
   SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
-  CreateAlertReminderMessageViewed
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
