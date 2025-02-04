@@ -1,3 +1,15 @@
+# v4.230.0 (Tue Feb 04 2025)
+
+#### 🚀  Enhancement
+
+- feat: add tapped navigation pills group [#554](https://github.com/artsy/cohesion/pull/554) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.229.0 (Mon Feb 03 2025)
 
 #### 🚀  Enhancement
