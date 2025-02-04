@@ -359,20 +359,21 @@ export interface TappedEntityGroup {
   action:
     | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
-    | ActionType.tappedCardGroup
-    | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
     | ActionType.tappedAuctionResultGroup
     | ActionType.tappedBrowseSimilarArtworks
+    | ActionType.tappedCardGroup
     | ActionType.tappedCollectionGroup
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
-    | ActionType.tappedViewingRoomGroup
     | ActionType.tappedHeroUnitGroup
+    | ActionType.tappedNavigationPillsGroup
+    | ActionType.tappedShowGroup
     | ActionType.tappedTaskGroup
+    | ActionType.tappedViewingRoomGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -1290,4 +1291,30 @@ export interface TappedChangePaymentMethod {
 export interface TappedGlobalSearchBar {
   action: ActionType.tappedGlobalSearchBar
   context_screen_owner_type: ScreenOwnerType
+}
+
+/**
+ * A user taps a grouping of navigation pills on App
+ *
+ * This schema describes events sent to Segment from [[tappedNavigationPillsGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAuctionResultGroup",
+ *    context_module: "artistAuctionResults",
+ *    context_screen_owner_type: "artistAuctionResults",
+ *    context_screen_owner_id: "51aa03df8b3b8177260002ab",
+ *    context_screen_owner_slug: "nicolas-party",
+ *    destination_screen_owner_type: "auctionResult",
+ *    destination_screen_owner_id: "6398282",
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedNavigationPillsGroup extends TappedEntityGroup {
+  action: ActionType.tappedNavigationPillsGroup
+  destination_screen_owner_type: OwnerType.auctionResult
+  href: string
+  title: string
 }
