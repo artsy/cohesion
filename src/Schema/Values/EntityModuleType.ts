@@ -5,4 +5,9 @@
  * @packageDocumentation
  */
 
-export type EntityModuleType = "thumbnail" | "header" | "stub" | "viewAll"
+export type EntityModuleType =
+  | "thumbnail"
+  | "header"
+  | "stub"
+  | "viewAll"
+  | "pill"

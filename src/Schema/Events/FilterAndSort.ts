@@ -135,4 +135,3 @@ export interface SelectedRecentPriceRange {
   context_screen_owner_type: OwnerType.artworkPriceFilter
   collector_profile_sourced: boolean
 }
-

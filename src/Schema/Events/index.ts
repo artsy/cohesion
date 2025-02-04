@@ -154,6 +154,7 @@ import {
 import { Impression } from "./Impression"
 import {
   BannerViewed,
+  CreateAlertReminderMessageViewed,
   EditProfileModalViewed,
   ErrorMessageViewed,
   ItemViewed,
@@ -163,7 +164,6 @@ import {
   SendOffersModalViewed,
   TooltipViewed,
   ValidationAddressViewed,
-  CreateAlertReminderMessageViewed
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
@@ -233,6 +233,7 @@ import {
   TappedLearnMore,
   TappedLink,
   TappedMainArtworkGrid,
+  TappedNavigationPillsGroup,
   TappedNavigationTab,
   TappedPartnerCard,
   TappedPromoSpace,
@@ -451,6 +452,7 @@ export type Event =
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
   | TappedMyCollectionInsightsMedianAuctionPriceChartTimeframe
   | TappedMyCollectionInsightsMedianAuctionRailItem
+  | TappedNavigationPillsGroup
   | TappedNavigationTab
   | TappedNotificationsBell
   | TappedPartnerCard
@@ -1393,6 +1395,10 @@ export enum ActionType {
    * Corresponds to {@link TappedNavigationTab}
    */
   tappedNavigationTab = "tappedNavigationTab",
+  /**
+   * Corresponds to {@link TappedNavigationPillsGroup}
+   */
+  tappedNavigationPillsGroup = "tappedNavigationPillsGroup",
   /**
    * Corresponds to {@link TappedNotificationsBell}
    */

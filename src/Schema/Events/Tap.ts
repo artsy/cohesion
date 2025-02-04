@@ -359,20 +359,21 @@ export interface TappedEntityGroup {
   action:
     | ActionType.tappedActivityGroup
     | ActionType.tappedArticleGroup
-    | ActionType.tappedCardGroup
-    | ActionType.tappedShowGroup
     | ActionType.tappedArtistGroup
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
     | ActionType.tappedAuctionResultGroup
     | ActionType.tappedBrowseSimilarArtworks
+    | ActionType.tappedCardGroup
     | ActionType.tappedCollectionGroup
     | ActionType.tappedExploreGroup
     | ActionType.tappedFairGroup
-    | ActionType.tappedViewingRoomGroup
     | ActionType.tappedHeroUnitGroup
+    | ActionType.tappedNavigationPillsGroup
+    | ActionType.tappedShowGroup
     | ActionType.tappedTaskGroup
+    | ActionType.tappedViewingRoomGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string
@@ -499,7 +500,6 @@ export interface TappedInfoBubble {
     | "alertsHeader"
     | "followsHeader"
     | "signalYourInterestToGalleries"
-
 }
 
 /**
@@ -1290,4 +1290,25 @@ export interface TappedChangePaymentMethod {
 export interface TappedGlobalSearchBar {
   action: ActionType.tappedGlobalSearchBar
   context_screen_owner_type: ScreenOwnerType
+}
+
+/**
+ * A user taps a grouping of navigation pills on App
+ *
+ * This schema describes events sent to Segment from [[tappedNavigationPillsGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedNavigationPillsGroup",
+ *    context_screen_owner_type: "artist",
+ *    href: "/follows",
+ *    title: "Follows",
+ *  }
+ * ```
+ */
+export interface TappedNavigationPillsGroup extends TappedEntityGroup {
+  action: ActionType.tappedNavigationPillsGroup
+  href: string
+  title: string
 }

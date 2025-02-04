@@ -285,7 +285,6 @@ export interface BannerViewed {
   item_type: string
 }
 
-
 /**
  * User sees the banner in the app
  *
