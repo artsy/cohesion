@@ -500,7 +500,6 @@ export interface TappedInfoBubble {
     | "alertsHeader"
     | "followsHeader"
     | "signalYourInterestToGalleries"
-
 }
 
 /**
@@ -1301,20 +1300,15 @@ export interface TappedGlobalSearchBar {
  *  @example
  *  ```
  *  {
- *    action: "tappedAuctionResultGroup",
- *    context_module: "artistAuctionResults",
- *    context_screen_owner_type: "artistAuctionResults",
- *    context_screen_owner_id: "51aa03df8b3b8177260002ab",
- *    context_screen_owner_slug: "nicolas-party",
- *    destination_screen_owner_type: "auctionResult",
- *    destination_screen_owner_id: "6398282",
- *    type: "thumbnail"
+ *    action: "tappedNavigationPillsGroup",
+ *    context_screen_owner_type: "artist",
+ *    href: "/follows",
+ *    title: "Follows",
  *  }
  * ```
  */
 export interface TappedNavigationPillsGroup extends TappedEntityGroup {
   action: ActionType.tappedNavigationPillsGroup
-  destination_screen_owner_type: OwnerType.auctionResult
   href: string
   title: string
 }
