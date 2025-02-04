@@ -293,7 +293,7 @@ export interface BannerViewed {
  *  @example
  *  ```
  *  {
- *    action: "CreateAlertReminderMessageViewed",
+ *    action: "createAlertReminderMessageViewed",
  *    context_screen: "artist",
  *    context_module: "artistArtworksCreateAlertReminderMessage",
  *  }
@@ -304,4 +304,35 @@ export interface CreateAlertReminderMessageViewed {
   action: ActionType.createAlertReminderMessageViewed
   context_screen: OwnerType.artist
   context_module: ContextModule.artistArtworksCreateAlertReminderMessage
+}
+
+/**
+ * User sees a shipping estimate
+ * 
+ * This schema describes events sent to segment from [[ArtsyShippingEstimateViewed]]
+ * 
+ * @example
+ * ```
+ * {
+ *  "action": "shippingEstimateViewed"
+ *  "context_page_path": "/artwork/retna-untitled-40928"
+ *  "context_owner_type": "artwork"
+ *  "origin": "New York, New York"
+ *  "destination": "10013, New York"
+ *  "minimum_estimate": 24
+ *  "maximum_estimate": 78
+ *  "estimate_currency": "USD"
+ * 
+ * }
+ * ```
+ */
+export interface ShippingEstimateViewed {
+  action: ActionType.shippingEstimateViewed
+  context_page_path: string
+  context_owner_type: OwnerType.artwork
+  origin: string
+  destination: string
+  minimum_estimate: number
+  maximum_estimate: number
+  estimate_currency: string
 }

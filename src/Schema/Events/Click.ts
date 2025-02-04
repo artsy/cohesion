@@ -455,6 +455,25 @@ export interface ClickedDeliveryMethod {
   subject: string
 }
 
+
+/** 
+ * A user clicks the 'estimate shipping cost' button on the artwork page.
+ * 
+ * @example
+ * ```
+ * {
+ *   "action": "clickedEstimateShippingCost"
+ *   "context_page_path": "/artwork/retna-untitled-40928"
+ *   "context_owner_type": "artwork"
+ *  }
+ * ```
+ */
+export interface ClickedEstimateShippingCost {
+  action: ActionType.clickedEstimateShippingCost
+  context_page_path: string
+  context_owner_type: OwnerType
+}
+
 /**
  * A user clicks a grouping of fairs on web
  *
