@@ -335,6 +335,6 @@ export interface ShippingEstimateViewed {
   origin: string
   destination: string
   minimum_estimate: number
-  maximum_estimate: number
+  maximum_estimate?: number | null
   estimate_currency: string
 }
