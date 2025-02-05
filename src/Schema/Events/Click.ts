@@ -462,7 +462,7 @@ export interface ClickedDeliveryMethod {
  * ```
  * {
  *   action: "clickedEstimateShippingCost"
- *   context_owner_type: "artwork"
+ *   context_page_owner_type: "artwork"
  *   context_page_owner_id: "58de681f275b2464fcdde097",
  *   context_page_owner_slug: "damien-hirst",
  *  }
@@ -470,7 +470,7 @@ export interface ClickedDeliveryMethod {
  */
 export interface ClickedEstimateShippingCost {
   action: ActionType.clickedEstimateShippingCost
-  context_owner_type: OwnerType
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug: string
 }

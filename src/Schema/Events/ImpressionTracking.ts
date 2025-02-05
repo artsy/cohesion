@@ -315,7 +315,7 @@ export interface CreateAlertReminderMessageViewed {
  * ```
  * {
  *  "action": "shippingEstimateViewed",
- *  "context_owner_type": "artwork",
+ *  "context_page_owner_type": "artwork",
  *   context_page_owner_id: "58de681f275b2464fcdde097",
  *   context_page_owner_slug: "damien-hirst",
  *  "origin": "New York, NY, US",
@@ -329,7 +329,7 @@ export interface CreateAlertReminderMessageViewed {
  */
 export interface ShippingEstimateViewed {
   action: ActionType.shippingEstimateViewed
-  context_owner_type: OwnerType.artwork
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   context_page_owner_slug: string
   origin: string
