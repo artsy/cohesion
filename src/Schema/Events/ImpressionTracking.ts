@@ -293,7 +293,7 @@ export interface BannerViewed {
  *  @example
  *  ```
  *  {
- *    action: "CreateAlertReminderMessageViewed",
+ *    action: "createAlertReminderMessageViewed",
  *    context_screen: "artist",
  *    context_module: "artistArtworksCreateAlertReminderMessage",
  *  }
@@ -304,4 +304,37 @@ export interface CreateAlertReminderMessageViewed {
   action: ActionType.createAlertReminderMessageViewed
   context_screen: OwnerType.artist
   context_module: ContextModule.artistArtworksCreateAlertReminderMessage
+}
+
+/**
+ * User sees a shipping estimate
+ *
+ * This schema describes events sent to segment from [[ArtsyShippingEstimateViewed]]
+ *
+ * @example
+ * ```
+ * {
+ *  "action": "shippingEstimateViewed",
+ *  "context_page_owner_type": "artwork",
+ *   context_page_owner_id: "58de681f275b2464fcdde097",
+ *   context_page_owner_slug: "damien-hirst",
+ *  "origin": "New York, NY, US",
+ *  "destination": "Chicago, IL, US",
+ *  "minimum_estimate": 24
+ *  "maximum_estimate": 78
+ *  "estimate_currency": "USD"
+ *
+ * }
+ * ```
+ */
+export interface ShippingEstimateViewed {
+  action: ActionType.shippingEstimateViewed
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug: string
+  origin: string
+  destination: string
+  minimum_estimate: number
+  maximum_estimate?: number | null
+  estimate_currency: string
 }

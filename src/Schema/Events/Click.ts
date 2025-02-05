@@ -456,6 +456,26 @@ export interface ClickedDeliveryMethod {
 }
 
 /**
+ * A user clicks the 'estimate shipping cost' button on the artwork page.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedEstimateShippingCost"
+ *   context_page_owner_type: "artwork"
+ *   context_page_owner_id: "58de681f275b2464fcdde097",
+ *   context_page_owner_slug: "damien-hirst",
+ *  }
+ * ```
+ */
+export interface ClickedEstimateShippingCost {
+  action: ActionType.clickedEstimateShippingCost
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug: string
+}
+
+/**
  * A user clicks a grouping of fairs on web
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]

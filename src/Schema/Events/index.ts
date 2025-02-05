@@ -62,6 +62,7 @@ import {
   ClickedDownloadAppHeader,
   ClickedEditAlert,
   ClickedEditArtwork,
+  ClickedEstimateShippingCost,
   ClickedExpandFilterPanel,
   ClickedExpansionToggle,
   ClickedFairCard,
@@ -162,6 +163,7 @@ import {
   SendOffersBannerViewed,
   SendOffersErrorMessage,
   SendOffersModalViewed,
+  ShippingEstimateViewed,
   TooltipViewed,
   ValidationAddressViewed,
 } from "./ImpressionTracking"
@@ -301,6 +303,7 @@ export type Event =
   | ClickedDownloadAppHeader
   | ClickedEditArtwork
   | ClickedEditAlert
+  | ClickedEstimateShippingCost
   | ClickedExpandFilterPanel
   | ClickedExpansionToggle
   | ClickedFairCard
@@ -412,6 +415,7 @@ export type Event =
   | SentConversationMessage
   | SentRequestPriceEstimate
   | Share
+  | ShippingEstimateViewed
   | StartedOnboarding
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
@@ -667,6 +671,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedEditAlert}
    */
   clickedEditAlert = "clickedEditAlert",
+  /**
+   * Corresponds to {@link ClickedEstimateShippingCost}
+   */
+  clickedEstimateShippingCost = "clickedEstimateShippingCost",
   /**
    * Corresponds to {@link ClickedExpansionToggle}
    */
@@ -1219,6 +1227,10 @@ export enum ActionType {
    * Corresponds to {@link Share}
    */
   share = "share",
+  /**
+   * Corresponds to {@link ShippingEstimateViewed}
+   */
+  shippingEstimateViewed = "shippingEstimateViewed",
   /**
    * Corresponds to {@link StartedOnboarding}
    */
