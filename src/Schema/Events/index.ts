@@ -671,7 +671,7 @@ export enum ActionType {
    * Corresponds to {@link ClickedEditAlert}
    */
   clickedEditAlert = "clickedEditAlert",
-  /** 
+  /**
    * Corresponds to {@link ClickedEstimateShippingCost}
    */
   clickedEstimateShippingCost = "clickedEstimateShippingCost",

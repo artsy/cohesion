@@ -308,28 +308,30 @@ export interface CreateAlertReminderMessageViewed {
 
 /**
  * User sees a shipping estimate
- * 
+ *
  * This schema describes events sent to segment from [[ArtsyShippingEstimateViewed]]
- * 
+ *
  * @example
  * ```
  * {
- *  "action": "shippingEstimateViewed"
- *  "context_page_path": "/artwork/retna-untitled-40928"
- *  "context_owner_type": "artwork"
- *  "origin": "New York, New York"
- *  "destination": "10013, New York"
+ *  "action": "shippingEstimateViewed",
+ *  "context_owner_type": "artwork",
+ *   context_page_owner_id: "58de681f275b2464fcdde097",
+ *   context_page_owner_slug: "damien-hirst",
+ *  "origin": "New York, NY, US",
+ *  "destination": "Chicago, IL, US",
  *  "minimum_estimate": 24
  *  "maximum_estimate": 78
  *  "estimate_currency": "USD"
- * 
+ *
  * }
  * ```
  */
 export interface ShippingEstimateViewed {
   action: ActionType.shippingEstimateViewed
-  context_page_path: string
   context_owner_type: OwnerType.artwork
+  context_page_owner_id: string
+  context_page_owner_slug: string
   origin: string
   destination: string
   minimum_estimate: number
