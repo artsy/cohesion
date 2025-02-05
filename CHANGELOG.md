@@ -1,3 +1,15 @@
+# v4.231.0 (Wed Feb 05 2025)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2276): shipping estimate widget tracking [#555](https://github.com/artsy/cohesion/pull/555) ([@erikdstock](https://github.com/erikdstock))
+
+#### Authors: 1
+
+- Erik ([@erikdstock](https://github.com/erikdstock))
+
+---
+
 # v4.230.0 (Tue Feb 04 2025)
 
 #### 🚀  Enhancement
