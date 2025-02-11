@@ -652,7 +652,7 @@ export enum ActionType {
    */
   clickedCompleteYourProfile = "clickedCompleteYourProfile",
   /**
-   * Corresponds to {@link ClickedCompleteYourProfile}
+   * Corresponds to {@link ClickedContactGallery}
    */
   clickedContactGallery = "clickedContactGallery",
   /**
@@ -711,6 +711,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedMainArtworkGrid}
    */
   clickedMainArtworkGrid = "clickedMainArtworkGrid",
+  /**
+   * Corresponds to {@link ClickedMakeOffer}
+   */
+  clickedMakeOffer = "clickedMakeOffer",
   /**
    * Corresponds to {@link ClickedMyCollectionInsightsMedianAuctionRailItem}
    */

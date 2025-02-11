@@ -315,6 +315,37 @@ export interface ClickedBuyNow {
 }
 
 /**
+ * User clicks "Make an Offer" on an artwork page (BNMO)
+ *
+ * This schema describes events sent to Segment from [[clickedMakeOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedMakeOffer",
+ *    context_owner_type: "Artwork",
+ *    context_owner_slug: "radna-segal-pearl",
+ *    context_owner_id: "6164889300d643000db86504",
+ *    impulse_conversation_id: "198",
+ *    flow: "Make offer" | "Partner offer"
+ *    signal_label: "Limited-Time Offer",
+ *  }
+ * ```
+ */
+
+export interface ClickedMakeOffer {
+  action: ActionType.clickedMakeOffer
+  context_owner_type: OwnerType
+  context_owner_slug: string
+  context_owner_id: string
+  impulse_conversation_id?: string
+  flow?: string
+  signal_label?: string
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
+}
+
+/**
  * User clicks "Contact Gallery" on an artwork page (BNMO)
  *
  * This schema describes events sent to Segment from [[clickedContactGallery]]
