@@ -1,3 +1,15 @@
+# v4.232.0 (Tue Feb 11 2025)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2276): adding estimate_available for when widget fails [#557](https://github.com/artsy/cohesion/pull/557) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.231.0 (Wed Feb 05 2025)
 
 #### 🚀  Enhancement
