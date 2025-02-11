@@ -307,23 +307,24 @@ export interface CreateAlertReminderMessageViewed {
 }
 
 /**
- * User sees a shipping estimate
+ * User sees a shipping estimate. estimate_available = false when artwork is disqualified
+ * from arta (due to size, weight, origin country) and therefore does not show an estimate
  *
  * This schema describes events sent to segment from [[ArtsyShippingEstimateViewed]]
  *
  * @example
  * ```
  * {
- *  "action": "shippingEstimateViewed",
- *  "context_page_owner_type": "artwork",
- *   context_page_owner_id: "58de681f275b2464fcdde097",
- *   context_page_owner_slug: "damien-hirst",
- *  "origin": "New York, NY, US",
- *  "destination": "Chicago, IL, US",
- *  "minimum_estimate": 24
- *  "maximum_estimate": 78
- *  "estimate_currency": "USD"
- *
+ *    action: "shippingEstimateViewed",
+ *    context_page_owner_type: "artwork",
+ *    context_page_owner_id: "58de681f275b2464fcdde097",
+ *    context_page_owner_slug: "damien-hirst",
+ *    origin: "New York, NY, US",
+ *    destination: "Chicago, IL, US",
+ *    estimate_available: true | false
+ *    minimum_estimate: 24 | null
+ *    maximum_estimate: 78 | null
+ *    estimate_currency: "USD"
  * }
  * ```
  */
@@ -334,7 +335,8 @@ export interface ShippingEstimateViewed {
   context_page_owner_slug: string
   origin: string
   destination: string
-  minimum_estimate: number
+  estimate_available: boolean
+  minimum_estimate?: number | null
   maximum_estimate?: number | null
   estimate_currency: string
 }
