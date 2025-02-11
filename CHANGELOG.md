@@ -1,3 +1,15 @@
+# v4.233.0 (Tue Feb 11 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add featuredFairs screen owner type [#556](https://github.com/artsy/cohesion/pull/556) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.232.0 (Tue Feb 11 2025)
 
 #### 🚀  Enhancement
