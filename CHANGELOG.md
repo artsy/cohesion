@@ -1,3 +1,15 @@
+# v4.234.0 (Wed Feb 12 2025)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2258): add ClickedMakeOffer to events schema for signal tracking [#558](https://github.com/artsy/cohesion/pull/558) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.233.0 (Tue Feb 11 2025)
 
 #### 🚀  Enhancement
