@@ -49,14 +49,7 @@ export enum ActionType {
    * TODO: Check if ‘Tap’ and this can be combined.
    */
   Click = "Click",
-  ClickedBid = 'Clicked "Bid"',
-  /**
-   * A click on 'Buy Now' or 'Make offer' buttons.
-   */
-  ClickedBuyNow = "Clicked buy now",
   ClickedConsign = "Clicked consign",
-  ClickedContactGallery = 'Clicked "Contact Gallery"',
-  ClickedMakeOffer = "Clicked make offer",
 
   /**
    * Triggers a pageview in force, skips segment
