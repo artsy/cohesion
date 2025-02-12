@@ -47,13 +47,16 @@ import {
   ClickedArtworkGroup,
   ClickedAuctionGroup,
   ClickedAuctionResultItem,
+  ClickedBid,
   ClickedBuyerProtection,
+  ClickedBuyNow,
   ClickedChangePage,
   ClickedChangePaymentMethod,
   ClickedChangeShippingAddress,
   ClickedChangeShippingMethod,
   ClickedCloseValidationAddressModal,
   ClickedCollectionGroup,
+  ClickedContactGallery,
   ClickedConversationsFilter,
   ClickedCreateAlert,
   ClickedDeliveryMethod,
@@ -71,6 +74,7 @@ import {
   ClickedHeroUnitGroup,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
+  ClickedMakeOffer,
   ClickedMarketingModal,
   ClickedMarkSold,
   ClickedMarkSpam,
@@ -288,13 +292,16 @@ export type Event =
   | ClickedArtworkGroup
   | ClickedAuctionGroup
   | ClickedAuctionResultItem
+  | ClickedBid
   | ClickedBuyerProtection
+  | ClickedBuyNow
   | ClickedChangePage
   | ClickedChangePaymentMethod
   | ClickedChangeShippingAddress
   | ClickedChangeShippingMethod
   | ClickedCloseValidationAddressModal
   | ClickedCollectionGroup
+  | ClickedContactGallery
   | ClickedConversationsFilter
   | ClickedCreateAlert
   | ClickedDeliveryMethod
@@ -312,6 +319,7 @@ export type Event =
   | ClickedHeroUnitGroup
   | ClickedLoadMore
   | ClickedMainArtworkGrid
+  | ClickedMakeOffer
   | ClickedMarketingModal
   | ClickedMarkSold
   | ClickedMarkSpam
@@ -614,11 +622,11 @@ export enum ActionType {
   /**
    *    * Corresponds to {@link ClickedAuctionResultItem}
    */
+  clickedAuctionResultItem = "clickedAuctionResultItem",
   /**
    * Corresponds to {@link ClickedBid}
    */
   clickedBid = "clickedBid",
-  clickedAuctionResultItem = "clickedAuctionResultItem",
   /**
    * Corresponds to {@link ClickedBuyerProtection}
    */
@@ -652,7 +660,7 @@ export enum ActionType {
    */
   clickedCompleteYourProfile = "clickedCompleteYourProfile",
   /**
-   * Corresponds to {@link ClickedCompleteYourProfile}
+   * Corresponds to {@link ClickedContactGallery}
    */
   clickedContactGallery = "clickedContactGallery",
   /**
@@ -711,6 +719,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedMainArtworkGrid}
    */
   clickedMainArtworkGrid = "clickedMainArtworkGrid",
+  /**
+   * Corresponds to {@link ClickedMakeOffer}
+   */
+  clickedMakeOffer = "clickedMakeOffer",
   /**
    * Corresponds to {@link ClickedMyCollectionInsightsMedianAuctionRailItem}
    */
