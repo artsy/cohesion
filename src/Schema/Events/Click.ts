@@ -310,8 +310,6 @@ export interface ClickedBuyNow {
   impulse_conversation_id?: string
   flow?: string
   signal_label?: string
-  signal_lot_watcher_count?: number
-  signal_bid_count?: number
 }
 
 /**
@@ -341,8 +339,6 @@ export interface ClickedMakeOffer {
   impulse_conversation_id?: string
   flow?: string
   signal_label?: string
-  signal_lot_watcher_count?: number
-  signal_bid_count?: number
 }
 
 /**
