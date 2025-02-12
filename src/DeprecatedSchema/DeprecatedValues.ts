@@ -50,6 +50,7 @@ export enum ActionType {
    */
   Click = "Click",
   ClickedConsign = "Clicked consign",
+  ClickedMakeOffer = "Clicked make offer",
 
   /**
    * Triggers a pageview in force, skips segment
