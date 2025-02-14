@@ -204,6 +204,7 @@ import {
   SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
 import { Share } from "./Share"
+import { SwipedInfiniteDiscoveryArtwork } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   TappedActivityGroup,
@@ -415,6 +416,7 @@ export type Event =
   | StartedOnboarding
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
+  | SwipedInfiniteDiscoveryArtwork
   | TappedActivityGroup
   | TappedArticleGroup
   | TappedArticleShare
@@ -1232,6 +1234,10 @@ export enum ActionType {
    */
   successfullyLoggedIn = "successfullyLoggedIn",
   /**
+   * Corresponds to {@link SwipedInfiniteDiscoveryArtwork}
+   */
+  swipedInfiniteDiscoveryArtwork = "swipedInfiniteDiscoveryArtwork",
+  /**
    * Corresponds to {@link TappedActivityGroup}
    */
   tappedActivityGroup = "tappedActivityGroup",
@@ -1291,6 +1297,10 @@ export enum ActionType {
    * Corresponds to {@link TappedChangePaymentMethod}
    */
   tappedChangePaymentMethod = "tappedChangePaymentMethod",
+  /**
+   * Corresponds to {@link TappedClose}
+   */
+  tappedClose = "tappedClose",
   /**
    * Corresponds to {@link TappedCollectedArtworkImages}
    */
@@ -1424,6 +1434,10 @@ export enum ActionType {
    */
   tappedRequestPriceEstimate = "tappedRequestPriceEstimate",
   /**
+   * Corresponds to {@link TappedRewind}
+   */
+  tappedRewind = "tappedRewind",
+  /**
    * Corresponds to {@link TappedSell}
    */
   tappedSell = "tappedSell",
@@ -1451,6 +1465,10 @@ export enum ActionType {
    * Corresponds to {@link TappedTaskGroup}
    */
   tappedTaskGroup = "tappedTaskGroup",
+  /**
+   * Corresponds to {@link TappedToast}
+   */
+  tappedToast = "tappedToast",
   /**
    * Corresponds to {@link TappedUploadAnotherArtwork}
    */

@@ -597,6 +597,30 @@ export interface TappedRegisterToBid {
 }
 
 /**
+ * A user taps on the rewind button
+ *
+ * This schema describes events sent to Segment from [[tappedRewind]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedRewind",
+ *    context_module: "infiniteDiscovery",
+ *    context_screen_owner_id: "artwork-id",
+ *    context_screen_owner_slug: "artwork-slug",
+ *    context_screen_owner_type: "infiniteDiscoveryArtwork"
+ *  }
+ * ```
+ */
+export interface TappedRewind {
+  action: ActionType.tappedRewind
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
  * A user taps a button that navigates to the Sell With Artsy home screen (not the 'sell' icon in the tab bar)
  *
  * This schema describes events sent to Segment from [[tappedSell]]
@@ -835,6 +859,24 @@ export interface TappedLink {
   destination_screen_owner_type?: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
+}
+
+/**
+ * A user taps on a close (modal) button
+ *
+ * This schema describes events sent to Segment from [[tappedClose]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedClose",
+ *    context_module: "infiniteDiscovery",
+ *  }
+ * ```
+ */
+export interface TappedClose {
+  action: ActionType.tappedClose
+  context_module: ContextModule
 }
 
 /**
@@ -1212,6 +1254,30 @@ export interface TappedTaskGroup extends TappedEntityGroup {
   destination_path: string
   task_id: string
   task_type: string
+}
+
+/**
+ * A user taps on a toast notification in the app
+ *
+ * This schema describes events sent to Segment from [[tappedToast]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedToast",
+ *    context_module : "infiniteDiscovery",
+ *    context_screen_owner_type: "Home",
+ *    destination_screen_owner_type: "Saves",
+ *    subject: "Tap here to navigate to your Saves area in your profile."
+ *  }
+ * ```
+ */
+export interface TappedToast {
+  action: ActionType.tappedToast
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type?: ScreenOwnerType
+  subject?: string
 }
 
 /**
