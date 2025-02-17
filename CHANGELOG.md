@@ -1,3 +1,15 @@
+# v4.235.0 (Mon Feb 17 2025)
+
+#### 🚀  Enhancement
+
+- feat: tracking for infinite discovery [#559](https://github.com/artsy/cohesion/pull/559) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.234.0 (Wed Feb 12 2025)
 
 #### 🚀  Enhancement
