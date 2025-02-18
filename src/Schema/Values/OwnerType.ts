@@ -132,6 +132,7 @@ export enum OwnerType {
   viewingRoomList = "viewingRoomList",
   viewingRooms = "viewingRooms",
   worksForYou = "worksForYou",
+  yourMaxBid = "yourMaxBid",
 }
 
 /**
@@ -243,6 +244,7 @@ export type ScreenOwnerType =
   | OwnerType.viewingRoomArtworks
   | OwnerType.viewingRoomList
   | OwnerType.worksForYou
+  | OwnerType.yourMaxBid
 
 /**
  * Owner types available in web/mobile web
