@@ -1,3 +1,15 @@
+# v4.236.0 (Tue Feb 18 2025)
+
+#### 🚀  Enhancement
+
+- fix: add YourMaxBid owner type [#560](https://github.com/artsy/cohesion/pull/560) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.235.0 (Mon Feb 17 2025)
 
 #### 🚀  Enhancement
