@@ -1,3 +1,15 @@
+# v4.237.0 (Wed Feb 19 2025)
+
+#### 🚀  Enhancement
+
+- fix: add ConfirmYourBid owner type [#561](https://github.com/artsy/cohesion/pull/561) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.236.0 (Tue Feb 18 2025)
 
 #### 🚀  Enhancement
