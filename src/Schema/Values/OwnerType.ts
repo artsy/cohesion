@@ -35,6 +35,7 @@ export enum OwnerType {
   collection = "collection",
   collections = "collections",
   collectionsCategory = "collectionsCategory",
+  confirmYourBid = "confirmYourBid",
   consign = "consign",
   consignmentFlow = "consignmentFlow",
   consignmentInquiry = "consignmentInquiry",
@@ -165,6 +166,7 @@ export type ScreenOwnerType =
   | OwnerType.cityPicker
   | OwnerType.collection
   | OwnerType.collectionsCategory
+  | OwnerType.confirmYourBid
   | OwnerType.consign
   | OwnerType.consignmentFlow
   | OwnerType.consignmentInquiry
