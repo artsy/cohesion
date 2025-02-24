@@ -1,3 +1,7 @@
+/**
+ * Web and iOS exports
+ */
+
 export * from "./Events"
 export * from "./Events/ActivityPanel"
 export * from "./Events/AddToCalendar"
@@ -29,3 +33,11 @@ export * from "./Values/Intent"
 export * from "./Values/OwnerType"
 export * from "./Values/PushNotificationType"
 export * from "./Values/Tab"
+
+/**
+ * CMS-specific exports
+ */
+
+export * from "./CMS/Events"
+export * from "./CMS/Values/CmsContextModule"
+export * from "./CMS/Values/CmsOwnerType"
