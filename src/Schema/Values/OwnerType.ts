@@ -88,6 +88,7 @@ export enum OwnerType {
   ordersReview = "orders-review",
   ordersShipping = "orders-shipping",
   ordersSubmitted = "orders-submitted",
+  ordersExpressCheckout = "orders-express-checkout",
   partner = "partner",
   partnerShowsArtworks = "partnerShowsArtworks",
   priceDatabase = "priceDatabase",

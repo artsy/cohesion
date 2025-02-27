@@ -50,6 +50,7 @@ import {
   ClickedBid,
   ClickedBuyerProtection,
   ClickedBuyNow,
+  ClickedCancelExpressCheckout,
   ClickedChangePage,
   ClickedChangePaymentMethod,
   ClickedChangeShippingAddress,
@@ -68,6 +69,7 @@ import {
   ClickedEstimateShippingCost,
   ClickedExpandFilterPanel,
   ClickedExpansionToggle,
+  ClickedExpressCheckout,
   ClickedFairCard,
   ClickedFairGroup,
   ClickedGalleryGroup,
@@ -296,6 +298,7 @@ export type Event =
   | ClickedBid
   | ClickedBuyerProtection
   | ClickedBuyNow
+  | ClickedCancelExpressCheckout
   | ClickedChangePage
   | ClickedChangePaymentMethod
   | ClickedChangeShippingAddress
@@ -314,6 +317,7 @@ export type Event =
   | ClickedEstimateShippingCost
   | ClickedExpandFilterPanel
   | ClickedExpansionToggle
+  | ClickedExpressCheckout
   | ClickedFairCard
   | ClickedFairGroup
   | ClickedGalleryGroup
@@ -638,6 +642,10 @@ export enum ActionType {
    */
   clickedBuyNow = "clickedBuyNow",
   /**
+   * Corresponds to {@link ClickedCancelExpressCheckout}
+   */
+  clickedCancelExpressCheckout = "clickedCancelExpressCheckout",
+  /**
    * Corresponds to {@link ClickedChangePage}
    */
   clickedChangePage = "clickedChangePage",
@@ -693,6 +701,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedExpandFilterPanel}
    */
   clickedExpandFilterPanel = "clickedExpandFilterPanel",
+  /**
+   * Corresponds to {@link ClickedExpressCheckout}
+   */
+  clickedExpressCheckout = "clickedExpressCheckout",
   /**
    * Corresponds to {@link ClickedExternalNewsSource}
    */
