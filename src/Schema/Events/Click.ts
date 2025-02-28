@@ -2422,7 +2422,7 @@ export interface ClickedHeroUnitGroup {
  *  ```
  *  {
  *    action: "clickedExpressCheckout",
- *    context_page_owner_type: "ordersExpressCheckout",
+ *    context_page_owner_type: "ordersShipping",
  *    context_page_owner_slug: "radna-segal-pearl",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
@@ -2448,7 +2448,7 @@ export interface ClickedExpressCheckout {
  *  ```
  *  {
  *    action: "clickedCancelExpressCheckout",
- *    context_page_owner_type: "ordersExpressCheckout",
+ *    context_page_owner_type: "ordersShipping",
  *    context_page_owner_slug: "radna-segal-pearl",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
