@@ -2412,3 +2412,55 @@ export interface ClickedHeroUnitGroup {
   horizontal_slide_position: number
   type: string
 }
+
+/**
+ * A user clicks an express checkout button
+ *
+ * This schema describes events sent to Segment from [[ClickedExpressCheckout]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedExpressCheckout",
+ *    context_page_owner_type: "ordersShipping",
+ *    context_page_owner_slug: "radna-segal-pearl",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    payment_method: "Apple Pay" | "Google Pay"
+ *  }
+ * ```
+ */
+export interface ClickedExpressCheckout {
+  action: ActionType.clickedExpressCheckout
+  context_page_owner_type: OwnerType
+  context_page_owner_slug: string
+  context_page_owner_id: string
+  flow: string
+  payment_method: string
+}
+
+/**
+ * A user clicks on cancel express checkout button
+ *
+ * This schema describes events sent to Segment from [[ClickedCancelExpressCheckout]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCancelExpressCheckout",
+ *    context_page_owner_type: "ordersShipping",
+ *    context_page_owner_slug: "radna-segal-pearl",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    payment_method: "Apple Pay" | "Google Pay"
+ *  }
+ * ```
+ */
+export interface ClickedCancelExpressCheckout {
+  action: ActionType.clickedCancelExpressCheckout
+  context_page_owner_type: OwnerType
+  context_page_owner_slug: string
+  context_page_owner_id: string
+  flow: string
+  payment_method: string
+}
