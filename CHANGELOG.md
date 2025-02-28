@@ -1,3 +1,15 @@
+# v4.238.0 (Fri Feb 28 2025)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2310): add express checkout click events [#563](https://github.com/artsy/cohesion/pull/563) ([@rquartararo](https://github.com/rquartararo))
+
+#### Authors: 1
+
+- Rachel Quartararo ([@rquartararo](https://github.com/rquartararo))
+
+---
+
 # v4.237.0 (Wed Feb 19 2025)
 
 #### 🚀  Enhancement
