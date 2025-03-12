@@ -115,3 +115,23 @@ export interface ViewedArtworkList {
   context_owner_type: OwnerType.saves
   owner_id: string
 }
+
+/**
+ * When a user clicks to view a shared artwork list
+ *
+ * This schema describes events sent to Segment from [[viewedSharedArtworkList]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "viewedSharedArtworkList",
+ *    context_owner_type: "saves",
+ *    owner_id: "770fa47d-8cc8-4267-93e7-2808544d2a98"
+ *  }
+ * ```
+ */
+export interface ViewedSharedArtworkList {
+  action: ActionType.viewedSharedArtworkList
+  context_owner_type: OwnerType.saves
+  owner_id: string
+}
