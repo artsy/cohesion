@@ -21,14 +21,5 @@ export enum CmsActionType {
   /**
    * Corresponds to {@link BatchImportFlow}
    */
-  csvImportError = "csvImportError",
-
-  /**
-   * Corresponds to {@link BatchImportFlow}
-   */
-  importComplete = "importComplete",
-  /**
-   * Corresponds to {@link BatchImportFlow}
-   */
   shownMissingInformation = "shownMissingInformation",
 }
