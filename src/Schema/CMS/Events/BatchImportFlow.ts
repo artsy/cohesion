@@ -25,7 +25,7 @@ export interface CmsBatchImportFlowClickImport {
   context_module: CmsContextModule.batchImportFlow
   context_page_owner_type: CmsOwnerType.batchImport
   context_page_owner_id: string
-  label: "click import"
+  label: "click import works"
   referrer: ""
 }
 
@@ -70,49 +70,6 @@ export interface CmsBatchImportFlowClickDownloadTemplate {
 }
 
 /**
- * Import process was completed.
- *
- * @example
- * ```
- * {
- *   event: "importComplete",
- *   context_page_owner_type: "batchImport",
- *   context_page_owner_id: "67b646ecbe87376bfeb3f962",
- *   // original_csv_size = number of lines in csv
- *   // outcome = number of lines successfuly imported
- *   value: { original_csv_size: number, outcome: number }
- * }
- * ```
- */
-export interface CmsBatchImportFlowImportComplete {
-  event: CmsActionType.importComplete
-  context_page_owner_type: CmsOwnerType.batchImport
-  context_page_owner_id: string
-  value: { original_csv_size: number; outcome: number }
-}
-
-/**
- * An error occurred during CSV import.
- *
- * @example
- * ```
- * {
- *   event: "csvImportError",
- *   context_page_owner_type: "batchImport",
- *   context_page_owner_id: "67b646ecbe87376bfeb3f962",
- *   // list of errors
- *   value: [ "error1", "error2" ]
- * }
- * ```
- */
-export interface CmsBatchImportFlowImportError {
-  event: CmsActionType.csvImportError
-  context_page_owner_type: CmsOwnerType.batchImport
-  context_page_owner_id: string
-  value: string[]
-}
-
-/**
  * Some artworks have missing information warnings.
  *
  * @example
@@ -154,11 +111,30 @@ export interface CmsBatchImportFlowArtistNeedsMatching {
   value: number
 }
 
+/**
+ * Partners click to exit the batch import flow 
+ *
+ * @example
+ * ```
+ * {
+*   context_module: "batchImportFlow",
+ *   context_page_owner_type: "batchImport",
+ *   context_page_owner_id: "67b646ecbe87376bfeb3f962",
+ *   label: "click import"
+ * }
+ * ```
+ */
+export interface CmsBatchImportClickExit {
+  context_module: CmsContextModule.batchImportFlow
+  context_page_owner_type: CmsOwnerType.batchImport
+  context_page_owner_id: string
+  label: "click exit"
+}
+
 export type CmsBatchImportFlow =
   | CmsBatchImportFlowClickImport
   | CmsBatchImportFlowClickAddCSV
   | CmsBatchImportFlowClickDownloadTemplate
-  | CmsBatchImportFlowImportComplete
-  | CmsBatchImportFlowImportError
   | CmsBatchImportFlowShownMissingInformation
   | CmsBatchImportFlowArtistNeedsMatching
+  | CmsBatchImportClickExit
