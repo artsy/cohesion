@@ -1,3 +1,15 @@
+# v4.240.0 (Wed Mar 12 2025)
+
+#### 🚀  Enhancement
+
+- chore: add infinite discovery onboarding [#565](https://github.com/artsy/cohesion/pull/565) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.239.0 (Wed Mar 12 2025)
 
 #### 🚀  Enhancement
