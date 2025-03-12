@@ -83,6 +83,28 @@ export interface TooltipViewed {
 }
 
 /**
+ * A user viewed a tooltip. `type` will describe what tooltip it is (follow, edit-follows, etc.)
+ *
+ * This schema describes events sent to Segment from [[tooltipViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tooltipViewed",
+ *    context_module: "newWorksForYouRail",
+ *    context_owner_type: "home",
+ *    type: "long-press-artwork-context-menu"
+ *  }
+ * ```
+ */
+export interface TooltipViewedApp {
+  action: ActionType.tooltipViewed
+  context_module: ContextModule
+  context_owner_type?: OwnerType
+  type: string
+}
+
+/**
  * A user sees a an error message
  *
  * This schema describes events sent to Segment from [[ErrorMessageViewed]].
