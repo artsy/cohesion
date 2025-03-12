@@ -952,14 +952,15 @@ export interface TappedBid {
 
 export interface TappedBuyNow {
   action: ActionType.tappedBuyNow
-  context_owner_type: ScreenOwnerType
+  context_module?: ContextModule
   context_owner_id: string
   context_owner_slug: string
-  impulse_conversation_id?: string
+  context_owner_type: ScreenOwnerType
   flow?: "Buy now" | "Partner offer"
+  impulse_conversation_id?: string
+  signal_bid_count?: number
   signal_label?: string
   signal_lot_watcher_count?: number
-  signal_bid_count?: number
 }
 
 /**
