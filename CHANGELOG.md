@@ -1,3 +1,15 @@
+# v4.239.0 (Wed Mar 12 2025)
+
+#### 🚀  Enhancement
+
+- chore: add missing tracking events to infinite discovery [#564](https://github.com/artsy/cohesion/pull/564) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.238.0 (Fri Feb 28 2025)
 
 #### 🚀  Enhancement
