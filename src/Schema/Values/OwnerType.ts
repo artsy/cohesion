@@ -62,6 +62,7 @@ export enum OwnerType {
   inboxInquiries = "inboxInquiries",
   infiniteDiscovery = "infiniteDiscovery",
   infiniteDiscoveryArtwork = "infiniteDiscoveryArtwork",
+  infiniteDiscoveryOnboarding = "infiniteDiscoveryOnboarding",
   lotsByArtistsYouFollow = "lotsByArtistsYouFollow",
   lotsForYou = "lotsForYou",
   marketNews = "marketNews",
@@ -189,6 +190,7 @@ export type ScreenOwnerType =
   | OwnerType.inboxConversation
   | OwnerType.inboxInquiries
   | OwnerType.infiniteDiscoveryArtwork
+  | OwnerType.infiniteDiscoveryOnboarding
   | OwnerType.lotsByArtistsYouFollow
   | OwnerType.lotsForYou
   | OwnerType.marketNews
