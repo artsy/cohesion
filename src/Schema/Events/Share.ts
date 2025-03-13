@@ -32,3 +32,53 @@ export interface Share {
   context_owner_slug?: string
   service: CustomService | string
 }
+
+/**
+ * A user clicks the share button on the collection (artwork list) page
+ *
+ * This schema describes events sent to Segment from [[ClickedShareButton]]
+ *
+ * @example
+ * ```
+ * {
+ *    action: "clickedShareButton",
+ *    context_module: "saves" ,
+ *    context_owner_type: "saves",
+ *    context_owner_id: "55ed8ca57261693d930000b8",
+ *    context_owner_slug: "wishlist",
+ * }
+ * ```
+ */
+
+export interface ClickedShareButton {
+  action: ActionType.clickedShareButton
+  context_module: ContextModule
+  context_owner_type: OwnerType
+  context_owner_id: string
+  context_owner_slug?: string
+}
+
+/**
+ * A user clicks the open in new tab button on the collection (artwork list) page
+ *
+ * This schema describes events sent to Segment from [[ClickedOpenInNewTabButton]]
+ *
+ * @example
+ * ```
+ * {
+ *    action: "clickedOpenInNewTabButton",
+ *    context_module: "saves" ,
+ *    context_owner_type: "saves",
+ *    context_owner_id: "55ed8ca57261693d930000b8",
+ *    context_owner_slug: "wishlist",
+ * }
+ * ```
+ */
+
+export interface ClickedOpenInNewTabButton {
+  action: ActionType.clickedOpenInNewTabButton
+  context_module: ContextModule
+  context_owner_type: OwnerType
+  context_owner_id: string
+  context_owner_slug?: string
+}

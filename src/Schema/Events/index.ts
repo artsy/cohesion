@@ -11,6 +11,7 @@ import {
   DeletedArtworkList,
   EditedArtworkList,
   ViewedArtworkList,
+  ViewedSharedArtworkList,
 } from "./ArtworkLists"
 import {
   AuctionPageView,
@@ -211,7 +212,7 @@ import {
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
-import { Share } from "./Share"
+import { ClickedOpenInNewTabButton, ClickedShareButton, Share } from "./Share"
 import { SwipedInfiniteDiscoveryArtwork } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
@@ -347,6 +348,7 @@ export type Event =
   | ClickedOnSubmitOrder
   | ClickedOrderPage
   | ClickedOrderSummary
+  | ClickedOpenInNewTabButton
   | ClickedPartnerCard
   | ClickedPartnerLink
   | ClickedPaymentDetails
@@ -356,6 +358,7 @@ export type Event =
   | ClickedRegisterToBid
   | ClickedSelectShippingOption
   | ClickedSendPartnerOffer
+  | ClickedShareButton
   | ClickedShippingAddress
   | ClickedShowGroup
   | ClickedShowMore
@@ -499,6 +502,7 @@ export type Event =
   | ValidationAddressViewed
   | ViewArtworkMyCollection
   | ViewedArtworkList
+  | ViewedSharedArtworkList
   | ViewedVideo
   | VisitMyCollection
   | VisitMyCollectionOnboardingSlide
@@ -806,6 +810,10 @@ export enum ActionType {
    */
   clickedSave = "clickedSave",
   /**
+   * Corresponds to {@link ClickedShareButton}
+   */
+  clickedShareButton = "clickedShareButton",
+  /**
    * Corresponds to {@link ClickedOnReadMore}
    */
   clickedOnReadMore = "clickedOnReadMore",
@@ -821,6 +829,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedOrderSummary}
    */
   clickedOrderSummary = "clickedOrderSummary",
+  /**
+   * Corresponds to {@link ClickedOpenInNewTabButton}
+   */
+  clickedOpenInNewTabButton = "clickedOpenInNewTabButton",
   /**
    * Corresponds to {@link ClickedPartnerCard}
    */
@@ -1601,6 +1613,10 @@ export enum ActionType {
    * Corresponds to {@link ViewedArtworkList}
    */
   viewedArtworkList = "viewedArtworkList",
+  /**
+   * Corresponds to {@link ViewedSharedArtworkList}
+   */
+  viewedSharedArtworkList = "viewedSharedArtworkList",
   /**
    * Corresponds to {@link ViewedVideo}
    */
