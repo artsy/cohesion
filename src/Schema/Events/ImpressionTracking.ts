@@ -97,7 +97,7 @@ export interface TooltipViewed {
  *  }
  * ```
  */
-export interface TooltipViewedApp {
+export interface ProgressiveOnboardingTooltipViewed {
   action: ActionType.tooltipViewed
   context_module: ContextModule
   context_owner_type?: OwnerType

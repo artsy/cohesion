@@ -171,7 +171,7 @@ import {
   SendOffersModalViewed,
   ShippingEstimateViewed,
   TooltipViewed,
-  TooltipViewedApp,
+  ProgressiveOnboardingTooltipViewed,
   ValidationAddressViewed,
 } from "./ImpressionTracking"
 import {
@@ -495,7 +495,7 @@ export type Event =
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
-  | TooltipViewedApp
+  | ProgressiveOnboardingTooltipViewed
   | UploadPhotosCompleted
   | UploadSizeLimitExceeded
   | ValidationAddressViewed
@@ -1576,9 +1576,9 @@ export enum ActionType {
    */
   tooltipViewed = "tooltipViewed",
   /**
-   * Corresponds to {@link TooltipViewedApp}
+   * Corresponds to {@link ProgressiveOnboardingTooltipViewed}
    */
-  tooltipViewedApp = "tooltipViewedApp",
+  progressiveOnboardingTooltipViewed = "progressiveOnboardingTooltipViewed",
   /**
    * Corresponds to {@link UnfollowedArtist}
    */
