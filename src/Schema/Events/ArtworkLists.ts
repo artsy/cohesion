@@ -97,7 +97,7 @@ export interface EditedArtworkList {
 }
 
 /**
- * When a user clicks to view an artwork list
+ * When a user views an artwork list
  *
  * This schema describes events sent to Segment from [[viewedArtworkList]]
  *
@@ -117,7 +117,7 @@ export interface ViewedArtworkList {
 }
 
 /**
- * When a user clicks to view a shared artwork list
+ * When a user views a shared artwork list
  *
  * This schema describes events sent to Segment from [[viewedSharedArtworkList]]
  *
