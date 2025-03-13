@@ -1,3 +1,15 @@
+# v4.241.0 (Thu Mar 13 2025)
+
+#### 🚀  Enhancement
+
+- feat: share lists tracking events [#567](https://github.com/artsy/cohesion/pull/567) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.240.0 (Wed Mar 12 2025)
 
 #### 🚀  Enhancement
