@@ -1,3 +1,15 @@
+# v4.242.0 (Fri Mar 14 2025)
+
+#### 🚀  Enhancement
+
+- chore: add favorites as tab type [#568](https://github.com/artsy/cohesion/pull/568) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.241.0 (Thu Mar 13 2025)
 
 #### 🚀  Enhancement
