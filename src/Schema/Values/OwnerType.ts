@@ -50,6 +50,7 @@ export enum OwnerType {
   fair = "fair",
   fairArtworks = "fairArtworks",
   fairs = "fairs",
+  favorites = "favorites",
   featuredFairs = "featuredFairs",
   follows = "follows",
   galleries = "galleries",
@@ -180,6 +181,7 @@ export type ScreenOwnerType =
   | OwnerType.explore
   | OwnerType.fair
   | OwnerType.fairArtworks
+  | OwnerType.favorites
   | OwnerType.featuredFairs
   | OwnerType.follows
   | OwnerType.galleriesForYou
