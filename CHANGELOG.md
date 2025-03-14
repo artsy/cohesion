@@ -1,3 +1,15 @@
+# v4.243.0 (Fri Mar 14 2025)
+
+#### 🚀  Enhancement
+
+- feat: add tracking data for long press and create alert [#566](https://github.com/artsy/cohesion/pull/566) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.242.1 (Fri Mar 14 2025)
 
 #### 🐛  Bug Fix
