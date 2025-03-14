@@ -1576,10 +1576,6 @@ export enum ActionType {
    */
   tooltipViewed = "tooltipViewed",
   /**
-   * Corresponds to {@link ProgressiveOnboardingTooltipViewed}
-   */
-  progressiveOnboardingTooltipViewed = "progressiveOnboardingTooltipViewed",
-  /**
    * Corresponds to {@link UnfollowedArtist}
    */
   unfollowedArtist = "unfollowedArtist",
