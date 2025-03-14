@@ -172,6 +172,7 @@ import {
   SendOffersModalViewed,
   ShippingEstimateViewed,
   TooltipViewed,
+  ProgressiveOnboardingTooltipViewed,
   ValidationAddressViewed,
 } from "./ImpressionTracking"
 import {
@@ -497,6 +498,7 @@ export type Event =
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
+  | ProgressiveOnboardingTooltipViewed
   | UploadPhotosCompleted
   | UploadSizeLimitExceeded
   | ValidationAddressViewed
