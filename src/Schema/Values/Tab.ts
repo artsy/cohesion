@@ -10,4 +10,4 @@ export type Tab =
    *| "cityGuide"
    *| "favorites"
    */
-  "home" | "inbox" | "profile" | "search" | "sell"
+  "favorites" | "home" | "inbox" | "profile" | "search"

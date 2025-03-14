@@ -6,7 +6,7 @@ describe(tappedTabBar, () => {
     const event = tappedTabBar({
       badge: false,
       contextScreenOwnerType: OwnerType.home,
-      tab: "sell",
+      tab: "profile",
     })
 
     expect(event).toEqual({
@@ -14,7 +14,7 @@ describe(tappedTabBar, () => {
       badge: false,
       context_module: "tabBar",
       context_screen_owner_type: "home",
-      tab: "sell",
+      tab: "profile",
     })
   })
 })
