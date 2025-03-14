@@ -1,3 +1,16 @@
+# v4.242.1 (Fri Mar 14 2025)
+
+#### 🐛  Bug Fix
+
+- chore: add favorites as owner type [#569](https://github.com/artsy/cohesion/pull/569) ([@artsyit](https://github.com/artsyit) [@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 2
+
+- Artsy ([@artsyit](https://github.com/artsyit))
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.242.0 (Fri Mar 14 2025)
 
 #### 🚀  Enhancement
