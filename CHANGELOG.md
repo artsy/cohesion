@@ -1,3 +1,16 @@
+# v4.244.0 (Sun Mar 16 2025)
+
+#### 🚀  Enhancement
+
+- feat(imports): Add CmsBatchImport events [#562](https://github.com/artsy/cohesion/pull/562) ([@damassi](https://github.com/damassi) [@leodmz](https://github.com/leodmz))
+
+#### Authors: 2
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+- Leo Demazeau ([@leodmz](https://github.com/leodmz))
+
+---
+
 # v4.243.0 (Fri Mar 14 2025)
 
 #### 🚀  Enhancement
