@@ -1379,3 +1379,27 @@ export interface TappedNavigationPillsGroup extends TappedEntityGroup {
   href: string
   title: string
 }
+
+/**
+ * A user an item within a menu item group
+ *
+ * This schema describes events sent to Segment from [[tappedMenuItemGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedMenuItemGroup",
+ *    context_module: "accountSettings",
+ *    context_screen_owner_type: "artist",
+ *    position: "6",
+ *    subject: "Dark Mode",
+ *  }
+ * ```
+ */
+export interface TappedMenuItemGroup{
+  action: ActionType.tappedMenuItemGroup
+  context_module?: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  position: number,
+  subject: string,
+}
