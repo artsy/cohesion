@@ -1,3 +1,16 @@
+# v4.245.0 (Wed Mar 19 2025)
+
+#### 🚀  Enhancement
+
+- feat: add interface for TappedMenuItemGroup event [#571](https://github.com/artsy/cohesion/pull/571) ([@dblandin](https://github.com/dblandin))
+- feat: add new OwnerType values to track existing account/settings screens [#570](https://github.com/artsy/cohesion/pull/570) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.244.0 (Sun Mar 16 2025)
 
 #### 🚀  Enhancement
