@@ -4,6 +4,20 @@
  * @packageDocumentation
  */
 export enum OwnerType {
+  about = "about",
+  account = "account",
+  accountDarkMode = "accountDarkMode",
+  accountDeleteMyAccount = "accountDeleteMyAccount",
+  accountEmail = "accountEmail",
+  accountNotifications = "accountNotifications",
+  accountOrders = "accountOrders",
+  accountPassword = "accountPassword",
+  accountPayment = "accountPayment",
+  accountAddPayment = "accountAddPayment",
+  accountPersonalDataRequest = "accountPersonalDataRequest",
+  accountPhoneNumber = "accountPhoneNumber",
+  accountPriceRange = "accountPriceRange",
+  accountSettings = "accountSettings",
   activities = "activities",
   activity = "activity",
   album = "album",
@@ -142,6 +156,20 @@ export enum OwnerType {
  * Owner types available in iOS/Android
  */
 export type ScreenOwnerType =
+  | OwnerType.about
+  | OwnerType.account
+  | OwnerType.accountDarkMode
+  | OwnerType.accountDeleteMyAccount
+  | OwnerType.accountEmail
+  | OwnerType.accountNotifications
+  | OwnerType.accountOrders
+  | OwnerType.accountPassword
+  | OwnerType.accountPayment
+  | OwnerType.accountAddPayment
+  | OwnerType.accountPersonalDataRequest
+  | OwnerType.accountPhoneNumber
+  | OwnerType.accountPriceRange
+  | OwnerType.accountSettings
   | OwnerType.activities
   | OwnerType.activity
   | OwnerType.album
