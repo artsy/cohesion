@@ -244,6 +244,7 @@ import {
   TappedLearnMore,
   TappedLink,
   TappedMainArtworkGrid,
+  TappedMenuItemGroup,
   TappedNavigationPillsGroup,
   TappedNavigationTab,
   TappedPartnerCard,
@@ -469,6 +470,7 @@ export type Event =
   | TappedLink
   | TappedMainArtworkGrid
   | TappedMakeOffer
+  | TappedMenuItemGroup
   | TappedMyCollectionAddArtworkArtist
   | TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
@@ -1431,6 +1433,10 @@ export enum ActionType {
    * Corresponds to {@link TappedMenuItem}
    */
   tappeMenuItem = "tappeMenuItem",
+  /**
+   * Corresponds to {@link TappedMenuItemGroup}
+   */
+  tappedMenuItemGroup = "tappedMenuItemGroup",
   /**
    * Corresponds to {@link TappedMyCollectionAddArtworkArtist}
    */

@@ -8,6 +8,8 @@ export enum ContextModule {
   aboutTheWork = "aboutTheWork",
   aboutThisAuction = "aboutThisAuction",
   account = "account",
+  accountSettings = "accountSettings",
+  accountTransactions = "accountTransactions",
   activity = "activity",
   activityRail = "activityRail",
   actNow = "actNow",
@@ -241,6 +243,8 @@ export enum ContextModule {
  */
 export type AuthContextModule =
   | ContextModule.aboutTheWork
+  | ContextModule.accountSettings
+  | ContextModule.accountTransactions
   | ContextModule.activity
   | ContextModule.articleTab
   | ContextModule.artistHeader
