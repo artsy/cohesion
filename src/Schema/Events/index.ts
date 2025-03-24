@@ -165,6 +165,7 @@ import {
   CreateAlertReminderMessageViewed,
   EditProfileModalViewed,
   ErrorMessageViewed,
+  ExpressCheckoutViewed,
   ItemViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
@@ -398,6 +399,7 @@ export type Event =
   | EnterLiveAuction
   | ErrorMessageViewed
   | ExperimentViewed
+  | ExpressCheckoutViewed
   | FocusedOnConversationMessageInput
   | FocusedOnPriceDatabaseSearchInput
   | FocusedOnSearchInput
@@ -1081,6 +1083,10 @@ export enum ActionType {
    * Corresponds to {@link ExperimentViewed}
    */
   experimentViewed = "experiment_viewed", // intentional snake case to match tracked event
+  /**
+   * Corresponds to {@link ExpressCheckoutViewed}
+   */
+  expressCheckoutViewed = "expressCheckoutViewed",
   /**
    * Corresponds to {@link ItemViewed}
    */

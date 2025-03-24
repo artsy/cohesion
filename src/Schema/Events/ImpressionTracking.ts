@@ -362,3 +362,29 @@ export interface ShippingEstimateViewed {
   maximum_estimate?: number | null
   estimate_currency: string
 }
+
+/**
+ * A user views express checkout
+ *
+ * This schema describes events sent to Segment from [[ExpressCheckoutViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "expressCheckoutViewed",
+ *    context_page_owner_type: "ordersShipping",
+ *    context_page_owner_slug: "radna-segal-pearl",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    payment_method: "Apple Pay" | "Google Pay"
+ *  }
+ * ```
+ */
+export interface ExpressCheckoutViewed {
+  action: ActionType.expressCheckoutViewed
+  context_page_owner_type: OwnerType
+  context_page_owner_slug: string
+  context_page_owner_id: string
+  flow: string
+  payment_method: string
+}
