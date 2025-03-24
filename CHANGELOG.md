@@ -1,3 +1,15 @@
+# v4.246.0 (Mon Mar 24 2025)
+
+#### 🚀  Enhancement
+
+- fix(batch-import): Use action instead of event [#572](https://github.com/artsy/cohesion/pull/572) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.245.0 (Wed Mar 19 2025)
 
 #### 🚀  Enhancement
