@@ -1,3 +1,15 @@
+# v4.247.0 (Mon Mar 24 2025)
+
+#### 🚀  Enhancement
+
+- feat: add express checkout viewed event [#573](https://github.com/artsy/cohesion/pull/573) ([@rquartararo](https://github.com/rquartararo))
+
+#### Authors: 1
+
+- Rachel Quartararo ([@rquartararo](https://github.com/rquartararo))
+
+---
+
 # v4.246.0 (Mon Mar 24 2025)
 
 #### 🚀  Enhancement
