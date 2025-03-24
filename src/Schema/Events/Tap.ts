@@ -1396,10 +1396,10 @@ export interface TappedNavigationPillsGroup extends TappedEntityGroup {
  *  }
  * ```
  */
-export interface TappedMenuItemGroup{
+export interface TappedMenuItemGroup {
   action: ActionType.tappedMenuItemGroup
   context_module?: ContextModule
   context_screen_owner_type: ScreenOwnerType
-  position: number,
-  subject: string,
+  position: number
+  subject: string
 }

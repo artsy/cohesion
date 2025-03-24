@@ -42,7 +42,7 @@ export enum ContextModule {
   artworkDetails = "artworkDetails",
   artworkForm = "artworkForm",
   artworkGrid = "artworkGrid",
-  artworkGridEmptyState = 'artworkGridEmptyState',
+  artworkGridEmptyState = "artworkGridEmptyState",
   artworkImage = "artworkImage",
   artworkMetadata = "artworkMetadata",
   artworkRecentlySoldGrid = "artworkRecentlySoldGrid",
