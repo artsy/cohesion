@@ -19,6 +19,11 @@ export enum CmsActionType {
   artistNeedsMatching = "artistNeedsMatching",
 
   /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  csvImportError = "csvImportError",
+
+  /**
    * Corresponds to {@link BatchImportFlow}
    */
   shownMissingInformation = "shownMissingInformation",

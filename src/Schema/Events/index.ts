@@ -166,13 +166,13 @@ import {
   EditProfileModalViewed,
   ErrorMessageViewed,
   ItemViewed,
+  ProgressiveOnboardingTooltipViewed,
   RailViewed,
   SendOffersBannerViewed,
   SendOffersErrorMessage,
   SendOffersModalViewed,
   ShippingEstimateViewed,
   TooltipViewed,
-  ProgressiveOnboardingTooltipViewed,
   ValidationAddressViewed,
 } from "./ImpressionTracking"
 import {
