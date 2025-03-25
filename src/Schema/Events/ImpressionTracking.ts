@@ -376,7 +376,7 @@ export interface ShippingEstimateViewed {
  *    context_page_owner_slug: "radna-segal-pearl",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
- *    payment_method: "Apple Pay" | "Google Pay"
+ *    payment_methods: ["Apple Pay", "Google Pay"]
  *  }
  * ```
  */
@@ -386,5 +386,5 @@ export interface ExpressCheckoutViewed {
   context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
-  payment_method: string
+  payment_methods: string[]
 }
