@@ -1,3 +1,15 @@
+# v4.248.0 (Tue Mar 25 2025)
+
+#### 🚀  Enhancement
+
+- chore(EMI-2366): update express checkout viewed to receive multiple payment methods [#574](https://github.com/artsy/cohesion/pull/574) ([@rquartararo](https://github.com/rquartararo))
+
+#### Authors: 1
+
+- Rachel Quartararo ([@rquartararo](https://github.com/rquartararo))
+
+---
+
 # v4.247.0 (Mon Mar 24 2025)
 
 #### 🚀  Enhancement
