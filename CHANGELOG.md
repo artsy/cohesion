@@ -1,3 +1,15 @@
+# v4.249.0 (Thu Mar 27 2025)
+
+#### 🚀  Enhancement
+
+- chore: Rename wallet type field and correct example values [#575](https://github.com/artsy/cohesion/pull/575) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.248.0 (Tue Mar 25 2025)
 
 #### 🚀  Enhancement
