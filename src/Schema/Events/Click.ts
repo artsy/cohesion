@@ -2426,7 +2426,7 @@ export interface ClickedHeroUnitGroup {
  *    context_page_owner_slug: "radna-segal-pearl",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
- *    payment_method: "Apple Pay" | "Google Pay"
+ *    credit_card_wallet_type: "applePay" | "googlePay"
  *  }
  * ```
  */
@@ -2436,7 +2436,7 @@ export interface ClickedExpressCheckout {
   context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
-  payment_method: string
+  credit_card_wallet_type: string
 }
 
 /**
@@ -2452,7 +2452,7 @@ export interface ClickedExpressCheckout {
  *    context_page_owner_slug: "radna-segal-pearl",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
- *    payment_method: "Apple Pay" | "Google Pay"
+ *    credit_card_wallet_type: "applePay" | "googlePay"
  *  }
  * ```
  */
@@ -2462,5 +2462,5 @@ export interface ClickedCancelExpressCheckout {
   context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
-  payment_method: string
+  credit_card_wallet_type: string
 }
