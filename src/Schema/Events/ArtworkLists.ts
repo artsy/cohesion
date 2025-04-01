@@ -135,3 +135,4 @@ export interface ViewedSharedArtworkList {
   context_owner_type: OwnerType.saves
   owner_id: string
 }
+
