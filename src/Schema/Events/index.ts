@@ -12,6 +12,9 @@ import {
   EditedArtworkList,
   ViewedArtworkList,
   ViewedSharedArtworkList,
+  TappedOfferSettings,
+  TappedNewArtworkList,
+  TappedArtworkList
 } from "./ArtworkLists"
 import {
   AuctionPageView,
@@ -144,6 +147,7 @@ import {
   CommercialFilterSelectedAll,
   PriceDatabaseFilterParamsChanged,
   SelectedRecentPriceRange,
+  SelectedFromDrawer,
 } from "./FilterAndSort"
 import {
   AddedToAlbum,
@@ -425,6 +429,7 @@ export type Event =
   | SelectedItemFromAddressAutoCompletion
   | SelectedItemFromPriceDatabaseSearch
   | SelectedItemFromSearch
+  | SelectedFromDrawer
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SendOffersBannerViewed
@@ -446,6 +451,7 @@ export type Event =
   | TappedArtistGroup
   | TappedArtistSeriesGroup
   | TappedArtworkGroup
+  | TappedArtworkList
   | TappedAuctionGroup
   | TappedAuctionResultGroup
   | TappedBid
@@ -480,7 +486,9 @@ export type Event =
   | TappedMyCollectionInsightsMedianAuctionRailItem
   | TappedNavigationPillsGroup
   | TappedNavigationTab
+  | TappedNewArtworkList
   | TappedNotificationsBell
+  | TappedOfferSettings
   | TappedPartnerCard
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
@@ -980,6 +988,11 @@ export enum ActionType {
    */
   commercialFilterSelectedAll = "commercialFilterSelectedAll",
   /**
+   * Corresponds to {@link SelectedFromDrawer}
+   */
+  selectedFromDrawer = "selectedFromDrawer",
+
+  /**
    * Corresponds to {@link clickedDownloadAppFooter}
    */
   clickedDownloadAppFooter = "clickedDownloadAppFooter",
@@ -1319,6 +1332,10 @@ export enum ActionType {
    * Corresponds to {@link TappedArtworkGroup}
    */
   tappedArtworkGroup = "tappedArtworkGroup",
+    /**
+   * Corresponds to {@link TappedArtworkList}
+   */
+    tappedArtworkList = "tappedArtworkList",
   /**
    * Corresponds to {@link TappedAuctionGroup}
    */
@@ -1476,6 +1493,10 @@ export enum ActionType {
    */
   tappedNotificationsBell = "tappedNotificationsBell",
   /**
+   * Corresponds to {@link TappedOfferSettings}
+   */
+    tappedOfferSettings = "tappedOfferSettings",
+  /**
    * Corresponds to {@link TappedPartnerCard}
    */
   tappedPartnerCard = "tappedPartnerCard",
@@ -1571,6 +1592,10 @@ export enum ActionType {
    * Corresponds to {@link TappedHighlightAchievement}
    */
   tappedHighlightAchievement = "tappedHighlightAchievement",
+  /**
+   * Corresponds to {@link TappedNewArtworkList}
+   */
+  tappedNewArtworkList = "tappedNewArtworkList",
   /**
    * Corresponds to {@link TappedNewsSection}
    */
