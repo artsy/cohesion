@@ -12,10 +12,8 @@ import {
   EditedArtworkList,
   ViewedArtworkList,
   ViewedSharedArtworkList,
-  TappedOfferSettings,
-  TappedNewArtworkList,
-  TappedArtworkList
 } from "./ArtworkLists"
+import { TappedOfferSettings, TappedNewArtworkList, TappedArtworkList, SelectedFromDrawer } from "./Favorites"
 import {
   AuctionPageView,
   BidPageView,
@@ -147,7 +145,6 @@ import {
   CommercialFilterSelectedAll,
   PriceDatabaseFilterParamsChanged,
   SelectedRecentPriceRange,
-  SelectedFromDrawer,
 } from "./FilterAndSort"
 import {
   AddedToAlbum,

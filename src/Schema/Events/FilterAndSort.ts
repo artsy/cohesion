@@ -60,26 +60,6 @@ export interface CommercialFilterSelectedAll {
 }
 
 /**
- * A user selects a follow category
- *
- * This schema describes events sent to Segment from [[selectedFromDrawer]]
- *
- *  @example
- *  ```
- *  {
- *    action: "selectedFromDrawer",
- *    context_screen: "favoritesFollows",
- *    query: "artists",
- *  }
- * ```
- */
-export interface SelectedFromDrawer {
-  action: ActionType.selectedFromDrawer
-  context_screen: OwnerType.favoritesFollows
-  subject: "artists" | "galleries" | "categories" | "shows"
-}
-
-/**
  * A user applies filters to a filterable/sortable auction results module
  *
  * This schema describes events sent to Segment from [[auctionResultsFilterParamsChanged]]
