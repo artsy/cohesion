@@ -220,6 +220,9 @@ export type ScreenOwnerType =
   | OwnerType.fair
   | OwnerType.fairArtworks
   | OwnerType.favorites
+  | OwnerType.favoritesAlerts
+  | OwnerType.favoritesFollows
+  | OwnerType.favoritesSaves
   | OwnerType.featuredFairs
   | OwnerType.follows
   | OwnerType.gallery

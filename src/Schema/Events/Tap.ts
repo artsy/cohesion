@@ -502,6 +502,7 @@ export interface TappedInfoBubble {
     | "alertsHeader"
     | "followsHeader"
     | "signalYourInterestToGalleries"
+    | "favoritesHeader"
 }
 
 /**
