@@ -374,6 +374,8 @@ export interface TappedEntityGroup {
     | ActionType.tappedShowGroup
     | ActionType.tappedTaskGroup
     | ActionType.tappedViewingRoomGroup
+    | ActionType.tappedFollowsGroup
+    | ActionType.tappedAlertsGroup
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id?: string

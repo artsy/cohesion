@@ -13,7 +13,6 @@ import {
   ViewedArtworkList,
   ViewedSharedArtworkList,
 } from "./ArtworkLists"
-import { TappedOfferSettings, TappedNewArtworkList, TappedArtworkList, SelectedFromDrawer } from "./Favorites"
 import {
   AuctionPageView,
   BidPageView,
@@ -139,6 +138,14 @@ import {
 } from "./Conversations"
 import { SavedCookieConsentPreferences } from "./CookieConsent"
 import { ExperimentViewed } from "./ExperimentViewed"
+import {
+  SelectedFromDrawer,
+  TappedAlertsGroup,
+  TappedArtworkList,
+  TappedFollowsGroup,
+  TappedNewArtworkList,
+  TappedOfferSettings,
+} from "./Favorites"
 import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
@@ -443,6 +450,7 @@ export type Event =
   | SuccessfullyLoggedIn
   | SwipedInfiniteDiscoveryArtwork
   | TappedActivityGroup
+  | TappedAlertsGroup
   | TappedArticleGroup
   | TappedArticleShare
   | TappedArtistGroup
@@ -468,6 +476,7 @@ export type Event =
   | TappedExploreMyCollection
   | TappedFairCard
   | TappedFairGroup
+  | TappedFollowsGroup
   | TappedGlobalSearchBar
   | TappedInboxConversation
   | TappedInfoBubble
@@ -1310,6 +1319,10 @@ export enum ActionType {
    */
   tappedActivityGroup = "tappedActivityGroup",
   /**
+   * Corresponds to {@link TappedAlertsGroup}
+   */
+  tappedAlertsGroup = "tappedAlertsGroup",
+  /**
    * Corresponds to {@link TappedArticleGroup}
    */
   tappedArticleGroup = "tappedArticleGroup",
@@ -1329,10 +1342,10 @@ export enum ActionType {
    * Corresponds to {@link TappedArtworkGroup}
    */
   tappedArtworkGroup = "tappedArtworkGroup",
-    /**
+  /**
    * Corresponds to {@link TappedArtworkList}
    */
-    tappedArtworkList = "tappedArtworkList",
+  tappedArtworkList = "tappedArtworkList",
   /**
    * Corresponds to {@link TappedAuctionGroup}
    */
@@ -1422,6 +1435,10 @@ export enum ActionType {
    */
   tappedFairGroup = "tappedFairGroup",
   /**
+   * Corresponds to {@link TappedFollowsGroup}
+   */
+  tappedFollowsGroup = "tappedFollowsGroup",
+  /**
    * Corresponds to {@link TappedHeroUnitGroup}
    */
   tappedHeroUnitGroup = "tappedHeroUnitGroup",
@@ -1492,7 +1509,7 @@ export enum ActionType {
   /**
    * Corresponds to {@link TappedOfferSettings}
    */
-    tappedOfferSettings = "tappedOfferSettings",
+  tappedOfferSettings = "tappedOfferSettings",
   /**
    * Corresponds to {@link TappedPartnerCard}
    */

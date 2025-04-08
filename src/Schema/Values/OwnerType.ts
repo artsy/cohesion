@@ -25,6 +25,7 @@ export enum OwnerType {
   alertDetails = "alertDetails",
   alertFilters = "alertFilters",
   alerts = "alerts",
+  alert = "alert",
   alertsInfoModal = "alertsInfoModal",
   allArtistSeries = "allArtistSeries",
   article = "article",
@@ -43,6 +44,7 @@ export enum OwnerType {
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctionResultsRail = "auctionResultsRail",
   auctions = "auctions",
+  category = "category",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
@@ -66,13 +68,14 @@ export enum OwnerType {
   fairArtworks = "fairArtworks",
   fairs = "fairs",
   favorites = "favorites",
-  favoritesAlerts = 'favoritesAlerts',
-  favoritesFollows = 'favoritesFollows',
+  favoritesAlerts = "favoritesAlerts",
+  favoritesFollows = "favoritesFollows",
   featuredFairs = "featuredFairs",
-  favoritesSaves = 'favoritesSaves',
+  favoritesSaves = "favoritesSaves",
   follows = "follows",
   galleries = "galleries",
   galleriesForYou = "galleriesForYou",
+  gallery = "gallery",
   gene = "gene",
   home = "home",
   inbox = "inbox",
@@ -118,6 +121,7 @@ export enum OwnerType {
   saleInformation = "saleInformation",
   savedSearch = "savedSearch",
   savedSearches = "savedSearches",
+  savedSearchArtworkMatches = "savedSearchArtworkMatches",
   saves = "saves",
   savesAndFollows = "savesAndFollows",
   savesInfoModal = "savesInfoModal",
@@ -181,6 +185,7 @@ export type ScreenOwnerType =
   | OwnerType.alertDetails
   | OwnerType.alertFilters
   | OwnerType.alerts
+  | OwnerType.alert
   | OwnerType.alertsInfoModal
   | OwnerType.allArtistSeries
   | OwnerType.article
@@ -195,6 +200,7 @@ export type ScreenOwnerType =
   | OwnerType.auctionResult
   | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
+  | OwnerType.category
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
@@ -216,6 +222,7 @@ export type ScreenOwnerType =
   | OwnerType.favorites
   | OwnerType.featuredFairs
   | OwnerType.follows
+  | OwnerType.gallery
   | OwnerType.galleriesForYou
   | OwnerType.gene
   | OwnerType.home
@@ -250,6 +257,7 @@ export type ScreenOwnerType =
   | OwnerType.saleInformation
   | OwnerType.savedSearch
   | OwnerType.savedSearches
+  | OwnerType.savedSearchArtworkMatches
   | OwnerType.saves
   | OwnerType.savesAndFollows
   | OwnerType.savesInfoModal

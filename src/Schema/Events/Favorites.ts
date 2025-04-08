@@ -1,5 +1,6 @@
 import { OwnerType } from "../Values/OwnerType"
 import { ActionType } from "."
+import { TappedEntityGroup } from "./Tap"
 
 /**
  * When a user taps Offer Settings button
@@ -18,7 +19,6 @@ export interface TappedOfferSettings {
   action: ActionType.tappedOfferSettings
   context_screen: OwnerType.favoritesSaves
 }
-
 
 /**
  * When a user taps Create New list button
@@ -58,7 +58,6 @@ export interface TappedArtworkList {
   destination_screen_owner_id: string
 }
 
-
 /**
  * A user selects a follow category
  *
@@ -79,7 +78,53 @@ export interface SelectedFromDrawer {
   subject: "artists" | "galleries" | "categories" | "shows"
 }
 
+/**
+ * A user taps a grouping of Follows group
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedFollowsGroup",
+ *    context_screen: "favoritesFollows"
+ *    destination_screen_owner_type: "artist"
+ *    destination_screen_owner_slug: "some-slug"
+ *    destination_screen_owner_id: "some-id"
+ *  }
+ * ```
+ */
+export interface TappedFollowsGroup extends TappedEntityGroup {
+  action: ActionType.tappedFollowsGroup
+  context_screen: OwnerType.favoritesFollows
+  destination_screen_owner_type:
+    | OwnerType.artist
+    | OwnerType.gallery
+    | OwnerType.category
+    | OwnerType.show
+  destination_screen_owner_slug: string
+  destination_screen_owner_id: string
+}
 
-// tappedFollowsGroup
-
-// tappedAlertsGroup
+/**
+ * A user taps a grouping of Alerts
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAlertsGroup",
+ *    context_screen: "favoritesFollows"
+ *    destination_screen_owner_type: "artist"
+ *    destination_screen_owner_slug: "some-slug"
+ *    destination_screen_owner_id: "some-id"
+ *  }
+ * ```
+ */
+export interface TappedAlertsGroup extends TappedEntityGroup {
+  action: ActionType.tappedAlertsGroup
+  context_screen: OwnerType.favoritesAlerts
+  destination_screen_owner_type: OwnerType.alert
+  destination_screen_owner_id: string
+}
