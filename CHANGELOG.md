@@ -1,3 +1,15 @@
+# v4.250.0 (Tue Apr 08 2025)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-1646): add tracking events favorites [#576](https://github.com/artsy/cohesion/pull/576) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.249.0 (Thu Mar 27 2025)
 
 #### 🚀  Enhancement
