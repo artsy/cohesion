@@ -72,10 +72,15 @@ export interface TappedArtworkList {
  *  }
  * ```
  */
+export type SelectedFromDrawerSubject =
+  | "artists"
+  | "galleries"
+  | "categories"
+  | "shows"
 export interface SelectedFromDrawer {
   action: ActionType.selectedFromDrawer
   context_screen: OwnerType.favoritesFollows
-  subject: "artists" | "galleries" | "categories" | "shows"
+  subject: SelectedFromDrawerSubject
 }
 
 /**
@@ -109,7 +114,7 @@ export interface TappedFollowsGroup extends TappedEntityGroup {
 /**
  * A user taps a grouping of Alerts
  *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ * This schema describes events sent to Segment from [[TappedAlertsGroup]]
  *
  *  @example
  *  ```
@@ -122,7 +127,7 @@ export interface TappedFollowsGroup extends TappedEntityGroup {
  *  }
  * ```
  */
-export interface TappedAlertsGroup extends TappedEntityGroup {
+export interface TappedAlertsGroup {
   action: ActionType.tappedAlertsGroup
   context_screen: OwnerType.favoritesAlerts
   destination_screen_owner_type: OwnerType.alert
