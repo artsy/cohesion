@@ -139,6 +139,14 @@ import {
 import { SavedCookieConsentPreferences } from "./CookieConsent"
 import { ExperimentViewed } from "./ExperimentViewed"
 import {
+  SelectedFromDrawer,
+  TappedAlertsGroup,
+  TappedArtworkList,
+  TappedFollowsGroup,
+  TappedNewArtworkList,
+  TappedOfferSettings,
+} from "./Favorites"
+import {
   AuctionResultsFilterParamsChanged,
   CommercialFilterParamsChanged,
   CommercialFilterSelectedAll,
@@ -425,6 +433,7 @@ export type Event =
   | SelectedItemFromAddressAutoCompletion
   | SelectedItemFromPriceDatabaseSearch
   | SelectedItemFromSearch
+  | SelectedFromDrawer
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
   | SendOffersBannerViewed
@@ -441,11 +450,13 @@ export type Event =
   | SuccessfullyLoggedIn
   | SwipedInfiniteDiscoveryArtwork
   | TappedActivityGroup
+  | TappedAlertsGroup
   | TappedArticleGroup
   | TappedArticleShare
   | TappedArtistGroup
   | TappedArtistSeriesGroup
   | TappedArtworkGroup
+  | TappedArtworkList
   | TappedAuctionGroup
   | TappedAuctionResultGroup
   | TappedBid
@@ -465,6 +476,7 @@ export type Event =
   | TappedExploreMyCollection
   | TappedFairCard
   | TappedFairGroup
+  | TappedFollowsGroup
   | TappedGlobalSearchBar
   | TappedInboxConversation
   | TappedInfoBubble
@@ -480,7 +492,9 @@ export type Event =
   | TappedMyCollectionInsightsMedianAuctionRailItem
   | TappedNavigationPillsGroup
   | TappedNavigationTab
+  | TappedNewArtworkList
   | TappedNotificationsBell
+  | TappedOfferSettings
   | TappedPartnerCard
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
@@ -980,6 +994,11 @@ export enum ActionType {
    */
   commercialFilterSelectedAll = "commercialFilterSelectedAll",
   /**
+   * Corresponds to {@link SelectedFromDrawer}
+   */
+  selectedFromDrawer = "selectedFromDrawer",
+
+  /**
    * Corresponds to {@link clickedDownloadAppFooter}
    */
   clickedDownloadAppFooter = "clickedDownloadAppFooter",
@@ -1300,6 +1319,10 @@ export enum ActionType {
    */
   tappedActivityGroup = "tappedActivityGroup",
   /**
+   * Corresponds to {@link TappedAlertsGroup}
+   */
+  tappedAlertsGroup = "tappedAlertsGroup",
+  /**
    * Corresponds to {@link TappedArticleGroup}
    */
   tappedArticleGroup = "tappedArticleGroup",
@@ -1319,6 +1342,10 @@ export enum ActionType {
    * Corresponds to {@link TappedArtworkGroup}
    */
   tappedArtworkGroup = "tappedArtworkGroup",
+  /**
+   * Corresponds to {@link TappedArtworkList}
+   */
+  tappedArtworkList = "tappedArtworkList",
   /**
    * Corresponds to {@link TappedAuctionGroup}
    */
@@ -1408,6 +1435,10 @@ export enum ActionType {
    */
   tappedFairGroup = "tappedFairGroup",
   /**
+   * Corresponds to {@link TappedFollowsGroup}
+   */
+  tappedFollowsGroup = "tappedFollowsGroup",
+  /**
    * Corresponds to {@link TappedHeroUnitGroup}
    */
   tappedHeroUnitGroup = "tappedHeroUnitGroup",
@@ -1475,6 +1506,10 @@ export enum ActionType {
    * Corresponds to {@link TappedNotificationsBell}
    */
   tappedNotificationsBell = "tappedNotificationsBell",
+  /**
+   * Corresponds to {@link TappedOfferSettings}
+   */
+  tappedOfferSettings = "tappedOfferSettings",
   /**
    * Corresponds to {@link TappedPartnerCard}
    */
@@ -1571,6 +1606,10 @@ export enum ActionType {
    * Corresponds to {@link TappedHighlightAchievement}
    */
   tappedHighlightAchievement = "tappedHighlightAchievement",
+  /**
+   * Corresponds to {@link TappedNewArtworkList}
+   */
+  tappedNewArtworkList = "tappedNewArtworkList",
   /**
    * Corresponds to {@link TappedNewsSection}
    */
