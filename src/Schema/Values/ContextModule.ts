@@ -113,6 +113,8 @@ export enum ContextModule {
   filterScreen = "filterScreen",
   findTheArtYouWant = "findTheArtYouWant",
   follows = "follows",
+  followedArtistListItem = "followedArtistListItem",
+  followedGalleryListItem = "followedGalleryListItem",
   footer = "footer",
   frequentlyAskedQuestions = "frequentlyAskedQuestions",
   galleriesForYouBanner = "galleriesForYouBanner",
