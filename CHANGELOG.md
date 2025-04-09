@@ -1,3 +1,15 @@
+# v4.252.0 (Wed Apr 09 2025)
+
+#### 🚀  Enhancement
+
+- chore: adjust types for the favorites tab tracking [#578](https://github.com/artsy/cohesion/pull/578) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.251.0 (Tue Apr 08 2025)
 
 #### 🚀  Enhancement
