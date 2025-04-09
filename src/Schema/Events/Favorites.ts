@@ -107,8 +107,6 @@ export interface TappedFollowsGroup extends TappedEntityGroup {
     | OwnerType.gallery
     | OwnerType.category
     | OwnerType.show
-  destination_screen_owner_slug: string
-  destination_screen_owner_id: string
 }
 
 /**
