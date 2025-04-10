@@ -1,3 +1,15 @@
+# v4.254.0 (Thu Apr 10 2025)
+
+#### 🚀  Enhancement
+
+- feat(DIA-1283): add swipedUp event [#580](https://github.com/artsy/cohesion/pull/580) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.253.0 (Thu Apr 10 2025)
 
 #### 🚀  Enhancement
