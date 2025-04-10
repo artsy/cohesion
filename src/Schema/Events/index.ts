@@ -1543,6 +1543,10 @@ export enum ActionType {
    */
   tappedSellArtwork = "tappedSellArtwork",
   /**
+   * Corresponds to {@link TappedShare}
+   */
+  tappedShare = "tappedShare",
+  /**
    * Corresponds to {@link TappedShowGroup}
    */
   tappedShowGroup = "tappedShowGroup",
