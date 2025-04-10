@@ -1,3 +1,15 @@
+# v4.253.0 (Thu Apr 10 2025)
+
+#### 🚀  Enhancement
+
+- feat(DIA-1252): add tappedShare event [#579](https://github.com/artsy/cohesion/pull/579) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.252.0 (Wed Apr 09 2025)
 
 #### 🚀  Enhancement
