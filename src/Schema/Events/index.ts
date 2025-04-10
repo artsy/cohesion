@@ -223,7 +223,7 @@ import {
   SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
 import { ClickedOpenInNewTabButton, ClickedShareButton, Share } from "./Share"
-import { SwipedInfiniteDiscoveryArtwork } from "./Swipe"
+import { SwipedInfiniteDiscoveryArtwork, SwipedUp } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   TappedActivityGroup,
@@ -260,6 +260,7 @@ import {
   TappedPromoSpace,
   TappedSell,
   TappedSellArtwork,
+  TappedShare,
   TappedShowMore,
   TappedSkip,
   TappedTabBar,
@@ -449,6 +450,7 @@ export type Event =
   | SubmitAnotherArtwork
   | SuccessfullyLoggedIn
   | SwipedInfiniteDiscoveryArtwork
+  | SwipedUp
   | TappedActivityGroup
   | TappedAlertsGroup
   | TappedArticleGroup
@@ -501,6 +503,7 @@ export type Event =
   | TappedRequestPriceEstimate
   | TappedSell
   | TappedSellArtwork
+  | TappedShare
   | TappedShowMore
   | TappedSkip
   | TappedTabBar
@@ -1314,6 +1317,10 @@ export enum ActionType {
    * Corresponds to {@link SwipedInfiniteDiscoveryArtwork}
    */
   swipedInfiniteDiscoveryArtwork = "swipedInfiniteDiscoveryArtwork",
+  /**
+   * Corresponds to {@link SwipedUp}
+   */
+  swipedUp = "swipedUp",
   /**
    * Corresponds to {@link TappedActivityGroup}
    */
