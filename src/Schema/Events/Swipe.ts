@@ -30,3 +30,11 @@ export interface SwipedInfiniteDiscoveryArtwork {
   context_screen_owner_slug: string
   context_screen_owner_type: ScreenOwnerType
 }
+
+export interface SwipedUp {
+  action: ActionType.swipedUp
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
