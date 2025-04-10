@@ -624,6 +624,30 @@ export interface TappedRewind {
 }
 
 /**
+ * A user taps on the share button
+ *
+ * This schema describes events sent to Segment from [[tappedShare]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedShare",
+ *    context_module: "infiniteDiscovery",
+ *    context_screen_owner_id: "artwork-id",
+ *    context_screen_owner_slug: "artwork-slug",
+ *    context_screen_owner_type: "infiniteDiscoveryArtwork"
+ *  }
+ * ```
+ */
+export interface TappedShare {
+  action: ActionType.tappedShare
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
  * A user taps a button that navigates to the Sell With Artsy home screen (not the 'sell' icon in the tab bar)
  *
  * This schema describes events sent to Segment from [[tappedSell]]
