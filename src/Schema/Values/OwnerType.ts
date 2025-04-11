@@ -195,6 +195,7 @@ export type ScreenOwnerType =
   | OwnerType.artistAuctionResults
   | OwnerType.artistSeries
   | OwnerType.artwork
+  | OwnerType.artworkList
   | OwnerType.artworkPriceFilter
   | OwnerType.artworkRecommendations
   | OwnerType.auctionResult
