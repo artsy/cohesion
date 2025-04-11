@@ -120,8 +120,8 @@ export interface TappedFollowsGroup extends TappedEntityGroup {
  *    action: "tappedAlertsGroup",
  *    context_screen: "favoritesFollows"
  *    destination_screen_owner_type: "artist"
- *    destination_screen_owner_slug: "some-slug"
  *    destination_screen_owner_id: "some-id"
+ *    destination_screen_owner_slug: "some-slug"
  *  }
  * ```
  */
