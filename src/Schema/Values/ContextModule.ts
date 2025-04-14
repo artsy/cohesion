@@ -38,6 +38,7 @@ export enum ContextModule {
   artistSeriesTab = "artistSeriesTab",
   artistsTab = "artistsTab",
   artistsToFollowRail = "artistsToFollowRail",
+  artworkActions = "artworkActions",
   artworkClosedLotHeader = "artworkClosedLotHeader",
   artworkDetails = "artworkDetails",
   artworkForm = "artworkForm",
@@ -258,6 +259,7 @@ export type AuthContextModule =
   | ContextModule.artistSeriesTab
   | ContextModule.artistsTab
   | ContextModule.artistsToFollowRail
+  | ContextModule.artworkActions
   | ContextModule.artworkClosedLotHeader
   | ContextModule.artworkGrid
   | ContextModule.artworkImage
