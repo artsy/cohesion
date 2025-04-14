@@ -1,3 +1,17 @@
+# v4.255.0 (Mon Apr 14 2025)
+
+#### 🚀  Enhancement
+
+- feat: add artworkActions to ContextModule [#583](https://github.com/artsy/cohesion/pull/583) ([@iskounen](https://github.com/iskounen))
+- chore: add OwnerType.artworkList to ScreenOwnerType [#581](https://github.com/artsy/cohesion/pull/581) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 2
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.254.0 (Thu Apr 10 2025)
 
 #### 🚀  Enhancement
