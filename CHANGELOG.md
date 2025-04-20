@@ -1,3 +1,15 @@
+# v4.256.0 (Sun Apr 20 2025)
+
+#### 🚀  Enhancement
+
+- feat(artwork-filter): Add CmsArtworkFilter events [#584](https://github.com/artsy/cohesion/pull/584) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.255.0 (Mon Apr 14 2025)
 
 #### 🚀  Enhancement
