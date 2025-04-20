@@ -5,5 +5,8 @@
  * @packageDocumentation
  */
 export enum CmsContextModule {
+  artworkFilterFilterArtworks = "Artworks - filter artworks",
+  artworkFilterSearch = "Artworks - search",
+  artworkFilterQuickEdit = "Artworks - quick edit",
   batchImportFlow = "batchImportFlow",
 }
