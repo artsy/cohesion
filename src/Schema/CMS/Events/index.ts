@@ -1,3 +1,4 @@
+import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 
 /**
@@ -5,7 +6,7 @@ import { CmsBatchImportFlow } from "./BatchImportFlow"
  *
  * Each event describes one ActionType
  */
-export type CmsEvent = CmsBatchImportFlow
+export type CmsEvent = CmsBatchImportFlow | CmsArtworkFilter
 
 /**
  * List of all CMS actions
@@ -19,9 +20,19 @@ export enum CmsActionType {
   artistNeedsMatching = "artistNeedsMatching",
 
   /**
+   * Corresponds to {@link CmsArtworkFilter}
+   */
+  clickedOnDuplicateArtwork = "clickedonduplicateartwork",
+
+  /**
    * Corresponds to {@link CmsBatchImportFlow}
    */
   csvImportError = "csvImportError",
+
+  /**
+   * Corresponds to {@link CmsArtworkFilter}
+   */
+  searchedArtwork = "searched artwork",
 
   /**
    * Corresponds to {@link BatchImportFlow}
