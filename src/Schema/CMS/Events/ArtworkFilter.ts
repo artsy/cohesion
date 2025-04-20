@@ -57,7 +57,7 @@ export interface CmsArtworkFilterQuickEditClickFilter {
   action: "click"
   context_module: CmsContextModule.artworkFilterFilterArtworks
   label: string
-  title: string
+  value: string
 }
 
 /**
