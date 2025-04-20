@@ -1,3 +1,15 @@
+# v4.256.1 (Sun Apr 20 2025)
+
+#### 🐛  Bug Fix
+
+- fix(artwork-filter): fix prop [#585](https://github.com/artsy/cohesion/pull/585) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.256.0 (Sun Apr 20 2025)
 
 #### 🚀  Enhancement
