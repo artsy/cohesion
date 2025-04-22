@@ -118,6 +118,8 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
   ClickedViewWork,
+  SubmittedOffer,
+  SubmittedOrder,
 } from "./Click"
 import { EditedUserProfile } from "./CollectorProfile"
 import {
@@ -448,6 +450,8 @@ export type Event =
   | ShippingEstimateViewed
   | StartedOnboarding
   | SubmitAnotherArtwork
+  | SubmittedOffer
+  | SubmittedOrder
   | SuccessfullyLoggedIn
   | SwipedInfiniteDiscoveryArtwork
   | SwipedUp
@@ -1309,6 +1313,14 @@ export enum ActionType {
    * Corresponds to {@link SubmitAnotherArtwork}
    */
   submitAnotherArtwork = "submitAnotherArtwork",
+  /**
+   * Corresponds to {@link SubmittedOffer}
+   */
+  submittedOffer = "submittedOffer",
+  /**
+   * Corresponds to {@link SubmittedOrder}
+   */
+  submittedOrder = "submittedOrder",
   /**
    * Corresponds to {@link SuccessfullyLoggedIn}
    */

@@ -2464,3 +2464,51 @@ export interface ClickedCancelExpressCheckout {
   flow: string
   credit_card_wallet_type: string
 }
+
+/**
+ * A user submits an offer. Includes normal and express checkout flows.
+ *
+ * This schema describes events sent to Segment from [[SubmittedOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "submittedOffer",
+ *    context_page_owner_type: "ordersShipping" | "ordersReview",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    flow: "Make offer" | "Partner offer",
+ *    credit_card_wallet_type: "applePay" | "googlePay",
+ *  }
+ * ```
+ */
+export interface SubmittedOffer {
+  action: ActionType.submittedOffer
+  context_page_owner_type: OwnerType
+  order_id: string
+  flow: string
+  credit_card_wallet_type?: string
+}
+
+/**
+ * A user submits an order. Includes normal and express checkout flows.
+ *
+ * This schema describes events sent to Segment from [[SubmittedOrder]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "submittedOrder",
+ *    context_page_owner_type: "ordersShipping" | "ordersReview",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    flow: "Buy now" | "Partner offer",
+ *    credit_card_wallet_type: "applePay" | "googlePay",
+ *  }
+ * ```
+ */
+export interface SubmittedOrder {
+  action: ActionType.submittedOrder
+  context_page_owner_type: OwnerType
+  order_id: string
+  flow: string
+  credit_card_wallet_type?: string
+}
