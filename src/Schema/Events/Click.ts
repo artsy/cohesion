@@ -896,28 +896,6 @@ export interface ClickedOrderPage {
 }
 
 /**
- *  User clicks on submit order on the orders review page.
- *
- *  This schema describes events sent to Segment from [[clickedOnSubmitOrder]]
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedOnSubmitOrder",
- *    context_module: "OrdersReview",
- *    context_page_owner_type: "orders-review",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
- *  }
- * ```
- */
-export interface ClickedOnSubmitOrder {
-  action: ActionType.clickedOnSubmitOrder
-  context_module: ContextModule
-  context_page_owner_type: string
-  context_page_owner_id: string
-}
-
-/**
  * A user clicks a partner card
  *
  * This schema describes events sent to Segment from [[ClickedPartnerCard]]
