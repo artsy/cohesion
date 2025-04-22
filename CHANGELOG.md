@@ -1,3 +1,15 @@
+# v4.257.0 (Tue Apr 22 2025)
+
+#### 🚀  Enhancement
+
+- feat: Migrate SubmittedOffer and SubmittedOrder [#586](https://github.com/artsy/cohesion/pull/586) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.256.1 (Sun Apr 20 2025)
 
 #### 🐛  Bug Fix
