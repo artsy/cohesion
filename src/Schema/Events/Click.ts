@@ -2423,8 +2423,7 @@ export interface ClickedHeroUnitGroup {
  *  {
  *    action: "clickedExpressCheckout",
  *    context_page_owner_type: "ordersShipping",
- *    context_page_owner_slug: "radna-segal-pearl",
- *    context_page_owner_id: "6164889300d643000db86504",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    credit_card_wallet_type: "applePay" | "googlePay"
  *  }
@@ -2433,7 +2432,6 @@ export interface ClickedHeroUnitGroup {
 export interface ClickedExpressCheckout {
   action: ActionType.clickedExpressCheckout
   context_page_owner_type: OwnerType
-  context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
   credit_card_wallet_type: string
@@ -2449,8 +2447,7 @@ export interface ClickedExpressCheckout {
  *  {
  *    action: "clickedCancelExpressCheckout",
  *    context_page_owner_type: "ordersShipping",
- *    context_page_owner_slug: "radna-segal-pearl",
- *    context_page_owner_id: "6164889300d643000db86504",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    credit_card_wallet_type: "applePay" | "googlePay"
  *  }
@@ -2459,7 +2456,6 @@ export interface ClickedExpressCheckout {
 export interface ClickedCancelExpressCheckout {
   action: ActionType.clickedCancelExpressCheckout
   context_page_owner_type: OwnerType
-  context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
   credit_card_wallet_type: string
