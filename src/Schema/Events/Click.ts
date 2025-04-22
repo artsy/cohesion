@@ -896,28 +896,6 @@ export interface ClickedOrderPage {
 }
 
 /**
- *  User clicks on submit order on the orders review page.
- *
- *  This schema describes events sent to Segment from [[clickedOnSubmitOrder]]
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedOnSubmitOrder",
- *    context_module: "OrdersReview",
- *    context_page_owner_type: "orders-review",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
- *  }
- * ```
- */
-export interface ClickedOnSubmitOrder {
-  action: ActionType.clickedOnSubmitOrder
-  context_module: ContextModule
-  context_page_owner_type: string
-  context_page_owner_id: string
-}
-
-/**
  * A user clicks a partner card
  *
  * This schema describes events sent to Segment from [[ClickedPartnerCard]]
@@ -2423,8 +2401,7 @@ export interface ClickedHeroUnitGroup {
  *  {
  *    action: "clickedExpressCheckout",
  *    context_page_owner_type: "ordersShipping",
- *    context_page_owner_slug: "radna-segal-pearl",
- *    context_page_owner_id: "6164889300d643000db86504",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    credit_card_wallet_type: "applePay" | "googlePay"
  *  }
@@ -2433,7 +2410,6 @@ export interface ClickedHeroUnitGroup {
 export interface ClickedExpressCheckout {
   action: ActionType.clickedExpressCheckout
   context_page_owner_type: OwnerType
-  context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
   credit_card_wallet_type: string
@@ -2449,8 +2425,7 @@ export interface ClickedExpressCheckout {
  *  {
  *    action: "clickedCancelExpressCheckout",
  *    context_page_owner_type: "ordersShipping",
- *    context_page_owner_slug: "radna-segal-pearl",
- *    context_page_owner_id: "6164889300d643000db86504",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    credit_card_wallet_type: "applePay" | "googlePay"
  *  }
@@ -2459,8 +2434,55 @@ export interface ClickedExpressCheckout {
 export interface ClickedCancelExpressCheckout {
   action: ActionType.clickedCancelExpressCheckout
   context_page_owner_type: OwnerType
-  context_page_owner_slug: string
   context_page_owner_id: string
   flow: string
   credit_card_wallet_type: string
+}
+
+/**
+ * A user submits an offer. Includes normal and express checkout flows.
+ *
+ * This schema describes events sent to Segment from [[SubmittedOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "submittedOffer",
+ *    context_page_owner_type: "ordersShipping" | "ordersReview",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    flow: "Make offer" | "Partner offer",
+ *    credit_card_wallet_type: "applePay" | "googlePay",
+ *  }
+ * ```
+ */
+export interface SubmittedOffer {
+  action: ActionType.submittedOffer
+  context_page_owner_type: OwnerType
+  order_id: string
+  flow: string
+  credit_card_wallet_type?: string
+}
+
+/**
+ * A user submits an order. Includes normal and express checkout flows.
+ *
+ * This schema describes events sent to Segment from [[SubmittedOrder]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "submittedOrder",
+ *    context_page_owner_type: "ordersShipping" | "ordersReview",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    flow: "Buy now" | "Partner offer",
+ *    credit_card_wallet_type: "applePay" | "googlePay",
+ *  }
+ * ```
+ */
+export interface SubmittedOrder {
+  action: ActionType.submittedOrder
+  context_page_owner_type: OwnerType
+  order_id: string
+  flow: string
+  credit_card_wallet_type?: string
 }
