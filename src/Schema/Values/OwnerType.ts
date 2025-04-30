@@ -205,6 +205,7 @@ export type ScreenOwnerType =
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
+  | OwnerType.collect
   | OwnerType.collection
   | OwnerType.collectionsCategory
   | OwnerType.confirmYourBid
