@@ -1,3 +1,15 @@
+# v4.259.0 (Fri May 02 2025)
+
+#### 🚀  Enhancement
+
+- chore: add collect screen owner type [#588](https://github.com/artsy/cohesion/pull/588) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.258.0 (Mon Apr 28 2025)
 
 #### 🚀  Enhancement
