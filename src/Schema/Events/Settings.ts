@@ -11,7 +11,7 @@ import { ActionType } from "."
  *    action: "darkModeOptionUpdated",
  *    context_module: "accountSettings",
  *    context_screen_owner_type: "accountDarkMode",
- *    dark_mode_option: system"
+ *    dark_mode_option: "system"
  *  }
  * ```
  */
