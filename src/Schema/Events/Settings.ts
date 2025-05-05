@@ -1,9 +1,9 @@
 import { ActionType } from "."
 
 /**
- * When a user creates an artwork list
+ * When the dark mode option is updated
  *
- * This schema describes events sent to Segment from [[createdArtworkList]]
+ * This schema describes events sent to Segment when a user updates the dark mode option in their account settings.
  *
  *  @example
  *  ```
