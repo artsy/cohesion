@@ -223,6 +223,7 @@ import {
   SelectedItemFromSearch,
   SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
+import { DarkModeOptionUpdated } from "./Settings"
 import { ClickedOpenInNewTabButton, ClickedShareButton, Share } from "./Share"
 import { SwipedInfiniteDiscoveryArtwork, SwipedUp } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
@@ -275,6 +276,9 @@ import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
 import { ToggledAccordion } from "./UserExperienceInteractions"
 import { ViewedVideo } from "./Video"
+
+
+
 
 /**
  * Master list of valid schemas for analytics actions
@@ -395,6 +399,7 @@ export type Event =
   | CreateAlertReminderMessageViewed
   | CreatedAlbum
   | CreatedArtworkList
+  | DarkModeOptionUpdated
   | DeleteCollectedArtwork
   | DeletedArtworkList
   | DeletedSavedSearch
@@ -1055,6 +1060,10 @@ export enum ActionType {
    * Corresponds to {@link CreatedArtworkList}
    */
   createdArtworkList = "createdArtworkList",
+  /**
+   * Corresponds to {@link DarkModeOptionUpdated}
+   */
+  darkModeOptionUpdated = "darkModeOptionUpdated",
   /**
    * Corresponds to {@link DeleteCollectedArtwork}
    */
