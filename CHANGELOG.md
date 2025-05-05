@@ -1,3 +1,15 @@
+# v4.260.0 (Mon May 05 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add DarkModeOptionUpdated event [#589](https://github.com/artsy/cohesion/pull/589) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.259.0 (Fri May 02 2025)
 
 #### 🚀  Enhancement
