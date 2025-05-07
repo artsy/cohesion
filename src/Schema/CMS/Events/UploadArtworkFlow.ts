@@ -67,16 +67,16 @@ export interface UploadArtworkFlowClickViewMyArtworks {
  * {
  *   action: "created artwork",
  *   context_module: "Uploads",
- *   user_id: "some-user-id",
  *   artwork_ids: ['some-artwork-id'],
+ *   user_id: "some-user-id",
  * }
  * ```
  */
 export interface UploadArtworkFlowCreateArtworks {
   action: CmsActionType.createdArtwork
   context_module: CmsContextModule.uploads
-  label: "View my artworks"
   artwork_ids: string[]
+  user_id: string
 }
 
 export type CmsUploadArtworkFlow =
