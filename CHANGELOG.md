@@ -1,3 +1,15 @@
+# v4.263.0 (Wed May 07 2025)
+
+#### 🚀  Enhancement
+
+- fix(upload): missed user_id [#592](https://github.com/artsy/cohesion/pull/592) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.262.0 (Wed May 07 2025)
 
 #### 🚀  Enhancement
