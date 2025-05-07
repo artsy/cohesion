@@ -277,9 +277,6 @@ import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
 import { ToggledAccordion } from "./UserExperienceInteractions"
 import { ViewedVideo } from "./Video"
 
-
-
-
 /**
  * Master list of valid schemas for analytics actions
  *

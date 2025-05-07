@@ -4,7 +4,7 @@
  */
 
 import { CmsContextModule } from "../Values/CmsContextModule"
-import { CmsActionType } from "."
+import { CmsActionType } from "./index"
 
 /**
  * Click on the duplicate artwork button
@@ -158,6 +158,24 @@ export interface CmsArtworkFilterSearch {
   value: string
 }
 
+/**
+ * Remove a filter from the filter bar
+ *
+ * @example
+ * ```
+ * {
+ *   action: "click",
+ *   context_module: 'Artworks - filter artworks',
+ *   label: "remove filter",
+ * }
+ * ```
+ */
+export interface CmsArtworkFilterRemoveFilter {
+  action: "click"
+  context_module: CmsContextModule.artworkFilterFilterArtworks
+  label: "remove filter"
+}
+
 export type CmsArtworkFilter =
   | CmsArtworkFilterClickDuplicateArtwork
   | CmsArtworkFilterClickSort
@@ -166,4 +184,5 @@ export type CmsArtworkFilter =
   | CmsArtworkFilterQuickEditChangeAvailability
   | CmsArtworkFilterQuickEditPublish
   | CmsArtworkFilterQuickEditClickImport
+  | CmsArtworkFilterRemoveFilter
   | CmsArtworkFilterSearch

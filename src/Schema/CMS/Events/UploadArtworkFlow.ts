@@ -1,4 +1,5 @@
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsActionType } from "."
 
 /**
  * Click "Next" after selecting an existing artist
@@ -58,7 +59,28 @@ export interface UploadArtworkFlowClickViewMyArtworks {
   artwork_ids: string[]
 }
 
-export type UploadArtworkFlow =
+/**
+ * Event fired after user created artworks
+ *
+ * @example
+ * ```
+ * {
+ *   action: "created artwork",
+ *   context_module: "Uploads",
+ *   user_id: "some-user-id",
+ *   artwork_ids: ['some-artwork-id'],
+ * }
+ * ```
+ */
+export interface UploadArtworkFlowCreateArtworks {
+  action: CmsActionType.createdArtwork
+  context_module: CmsContextModule.uploads
+  label: "View my artworks"
+  artwork_ids: string[]
+}
+
+export type CmsUploadArtworkFlow =
   | UploadArtworkFlowClickSelectExistingArtist
   | UploadArtworkFlowClickFinishUploadingImages
   | UploadArtworkFlowClickViewMyArtworks
+  | UploadArtworkFlowCreateArtworks

@@ -1,12 +1,16 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
+import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
 /**
  * List of valid schemas for CMS analytics actions
  *
  * Each event describes one ActionType
  */
-export type CmsEvent = CmsBatchImportFlow | CmsArtworkFilter
+export type CmsEvent =
+  | CmsArtworkFilter
+  | CmsBatchImportFlow
+  | CmsUploadArtworkFlow
 
 /**
  * List of all CMS actions
@@ -23,6 +27,11 @@ export enum CmsActionType {
    * Corresponds to {@link CmsArtworkFilter}
    */
   clickedOnDuplicateArtwork = "clickedonduplicateartwork",
+
+  /**
+   * Corresponds to {@link CmsUploadArtworkFlow}
+   */
+  createdArtwork = "created artwork",
 
   /**
    * Corresponds to {@link CmsBatchImportFlow}
