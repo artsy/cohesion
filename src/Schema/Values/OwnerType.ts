@@ -9,15 +9,19 @@ export enum OwnerType {
   accountDarkMode = "accountDarkMode",
   accountDeleteMyAccount = "accountDeleteMyAccount",
   accountEmail = "accountEmail",
+  accountLoginAndSecurity = "accountLoginAndSecurity",
   accountNotifications = "accountNotifications",
   accountOrders = "accountOrders",
   accountPassword = "accountPassword",
   accountPayment = "accountPayment",
+  accountPreferences = "accountPreferences",
   accountAddPayment = "accountAddPayment",
   accountPersonalDataRequest = "accountPersonalDataRequest",
   accountPhoneNumber = "accountPhoneNumber",
   accountPriceRange = "accountPriceRange",
+  accountPrivacy = "accountPrivacy",
   accountSettings = "accountSettings",
+  accountTermsAndConditions = "accountTermsAndConditions",
   activities = "activities",
   activity = "activity",
   album = "album",
@@ -169,6 +173,7 @@ export type ScreenOwnerType =
   | OwnerType.accountDarkMode
   | OwnerType.accountDeleteMyAccount
   | OwnerType.accountEmail
+  | OwnerType.accountLoginAndSecurity
   | OwnerType.accountNotifications
   | OwnerType.accountOrders
   | OwnerType.accountPassword
@@ -176,8 +181,11 @@ export type ScreenOwnerType =
   | OwnerType.accountAddPayment
   | OwnerType.accountPersonalDataRequest
   | OwnerType.accountPhoneNumber
+  | OwnerType.accountPreferences
   | OwnerType.accountPriceRange
+  | OwnerType.accountPrivacy
   | OwnerType.accountSettings
+  | OwnerType.accountTermsAndConditions
   | OwnerType.activities
   | OwnerType.activity
   | OwnerType.album
