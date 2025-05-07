@@ -1,3 +1,15 @@
+# v4.261.0 (Wed May 07 2025)
+
+#### 🚀  Enhancement
+
+- chore: add values for reorganized account screens [#590](https://github.com/artsy/cohesion/pull/590) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.260.0 (Mon May 05 2025)
 
 #### 🚀  Enhancement
