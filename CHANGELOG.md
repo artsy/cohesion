@@ -1,3 +1,15 @@
+# v4.262.0 (Wed May 07 2025)
+
+#### 🚀  Enhancement
+
+- feat(artworks): Add a few new events [#591](https://github.com/artsy/cohesion/pull/591) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.261.0 (Wed May 07 2025)
 
 #### 🚀  Enhancement
