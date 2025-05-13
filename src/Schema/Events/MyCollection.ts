@@ -320,6 +320,19 @@ export interface TappedRequestPriceEstimate {
   demand_index?: number
 }
 
+/**
+ * A user taps on the "My Collection card on the Profile screen
+ * This schema describes events sent to Segment from [[tappedMyCollection]]
+ *
+ *  @example
+ *  *  ```
+ *  {
+ *    action: "tappedMyCollection",
+ *    context_screen: "profile",
+ *  }
+ * ```
+ */
+
 export interface TappedMyCollection {
   action: ActionType.tappedMyCollection
   context_screen: OwnerType.profile
