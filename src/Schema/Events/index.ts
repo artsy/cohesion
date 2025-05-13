@@ -120,7 +120,7 @@ import {
   SubmittedOffer,
   SubmittedOrder,
 } from "./Click"
-import { EditedUserProfile } from "./CollectorProfile"
+import { EditedUserProfile, TappedEditedProfile } from "./CollectorProfile"
 import {
   ArtworkDetailsCompleted,
   ConsignmentSubmitted,
@@ -479,6 +479,7 @@ export type Event =
   | TappedConsignmentInquiry
   | TappedContactGallery
   | TappedCreateAlert
+  | TappedEditedProfile
   | TappedExploreGroup
   | TappedExploreMyCollection
   | TappedFairCard
@@ -1439,6 +1440,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCreateAlertHeader}
    */
   tappedCreateAlertHeader = "tappedCreateAlertHeader",
+  /**
+   * Corresponds to {@link TappedEditedProfile}
+   */
+  tappedEditedProfile = "tappedEditedProfile",
   /**
    * Corresponds to {@link TappedExploreGroup}
    */

@@ -321,13 +321,14 @@ export interface TappedRequestPriceEstimate {
 }
 
 /**
- * A user taps on the "My Collection card on the Profile screen
+ * A user taps on the My Collection card on the Profile screen
  * This schema describes events sent to Segment from [[tappedMyCollection]]
  *
  *  @example
  *  *  ```
  *  {
  *    action: "tappedMyCollection",
+ *    context_module: "collectorProfileCard",
  *    context_screen: "profile",
  *  }
  * ```
@@ -335,6 +336,7 @@ export interface TappedRequestPriceEstimate {
 
 export interface TappedMyCollection {
   action: ActionType.tappedMyCollection
+  context_module: ContextModule.collectorProfileCard
   context_screen: OwnerType.profile
 }
 /**

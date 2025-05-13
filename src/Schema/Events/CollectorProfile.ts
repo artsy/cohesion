@@ -29,3 +29,23 @@ export interface EditedUserProfile {
   context_screen_owner_type: OwnerType
   platform: Platform
 }
+
+/**
+ * A user taps on the avatar on the Profile screen.
+ *
+ * This schema describes events sent to Segment from [[tappedEditedProfile]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedEditedProfile",
+ *    context_module: "collectorProfileCard",
+ *    context_screen: "profile",
+ *  }
+ * ```
+ */
+export interface TappedEditedProfile {
+  action: ActionType.tappedEditedProfile
+  context_module: ContextModule.collectorProfileCard
+  context_screen: OwnerType.profile
+}
