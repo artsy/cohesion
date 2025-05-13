@@ -1,3 +1,15 @@
+# v4.263.1 (Tue May 13 2025)
+
+#### 🐛  Bug Fix
+
+- feat: add missing events for new profile and myc - TappedMyCollection interface [#593](https://github.com/artsy/cohesion/pull/593) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.263.0 (Wed May 07 2025)
 
 #### 🚀  Enhancement
