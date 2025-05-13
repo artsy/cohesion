@@ -193,6 +193,7 @@ import {
   SentRequestPriceEstimate,
   TappedCollectedArtwork,
   TappedCollectedArtworkImages,
+  TappedMyCollection,
   TappedMyCollectionAddArtworkArtist,
   TappedRequestPriceEstimate,
 } from "./MyCollection"
@@ -491,6 +492,7 @@ export type Event =
   | TappedMainArtworkGrid
   | TappedMakeOffer
   | TappedMenuItemGroup
+  | TappedMyCollection
   | TappedMyCollectionAddArtworkArtist
   | TappedMyCollectionInsightsMedianAuctionPriceChartCareerHighlight
   | TappedMyCollectionInsightsMedianAuctionPriceChartCategory
@@ -1493,6 +1495,10 @@ export enum ActionType {
    * Corresponds to {@link TappedMenuItemGroup}
    */
   tappedMenuItemGroup = "tappedMenuItemGroup",
+  /**
+   * Corresponds to {@link TappedMyCollection}
+   */
+  tappedMyCollection = "tappedMyCollection",
   /**
    * Corresponds to {@link TappedMyCollectionAddArtworkArtist}
    */

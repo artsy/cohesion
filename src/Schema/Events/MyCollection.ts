@@ -320,6 +320,10 @@ export interface TappedRequestPriceEstimate {
   demand_index?: number
 }
 
+export interface TappedMyCollection {
+  action: ActionType.tappedMyCollection
+  context_screen: OwnerType.profile
+}
 /**
  * A request for a price estimate has been susessfully sent by a user
  *
