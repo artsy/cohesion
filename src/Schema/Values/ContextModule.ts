@@ -75,6 +75,7 @@ export enum ContextModule {
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",
   collectorProfile = "collectorProfile",
+  collectorProfileCard = "collectorProfileCard",
   consignmentInquiryForm = "consignmentInquiryForm",
   consignSubmissionFlow = "consignSubmissionFlow",
   contactInformation = "contactInformation",
