@@ -1,3 +1,15 @@
+# v4.264.0 (Tue May 13 2025)
+
+#### 🚀  Enhancement
+
+- feat: add missing events for new profile and myc [#594](https://github.com/artsy/cohesion/pull/594) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.263.1 (Tue May 13 2025)
 
 #### 🐛  Bug Fix
