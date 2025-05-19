@@ -10,4 +10,5 @@ export enum CmsContextModule {
   artworkFilterQuickEdit = "Artworks - quick edit",
   batchImportFlow = "batchImportFlow",
   uploads = "Uploads",
+  settings = "Settings",
 }
