@@ -1,6 +1,6 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
-import { CmsSettingsFlow } from "./Settings"
+import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
 /**
