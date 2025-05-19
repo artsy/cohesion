@@ -54,4 +54,9 @@ export enum CmsActionType {
    * Corresponds to {@link SettingsFlow}
    */
   addedNewLocation = "addedNewLocation",
+
+  /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  editedLocation = "editedLocation",
 }
