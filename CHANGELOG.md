@@ -1,3 +1,15 @@
+# v4.264.1 (Tue May 20 2025)
+
+#### 🐛  Bug Fix
+
+- feat(settingsV2): Adds new events for PartnerLocation edit and new [#595](https://github.com/artsy/cohesion/pull/595) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.264.0 (Tue May 13 2025)
 
 #### 🚀  Enhancement
