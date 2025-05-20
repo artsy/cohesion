@@ -1,5 +1,6 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
+import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
 /**
@@ -11,6 +12,7 @@ export type CmsEvent =
   | CmsArtworkFilter
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
+  | CmsSettingsFlow
 
 /**
  * List of all CMS actions
@@ -47,4 +49,14 @@ export enum CmsActionType {
    * Corresponds to {@link BatchImportFlow}
    */
   shownMissingInformation = "shownMissingInformation",
+
+  /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  addedNewLocation = "addedNewLocation",
+
+  /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  editedLocation = "editedLocation",
 }
