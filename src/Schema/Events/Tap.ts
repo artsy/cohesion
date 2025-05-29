@@ -1430,3 +1430,29 @@ export interface TappedMenuItemGroup {
   position: number
   subject: string
 }
+
+/**
+ * A user taps buyer protection on order details page
+ *
+ * This schema describes events sent to Segment from [[tappedBuyerProtection]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedBuyerProtection",
+ *    context_module: "OrdersDetail",
+ *    context_screen_owner_type: "orders-detail",
+ *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    destination_screen_owner_type: "articles",
+ *    destination_screen_owner_slug: "360048946973-How-does-Artsy-protect-me"
+ *  }
+ * ```
+ */
+export interface TappedBuyerProtection {
+  action: ActionType.TappedBuyerProtection
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  destination_screen_owner_id: string
+  destination_screen_owner_slug: string
+}
