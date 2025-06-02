@@ -107,6 +107,7 @@ export enum OwnerType {
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
   ordersCounter = "orders-counter",
+  ordersDetail = "orders-detail",
   ordersHistory = "orders-history",
   ordersNewPayment = "orders-new-payment",
   ordersOffer = "orders-offer",
@@ -261,6 +262,7 @@ export type ScreenOwnerType =
   | OwnerType.newWorksFromGalleriesYouFollow
   | OwnerType.notification
   | OwnerType.onboarding
+  | OwnerType.ordersDetail
   | OwnerType.partner
   | OwnerType.priceDatabase
   | OwnerType.profile
@@ -337,6 +339,7 @@ export type PageOwnerType =
   | OwnerType.onboarding
   | OwnerType.ordersAccept
   | OwnerType.ordersCounter
+  | OwnerType.ordersDetail
   | OwnerType.ordersNewPayment
   | OwnerType.ordersOffer
   | OwnerType.ordersPayment
