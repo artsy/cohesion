@@ -1,3 +1,15 @@
+# v4.265.0 (Mon Jun 02 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add Order Details tracking [#596](https://github.com/artsy/cohesion/pull/596) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.264.1 (Tue May 20 2025)
 
 #### 🐛  Bug Fix
