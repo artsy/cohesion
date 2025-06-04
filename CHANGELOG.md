@@ -1,3 +1,15 @@
+# v4.266.0 (Wed Jun 04 2025)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2494): Add ordersDetail to ContextMenu [#597](https://github.com/artsy/cohesion/pull/597) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.265.0 (Mon Jun 02 2025)
 
 #### 🚀  Enhancement
