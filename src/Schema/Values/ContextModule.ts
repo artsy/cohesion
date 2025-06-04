@@ -173,6 +173,7 @@ export enum ContextModule {
   onboardingInterests = "onboardingInterests",
   ordersAccept = "ordersAccept",
   ordersCounter = "ordersCounter",
+  ordersDetail = "OrdersDetail",
   ordersHistory = "ordersHistory",
   ordersNewPayment = "ordersNewPayment",
   ordersOffer = "ordersOffer",
