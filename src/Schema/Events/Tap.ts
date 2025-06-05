@@ -162,6 +162,30 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
 }
 
 /**
+ * A user taps a ask a question on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedAskSpecialist]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAskSpecialist",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_screen_owner_type: "orders-detail" | "orders-checkout",
+ *    context_screen_owner_id: "5fad78273c8451000d0c53b9",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *  }
+ *  ```
+ */
+export interface TappedAskSpecialist {
+  action: ActionType.tappedAskSpecialist
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  flow: string
+}
+
+/**
  * A user taps a grouping of auctions on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -1332,6 +1356,34 @@ export interface TappedViewWork {
   context_screen_owner_id: string
   artwork_id: string
   notification_type: string
+}
+
+/**
+ * A user taps on the Visit Help Center link in the app
+ *
+ * This schema describes events sent to Segment from [[tappedVisitHelpCenter]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedVisitHelpCenter",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_screen_owner_type: "orders-detail" | "orders-checkout",
+ *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    destination_screen_owner_type: "articles",
+ *    destination_screen_owner_slug: "artsy-help-center",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *  }
+ *  ```
+ */
+export interface TappedVisitHelpCenter {
+  action: ActionType.tappedVisitHelpCenter
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  destination_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_slug: string
+  flow: string
 }
 
 /**
