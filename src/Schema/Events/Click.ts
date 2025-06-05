@@ -2486,3 +2486,27 @@ export interface SubmittedOrder {
   flow: string
   credit_card_wallet_type?: string
 }
+
+/**
+ * A user clicks Delivery or Pickup tab during checkout fulfillment step
+ *
+ * This schema describes events sent to Segment from [[ClickedFulfillmentTab]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedFulfillmentTab",
+ *    context_page_owner_type: "orders-checkout",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    method: "Delivery" | "Pickup",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *  }
+ * ```
+ */
+export interface ClickedFulfillmentTab {
+  action: ActionType.clickedFulfillmentTab
+  context_page_owner_type: PageOwnerType
+  order_id: string
+  method: string
+  flow: string
+}

@@ -73,6 +73,7 @@ import {
   ClickedExpressCheckout,
   ClickedFairCard,
   ClickedFairGroup,
+  ClickedFulfillmentTab,
   ClickedGalleryGroup,
   ClickedHeroUnitGroup,
   ClickedLoadMore,
@@ -343,6 +344,7 @@ export type Event =
   | ClickedExpressCheckout
   | ClickedFairCard
   | ClickedFairGroup
+  | ClickedFulfillmentTab
   | ClickedGalleryGroup
   | ClickedHeroUnitGroup
   | ClickedLoadMore
@@ -762,6 +764,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedFairGroup}
    */
   clickedFairGroup = "clickedFairGroup",
+  /**
+   * Corresponds to {@link ClickedFulfillmentTab}
+   */
+  clickedFulfillmentTab = "clickedFulfillmentTab",
   /**
    * Corresponds to {@link ClickedGalleryGroup}
    */
