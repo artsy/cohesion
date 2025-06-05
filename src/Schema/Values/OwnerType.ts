@@ -106,6 +106,7 @@ export enum OwnerType {
   notification = "notification",
   onboarding = "onboarding",
   ordersAccept = "orders-accept",
+  ordersCheckout = "orders-checkout",
   ordersCounter = "orders-counter",
   ordersDetail = "orders-detail",
   ordersHistory = "orders-history",
@@ -338,6 +339,7 @@ export type PageOwnerType =
   | OwnerType.myCollectionInsights
   | OwnerType.onboarding
   | OwnerType.ordersAccept
+  | OwnerType.ordersCheckout
   | OwnerType.ordersCounter
   | OwnerType.ordersDetail
   | OwnerType.ordersNewPayment
