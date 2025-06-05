@@ -2510,3 +2510,29 @@ export interface ClickedFulfillmentTab {
   method: string
   flow: string
 }
+
+/**
+ * A user completes a step in checkout, progressing to the subsequent step
+ *
+ * This schema describes events sent to Segment from [[ClickedOrderProgression]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOrderProgression",
+ *    context_page_owner_type: "orders-checkout",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    completed_step: "Offer" | "Fulfillment" | "ShippingMethods" | "Payment"
+ *    subsequent_step: "Fulfillment" | "ShippingMethods" | "Payment" | "Review"
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *  }
+ * ```
+ */
+export interface ClickedOrderProgression {
+  action: ActionType.clickedOrderProgression
+  context_page_owner_type: PageOwnerType
+  order_id: string
+  completed_step: string
+  subsequent_step: string
+  flow: string
+}
