@@ -276,7 +276,11 @@ import {
   TappedViewingRoomGroup,
   TappedViewWork,
 } from "./Tap"
-import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
+import {
+  ToggledNotification,
+  ToggledOrderSummary,
+  ToggledSavedSearch,
+} from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
 import { ToggledAccordion } from "./UserExperienceInteractions"
 import { ViewedVideo } from "./Video"
@@ -529,6 +533,7 @@ export type Event =
   | TimeOnPage
   | ToggledAccordion
   | ToggledNotification
+  | ToggledOrderSummary
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
@@ -1678,6 +1683,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledNotification}
    */
   toggledNotification = "toggledNotification",
+  /**
+   * Corresponds to {@link ToggledOrderSummary}
+   */
+  toggledOrderSummary = "toggledOrderSummary",
   /**
    * Corresponds to {@link ToggledPresentationModeSetting}
    */
