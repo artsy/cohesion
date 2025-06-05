@@ -1,5 +1,5 @@
-import { CmsActionType } from "."
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsActionType } from "."
 
 /**
  * Event fired after user new partner location

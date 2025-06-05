@@ -46,6 +46,7 @@ import {
   ClickedArtistGroup,
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
+  ClickedAskSpecialist,
   ClickedAuctionGroup,
   ClickedAuctionResultItem,
   ClickedBid,
@@ -117,6 +118,7 @@ import {
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
   ClickedViewWork,
+  ClickedVisitHelpCenter,
   SubmittedOffer,
   SubmittedOrder,
 } from "./Click"
@@ -235,6 +237,7 @@ import {
   TappedArtistGroup,
   TappedArtistSeriesGroup,
   TappedArtworkGroup,
+  TappedAskSpecialist,
   TappedAuctionGroup,
   TappedAuctionResultGroup,
   TappedBid,
@@ -273,6 +276,7 @@ import {
   TappedViewingRoomCard,
   TappedViewingRoomGroup,
   TappedViewWork,
+  TappedVisitHelpCenter,
 } from "./Tap"
 import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -310,6 +314,7 @@ export type Event =
   | ClickedArtistGroup
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
+  | ClickedAskSpecialist
   | ClickedAuctionGroup
   | ClickedAuctionResultItem
   | ClickedBid
@@ -385,6 +390,7 @@ export type Event =
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | ClickedViewWork
+  | ClickedVisitHelpCenter
   | CommercialFilterParamsChanged
   | CommercialFilterSelectedAll
   | CompletedOfflineSync
@@ -465,6 +471,7 @@ export type Event =
   | TappedArtistSeriesGroup
   | TappedArtworkGroup
   | TappedArtworkList
+  | TappedAskSpecialist
   | TappedAuctionGroup
   | TappedAuctionResultGroup
   | TappedBid
@@ -522,6 +529,7 @@ export type Event =
   | TappedViewingRoomGroup
   | TappedViewOffer
   | TappedViewWork
+  | TappedVisitHelpCenter
   | TimeOnPage
   | ToggledAccordion
   | ToggledNotification
@@ -657,6 +665,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedArtworkGroup}
    */
   clickedArtworkGroup = "clickedArtworkGroup",
+  /**
+   * Corresponds to {@link ClickedAskSpecialist}
+   */
+  clickedAskSpecialist = "clickedAskSpecialist",
   /**
    * Corresponds to {@link ClickedAuctionGroup}
    */
@@ -981,6 +993,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedGene}
    */
   clickedGene = "clickedGene",
+  /**
+   * Corresponds to {@link ClickedVisitHelpCenter}
+   */
+  clickedVisitHelpCenter = "clickedVisitHelpCenter",
   /**
    * Corresponds to {@link ClickedConversationHistoryItem}
    */
@@ -1371,6 +1387,10 @@ export enum ActionType {
    */
   tappedArtworkList = "tappedArtworkList",
   /**
+   * Corresponds to {@link TappedAskSpecialist}
+   */
+  tappedAskSpecialist = "tappedAskSpecialist",
+  /**
    * Corresponds to {@link TappedAuctionGroup}
    */
   tappedAuctionGroup = "tappedAuctionGroup",
@@ -1634,6 +1654,10 @@ export enum ActionType {
    * Corresponds to {@link TappedVerifiedRepresentative}
    */
   tappedVerifiedRepresentative = "tappedVerifiedRepresentative",
+  /**
+   * Corresponds to {@link TappedVisitHelpCenter}
+   */
+  tappedVisitHelpCenter = "tappedVisitHelpCenter",
   /**
    * Corresponds to {@link TappedGlobalSearchBar}
    */

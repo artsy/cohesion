@@ -188,6 +188,29 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
 }
 
 /**
+ * User clicks on Ask a Question link during their checkout flow or on the order details page
+ *
+ * This schema describes events sent to Segment from [[clickedAskSpecialist]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedAskSpecialist",
+ *    context_module: "OrdersDetail",
+ *    context_page_owner_type: "orders-detail",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *  }
+ *  ```
+ */
+
+export interface ClickedAskSpecialist {
+  action: ActionType.clickedAskSpecialist
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
  * A user clicks a grouping of auctions on web
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]
@@ -2315,6 +2338,33 @@ export interface ClickedViewFullConversationHistory {
   context_page_owner_id: string
   partner_id: string
   inquiry_id: string
+}
+
+/**
+ * A user clicks on the help center link during the checkout flow or in the order details page.
+ *
+ * This schema describes events sent to Segment from [[clickedVisitHelpCenter]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedVisitHelpCenter",
+ *    context_module: "OrdersDetail",
+ *    context_page_owner_type: "orders-detail",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    destination_page_owner_type: "articles",
+ *    destination_page_owner_slug: "artsy-help-center",
+ *  }
+ *  ```
+ */
+
+export interface ClickedVisitHelpCenter {
+  action: ActionType.clickedVisitHelpCenter
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_slug: string
 }
 
 /**
