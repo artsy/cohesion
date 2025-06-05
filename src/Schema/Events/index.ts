@@ -178,6 +178,8 @@ import {
   ItemViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
+  SavedAddressViewed,
+  SavedPaymentMethodViewed,
   SendOffersBannerViewed,
   SendOffersErrorMessage,
   SendOffersModalViewed,
@@ -430,7 +432,9 @@ export type Event =
   | ResetYourPassword
   | SaleScreenLoadComplete
   | SaveCollectedArtwork
+  | SavedAddressViewed
   | SavedCookieConsentPreferences
+  | SavedPaymentMethodViewed
   | Screen
   | SearchedPriceDatabase
   | SearchedWithNoResults
@@ -1211,9 +1215,17 @@ export enum ActionType {
    */
   saveCollectedArtwork = "saveCollectedArtwork",
   /**
+   * Corresponds to {@link SavedAddressViewed}
+   */
+  savedAddressViewed = "savedAddressViewed",
+  /**
    * Corresponds to {@link SavedCookieConsentPreferences}
    */
   savedCookieConsentPreferences = "savedCookieConsentPreferences",
+  /**
+   * Corresponds to {@link SavedPaymentMethodViewed}
+   */
+  savedPaymentMethodViewed = "savedPaymentMethodViewed",
   /**
    * Corresponds to {@link Screen}
    */
