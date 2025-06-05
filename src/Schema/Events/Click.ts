@@ -2522,8 +2522,8 @@ export interface ClickedFulfillmentTab {
  *    action: "clickedOrderProgression",
  *    context_page_owner_type: "orders-checkout",
  *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
- *    completed_step: "Offer" | "Fulfillment" | "ShippingMethods" | "Payment"
- *    subsequent_step: "Fulfillment" | "ShippingMethods" | "Payment" | "Review"
+ *    completed_step: "Offer" | "Fulfillment" | "ShippingMethods" | "Payment",
+ *    subsequent_step: "Fulfillment" | "ShippingMethods" | "Payment" | "Review",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  * ```
@@ -2534,5 +2534,34 @@ export interface ClickedOrderProgression {
   order_id: string
   completed_step: string
   subsequent_step: string
+  flow: string
+}
+
+/**
+ * User clicks on additional duties and taxes may apply at import
+ *
+ * This schema describes events sent to Segment from [[ClickedImportFees]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedImportFees",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_page_owner_type: "orders-detail" | "orders-checkout",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *    destination_page_owner_type: "articles",
+ *    destination_page_owner_slug: "How-are-taxes-and-customs-fees-calculated",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *  }
+ *  ```
+ */
+
+export interface ClickedImportFees {
+  action: ActionType.clickedImportFees
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_slug: string
   flow: string
 }
