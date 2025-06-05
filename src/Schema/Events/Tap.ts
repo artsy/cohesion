@@ -170,9 +170,10 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedAskSpecialist",
- *    context_module: "ordersDetail",
- *    context_screen_owner_type: "orders-detail",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_screen_owner_type: "orders-detail" | "orders-checkout",
  *    context_screen_owner_id: "5fad78273c8451000d0c53b9",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  *  ```
  */
@@ -181,6 +182,7 @@ export interface TappedAskSpecialist {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string
+  flow: string
 }
 
 /**
@@ -1365,21 +1367,23 @@ export interface TappedViewWork {
  *  ```
  *  {
  *    action: "tappedVisitHelpCenter",
- *    context_module: "OrdersDetail",
- *    context_screen_owner_type: "orders-detail",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_screen_owner_type: "orders-detail" | "orders-checkout",
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_screen_owner_type: "articles",
- *    destination_screen_owner_slug: "artsy-help-center"
+ *    destination_screen_owner_slug: "artsy-help-center",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  *  ```
  */
 export interface TappedVisitHelpCenter {
   action: ActionType.tappedVisitHelpCenter
   context_module: ContextModule
-  context_screen_owner_type: string
+  context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_slug: string
+  flow: string
 }
 
 /**

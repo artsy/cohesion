@@ -196,9 +196,10 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  *  ```
  *  {
  *    action: "clickedAskSpecialist",
- *    context_module: "OrdersDetail",
- *    context_page_owner_type: "orders-detail",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_page_owner_type: "orders-detail" | "orders-checkout",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  *  ```
  */
@@ -206,8 +207,9 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
 export interface ClickedAskSpecialist {
   action: ActionType.clickedAskSpecialist
   context_module: ContextModule
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
+  flow: string
 }
 
 /**
@@ -2349,11 +2351,12 @@ export interface ClickedViewFullConversationHistory {
  *  ```
  *  {
  *    action: "clickedVisitHelpCenter",
- *    context_module: "OrdersDetail",
- *    context_page_owner_type: "orders-detail",
+ *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_page_owner_type: "orders-detail" | "orders-checkout",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_page_owner_type: "articles",
  *    destination_page_owner_slug: "artsy-help-center",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  *  ```
  */
@@ -2361,10 +2364,11 @@ export interface ClickedViewFullConversationHistory {
 export interface ClickedVisitHelpCenter {
   action: ActionType.clickedVisitHelpCenter
   context_module: ContextModule
-  context_page_owner_type: string
+  context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   destination_page_owner_type: PageOwnerType
   destination_page_owner_slug: string
+  flow: string
 }
 
 /**
