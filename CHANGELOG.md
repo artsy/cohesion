@@ -1,3 +1,15 @@
+# v4.267.0 (Thu Jun 05 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add Visit Help Center and Ask Specialist events [#598](https://github.com/artsy/cohesion/pull/598) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.266.0 (Wed Jun 04 2025)
 
 #### 🚀  Enhancement
