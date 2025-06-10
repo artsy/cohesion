@@ -2520,20 +2520,18 @@ export interface ClickedFulfillmentTab {
  *  ```
  *  {
  *    action: "clickedOrderProgression",
+ *    context_module: "OrdersOffer" | "OrdersFulfillment" | "OrdersShippingMethods" | "OrdersPayment" | OrdersReview"
  *    context_page_owner_type: "orders-checkout",
  *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
- *    completed_step: "Offer" | "Fulfillment" | "ShippingMethods" | "Payment",
- *    subsequent_step: "Fulfillment" | "ShippingMethods" | "Payment" | "Review",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  * ```
  */
 export interface ClickedOrderProgression {
   action: ActionType.clickedOrderProgression
+  context_module: ContextModule
   context_page_owner_type: PageOwnerType
   order_id: string
-  completed_step: string
-  subsequent_step: string
   flow: string
 }
 
