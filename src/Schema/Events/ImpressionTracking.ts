@@ -434,3 +434,27 @@ export interface SavedPaymentMethodViewed {
   flow: string
   payment_methods: string[]
 }
+
+/**
+ * A user views a step in checkout
+ *
+ * This schema describes events sent to Segment from [[OrderProgressionViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "orderProgressionViewed",
+ *    context_module: "OrdersOffer" | "OrdersFulfillment" | "OrdersShippingMethods" | "OrdersPayment" | OrdersReview"
+ *    context_page_owner_type: "orders-checkout",
+ *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *  }
+ * ```
+ */
+export interface OrderProgressionViewed {
+  action: ActionType.orderProgressionViewed
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  order_id: string
+  flow: string
+}

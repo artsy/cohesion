@@ -179,6 +179,7 @@ import {
   ErrorMessageViewed,
   ExpressCheckoutViewed,
   ItemViewed,
+  OrderProgressionViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
   SavedAddressViewed,
@@ -434,6 +435,7 @@ export type Event =
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
   | OnboardingUserInputData
+  | OrderProgressionViewed
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
   | RailViewed
@@ -1201,6 +1203,10 @@ export enum ActionType {
    * Corresponds to {@link OnboardingUserInputData}
    */
   onboardingUserInputData = "onboardingUserInputData",
+  /**
+   * Corresponds to {@link OrderProgressionViewed}
+   */
+  orderProgressionViewed = "orderProgressionViewed",
   /**
    * Corresponds to {@link PriceDatabaseFilterParamsChanged}
    */
