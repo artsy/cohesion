@@ -9,6 +9,7 @@ export enum CmsContextModule {
   artworkFilterSearch = "Artworks - search",
   artworkFilterQuickEdit = "Artworks - quick edit",
   batchImportFlow = "batchImportFlow",
+  batchEditFlow = "batchEditFlow",
   uploads = "Uploads",
   settings = "Settings",
 }

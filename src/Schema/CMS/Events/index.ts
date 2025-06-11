@@ -1,7 +1,9 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
+import { CmsBatchEditFlow } from "./BatchEditFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
+
 
 /**
  * List of valid schemas for CMS analytics actions
@@ -13,6 +15,7 @@ export type CmsEvent =
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
+  | CmsBatchEditFlow
 
 /**
  * List of all CMS actions
@@ -59,4 +62,9 @@ export enum CmsActionType {
    * Corresponds to {@link SettingsFlow}
    */
   editedLocation = "editedLocation",
+
+   /**
+   * Corresponds to {@link BatchEditFlow}
+   */
+   shownMaxEditLimitReachedToolTip = "shownMaxEditLimitReachedToolTip",
 }
