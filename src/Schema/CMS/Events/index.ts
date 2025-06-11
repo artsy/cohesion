@@ -1,7 +1,9 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
+import { CmsBatchEditFlow } from "./BatchEditFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
+
 
 /**
  * List of valid schemas for CMS analytics actions
@@ -10,6 +12,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
  */
 export type CmsEvent =
   | CmsArtworkFilter
+  | CmsBatchEditFlow
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
