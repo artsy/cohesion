@@ -3,6 +3,7 @@
  * @packageDocumentation
  */
 
+import { CmsActionType } from "."
 import { CmsContextModule } from "../Values/CmsContextModule"
 import { CmsOwnerType } from "../Values/CmsOwnerType"
 
@@ -21,7 +22,7 @@ import { CmsOwnerType } from "../Values/CmsOwnerType"
  * ```
  */
 export interface CmsShownMaxEditLimitReachedTooltip {
-  action: "shownMaxEditLimitReachedTooltip"
+  action: CmsActionType.shownMaxEditLimitReachedToolTip
   context_module: CmsContextModule.batchEditFlow
   context_page_owner_type: CmsOwnerType.batchEdit
   context_page_owner_id: string
@@ -43,7 +44,7 @@ export interface CmsShownMaxEditLimitReachedTooltip {
  * ```
  */
 export interface CmsShownBatchEditDrawer {
-  action: "shownBatchEditDrawer"
+  action: CmsActionType.shownBatchEditDrawer
   context_module: CmsContextModule.batchEditFlow
   context_page_owner_type: CmsOwnerType.batchEdit
   context_page_owner_id: string

@@ -66,7 +66,7 @@ export enum CmsActionType {
   /**
    * Corresponds to {@link BatchEditFlow}
    */
-   shownMaxEditLimitReachedToolTip = "shownMaxEditLimitReachedToolTip",
+  shownMaxEditLimitReachedToolTip = "shownMaxEditLimitReachedToolTip",
 
   /**
    * Corresponds to {@link BatchEditFlow}
