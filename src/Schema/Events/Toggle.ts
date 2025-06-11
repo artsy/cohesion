@@ -75,7 +75,7 @@ export interface ToggledSavedSearch {
  *    action: "toggledCollapsibleOrderSummary",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    context_page_owner_type: "orders-checkout",
- *    order_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *    expanded: true | false
  *  }
  * ```
@@ -84,6 +84,6 @@ export interface ToggledCollapsibleOrderSummary {
   action: ActionType.toggledCollapsibleOrderSummary
   flow: string
   context_page_owner_type: PageOwnerType
-  order_id: string
+  context_page_owner_id: string
   expanded: boolean
 }

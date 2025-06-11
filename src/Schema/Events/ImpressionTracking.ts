@@ -446,7 +446,7 @@ export interface SavedPaymentMethodViewed {
  *    action: "orderProgressionViewed",
  *    context_module: "OrdersOffer" | "OrdersFulfillment" | "OrdersShippingMethods" | "OrdersPayment" | OrdersReview"
  *    context_page_owner_type: "orders-checkout",
- *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  * ```
@@ -455,6 +455,6 @@ export interface OrderProgressionViewed {
   action: ActionType.orderProgressionViewed
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
-  order_id: string
+  context_page_owner_id: string
   flow: string
 }

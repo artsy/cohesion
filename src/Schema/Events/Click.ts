@@ -2497,7 +2497,7 @@ export interface SubmittedOrder {
  *  {
  *    action: "clickedFulfillmentTab",
  *    context_page_owner_type: "orders-checkout",
- *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    method: "Delivery" | "Pickup",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
@@ -2506,7 +2506,7 @@ export interface SubmittedOrder {
 export interface ClickedFulfillmentTab {
   action: ActionType.clickedFulfillmentTab
   context_page_owner_type: PageOwnerType
-  order_id: string
+  context_page_owner_id: string
   method: string
   flow: string
 }
@@ -2522,7 +2522,7 @@ export interface ClickedFulfillmentTab {
  *    action: "clickedOrderProgression",
  *    context_module: "OrdersOffer" | "OrdersFulfillment" | "OrdersShippingMethods" | "OrdersPayment" | OrdersReview"
  *    context_page_owner_type: "orders-checkout",
- *    order_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  * ```
@@ -2531,7 +2531,7 @@ export interface ClickedOrderProgression {
   action: ActionType.clickedOrderProgression
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
-  order_id: string
+  context_page_owner_id: string
   flow: string
 }
 
