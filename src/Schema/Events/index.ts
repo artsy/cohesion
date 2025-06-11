@@ -281,8 +281,8 @@ import {
   TappedViewWork,
 } from "./Tap"
 import {
+  ToggledCollapsibleOrderSummary,
   ToggledNotification,
-  ToggledOrderSummary,
   ToggledSavedSearch,
 } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -540,8 +540,8 @@ export type Event =
   | TappedViewWork
   | TimeOnPage
   | ToggledAccordion
+  | ToggledCollapsibleOrderSummary
   | ToggledNotification
-  | ToggledOrderSummary
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
@@ -1704,13 +1704,13 @@ export enum ActionType {
    */
   toggledAccordion = "toggledAccordion",
   /**
+   * Corresponds to {@link ToggledCollapsibleOrderSummary}
+   */
+  toggledCollapsibleOrderSummary = "toggledCollapsibleOrderSummary",
+  /**
    * Corresponds to {@link ToggledNotification}
    */
   toggledNotification = "toggledNotification",
-  /**
-   * Corresponds to {@link ToggledOrderSummary}
-   */
-  toggledOrderSummary = "toggledOrderSummary",
   /**
    * Corresponds to {@link ToggledPresentationModeSetting}
    */

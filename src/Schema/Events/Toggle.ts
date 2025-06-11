@@ -67,12 +67,12 @@ export interface ToggledSavedSearch {
 /**
  * A user toggles the collapsible order summary during checkout
  *
- *  This schema describes events sent to Segment from [[toggledOrderSummary]]
+ *  This schema describes events sent to Segment from [[toggledCollapsibleOrderSummary]]
  *
  *  @example
  *  ```
  *  {
- *    action: "toggledOrderSummary",
+ *    action: "toggledCollapsibleOrderSummary",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    context_page_owner_type: "orders-checkout",
  *    order_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
@@ -80,8 +80,8 @@ export interface ToggledSavedSearch {
  *  }
  * ```
  */
-export interface ToggledOrderSummary {
-  action: ActionType.toggledOrderSummary
+export interface ToggledCollapsibleOrderSummary {
+  action: ActionType.toggledCollapsibleOrderSummary
   flow: string
   context_page_owner_type: PageOwnerType
   order_id: string
