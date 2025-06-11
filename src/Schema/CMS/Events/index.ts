@@ -63,8 +63,13 @@ export enum CmsActionType {
    */
   editedLocation = "editedLocation",
 
-   /**
+  /**
    * Corresponds to {@link BatchEditFlow}
    */
    shownMaxEditLimitReachedToolTip = "shownMaxEditLimitReachedToolTip",
+
+  /**
+   * Corresponds to {@link BatchEditFlow}
+   */
+  shownBatchEditDrawer = "shownBatchEditDrawer",
 }

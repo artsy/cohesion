@@ -28,5 +28,28 @@ export interface CmsShownMaxEditLimitReachedTooltip {
   referrer: ""
 }
 
+/**
+ * A partner has seen Batch Edit drawer.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "shownBatchEditDrawer",
+ *   context_module: "batchEditFlow",
+ *   context_page_owner_type: "batchEdit",
+ *   context_page_owner_id: "67b646ecbe87376bfeb3f962",
+ *   referrer: ""
+ * }
+ * ```
+ */
+export interface CmsShownBatchEditDrawer {
+  action: "shownBatchEditDrawer"
+  context_module: CmsContextModule.batchEditFlow
+  context_page_owner_type: CmsOwnerType.batchEdit
+  context_page_owner_id: string
+  referrer: ""
+}
+
 export type CmsBatchEditFlow =
   | CmsShownMaxEditLimitReachedTooltip
+  | CmsShownBatchEditDrawer
