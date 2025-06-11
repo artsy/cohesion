@@ -74,8 +74,10 @@ import {
   ClickedExpressCheckout,
   ClickedFairCard,
   ClickedFairGroup,
+  ClickedFulfillmentTab,
   ClickedGalleryGroup,
   ClickedHeroUnitGroup,
+  ClickedImportFees,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
   ClickedMakeOffer,
@@ -98,6 +100,7 @@ import {
   ClickedOnPriceDisplayDropdown,
   ClickedOnReadMore,
   ClickedOrderPage,
+  ClickedOrderProgression,
   ClickedOrderSummary,
   ClickedPartnerCard,
   ClickedPartnerLink,
@@ -178,8 +181,11 @@ import {
   ErrorMessageViewed,
   ExpressCheckoutViewed,
   ItemViewed,
+  OrderProgressionViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
+  SavedAddressViewed,
+  SavedPaymentMethodViewed,
   SendOffersBannerViewed,
   SendOffersErrorMessage,
   SendOffersModalViewed,
@@ -278,7 +284,11 @@ import {
   TappedViewWork,
   TappedVisitHelpCenter,
 } from "./Tap"
-import { ToggledNotification, ToggledSavedSearch } from "./Toggle"
+import {
+  ToggledCollapsibleOrderSummary,
+  ToggledNotification,
+  ToggledSavedSearch,
+} from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
 import { ToggledAccordion } from "./UserExperienceInteractions"
 import { ViewedVideo } from "./Video"
@@ -342,8 +352,10 @@ export type Event =
   | ClickedExpressCheckout
   | ClickedFairCard
   | ClickedFairGroup
+  | ClickedFulfillmentTab
   | ClickedGalleryGroup
   | ClickedHeroUnitGroup
+  | ClickedImportFees
   | ClickedLoadMore
   | ClickedMainArtworkGrid
   | ClickedMakeOffer
@@ -367,6 +379,7 @@ export type Event =
   | ClickedOnPriceDisplayDropdown
   | ClickedOnReadMore
   | ClickedOrderPage
+  | ClickedOrderProgression
   | ClickedOrderSummary
   | ClickedOpenInNewTabButton
   | ClickedPartnerCard
@@ -428,6 +441,7 @@ export type Event =
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
   | OnboardingUserInputData
+  | OrderProgressionViewed
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
   | RailViewed
@@ -436,7 +450,9 @@ export type Event =
   | ResetYourPassword
   | SaleScreenLoadComplete
   | SaveCollectedArtwork
+  | SavedAddressViewed
   | SavedCookieConsentPreferences
+  | SavedPaymentMethodViewed
   | Screen
   | SearchedPriceDatabase
   | SearchedWithNoResults
@@ -532,6 +548,7 @@ export type Event =
   | TappedVisitHelpCenter
   | TimeOnPage
   | ToggledAccordion
+  | ToggledCollapsibleOrderSummary
   | ToggledNotification
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
@@ -766,6 +783,10 @@ export enum ActionType {
    */
   clickedFairGroup = "clickedFairGroup",
   /**
+   * Corresponds to {@link ClickedFulfillmentTab}
+   */
+  clickedFulfillmentTab = "clickedFulfillmentTab",
+  /**
    * Corresponds to {@link ClickedGalleryGroup}
    */
   clickedGalleryGroup = "clickedGalleryGroup",
@@ -773,6 +794,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedHeroUnitGroup}
    */
   clickedHeroUnitGroup = "clickedHeroUnitGroup",
+  /**
+   * Corresponds to {@link ClickedImportFees}
+   */
+  clickedImportFees = "clickedImportFees",
   /**
    * Corresponds to {@link ClickedLoadMore}
    */
@@ -845,6 +870,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedOnPriceDisplayDropdown}
    */
   clickedOnPriceDisplayDropdown = "clickedOnPriceDisplayDropdown",
+  /**
+   * Corresponds to {@link ClickedOrderProgression}
+   */
+  clickedOrderProgression = "clickedOrderProgression",
   /**
    * Corresponds to {@link ClickedPublish}
    */
@@ -1191,6 +1220,10 @@ export enum ActionType {
    */
   onboardingUserInputData = "onboardingUserInputData",
   /**
+   * Corresponds to {@link OrderProgressionViewed}
+   */
+  orderProgressionViewed = "orderProgressionViewed",
+  /**
    * Corresponds to {@link PriceDatabaseFilterParamsChanged}
    */
   priceDatabaseFilterParamsChanged = "priceDatabaseFilterParamsChanged",
@@ -1227,9 +1260,17 @@ export enum ActionType {
    */
   saveCollectedArtwork = "saveCollectedArtwork",
   /**
+   * Corresponds to {@link SavedAddressViewed}
+   */
+  savedAddressViewed = "savedAddressViewed",
+  /**
    * Corresponds to {@link SavedCookieConsentPreferences}
    */
   savedCookieConsentPreferences = "savedCookieConsentPreferences",
+  /**
+   * Corresponds to {@link SavedPaymentMethodViewed}
+   */
+  savedPaymentMethodViewed = "savedPaymentMethodViewed",
   /**
    * Corresponds to {@link Screen}
    */
@@ -1686,6 +1727,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledAccordion}
    */
   toggledAccordion = "toggledAccordion",
+  /**
+   * Corresponds to {@link ToggledCollapsibleOrderSummary}
+   */
+  toggledCollapsibleOrderSummary = "toggledCollapsibleOrderSummary",
   /**
    * Corresponds to {@link ToggledNotification}
    */
