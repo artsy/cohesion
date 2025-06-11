@@ -12,10 +12,10 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
  */
 export type CmsEvent =
   | CmsArtworkFilter
+  | CmsBatchEditFlow
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
-  | CmsBatchEditFlow
 
 /**
  * List of all CMS actions
@@ -23,6 +23,11 @@ export type CmsEvent =
  * Each CmsActionType corresponds with a table in Redshift.
  */
 export enum CmsActionType {
+  /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  addedNewLocation = "addedNewLocation",
+  
   /**
    * Corresponds to {@link CmsBatchImportFlow}
    */
@@ -44,24 +49,20 @@ export enum CmsActionType {
   csvImportError = "csvImportError",
 
   /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  editedLocation = "editedLocation",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   searchedArtwork = "searched artwork",
 
   /**
-   * Corresponds to {@link BatchImportFlow}
-   */
-  shownMissingInformation = "shownMissingInformation",
+    * Corresponds to {@link BatchEditFlow}
+    */
+  shownBatchEditDrawer = "shownBatchEditDrawer",
 
-  /**
-   * Corresponds to {@link SettingsFlow}
-   */
-  addedNewLocation = "addedNewLocation",
-
-  /**
-   * Corresponds to {@link SettingsFlow}
-   */
-  editedLocation = "editedLocation",
 
   /**
    * Corresponds to {@link BatchEditFlow}
@@ -69,7 +70,7 @@ export enum CmsActionType {
   shownMaxEditLimitReachedToolTip = "shownMaxEditLimitReachedToolTip",
 
   /**
-   * Corresponds to {@link BatchEditFlow}
+   * Corresponds to {@link BatchImportFlow}
    */
-  shownBatchEditDrawer = "shownBatchEditDrawer",
+  shownMissingInformation = "shownMissingInformation",
 }
