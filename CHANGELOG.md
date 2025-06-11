@@ -1,3 +1,15 @@
+# v4.268.0 (Wed Jun 11 2025)
+
+#### 🚀  Enhancement
+
+- feat: Checkout beta0 tracking [#599](https://github.com/artsy/cohesion/pull/599) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.267.0 (Thu Jun 05 2025)
 
 #### 🚀  Enhancement
