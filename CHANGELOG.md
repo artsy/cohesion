@@ -1,3 +1,15 @@
+# v4.269.0 (Thu Jun 12 2025)
+
+#### 🚀  Enhancement
+
+- feat(show): Add CMS Show events [#602](https://github.com/artsy/cohesion/pull/602) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.268.0 (Wed Jun 11 2025)
 
 #### 🚀  Enhancement
