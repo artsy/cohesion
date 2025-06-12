@@ -56,7 +56,42 @@ export interface CmsBulkEditResolvedAllConflictsShown {
   context_module: CmsContextModule.bulkEditFlow
 }
 
+/**
+ * Bluk edit flow processing started
+ *
+ * Example:
+ * {
+ *   action: "processingStarted",
+ *   context_module: "Artworks - bulk edit",
+ *   value: 25
+ * }
+ */
+export interface CmsBulkEditProcessingStarted {
+  action: CmsActionType.processingStarted
+  context_module: CmsContextModule.bulkEditFlow
+  value: number // total number of artworks being processed
+}
+
+/**
+ * Bulk Edit flow processing completed
+ *
+ * Example:
+ * {
+ *   action: "processingCompleted",
+ *   context_module: "Artworks - bulk edit",
+ *   value: 24
+ * }
+ */
+export interface CmsBulkEditProcessingCompleted {
+  action: CmsActionType.processingCompleted
+  context_module: CmsContextModule.bulkEditFlow
+  value: number // total number of artworks successfully processed
+}
+
+
 export type CmsBulkEditFlow =
   | CmsBulkEditConflictsShown
   | CmsBulkEditMaxEditLimitReachedShown
+  | CmsBulkEditProcessingCompleted
+  | CmsBulkEditProcessingStarted
   | CmsBulkEditResolvedAllConflictsShown

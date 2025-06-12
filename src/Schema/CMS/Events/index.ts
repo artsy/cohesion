@@ -56,6 +56,16 @@ export enum CmsActionType {
   editedLocation = "editedLocation",
 
   /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  processingStarted = "processingStarted",
+
+   /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+   processingCompleted = "processingCompleted",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   searchedArtwork = "searched artwork",
