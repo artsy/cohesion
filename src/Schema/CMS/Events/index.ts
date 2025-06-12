@@ -1,6 +1,6 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
-import { CmsBatchEditFlow } from "./BatchEditFlow"
+import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
@@ -12,7 +12,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
  */
 export type CmsEvent =
   | CmsArtworkFilter
-  | CmsBatchEditFlow
+  | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
@@ -23,6 +23,11 @@ export type CmsEvent =
  * Each CmsActionType corresponds with a table in Redshift.
  */
 export enum CmsActionType {
+  /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  addedNewLocation = "addedNewLocation",
+  
   /**
    * Corresponds to {@link CmsBatchImportFlow}
    */
@@ -44,6 +49,11 @@ export enum CmsActionType {
   csvImportError = "csvImportError",
 
   /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  editedLocation = "editedLocation",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   searchedArtwork = "searched artwork",
@@ -52,14 +62,4 @@ export enum CmsActionType {
    * Corresponds to {@link BatchImportFlow}
    */
   shownMissingInformation = "shownMissingInformation",
-
-  /**
-   * Corresponds to {@link SettingsFlow}
-   */
-  addedNewLocation = "addedNewLocation",
-
-  /**
-   * Corresponds to {@link SettingsFlow}
-   */
-  editedLocation = "editedLocation",
 }

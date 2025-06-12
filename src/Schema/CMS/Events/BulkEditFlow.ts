@@ -1,5 +1,5 @@
 /**
- * Schemas describing CMS BatchEditFlow events
+ * Schemas describing CMS BulkEditFlow events
  * @packageDocumentation
  */
 
@@ -10,7 +10,7 @@ import { CmsContextModule } from "../Values/CmsContextModule"
  */
 export interface CmsBatchEditClickEvent {
   action: "click"
-  context_module: CmsContextModule.batchEditFlow
+  context_module: CmsContextModule.bulkEditFlow
   label: CmsBatchEditClickLabel
 }
 
@@ -23,5 +23,5 @@ export type CmsBatchEditClickLabel =
   | "click confirm edits"
   | "click resolve all conflicts"
 
-export type CmsBatchEditFlow =
+export type CmsBulkEditFlow =
   | CmsBatchEditClickEvent
