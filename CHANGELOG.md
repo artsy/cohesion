@@ -1,3 +1,15 @@
+# v4.271.0 (Thu Jun 12 2025)
+
+#### 🚀  Enhancement
+
+- feat: Adds 6 new click events for bulk edit flow [#601](https://github.com/artsy/cohesion/pull/601) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.270.0 (Thu Jun 12 2025)
 
 #### 🚀  Enhancement
