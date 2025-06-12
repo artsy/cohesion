@@ -1,8 +1,10 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
+import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsShowFlow } from "./ShowFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
+
 
 /**
  * List of valid schemas for CMS analytics actions
@@ -11,6 +13,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
  */
 export type CmsEvent =
   | CmsArtworkFilter
+  | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
@@ -22,6 +25,11 @@ export type CmsEvent =
  * Each CmsActionType corresponds with a table in Redshift.
  */
 export enum CmsActionType {
+  /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  addedNewLocation = "addedNewLocation",
+  
   /**
    * Corresponds to {@link CmsBatchImportFlow}
    */
@@ -43,22 +51,32 @@ export enum CmsActionType {
   csvImportError = "csvImportError",
 
   /**
+   * Corresponds to {@link SettingsFlow}
+   */
+  editedLocation = "editedLocation",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   searchedArtwork = "searched artwork",
 
   /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  shownConflicts = "shownConflicts",
+
+  /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  shownMaxEditLimitReached = "shownMaxEditLimitReached",
+
+  /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  shownResolvedAllConflicts = "shownResolvedAllConflicts",
+
+  /**
    * Corresponds to {@link BatchImportFlow}
    */
   shownMissingInformation = "shownMissingInformation",
-
-  /**
-   * Corresponds to {@link SettingsFlow}
-   */
-  addedNewLocation = "addedNewLocation",
-
-  /**
-   * Corresponds to {@link SettingsFlow}
-   */
-  editedLocation = "editedLocation",
 }

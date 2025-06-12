@@ -4,6 +4,7 @@
  * @packageDocumentation
  */
 export enum CmsOwnerType {
+  bulkEdit = "bulkEdit",
   batchImport = "batchImport",
   batchImportArtistMatching = "batchImportArtistMatching",
 }
