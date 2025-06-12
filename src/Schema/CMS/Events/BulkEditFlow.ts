@@ -88,9 +88,25 @@ export interface CmsBulkEditProcessingCompleted {
   value: number // total number of artworks successfully processed
 }
 
+/**
+ * Bulk edit failed
+ *
+ * Example:
+ * {
+ *   action: "bulkEditFailed",
+ *   context_module: "Artworks - bulk edit",
+ *   value: "Network error" // or any error message displayed to user
+ * }
+ */
+export interface CmsBulkEditFailed {
+  action: CmsActionType.bulkEditFailed
+  context_module: CmsContextModule.bulkEditFlow
+  value: string
+}
 
 export type CmsBulkEditFlow =
   | CmsBulkEditConflictsShown
+  | CmsBulkEditFailed
   | CmsBulkEditMaxEditLimitReachedShown
   | CmsBulkEditProcessingCompleted
   | CmsBulkEditProcessingStarted
