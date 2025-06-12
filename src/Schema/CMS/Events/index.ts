@@ -1,6 +1,7 @@
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
+import { CmsShowFlow } from "./ShowFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
 /**
@@ -13,6 +14,7 @@ export type CmsEvent =
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
+  | CmsShowFlow
 
 /**
  * List of all CMS actions
