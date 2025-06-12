@@ -1,3 +1,15 @@
+# v4.272.0 (Thu Jun 12 2025)
+
+#### 🚀  Enhancement
+
+- feat: Adds more custom events for BulkEdits [#603](https://github.com/artsy/cohesion/pull/603) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.271.0 (Thu Jun 12 2025)
 
 #### 🚀  Enhancement
