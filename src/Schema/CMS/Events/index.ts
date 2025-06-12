@@ -36,6 +36,11 @@ export enum CmsActionType {
   artistNeedsMatching = "artistNeedsMatching",
 
   /**
+   * Corresponds to {@link CmsBulkEditFlow}
+   */
+  bulkEditFailed = "bulkEditFailed",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   clickedOnDuplicateArtwork = "clickedonduplicateartwork",
@@ -56,22 +61,32 @@ export enum CmsActionType {
   editedLocation = "editedLocation",
 
   /**
+   * Corresponds to {@link CmsBulkEditFlow}
+   */
+  processingStarted = "processingStarted",
+
+  /**
+   * Corresponds to {@link CmsBulkEditFlow}
+   */
+  processingCompleted = "processingCompleted",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   searchedArtwork = "searched artwork",
 
   /**
-   * Corresponds to {@link BulkEditFlow}
+   * Corresponds to {@link CmsBulkEditFlow}
    */
   shownConflicts = "shownConflicts",
 
   /**
-   * Corresponds to {@link BulkEditFlow}
+   * Corresponds to {@link CmsBulkEditFlow}
    */
   shownMaxEditLimitReached = "shownMaxEditLimitReached",
 
   /**
-   * Corresponds to {@link BulkEditFlow}
+   * Corresponds to {@link CmsBulkEditFlow}
    */
   shownResolvedAllConflicts = "shownResolvedAllConflicts",
 
