@@ -1,3 +1,15 @@
+# v4.270.0 (Thu Jun 12 2025)
+
+#### 🚀  Enhancement
+
+- feat: Start adding bulk edit related `shown` events [#600](https://github.com/artsy/cohesion/pull/600) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.269.0 (Thu Jun 12 2025)
 
 #### 🚀  Enhancement
