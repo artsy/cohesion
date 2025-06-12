@@ -5,6 +5,7 @@
  * @packageDocumentation
  */
 export enum CmsContextModule {
+  addArtworkToShow = "Add artwork to show",
   artworkFilterFilterArtworks = "Artworks - filter artworks",
   artworkFilterSearch = "Artworks - search",
   artworkFilterQuickEdit = "Artworks - quick edit",
@@ -12,4 +13,5 @@ export enum CmsContextModule {
   bulkEditFlow = "Artworks - bulk edit",
   uploads = "Uploads",
   settings = "Settings",
+  showsInstallShots = "Shows - Install shots",
 }

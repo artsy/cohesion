@@ -2,6 +2,7 @@ import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
+import { CmsShowFlow } from "./ShowFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
 
@@ -16,6 +17,7 @@ export type CmsEvent =
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
   | CmsSettingsFlow
+  | CmsShowFlow
 
 /**
  * List of all CMS actions
@@ -57,6 +59,21 @@ export enum CmsActionType {
    * Corresponds to {@link CmsArtworkFilter}
    */
   searchedArtwork = "searched artwork",
+
+  /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  shownConflicts = "shownConflicts",
+
+  /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  shownMaxEditLimitReached = "shownMaxEditLimitReached",
+
+  /**
+   * Corresponds to {@link BulkEditFlow}
+   */
+  shownResolvedAllConflicts = "shownResolvedAllConflicts",
 
   /**
    * Corresponds to {@link BatchImportFlow}
