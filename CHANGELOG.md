@@ -1,3 +1,15 @@
+# v4.272.2 (Fri Jun 13 2025)
+
+#### 🐛  Bug Fix
+
+- fix: Adjust bulkEditFailed type to more match error structure [#605](https://github.com/artsy/cohesion/pull/605) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.272.1 (Fri Jun 13 2025)
 
 #### 🐛  Bug Fix
