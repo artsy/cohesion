@@ -1,3 +1,15 @@
+# v4.272.1 (Fri Jun 13 2025)
+
+#### 🐛  Bug Fix
+
+- fix(bulk-edits): Adds more consistent typing for number typed values [#604](https://github.com/artsy/cohesion/pull/604) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.272.0 (Thu Jun 12 2025)
 
 #### 🚀  Enhancement
