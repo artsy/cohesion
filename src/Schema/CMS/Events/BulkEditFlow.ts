@@ -35,7 +35,7 @@ export interface CmsBulkEditClickedChangeAvailability {
  *   action: "click",
  *   context_module: "Artworks - bulk edit",
  *   label: "bulk edit",
- *   value: "5", // how many artworks selected
+ *   value: 5, // how many artworks selected
  * }
  * ```
  */
@@ -43,7 +43,7 @@ export interface CmsBulkEditClickedEditPill {
   action: "click"
   context_module: CmsContextModule.bulkEditFlow
   label: "bulk edit"
-  value: string
+  value: number
 }
 
 /**
@@ -55,7 +55,7 @@ export interface CmsBulkEditClickedEditPill {
  *   action: "click",
  *   context_module: "Artworks - bulk edit",
  *   label: "shortlist",
- *   value: "5", // how many artworks selected
+ *   value: 5, // how many artworks selected
  * }
  * ```
  */
@@ -63,7 +63,7 @@ export interface CmsBulkEditClickedShortlistPill {
   action: "click"
   context_module: CmsContextModule.bulkEditFlow
   label: "shortlist"
-  value: string // how many artworks selected
+  value: number
 }
 
 /**
@@ -177,13 +177,13 @@ export interface CmsBulkEditResolvedAllConflictsShown {
  * {
  *   action: "processingStarted",
  *   context_module: "Artworks - bulk edit",
- *   value: 25
+ *   value: 25 // total number of artworks being processed
  * }
  */
 export interface CmsBulkEditProcessingStarted {
   action: CmsActionType.processingStarted
   context_module: CmsContextModule.bulkEditFlow
-  value: number // total number of artworks being processed
+  value: number 
 }
 
 /**
@@ -193,13 +193,13 @@ export interface CmsBulkEditProcessingStarted {
  * {
  *   action: "processingCompleted",
  *   context_module: "Artworks - bulk edit",
- *   value: 24
+ *   value: 24  // total number of artworks successfully processed
  * }
  */
 export interface CmsBulkEditProcessingCompleted {
   action: CmsActionType.processingCompleted
   context_module: CmsContextModule.bulkEditFlow
-  value: number // total number of artworks successfully processed
+  value: number
 }
 
 /**
