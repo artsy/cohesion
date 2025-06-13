@@ -209,13 +209,13 @@ export interface CmsBulkEditProcessingCompleted {
  * {
  *   action: "bulkEditFailed",
  *   context_module: "Artworks - bulk edit",
- *   value: "Network error" // or any error message displayed to user
+ *   value: [ 'availability: must be "for sale", "sold" or "not for sale" for works available for purchase', "error2" ]
  * }
  */
 export interface CmsBulkEditFailed {
   action: CmsActionType.bulkEditFailed
   context_module: CmsContextModule.bulkEditFlow
-  value: string
+  value: string[]
 }
 
 export type CmsBulkEditFlow =
