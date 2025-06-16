@@ -55,7 +55,8 @@ export interface CmsBulkEditClickedEditPill {
  *   action: "click",
  *   context_module: "Artworks - bulk edit",
  *   label: "shortlist",
- *   value: 5, // how many artworks selected
+ *   value: 3, // how many artworks selected
+ *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
  * }
  * ```
  */
@@ -64,6 +65,7 @@ export interface CmsBulkEditClickedShortlistPill {
   context_module: CmsContextModule.bulkEditFlow
   label: "shortlist"
   value: number
+  artwork_ids: string[]
 }
 
 /**
@@ -194,12 +196,14 @@ export interface CmsBulkEditProcessingStarted {
  *   action: "processingCompleted",
  *   context_module: "Artworks - bulk edit",
  *   value: 24  // total number of artworks successfully processed
+ *   artwork_ids: ["artwork1", "artwork2"]
  * }
  */
 export interface CmsBulkEditProcessingCompleted {
   action: CmsActionType.processingCompleted
   context_module: CmsContextModule.bulkEditFlow
   value: number
+  artwork_ids: string[]
 }
 
 /**
@@ -209,13 +213,15 @@ export interface CmsBulkEditProcessingCompleted {
  * {
  *   action: "bulkEditFailed",
  *   context_module: "Artworks - bulk edit",
- *   value: [ 'availability: must be "for sale", "sold" or "not for sale" for works available for purchase', "error2" ]
+ *   value: [ 'availability: must be "for sale", "sold" or "not for sale" for works available for purchase', "error2" ],
+ *   artwork_ids: [ "artwork1", "artwork2" ]
  * }
  */
 export interface CmsBulkEditFailed {
   action: CmsActionType.bulkEditFailed
   context_module: CmsContextModule.bulkEditFlow
   value: string[]
+  artwork_ids: string[]
 }
 
 export type CmsBulkEditFlow =
