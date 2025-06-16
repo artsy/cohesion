@@ -1,3 +1,15 @@
+# v4.273.0 (Mon Jun 16 2025)
+
+#### 🚀  Enhancement
+
+- feat: Adds artwork_ids metadata to processing and shortlist bulk edit events [#606](https://github.com/artsy/cohesion/pull/606) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.272.2 (Fri Jun 13 2025)
 
 #### 🐛  Bug Fix
