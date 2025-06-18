@@ -16,6 +16,7 @@ import { CmsContextModule } from "../Values/CmsContextModule"
  *   context_module: "Artworks - bulk edit",
  *   label: "change availability",
  *   value: "on hold", // e.g. "on hold", "available", "not for sale"
+ *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
  * }
  * ```
  */
@@ -24,6 +25,7 @@ export interface CmsBulkEditClickedChangeAvailability {
   context_module: CmsContextModule.bulkEditFlow
   label: "change availability"
   value: string
+  artwork_ids: string[]
 }
 
 /**
