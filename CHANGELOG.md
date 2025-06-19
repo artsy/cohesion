@@ -1,3 +1,15 @@
+# v4.276.0 (Thu Jun 19 2025)
+
+#### 🚀  Enhancement
+
+- feat(DIA-1363): add marketingCollection to ScreenOwnerType [#609](https://github.com/artsy/cohesion/pull/609) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.275.0 (Thu Jun 19 2025)
 
 #### 🚀  Enhancement
