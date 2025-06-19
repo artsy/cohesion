@@ -16,6 +16,7 @@ import { CmsContextModule } from "../Values/CmsContextModule"
  *   context_module: "Artworks - bulk edit",
  *   label: "change availability",
  *   value: "on hold", // e.g. "on hold", "available", "not for sale"
+ *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
  * }
  * ```
  */
@@ -24,6 +25,7 @@ export interface CmsBulkEditClickedChangeAvailability {
   context_module: CmsContextModule.bulkEditFlow
   label: "change availability"
   value: string
+  artwork_ids: string[]
 }
 
 /**
@@ -173,7 +175,7 @@ export interface CmsBulkEditResolvedAllConflictsShown {
 }
 
 /**
- * Bluk edit flow processing started
+ * Bulk edit flow processing started
  *
  * Example:
  * {
@@ -195,14 +197,16 @@ export interface CmsBulkEditProcessingStarted {
  * {
  *   action: "processingCompleted",
  *   context_module: "Artworks - bulk edit",
- *   value: 24  // total number of artworks successfully processed
+ *   label: "change availability",
+ *   value: "on hold", // e.g. "on hold", "available", "not for sale"
  *   artwork_ids: ["artwork1", "artwork2"]
  * }
  */
 export interface CmsBulkEditProcessingCompleted {
   action: CmsActionType.processingCompleted
   context_module: CmsContextModule.bulkEditFlow
-  value: number
+  label: string
+  value: string
   artwork_ids: string[]
 }
 
