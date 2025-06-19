@@ -1,3 +1,15 @@
+# v4.274.0 (Thu Jun 19 2025)
+
+#### 🚀  Enhancement
+
+- feat: Additional metadata for processingCompleted and click availability bulk edit flow [#607](https://github.com/artsy/cohesion/pull/607) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.273.0 (Mon Jun 16 2025)
 
 #### 🚀  Enhancement
