@@ -365,6 +365,7 @@ export interface TappedFairGroup extends TappedEntityGroup {
  *    destination_screen_owner_type: "collectionsCategory",
  *    destination_screen_owner_id: "5359794d1a1e86c3740001f7",
  *    destination_screen_owner_slug: "artworks-under-1000",
+ *    destination_path: "/collection/artworks-under-1000"
  *    horizontal_slide_position: 1,
  *    type: "thumbnail"
  *  }
@@ -407,6 +408,7 @@ export interface TappedEntityGroup {
   destination_screen_owner_type?: ScreenOwnerType
   destination_screen_owner_id?: string
   destination_screen_owner_slug?: string
+  destination_path?: string
   curation_boost?: boolean
   horizontal_slide_position?: number
   module_height?: EntityModuleHeight
