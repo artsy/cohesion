@@ -1,3 +1,15 @@
+# v4.275.0 (Thu Jun 19 2025)
+
+#### 🚀  Enhancement
+
+- feat(DIA-1363): add optional destination_path field to TappedEntityGroup [#608](https://github.com/artsy/cohesion/pull/608) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.274.0 (Thu Jun 19 2025)
 
 #### 🚀  Enhancement
