@@ -1,3 +1,15 @@
+# v4.277.0 (Fri Jun 20 2025)
+
+#### 🚀  Enhancement
+
+- feat(batch-import): Add new edit event [#610](https://github.com/artsy/cohesion/pull/610) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.276.0 (Thu Jun 19 2025)
 
 #### 🚀  Enhancement
