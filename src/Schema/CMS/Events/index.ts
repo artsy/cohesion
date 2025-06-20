@@ -5,7 +5,6 @@ import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsShowFlow } from "./ShowFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 
-
 /**
  * List of valid schemas for CMS analytics actions
  *
@@ -29,7 +28,7 @@ export enum CmsActionType {
    * Corresponds to {@link SettingsFlow}
    */
   addedNewLocation = "addedNewLocation",
-  
+
   /**
    * Corresponds to {@link CmsBatchImportFlow}
    */
@@ -54,6 +53,11 @@ export enum CmsActionType {
    * Corresponds to {@link CmsBatchImportFlow}
    */
   csvImportError = "csvImportError",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  editedBatchImportField = "editedBatchImportField",
 
   /**
    * Corresponds to {@link SettingsFlow}

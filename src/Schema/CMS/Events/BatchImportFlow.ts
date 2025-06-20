@@ -182,6 +182,28 @@ export interface CmsBatchImportClickExit {
   label: "click exit"
 }
 
+/**
+ * Triggered when a partner edits a field in the batch import flow.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "editedBatchImportField",
+ *   context_module: "batchImportFlow",
+ *   context_page_owner_type: "batchImport",
+ *   context_page_owner_id: "67b646ecbe87376bfeb3f962",
+ *   is_error: true
+ * }
+ * ```
+ */
+export interface CmsBatchImportEditedBatchImportField {
+  action: CmsActionType.editedBatchImportField
+  context_module: CmsContextModule.batchImportFlow
+  context_page_owner_type: CmsOwnerType.batchImport
+  context_page_owner_id: string
+  is_error: boolean
+}
+
 export type CmsBatchImportFlow =
   | CmsBatchImportFlowClickImport
   | CmsBatchImportFlowClickAddCSV
@@ -189,3 +211,4 @@ export type CmsBatchImportFlow =
   | CmsBatchImportFlowShownMissingInformation
   | CmsBatchImportFlowArtistNeedsMatching
   | CmsBatchImportClickExit
+  | CmsBatchImportEditedBatchImportField
