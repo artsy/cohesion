@@ -1507,6 +1507,6 @@ export interface TappedBuyerProtection {
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
   context_screen_owner_id: string
-  destination_screen_owner_id: string
+  destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_slug: string
 }
