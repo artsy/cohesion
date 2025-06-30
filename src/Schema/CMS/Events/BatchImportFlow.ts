@@ -204,6 +204,39 @@ export interface CmsBatchImportEditedBatchImportField {
   is_error: boolean
 }
 
+/**
+ * Tracks invalid and missing columns at the beginning and the end of the Batch Import review step
+ *
+ * @example
+ * ```
+ * {
+    action: "batchImportTableContentSummary",
+    context: "batchImportReviewFinished",
+    context_module: "batchImportFlow",
+    context_page_owner_type: "batchImport",
+    context_page_owner_id: "67b646ecbe87376bfeb3f962",
+    values: {
+      artworkTitle": {
+        optional: false,
+        valid: 37,
+        missing: 6,
+        invalid: 0
+      },
+    }
+ * }
+ * ```
+ */
+
+export interface CmsBatchImportTableContentSummary {
+  action: CmsActionType.batchImportTableContentSummary
+  context: "batchImportReviewFinished"
+  context_module: CmsContextModule.batchImportFlow
+  context_page_owner_type: CmsOwnerType.batchImport
+  context_page_owner_id: string
+  values: Record<string, { optional: boolean; valid: number; missing: number; invalid: number }>
+}
+
+
 export type CmsBatchImportFlow =
   | CmsBatchImportFlowClickImport
   | CmsBatchImportFlowClickAddCSV
@@ -212,3 +245,4 @@ export type CmsBatchImportFlow =
   | CmsBatchImportFlowArtistNeedsMatching
   | CmsBatchImportClickExit
   | CmsBatchImportEditedBatchImportField
+  | CmsBatchImportTableContentSummary

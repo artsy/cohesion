@@ -35,6 +35,11 @@ export enum CmsActionType {
   artistNeedsMatching = "artistNeedsMatching",
 
   /**
+   * Corresponds to {@link CmsBatchImportTableContentSummary}
+   */
+  batchImportTableContentSummary = "batchImportTableContentSummary",
+
+  /**
    * Corresponds to {@link CmsBulkEditFlow}
    */
   bulkEditFailed = "bulkEditFailed",
