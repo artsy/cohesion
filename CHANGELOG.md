@@ -1,3 +1,15 @@
+# v4.278.0 (Mon Jun 30 2025)
+
+#### 🚀  Enhancement
+
+- fix: add destination type to TappedBuyerProtection [#611](https://github.com/artsy/cohesion/pull/611) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.277.0 (Fri Jun 20 2025)
 
 #### 🚀  Enhancement
