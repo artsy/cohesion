@@ -1,3 +1,15 @@
+# v4.279.0 (Mon Jun 30 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add batchImportTableContentSummary event [#612](https://github.com/artsy/cohesion/pull/612) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.278.0 (Mon Jun 30 2025)
 
 #### 🚀  Enhancement
