@@ -469,8 +469,8 @@ export interface OrderProgressionViewed {
  *  {
  *    action: "orderDetailsViewed",
  *    context_module: "ordersDetail"
- *    context_page_owner_type: "orders-detail",
- *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    context_owner_type: "orders-detail",
+ *    context_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    message_type: "CANCELLED" | "SHIPPING_EXPRESS" | ...
  *  }
  * ```
@@ -478,7 +478,7 @@ export interface OrderProgressionViewed {
 export interface OrderDetailsViewed {
   action: ActionType.orderDetailsViewed
   context_module: ContextModule
-  context_page_owner_type: OwnerType
-  context_page_owner_id: string
+  context_owner_type: OwnerType
+  context_owner_id: string
   message_type: string
 }
