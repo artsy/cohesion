@@ -1522,7 +1522,7 @@ export interface TappedBuyerProtection {
  *    action: "tappedImportFees",
  *    context_module: "OrdersDetail",
  *    context_page_owner_type: "orders-detail",
- *     context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_page_owner_type: "articles",
  *    destination_page_owner_slug: "How-are-taxes-and-customs-fees-calculated"
  *  }
