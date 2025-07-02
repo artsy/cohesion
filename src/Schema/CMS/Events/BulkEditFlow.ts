@@ -3,8 +3,8 @@
  * @packageDocumentation
  */
 
-import { CmsActionType } from "."
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsActionType } from "."
 
 /**
  * Partners clicked change availability pill
@@ -187,7 +187,7 @@ export interface CmsBulkEditResolvedAllConflictsShown {
 export interface CmsBulkEditProcessingStarted {
   action: CmsActionType.processingStarted
   context_module: CmsContextModule.bulkEditFlow
-  value: number 
+  value: number
 }
 
 /**

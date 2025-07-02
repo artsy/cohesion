@@ -233,9 +233,11 @@ export interface CmsBatchImportTableContentSummary {
   context_module: CmsContextModule.batchImportFlow
   context_page_owner_type: CmsOwnerType.batchImport
   context_page_owner_id: string
-  values: Record<string, { optional: boolean; valid: number; missing: number; invalid: number }>
+  values: Record<
+    string,
+    { optional: boolean; valid: number; missing: number; invalid: number }
+  >
 }
-
 
 export type CmsBatchImportFlow =
   | CmsBatchImportFlowClickImport
