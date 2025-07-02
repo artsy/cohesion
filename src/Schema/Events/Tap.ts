@@ -1525,6 +1525,7 @@ export interface TappedBuyerProtection {
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_screen_owner_type: "articles",
  *    destination_screen_owner_slug: "How-are-taxes-and-customs-fees-calculated"
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
  *  }
  * ```
  */
@@ -1535,4 +1536,5 @@ export interface TappedImportFees {
   context_screen_owner_id: string
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_slug: string
+  flow: string
 }
