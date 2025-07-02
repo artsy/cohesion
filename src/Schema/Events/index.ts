@@ -262,6 +262,7 @@ import {
   TappedFairCard,
   TappedFairGroup,
   TappedGlobalSearchBar,
+  TappedImportFees,
   TappedInfoBubble,
   TappedLearnMore,
   TappedLink,
@@ -511,6 +512,7 @@ export type Event =
   | TappedFairGroup
   | TappedFollowsGroup
   | TappedGlobalSearchBar
+  | TappedImportFees
   | TappedInboxConversation
   | TappedInfoBubble
   | TappedLearnMore
@@ -1535,6 +1537,10 @@ export enum ActionType {
    * Corresponds to {@link TappedHeroUnitGroup}
    */
   tappedHeroUnitGroup = "tappedHeroUnitGroup",
+  /**
+   * Corresponds to {@link TappedImportFees}
+   */
+  tappedImportFees = "tappedImportFees",
   /**
    * Corresponds to {@link TappedInboxConversation}
    */
