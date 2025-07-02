@@ -458,3 +458,27 @@ export interface OrderProgressionViewed {
   context_page_owner_id: string
   flow: string
 }
+
+/**
+ * A user views the order details page. Event used to track the displayed message
+ *
+ * This schema describes events sent to Segment from [[orderDetailsViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "orderDetailsViewed",
+ *    context_module: "ordersDetail"
+ *    context_page_owner_type: "orders-detail",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    message_type: "CANCELLED" | "SHIPPING_EXPRESS" | ...
+ *  }
+ * ```
+ */
+export interface OrderDetailsViewed {
+  action: ActionType.orderDetailsViewed
+  context_module: ContextModule
+  context_page_owner_type: OwnerType
+  context_page_owner_id: string
+  message_type: string
+}
