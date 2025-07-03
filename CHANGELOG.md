@@ -1,3 +1,15 @@
+# v4.280.0 (Thu Jul 03 2025)
+
+#### 🚀  Enhancement
+
+- feat: Orders Detail native app tracking [#613](https://github.com/artsy/cohesion/pull/613) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.279.0 (Mon Jun 30 2025)
 
 #### 🚀  Enhancement
