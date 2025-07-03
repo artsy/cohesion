@@ -181,6 +181,7 @@ import {
   ErrorMessageViewed,
   ExpressCheckoutViewed,
   ItemViewed,
+  OrderDetailsViewed,
   OrderProgressionViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
@@ -262,6 +263,7 @@ import {
   TappedFairCard,
   TappedFairGroup,
   TappedGlobalSearchBar,
+  TappedImportFees,
   TappedInfoBubble,
   TappedLearnMore,
   TappedLink,
@@ -441,6 +443,7 @@ export type Event =
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
   | OnboardingUserInputData
+  | OrderDetailsViewed
   | OrderProgressionViewed
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
@@ -511,6 +514,7 @@ export type Event =
   | TappedFairGroup
   | TappedFollowsGroup
   | TappedGlobalSearchBar
+  | TappedImportFees
   | TappedInboxConversation
   | TappedInfoBubble
   | TappedLearnMore
@@ -1220,6 +1224,10 @@ export enum ActionType {
    */
   onboardingUserInputData = "onboardingUserInputData",
   /**
+   * Corresponds to {@link OrderDetailsViewed}
+   */
+  orderDetailsViewed = "orderDetailsViewed",
+  /**
    * Corresponds to {@link OrderProgressionViewed}
    */
   orderProgressionViewed = "orderProgressionViewed",
@@ -1535,6 +1543,10 @@ export enum ActionType {
    * Corresponds to {@link TappedHeroUnitGroup}
    */
   tappedHeroUnitGroup = "tappedHeroUnitGroup",
+  /**
+   * Corresponds to {@link TappedImportFees}
+   */
+  tappedImportFees = "tappedImportFees",
   /**
    * Corresponds to {@link TappedInboxConversation}
    */
