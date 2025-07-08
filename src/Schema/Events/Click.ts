@@ -375,7 +375,7 @@ export interface ClickedMakeOffer {
  *  {
  *    action: "clickedContactGallery",
  *    context_owner_type: "Artwork" | "orders-detail"
- *    context_owner_id: "6164889300d643000db86504",
+ *    context_owner_id: "6164889300d643000db86504" | "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    context_owner_slug: "radna-segal-pearl",
  *    signal_label: "Limited-Time Offer",
  *  }
