@@ -5,6 +5,7 @@
  * @packageDocumentation
  */
 export enum ContextModule {
+  about = "about",
   aboutTheWork = "aboutTheWork",
   aboutThisAuction = "aboutThisAuction",
   account = "account",
