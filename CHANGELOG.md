@@ -1,3 +1,15 @@
+# v4.282.0 (Wed Jul 09 2025)
+
+#### 🚀  Enhancement
+
+- feat: adds about context module [#615](https://github.com/artsy/cohesion/pull/615) ([@dzucconi](https://github.com/dzucconi))
+
+#### Authors: 1
+
+- Damon ([@dzucconi](https://github.com/dzucconi))
+
+---
+
 # v4.281.0 (Wed Jul 09 2025)
 
 #### 🚀  Enhancement
