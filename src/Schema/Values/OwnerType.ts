@@ -314,6 +314,7 @@ export type ScreenOwnerType =
  * Owner types available in web/mobile web
  */
 export type PageOwnerType =
+  | OwnerType.about
   | OwnerType.activities
   | OwnerType.activity
   | OwnerType.alertConfirmation
