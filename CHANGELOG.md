@@ -1,3 +1,15 @@
+# v4.281.0 (Wed Jul 09 2025)
+
+#### 🚀  Enhancement
+
+- chore: EMI-2653 update clickedContactGallery schema [#614](https://github.com/artsy/cohesion/pull/614) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.280.0 (Thu Jul 03 2025)
 
 #### 🚀  Enhancement
