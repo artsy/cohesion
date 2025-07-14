@@ -325,6 +325,7 @@ export type PageOwnerType =
   | OwnerType.artists
   | OwnerType.artistSeries
   | OwnerType.artwork
+  | OwnerType.artworkRecommendations
   | OwnerType.auctions
   | OwnerType.collect
   | OwnerType.collection
