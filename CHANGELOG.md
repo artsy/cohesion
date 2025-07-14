@@ -1,3 +1,15 @@
+# v4.283.0 (Mon Jul 14 2025)
+
+#### 🚀  Enhancement
+
+- feat(onyx-1828): add artworkRecommendations as PageOwnerType [#616](https://github.com/artsy/cohesion/pull/616) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.282.0 (Wed Jul 09 2025)
 
 #### 🚀  Enhancement
