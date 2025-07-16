@@ -1,3 +1,15 @@
+# v4.284.0 (Wed Jul 16 2025)
+
+#### 🚀  Enhancement
+
+- chore: add price range onboarding events [#617](https://github.com/artsy/cohesion/pull/617) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.283.0 (Mon Jul 14 2025)
 
 #### 🚀  Enhancement
