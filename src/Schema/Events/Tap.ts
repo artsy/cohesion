@@ -1538,3 +1538,25 @@ export interface TappedImportFees {
   destination_screen_owner_slug: string
   flow: string
 }
+
+/**
+ * User taps on a Popover
+ *
+ *  This schema describes events sent to Segment from [[tappedPopover]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedPopover",
+ *    context_module: "bottomTabs",
+ *    context_screen_owner_type: "home",
+ *    type: "price-range-popover-home"
+ *  }
+ * ```
+ */
+export interface TappedPopover {
+  action: ActionType.tappedPopover
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  type: string
+}

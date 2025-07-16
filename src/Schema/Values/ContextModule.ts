@@ -69,6 +69,7 @@ export enum ContextModule {
   banner = "banner",
   bannerPopUp = "bannerPopUp",
   boothsTab = "boothsTab",
+  bottomTabs = "bottomTabs",
   browseFair = "browseFair",
   categoryRail = "categoryRail",
   cityGuideCard = "cityGuideCard",
@@ -285,6 +286,7 @@ export type AuthContextModule =
   | ContextModule.auctionTab
   | ContextModule.bannerPopUp
   | ContextModule.boothsTab
+  | ContextModule.bottomTabs
   | ContextModule.browseFair
   | ContextModule.categoryRail
   | ContextModule.collectionDescription
