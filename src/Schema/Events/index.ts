@@ -1452,6 +1452,10 @@ export enum ActionType {
    */
   tappedBid = "tappedBid",
   /**
+   * Corresponds to {@link TappedPopover}
+   */
+  tappedPopover = "tappedPopover",
+  /**
    * Corresponds to {@link TappedBrowseSimilarArtworks}
    */
   tappedBrowseSimilarArtworks = "tappedBrowseSimilarArtworks",
