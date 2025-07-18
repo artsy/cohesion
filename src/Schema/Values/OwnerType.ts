@@ -48,6 +48,7 @@ export enum OwnerType {
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctionResultsRail = "auctionResultsRail",
   auctions = "auctions",
+  basedOnYourRecentSaves = "basedOnYourRecentSaves",
   category = "category",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
@@ -212,6 +213,7 @@ export type ScreenOwnerType =
   | OwnerType.auctionResult
   | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
+  | OwnerType.basedOnYourRecentSaves
   | OwnerType.category
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
@@ -327,6 +329,7 @@ export type PageOwnerType =
   | OwnerType.artwork
   | OwnerType.artworkRecommendations
   | OwnerType.auctions
+  | OwnerType.basedOnYourRecentSaves
   | OwnerType.collect
   | OwnerType.collection
   | OwnerType.collections

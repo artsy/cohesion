@@ -68,6 +68,7 @@ export enum ContextModule {
   auctionTab = "auctionTab",
   banner = "banner",
   bannerPopUp = "bannerPopUp",
+  basedOnYourRecentSavesRail = "basedOnYourRecentSavesRail",
   boothsTab = "boothsTab",
   bottomTabs = "bottomTabs",
   browseFair = "browseFair",
