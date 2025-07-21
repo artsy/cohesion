@@ -1,3 +1,15 @@
+# v4.286.0 (Mon Jul 21 2025)
+
+#### 🚀  Enhancement
+
+- feat(onyx-1847): add tracking for recommended artists on Web [#619](https://github.com/artsy/cohesion/pull/619) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.285.0 (Fri Jul 18 2025)
 
 #### 🚀  Enhancement
