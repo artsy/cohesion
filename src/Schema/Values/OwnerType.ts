@@ -125,6 +125,7 @@ export enum OwnerType {
   profile = "profile",
   quickLinks = "quickLinks",
   recentlyViewed = "recentlyViewed",
+  recommendedArtists = "recommendedArtists",
   sale = "sale",
   saleInformation = "saleInformation",
   savedSearch = "savedSearch",
@@ -360,6 +361,7 @@ export type PageOwnerType =
   | OwnerType.partnerShowsArtworks
   | OwnerType.priceDatabase
   | OwnerType.profile
+  | OwnerType.recommendedArtists
   | OwnerType.sale
   | OwnerType.savedSearch
   | OwnerType.savedSearches
