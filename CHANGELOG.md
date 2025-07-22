@@ -1,3 +1,15 @@
+# v4.287.0 (Tue Jul 22 2025)
+
+#### 🚀  Enhancement
+
+- chore: add saved price range event [#621](https://github.com/artsy/cohesion/pull/621) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.286.0 (Mon Jul 21 2025)
 
 #### 🚀  Enhancement
