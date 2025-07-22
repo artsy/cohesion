@@ -213,6 +213,7 @@ import {
   TappedMyCollectionInsightsMedianAuctionRailItem,
 } from "./MyCollectionInsights"
 import { PromptForReview } from "./PromptForReview"
+import { SavedPriceRange } from "./SavedPriceRange"
 import {
   DeletedSavedSearch,
   EditedAlert,
@@ -456,6 +457,7 @@ export type Event =
   | SavedAddressViewed
   | SavedCookieConsentPreferences
   | SavedPaymentMethodViewed
+  | SavedPriceRange
   | Screen
   | SearchedPriceDatabase
   | SearchedWithNoResults
@@ -1279,6 +1281,10 @@ export enum ActionType {
    * Corresponds to {@link SavedPaymentMethodViewed}
    */
   savedPaymentMethodViewed = "savedPaymentMethodViewed",
+  /**
+   * Corresponds to {@link SavedPriceRange}
+   */
+  savedPriceRange = "savedPriceRange",
   /**
    * Corresponds to {@link Screen}
    */
