@@ -1,3 +1,15 @@
+# v4.288.0 (Wed Jul 23 2025)
+
+#### 🚀  Enhancement
+
+- feat(EMI-2488): update tappedContactGallery event [#622](https://github.com/artsy/cohesion/pull/622) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.287.0 (Tue Jul 22 2025)
 
 #### 🚀  Enhancement
