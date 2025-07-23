@@ -10,6 +10,30 @@ import { ActionType } from "."
  */
 
 /**
+ * A user taps on confirm alert to see fewer works by artist
+ *
+ * This schema describes events sent to Segment from [[Tapped3Dots]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tapped3Dots",
+ *    context_module: "infiniteDiscovery",
+ *    context_screen_owner_id: "artwork-id",
+ *    context_screen_owner_slug: "artwork-slug",
+ *    context_screen_owner_type: "infiniteDiscoveryArtwork"
+ *  }
+ * ```
+ */
+export interface Tapped3Dots {
+  action: ActionType.tapped3Dots
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
  * A user taps a grouping of articles on iOS
  *
  *  This schema describes events sent to Segment from [[tappedArticleGroup]]
@@ -647,6 +671,60 @@ export interface TappedRewind {
   context_screen_owner_id: string
   context_screen_owner_slug: string
   context_screen_owner_type: ScreenOwnerType
+}
+
+/**
+ * A user taps on confirm alert to see fewer works by artist
+ *
+ * This schema describes events sent to Segment from [[tappedConfirmSeeFewerWorks]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedConfirmSeeFewerWorks",
+ *    artist_id: "artist-id",
+ *    context_module: "infiniteDiscovery",
+ *    context_screen_owner_id: "artwork-id",
+ *    context_screen_owner_slug: "artwork-slug",
+ *    context_screen_owner_type: "infiniteDiscoveryArtwork"
+ *  }
+ * ```
+ */
+export interface TappedConfirmSeeFewerWorks {
+  action: ActionType.tappedConfirmSeeFewerWorks
+  artist_id: string
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
+ * A user taps on see fewer works by artist button
+ *
+ * This schema describes events sent to Segment from [[tappedSeeFewerWorks]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedSeeFewerWorks",
+ *    artist_id: "artist-id",
+ *    context_module: "infiniteDiscovery",
+ *    context_screen_owner_id: "artwork-id",
+ *    context_screen_owner_slug: "artwork-slug",
+ *    context_screen_owner_type: "infiniteDiscoveryArtwork"
+ *    subject: ""See fewer works by this artist",
+ *  }
+ * ```
+ */
+export interface TappedSeeFewerWorks {
+  action: ActionType.tappedSeeFewerWorks
+  artist_id: string
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+  subject: string
 }
 
 /**

@@ -239,6 +239,7 @@ import { ClickedOpenInNewTabButton, ClickedShareButton, Share } from "./Share"
 import { SwipedInfiniteDiscoveryArtwork, SwipedUp } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
+  Tapped3Dots,
   TappedActivityGroup,
   TappedArticleGroup,
   TappedArticleShare,
@@ -256,6 +257,7 @@ import {
   TappedChangePaymentMethod,
   TappedClearTask,
   TappedCollectionGroup,
+  TappedConfirmSeeFewerWorks,
   TappedConsign,
   TappedConsignmentInquiry,
   TappedContactGallery,
@@ -274,6 +276,7 @@ import {
   TappedNavigationTab,
   TappedPartnerCard,
   TappedPromoSpace,
+  TappedSeeFewerWorks,
   TappedSell,
   TappedSellArtwork,
   TappedShare,
@@ -484,6 +487,7 @@ export type Event =
   | SuccessfullyLoggedIn
   | SwipedInfiniteDiscoveryArtwork
   | SwipedUp
+  | Tapped3Dots
   | TappedActivityGroup
   | TappedAlertsGroup
   | TappedArticleGroup
@@ -505,6 +509,7 @@ export type Event =
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
   | TappedCollectionGroup
+  | TappedConfirmSeeFewerWorks
   | TappedConsign
   | TappedConsignmentInquiry
   | TappedContactGallery
@@ -539,6 +544,7 @@ export type Event =
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
   | TappedRequestPriceEstimate
+  | TappedSeeFewerWorks
   | TappedSell
   | TappedSellArtwork
   | TappedShare
@@ -1410,6 +1416,11 @@ export enum ActionType {
    */
   swipedUp = "swipedUp",
   /**
+   * Corresponds to {@link Tapped3Dots}
+   */
+  tapped3Dots = "tapped3Dots",
+  /**
+  /**
    * Corresponds to {@link TappedActivityGroup}
    */
   tappedActivityGroup = "tappedActivityGroup",
@@ -1653,6 +1664,14 @@ export enum ActionType {
    * Corresponds to {@link TappedRewind}
    */
   tappedRewind = "tappedRewind",
+  /**
+   * Corresponds to {@link TappedConfirmSeeFewerWorks}
+   */
+  tappedConfirmSeeFewerWorks = "tappedConfirmSeeFewerWorks",
+  /**
+   * Corresponds to {@link TappedSeeFewerWorks}
+   */
+  tappedSeeFewerWorks = "tappedSeeFewerWorks",
   /**
    * Corresponds to {@link TappedSell}
    */
