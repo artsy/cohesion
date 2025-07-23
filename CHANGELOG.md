@@ -1,3 +1,15 @@
+# v4.289.0 (Wed Jul 23 2025)
+
+#### 🚀  Enhancement
+
+- feat(DIA-1416): add negative signals tracking [#623](https://github.com/artsy/cohesion/pull/623) ([@araujobarret](https://github.com/araujobarret))
+
+#### Authors: 1
+
+- Carlos ([@araujobarret](https://github.com/araujobarret))
+
+---
+
 # v4.288.0 (Wed Jul 23 2025)
 
 #### 🚀  Enhancement
