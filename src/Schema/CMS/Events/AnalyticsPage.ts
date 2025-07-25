@@ -1,0 +1,123 @@
+/**
+ * Schemas describing CMS Analytics events
+ * @packageDocumentation
+ */
+
+import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsOwnerType } from "../Values/CmsOwnerType"
+import { CmsActionType } from "./index"
+
+/**
+ * A partner has changed the time period for a graph.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "changedTimePeriod",
+ *   context_module: "mostViewed" | "publishedArtworks" | "views" | "inquiries" | "sales" | "audience",
+ *   context_page_owner_type: "analytics",
+ *   time_period_start: -28 | -112 | -365,
+ *   time_period_end: 0
+ * }
+ * ```
+ */
+export interface CmsAnalyticsPageChangedTimePeriod {
+  action: CmsActionType.changedTimePeriod
+  context_module: CmsContextModule
+  context_page_owner_type: CmsOwnerType.analytics
+  time_period_start: number
+  time_period_end: number
+}
+
+/**
+ * A partner clicks on an entity in the "Most Viewed" section
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedMostViewed",
+ *   context_module: "mostViewed"
+ *   context_page_owner_type: "analytics",
+ *   destination_page_owner_type: "artworks" | "show" | "artist" | "viewing-room",
+ *   position: 0 | 1 | ... | 9
+ * }
+ * ```
+ */
+export interface CmsAnalyticsPageClickedMostViewed {
+  action: CmsActionType.clickedMostViewed
+  context_module: CmsContextModule
+  context_page_owner_type: CmsOwnerType.analytics
+  destination_page_owner_type: string
+  position: number
+}
+
+/**
+ * A partner views a graph on the analytics page
+ *
+ * @example
+ * ```
+ * {
+ *   action: "viewedGraph",
+ *   context_module: "mostViewed" | "publishedArtworks" | "views" | "inquiries" | "sales" | "audience",
+ *   context_page_owner_type: "analytics",
+ *   graph_type: "cumulative_line" | "donut"
+ * }
+ * ```
+ */
+export interface CmsAnalyticsPageViewedGraph {
+  action: CmsActionType.viewedGraph
+  context_module: CmsContextModule
+  context_page_owner_type: CmsOwnerType.analytics
+  graph_type: string
+}
+
+/**
+ * A partner views a datapoint on a graph on the analytics page
+ *
+ * @example
+ * ```
+ * {
+ *   action: "viewedGraphDatapoint",
+ *   context_module: "mostViewed" | "publishedArtworks" | "views" | "inquiries" | "sales" | "audience",
+ *   context_page_owner_type: "analytics",
+ *   graph_type: "cumulative_line" | "donut"
+ *   datapoint_bucket_size?: "daily" | "weekly" | "monthly" | null
+ *   datapoint_is_other?: true | false | null
+ * }
+ * ```
+ */
+export interface CmsAnalyticsPageViewedGraphDatapoint {
+  action: CmsActionType.viewedGraphDatapoint
+  context_module: CmsContextModule
+  context_page_owner_type: CmsOwnerType.analytics
+  graph_type: string
+  datapoint_bucket_size?: string
+  datapoint_is_other?: boolean
+}
+
+/**
+ * A partner views a tooltip on the analytics page
+ *
+ * @example
+ * ```
+ * {
+ *   action: "viewedTooltip",
+ *   context_module: "mostViewed"
+ *   context_page_owner_type: "analytics",
+ *   type: "explanatory" | "response-time" | "response-time-score"
+ * }
+ * ```
+ */
+export interface CmsAnalyticsPageViewedTooltip {
+  action: CmsActionType.viewedTooltip
+  context_module: CmsContextModule.analyticsMostViewed
+  context_page_owner_type: CmsOwnerType.analytics
+  type: string
+}
+
+export type CmsAnalyticsPage =
+  | CmsAnalyticsPageChangedTimePeriod
+  | CmsAnalyticsPageClickedMostViewed
+  | CmsAnalyticsPageViewedGraph
+  | CmsAnalyticsPageViewedGraphDatapoint
+  | CmsAnalyticsPageViewedTooltip

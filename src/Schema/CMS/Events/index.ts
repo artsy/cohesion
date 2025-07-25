@@ -1,3 +1,4 @@
+import { CmsAnalyticsPage } from "./AnalyticsPage"
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
@@ -11,6 +12,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
  * Each event describes one ActionType
  */
 export type CmsEvent =
+  | CmsAnalyticsPage
   | CmsArtworkFilter
   | CmsBulkEditFlow
   | CmsBatchImportFlow
@@ -43,6 +45,16 @@ export enum CmsActionType {
    * Corresponds to {@link CmsBulkEditFlow}
    */
   bulkEditFailed = "bulkEditFailed",
+
+  /**
+   * Corresponds to {@link CmsAnalyticsPage}
+   */
+  changedTimePeriod = "changedTimePeriod",
+
+  /**
+   * Corresponds to {@link CmsAnalytics}
+   */
+  clickedMostViewed = "clickedMostViewed",
 
   /**
    * Corresponds to {@link CmsArtworkFilter}
@@ -103,4 +115,19 @@ export enum CmsActionType {
    * Corresponds to {@link BatchImportFlow}
    */
   shownMissingInformation = "shownMissingInformation",
+
+  /**
+   * Corresponds to {@link CmsAnalytics}
+   */
+  viewedGraph = "viewedGraph",
+
+  /**
+   * Corresponds to {@link CmsAnalytics}
+   */
+  viewedGraphDatapoint = "viewedGraphDatapoint",
+
+  /**
+   * Corresponds to {@link CmsAnalytics}
+   */
+  viewedTooltip = "viewedTooltip",
 }
