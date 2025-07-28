@@ -1,3 +1,15 @@
+# v4.290.0 (Mon Jul 28 2025)
+
+#### 🚀  Enhancement
+
+- feat: CMS Analytics Page tracking [#624](https://github.com/artsy/cohesion/pull/624) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.289.0 (Wed Jul 23 2025)
 
 #### 🚀  Enhancement
