@@ -30,6 +30,26 @@ export interface CmsAnalyticsPageChangedTimePeriod {
 }
 
 /**
+ * A partner clicks on the CTA below a graph
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedGraphCTA",
+ *   context_module: "publishedArtworks" | "inquiries" | "sales",
+ *   context_page_owner_type: "analytics",
+ *   destination_page_owner_type: "artworks" | "conversations" | "orders"
+ * }
+ * ```
+ */
+export interface CmsAnalyticsPageClickedGraphCTA {
+  action: CmsActionType.clickedGraphCTA
+  context_module: CmsContextModule
+  context_page_owner_type: CmsOwnerType.analytics
+  destination_page_owner_type: string
+}
+
+/**
  * A partner clicks on an entity in the "Most Viewed" section
  *
  * @example
@@ -117,6 +137,7 @@ export interface CmsAnalyticsPageViewedTooltip {
 
 export type CmsAnalyticsPage =
   | CmsAnalyticsPageChangedTimePeriod
+  | CmsAnalyticsPageClickedGraphCTA
   | CmsAnalyticsPageClickedMostViewed
   | CmsAnalyticsPageViewedGraph
   | CmsAnalyticsPageViewedGraphDatapoint

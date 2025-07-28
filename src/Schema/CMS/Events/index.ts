@@ -54,6 +54,11 @@ export enum CmsActionType {
   /**
    * Corresponds to {@link CmsAnalytics}
    */
+  clickedGraphCTA = "clickedGraphCTA",
+
+  /**
+   * Corresponds to {@link CmsAnalytics}
+   */
   clickedMostViewed = "clickedMostViewed",
 
   /**
