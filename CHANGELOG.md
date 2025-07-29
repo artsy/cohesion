@@ -1,3 +1,15 @@
+# v4.291.0 (Tue Jul 29 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add ClickedGraphCTA [#625](https://github.com/artsy/cohesion/pull/625) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.290.0 (Mon Jul 28 2025)
 
 #### 🚀  Enhancement
