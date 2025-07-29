@@ -1,6 +1,7 @@
 import { CmsAnalyticsPage } from "./AnalyticsPage"
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
+import { CmsBrowseGalleries } from "./BrowseGalleries"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsShowFlow } from "./ShowFlow"
@@ -14,6 +15,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 export type CmsEvent =
   | CmsAnalyticsPage
   | CmsArtworkFilter
+  | CmsBrowseGalleries
   | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
@@ -135,4 +137,39 @@ export enum CmsActionType {
    * Corresponds to {@link CmsAnalytics}
    */
   viewedTooltip = "viewedTooltip",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedPartnerWithArtsy = "clickedPartnerWithArtsy",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedGalleryInsights = "clickedGalleryInsights",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedLocationFilter = "clickedLocationFilter",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedSpecialtiesFilter = "clickedSpecialtiesFilter",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedGalleriesFilter = "clickedGalleriesFilter",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedGalleryCard = "clickedGalleryCard",
+
+  /**
+   * Corresponds to {@link CmsBrowseGalleries}
+   */
+  clickedFollowGallery = "clickedFollowGallery",
 }

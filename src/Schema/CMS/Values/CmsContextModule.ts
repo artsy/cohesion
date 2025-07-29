@@ -20,4 +20,7 @@ export enum CmsContextModule {
   uploads = "Uploads",
   settings = "Settings",
   showsInstallShots = "Shows - Install shots",
+  browseGalleriesHeader = "browseGalleriesHeader",
+  browseGalleriesFilters = "browseGalleriesFilters",
+  browseGalleriesGrid = "browseGalleriesGrid",
 }
