@@ -1,3 +1,15 @@
+# v4.292.0 (Thu Jul 31 2025)
+
+#### 🚀  Enhancement
+
+- chore: Analytics CMS fixes [#627](https://github.com/artsy/cohesion/pull/627) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.291.0 (Tue Jul 29 2025)
 
 #### 🚀  Enhancement
