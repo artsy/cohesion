@@ -14,7 +14,7 @@ import { CmsActionType } from "./index"
  * ```
  * {
  *   action: "changedTimePeriod",
- *   context_module: "mostViewed" | "publishedArtworks" | "views" | "inquiries" | "sales" | "audience",
+ *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
  *   time_period_start: -28 | -112 | -365,
  *   time_period_end: 0
@@ -36,7 +36,7 @@ export interface CmsAnalyticsPageChangedTimePeriod {
  * ```
  * {
  *   action: "clickedGraphCTA",
- *   context_module: "publishedArtworks" | "inquiries" | "sales",
+ *   context_module: "analyticsPublishedArtworks" | "analyticsInquiries" | "analyticsSales",
  *   context_page_owner_type: "analytics",
  *   destination_page_owner_type: "artworks" | "conversations" | "orders"
  * }
@@ -56,7 +56,7 @@ export interface CmsAnalyticsPageClickedGraphCTA {
  * ```
  * {
  *   action: "clickedMostViewed",
- *   context_module: "mostViewed"
+ *   context_module: "analyticsMostViewed"
  *   context_page_owner_type: "analytics",
  *   destination_page_owner_type: "artworks" | "show" | "artist" | "viewing-room",
  *   position: 0 | 1 | ... | 9
@@ -65,7 +65,7 @@ export interface CmsAnalyticsPageClickedGraphCTA {
  */
 export interface CmsAnalyticsPageClickedMostViewed {
   action: CmsActionType.clickedMostViewed
-  context_module: CmsContextModule
+  context_module: CmsContextModule.analyticsMostViewed
   context_page_owner_type: CmsOwnerType.analytics
   destination_page_owner_type: string
   position: number
@@ -78,7 +78,7 @@ export interface CmsAnalyticsPageClickedMostViewed {
  * ```
  * {
  *   action: "viewedGraph",
- *   context_module: "mostViewed" | "publishedArtworks" | "views" | "inquiries" | "sales" | "audience",
+ *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
  *   graph_type: "cumulative_line" | "donut"
  * }
@@ -98,7 +98,7 @@ export interface CmsAnalyticsPageViewedGraph {
  * ```
  * {
  *   action: "viewedGraphDatapoint",
- *   context_module: "mostViewed" | "publishedArtworks" | "views" | "inquiries" | "sales" | "audience",
+ *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
  *   graph_type: "cumulative_line" | "donut"
  *   datapoint_bucket_size?: "daily" | "weekly" | "monthly" | null
@@ -122,7 +122,7 @@ export interface CmsAnalyticsPageViewedGraphDatapoint {
  * ```
  * {
  *   action: "viewedTooltip",
- *   context_module: "mostViewed"
+ *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
  *   type: "explanatory" | "response-time" | "response-time-score"
  * }
@@ -130,7 +130,7 @@ export interface CmsAnalyticsPageViewedGraphDatapoint {
  */
 export interface CmsAnalyticsPageViewedTooltip {
   action: CmsActionType.viewedTooltip
-  context_module: CmsContextModule.analyticsMostViewed
+  context_module: CmsContextModule
   context_page_owner_type: CmsOwnerType.analytics
   type: string
 }
