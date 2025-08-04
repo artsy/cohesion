@@ -7,18 +7,36 @@ import { CmsContextModule } from "../Values/CmsContextModule"
 import { CmsActionType } from "."
 
 /**
- * Partners clicked change availability pill
+ * Generic click event in the bulk edit flow.
  *
  * @example
- * ```
  * {
  *   action: "click",
  *   context_module: "Artworks - bulk edit",
- *   label: "change availability",
- *   value: "on hold", // e.g. "on hold", "available", "not for sale"
+ *   label: "shortlist",
+ *   value: 3,
  *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
  * }
- * ```
+ */
+export type CmsBulkEditClickLabel =
+  | "change availability"
+  | "bulk edit"
+  | "shortlist"
+  | "add to show"
+  | "resolve all conflicts"
+  | "confirm edit"
+  | "cancel"
+
+export interface CmsBulkEditClickedEvent {
+  action: "click"
+  context_module: CmsContextModule.bulkEditFlow
+  label: CmsBulkEditClickLabel
+  value?: string | number
+  artwork_ids?: string[]
+}
+
+/**
+ * @deprecated Use `CmsBulkEditClickedEvent` instead.
  */
 export interface CmsBulkEditClickedChangeAvailability {
   action: "click"
@@ -29,17 +47,7 @@ export interface CmsBulkEditClickedChangeAvailability {
 }
 
 /**
- * Partners clicked bulk edit pill
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "bulk edit",
- *   value: 5, // how many artworks selected
- * }
- * ```
+ * @deprecated Use `CmsBulkEditClickedEvent` instead.
  */
 export interface CmsBulkEditClickedEditPill {
   action: "click"
@@ -49,18 +57,7 @@ export interface CmsBulkEditClickedEditPill {
 }
 
 /**
- * Partners clicked shortlist pill
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "shortlist",
- *   value: 3, // how many artworks selected
- *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
- * }
- * ```
+ * @deprecated Use `CmsBulkEditClickedEvent` instead.
  */
 export interface CmsBulkEditClickedShortlistPill {
   action: "click"
@@ -71,16 +68,7 @@ export interface CmsBulkEditClickedShortlistPill {
 }
 
 /**
- * Partners clicked resolve all conflicts link
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "resolve all conflicts",
- * }
- * ```
+ * @deprecated Use `CmsBulkEditClickedEvent` instead.
  */
 export interface CmsBulkEditClickedResolveAllConflicts {
   action: "click"
@@ -89,16 +77,7 @@ export interface CmsBulkEditClickedResolveAllConflicts {
 }
 
 /**
- * Partners clicked confirm edits button
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "confirm edit",
- * }
- * ```
+ * @deprecated Use `CmsBulkEditClickedEvent` instead.
  */
 export interface CmsBulkEditClickedConfirmEdits {
   action: "click"
@@ -107,16 +86,7 @@ export interface CmsBulkEditClickedConfirmEdits {
 }
 
 /**
- * Partners clicked cancel button in bulk edit drawer
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "cancel",
- * }
- * ```
+ * @deprecated Use `CmsBulkEditClickedEvent` instead.
  */
 export interface CmsBulkEditClickedCancelEdits {
   action: "click"
@@ -133,7 +103,6 @@ export interface CmsBulkEditClickedCancelEdits {
  *   action: "shownMaxEditLimitReached",
  *   context_module: "Artworks - bulk edit",
  * }
- * ```
  */
 export interface CmsBulkEditMaxEditLimitReachedShown {
   action: CmsActionType.shownMaxEditLimitReached
@@ -150,7 +119,6 @@ export interface CmsBulkEditMaxEditLimitReachedShown {
  *   context_module: "Artworks - bulk edit",
  *   values: ["Location, Availability"]
  * }
- * ```
  */
 export interface CmsBulkEditConflictsShown {
   action: CmsActionType.shownConflicts
@@ -167,7 +135,6 @@ export interface CmsBulkEditConflictsShown {
  *   action: "shownResolvedAllConflicts",
  *   context_module: "Artworks - bulk edit",
  * }
- * ```
  */
 export interface CmsBulkEditResolvedAllConflictsShown {
   action: CmsActionType.shownResolvedAllConflicts
@@ -229,15 +196,18 @@ export interface CmsBulkEditFailed {
 }
 
 export type CmsBulkEditFlow =
-  | CmsBulkEditClickedCancelEdits
+  | CmsBulkEditClickedEvent
+  // Deprecated click event types
   | CmsBulkEditClickedChangeAvailability
-  | CmsBulkEditClickedConfirmEdits
   | CmsBulkEditClickedEditPill
-  | CmsBulkEditClickedResolveAllConflicts
   | CmsBulkEditClickedShortlistPill
-  | CmsBulkEditConflictsShown
-  | CmsBulkEditFailed
+  | CmsBulkEditClickedResolveAllConflicts
+  | CmsBulkEditClickedConfirmEdits
+  | CmsBulkEditClickedCancelEdits
+  // Non-click event types
   | CmsBulkEditMaxEditLimitReachedShown
-  | CmsBulkEditProcessingCompleted
-  | CmsBulkEditProcessingStarted
+  | CmsBulkEditConflictsShown
   | CmsBulkEditResolvedAllConflictsShown
+  | CmsBulkEditProcessingStarted
+  | CmsBulkEditProcessingCompleted
+  | CmsBulkEditFailed
