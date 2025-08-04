@@ -113,15 +113,15 @@ export interface ProgressiveOnboardingTooltipViewed {
  *  ```
  *  {
  *    action: "viewedToast",
- *    context_module: "artworkRecommendations",
- *    context_screen_owner_type: "artworkGrid",
+ *    context_module: "artworkGrid",
+ *    context_screen_owner_type: "artworkRecommendations",
  *    subject: "Set an artwork budget in your profile at any time."
  *  }
  * ```
  */
 export interface ViewedToast {
   action: ActionType.viewedToast
-  context_module: ContextModule
+  context_module?: ContextModule
   context_screen_owner_type: OwnerType
   subject: string
 }

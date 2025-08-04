@@ -1397,7 +1397,7 @@ export interface TappedTaskGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedToast",
- *    context_module : "infiniteDiscovery",
+ *    context_module: "infiniteDiscovery",
  *    context_screen_owner_type: "Home",
  *    destination_screen_owner_type: "Saves",
  *    subject: "Tap here to navigate to your Saves area in your profile."
@@ -1406,7 +1406,7 @@ export interface TappedTaskGroup extends TappedEntityGroup {
  */
 export interface TappedToast {
   action: ActionType.tappedToast
-  context_module: ContextModule
+  context_module?: ContextModule
   context_screen_owner_type: ScreenOwnerType
   destination_screen_owner_type?: ScreenOwnerType
   subject?: string
