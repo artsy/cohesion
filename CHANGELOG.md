@@ -1,3 +1,15 @@
+# v4.293.0 (Mon Aug 04 2025)
+
+#### 🚀  Enhancement
+
+- feat: add ViewedToast interface [#628](https://github.com/artsy/cohesion/pull/628) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.292.0 (Thu Jul 31 2025)
 
 #### 🚀  Enhancement
