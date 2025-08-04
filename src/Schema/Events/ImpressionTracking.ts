@@ -122,7 +122,7 @@ export interface ProgressiveOnboardingTooltipViewed {
 export interface ViewedToast {
   action: ActionType.viewedToast
   context_module: ContextModule
-  context_screen_owner_type?: OwnerType
+  context_screen_owner_type: OwnerType
   subject: string
 }
 
