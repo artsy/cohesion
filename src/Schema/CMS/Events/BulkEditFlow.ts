@@ -36,65 +36,6 @@ export interface CmsBulkEditClickedEvent {
 }
 
 /**
- * @deprecated Use `CmsBulkEditClickedEvent` instead.
- */
-export interface CmsBulkEditClickedChangeAvailability {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "change availability"
-  value: string
-  artwork_ids: string[]
-}
-
-/**
- * @deprecated Use `CmsBulkEditClickedEvent` instead.
- */
-export interface CmsBulkEditClickedEditPill {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "bulk edit"
-  value: number
-}
-
-/**
- * @deprecated Use `CmsBulkEditClickedEvent` instead.
- */
-export interface CmsBulkEditClickedShortlistPill {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "shortlist"
-  value: number
-  artwork_ids: string[]
-}
-
-/**
- * @deprecated Use `CmsBulkEditClickedEvent` instead.
- */
-export interface CmsBulkEditClickedResolveAllConflicts {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "resolve all conflicts"
-}
-
-/**
- * @deprecated Use `CmsBulkEditClickedEvent` instead.
- */
-export interface CmsBulkEditClickedConfirmEdits {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "confirm edit"
-}
-
-/**
- * @deprecated Use `CmsBulkEditClickedEvent` instead.
- */
-export interface CmsBulkEditClickedCancelEdits {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "cancel"
-}
-
-/**
  * A partner has seen the max edit limit reached tool tip.
  *
  * @example
@@ -197,14 +138,6 @@ export interface CmsBulkEditFailed {
 
 export type CmsBulkEditFlow =
   | CmsBulkEditClickedEvent
-  // Deprecated click event types
-  | CmsBulkEditClickedChangeAvailability
-  | CmsBulkEditClickedEditPill
-  | CmsBulkEditClickedShortlistPill
-  | CmsBulkEditClickedResolveAllConflicts
-  | CmsBulkEditClickedConfirmEdits
-  | CmsBulkEditClickedCancelEdits
-  // Non-click event types
   | CmsBulkEditMaxEditLimitReachedShown
   | CmsBulkEditConflictsShown
   | CmsBulkEditResolvedAllConflictsShown
