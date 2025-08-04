@@ -193,6 +193,7 @@ import {
   ShippingEstimateViewed,
   TooltipViewed,
   ValidationAddressViewed,
+  ViewedToast,
 } from "./ImpressionTracking"
 import {
   AddCollectedArtwork,
@@ -573,6 +574,7 @@ export type Event =
   | ViewedArtworkList
   | ViewedSharedArtworkList
   | ViewedVideo
+  | ViewedToast
   | VisitMyCollection
   | VisitMyCollectionOnboardingSlide
 
@@ -1824,6 +1826,10 @@ export enum ActionType {
    * Corresponds to {@link ViewedVideo}
    */
   viewedVideo = "viewedVideo",
+  /**
+   * Corresponds to {@link ViewedToast}
+   */
+  viewedToast = "viewedToast",
   /**
    * Corresponds to {@link visitMyCollection}
    */
