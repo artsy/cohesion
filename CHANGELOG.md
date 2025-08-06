@@ -1,3 +1,15 @@
+# v4.295.0 (Wed Aug 06 2025)
+
+#### 🚀  Enhancement
+
+- chore(refactor): Make a generic click event for batch edits, mark others for deprecation [#629](https://github.com/artsy/cohesion/pull/629) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.294.0 (Wed Aug 06 2025)
 
 #### 🚀  Enhancement
