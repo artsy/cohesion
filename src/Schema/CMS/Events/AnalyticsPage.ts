@@ -56,7 +56,7 @@ export interface CmsAnalyticsPageClickedGraphCTA {
  * ```
  * {
  *   action: "clickedMostViewed",
- *   context_module: "analyticsMostViewed"
+ *   context_module: "analyticsMostViewed",
  *   context_page_owner_type: "analytics",
  *   destination_page_owner_type: "artworks" | "show" | "artist" | "viewing-room",
  *   position: 0 | 1 | ... | 9
@@ -80,7 +80,7 @@ export interface CmsAnalyticsPageClickedMostViewed {
  *   action: "viewedGraph",
  *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
- *   graph_type: "cumulative_line" | "donut"
+ *   graph_type: "cumulative_line" | "donut" | "horizontal_bar"
  * }
  * ```
  */
@@ -100,8 +100,8 @@ export interface CmsAnalyticsPageViewedGraph {
  *   action: "viewedGraphDatapoint",
  *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
- *   graph_type: "cumulative_line" | "donut"
- *   datapoint_bucket_size?: "daily" | "weekly" | "monthly" | null
+ *   graph_type: "cumulative_line" | "donut" | "horizontal_bar",
+ *   datapoint_bucket_size?: "daily" | "weekly" | "monthly" | null,
  *   datapoint_is_other?: true | false | null
  * }
  * ```
