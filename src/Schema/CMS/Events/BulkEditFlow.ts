@@ -7,121 +7,32 @@ import { CmsContextModule } from "../Values/CmsContextModule"
 import { CmsActionType } from "."
 
 /**
- * Partners clicked change availability pill
+ * Generic click event in the bulk edit flow.
  *
  * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "change availability",
- *   value: "on hold", // e.g. "on hold", "available", "not for sale"
- *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
- * }
- * ```
- */
-export interface CmsBulkEditClickedChangeAvailability {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "change availability"
-  value: string
-  artwork_ids: string[]
-}
-
-/**
- * Partners clicked bulk edit pill
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "bulk edit",
- *   value: 5, // how many artworks selected
- * }
- * ```
- */
-export interface CmsBulkEditClickedEditPill {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "bulk edit"
-  value: number
-}
-
-/**
- * Partners clicked shortlist pill
- *
- * @example
- * ```
  * {
  *   action: "click",
  *   context_module: "Artworks - bulk edit",
  *   label: "shortlist",
- *   value: 3, // how many artworks selected
+ *   value: 3,
  *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
  * }
- * ```
  */
-export interface CmsBulkEditClickedShortlistPill {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "shortlist"
-  value: number
-  artwork_ids: string[]
-}
+export type CmsBulkEditClickLabel =
+  | "change availability"
+  | "bulk edit"
+  | "shortlist"
+  | "add to show"
+  | "resolve all conflicts"
+  | "confirm edit"
+  | "cancel"
 
-/**
- * Partners clicked resolve all conflicts link
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "resolve all conflicts",
- * }
- * ```
- */
-export interface CmsBulkEditClickedResolveAllConflicts {
+export interface CmsBulkEditClickedEvent {
   action: "click"
   context_module: CmsContextModule.bulkEditFlow
-  label: "resolve all conflicts"
-}
-
-/**
- * Partners clicked confirm edits button
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "confirm edit",
- * }
- * ```
- */
-export interface CmsBulkEditClickedConfirmEdits {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "confirm edit"
-}
-
-/**
- * Partners clicked cancel button in bulk edit drawer
- *
- * @example
- * ```
- * {
- *   action: "click",
- *   context_module: "Artworks - bulk edit",
- *   label: "cancel",
- * }
- * ```
- */
-export interface CmsBulkEditClickedCancelEdits {
-  action: "click"
-  context_module: CmsContextModule.bulkEditFlow
-  label: "cancel"
+  label: CmsBulkEditClickLabel
+  value?: string | number
+  artwork_ids?: string[]
 }
 
 /**
@@ -133,7 +44,6 @@ export interface CmsBulkEditClickedCancelEdits {
  *   action: "shownMaxEditLimitReached",
  *   context_module: "Artworks - bulk edit",
  * }
- * ```
  */
 export interface CmsBulkEditMaxEditLimitReachedShown {
   action: CmsActionType.shownMaxEditLimitReached
@@ -150,7 +60,6 @@ export interface CmsBulkEditMaxEditLimitReachedShown {
  *   context_module: "Artworks - bulk edit",
  *   values: ["Location, Availability"]
  * }
- * ```
  */
 export interface CmsBulkEditConflictsShown {
   action: CmsActionType.shownConflicts
@@ -167,7 +76,6 @@ export interface CmsBulkEditConflictsShown {
  *   action: "shownResolvedAllConflicts",
  *   context_module: "Artworks - bulk edit",
  * }
- * ```
  */
 export interface CmsBulkEditResolvedAllConflictsShown {
   action: CmsActionType.shownResolvedAllConflicts
@@ -229,15 +137,10 @@ export interface CmsBulkEditFailed {
 }
 
 export type CmsBulkEditFlow =
-  | CmsBulkEditClickedCancelEdits
-  | CmsBulkEditClickedChangeAvailability
-  | CmsBulkEditClickedConfirmEdits
-  | CmsBulkEditClickedEditPill
-  | CmsBulkEditClickedResolveAllConflicts
-  | CmsBulkEditClickedShortlistPill
-  | CmsBulkEditConflictsShown
-  | CmsBulkEditFailed
+  | CmsBulkEditClickedEvent
   | CmsBulkEditMaxEditLimitReachedShown
-  | CmsBulkEditProcessingCompleted
-  | CmsBulkEditProcessingStarted
+  | CmsBulkEditConflictsShown
   | CmsBulkEditResolvedAllConflictsShown
+  | CmsBulkEditProcessingStarted
+  | CmsBulkEditProcessingCompleted
+  | CmsBulkEditFailed
