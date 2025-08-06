@@ -1,3 +1,15 @@
+# v4.294.0 (Wed Aug 06 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add horizontal_bar to graph types [#630](https://github.com/artsy/cohesion/pull/630) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.293.0 (Mon Aug 04 2025)
 
 #### 🚀  Enhancement
