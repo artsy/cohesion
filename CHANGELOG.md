@@ -1,3 +1,15 @@
+# v4.296.0 (Thu Aug 07 2025)
+
+#### 🚀  Enhancement
+
+- chore: add vertical bar example [#631](https://github.com/artsy/cohesion/pull/631) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.295.0 (Wed Aug 06 2025)
 
 #### 🚀  Enhancement
