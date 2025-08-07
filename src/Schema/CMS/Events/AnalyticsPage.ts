@@ -80,7 +80,7 @@ export interface CmsAnalyticsPageClickedMostViewed {
  *   action: "viewedGraph",
  *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
- *   graph_type: "cumulative_line" | "donut" | "horizontal_bar"
+ *   graph_type: "cumulative_line" | "donut" | "horizontal_bar" | "vertical_bar"
  * }
  * ```
  */
@@ -100,7 +100,7 @@ export interface CmsAnalyticsPageViewedGraph {
  *   action: "viewedGraphDatapoint",
  *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
- *   graph_type: "cumulative_line" | "donut" | "horizontal_bar",
+ *   graph_type: "cumulative_line" | "donut" | "horizontal_bar" | "vertical_bar",
  *   datapoint_bucket_size?: "daily" | "weekly" | "monthly" | null,
  *   datapoint_is_other?: true | false | null
  * }
