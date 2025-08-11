@@ -80,7 +80,8 @@ export interface CmsAnalyticsPageClickedMostViewed {
  *   action: "viewedGraph",
  *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
- *   graph_type: "cumulative_line" | "donut" | "horizontal_bar" | "vertical_bar"
+ *   graph_type: "cumulative_line" | "donut" | "horizontal_bar" | "vertical_bar",
+ *   graph_data?: "device" | "medium" | "country" | "landing" | null
  * }
  * ```
  */
@@ -89,6 +90,7 @@ export interface CmsAnalyticsPageViewedGraph {
   context_module: CmsContextModule
   context_page_owner_type: CmsOwnerType.analytics
   graph_type: string
+  graph_data?: string
 }
 
 /**
@@ -101,6 +103,7 @@ export interface CmsAnalyticsPageViewedGraph {
  *   context_module: "analyticsMostViewed" | "analyticsPublishedArtworks" | "analyticsViews" | "analyticsInquiries" | "analyticsSales" | "analyticsAudience",
  *   context_page_owner_type: "analytics",
  *   graph_type: "cumulative_line" | "donut" | "horizontal_bar" | "vertical_bar",
+ *   graph_data?: "device" | "medium" | "country" | "landing" | null,
  *   datapoint_bucket_size?: "daily" | "weekly" | "monthly" | null,
  *   datapoint_is_other?: true | false | null
  * }
@@ -111,6 +114,7 @@ export interface CmsAnalyticsPageViewedGraphDatapoint {
   context_module: CmsContextModule
   context_page_owner_type: CmsOwnerType.analytics
   graph_type: string
+  graph_data?: string
   datapoint_bucket_size?: string
   datapoint_is_other?: boolean
 }
