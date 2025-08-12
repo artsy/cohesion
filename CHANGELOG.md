@@ -1,3 +1,15 @@
+# v4.297.0 (Tue Aug 12 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add graph_data subfield to cms graph [#632](https://github.com/artsy/cohesion/pull/632) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.296.0 (Thu Aug 07 2025)
 
 #### 🚀  Enhancement
