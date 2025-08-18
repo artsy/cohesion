@@ -135,4 +135,34 @@ export enum CmsActionType {
    * Corresponds to {@link CmsAnalytics}
    */
   viewedTooltip = "viewedTooltip",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  batchImportShowHideColumns = "batchImportShowHideColumns",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  batchImportChangedUnit = "batchImportChangedUnit",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  batchImportAddedImageFile = "batchImportAddedImageFile",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  batchImportAddedImage = "batchImportAddedImage",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  batchImportReorderImage = "batchImportReorderImage",
+
+  /**
+   * Corresponds to {@link CmsBatchImportFlow}
+   */
+  batchImportClickDeleteImage = "batchImportClickDeleteImage",
 }
