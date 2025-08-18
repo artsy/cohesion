@@ -1,3 +1,15 @@
+# v4.298.0 (Mon Aug 18 2025)
+
+#### 🚀  Enhancement
+
+- feat(batch-import): Add image events [#633](https://github.com/artsy/cohesion/pull/633) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v4.297.0 (Tue Aug 12 2025)
 
 #### 🚀  Enhancement
