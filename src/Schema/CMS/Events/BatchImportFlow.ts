@@ -239,6 +239,118 @@ export interface CmsBatchImportTableContentSummary {
   >
 }
 
+/**
+ * Fired for every column the partner hides or shows.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "batchImportShowHideColumns",
+ *   context_module: "batchImportFlow",
+ *   label: "column name",
+ *   value: "hide" or "show"
+ * }
+ * ```
+ */
+export interface CmsBatchImportShowHideColumns {
+  action: CmsActionType.batchImportShowHideColumns
+  context_module: CmsContextModule.batchImportFlow
+  label: string
+  value: "hide" | "show"
+}
+
+/**
+ * Fired for every time a partner changes a unit either in the settings at the top or in line.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "batchImportChangedUnit",
+ *   context_module: "batchImportFlow",
+ *   label: "unit changed",
+ *   value: "new value"
+ * }
+ * ```
+ */
+export interface CmsBatchImportChangedUnit {
+  action: CmsActionType.batchImportChangedUnit
+  context_module: CmsContextModule.batchImportFlow
+  label: "unit changed"
+  value: string
+}
+
+/**
+ * Fired when a partner imports an image file on the page.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "batchImportAddedImageFile",
+ *   context_module: "batchImportFlow"
+ * }
+ * ```
+ */
+export interface CmsBatchImportAddedImageFile {
+  action: CmsActionType.batchImportAddedImageFile
+  context_module: CmsContextModule.batchImportFlow
+}
+
+/**
+ * Fired for every time a partner clicks confirm after adding an image on the review page.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "batchImportAddedImage",
+ *   context_module: "batchImportFlow",
+ *   artwork_import_row_id: "123",
+ *   value: 3
+ * }
+ * ```
+ */
+export interface CmsBatchImportAddedImage {
+  action: CmsActionType.batchImportAddedImage
+  context_module: CmsContextModule.batchImportFlow
+  artwork_import_row_id: string
+  value: number
+}
+
+/**
+ * Fired when a partner reorder images.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "batchImportReorderImage",
+ *   context_module: "batchImportFlow",
+ *   artwork_import_row_id: "123"
+ * }
+ * ```
+ */
+export interface CmsBatchImportReorderImage {
+  action: CmsActionType.batchImportReorderImage
+  context_module: CmsContextModule.batchImportFlow
+  artwork_import_row_id: string
+}
+
+/**
+ * Fired when a partner clicks delete on an image.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "batchImportClickDeleteImage",
+ *   context_module: "batchImportFlow",
+ *   artwork_import_row_id: "123"
+ * }
+ * ```
+ */
+export interface CmsBatchImportClickDeleteImage {
+  action: CmsActionType.batchImportClickDeleteImage
+  context_module: CmsContextModule.batchImportFlow
+  artwork_import_row_id: string
+}
+
 export type CmsBatchImportFlow =
   | CmsBatchImportFlowClickImport
   | CmsBatchImportFlowClickAddCSV
@@ -248,3 +360,9 @@ export type CmsBatchImportFlow =
   | CmsBatchImportClickExit
   | CmsBatchImportEditedBatchImportField
   | CmsBatchImportTableContentSummary
+  | CmsBatchImportShowHideColumns
+  | CmsBatchImportChangedUnit
+  | CmsBatchImportAddedImageFile
+  | CmsBatchImportAddedImage
+  | CmsBatchImportReorderImage
+  | CmsBatchImportClickDeleteImage
