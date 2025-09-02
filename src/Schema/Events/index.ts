@@ -59,6 +59,7 @@ import {
   ClickedChangeShippingMethod,
   ClickedCloseValidationAddressModal,
   ClickedCollectionGroup,
+  ClickedCompleteYourProfile,
   ClickedContactGallery,
   ClickedConversationsFilter,
   ClickedCreateAlert,
@@ -258,6 +259,7 @@ import {
   TappedChangePaymentMethod,
   TappedClearTask,
   TappedCollectionGroup,
+  TappedCompleteYourProfile,
   TappedConfirmSeeFewerWorks,
   TappedConsign,
   TappedConsignmentInquiry,
@@ -344,6 +346,7 @@ export type Event =
   | ClickedChangeShippingMethod
   | ClickedCloseValidationAddressModal
   | ClickedCollectionGroup
+  | ClickedCompleteYourProfile
   | ClickedContactGallery
   | ClickedConversationsFilter
   | ClickedCreateAlert
@@ -510,6 +513,7 @@ export type Event =
   | TappedCollectedArtwork
   | TappedCollectedArtworkImages
   | TappedCollectionGroup
+  | TappedCompleteYourProfile
   | TappedConfirmSeeFewerWorks
   | TappedConsign
   | TappedConsignmentInquiry

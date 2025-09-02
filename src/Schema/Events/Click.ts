@@ -2372,19 +2372,26 @@ export interface ClickedVisitHelpCenter {
 }
 
 /**
- * A user clicks on the complete your profile prompt within the activity pannel
+ * A user clicks on the complete your profile on the order details page (no activity panel)
  *
  * This schema describes events sent to Segment from [[clickedCompleteYourProfile]]
  *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCompleteYourProfile",
+ *    context_module: "OrdersDetail",
+ *    context_page_owner_type: "orders-detail",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *  }
+ *  ```
  */
 
 export interface ClickedCompleteYourProfile {
   action: ActionType.clickedCompleteYourProfile
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
-  context_page_owner_id: string
-  context_page_owner_slug?: string
-  user_id: string
+  context_page_owner_id?: string
 }
 
 /**

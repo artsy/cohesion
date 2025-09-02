@@ -1467,19 +1467,26 @@ export interface TappedVisitHelpCenter {
 }
 
 /**
- * A user taps on the complete your profile prompt within the activity pannel
+ * A user taps on the complete your profile prompt within the activity panel (not implemented in order details)
  *
  * This schema describes events sent to Segment from [[tappedCompleteYourProfile]]
  *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCompleteYourProfile",
+ *    context_module: "collectorProfileCard",
+ *    context_screen_owner_type: "profile",
+ *    context_screen_owner_id: ""
+ *  }
+ *  ```
  */
 
 export interface TappedCompleteYourProfile {
   action: ActionType.tappedCompleteYourProfile
   context_module: ContextModule
   context_screen_owner_type: ScreenOwnerType
-  context_screen_owner_id: string
-  context_screen_owner_slug?: string
-  user_id: string
+  context_screen_owner_id?: string
 }
 
 /**
