@@ -1,3 +1,15 @@
+# v4.299.0 (Wed Sep 03 2025)
+
+#### 🚀  Enhancement
+
+- chore: Update tapped and clicked complete your profile [#634](https://github.com/artsy/cohesion/pull/634) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.298.0 (Mon Aug 18 2025)
 
 #### 🚀  Enhancement
