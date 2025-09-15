@@ -1,3 +1,15 @@
+# v4.301.0 (Mon Sep 15 2025)
+
+#### 🚀  Enhancement
+
+- feat(batch-edits-v3): Adds shownFailedUpdatesPage to bulk edit tracking schema [#636](https://github.com/artsy/cohesion/pull/636) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.300.0 (Mon Sep 15 2025)
 
 #### 🚀  Enhancement
