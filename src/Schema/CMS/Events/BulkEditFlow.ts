@@ -19,13 +19,14 @@ import { CmsActionType } from "."
  * }
  */
 export type CmsBulkEditClickLabel =
-  | "change availability"
-  | "bulk edit"
-  | "shortlist"
   | "add to show"
-  | "resolve all conflicts"
-  | "confirm edit"
+  | "bulk edit"
   | "cancel"
+  | "change availability"
+  | "confirm edit"
+  | "publish"
+  | "resolve all conflicts"
+  | "shortlist"
 
 export interface CmsBulkEditClickedEvent {
   action: "click"
