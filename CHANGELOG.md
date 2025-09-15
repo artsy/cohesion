@@ -1,3 +1,15 @@
+# v4.300.0 (Mon Sep 15 2025)
+
+#### 🚀  Enhancement
+
+- feat: Adds publish Click label type to BulkEdits flow [#635](https://github.com/artsy/cohesion/pull/635) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.299.0 (Wed Sep 03 2025)
 
 #### 🚀  Enhancement
