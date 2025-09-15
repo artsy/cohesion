@@ -37,6 +37,21 @@ export interface CmsBulkEditClickedEvent {
 }
 
 /**
+ * A partner has seen the failed updates screen.
+ * 
+ * @example
+ * ```
+ * {
+ *   action: "shownFailedUpdatesPage",
+ *   context_module: "Artworks - bulk edit",
+ * }
+ */
+export interface CmsBulkEditFailedUpdatesPageShown {
+  action: CmsActionType.shownFailedUpdatesPage
+  context_module: CmsContextModule.bulkEditFlow
+}
+
+/**
  * A partner has seen the max edit limit reached tool tip.
  *
  * @example
@@ -139,6 +154,7 @@ export interface CmsBulkEditFailed {
 
 export type CmsBulkEditFlow =
   | CmsBulkEditClickedEvent
+  | CmsBulkEditFailedUpdatesPageShown
   | CmsBulkEditMaxEditLimitReachedShown
   | CmsBulkEditConflictsShown
   | CmsBulkEditResolvedAllConflictsShown

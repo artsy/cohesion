@@ -109,6 +109,12 @@ export enum CmsActionType {
   /**
    * Corresponds to {@link CmsBulkEditFlow}
    */
+  shownFailedUpdatesPage = "shownFailedUpdatesPage",
+
+
+  /**
+   * Corresponds to {@link CmsBulkEditFlow}
+   */
   shownMaxEditLimitReached = "shownMaxEditLimitReached",
 
   /**
