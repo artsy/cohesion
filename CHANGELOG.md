@@ -1,3 +1,15 @@
+# v4.302.0 (Tue Sep 16 2025)
+
+#### 🚀  Enhancement
+
+- feat: Adds failed updates page edit click type [#637](https://github.com/artsy/cohesion/pull/637) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.301.0 (Mon Sep 15 2025)
 
 #### 🚀  Enhancement
