@@ -24,6 +24,7 @@ export type CmsBulkEditClickLabel =
   | "cancel"
   | "change availability"
   | "confirm edit"
+  | "failed updates page edit"
   | "publish"
   | "resolve all conflicts"
   | "shortlist"
