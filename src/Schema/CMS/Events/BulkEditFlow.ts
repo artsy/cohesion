@@ -39,7 +39,7 @@ export interface CmsBulkEditClickedEvent {
 
 /**
  * A partner has seen the failed updates screen.
- * 
+ *
  * @example
  * ```
  * {

@@ -111,7 +111,6 @@ export enum CmsActionType {
    */
   shownFailedUpdatesPage = "shownFailedUpdatesPage",
 
-
   /**
    * Corresponds to {@link CmsBulkEditFlow}
    */
