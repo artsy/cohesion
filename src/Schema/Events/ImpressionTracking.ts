@@ -506,7 +506,7 @@ export interface OrderDetailsViewed {
 }
 
 /**
- * User sees the "immersive view" option appear on screen
+ * A user sees the "immersive view" option appear on screen
  *
  * This schema describes events sent to Segment from [[ImmersiveViewOptionViewed]]
  *

@@ -701,7 +701,7 @@ export interface ClickedMainArtworkGrid {
 }
 
 /**
- * User clicks on "Immersive" text above the artwork grid to enable immersive view
+ * User clicks on "Immersive" button above the artwork grid to enable immersive view
  *
  * This schema describes events sent to Segment from [[clickedImmersiveView]]
  *
