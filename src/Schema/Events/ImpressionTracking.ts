@@ -504,3 +504,23 @@ export interface OrderDetailsViewed {
   context_owner_id: string
   message_type: string
 }
+
+/**
+ * User sees the "immersive view" option appear on screen
+ *
+ * This schema describes events sent to Segment from [[ImmersiveViewOptionViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "immersiveViewOptionViewed",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "collect"
+ *  }
+ * ```
+ */
+export interface ImmersiveViewOptionViewed {
+  action: ActionType.immersiveViewOptionViewed
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+}

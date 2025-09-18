@@ -697,6 +697,27 @@ export interface ClickedMainArtworkGrid {
   signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
+  label?: string
+}
+
+/**
+ * User clicks on "Immersive" text above the artwork grid to enable immersive view
+ *
+ * This schema describes events sent to Segment from [[clickedImmersiveView]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedImmersiveView",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "collect"
+ *  }
+ * ```
+ */
+export interface ClickedImmersiveView {
+  action: ActionType.clickedImmersiveView
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
 }
 
 /**
