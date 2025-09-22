@@ -28,6 +28,7 @@ export type CmsBulkEditClickLabel =
   | "publish"
   | "resolve all conflicts"
   | "shortlist"
+  | "unpublish"
 
 export interface CmsBulkEditClickedEvent {
   action: "click"
