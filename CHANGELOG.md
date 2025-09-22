@@ -1,3 +1,15 @@
+# v4.303.0 (Mon Sep 22 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add new unpublish type to CmsBulkEditClickLabel [#639](https://github.com/artsy/cohesion/pull/639) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.302.0 (Tue Sep 16 2025)
 
 #### 🚀  Enhancement
