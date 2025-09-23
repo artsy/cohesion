@@ -1,3 +1,15 @@
+# v4.304.0 (Tue Sep 23 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add searchBulkEditField event [#640](https://github.com/artsy/cohesion/pull/640) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.303.0 (Mon Sep 22 2025)
 
 #### 🚀  Enhancement
