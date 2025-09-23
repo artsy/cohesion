@@ -104,6 +104,11 @@ export enum CmsActionType {
   /**
    * Corresponds to {@link CmsBulkEditFlow}
    */
+  searchBulkEditField = "searchBulkEditField",
+
+  /**
+   * Corresponds to {@link CmsBulkEditFlow}
+   */
   shownConflicts = "shownConflicts",
 
   /**

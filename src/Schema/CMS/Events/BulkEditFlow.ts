@@ -3,8 +3,8 @@
  * @packageDocumentation
  */
 
-import { CmsContextModule } from "../Values/CmsContextModule"
 import { CmsActionType } from "."
+import { CmsContextModule } from "../Values/CmsContextModule"
 
 /**
  * Generic click event in the bulk edit flow.
@@ -154,6 +154,24 @@ export interface CmsBulkEditFailed {
   artwork_ids: string[]
 }
 
+/**
+ * Search in the bulk edit drawer
+ *
+ * @example
+ * ```
+ * {
+ *   action: "searchBulkEditField",
+ *   context_module: "Artworks - bulk edit",
+ *   value: "search input"
+ * }
+ * ```
+ */
+export interface CmsBulkEditSearch {
+  action: CmsActionType.searchBulkEditField
+  context_module: CmsContextModule.bulkEditFlow
+  value: string
+}
+
 export type CmsBulkEditFlow =
   | CmsBulkEditClickedEvent
   | CmsBulkEditFailedUpdatesPageShown
@@ -163,3 +181,4 @@ export type CmsBulkEditFlow =
   | CmsBulkEditProcessingStarted
   | CmsBulkEditProcessingCompleted
   | CmsBulkEditFailed
+  | CmsBulkEditSearch
