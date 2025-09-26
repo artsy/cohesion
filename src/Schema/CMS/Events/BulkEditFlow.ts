@@ -26,6 +26,7 @@ export type CmsBulkEditClickLabel =
   | "confirm edit"
   | "failed updates page edit"
   | "publish"
+  | "publish learn more"
   | "resolve all conflicts"
   | "shortlist"
   | "unpublish"
