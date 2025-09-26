@@ -1,3 +1,15 @@
+# v4.305.0 (Fri Sep 26 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add new type to track publish learn more help doc clicks [#641](https://github.com/artsy/cohesion/pull/641) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.304.0 (Tue Sep 23 2025)
 
 #### 🚀  Enhancement
