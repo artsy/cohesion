@@ -524,3 +524,25 @@ export interface ImmersiveViewOptionViewed {
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
 }
+
+/**
+ * An artwork is displayed in immersive view
+ *
+ * This schema describes events sent to Segment from [[ImmersiveViewArtworkDisplayed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "immersiveViewArtworkDisplayed",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "collect",
+ *    context_screen_owner_id: "5d9d3a0e8b0c6c0007e9c8a1"
+ *  }
+ * ```
+ */
+export interface ImmersiveViewArtworkDisplayed {
+  action: ActionType.immersiveViewArtworkDisplayed
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_screen_owner_id: string
+}

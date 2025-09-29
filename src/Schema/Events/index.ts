@@ -182,6 +182,7 @@ import {
   EditProfileModalViewed,
   ErrorMessageViewed,
   ExpressCheckoutViewed,
+  ImmersiveViewArtworkDisplayed,
   ImmersiveViewOptionViewed,
   ItemViewed,
   OrderDetailsViewed,
@@ -450,6 +451,7 @@ export type Event =
   | FocusedOnSearchInput
   | FollowEvents
   | Impression
+  | ImmersiveViewArtworkDisplayed
   | ImmersiveViewOptionViewed
   | ItemViewed
   | MaxBidSelected
@@ -1233,6 +1235,10 @@ export enum ActionType {
    * Corresponds to {@link ImmersiveViewOptionViewed}
    */
   immersiveViewOptionViewed = "immersiveViewOptionViewed",
+  /**
+   * Corresponds to {@link ImmersiveViewArtworkDisplayed}
+   */
+  immersiveViewArtworkDisplayed = "immersiveViewArtworkDisplayed",
   /**
    * Corresponds to {@link LongPressedArtwork}
    */
