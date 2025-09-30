@@ -78,6 +78,7 @@ import {
   ClickedFulfillmentTab,
   ClickedGalleryGroup,
   ClickedHeroUnitGroup,
+  ClickedImmersiveView,
   ClickedImportFees,
   ClickedLoadMore,
   ClickedMainArtworkGrid,
@@ -181,6 +182,8 @@ import {
   EditProfileModalViewed,
   ErrorMessageViewed,
   ExpressCheckoutViewed,
+  ImmersiveViewArtworkDisplayed,
+  ImmersiveViewOptionViewed,
   ItemViewed,
   OrderDetailsViewed,
   OrderProgressionViewed,
@@ -365,6 +368,7 @@ export type Event =
   | ClickedFulfillmentTab
   | ClickedGalleryGroup
   | ClickedHeroUnitGroup
+  | ClickedImmersiveView
   | ClickedImportFees
   | ClickedLoadMore
   | ClickedMainArtworkGrid
@@ -447,6 +451,8 @@ export type Event =
   | FocusedOnSearchInput
   | FollowEvents
   | Impression
+  | ImmersiveViewArtworkDisplayed
+  | ImmersiveViewOptionViewed
   | ItemViewed
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
@@ -812,6 +818,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedHeroUnitGroup}
    */
   clickedHeroUnitGroup = "clickedHeroUnitGroup",
+  /**
+   * Corresponds to {@link ClickedImmersiveView}
+   */
+  clickedImmersiveView = "clickedImmersiveView",
   /**
    * Corresponds to {@link ClickedImportFees}
    */
@@ -1221,6 +1231,14 @@ export enum ActionType {
    * Corresponds to {@link Impression}
    */
   impression = "impression",
+  /**
+   * Corresponds to {@link ImmersiveViewOptionViewed}
+   */
+  immersiveViewOptionViewed = "immersiveViewOptionViewed",
+  /**
+   * Corresponds to {@link ImmersiveViewArtworkDisplayed}
+   */
+  immersiveViewArtworkDisplayed = "immersiveViewArtworkDisplayed",
   /**
    * Corresponds to {@link LongPressedArtwork}
    */
