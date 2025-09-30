@@ -1,3 +1,15 @@
+# v4.306.0 (Tue Sep 30 2025)
+
+#### 🚀  Enhancement
+
+- feat: add events for Force immersive view [#638](https://github.com/artsy/cohesion/pull/638) ([@anandaroop](https://github.com/anandaroop))
+
+#### Authors: 1
+
+- Anandaroop Roy ([@anandaroop](https://github.com/anandaroop))
+
+---
+
 # v4.305.0 (Fri Sep 26 2025)
 
 #### 🚀  Enhancement
