@@ -515,7 +515,8 @@ export interface OrderDetailsViewed {
  *  {
  *    action: "immersiveViewOptionViewed",
  *    context_module: "artworkGrid",
- *    context_page_owner_type: "collect"
+ *    context_page_owner_type: "collection",
+ *    context_page_owner_id: "43048d29-8fc1-4e06-ab20-2e816953934f",
  *  }
  * ```
  */
@@ -523,6 +524,7 @@ export interface ImmersiveViewOptionViewed {
   action: ActionType.immersiveViewOptionViewed
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
 }
 
 /**
@@ -535,8 +537,9 @@ export interface ImmersiveViewOptionViewed {
  *  {
  *    action: "immersiveViewArtworkDisplayed",
  *    context_module: "artworkGrid",
- *    context_page_owner_type: "collect",
- *    context_screen_owner_id: "5d9d3a0e8b0c6c0007e9c8a1"
+ *    context_page_owner_type: "collection",
+ *    context_page_owner_id: "43048d29-8fc1-4e06-ab20-2e816953934f",
+ *    artwork_id: "5d9d3a0e8b0c6c0007e9c8a1"
  *  }
  * ```
  */
@@ -544,5 +547,6 @@ export interface ImmersiveViewArtworkDisplayed {
   action: ActionType.immersiveViewArtworkDisplayed
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
-  context_screen_owner_id: string
+  context_page_owner_id?: string
+  artwork_id: string
 }

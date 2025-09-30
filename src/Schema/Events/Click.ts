@@ -710,7 +710,8 @@ export interface ClickedMainArtworkGrid {
  *  {
  *    action: "clickedImmersiveView",
  *    context_module: "artworkGrid",
- *    context_page_owner_type: "collect"
+ *    context_page_owner_type: "collection"
+ *    context_page_owner_id: "5e726bd22524980012caafb0"
  *  }
  * ```
  */
@@ -718,6 +719,7 @@ export interface ClickedImmersiveView {
   action: ActionType.clickedImmersiveView
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
 }
 
 /**
