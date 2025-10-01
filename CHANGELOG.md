@@ -1,3 +1,15 @@
+# v4.307.0 (Wed Oct 01 2025)
+
+#### 🚀  Enhancement
+
+- fix: prefer 'type' for distinguishing immersive view clicks [#642](https://github.com/artsy/cohesion/pull/642) ([@anandaroop](https://github.com/anandaroop))
+
+#### Authors: 1
+
+- Anandaroop Roy ([@anandaroop](https://github.com/anandaroop))
+
+---
+
 # v4.306.0 (Tue Sep 30 2025)
 
 #### 🚀  Enhancement
