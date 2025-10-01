@@ -664,6 +664,8 @@ export interface ClickedFairCard {
  * Currently, this event only fires on our new artwork grids on the following pages: Collect, Collection, Artist works-for-sale, and Search Results.
  * Note: This event is separate from [[clickedArtworkGroup]] because it is an important and frequent event. Separating it out will make it easier for analysts to access.
  *
+ * This event is also used for the immersive view on artwork grids, distinguished by the `type` field.
+ *
  * This schema describes events sent to Segment from [[clickedMainArtworkGrid]]
  *
  *  @example
@@ -691,7 +693,7 @@ export interface ClickedMainArtworkGrid {
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id: string
   destination_page_owner_slug: string
-  type: "thumbnail"
+  type: "thumbnail" | "immersive"
   position?: number
   sort?: string
   signal_label?: string
