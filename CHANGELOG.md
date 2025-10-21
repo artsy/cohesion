@@ -1,3 +1,15 @@
+# v4.308.0 (Tue Oct 21 2025)
+
+#### 🚀  Enhancement
+
+- feat(ONYX-1951): add tracking for new homeview auctions hub [#643](https://github.com/artsy/cohesion/pull/643) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.307.0 (Wed Oct 01 2025)
 
 #### 🚀  Enhancement
