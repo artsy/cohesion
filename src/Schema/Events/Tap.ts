@@ -233,10 +233,13 @@ export interface TappedAskSpecialist {
  */
 export interface TappedAuctionGroup extends TappedEntityGroup {
   action: ActionType.tappedAuctionGroup
+  signal_label?: string
+  signal_lot_watcher_count?: number
+  signal_bid_count?: number
 }
 
 /**
- * A user taps a grouping of auctions hub on iOS
+ * A user taps a grouping of auctions hub
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
  *
