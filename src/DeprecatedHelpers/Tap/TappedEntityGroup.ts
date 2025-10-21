@@ -32,7 +32,7 @@ export type TappedEntityDestinationType =
   | OwnerType.worksForYou
 
 export interface TappedEntityGroupArgs {
-  action: ActionType
+  action?: ActionType
   contextModule: ContextModule
   contextScreenOwnerType: ScreenOwnerType
   contextScreenOwnerId?: string
@@ -119,7 +119,10 @@ export const tappedEntityGroup = ({
       action = ActionType.tappedAuctionGroup
       break
     case OwnerType.auctions:
-      if (originalAction === ActionType.tappedAuctionsHubGroup) {
+      if (
+        originalAction &&
+        originalAction === ActionType.tappedAuctionsHubGroup
+      ) {
         action = ActionType.tappedAuctionsHubGroup
       }
       action = ActionType.tappedAuctionGroup
