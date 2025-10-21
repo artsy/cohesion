@@ -1,3 +1,15 @@
+# v4.309.0 (Tue Oct 21 2025)
+
+#### 🚀  Enhancement
+
+- chore(ONYX-1951): follow up on adding tracking for auctions hub [#644](https://github.com/artsy/cohesion/pull/644) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.308.0 (Tue Oct 21 2025)
 
 #### 🚀  Enhancement
