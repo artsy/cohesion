@@ -233,9 +233,26 @@ export interface TappedAskSpecialist {
  */
 export interface TappedAuctionGroup extends TappedEntityGroup {
   action: ActionType.tappedAuctionGroup
-  signal_label?: string
-  signal_lot_watcher_count?: number
-  signal_bid_count?: number
+}
+
+/**
+ * A user taps a grouping of auctions hub on iOS
+ *
+ * This schema describes events sent to Segment from [[tappedEntityGroup]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAuctionsHubGroup",
+ *    context_module: "auctionsHubRail",
+ *    context_screen_owner_type: "home",
+ *    horizontal_slide_position: 3,
+ *    type: "thumbnail"
+ *  }
+ * ```
+ */
+export interface TappedAuctionsHubGroup extends TappedEntityGroup {
+  action: ActionType.tappedAuctionsHubGroup
 }
 
 /**
@@ -412,6 +429,7 @@ export interface TappedEntityGroup {
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
+    | ActionType.tappedAuctionsHubGroup
     | ActionType.tappedAuctionResultGroup
     | ActionType.tappedBrowseSimilarArtworks
     | ActionType.tappedCardGroup
