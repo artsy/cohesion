@@ -254,7 +254,6 @@ import {
   TappedAskSpecialist,
   TappedAuctionGroup,
   TappedAuctionResultGroup,
-  TappedAuctionsHubGroup,
   TappedBid,
   TappedBrowseSimilarArtworks,
   TappedBuyerProtection,
@@ -510,7 +509,6 @@ export type Event =
   | TappedAskSpecialist
   | TappedAuctionGroup
   | TappedAuctionResultGroup
-  | TappedAuctionsHubGroup
   | TappedBid
   | TappedBrowseSimilarArtworks
   | TappedBuyerProtection
@@ -1486,10 +1484,6 @@ export enum ActionType {
    * Corresponds to {@link TappedAuctionGroup}
    */
   tappedAuctionGroup = "tappedAuctionGroup",
-  /**
-   * Corresponds to {@link TappedAuctionsHubGroup}
-   */
-  tappedAuctionsHubGroup = "tappedAuctionsHubGroup",
   /**
    * Corresponds to {@link TappedAuctionResultGroup}
    */
