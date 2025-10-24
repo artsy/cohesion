@@ -2,6 +2,7 @@ import { CmsAnalyticsPage } from "./AnalyticsPage"
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
+import { CmsQuickReplyFlow } from "./QuickReplyFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsShowFlow } from "./ShowFlow"
 import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
@@ -17,6 +18,7 @@ export type CmsEvent =
   | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsUploadArtworkFlow
+  | CmsQuickReplyFlow
   | CmsSettingsFlow
   | CmsShowFlow
 
@@ -175,4 +177,44 @@ export enum CmsActionType {
    * Corresponds to {@link CmsBatchImportFlow}
    */
   batchImportClickDeleteImage = "batchImportClickDeleteImage",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  clickedCreateNewTemplate = "clickedCreateNewTemplate",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  clickedDeleteTemplate = "clickedDeleteTemplate",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  clickedEditTemplate = "clickedEditTemplate",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  createdNewTemplate = "createdNewTemplate",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  deletedTemplate = "deletedTemplate",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  editedTemplate = "editedTemplate",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  openedMenu = "openedMenu",
+
+  /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  savedExampleTemplate = "savedExampleTemplate",
 }
