@@ -1,3 +1,15 @@
+# v4.310.0 (Fri Oct 24 2025)
+
+#### 🚀  Enhancement
+
+- chore: cleanup TappedAuctionsHubGroup [#645](https://github.com/artsy/cohesion/pull/645) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.309.0 (Tue Oct 21 2025)
 
 #### 🚀  Enhancement
