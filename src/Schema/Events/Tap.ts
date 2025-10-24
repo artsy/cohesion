@@ -239,26 +239,6 @@ export interface TappedAuctionGroup extends TappedEntityGroup {
 }
 
 /**
- * A user taps a grouping of auctions hub
- *
- * This schema describes events sent to Segment from [[tappedEntityGroup]]
- *
- *  @example
- *  ```
- *  {
- *    action: "tappedAuctionsHubGroup",
- *    context_module: "auctionsHubRail",
- *    context_screen_owner_type: "home",
- *    horizontal_slide_position: 3,
- *    type: "thumbnail"
- *  }
- * ```
- */
-export interface TappedAuctionsHubGroup extends TappedEntityGroup {
-  action: ActionType.tappedAuctionsHubGroup
-}
-
-/**
  * A user taps a grouping of auction results on iOS
  *
  * This schema describes events sent to Segment from [[tappedEntityGroup]]
@@ -432,7 +412,6 @@ export interface TappedEntityGroup {
     | ActionType.tappedArtistSeriesGroup
     | ActionType.tappedArtworkGroup
     | ActionType.tappedAuctionGroup
-    | ActionType.tappedAuctionsHubGroup
     | ActionType.tappedAuctionResultGroup
     | ActionType.tappedBrowseSimilarArtworks
     | ActionType.tappedCardGroup

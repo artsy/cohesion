@@ -10,7 +10,6 @@ import {
   TappedArtistGroup,
   TappedArtworkGroup,
   TappedAuctionGroup,
-  TappedAuctionsHubGroup,
   TappedCollectionGroup,
   TappedExploreGroup,
   TappedFairGroup,
@@ -32,7 +31,6 @@ export type TappedEntityDestinationType =
   | OwnerType.worksForYou
 
 export interface TappedEntityGroupArgs {
-  action?: ActionType
   contextModule: ContextModule
   contextScreenOwnerType: ScreenOwnerType
   contextScreenOwnerId?: string
@@ -65,7 +63,6 @@ export interface TappedEntityGroupArgs {
  * ```
  */
 export const tappedEntityGroup = ({
-  action: originalAction,
   contextModule,
   contextScreenOwnerType,
   contextScreenOwnerId,
@@ -82,7 +79,6 @@ export const tappedEntityGroup = ({
   | TappedArtistGroup
   | TappedArtworkGroup
   | TappedAuctionGroup
-  | TappedAuctionsHubGroup
   | TappedCollectionGroup
   | TappedExploreGroup
   | TappedFairGroup => {
@@ -116,15 +112,7 @@ export const tappedEntityGroup = ({
       action = ActionType.tappedFairGroup
       break
     case OwnerType.sale:
-      action = ActionType.tappedAuctionGroup
-      break
     case OwnerType.auctions:
-      if (
-        originalAction &&
-        originalAction === ActionType.tappedAuctionsHubGroup
-      ) {
-        action = ActionType.tappedAuctionsHubGroup
-      }
       action = ActionType.tappedAuctionGroup
       break
   }
