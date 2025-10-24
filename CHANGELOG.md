@@ -1,3 +1,15 @@
+# v4.311.0 (Fri Oct 24 2025)
+
+#### 🚀  Enhancement
+
+- chore: add schema for QuickReply feature in CMS Conversations [#646](https://github.com/artsy/cohesion/pull/646) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.310.0 (Fri Oct 24 2025)
 
 #### 🚀  Enhancement
