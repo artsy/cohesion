@@ -1,3 +1,15 @@
+# v4.312.0 (Mon Oct 27 2025)
+
+#### 🚀  Enhancement
+
+- chore: remove extra conversation_template_id from payload on CmsQuickReplyClickedCreateNewTemplate [#647](https://github.com/artsy/cohesion/pull/647) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.311.0 (Fri Oct 24 2025)
 
 #### 🚀  Enhancement
