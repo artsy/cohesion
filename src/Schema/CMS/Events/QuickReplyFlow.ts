@@ -75,7 +75,6 @@ export interface CmsQuickReplyDeletedTemplate {
  *   action: "clickedCreateNewTemplate",
  *   context_module: "conversations",
  *   context_page_owner_id: "496984",
- *   conversation_template_id: "80912749071",
  * }
  * ```
  */
@@ -83,7 +82,6 @@ export interface CmsQuickReplyClickedCreateNewTemplate {
   action: CmsActionType.clickedCreateNewTemplate
   context_module: CmsContextModule.conversations
   context_page_owner_id: string
-  conversation_template_id: string
 }
 
 /**
