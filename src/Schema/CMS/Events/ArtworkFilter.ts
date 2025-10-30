@@ -176,6 +176,88 @@ export interface CmsArtworkFilterRemoveFilter {
   label: "remove filter"
 }
 
+/**
+ * Bulk images upload - drag and drop images to an artwork
+ *
+ * @example
+ * ```
+ * {
+ *   action: "drag and drop",
+ *   context_module: "Artworks - quick edit",
+ *   label: "bulk images upload",
+ *   artwork_id: "artwork-id",
+ *   value: 3
+ * }
+ * ```
+ */
+export interface CmsArtworkFilterBulkImagesUpload {
+  action: CmsActionType.dragAndDrop
+  context_module: CmsContextModule.artworkFilterQuickEdit
+  label: "bulk images upload"
+  artwork_id: string
+  value: number
+}
+
+/**
+ * Bulk images upload - success message shown
+ *
+ * @example
+ * ```
+ * {
+ *   action: "shownSuccessfullyUploadedImages",
+ *   context_module: "Artworks - quick edit",
+ *   artwork_id: "artwork-id",
+ *   value: 3
+ * }
+ * ```
+ */
+export interface CmsArtworkFilterBulkImagesSuccessShown {
+  action: CmsActionType.shownSuccessfullyUploadedImages
+  context_module: CmsContextModule.artworkFilterQuickEdit
+  artwork_id: string
+  value: number
+}
+
+/**
+ * Bulk images upload - error message shown for invalid image formats
+ *
+ * @example
+ * ```
+ * {
+ *   action: "shownInvalidImagesFormat",
+ *   context_module: "Artworks - quick edit",
+ *   artwork_id: "artwork-id",
+ *   filetype: "pdf"
+ * }
+ * ```
+ */
+export interface CmsArtworkFilterBulkImagesInvalidFormatShown {
+  action: CmsActionType.shownInvalidImagesFormat
+  context_module: CmsContextModule.artworkFilterQuickEdit
+  artwork_id: string
+  filetype: string
+}
+
+/**
+ * Bulk images upload - error message shown when max images upload limit is reached
+ *
+ * @example
+ * ```
+ * {
+ *   action: "shownMaxImagesUploadLimitReached",
+ *   context_module: "Artworks - quick edit",
+ *   artwork_id: "artwork-id",
+ *   value: 15
+ * }
+ * ```
+ */
+export interface CmsArtworkFilterBulkImagesMaxLimitReached {
+  action: CmsActionType.shownMaxImagesUploadLimitReached
+  context_module: CmsContextModule.artworkFilterQuickEdit
+  artwork_id: string
+  value: number
+}
+
 export type CmsArtworkFilter =
   | CmsArtworkFilterClickDuplicateArtwork
   | CmsArtworkFilterClickSort
@@ -186,3 +268,7 @@ export type CmsArtworkFilter =
   | CmsArtworkFilterQuickEditClickImport
   | CmsArtworkFilterRemoveFilter
   | CmsArtworkFilterSearch
+  | CmsArtworkFilterBulkImagesUpload
+  | CmsArtworkFilterBulkImagesSuccessShown
+  | CmsArtworkFilterBulkImagesInvalidFormatShown
+  | CmsArtworkFilterBulkImagesMaxLimitReached
