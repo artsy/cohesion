@@ -1,3 +1,15 @@
+# v4.313.0 (Thu Oct 30 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add Tracking Events for Bulk Images Upload [#648](https://github.com/artsy/cohesion/pull/648) ([@lidimayra](https://github.com/lidimayra))
+
+#### Authors: 1
+
+- Lidiane T ([@lidimayra](https://github.com/lidimayra))
+
+---
+
 # v4.312.0 (Mon Oct 27 2025)
 
 #### 🚀  Enhancement
