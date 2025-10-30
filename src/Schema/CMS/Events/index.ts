@@ -217,4 +217,24 @@ export enum CmsActionType {
    * Corresponds to {@link CmsQuickReplyFlow}
    */
   savedExampleTemplate = "savedExampleTemplate",
+
+  /**
+   * Corresponds to {@link CmsArtworkFilter}
+   */
+  dragAndDrop = "drag and drop",
+
+  /**
+   * Corresponds to {@link CmsArtworkFilter}
+   */
+  shownSuccessfullyUploadedImages = "shownSuccessfullyUploadedImages",
+
+  /**
+   * Corresponds to {@link CmsArtworkFilter}
+   */
+  shownInvalidImagesFormat = "shownInvalidImagesFormat",
+
+  /**
+   * Corresponds to {@link CmsArtworkFilter}
+   */
+  shownMaxImagesUploadLimitReached = "shownMaxImagesUploadLimitReached",
 }
