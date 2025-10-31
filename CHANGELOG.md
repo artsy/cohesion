@@ -1,3 +1,15 @@
+# v4.315.0 (Fri Oct 31 2025)
+
+#### 🚀  Enhancement
+
+- feat: add conventional commit github action [#650](https://github.com/artsy/cohesion/pull/650) ([@amonkhouse](https://github.com/amonkhouse))
+
+#### Authors: 1
+
+- Amy Monkhouse ([@amonkhouse](https://github.com/amonkhouse))
+
+---
+
 # v4.314.0 (Fri Oct 31 2025)
 
 #### 🚀  Enhancement
