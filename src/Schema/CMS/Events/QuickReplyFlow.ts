@@ -171,6 +171,24 @@ export interface CmsQuickReplyEditedTemplate {
 }
 
 /**
+ * User clicks "See message examples" to view example templates
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedSeeMessageExamples",
+ *   context_module: "conversations",
+ *   context_page_owner_id: "496984",
+ * }
+ * ```
+ */
+export interface CmsQuickReplyClickedSeeMessageExamples {
+  action: CmsActionType.clickedSeeMessageExamples
+  context_module: CmsContextModule.conversations
+  context_page_owner_id: string
+}
+
+/**
  * Union type of all CMS Quick Reply events
  */
 export type CmsQuickReplyFlow =
@@ -182,3 +200,4 @@ export type CmsQuickReplyFlow =
   | CmsQuickReplySavedExampleTemplate
   | CmsQuickReplyClickedEditTemplate
   | CmsQuickReplyEditedTemplate
+  | CmsQuickReplyClickedSeeMessageExamples

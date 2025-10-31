@@ -219,6 +219,11 @@ export enum CmsActionType {
   savedExampleTemplate = "savedExampleTemplate",
 
   /**
+   * Corresponds to {@link CmsQuickReplyFlow}
+   */
+  clickedSeeMessageExamples = "clickedSeeMessageExamples",
+
+  /**
    * Corresponds to {@link CmsArtworkFilter}
    */
   dragAndDrop = "drag and drop",
