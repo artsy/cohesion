@@ -1,3 +1,15 @@
+# v4.314.0 (Fri Oct 31 2025)
+
+#### 🚀  Enhancement
+
+- chore: add schema for clicking to see message examples in quick replies [#649](https://github.com/artsy/cohesion/pull/649) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.313.0 (Thu Oct 30 2025)
 
 #### 🚀  Enhancement
