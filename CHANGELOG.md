@@ -1,3 +1,16 @@
+# v4.315.1 (Mon Nov 03 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Revert "chore: add liveAuctions ScreenOwnerType" ([@dariakoko](https://github.com/dariakoko))
+- chore: add liveAuctions ScreenOwnerType ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.315.0 (Fri Oct 31 2025)
 
 #### 🚀  Enhancement
