@@ -1,3 +1,15 @@
+# v4.316.0 (Mon Nov 03 2025)
+
+#### 🚀  Enhancement
+
+- chore(ONYX-1964): add liveAuctions ScreenOwnerType [#651](https://github.com/artsy/cohesion/pull/651) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.315.1 (Mon Nov 03 2025)
 
 #### ⚠️ Pushed to `main`
