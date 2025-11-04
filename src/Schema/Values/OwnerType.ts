@@ -48,6 +48,7 @@ export enum OwnerType {
   auctionResultsForArtistsYouFollow = "auctionResultsForArtistsYouFollow",
   auctionResultsRail = "auctionResultsRail",
   auctions = "auctions",
+  auctionsOverview = "auctionsOverview",
   basedOnYourRecentSaves = "basedOnYourRecentSaves",
   category = "category",
   cityGuideGuide = "cityGuideGuide",
@@ -91,7 +92,6 @@ export enum OwnerType {
   infiniteDiscoveryArtwork = "infiniteDiscoveryArtwork",
   infiniteDiscoveryArtist = "infiniteDiscoveryArtist",
   infiniteDiscoveryOnboarding = "infiniteDiscoveryOnboarding",
-  liveAuctions = "liveAuctions",
   lotsByArtistsYouFollow = "lotsByArtistsYouFollow",
   lotsForYou = "lotsForYou",
   marketNews = "marketNews",
@@ -216,6 +216,7 @@ export type ScreenOwnerType =
   | OwnerType.auctionResult
   | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
+  | OwnerType.auctionsOverview
   | OwnerType.basedOnYourRecentSaves
   | OwnerType.category
   | OwnerType.cityGuideGuide
@@ -254,7 +255,6 @@ export type ScreenOwnerType =
   | OwnerType.infiniteDiscoveryArtwork
   | OwnerType.infiniteDiscoveryArtist
   | OwnerType.infiniteDiscoveryOnboarding
-  | OwnerType.liveAuctions
   | OwnerType.lotsByArtistsYouFollow
   | OwnerType.lotsForYou
   | OwnerType.marketNews
