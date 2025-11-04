@@ -1,3 +1,15 @@
+# v4.317.0 (Tue Nov 04 2025)
+
+#### 🚀  Enhancement
+
+- chore: remove liveAuctions and add auctionsOverview [#652](https://github.com/artsy/cohesion/pull/652) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.316.0 (Mon Nov 03 2025)
 
 #### 🚀  Enhancement
