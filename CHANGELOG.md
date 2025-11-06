@@ -1,3 +1,15 @@
+# v4.318.0 (Thu Nov 06 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add clickedHeader event [#653](https://github.com/artsy/cohesion/pull/653) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.317.0 (Tue Nov 04 2025)
 
 #### 🚀  Enhancement
