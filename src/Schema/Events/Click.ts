@@ -2649,3 +2649,26 @@ export interface ClickedImportFees {
   destination_page_owner_slug: string
   flow: string
 }
+
+/**
+ * User clicks on a navigational header. Only implemented on artist pages.
+ *
+ * This schema describes events sent to Segment from [[clickedHeader]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedHeader",
+ *    context_module: "artistHeader",
+ *    context_page_owner_type: "artist" | "artistAuctionResults",
+ *    subject: "artworks" | "auction results" | "about"
+ *  }
+ *  ```
+ */
+
+export interface ClickedHeader {
+  action: ActionType.clickedHeader
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  subject: string
+}
