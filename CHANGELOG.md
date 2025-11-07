@@ -1,3 +1,15 @@
+# v4.319.0 (Fri Nov 07 2025)
+
+#### 🚀  Enhancement
+
+- chore: add card type to ItemVieweds item_type [#654](https://github.com/artsy/cohesion/pull/654) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.318.0 (Thu Nov 06 2025)
 
 #### 🚀  Enhancement
