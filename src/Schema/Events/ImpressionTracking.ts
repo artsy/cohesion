@@ -54,7 +54,7 @@ export interface ItemViewed {
   context_screen: OwnerType
   context_module: ContextModule
   item_id: string
-  item_type: "artwork"
+  item_type: "artwork" | "card"
   position?: number
 }
 
