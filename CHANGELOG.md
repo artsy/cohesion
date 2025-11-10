@@ -1,3 +1,15 @@
+# v4.320.0 (Mon Nov 10 2025)
+
+#### 🚀  Enhancement
+
+- feat: add add-version-label github action [#655](https://github.com/artsy/cohesion/pull/655) ([@amonkhouse](https://github.com/amonkhouse))
+
+#### Authors: 1
+
+- Amy Monkhouse ([@amonkhouse](https://github.com/amonkhouse))
+
+---
+
 # v4.319.0 (Fri Nov 07 2025)
 
 #### 🚀  Enhancement
