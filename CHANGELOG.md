@@ -1,3 +1,15 @@
+# v4.321.0 (Mon Nov 10 2025)
+
+#### 🚀  Enhancement
+
+- feat: add yarn check github action [#656](https://github.com/artsy/cohesion/pull/656) ([@mc-jones](https://github.com/mc-jones))
+
+#### Authors: 1
+
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v4.320.0 (Mon Nov 10 2025)
 
 #### 🚀  Enhancement
