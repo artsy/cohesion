@@ -14,7 +14,7 @@ import { CmsActionType } from "."
  *   action: "click",
  *   context_module: "Artworks - completeness score",
  *   label: "completeness checklist link",
- *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
+ *   artwork_id: "artwork1"
  * }
  */
 export type CmsCompletenessScoreClickLabel =
@@ -26,7 +26,7 @@ export interface CmsCompletenessScoreClickedEvent {
   context_module: CmsContextModule.completenessScore
   label: CmsCompletenessScoreClickLabel
   value?: string | number
-  artwork_ids?: string[]
+  artwork_id: string
 }
 
 /**
