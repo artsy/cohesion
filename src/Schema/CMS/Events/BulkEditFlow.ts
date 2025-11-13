@@ -3,8 +3,8 @@
  * @packageDocumentation
  */
 
-import { CmsActionType } from "."
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsActionType } from "."
 
 /**
  * Generic click event in the bulk edit flow.

@@ -13,14 +13,13 @@ import { CmsActionType } from "."
  * {
  *   action: "click",
  *   context_module: "Artworks - completeness score",
- *   label: "view details",
+ *   label: "completeness checklist link",
  *   artwork_ids: ["artwork1", "artwork2", "artwork3"]
  * }
  */
 export type CmsCompletenessScoreClickLabel =
-  | "view details"
-  | "improve score"
-  | "dismiss"
+  | "completeness checklist link"
+  | "edit artwork"
 
 export interface CmsCompletenessScoreClickedEvent {
   action: "click"
