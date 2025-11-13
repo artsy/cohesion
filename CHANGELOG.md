@@ -1,3 +1,15 @@
+# v4.322.0 (Thu Nov 13 2025)
+
+#### 🚀  Enhancement
+
+- chore: Add Completeness Score events [#657](https://github.com/artsy/cohesion/pull/657) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.321.0 (Mon Nov 10 2025)
 
 #### 🚀  Enhancement
