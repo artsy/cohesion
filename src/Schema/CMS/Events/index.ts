@@ -2,6 +2,7 @@ import { CmsAnalyticsPage } from "./AnalyticsPage"
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
+import { CmsCompletenessScoreFlow } from "./CompletenessScoreFlow"
 import { CmsQuickReplyFlow } from "./QuickReplyFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsShowFlow } from "./ShowFlow"
@@ -17,6 +18,7 @@ export type CmsEvent =
   | CmsArtworkFilter
   | CmsBulkEditFlow
   | CmsBatchImportFlow
+  | CmsCompletenessScoreFlow
   | CmsUploadArtworkFlow
   | CmsQuickReplyFlow
   | CmsSettingsFlow
@@ -132,6 +134,11 @@ export enum CmsActionType {
    * Corresponds to {@link BatchImportFlow}
    */
   shownMissingInformation = "shownMissingInformation",
+
+  /**
+   * Corresponds to {@link CmsCompletenessScoreFlow}
+   */
+  shownCompletenessScoreModal = "shownCompletenessScoreModal",
 
   /**
    * Corresponds to {@link CmsAnalytics}
