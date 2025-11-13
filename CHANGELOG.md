@@ -1,3 +1,15 @@
+# v4.323.0 (Thu Nov 13 2025)
+
+#### 🚀  Enhancement
+
+- fix: Adjust Completeness score click label [#658](https://github.com/artsy/cohesion/pull/658) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.322.0 (Thu Nov 13 2025)
 
 #### 🚀  Enhancement
