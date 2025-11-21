@@ -28,6 +28,7 @@ export type CmsBulkEditClickLabel =
   | "publish"
   | "publish learn more"
   | "resolve all conflicts"
+  | "shipping preset"
   | "shortlist"
   | "unpublish"
 
@@ -135,6 +136,7 @@ export interface CmsBulkEditProcessingCompleted {
   label: string
   value: string
   artwork_ids: string[]
+  shipping_preset_id?: string
 }
 
 /**

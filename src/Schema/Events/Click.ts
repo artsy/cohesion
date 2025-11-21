@@ -1627,6 +1627,7 @@ export interface ClickedPublish {
   context_module: ContextModule
   artwork_id: string
   label: string
+  shipping_preset_id?: string
 }
 
 /**
@@ -1650,6 +1651,7 @@ export interface ClickedSave {
   context_module: ContextModule
   artwork_id: string
   label: string
+  shipping_preset_id?: string
 }
 
 /**
