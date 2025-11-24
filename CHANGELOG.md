@@ -1,3 +1,15 @@
+# v4.325.0 (Mon Nov 24 2025)
+
+#### 🚀  Enhancement
+
+- chore: upkeep [#662](https://github.com/artsy/cohesion/pull/662) ([@ovasdi](https://github.com/ovasdi))
+
+#### Authors: 1
+
+- Ozzie Vasdi ([@ovasdi](https://github.com/ovasdi))
+
+---
+
 # v4.324.0 (Thu Nov 13 2025)
 
 #### 🚀  Enhancement
