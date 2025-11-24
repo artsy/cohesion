@@ -1,3 +1,15 @@
+# v4.326.0 (Mon Nov 24 2025)
+
+#### 🚀  Enhancement
+
+- feat: Tracking needs for Shipping Presets project [#661](https://github.com/artsy/cohesion/pull/661) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.325.0 (Mon Nov 24 2025)
 
 #### 🚀  Enhancement
