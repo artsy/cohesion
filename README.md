@@ -7,7 +7,7 @@
 - **Docs:** https://cohesion.artsy.net
 - **Ci**: https://circleci.com/gh/artsy/cohesion
 - **[NPM](https://www.npmjs.com/package/@artsy/cohesion):** Package updates are published automatically on successful merges to main. Canaries are available on PR's from feature branches.
-- **Point People**: [@damassi][], [@abhitip][]
+- **Point People**: [@abhitip][]
 
 ## Contributing
 

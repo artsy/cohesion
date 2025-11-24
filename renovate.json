@@ -2,7 +2,5 @@
   "extends": [
     "@artsy:lib"
   ],
-  "assignees": [
-    "icirellik"
-  ]
+  "assignees": []
 }
