@@ -121,7 +121,7 @@ export interface CmsBulkEditProcessingStarted {
 /**
  * Bulk Edit flow processing completed
  *
- * Example:
+ * Example (single field):
  * {
  *   action: "processingCompleted",
  *   context_module: "Artworks - bulk edit",
@@ -129,12 +129,24 @@ export interface CmsBulkEditProcessingStarted {
  *   value: "on hold", // e.g. "on hold", "available", "not for sale"
  *   artwork_ids: ["artwork1", "artwork2"]
  * }
+ *
+ * Example (multiple fields):
+ * {
+ *   action: "processingCompleted",
+ *   context_module: "Artworks - bulk edit",
+ *   labels: ["change domesticShipping", "change internationalShipping", "change collectorPickup"],
+ *   values: ["2000", "3000", "1000"],
+ *   artwork_ids: ["artwork1", "artwork2"],
+ *   shipping_preset_id: "preset123"
+ * }
  */
 export interface CmsBulkEditProcessingCompleted {
   action: CmsActionType.processingCompleted
   context_module: CmsContextModule.bulkEditFlow
-  label: string
-  value: string
+  label?: string
+  value?: string
+  labels?: string[]
+  values?: string[]
   artwork_ids: string[]
   shipping_preset_id?: string
 }
