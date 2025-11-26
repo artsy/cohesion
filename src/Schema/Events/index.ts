@@ -111,6 +111,7 @@ import {
   ClickedPaymentMethod,
   ClickedPromoSpace,
   ClickedPublish,
+  ClickedSaveAsTemplate,
   ClickedSelectShippingOption,
   ClickedSendPartnerOffer,
   ClickedShippingAddress,
@@ -405,6 +406,7 @@ export type Event =
   | ClickedPromoSpace
   | ClickedPublish
   | ClickedRegisterToBid
+  | ClickedSaveAsTemplate
   | ClickedSelectShippingOption
   | ClickedSendPartnerOffer
   | ClickedShareButton
@@ -916,6 +918,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedSave}
    */
   clickedSave = "clickedSave",
+  /**
+   * Corresponds to {@link ClickedSaveAsTemplate}
+   */
+  clickedSaveAsTemplate = "clickedSaveAsTemplate",
   /**
    * Corresponds to {@link ClickedShareButton}
    */

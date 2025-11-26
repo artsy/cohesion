@@ -45,6 +45,27 @@ export interface SettingsFlowEditLocation {
   user_id: string
 }
 
+/**
+ * Event fired after user deletes an artwork template
+ *
+ * @example
+ * ```
+ * {
+ *   action: "deletedArtworkTemplate",
+ *   context_module: "Settings",
+ *   template_id: "template-id",
+ *   user_id: "some-user-id",
+ * }
+ * ```
+ */
+export interface SettingsFlowDeleteArtworkTemplate {
+  action: CmsActionType.deletedArtworkTemplate
+  context_module: CmsContextModule.settings
+  template_id: string
+  user_id: string
+}
+
 export type CmsSettingsFlow =
   | SettingsFlowAddNewLocation
   | SettingsFlowEditLocation
+  | SettingsFlowDeleteArtworkTemplate
