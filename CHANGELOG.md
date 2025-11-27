@@ -1,3 +1,15 @@
+# v4.327.0 (Thu Nov 27 2025)
+
+#### 🚀  Enhancement
+
+- feat: Add artwork template tracking schema [#663](https://github.com/artsy/cohesion/pull/663) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.326.0 (Mon Nov 24 2025)
 
 #### 🚀  Enhancement
