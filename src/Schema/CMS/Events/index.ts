@@ -31,7 +31,7 @@ export type CmsEvent =
  */
 export enum CmsActionType {
   /**
-   * Corresponds to {@link SettingsFlow}
+   * Corresponds to {@link CmsSettingsFlow}
    */
   addedNewLocation = "addedNewLocation",
 
@@ -76,6 +76,11 @@ export enum CmsActionType {
   createdArtwork = "created artwork",
 
   /**
+   * Corresponds to {@link CmsUploadArtworkFlow}
+   */
+  createdArtworkFromTemplate = "createdArtworkFromTemplate",
+
+  /**
    * Corresponds to {@link CmsBatchImportFlow}
    */
   csvImportError = "csvImportError",
@@ -86,7 +91,7 @@ export enum CmsActionType {
   editedBatchImportField = "editedBatchImportField",
 
   /**
-   * Corresponds to {@link SettingsFlow}
+   * Corresponds to {@link CmsSettingsFlow}
    */
   editedLocation = "editedLocation",
 
@@ -209,6 +214,11 @@ export enum CmsActionType {
    * Corresponds to {@link CmsQuickReplyFlow}
    */
   deletedTemplate = "deletedTemplate",
+
+  /**
+   * Corresponds to {@link CmsSettingsFlow}
+   */
+  deletedArtworkTemplate = "deletedArtworkTemplate",
 
   /**
    * Corresponds to {@link CmsQuickReplyFlow}

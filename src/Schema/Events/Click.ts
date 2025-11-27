@@ -1655,6 +1655,30 @@ export interface ClickedSave {
 }
 
 /**
+ * A partner clicks on Save as Template button on an artwork in the CMS.
+ *
+ * This schema describes events sent to Segment from [[ClickedSaveAsTemplate]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSaveAsTemplate",
+ *    context_module: "voltArtworksEdit" | "artworkForm",
+ *    artwork_id: "60de173a47476c000fd5c4cc"
+ *    label: "Save as template"
+ *    flow: "artworksList" | "artworkForm"
+ *  }
+ * ```
+ */
+export interface ClickedSaveAsTemplate {
+  action: ActionType.clickedSaveAsTemplate
+  context_module: ContextModule
+  artwork_id: string
+  label: string
+  flow: string
+}
+
+/**
  * A Partner selects a filter on the conversations page in CMS.
  *
  * This schema describes events sent to Segment from [[ClickedConversationsFilter]]
