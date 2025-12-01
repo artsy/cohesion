@@ -270,6 +270,7 @@ export type AuthContextModule =
   | ContextModule.activity
   | ContextModule.articleTab
   | ContextModule.artistHeader
+  | ContextModule.artistHighlights
   | ContextModule.artistRecentlySold
   | ContextModule.artistSeriesRail
   | ContextModule.artistSeriesTab
