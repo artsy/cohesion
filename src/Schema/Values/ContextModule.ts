@@ -220,6 +220,7 @@ export enum ContextModule {
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
   relatedArticles = "relatedArticles",
   relatedArtistsRail = "relatedArtistsRail",
+  relatedCategories = "relatedCategories",
   relatedCollectionsRail = "relatedCollectionsRail",
   relatedWorksRail = "relatedWorksRail",
   saves = "saves",
@@ -348,6 +349,7 @@ export type AuthContextModule =
   | ContextModule.recentPriceRanges
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
+  | ContextModule.relatedCategories
   | ContextModule.relatedWorksRail
   | ContextModule.saveWorksCTA
   | ContextModule.sell
