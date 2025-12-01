@@ -77,6 +77,7 @@ import {
   ClickedFairGroup,
   ClickedFulfillmentTab,
   ClickedGalleryGroup,
+  ClickedGene,
   ClickedHeader,
   ClickedHeroUnitGroup,
   ClickedImmersiveView,
@@ -368,6 +369,7 @@ export type Event =
   | ClickedFairGroup
   | ClickedFulfillmentTab
   | ClickedGalleryGroup
+  | ClickedGene
   | ClickedHeader
   | ClickedHeroUnitGroup
   | ClickedImmersiveView
