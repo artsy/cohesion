@@ -325,6 +325,7 @@ export type PageOwnerType =
   | OwnerType.activities
   | OwnerType.activity
   | OwnerType.alertConfirmation
+  | OwnerType.allArtistSeries
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
