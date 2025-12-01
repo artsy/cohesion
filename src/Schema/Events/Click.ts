@@ -2012,26 +2012,23 @@ export interface ClickedGene {
 }
 
 /**
- * A user clicks one of the Highlight and Achievement toggles in the artist header
+ * A user clicks on a pathway to the artist's CV, via header or about page
  *
- * This schema describes events sent to Segment from [[clickedHighlightAchievement]]
+ * This schema describes events sent to Segment from [[clickedCV]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedHighlightAchievement",
- *    context_module : "Active Secondary Market",
- *    context_page_owner_type: "Artwork",
- *    context_page_owner_id: "58de681f275b2464fcdde097",
- *    context_page_owner_slug: "damien-hirst",
- *    destination_page_owner_type: "Gene"
- *    destination_page_owner_id: "58de681f275b2464fcdde097"
- *    subject: ""
+ *    action: "clickedCV",
+ *    context_module : "artistHeader" | "artistHighlights",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id?: "4d8b92b34eb68a1b2c0003f4",
+ *    context_page_owner_slug?: "andy-warhol"
  *  }
  * ```
  */
-export interface ClickedHighlightAchievement {
-  action: ActionType.clickedHighlightAchievement
+export interface ClickedCV {
+  action: ActionType.clickedCV
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string

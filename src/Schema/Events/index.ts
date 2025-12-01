@@ -63,6 +63,7 @@ import {
   ClickedContactGallery,
   ClickedConversationsFilter,
   ClickedCreateAlert,
+  ClickedCV,
   ClickedDeliveryMethod,
   ClickedDismissInquiry,
   ClickedDownloadAppFooter,
@@ -355,6 +356,7 @@ export type Event =
   | ClickedContactGallery
   | ClickedConversationsFilter
   | ClickedCreateAlert
+  | ClickedCV
   | ClickedDeliveryMethod
   | ClickedDismissInquiry
   | ClickedDownloadAppFooter
@@ -1071,9 +1073,9 @@ export enum ActionType {
    */
   clickedViewFullConversationHistory = "clickedViewFullConversationHistory",
   /**
-   * Corresponds to {@link ClickedHighlightAchievement}
+   * Corresponds to {@link ClickedCV}
    */
-  clickedHighlightAchievement = "clickedHighlightAchievement",
+  clickedCV = "clickedCV",
   /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
