@@ -300,6 +300,7 @@ import {
   TappedVisitHelpCenter,
 } from "./Tap"
 import {
+  ToggledArtistBio,
   ToggledCollapsibleOrderSummary,
   ToggledNotification,
   ToggledSavedSearch,
@@ -577,6 +578,7 @@ export type Event =
   | TappedVisitHelpCenter
   | TimeOnPage
   | ToggledAccordion
+  | ToggledArtistBio
   | ToggledCollapsibleOrderSummary
   | ToggledNotification
   | ToggledPresentationModeSetting
@@ -1798,6 +1800,10 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
+  /**
+   * Corresponds to {@link ToggledArtistBio}
+   */
+  toggledArtistBio = "toggledArtistBio",
   /**
    * Corresponds to {@link ToggledAccordion}
    */
