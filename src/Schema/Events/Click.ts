@@ -2020,7 +2020,7 @@ export interface ClickedGene {
  *  ```
  *  {
  *    action: "clickedCV",
- *    context_module : "artistHeader" | "artistHighlights",
+ *    context_module : "artistHeader" | "artistAchievements",
  *    context_page_owner_type: "artist",
  *    context_page_owner_id?: "4d8b92b34eb68a1b2c0003f4",
  *    context_page_owner_slug?: "andy-warhol"

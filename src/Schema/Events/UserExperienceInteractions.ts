@@ -16,7 +16,7 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "toggledAccordion",
- *    context_module: "artworkDetailsCompleted" | "artworkSidebar" | "artistHeader" | "artistHighlights"
+ *    context_module: "artworkDetailsCompleted" | "artworkSidebar" | "artistHeader" | "artistAchievements"
  *    context_owner_type: "consignmentFlow" | "artwork" | "artist",
  *    subject: "Artwork Details" | "Shipping and taxes" | "ACTIVE_SECONDARY_MARKET" | ...,
  *    expand: true | false

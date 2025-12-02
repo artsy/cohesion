@@ -27,6 +27,7 @@ export enum ContextModule {
   articleRail = "articleRail",
   articles = "articles",
   articleTab = "articleTab",
+  artistAchievements = "artistAchievements",
   artistArtworksCreateAlertReminderMessage = "artistArtworksCreateAlertReminderMessage",
   artistArtworksFilterHeader = "artistArtworksFilterHeader",
   artistArtworksGridEnd = "artistArtworksGridEnd",
@@ -35,7 +36,6 @@ export enum ContextModule {
   artistGrid = "artistGrid",
   artistHeader = "artistHeader",
   artistHighDemandGrid = "artistHighDemandGrid",
-  artistHighlights = "artistHighlights",
   artistRecentlySold = "artistRecentlySold",
   artistSeriesRail = "artistSeriesRail",
   artistSeriesTab = "artistSeriesTab",
@@ -269,8 +269,8 @@ export type AuthContextModule =
   | ContextModule.accountTransactions
   | ContextModule.activity
   | ContextModule.articleTab
+  | ContextModule.artistAchievements
   | ContextModule.artistHeader
-  | ContextModule.artistHighlights
   | ContextModule.artistRecentlySold
   | ContextModule.artistSeriesRail
   | ContextModule.artistSeriesTab
