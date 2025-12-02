@@ -16,10 +16,10 @@ import { ActionType } from "."
  *  ```
  *  {
  *    action: "toggledAccordion",
- *    context_module: "artworkDetailsCompleted"
- *    context_owner_type: "consignmentFlow",
- *    subject: "Artwork Details"
- *    expand: TRUE
+ *    context_module: "artworkDetailsCompleted" | "artworkSidebar" | "artistHeader" | "artistHighlights"
+ *    context_owner_type: "consignmentFlow" | "artwork" | "artist",
+ *    subject: "Artwork Details" | "Shipping and taxes" | "ACTIVE_SECONDARY_MARKET" | ...,
+ *    expand: true | false
  *  }
  * ```
  */
