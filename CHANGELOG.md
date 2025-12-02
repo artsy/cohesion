@@ -1,3 +1,15 @@
+# v4.328.0 (Tue Dec 02 2025)
+
+#### 🚀  Enhancement
+
+- chore: add artworkCarousel contextModule [#664](https://github.com/artsy/cohesion/pull/664) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.327.0 (Thu Nov 27 2025)
 
 #### 🚀  Enhancement
