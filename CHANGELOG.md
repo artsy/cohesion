@@ -1,3 +1,15 @@
+# v4.329.0 (Fri Dec 05 2025)
+
+#### 🚀  Enhancement
+
+- chore: add authModal ownerType [#666](https://github.com/artsy/cohesion/pull/666) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v4.328.0 (Tue Dec 02 2025)
 
 #### 🚀  Enhancement
