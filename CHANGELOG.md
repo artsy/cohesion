@@ -1,3 +1,15 @@
+# v4.330.0 (Fri Dec 05 2025)
+
+#### 🚀  Enhancement
+
+- chore: add authModal to ScreenOwnerType #trivial [#667](https://github.com/artsy/cohesion/pull/667) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v4.329.0 (Fri Dec 05 2025)
 
 #### 🚀  Enhancement
