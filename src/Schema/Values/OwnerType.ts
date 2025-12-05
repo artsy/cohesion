@@ -49,6 +49,7 @@ export enum OwnerType {
   auctionResultsRail = "auctionResultsRail",
   auctions = "auctions",
   auctionsOverview = "auctionsOverview",
+  authModal = "authModal",
   basedOnYourRecentSaves = "basedOnYourRecentSaves",
   category = "category",
   cityGuideGuide = "cityGuideGuide",
