@@ -218,6 +218,7 @@ export type ScreenOwnerType =
   | OwnerType.auctionResultsForArtistsYouFollow
   | OwnerType.auctions
   | OwnerType.auctionsOverview
+  | OwnerType.authModal
   | OwnerType.basedOnYourRecentSaves
   | OwnerType.category
   | OwnerType.cityGuideGuide
