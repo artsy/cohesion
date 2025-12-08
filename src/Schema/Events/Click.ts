@@ -2698,3 +2698,50 @@ export interface ClickedHeader {
   context_page_owner_type: PageOwnerType
   subject: string
 }
+
+/**
+ * User clicks an item within a navigation dropdown on web (desktop or mobile)
+ * Triggered before navigation to the destination
+ * Note: Clicks on actual items (e.g., "Banksy"), not category headings (e.g., "Blue-Chip Artists")
+ *
+ * This schema describes events sent to Segment from [[ClickedNavigationDropdownItem]]
+ *
+ *  @example Desktop - clicking "Banksy" from the Blue-Chip Artists group:
+ *  ```
+ *  {
+ *    action: "click",
+ *    flow: "Header",
+ *    context_module: "HeaderArtworksDropdown",
+ *    context_page_owner_type: "home",
+ *    parent_navigation_item: "Artworks",
+ *    dropdown_group: "Blue-Chip Artists",
+ *    subject: "Banksy",
+ *    destination_path: "/artist/banksy"
+ *  }
+ *  ```
+ *
+ *  @example Desktop - clicking "View All Artists":
+ *  ```
+ *  {
+ *    action: "click",
+ *    flow: "Header",
+ *    context_module: "HeaderArtistsDropdown",
+ *    context_page_owner_type: "home",
+ *    parent_navigation_item: "Artists",
+ *    subject: "View All Artists",
+ *    destination_path: "/artists"
+ *  }
+ *  ```
+ */
+export interface ClickedNavigationDropdownItem {
+  action: "click"
+  flow: string
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  parent_navigation_item: string
+  dropdown_group?: string
+  subject: string
+  destination_path: string
+}

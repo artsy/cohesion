@@ -550,3 +550,42 @@ export interface ImmersiveViewArtworkDisplayed {
   context_page_owner_id?: string
   artwork_id: string
 }
+
+/**
+ * User views a navigation dropdown on web
+ * - Desktop: triggered after hovering over a top-level nav item (e.g., "Artists") with delay
+ * - Mobile web: triggered when drilling down into the navigation menu hierarchy
+ *
+ * This schema describes events sent to Segment from [[NavigationDropdownViewed]].
+ *
+ *  @example Desktop hover:
+ *  ```
+ *  {
+ *    action: "navigationDropdownViewed",
+ *    context_module: "header",
+ *    context_page_owner_type: "home",
+ *    navigation_item: "Artists",
+ *    interaction_type: "hover"
+ *  }
+ *  ```
+ *
+ *  @example Mobile web drilldown:
+ *  ```
+ *  {
+ *    action: "navigationDropdownViewed",
+ *    context_module: "header",
+ *    context_page_owner_type: "artist",
+ *    navigation_item: "Artists",
+ *    interaction_type: "drilldown"
+ *  }
+ *  ```
+ */
+export interface NavigationDropdownViewed {
+  action: ActionType.navigationDropdownViewed
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  navigation_item: string
+  interaction_type: "hover" | "drilldown"
+}

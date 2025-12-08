@@ -187,6 +187,7 @@ import {
   ImmersiveViewArtworkDisplayed,
   ImmersiveViewOptionViewed,
   ItemViewed,
+  NavigationDropdownViewed,
   OrderDetailsViewed,
   OrderProgressionViewed,
   ProgressiveOnboardingTooltipViewed,
@@ -460,6 +461,7 @@ export type Event =
   | ItemViewed
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
+  | NavigationDropdownViewed
   | OnboardingUserInputData
   | OrderDetailsViewed
   | OrderProgressionViewed
@@ -1263,6 +1265,10 @@ export enum ActionType {
    * Corresponds to {@link MyCollectionOnboardingCompleted}
    */
   myCollectionOnboardingCompleted = "myCollectionOnboardingCompleted",
+  /**
+   * Corresponds to {@link NavigationDropdownViewed}
+   */
+  navigationDropdownViewed = "navigationDropdownViewed",
   /**
    * Corresponds to {@link OnboardingUserInputData}
    */
