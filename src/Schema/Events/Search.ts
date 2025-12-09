@@ -38,28 +38,49 @@ export interface FocusedOnSearchInput {
  *  ```
  *  {
  *    action: "selectedItemFromSearch",
- *    context_module: "priceEstimate",
- *    context_owner_type: "consign",
- *    owner_type: "artist",
- *    owner_id: "5df3e3fa485efe0012c37055",
- *    owner_slug: "andy-warhol",
- *    query: "andy warhol"
+ *    context_module: "header",
+ *    destination_path: "/artist/andy-warhol",
+ *    query: "andy warhol",
+ *    item_id: "4d8b92b34eb68a1b2c0003f4",
+ *    item_number: 2,
+ *    item_type: "Artist"
  *  }
  * ```
  */
 export interface SelectedItemFromSearch {
   action: ActionType.selectedItemFromSearch
   context_module: ContextModule
-  context_owner_type: PageOwnerType
-  context_owner_id?: string
-  context_owner_slug?: string
-  destination_owner_type?: PageOwnerType
-  destination_owner_id?: string
-  destination_owner_slug?: string
-  owner_type: OwnerType
-  owner_id: string
-  owner_slug: string
+  destination_path: string
   query: string
+  item_id: string
+  item_number: number
+  item_type: string
+}
+
+/**
+ * A user selects an item from the search results page
+ *
+ * This schema describes events sent to Segment from [[selectedItemFromSearchPage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedItemFromSearchPage",
+ *    query: "andy warhol",
+ *    item_number: 2,
+ *    item_type: "Artist",
+ *    item_id: "4d8b92b34eb68a1b2c0003f4",
+ *    destination_path: "/artist/andy-warhol"
+ *  }
+ * ```
+ */
+export interface SelectedItemFromSearchPage {
+  action: ActionType.selectedItemFromSearchPage
+  query: string
+  item_number: number
+  item_type: string
+  item_id: string
+  destination_path: string
 }
 
 /**
