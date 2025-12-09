@@ -1,3 +1,15 @@
+# v4.333.0 (Tue Dec 09 2025)
+
+#### 🚀  Enhancement
+
+- feat: add SelectedItemFromSearchPage and enhance SelectedItemFromSearch [#670](https://github.com/artsy/cohesion/pull/670) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.332.0 (Tue Dec 09 2025)
 
 #### 🚀  Enhancement
