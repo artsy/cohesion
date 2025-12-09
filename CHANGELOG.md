@@ -1,3 +1,15 @@
+# v4.332.0 (Tue Dec 09 2025)
+
+#### 🚀  Enhancement
+
+- feat: add level property to navigationDropdownViewed event [#669](https://github.com/artsy/cohesion/pull/669) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.331.0 (Tue Dec 09 2025)
 
 #### 🚀  Enhancement
