@@ -558,24 +558,26 @@ export interface ImmersiveViewArtworkDisplayed {
  *
  * This schema describes events sent to Segment from [[NavigationDropdownViewed]].
  *
- *  @example Desktop hover:
+ *  @example Desktop hover (always level 0):
  *  ```
  *  {
  *    action: "navigationDropdownViewed",
  *    context_module: "header",
  *    context_page_owner_type: "home",
  *    navigation_item: "Artists",
+ *    level: 0,
  *    interaction_type: "hover"
  *  }
  *  ```
  *
- *  @example Mobile web drilldown:
+ *  @example Mobile web drilldown (level 1):
  *  ```
  *  {
  *    action: "navigationDropdownViewed",
  *    context_module: "header",
- *    context_page_owner_type: "artist",
- *    navigation_item: "Artists",
+ *    context_page_owner_type: "home",
+ *    navigation_item: "Blue-Chip Artists",
+ *    level: 1,
  *    interaction_type: "drilldown"
  *  }
  *  ```
@@ -587,5 +589,6 @@ export interface NavigationDropdownViewed {
   context_page_owner_id?: string
   context_page_owner_slug?: string
   navigation_item: string
+  level: number
   interaction_type: "hover" | "drilldown"
 }
