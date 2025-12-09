@@ -1,3 +1,15 @@
+# v4.331.0 (Tue Dec 09 2025)
+
+#### 🚀  Enhancement
+
+- chore: add navigation dropdown tracking events [#668](https://github.com/artsy/cohesion/pull/668) ([@dblandin](https://github.com/dblandin))
+
+#### Authors: 1
+
+- devon blandin ([@dblandin](https://github.com/dblandin))
+
+---
+
 # v4.330.0 (Fri Dec 05 2025)
 
 #### 🚀  Enhancement
