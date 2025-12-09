@@ -240,6 +240,7 @@ import {
   SelectedItemFromAddressAutoCompletion,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
+  SelectedItemFromSearchPage,
   SelectedSearchSuggestionQuickNavigationItem,
 } from "./Search"
 import { DarkModeOptionUpdated } from "./Settings"
@@ -484,6 +485,7 @@ export type Event =
   | SelectedItemFromAddressAutoCompletion
   | SelectedItemFromPriceDatabaseSearch
   | SelectedItemFromSearch
+  | SelectedItemFromSearchPage
   | SelectedFromDrawer
   | SelectedRecentPriceRange
   | SelectedSearchSuggestionQuickNavigationItem
@@ -1377,6 +1379,10 @@ export enum ActionType {
    * Corresponds to {@link SelectedItemFromSearch}
    */
   selectedItemFromSearch = "selectedItemFromSearch",
+  /**
+   * Corresponds to {@link SelectedItemFromSearchPage}
+   */
+  selectedItemFromSearchPage = "selectedItemFromSearchPage",
   /**
    * Corresponds to {@link SelectedItemFromAddressAutoCompletion}
    */
