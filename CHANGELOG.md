@@ -1,3 +1,15 @@
+# v4.334.0 (Mon Dec 15 2025)
+
+#### 🚀  Enhancement
+
+- feat: improved artist page tracking (Diamond) [#665](https://github.com/artsy/cohesion/pull/665) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.333.0 (Tue Dec 09 2025)
 
 #### 🚀  Enhancement
