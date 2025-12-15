@@ -156,7 +156,9 @@ export interface ClickedArtistGroup extends ClickedEntityGroup {
  */
 export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtistSeriesGroup
-  destination_page_owner_type: OwnerType.artistSeries
+  destination_page_owner_type:
+    | OwnerType.artistSeries
+    | OwnerType.allArtistSeries
 }
 
 /**
