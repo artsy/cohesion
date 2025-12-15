@@ -1,3 +1,15 @@
+# v4.335.0 (Mon Dec 15 2025)
+
+#### 🚀  Enhancement
+
+- fix: add allArtistsSeries as a destination_page_owner_type of clickedArtistSeriesGroup events [#671](https://github.com/artsy/cohesion/pull/671) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.334.0 (Mon Dec 15 2025)
 
 #### 🚀  Enhancement
