@@ -27,7 +27,6 @@ export enum ContextModule {
   articleRail = "articleRail",
   articles = "articles",
   articleTab = "articleTab",
-  artistAchievements = "artistAchievements",
   artistArtworksCreateAlertReminderMessage = "artistArtworksCreateAlertReminderMessage",
   artistArtworksFilterHeader = "artistArtworksFilterHeader",
   artistArtworksGridEnd = "artistArtworksGridEnd",
@@ -222,7 +221,6 @@ export enum ContextModule {
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
   relatedArticles = "relatedArticles",
   relatedArtistsRail = "relatedArtistsRail",
-  relatedCategories = "relatedCategories",
   relatedCollectionsRail = "relatedCollectionsRail",
   relatedWorksRail = "relatedWorksRail",
   saves = "saves",
@@ -270,7 +268,6 @@ export type AuthContextModule =
   | ContextModule.accountTransactions
   | ContextModule.activity
   | ContextModule.articleTab
-  | ContextModule.artistAchievements
   | ContextModule.artistHeader
   | ContextModule.artistRecentlySold
   | ContextModule.artistSeriesRail
@@ -353,7 +350,6 @@ export type AuthContextModule =
   | ContextModule.recentPriceRanges
   | ContextModule.recommendedArtistsRail
   | ContextModule.relatedArtistsRail
-  | ContextModule.relatedCategories
   | ContextModule.relatedWorksRail
   | ContextModule.saveWorksCTA
   | ContextModule.sell

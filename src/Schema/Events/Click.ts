@@ -2016,13 +2016,13 @@ export interface ClickedVerifiedRepresentative {
  *  ```
  *  {
  *    action: "clickedGene",
- *    context_module : "relatedCategories",
- *    context_page_owner_type: "artist",
- *    context_page_owner_id: "4d8b92b34eb68a1b2c0003f4",
- *    context_page_owner_slug: "andy-warhol",
- *    destination_page_owner_type: "gene",
- *    destination_page_owner_id: "52333b71a09a67177c000082",
- *    destination_page_owner_slug: "celebrity"
+ *    context_module : "Young British Artists",
+ *    context_page_owner_type: "Artwork",
+ *    context_page_owner_id: "58de681f275b2464fcdde097",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_page_owner_type: "Gene"
+ *    destination_page_owner_id: "58de681f275b2464fcdde097"
+ *    subject: ""
  *  }
  * ```
  */
@@ -2030,31 +2030,34 @@ export interface ClickedGene {
   action: ActionType.clickedGene
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
-  context_page_owner_id?: string
+  context_page_owner_id: string
   context_page_owner_slug?: string
   destination_page_owner_type: PageOwnerType
-  destination_page_owner_id?: string
-  destination_page_owner_slug?: string
+  destination_page_owner_id: string
+  subject?: string
 }
 
 /**
- * A user clicks on a pathway to the artist's CV, via header or about page
+ * A user clicks one of the Highlight and Achievement toggles in the artist header
  *
- * This schema describes events sent to Segment from [[clickedCV]]
+ * This schema describes events sent to Segment from [[clickedHighlightAchievement]]
  *
  *  @example
  *  ```
  *  {
- *    action: "clickedCV",
- *    context_module : "artistHeader" | "artistAchievements",
- *    context_page_owner_type: "artist",
- *    context_page_owner_id?: "4d8b92b34eb68a1b2c0003f4",
- *    context_page_owner_slug?: "andy-warhol"
+ *    action: "clickedHighlightAchievement",
+ *    context_module : "Active Secondary Market",
+ *    context_page_owner_type: "Artwork",
+ *    context_page_owner_id: "58de681f275b2464fcdde097",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_page_owner_type: "Gene"
+ *    destination_page_owner_id: "58de681f275b2464fcdde097"
+ *    subject: ""
  *  }
  * ```
  */
-export interface ClickedCV {
-  action: ActionType.clickedCV
+export interface ClickedHighlightAchievement {
+  action: ActionType.clickedHighlightAchievement
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string

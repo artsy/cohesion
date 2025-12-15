@@ -63,7 +63,6 @@ import {
   ClickedContactGallery,
   ClickedConversationsFilter,
   ClickedCreateAlert,
-  ClickedCV,
   ClickedDeliveryMethod,
   ClickedDismissInquiry,
   ClickedDownloadAppFooter,
@@ -78,7 +77,6 @@ import {
   ClickedFairGroup,
   ClickedFulfillmentTab,
   ClickedGalleryGroup,
-  ClickedGene,
   ClickedHeader,
   ClickedHeroUnitGroup,
   ClickedImmersiveView,
@@ -303,7 +301,6 @@ import {
   TappedVisitHelpCenter,
 } from "./Tap"
 import {
-  ToggledArtistBio,
   ToggledCollapsibleOrderSummary,
   ToggledNotification,
   ToggledSavedSearch,
@@ -360,7 +357,6 @@ export type Event =
   | ClickedContactGallery
   | ClickedConversationsFilter
   | ClickedCreateAlert
-  | ClickedCV
   | ClickedDeliveryMethod
   | ClickedDismissInquiry
   | ClickedDownloadAppFooter
@@ -375,7 +371,6 @@ export type Event =
   | ClickedFairGroup
   | ClickedFulfillmentTab
   | ClickedGalleryGroup
-  | ClickedGene
   | ClickedHeader
   | ClickedHeroUnitGroup
   | ClickedImmersiveView
@@ -584,7 +579,6 @@ export type Event =
   | TappedVisitHelpCenter
   | TimeOnPage
   | ToggledAccordion
-  | ToggledArtistBio
   | ToggledCollapsibleOrderSummary
   | ToggledNotification
   | ToggledPresentationModeSetting
@@ -1085,9 +1079,9 @@ export enum ActionType {
    */
   clickedViewFullConversationHistory = "clickedViewFullConversationHistory",
   /**
-   * Corresponds to {@link ClickedCV}
+   * Corresponds to {@link ClickedHighlightAchievement}
    */
-  clickedCV = "clickedCV",
+  clickedHighlightAchievement = "clickedHighlightAchievement",
   /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
@@ -1818,10 +1812,6 @@ export enum ActionType {
    * Corresponds to {@link TimeOnPage}
    */
   timeOnPage = "timeOnPage",
-  /**
-   * Corresponds to {@link ToggledArtistBio}
-   */
-  toggledArtistBio = "toggledArtistBio",
   /**
    * Corresponds to {@link ToggledAccordion}
    */
