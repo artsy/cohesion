@@ -236,6 +236,7 @@ import {
   EditedAutocompletedAddress,
   FocusedOnPriceDatabaseSearchInput,
   FocusedOnSearchInput,
+  PastedIntoSearchInput,
   SearchedPriceDatabase,
   SearchedWithNoResults,
   SearchedWithResults,
@@ -471,6 +472,7 @@ export type Event =
   | OnboardingUserInputData
   | OrderDetailsViewed
   | OrderProgressionViewed
+  | PastedIntoSearchInput
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
   | RailViewed
@@ -1289,6 +1291,10 @@ export enum ActionType {
    * Corresponds to {@link OrderProgressionViewed}
    */
   orderProgressionViewed = "orderProgressionViewed",
+  /**
+   * Corresponds to {@link PastedIntoSearchInput}
+   */
+  pastedIntoSearchInput = "pastedIntoSearchInput",
   /**
    * Corresponds to {@link PriceDatabaseFilterParamsChanged}
    */

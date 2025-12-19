@@ -29,6 +29,27 @@ export interface FocusedOnSearchInput {
   context_owner_slug?: string
 }
 
+/** * A user pastes text into a search box
+ *
+ * This schema describes events sent to Segment from [[pastedIntoSearchInput]]
+ * *  @example
+ * ```
+ *  {
+ *   action: "pastedIntoSearchInput",
+ *   context_module: "topTab",
+ *   context_owner_type: "home"
+ *  }
+ * ```
+ */
+
+export interface PastedIntoSearchInput {
+  action: ActionType.pastedIntoSearchInput
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+}
+
 /**
  * A user selects an item from search
  *
