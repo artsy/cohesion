@@ -1,3 +1,15 @@
+# v4.336.0 (Tue Dec 23 2025)
+
+#### 🚀  Enhancement
+
+- chore: add PastedIntoSearchInput event [#672](https://github.com/artsy/cohesion/pull/672) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.335.0 (Mon Dec 15 2025)
 
 #### 🚀  Enhancement
