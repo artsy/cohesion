@@ -1,3 +1,15 @@
+# v4.337.0 (Wed Jan 21 2026)
+
+#### 🚀  Enhancement
+
+- chore: Expand Click/Tap Visit Help center for inquiry [#673](https://github.com/artsy/cohesion/pull/673) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.336.0 (Tue Dec 23 2025)
 
 #### 🚀  Enhancement
