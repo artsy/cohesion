@@ -2393,7 +2393,7 @@ export interface ClickedViewFullConversationHistory {
 }
 
 /**
- * A user clicks on the help center link during the checkout flow or in the order details page.
+ * A user clicks on the help center link during the checkout flow, order details, or conversations page.
  *
  * This schema describes events sent to Segment from [[clickedVisitHelpCenter]]
  *
@@ -2401,12 +2401,12 @@ export interface ClickedViewFullConversationHistory {
  *  ```
  *  {
  *    action: "clickedVisitHelpCenter",
- *    context_module: "OrdersDetail" | "OrdersCheckout",
- *    context_page_owner_type: "orders-detail" | "orders-checkout",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_module: "OrdersDetail" | "OrdersCheckout" | "conversations",
+ *    context_page_owner_type: "orders-detail" | "orders-checkout" | "conversation",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b" | "549186",
  *    destination_page_owner_type: "articles",
- *    destination_page_owner_slug: "artsy-help-center",
- *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    destination_page_owner_slug: "0TO3b000000UessGAC/buy" | "0TO3b000000UevEGAS/contacting-a-gallery",
+ *    flow: "Buy now" | "Make offer" | "Partner offer" | "inquiry"
  *  }
  *  ```
  */
