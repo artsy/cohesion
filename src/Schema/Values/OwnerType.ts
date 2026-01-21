@@ -342,6 +342,7 @@ export type PageOwnerType =
   | OwnerType.collection
   | OwnerType.collections
   | OwnerType.consign
+  | OwnerType.conversation
   | OwnerType.demand
   | OwnerType.editProfile
   | OwnerType.fair
