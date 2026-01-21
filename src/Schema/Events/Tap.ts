@@ -1440,6 +1440,7 @@ export interface TappedViewWork {
 
 /**
  * A user taps on the Visit Help Center link in the app
+ * context_page_owner_id is either an orderID or conversationID
  *
  * This schema describes events sent to Segment from [[tappedVisitHelpCenter]]
  *

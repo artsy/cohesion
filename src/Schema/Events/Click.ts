@@ -2394,6 +2394,7 @@ export interface ClickedViewFullConversationHistory {
 
 /**
  * A user clicks on the help center link during the checkout flow, order details, or conversations page.
+ * context_page_owner_id is either an orderID or conversationID
  *
  * This schema describes events sent to Segment from [[clickedVisitHelpCenter]]
  *
