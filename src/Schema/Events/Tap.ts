@@ -194,7 +194,7 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedAskSpecialist",
- *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_module: "ordersDetail" | "ordersCheckout",
  *    context_screen_owner_type: "orders-detail" | "orders-checkout",
  *    context_screen_owner_id: "5fad78273c8451000d0c53b9",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
@@ -1448,7 +1448,7 @@ export interface TappedViewWork {
  *  ```
  *  {
  *    action: "tappedVisitHelpCenter",
- *    context_module: "OrdersDetail" | "OrdersCheckout" | "conversations",
+ *    context_module: "ordersDetail" | "ordersCheckout" | "conversations",
  *    context_screen_owner_type: "orders-detail" | "orders-checkout" | "conversation",
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b" | "549186",
  *    destination_screen_owner_type: "articles",
@@ -1580,7 +1580,7 @@ export interface TappedMenuItemGroup {
  *  ```
  *  {
  *    action: "tappedBuyerProtection",
- *    context_module: "OrdersDetail",
+ *    context_module: "ordersDetail",
  *    context_screen_owner_type: "orders-detail",
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_screen_owner_type: "articles",
@@ -1606,7 +1606,7 @@ export interface TappedBuyerProtection {
  *  ```
  *  {
  *    action: "tappedImportFees",
- *    context_module: "OrdersDetail",
+ *    context_module: "ordersDetail",
  *    context_screen_owner_type: "orders-detail",
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_screen_owner_type: "articles",

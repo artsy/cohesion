@@ -43,7 +43,7 @@ export interface ClickedAddFilters {
  *  ```
  *  {
  *    action: "clickedAddNewShippingAddress",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *  }
@@ -198,7 +198,7 @@ export interface ClickedArtworkGroup extends ClickedEntityGroup {
  *  ```
  *  {
  *    action: "clickedAskSpecialist",
- *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_module: "ordersDetail" | "ordersCheckout",
  *    context_page_owner_type: "orders-detail" | "orders-checkout",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *    flow: "Buy now" | "Make offer" | "Partner offer"
@@ -293,7 +293,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  ```
  *  {
  *    action: "clickedBuyerProtection",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_page_owner_type: "articles",
@@ -427,7 +427,7 @@ export interface ClickedBid {
  *  ```
  *  {
  *    action: "clickedChangePaymentMethod",
- *    context_module: "OrdersReview" | "OrdersHistory",
+ *    context_module: "ordersReview" | "ordersHistory",
  *    context_page_owner_type: "orders-review" | "orders-history",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *  }
@@ -449,7 +449,7 @@ export interface ClickedChangePaymentMethod {
  *  ```
  *  {
  *    action: "clickedChangeShippingAddress",
- *    context_module: "OrdersReview",
+ *    context_module: "ordersReview",
  *    context_page_owner_type: "orders-review",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *  }
@@ -471,7 +471,7 @@ export interface ClickedChangeShippingAddress {
  *  ```
  *  {
  *    action: "clickedChangeShippingMethod",
- *    context_module: "OrdersReview",
+ *    context_module: "ordersReview",
  *    context_page_owner_type: "orders-review",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *  }
@@ -494,7 +494,7 @@ export interface ClickedChangeShippingMethod {
  *  ```
  *  {
  *    action: "clickedDeliveryMethod",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    subject: Pick up
@@ -1076,7 +1076,7 @@ export interface CheckedAccountBalance {
  *  ```
  *  {
  *    action: "clickedShippingAddress",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *  }
@@ -1098,7 +1098,7 @@ export interface ClickedShippingAddress {
  *  ```
  *  {
  *    action: "clickedSelectShippingOption",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    subject: "UPS Ground"
@@ -1877,7 +1877,7 @@ export interface ClickedOnDuplicateArtwork {
  *  ```
  *  {
  *    action: "clickedValidationAddressOptions",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    user_id: "61bcda16515b038ce5000104"
@@ -1906,7 +1906,7 @@ export interface ClickedValidationAddressOptions {
  *  ```
  *  {
  *    action: "clickedCloseValidationAddressModal",
- *    context_module: "OrdersShipping",
+ *    context_module: "ordersShipping",
  *    context_page_owner_type: "orders-shipping",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    subject: Check your delivery address
@@ -2402,7 +2402,7 @@ export interface ClickedViewFullConversationHistory {
  *  ```
  *  {
  *    action: "clickedVisitHelpCenter",
- *    context_module: "OrdersDetail" | "OrdersCheckout" | "conversations",
+ *    context_module: "ordersDetail" | "ordersCheckout" | "conversations",
  *    context_page_owner_type: "orders-detail" | "orders-checkout" | "conversation",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b" | "549186",
  *    destination_page_owner_type: "articles",
@@ -2431,7 +2431,7 @@ export interface ClickedVisitHelpCenter {
  *  ```
  *  {
  *    action: "clickedCompleteYourProfile",
- *    context_module: "OrdersDetail",
+ *    context_module: "ordersDetail",
  *    context_page_owner_type: "orders-detail",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *  }
@@ -2632,7 +2632,7 @@ export interface ClickedFulfillmentTab {
  *  ```
  *  {
  *    action: "clickedOrderProgression",
- *    context_module: "OrdersOffer" | "OrdersFulfillment" | "OrdersShippingMethods" | "OrdersPayment" | OrdersReview"
+ *    context_module: "ordersOffer" | "ordersFulfillment" | "ordersShippingMethods" | "ordersPayment" | "ordersReview"
  *    context_page_owner_type: "orders-checkout",
  *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
@@ -2656,7 +2656,7 @@ export interface ClickedOrderProgression {
  *  ```
  *  {
  *    action: "clickedImportFees",
- *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_module: "ordersDetail" | "ordersCheckout",
  *    context_page_owner_type: "orders-detail" | "orders-checkout",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *    destination_page_owner_type: "articles",
