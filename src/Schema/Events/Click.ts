@@ -2406,7 +2406,7 @@ export interface ClickedViewFullConversationHistory {
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b" | "549186",
  *    destination_page_owner_type: "articles",
  *    destination_page_owner_slug: "0TO3b000000UessGAC/buy" | "0TO3b000000UevEGAS/contacting-a-gallery",
- *    flow: "Buy now" | "Make offer" | "Partner offer" | "inquiry"
+ *    flow: "Buy now" | "Make offer" | "Partner offer" | "Inquiry"
  *  }
  *  ```
  */
