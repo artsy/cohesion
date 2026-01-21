@@ -88,6 +88,7 @@ export enum ContextModule {
   consignmentInquiryForm = "consignmentInquiryForm",
   consignSubmissionFlow = "consignSubmissionFlow",
   contactInformation = "contactInformation",
+  conversations = "conversations",
   conversationBuyNowConfirmArtwork = "conversationBuyNowConfirmArtwork",
   conversationMakeOfferConfirmArtwork = "conversationMakeOfferConfirmArtwork",
   createAlert = "createAlert",

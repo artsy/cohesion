@@ -194,7 +194,7 @@ export interface TappedArtworkGroup extends TappedEntityGroup {
  *  ```
  *  {
  *    action: "tappedAskSpecialist",
- *    context_module: "OrdersDetail" | "OrdersCheckout",
+ *    context_module: "ordersDetail" | "ordersCheckout",
  *    context_screen_owner_type: "orders-detail" | "orders-checkout",
  *    context_screen_owner_id: "5fad78273c8451000d0c53b9",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
@@ -1440,6 +1440,7 @@ export interface TappedViewWork {
 
 /**
  * A user taps on the Visit Help Center link in the app
+ * context_page_owner_id is either an orderID or conversationID
  *
  * This schema describes events sent to Segment from [[tappedVisitHelpCenter]]
  *
@@ -1447,12 +1448,12 @@ export interface TappedViewWork {
  *  ```
  *  {
  *    action: "tappedVisitHelpCenter",
- *    context_module: "OrdersDetail" | "OrdersCheckout",
- *    context_screen_owner_type: "orders-detail" | "orders-checkout",
- *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_module: "ordersDetail" | "ordersCheckout" | "conversations",
+ *    context_screen_owner_type: "orders-detail" | "orders-checkout" | "conversation",
+ *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b" | "549186",
  *    destination_screen_owner_type: "articles",
- *    destination_screen_owner_slug: "artsy-help-center",
- *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    destination_screen_owner_slug: "0TO3b000000UessGAC/buy" | "0TO3b000000UevEGAS/contacting-a-gallery",
+ *    flow: "Buy now" | "Make offer" | "Partner offer" | "Inquiry"
  *  }
  *  ```
  */
@@ -1579,7 +1580,7 @@ export interface TappedMenuItemGroup {
  *  ```
  *  {
  *    action: "tappedBuyerProtection",
- *    context_module: "OrdersDetail",
+ *    context_module: "ordersDetail",
  *    context_screen_owner_type: "orders-detail",
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_screen_owner_type: "articles",
@@ -1605,7 +1606,7 @@ export interface TappedBuyerProtection {
  *  ```
  *  {
  *    action: "tappedImportFees",
- *    context_module: "OrdersDetail",
+ *    context_module: "ordersDetail",
  *    context_screen_owner_type: "orders-detail",
  *    context_screen_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *    destination_screen_owner_type: "articles",
