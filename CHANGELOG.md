@@ -1,3 +1,15 @@
+# v4.338.0 (Fri Jan 23 2026)
+
+#### 🚀  Enhancement
+
+- fix: remove order details examples from ContactGallery [#675](https://github.com/artsy/cohesion/pull/675) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.337.0 (Wed Jan 21 2026)
 
 #### 🚀  Enhancement
