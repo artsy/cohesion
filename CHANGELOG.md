@@ -1,3 +1,15 @@
+# v4.339.0 (Mon Jan 26 2026)
+
+#### 🚀  Enhancement
+
+- fix: Revert "fix examples" [#676](https://github.com/artsy/cohesion/pull/676) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.338.0 (Fri Jan 23 2026)
 
 #### 🚀  Enhancement
