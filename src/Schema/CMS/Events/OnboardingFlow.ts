@@ -36,32 +36,14 @@ export interface CmsOnboardingClickedEvent {
  * @example
  * ```
  * {
- *   action: "added gallery information",
+ *   action: "added profile information",
  *   context_module: "Onboarding",
  *   user_id: "some-user-id",
  * }
  * ```
  */
-export interface OnboardingFlowAddedGalleryInformation {
-  action: CmsActionType.addedGalleryInformation
-  context_module: CmsContextModule.onboarding
-  user_id: string
-}
-
-/**
- * Event fired after user submits add gallery information form
- *
- * @example
- * ```
- * {
- *   action: "added gallery information",
- *   context_module: "Onboarding",
- *   user_id: "some-user-id",
- * }
- * ```
- */
-export interface OnboardingFlowAddNewLocation {
-  action: CmsActionType.addedNewLocation
+export interface CmsOnboardingAddedGalleryProfileInformation {
+  action: CmsActionType.addedGalleryProfileInformation
   context_module: CmsContextModule.onboarding
   user_id: string
 }
@@ -79,7 +61,7 @@ export interface OnboardingFlowAddNewLocation {
  * }
  * ```
  */
-export interface OnboardingFlowAddNewLocation {
+export interface CmsOnboardingAddNewLocation {
   action: CmsActionType.addedNewLocation
   context_module: CmsContextModule.onboarding
   after_address_type: string
@@ -98,7 +80,7 @@ export interface OnboardingFlowAddNewLocation {
  * }
  * ```
  */
-export interface OnboardingFlowAddNewContact {
+export interface CmsOnboardingAddNewContact {
   action: CmsActionType.addedNewContact
   context_module: CmsContextModule.onboarding
   user_id: string
@@ -106,6 +88,6 @@ export interface OnboardingFlowAddNewContact {
 
 export type CmsOnboardingFlow =
   | CmsOnboardingClickedEvent
-  | OnboardingFlowAddedGalleryInformation
-  | OnboardingFlowAddNewLocation
-  | OnboardingFlowAddNewContact
+  | CmsOnboardingAddedGalleryProfileInformation
+  | CmsOnboardingAddNewLocation
+  | CmsOnboardingAddNewContact

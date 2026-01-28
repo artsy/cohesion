@@ -33,17 +33,17 @@ export type CmsEvent =
  */
 export enum CmsActionType {
   /**
-   * Corresponds to {@link OnboardingFlowAddedGalleryInformation}
+   * Corresponds to {@link CmsOnboardingAddedGalleryProfileInformation}
    */
-  addedGalleryInformation = "addedGalleryInformation",
+  addedGalleryProfileInformation = "addedGalleryProfileInformation",
 
   /**
-   * Corresponds to {@link OnboardingFlowAddNewContact}
+   * Corresponds to {@link CmsOnboardingAddNewContact}
    */
   addedNewContact = "addedNewContact",
 
   /**
-   * Corresponds to {@link CmsSettingsFlow} and {@link OnboardingFlowAddNewLocation}
+   * Corresponds to {@link CmsSettingsFlow} and {@link CmsOnboardingAddNewLocation}
    */
   addedNewLocation = "addedNewLocation",
 
