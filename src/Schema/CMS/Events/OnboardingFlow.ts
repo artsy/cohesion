@@ -49,6 +49,24 @@ export interface OnboardingFlowAddedGalleryInformation {
 }
 
 /**
+ * Event fired after user submits add gallery information form
+ *
+ * @example
+ * ```
+ * {
+ *   action: "added gallery information",
+ *   context_module: "Onboarding",
+ *   user_id: "some-user-id",
+ * }
+ * ```
+ */
+export interface OnboardingFlowAddNewLocation {
+  action: CmsActionType.addedNewLocation
+  context_module: CmsContextModule.onboarding
+  user_id: string
+}
+
+/**
  * Event fired after user submits add primary location form
  *
  * @example
