@@ -19,6 +19,7 @@ export enum CmsContextModule {
   bulkEditFlow = "Artworks - bulk edit",
   completenessScore = "Artworks - completeness score",
   conversations = "conversations",
+  onboarding = "Onboarding",
   uploads = "Uploads",
   settings = "Settings",
   showsInstallShots = "Shows - Install shots",
