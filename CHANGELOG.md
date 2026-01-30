@@ -1,3 +1,15 @@
+# v4.340.0 (Fri Jan 30 2026)
+
+#### 🚀  Enhancement
+
+- feat: Volt onboarding V2 migration client side events [#677](https://github.com/artsy/cohesion/pull/677) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.339.0 (Mon Jan 26 2026)
 
 #### 🚀  Enhancement
