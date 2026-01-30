@@ -3,6 +3,7 @@ import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsCompletenessScoreFlow } from "./CompletenessScoreFlow"
+import { CmsOnboardingFlow } from "./OnboardingFlow"
 import { CmsQuickReplyFlow } from "./QuickReplyFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
 import { CmsShowFlow } from "./ShowFlow"
@@ -19,6 +20,7 @@ export type CmsEvent =
   | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsCompletenessScoreFlow
+  | CmsOnboardingFlow
   | CmsUploadArtworkFlow
   | CmsQuickReplyFlow
   | CmsSettingsFlow
@@ -31,7 +33,17 @@ export type CmsEvent =
  */
 export enum CmsActionType {
   /**
-   * Corresponds to {@link CmsSettingsFlow}
+   * Corresponds to {@link CmsOnboardingAddedGalleryProfileInformation}
+   */
+  addedGalleryProfileInformation = "addedGalleryProfileInformation",
+
+  /**
+   * Corresponds to {@link CmsOnboardingAddNewContact}
+   */
+  addedNewContact = "addedNewContact",
+
+  /**
+   * Corresponds to {@link CmsSettingsFlow} and {@link CmsOnboardingAddNewLocation}
    */
   addedNewLocation = "addedNewLocation",
 
