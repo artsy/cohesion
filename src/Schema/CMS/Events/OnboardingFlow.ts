@@ -23,6 +23,7 @@ export type CmsOnboardingClickLabel =
   | "start - add artists"
   | "start - add show or fairbooth"
   | "download folio"
+  | "learn more folio"
 
 export interface CmsOnboardingClickedEvent {
   action: "click"
