@@ -20,6 +20,7 @@ export type CmsOnboardingClickLabel =
   | "start - gallery information"
   | "start - add primary location"
   | "start - add primary contact"
+  | "start - add artworks"
   | "start - add artists"
   | "start - add show or fairbooth"
   | "download folio"
