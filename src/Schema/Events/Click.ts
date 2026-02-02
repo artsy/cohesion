@@ -485,6 +485,28 @@ export interface ClickedChangeShippingMethod {
 }
 
 /**
+ *  User clicks edit to change their offer amount during checkout.
+ *
+ *  This schema describes events sent to Segment from [[clickedChangeOfferOption]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedChangeOfferOption",
+ *    context_module: "ordersCheckout",
+ *    context_page_owner_type: "orders-checkout",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *  }
+ * ```
+ */
+export interface ClickedChangeOfferOption {
+  action: ActionType.clickedChangeOfferOption
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
  *  User selects delivery option (Shipping or Pick Up) when entering the orders
  *  checkout flow.
  *

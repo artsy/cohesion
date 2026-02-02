@@ -53,6 +53,7 @@ import {
   ClickedBuyerProtection,
   ClickedBuyNow,
   ClickedCancelExpressCheckout,
+  ClickedChangeOfferOption,
   ClickedChangePage,
   ClickedChangePaymentMethod,
   ClickedChangeShippingAddress,
@@ -352,6 +353,7 @@ export type Event =
   | ClickedBuyerProtection
   | ClickedBuyNow
   | ClickedCancelExpressCheckout
+  | ClickedChangeOfferOption
   | ClickedChangePage
   | ClickedChangePaymentMethod
   | ClickedChangeShippingAddress
@@ -752,6 +754,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedCancelExpressCheckout}
    */
   clickedCancelExpressCheckout = "clickedCancelExpressCheckout",
+  /**
+   * Corresponds to {@link ClickedChangeOfferOption}
+   */
+  clickedChangeOfferOption = "clickedChangeOfferOption",
   /**
    * Corresponds to {@link ClickedChangePage}
    */
