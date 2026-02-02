@@ -463,7 +463,7 @@ export interface ClickedChangeShippingAddress {
 }
 
 /**
- *  User clicks on Change Shipping Method on the orders review page.
+ *  User clicks edit to change their shipping method during checkout.
  *
  *  This schema describes events sent to Segment from [[clickedChangeShippingMethod]]
  *
@@ -471,8 +471,8 @@ export interface ClickedChangeShippingAddress {
  *  ```
  *  {
  *    action: "clickedChangeShippingMethod",
- *    context_module: "ordersReview",
- *    context_page_owner_type: "orders-review",
+ *    context_module: "ordersCheckout",
+ *    context_page_owner_type: "orders-checkout",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
  *  }
  * ```
@@ -2777,7 +2777,7 @@ export interface ClickedNavigationDropdownItem {
  *  ```
  *  {
  *    action: "clickedOrderArtworkImage",
- *    context_module: "ordersReview" | "ordersDetail",
+ *    context_module: "ordersCheckout" | "ordersDetail",
  *    context_page_owner_type: "orders-checkout" | "orders-detail",
  *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
  *    destination_page_owner_id: "60de173a47476c000fd5c4cc",
