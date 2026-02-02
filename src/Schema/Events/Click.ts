@@ -465,7 +465,7 @@ export interface ClickedChangeShippingAddress {
 /**
  *  User clicks on Change Shipping Method on the orders review page.
  *
- *  This schema describes events sent to Segment from [[clickedChangePaymentMethod]]
+ *  This schema describes events sent to Segment from [[clickedChangeShippingMethod]]
  *
  *  @example
  *  ```
