@@ -104,6 +104,7 @@ import {
   ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
   ClickedOnReadMore,
+  ClickedOrderArtworkImage,
   ClickedOrderPage,
   ClickedOrderProgression,
   ClickedOrderSummary,
@@ -403,6 +404,7 @@ export type Event =
   | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
   | ClickedOnReadMore
+  | ClickedOrderArtworkImage
   | ClickedOrderPage
   | ClickedOrderProgression
   | ClickedOrderSummary
@@ -942,6 +944,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedOnReadMore}
    */
   clickedOnReadMore = "clickedOnReadMore",
+  /**
+   * Corresponds to {@link ClickedOrderArtworkImage}
+   */
+  clickedOrderArtworkImage = "clickedOrderArtworkImage",
   /**
    * Corresponds to {@link ClickedOrderPage}
    */

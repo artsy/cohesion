@@ -2745,3 +2745,29 @@ export interface ClickedNavigationDropdownItem {
   subject: string
   destination_path: string
 }
+
+/**
+ * A user clicks the artwork image in checkout or on the order details page
+ *
+ * This schema describes events sent to Segment from [[ClickedOrderArtworkImage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedOrderArtworkImage",
+ *    context_module: "ordersReview" | "ordersDetail",
+ *    context_page_owner_type: "orders-checkout" | "orders-detail",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    destination_page_owner_id: "60de173a47476c000fd5c4cc",
+ *    destination_page_owner_type: "artwork"
+ *  }
+ * ```
+ */
+export interface ClickedOrderArtworkImage {
+  action: ActionType.clickedOrderArtworkImage
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  destination_page_owner_id: string
+  destination_page_owner_type: PageOwnerType
+}
