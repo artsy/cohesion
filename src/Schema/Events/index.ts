@@ -289,6 +289,7 @@ import {
   TappedMenuItemGroup,
   TappedNavigationPillsGroup,
   TappedNavigationTab,
+  TappedOrderArtworkImage,
   TappedPartnerCard,
   TappedPromoSpace,
   TappedSeeFewerWorks,
@@ -570,6 +571,7 @@ export type Event =
   | TappedNewArtworkList
   | TappedNotificationsBell
   | TappedOfferSettings
+  | TappedOrderArtworkImage
   | TappedPartnerCard
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
@@ -1712,6 +1714,10 @@ export enum ActionType {
    * Corresponds to {@link TappedOfferSettings}
    */
   tappedOfferSettings = "tappedOfferSettings",
+  /**
+   * Corresponds to {@link TappedOrderArtworkImage}
+   */
+  tappedOrderArtworkImage = "tappedOrderArtworkImage",
   /**
    * Corresponds to {@link TappedPartnerCard}
    */

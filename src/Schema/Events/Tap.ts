@@ -1646,3 +1646,29 @@ export interface TappedPopover {
   context_screen_owner_type: ScreenOwnerType
   type: string
 }
+
+/**
+ * A user taps the artwork image on the order details page
+ *
+ * This schema describes events sent to Segment from [[tappedOrderArtworkImage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedOrderArtworkImage",
+ *    context_module: "ordersDetail",
+ *    context_screen_owner_type: "orders-detail",
+ *    context_screen_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *    destination_screen_owner_id: "60de173a47476c000fd5c4cc",
+ *    destination_screen_owner_type: "artwork"
+ *  }
+ * ```
+ */
+export interface TappedOrderArtworkImage {
+  action: ActionType.tappedOrderArtworkImage
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id: string
+  destination_screen_owner_id: string
+  destination_screen_owner_type: ScreenOwnerType
+}
