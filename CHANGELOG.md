@@ -1,3 +1,15 @@
+# v4.341.0 (Mon Feb 02 2026)
+
+#### 🚀  Enhancement
+
+- chore: Adds in missing label type for onboarding click event [#679](https://github.com/artsy/cohesion/pull/679) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.340.0 (Fri Jan 30 2026)
 
 #### 🚀  Enhancement
