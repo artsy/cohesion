@@ -423,6 +423,7 @@ export interface ExpressCheckoutViewed {
  *    context_page_owner_type: "orders-checkout",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    address_ids: ["1234abcd5678efgh9012ijkl"]
  *  }
  * ```
  */
@@ -431,6 +432,7 @@ export interface SavedAddressViewed {
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   flow: string
+  address_ids: string[]
 }
 
 /**
@@ -446,6 +448,7 @@ export interface SavedAddressViewed {
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    payment_methods: ["CREDIT_CARD", "US_BANK_ACCOUNT"]
+ *    payment_method_ids: ["abcd1234efgh5678ijkl9012", "mnop3456qrst7890uvwx1234"]
  *  }
  * ```
  */
@@ -455,6 +458,7 @@ export interface SavedPaymentMethodViewed {
   context_page_owner_id: string
   flow: string
   payment_methods: string[]
+  payment_method_ids: string[]
 }
 
 /**

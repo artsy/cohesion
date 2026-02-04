@@ -53,6 +53,7 @@ import {
   ClickedBuyerProtection,
   ClickedBuyNow,
   ClickedCancelExpressCheckout,
+  ClickedChangeOfferOption,
   ClickedChangePage,
   ClickedChangePaymentMethod,
   ClickedChangeShippingAddress,
@@ -104,6 +105,7 @@ import {
   ClickedOnPagination,
   ClickedOnPriceDisplayDropdown,
   ClickedOnReadMore,
+  ClickedOrderArtworkImage,
   ClickedOrderPage,
   ClickedOrderProgression,
   ClickedOrderSummary,
@@ -287,6 +289,7 @@ import {
   TappedMenuItemGroup,
   TappedNavigationPillsGroup,
   TappedNavigationTab,
+  TappedOrderArtworkImage,
   TappedPartnerCard,
   TappedPromoSpace,
   TappedSeeFewerWorks,
@@ -351,6 +354,7 @@ export type Event =
   | ClickedBuyerProtection
   | ClickedBuyNow
   | ClickedCancelExpressCheckout
+  | ClickedChangeOfferOption
   | ClickedChangePage
   | ClickedChangePaymentMethod
   | ClickedChangeShippingAddress
@@ -403,6 +407,7 @@ export type Event =
   | ClickedOnPagination
   | ClickedOnPriceDisplayDropdown
   | ClickedOnReadMore
+  | ClickedOrderArtworkImage
   | ClickedOrderPage
   | ClickedOrderProgression
   | ClickedOrderSummary
@@ -566,6 +571,7 @@ export type Event =
   | TappedNewArtworkList
   | TappedNotificationsBell
   | TappedOfferSettings
+  | TappedOrderArtworkImage
   | TappedPartnerCard
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
@@ -750,6 +756,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedCancelExpressCheckout}
    */
   clickedCancelExpressCheckout = "clickedCancelExpressCheckout",
+  /**
+   * Corresponds to {@link ClickedChangeOfferOption}
+   */
+  clickedChangeOfferOption = "clickedChangeOfferOption",
   /**
    * Corresponds to {@link ClickedChangePage}
    */
@@ -942,6 +952,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedOnReadMore}
    */
   clickedOnReadMore = "clickedOnReadMore",
+  /**
+   * Corresponds to {@link ClickedOrderArtworkImage}
+   */
+  clickedOrderArtworkImage = "clickedOrderArtworkImage",
   /**
    * Corresponds to {@link ClickedOrderPage}
    */
@@ -1700,6 +1714,10 @@ export enum ActionType {
    * Corresponds to {@link TappedOfferSettings}
    */
   tappedOfferSettings = "tappedOfferSettings",
+  /**
+   * Corresponds to {@link TappedOrderArtworkImage}
+   */
+  tappedOrderArtworkImage = "tappedOrderArtworkImage",
   /**
    * Corresponds to {@link TappedPartnerCard}
    */
