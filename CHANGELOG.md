@@ -1,3 +1,15 @@
+# v4.342.0 (Wed Feb 04 2026)
+
+#### 🚀  Enhancement
+
+- feat: last round of tracking for one page checkout [#680](https://github.com/artsy/cohesion/pull/680) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.341.0 (Mon Feb 02 2026)
 
 #### 🚀  Enhancement
