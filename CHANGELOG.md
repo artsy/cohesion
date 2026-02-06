@@ -1,3 +1,15 @@
+# v4.343.0 (Fri Feb 06 2026)
+
+#### 🚀  Enhancement
+
+- feat(DIAM-268): add completeMyProfileFlow context module [#681](https://github.com/artsy/cohesion/pull/681) ([@iskounen](https://github.com/iskounen))
+
+#### Authors: 1
+
+- Adam Iskounen ([@iskounen](https://github.com/iskounen))
+
+---
+
 # v4.342.0 (Wed Feb 04 2026)
 
 #### 🚀  Enhancement
