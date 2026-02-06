@@ -1,3 +1,15 @@
+# v4.344.0 (Fri Feb 06 2026)
+
+#### 🚀  Enhancement
+
+- feat: add triggers to conventional commits check [#682](https://github.com/artsy/cohesion/pull/682) ([@amonkhouse](https://github.com/amonkhouse))
+
+#### Authors: 1
+
+- Amy Monkhouse ([@amonkhouse](https://github.com/amonkhouse))
+
+---
+
 # v4.343.0 (Fri Feb 06 2026)
 
 #### 🚀  Enhancement
