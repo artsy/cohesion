@@ -2793,3 +2793,33 @@ export interface ClickedOrderArtworkImage {
   destination_page_owner_id: string
   destination_page_owner_type: PageOwnerType
 }
+
+/**
+ * A user clicks the main artwork image in the artist header
+ *
+ * This schema describes events sent to Segment from [[ClickedArtistArtworkImage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedArtistArtworkImage",
+ *    context_module: "artistHeader",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4dc45bd3f28df242d7000cb7",
+ *    context_page_owner_slug: "seydou-keita"
+ *    destination_page_owner_type: "artwork",
+ *    destination_page_owner_id: "60de173a47476c000fd5c4cc",
+ *    destination_page_owner_slug: "seydou-keita-sans-titre-ma-dot-ke-dot-142-box-neg-dot-00980"
+ *  }
+ * ```
+ */
+export interface ClickedArtistArtworkImage {
+  action: ActionType.clickedArtistArtworkImage
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  context_page_owner_slug: string
+  destination_page_owner_type: PageOwnerType
+  destination_page_owner_id: string
+  destination_page_owner_slug: string
+}
