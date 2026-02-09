@@ -43,6 +43,7 @@ import {
   ClickedAlertsFilters,
   ClickedAppDownload,
   ClickedArticleGroup,
+  ClickedArtistArtworkImage,
   ClickedArtistGroup,
   ClickedArtistSeriesGroup,
   ClickedArtworkGroup,
@@ -344,6 +345,7 @@ export type Event =
   | ClickedAlertsFilters
   | ClickedAppDownload
   | ClickedArticleGroup
+  | ClickedArtistArtworkImage
   | ClickedArtistGroup
   | ClickedArtistSeriesGroup
   | ClickedArtworkGroup
@@ -716,6 +718,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedArticleShare}
    */
   clickedArticleShare = "clickedArticleShare",
+  /**
+   * Corresponds to {@link ClickedArtistArtworkImage}
+   */
+  clickedArtistArtworkImage = "clickedArtistArtworkImage",
   /**
    * Corresponds to {@link ClickedArtistGroup}
    */
