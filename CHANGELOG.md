@@ -1,3 +1,15 @@
+# v4.345.0 (Mon Feb 09 2026)
+
+#### 🚀  Enhancement
+
+- feat: click event on an artist's artwork profile image [#683](https://github.com/artsy/cohesion/pull/683) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.344.0 (Fri Feb 06 2026)
 
 #### 🚀  Enhancement
