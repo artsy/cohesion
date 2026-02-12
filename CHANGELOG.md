@@ -1,3 +1,15 @@
+# v4.346.0 (Thu Feb 12 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add inquiry_checkboxes and proper labels to sentArtworkInquiry tracki… [#684](https://github.com/artsy/cohesion/pull/684) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.345.0 (Mon Feb 09 2026)
 
 #### 🚀  Enhancement
