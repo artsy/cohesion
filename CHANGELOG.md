@@ -1,3 +1,15 @@
+# v4.347.0 (Tue Feb 24 2026)
+
+#### 🚀  Enhancement
+
+- feat: newPaymentMethodViewed [#685](https://github.com/artsy/cohesion/pull/685) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.346.0 (Thu Feb 12 2026)
 
 #### 🚀  Enhancement
