@@ -473,7 +473,7 @@ export interface SavedPaymentMethodViewed {
  *    context_page_owner_type: "orders-checkout",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
- *    payment_methods: ["CREDIT_CARD", "US_BANK_ACCOUNT"]
+ *    payment_methods: ["CREDIT_CARD", "US_BANK_ACCOUNT", "SEPA_DEBIT", "WIRE_TRANSFER"]
  *  }
  * ```
  */
