@@ -462,6 +462,30 @@ export interface SavedPaymentMethodViewed {
 }
 
 /**
+ * A user views a displayed payment method option in checkout. Does not include saved payment methods
+ *
+ * This schema describes events sent to Segment from [[NewPaymentMethodViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "newPaymentMethodViewed",
+ *    context_page_owner_type: "orders-checkout",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    payment_methods: ["CREDIT_CARD", "US_BANK_ACCOUNT"]
+ *  }
+ * ```
+ */
+export interface NewPaymentMethodViewed {
+  action: ActionType.newPaymentMethodViewed
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  flow: string
+  payment_methods: string[]
+}
+
+/**
  * A user views a step in checkout
  *
  * This schema describes events sent to Segment from [[OrderProgressionViewed]]
