@@ -193,6 +193,7 @@ import {
   ImmersiveViewOptionViewed,
   ItemViewed,
   NavigationDropdownViewed,
+  NewPaymentMethodViewed,
   OrderDetailsViewed,
   OrderProgressionViewed,
   ProgressiveOnboardingTooltipViewed,
@@ -476,6 +477,7 @@ export type Event =
   | MaxBidSelected
   | MyCollectionOnboardingCompleted
   | NavigationDropdownViewed
+  | NewPaymentMethodViewed
   | OnboardingUserInputData
   | OrderDetailsViewed
   | OrderProgressionViewed
@@ -1299,6 +1301,10 @@ export enum ActionType {
    * Corresponds to {@link NavigationDropdownViewed}
    */
   navigationDropdownViewed = "navigationDropdownViewed",
+  /**
+   * Corresponds to {@link NewPaymentMethodViewed}
+   */
+  newPaymentMethodViewed = "newPaymentMethodViewed",
   /**
    * Corresponds to {@link OnboardingUserInputData}
    */
