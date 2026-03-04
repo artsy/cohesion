@@ -99,7 +99,7 @@ export interface ClickedAddWorksToFair {
  *    destination_page_owner_type: "article",
  *    destination_page_owner_id: "542f1ccc7261694847410400",
  *    destination_page_owner_slug: "acaw-acaw-presenter-charwei-tsai",
- *    type: "thumbnail"
+ *    type: "thumbnail" | "viewAll" | "emptyState"
  *  }
  * ```
  */
@@ -243,7 +243,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks a result of auctions on web
+ * A user clicks an auction result on the artist or auction result page
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
@@ -251,8 +251,13 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  *  ```
  *  {
  *    action: "clickedAuctionResultItem",
- *    context_module: "auctionResult",
- *    context_page_owner_type: "artistAuctionResults",
+ *    context_module: "auctionResults",
+ *    context_page_owner_type: "artist" | "auctionResult",
+ *    context_page_owner_id: "4e9743d70307800001001236",
+ *    context_page_owner_slug?: "paul-jenkins" | null,
+ *    destination_page_owner_type: "auctionResult",
+ *    destination_page_owner_id: "1220512",
+ *    type: "thumbnail" | "viewAll" | "emptyState"
  *    expanded?: true | false | null
  *  }
  * ```
