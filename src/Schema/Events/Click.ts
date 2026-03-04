@@ -253,13 +253,13 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  *    action: "clickedAuctionResultItem",
  *    context_module: "auctionResult",
  *    context_page_owner_type: "artistAuctionResults",
- *    expanded: true
+ *    expanded?: true | false | null
  *  }
  * ```
  */
 export interface ClickedAuctionResultItem extends ClickedEntityGroup {
   action: ActionType.clickedAuctionResultItem
-  expanded: boolean
+  expanded?: boolean
 }
 
 /**
