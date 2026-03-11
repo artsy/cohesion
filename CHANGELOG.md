@@ -1,3 +1,15 @@
+# v4.348.0 (Wed Mar 11 2026)
+
+#### 🚀  Enhancement
+
+- feat: empty state tracking on artist page and auction result tracking [#686](https://github.com/artsy/cohesion/pull/686) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.347.0 (Tue Feb 24 2026)
 
 #### 🚀  Enhancement
