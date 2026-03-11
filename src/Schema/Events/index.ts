@@ -745,7 +745,7 @@ export enum ActionType {
    */
   clickedAuctionGroup = "clickedAuctionGroup",
   /**
-   *    * Corresponds to {@link ClickedAuctionResultItem}
+   * Corresponds to {@link ClickedAuctionResultItem}
    */
   clickedAuctionResultItem = "clickedAuctionResultItem",
   /**
