@@ -243,7 +243,7 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
 }
 
 /**
- * A user clicks an auction result on the artist or auction result page
+ * A user clicks an auction result on the artist or auction result page. Leads to price database for artist empty states.
  *
  * This schema describes events sent to Segment from [[clickedEntityGroup]]
  *
@@ -255,8 +255,8 @@ export interface ClickedAuctionGroup extends ClickedEntityGroup {
  *    context_page_owner_type: "artist" | "auctionResult",
  *    context_page_owner_id: "4e9743d70307800001001236",
  *    context_page_owner_slug?: "paul-jenkins" | null,
- *    destination_page_owner_type: "auctionResult",
- *    destination_page_owner_id: "1220512",
+ *    destination_page_owner_type: "auctionResult" | "priceDatabase",
+ *    destination_page_owner_id?: "1220512",
  *    type: "thumbnail" | "viewAll" | "emptyState"
  *    expanded?: true | false | null
  *  }
