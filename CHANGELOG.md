@@ -1,3 +1,15 @@
+# v4.349.0 (Tue Mar 17 2026)
+
+#### 🚀  Enhancement
+
+- chore: update clickedAuctionResultItem example schema for empty state [#687](https://github.com/artsy/cohesion/pull/687) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.348.0 (Wed Mar 11 2026)
 
 #### 🚀  Enhancement
