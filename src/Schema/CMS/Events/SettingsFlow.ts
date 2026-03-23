@@ -65,7 +65,28 @@ export interface SettingsFlowDeleteArtworkTemplate {
   user_id: string
 }
 
+/**
+ * Event fired after user clicks Use Template on an artwork template
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedUseTemplate",
+ *   context_module: "Settings",
+ *   template_id: "template-id",
+ *   user_id: "some-user-id",
+ * }
+ * ```
+ */
+export interface SettingsFlowClickedUseTemplate {
+  action: CmsActionType.clickedUseTemplate
+  context_module: CmsContextModule.settings
+  template_id: string
+  user_id: string
+}
+
 export type CmsSettingsFlow =
   | SettingsFlowAddNewLocation
   | SettingsFlowEditLocation
   | SettingsFlowDeleteArtworkTemplate
+  | SettingsFlowClickedUseTemplate
