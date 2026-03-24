@@ -1,5 +1,6 @@
 import { CmsAnalyticsPage } from "./AnalyticsPage"
 import { CmsArtworkFilter } from "./ArtworkFilter"
+import { CmsArtworkTemplatesPage } from "./ArtworkTemplatesPage"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsCompletenessScoreFlow } from "./CompletenessScoreFlow"
@@ -17,6 +18,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
 export type CmsEvent =
   | CmsAnalyticsPage
   | CmsArtworkFilter
+  | CmsArtworkTemplatesPage
   | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsCompletenessScoreFlow
@@ -68,6 +70,11 @@ export enum CmsActionType {
   changedTimePeriod = "changedTimePeriod",
 
   /**
+   * Corresponds to {@link CmsArtworkTemplatesPage}
+   */
+  clickedArtworkNavigationTab = "clickedArtworkNavigationTab",
+
+  /**
    * Corresponds to {@link CmsAnalytics}
    */
   clickedGraphCTA = "clickedGraphCTA",
@@ -82,6 +89,11 @@ export enum CmsActionType {
    */
   clickedOnDuplicateArtwork = "clickedonduplicateartwork",
 
+  /**
+   * Corresponds to {@link CmsSettingsFlow} and {@link CmsArtworkTemplatesPage}
+   */
+
+  clickedUseTemplate = "clickedUseTemplate",
   /**
    * Corresponds to {@link CmsUploadArtworkFlow}
    */
@@ -228,7 +240,7 @@ export enum CmsActionType {
   deletedTemplate = "deletedTemplate",
 
   /**
-   * Corresponds to {@link CmsSettingsFlow}
+   * Corresponds to {@link CmsSettingsFlow} and {@link CmsArtworkTemplatesPage}
    */
   deletedArtworkTemplate = "deletedArtworkTemplate",
 

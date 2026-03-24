@@ -1,4 +1,5 @@
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsOwnerType } from "../Values/CmsOwnerType"
 import { CmsActionType } from "."
 
 /**
@@ -53,6 +54,7 @@ export interface SettingsFlowEditLocation {
  * {
  *   action: "deletedArtworkTemplate",
  *   context_module: "Settings",
+ *   context_page_owner_type: "settings",
  *   template_id: "template-id",
  *   user_id: "some-user-id",
  * }
@@ -61,6 +63,29 @@ export interface SettingsFlowEditLocation {
 export interface SettingsFlowDeleteArtworkTemplate {
   action: CmsActionType.deletedArtworkTemplate
   context_module: CmsContextModule.settings
+  context_page_owner_type: CmsOwnerType.settings
+  template_id: string
+  user_id: string
+}
+
+/**
+ * Event fired after user clicks Use Template on an artwork template
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedUseTemplate",
+ *   context_module: "Settings",
+ *   context_page_owner_type: "settings",
+ *   template_id: "template-id",
+ *   user_id: "some-user-id",
+ * }
+ * ```
+ */
+export interface SettingsFlowClickedUseTemplate {
+  action: CmsActionType.clickedUseTemplate
+  context_module: CmsContextModule.settings
+  context_page_owner_type: CmsOwnerType.settings
   template_id: string
   user_id: string
 }
@@ -69,3 +94,4 @@ export type CmsSettingsFlow =
   | SettingsFlowAddNewLocation
   | SettingsFlowEditLocation
   | SettingsFlowDeleteArtworkTemplate
+  | SettingsFlowClickedUseTemplate
