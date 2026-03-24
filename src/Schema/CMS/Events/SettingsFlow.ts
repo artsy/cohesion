@@ -1,4 +1,5 @@
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsOwnerType } from "../Values/CmsOwnerType"
 import { CmsActionType } from "."
 
 /**
@@ -61,6 +62,7 @@ export interface SettingsFlowEditLocation {
 export interface SettingsFlowDeleteArtworkTemplate {
   action: CmsActionType.deletedArtworkTemplate
   context_module: CmsContextModule.settings
+  context_page_owner_type: CmsOwnerType.settings
   template_id: string
   user_id: string
 }
@@ -81,6 +83,7 @@ export interface SettingsFlowDeleteArtworkTemplate {
 export interface SettingsFlowClickedUseTemplate {
   action: CmsActionType.clickedUseTemplate
   context_module: CmsContextModule.settings
+  context_page_owner_type: CmsOwnerType.settings
   template_id: string
   user_id: string
 }

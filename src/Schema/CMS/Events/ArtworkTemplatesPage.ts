@@ -1,4 +1,5 @@
 import { CmsContextModule } from "../Values/CmsContextModule"
+import { CmsOwnerType } from "../Values/CmsOwnerType"
 import { CmsActionType } from "."
 
 /**
@@ -17,6 +18,7 @@ import { CmsActionType } from "."
 export interface ArtworkTemplatesPageDeleteArtworkTemplate {
   action: CmsActionType.deletedArtworkTemplate
   context_module: CmsContextModule.artworkTemplates
+  context_page_owner_type: CmsOwnerType.artwork
   template_id: string
   user_id: string
 }
@@ -37,6 +39,7 @@ export interface ArtworkTemplatesPageDeleteArtworkTemplate {
 export interface ArtworkTemplatesPageClickedUseTemplate {
   action: CmsActionType.clickedUseTemplate
   context_module: CmsContextModule.artworkTemplates
+  context_page_owner_type: CmsOwnerType.artwork
   template_id: string
   user_id: string
 }
@@ -57,6 +60,7 @@ export interface ArtworkTemplatesPageClickedUseTemplate {
 export interface ArtworkTemplatesPageClickedArtworkNavigationTab {
   action: CmsActionType.clickedArtworkNavigationTab
   context_module: CmsContextModule.artworkTemplates
+  context_page_owner_type: CmsOwnerType.artwork
   tabName: string
 }
 
