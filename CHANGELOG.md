@@ -1,3 +1,15 @@
+# v4.351.0 (Tue Mar 24 2026)
+
+#### 🚀  Enhancement
+
+- chore: Update parameter to use snake_case instead of camelCase [#689](https://github.com/artsy/cohesion/pull/689) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.350.0 (Tue Mar 24 2026)
 
 #### 🚀  Enhancement
