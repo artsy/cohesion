@@ -70,6 +70,11 @@ export enum CmsActionType {
   changedTimePeriod = "changedTimePeriod",
 
   /**
+   * Corresponds to {@link CmsArtworkTemplatesPage}
+   */
+  clickedArtworkNavigationTab = "clickedArtworkNavigationTab",
+
+  /**
    * Corresponds to {@link CmsAnalytics}
    */
   clickedGraphCTA = "clickedGraphCTA",

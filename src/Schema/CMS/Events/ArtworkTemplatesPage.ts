@@ -41,6 +41,26 @@ export interface ArtworkTemplatesPageClickedUseTemplate {
   user_id: string
 }
 
+/**
+ * Event fired when user clicks on navigation tab in artworks page
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedArtworkNavigationTab",
+ *   context_module: "Artworks - templates",
+ *   tabName: "All" | "Templates",
+ *
+ * }
+ * ```
+ */
+export interface ArtworkTemplatesPageClickedArtworkNavigationTab {
+  action: CmsActionType.clickedArtworkNavigationTab
+  context_module: CmsContextModule.artworkTemplates
+  tabName: string
+}
+
 export type CmsArtworkTemplatesPage =
   | ArtworkTemplatesPageDeleteArtworkTemplate
   | ArtworkTemplatesPageClickedUseTemplate
+  | ArtworkTemplatesPageClickedArtworkNavigationTab
