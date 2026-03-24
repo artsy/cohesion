@@ -55,7 +55,7 @@ export interface ArtworkTemplatesPageClickedUseTemplate {
  *   action: "clickedArtworkNavigationTab",
  *   context_module: "Artworks - templates",
  *   context_page_owner_type: "artwork",
- *   tabName: "All" | "Templates",
+ *   tab_name: "All" | "Templates",
  *   user_id: "some-user-id",
  * }
  * ```
@@ -64,7 +64,7 @@ export interface ArtworkTemplatesPageClickedArtworkNavigationTab {
   action: CmsActionType.clickedArtworkNavigationTab
   context_module: CmsContextModule.artworkTemplates
   context_page_owner_type: CmsOwnerType.artwork
-  tabName: string
+  tab_name: string
   user_id: string
 }
 
