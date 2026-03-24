@@ -10,6 +10,7 @@ import { CmsActionType } from "."
  * {
  *   action: "deletedArtworkTemplate",
  *   context_module: "Artworks - templates",
+ *   context_page_owner_type: "artwork",
  *   template_id: "template-id",
  *   user_id: "some-user-id",
  * }
@@ -31,6 +32,7 @@ export interface ArtworkTemplatesPageDeleteArtworkTemplate {
  * {
  *   action: "clickedUseTemplate",
  *   context_module: "Artworks - templates",
+ *   context_page_owner_type: "artwork",
  *   template_id: "template-id",
  *   user_id: "some-user-id",
  * }
@@ -52,6 +54,7 @@ export interface ArtworkTemplatesPageClickedUseTemplate {
  * {
  *   action: "clickedArtworkNavigationTab",
  *   context_module: "Artworks - templates",
+ *   context_page_owner_type: "artwork",
  *   tabName: "All" | "Templates",
  *
  * }

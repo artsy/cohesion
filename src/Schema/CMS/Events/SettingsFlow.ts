@@ -54,6 +54,7 @@ export interface SettingsFlowEditLocation {
  * {
  *   action: "deletedArtworkTemplate",
  *   context_module: "Settings",
+ *   context_page_owner_type: "settings",
  *   template_id: "template-id",
  *   user_id: "some-user-id",
  * }
@@ -75,6 +76,7 @@ export interface SettingsFlowDeleteArtworkTemplate {
  * {
  *   action: "clickedUseTemplate",
  *   context_module: "Settings",
+ *   context_page_owner_type: "settings",
  *   template_id: "template-id",
  *   user_id: "some-user-id",
  * }
