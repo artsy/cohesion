@@ -143,6 +143,7 @@ export enum OwnerType {
   settings = "settings",
   show = "show",
   shows = "shows",
+  signup = "signup",
   similarToRecentlyViewed = "similarToRecentlyViewed",
   submitArtworkStepAddDetails = "submitArtworkStepAddDetails",
   submitArtworkStepAddDimensions = "submitArtworkStepAddDimensions",
@@ -379,6 +380,7 @@ export type PageOwnerType =
   | OwnerType.sendOffers
   | OwnerType.show
   | OwnerType.shows
+  | OwnerType.signup
   | OwnerType.submitArtworkStepStart
   | OwnerType.submitArtworkStepSelectArtist
   | OwnerType.submitArtworkStepAddTitle
