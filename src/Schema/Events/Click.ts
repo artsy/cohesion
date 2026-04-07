@@ -290,7 +290,7 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
 }
 
 /**
- *  User clicks on Artsy's buyer protection link during their checkout flow.
+ *  User clicks on Artsy's buyer protection link during their checkout flow, or on the signup page.
  *
  *  This schema describes events sent to Segment from [[clickedBuyerProtection]]
  *
@@ -298,9 +298,9 @@ export interface ClickedCollectionGroup extends ClickedEntityGroup {
  *  ```
  *  {
  *    action: "clickedBuyerProtection",
- *    context_module: "ordersShipping",
- *    context_page_owner_type: "orders-shipping",
- *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    context_module: "ordersShipping" | "about",
+ *    context_page_owner_type: "orders-shipping" | "signup",
+ *    context_page_owner_id?: "57e60c68-a198-431e-8a02-6ecb01e3a99b" | null,
  *    destination_page_owner_type: "articles",
  *    destination_page_owner_slug: "360048946973-How-does-Artsy-protect-me"
  *  }
@@ -310,7 +310,7 @@ export interface ClickedBuyerProtection {
   action: ActionType.clickedBuyerProtection
   context_module: ContextModule
   context_page_owner_type: string
-  context_page_owner_id: string
+  context_page_owner_id?: string
   destination_page_owner_type: PageOwnerType
   destination_page_owner_slug: string
 }
