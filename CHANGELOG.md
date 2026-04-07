@@ -1,3 +1,15 @@
+# v4.352.0 (Tue Apr 07 2026)
+
+#### 🚀  Enhancement
+
+- feat: signup page Buyer Guarantee implementation [#690](https://github.com/artsy/cohesion/pull/690) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.351.0 (Tue Mar 24 2026)
 
 #### 🚀  Enhancement
