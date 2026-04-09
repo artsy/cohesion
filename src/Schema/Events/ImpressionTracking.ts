@@ -424,6 +424,7 @@ export interface ExpressCheckoutViewed {
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    address_ids: ["1234abcd5678efgh9012ijkl"]
+ *    default_address_id: "1234abcd5678efgh9012ijkl"
  *  }
  * ```
  */
@@ -433,6 +434,7 @@ export interface SavedAddressViewed {
   context_page_owner_id: string
   flow: string
   address_ids: string[]
+  default_address_id: string
 }
 
 /**
