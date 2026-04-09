@@ -204,6 +204,7 @@ import {
   SendOffersErrorMessage,
   SendOffersModalViewed,
   ShippingEstimateViewed,
+  ShippingQuoteViewed,
   TooltipViewed,
   ValidationAddressViewed,
   ViewedToast,
@@ -514,6 +515,7 @@ export type Event =
   | SentRequestPriceEstimate
   | Share
   | ShippingEstimateViewed
+  | ShippingQuoteViewed
   | StartedOnboarding
   | SubmitAnotherArtwork
   | SubmittedOffer
@@ -1473,6 +1475,10 @@ export enum ActionType {
    * Corresponds to {@link ShippingEstimateViewed}
    */
   shippingEstimateViewed = "shippingEstimateViewed",
+  /**
+   * Corresponds to {@link ShippingQuoteViewed}
+   */
+  shippingQuoteViewed = "shippingQuoteViewed",
   /**
    * Corresponds to {@link StartedOnboarding}
    */
