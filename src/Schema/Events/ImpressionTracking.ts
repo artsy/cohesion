@@ -424,6 +424,7 @@ export interface ExpressCheckoutViewed {
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    address_ids: ["1234abcd5678efgh9012ijkl"]
+ *    default_address_id: "1234abcd5678efgh9012ijkl"
  *  }
  * ```
  */
@@ -433,6 +434,7 @@ export interface SavedAddressViewed {
   context_page_owner_id: string
   flow: string
   address_ids: string[]
+  default_address_id: string
 }
 
 /**
@@ -483,6 +485,32 @@ export interface NewPaymentMethodViewed {
   context_page_owner_id: string
   flow: string
   payment_methods: string[]
+}
+
+/**
+ * A user views a retrieved shipping quote in checkout
+ *
+ * This schema describes events sent to Segment from [[shippingQuoteViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "shippingQuoteViewed",
+ *    context_page_owner_type: "orders-checkout",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    shipping_quotes: ["Standard", "Express"]
+ *    shipping_quote_ids: ["abcd1234efgh5678ijkl9012", "mnop3456qrst7890uvwx1234"]
+ *  }
+ * ```
+ */
+export interface ShippingQuoteViewed {
+  action: ActionType.shippingQuoteViewed
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  flow: string
+  shipping_quotes: string[]
+  shipping_quote_ids: string[]
 }
 
 /**
