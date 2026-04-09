@@ -488,6 +488,32 @@ export interface NewPaymentMethodViewed {
 }
 
 /**
+ * A user views a retrieved shipping quote in checkout
+ *
+ * This schema describes events sent to Segment from [[shippingQuoteViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "shippingQuoteViewed",
+ *    context_page_owner_type: "orders-checkout",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    shipping_quotes: ["Standard", "Express"]
+ *    shipping_quote_ids: ["abcd1234efgh5678ijkl9012", "mnop3456qrst7890uvwx1234"]
+ *  }
+ * ```
+ */
+export interface ShippingQuoteViewed {
+  action: ActionType.shippingQuoteViewed
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  flow: string
+  shipping_quotes: string[]
+  shipping_quote_ids: string[]
+}
+
+/**
  * A user views a step in checkout
  *
  * This schema describes events sent to Segment from [[OrderProgressionViewed]]
