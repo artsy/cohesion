@@ -425,6 +425,7 @@ export interface ExpressCheckoutViewed {
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    address_ids: ["1234abcd5678efgh9012ijkl"]
  *    default_address_id: "1234abcd5678efgh9012ijkl"
+ *    default_address_country: "US"
  *  }
  * ```
  */
@@ -435,6 +436,7 @@ export interface SavedAddressViewed {
   flow: string
   address_ids: string[]
   default_address_id: string
+  default_address_country: string
 }
 
 /**
