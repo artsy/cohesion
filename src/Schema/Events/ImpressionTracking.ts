@@ -510,7 +510,7 @@ export interface ShippingQuoteViewed {
   action: ActionType.shippingQuoteViewed
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
-  flow: string
+  flow: "Buy now" | "Make offer" | "Partner offer"
   shipping_quotes: string[]
   shipping_quote_ids: string[]
 }
