@@ -501,8 +501,10 @@ export interface NewPaymentMethodViewed {
  *    context_page_owner_type: "orders-checkout",
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
- *    shipping_quotes: ["Standard", "Express"]
- *    shipping_quote_ids: ["abcd1234efgh5678ijkl9012", "mnop3456qrst7890uvwx1234"]
+ *    shipping_quotes: [
+ *      { id: "ABC", type: "standard", price_minor: 123, price_currency: "USD", timeline: "Est. delivery: 3–5 days after shipping" },
+ *      { id: "XYZ", type: "express", price_minor: 456, price_currency: "USD", timeline: "Est. delivery: 2 days after shipping" },
+ *    ]
  *  }
  * ```
  */
@@ -511,8 +513,13 @@ export interface ShippingQuoteViewed {
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
   flow: "Buy now" | "Make offer" | "Partner offer"
-  shipping_quotes: string[]
-  shipping_quote_ids: string[]
+  shipping_quotes: Array<{
+    id: string
+    type: string
+    price_minor: number
+    price_currency: string
+    timeline: string
+  }>
 }
 
 /**
