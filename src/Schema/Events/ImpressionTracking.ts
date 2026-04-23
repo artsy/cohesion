@@ -424,6 +424,8 @@ export interface ExpressCheckoutViewed {
  *    context_page_owner_id: "6164889300d643000db86504",
  *    flow: "Buy now" | "Make offer" | "Partner offer"
  *    address_ids: ["1234abcd5678efgh9012ijkl"]
+ *    default_address_id: "1234abcd5678efgh9012ijkl"
+ *    default_address_country: "US"
  *  }
  * ```
  */
@@ -433,6 +435,8 @@ export interface SavedAddressViewed {
   context_page_owner_id: string
   flow: string
   address_ids: string[]
+  default_address_id: string
+  default_address_country: string
 }
 
 /**
@@ -483,6 +487,40 @@ export interface NewPaymentMethodViewed {
   context_page_owner_id: string
   flow: string
   payment_methods: string[]
+}
+
+/**
+ * A user views a retrieved shipping quote in checkout
+ *
+ * This schema describes events sent to Segment from [[shippingQuoteViewed]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "shippingQuoteViewed",
+ *    context_page_owner_type: "orders-checkout",
+ *    context_page_owner_id: "6164889300d643000db86504",
+ *    flow: "Buy now" | "Make offer" | "Partner offer"
+ *    shipping_quotes: [
+ *      { id: "ABC", type: "arta", subtype: "standard", price_minor: 123, price_currency: "USD", timeline: "Est. delivery: 3–5 days after shipping" },
+ *      { id: "XYZ", type: "arta", subtype: "express", price_minor: 456, price_currency: "USD", timeline: "Est. delivery: 2 days after shipping" },
+ *    ]
+ *  }
+ * ```
+ */
+export interface ShippingQuoteViewed {
+  action: ActionType.shippingQuoteViewed
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  flow: "Buy now" | "Make offer" | "Partner offer"
+  shipping_quotes: Array<{
+    id: string
+    type: string
+    subtype: string
+    price_minor: number
+    price_currency: string
+    timeline: string
+  }>
 }
 
 /**
