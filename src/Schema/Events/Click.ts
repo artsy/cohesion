@@ -1125,8 +1125,8 @@ export interface ClickedShippingAddress {
  *  ```
  *  {
  *    action: "clickedEditShippingAddress",
- *    context_module: "ordersShipping",
- *    context_page_owner_type: "orders-shipping",
+ *    context_module: "ordersFulfillment",
+ *    context_page_owner_type: "orders-checkout",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *  }
  * ```
