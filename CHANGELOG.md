@@ -1,3 +1,15 @@
+# v4.354.0 (Fri May 08 2026)
+
+#### 🚀  Enhancement
+
+- feat: Implement clickedEditShippingAddress [#693](https://github.com/artsy/cohesion/pull/693) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.353.0 (Thu Apr 23 2026)
 
 #### 🚀  Enhancement
