@@ -1117,6 +1117,28 @@ export interface ClickedShippingAddress {
 }
 
 /**
+ *  User clicks to edit a shipping address in the checkout flow.
+ *
+ *  This schema describes events sent to Segment from [[clickedEditShippingAddress]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedEditShippingAddress",
+ *    context_module: "ordersFulfillment",
+ *    context_page_owner_type: "orders-checkout",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *  }
+ * ```
+ */
+export interface ClickedEditShippingAddress {
+  action: ActionType.clickedEditShippingAddress
+  context_module: ContextModule
+  context_page_owner_type: string
+  context_page_owner_id: string
+}
+
+/**
  *  User chooses shipping option.
  *
  *  This schema describes events sent to Segment from [[clickedSelectShippingOption]]
