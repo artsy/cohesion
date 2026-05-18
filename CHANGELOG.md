@@ -1,3 +1,15 @@
+# v4.355.0 (Mon May 18 2026)
+
+#### 🚀  Enhancement
+
+- feat: add one-tap auth trigger #trivial [#694](https://github.com/artsy/cohesion/pull/694) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v4.354.0 (Fri May 08 2026)
 
 #### 🚀  Enhancement
