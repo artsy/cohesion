@@ -48,6 +48,7 @@ export interface AuthImpression {
  *    action: "createdAccount",
  *    auth_redirect: "https://artsy.net/artist/andy-warhol",
  *    context_module: "popUpModal",
+ *    context_page_path: "/artist/andy-warhol",
  *    intent: "viewArtist",
  *    modal_copy: "Sign up to follow artists",
  *    onboarding: true,
@@ -63,6 +64,7 @@ export interface CreatedAccount {
   action: ActionType.createdAccount
   auth_redirect: string
   context_module: AuthContextModule
+  context_page_path?: string
   intent: AuthIntent
   modal_copy?: string
   onboarding: boolean
@@ -116,6 +118,7 @@ export interface ResetYourPassword {
  *    action: "successfullyLoggedIn",
  *    auth_redirect: "https://artsy.net/artist/andy-warhol",
  *    context_module: "popUpModal",
+ *    context_page_path: "/artist/andy-warhol",
  *    intent: "viewArtist",
  *    modal_copy: "Sign up to follow artists",
  *    service: "email",
@@ -130,6 +133,7 @@ export interface SuccessfullyLoggedIn {
   action: ActionType.successfullyLoggedIn
   auth_redirect: string
   context_module: AuthContextModule
+  context_page_path?: string
   intent: AuthIntent
   modal_copy?: string
   service: AuthService
@@ -156,7 +160,7 @@ export enum AuthModalType {
 /**
  * The type of action that opened the authentication modal
  */
-export type AuthTrigger = "click" | "tap" | "timed" | "scroll"
+export type AuthTrigger = "click" | "tap" | "timed" | "scroll" | "one-tap"
 
 /**
  * the service the user used to authenticate
