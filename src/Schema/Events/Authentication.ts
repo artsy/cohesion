@@ -156,7 +156,7 @@ export enum AuthModalType {
 /**
  * The type of action that opened the authentication modal
  */
-export type AuthTrigger = "click" | "tap" | "timed" | "scroll"
+export type AuthTrigger = "click" | "tap" | "timed" | "scroll" | "one-tap"
 
 /**
  * the service the user used to authenticate
