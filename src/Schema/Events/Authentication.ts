@@ -48,7 +48,6 @@ export interface AuthImpression {
  *    action: "createdAccount",
  *    auth_redirect: "https://artsy.net/artist/andy-warhol",
  *    context_module: "popUpModal",
- *    context_page_path: "/artist/andy-warhol",
  *    intent: "viewArtist",
  *    modal_copy: "Sign up to follow artists",
  *    onboarding: true,
@@ -64,7 +63,6 @@ export interface CreatedAccount {
   action: ActionType.createdAccount
   auth_redirect: string
   context_module: AuthContextModule
-  context_page_path?: string
   intent: AuthIntent
   modal_copy?: string
   onboarding: boolean
@@ -118,7 +116,6 @@ export interface ResetYourPassword {
  *    action: "successfullyLoggedIn",
  *    auth_redirect: "https://artsy.net/artist/andy-warhol",
  *    context_module: "popUpModal",
- *    context_page_path: "/artist/andy-warhol",
  *    intent: "viewArtist",
  *    modal_copy: "Sign up to follow artists",
  *    service: "email",
@@ -133,7 +130,6 @@ export interface SuccessfullyLoggedIn {
   action: ActionType.successfullyLoggedIn
   auth_redirect: string
   context_module: AuthContextModule
-  context_page_path?: string
   intent: AuthIntent
   modal_copy?: string
   service: AuthService
