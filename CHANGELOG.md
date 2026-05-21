@@ -1,3 +1,15 @@
+# v4.356.0 (Thu May 21 2026)
+
+#### 🚀  Enhancement
+
+- chore: use new auth method field rather than expanding triggers [#695](https://github.com/artsy/cohesion/pull/695) ([@brainbicycle](https://github.com/brainbicycle))
+
+#### Authors: 1
+
+- Brian Beckerle ([@brainbicycle](https://github.com/brainbicycle))
+
+---
+
 # v4.355.0 (Mon May 18 2026)
 
 #### 🚀  Enhancement
