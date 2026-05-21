@@ -64,6 +64,7 @@ export interface CreatedAccount {
   auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
+  method?: AuthMethod
   modal_copy?: string
   onboarding: boolean
   service: AuthService
@@ -131,6 +132,7 @@ export interface SuccessfullyLoggedIn {
   auth_redirect: string
   context_module: AuthContextModule
   intent: AuthIntent
+  method?: AuthMethod
   modal_copy?: string
   service: AuthService
   trigger: AuthTrigger
@@ -156,7 +158,12 @@ export enum AuthModalType {
 /**
  * The type of action that opened the authentication modal
  */
-export type AuthTrigger = "click" | "tap" | "timed" | "scroll" | "one-tap"
+export type AuthTrigger = "click" | "tap" | "timed" | "scroll"
+
+/**
+ * The authentication method or flow used
+ */
+export type AuthMethod = "one-tap"
 
 /**
  * the service the user used to authenticate
