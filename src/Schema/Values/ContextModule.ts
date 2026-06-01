@@ -149,6 +149,7 @@ export enum ContextModule {
   infiniteDiscoveryDrawer = "infiniteDiscoveryDrawer",
   inquiry = "inquiry",
   intextTooltip = "intextTooltip",
+  invoice = "invoice",
   latestViewingRoomsRail = "latestViewingRoomsRail",
   liveAuctionRoom = "liveAuctionRoom",
   liveAuctionsRail = "liveAuctionsRail",
