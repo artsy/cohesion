@@ -1,3 +1,24 @@
+# v4.357.0 (Mon Jun 01 2026)
+
+#### 🚀  Enhancement
+
+- chore: add invoice ContextModule [#700](https://github.com/artsy/cohesion/pull/700) ([@xander-pero](https://github.com/xander-pero))
+
+#### 🐛  Bug Fix
+
+- Update cimg/python Docker tag to v3.14 [#696](https://github.com/artsy/cohesion/pull/696) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### 🏠  Internal
+
+- Update dep auto from 2.2.0 to v2.3.0 [#697](https://github.com/artsy/cohesion/pull/697) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.356.0 (Thu May 21 2026)
 
 #### 🚀  Enhancement
