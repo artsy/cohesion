@@ -1,3 +1,15 @@
+# v4.358.0 (Wed Jun 10 2026)
+
+#### 🚀  Enhancement
+
+- feat: add country field to auto complete [#701](https://github.com/artsy/cohesion/pull/701) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.357.0 (Mon Jun 01 2026)
 
 #### 🚀  Enhancement
