@@ -1,3 +1,15 @@
+# v4.359.0 (Fri Jun 12 2026)
+
+#### 🚀  Enhancement
+
+- chore: update point people in README.md [#702](https://github.com/artsy/cohesion/pull/702) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.358.0 (Wed Jun 10 2026)
 
 #### 🚀  Enhancement
