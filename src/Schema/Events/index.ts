@@ -1326,6 +1326,10 @@ export enum ActionType {
    */
   orderProgressionViewed = "orderProgressionViewed",
   /**
+   * Corresponds to {@link PartnerOfferInConversationViewed}
+   */
+  partnerOfferInConversationViewed = "partnerOfferInConversationViewed",
+  /**
    * Corresponds to {@link PastedIntoSearchInput}
    */
   pastedIntoSearchInput = "pastedIntoSearchInput",
