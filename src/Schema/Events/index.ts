@@ -197,6 +197,7 @@ import {
   NewPaymentMethodViewed,
   OrderDetailsViewed,
   OrderProgressionViewed,
+  PartnerOfferInConversationViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
   SavedAddressViewed,
@@ -484,6 +485,7 @@ export type Event =
   | OnboardingUserInputData
   | OrderDetailsViewed
   | OrderProgressionViewed
+  | PartnerOfferInConversationViewed
   | PastedIntoSearchInput
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
