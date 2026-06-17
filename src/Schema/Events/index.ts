@@ -197,6 +197,7 @@ import {
   NewPaymentMethodViewed,
   OrderDetailsViewed,
   OrderProgressionViewed,
+  PartnerOfferInConversationViewed,
   ProgressiveOnboardingTooltipViewed,
   RailViewed,
   SavedAddressViewed,
@@ -484,6 +485,7 @@ export type Event =
   | OnboardingUserInputData
   | OrderDetailsViewed
   | OrderProgressionViewed
+  | PartnerOfferInConversationViewed
   | PastedIntoSearchInput
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
@@ -1325,6 +1327,10 @@ export enum ActionType {
    * Corresponds to {@link OrderProgressionViewed}
    */
   orderProgressionViewed = "orderProgressionViewed",
+  /**
+   * Corresponds to {@link PartnerOfferInConversationViewed}
+   */
+  partnerOfferInConversationViewed = "partnerOfferInConversationViewed",
   /**
    * Corresponds to {@link PastedIntoSearchInput}
    */
