@@ -1,3 +1,15 @@
+# v4.360.0 (Wed Jun 17 2026)
+
+#### 🚀  Enhancement
+
+- chore: add partner offer convo event [#703](https://github.com/artsy/cohesion/pull/703) ([@araujobarret](https://github.com/araujobarret))
+
+#### Authors: 1
+
+- Carlos ([@araujobarret](https://github.com/araujobarret))
+
+---
+
 # v4.359.0 (Fri Jun 12 2026)
 
 #### 🚀  Enhancement
