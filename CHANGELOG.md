@@ -1,3 +1,15 @@
+# v4.361.0 (Thu Jun 18 2026)
+
+#### 🚀  Enhancement
+
+- chore: make address autocomplete Country optional [#704](https://github.com/artsy/cohesion/pull/704) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.360.0 (Wed Jun 17 2026)
 
 #### 🚀  Enhancement
