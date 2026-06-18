@@ -2859,15 +2859,15 @@ export interface ClickedArtistArtworkImage {
  *  @example
  *  ```
  *  {
- *    action: "clickedTermsandConditions",
+ *    action: "clickedTermsAndConditions",
  *    context_module: "ordersReview",
  *    context_page_owner_type: "orders-checkout" | "orders-respond",
  *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
  *  }
  * ```
  */
-export interface ClickedTermsandConditions {
-  action: ActionType.clickedTermsandConditions
+export interface ClickedTermsAndConditions {
+  action: ActionType.clickedTermsAndConditions
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string

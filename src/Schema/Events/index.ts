@@ -125,7 +125,7 @@ import {
   ClickedShowMore,
   ClickedSnooze,
   ClickedStartPartnerOffer,
-  ClickedTermsandConditions,
+  ClickedTermsAndConditions,
   ClickedUpdateArtwork,
   ClickedUploadArtwork,
   ClickedValidationAddressOptions,
@@ -436,7 +436,7 @@ export type Event =
   | ClickedShowMore
   | ClickedSnooze
   | ClickedStartPartnerOffer
-  | ClickedTermsandConditions
+  | ClickedTermsAndConditions
   | ClickedUpdateArtwork
   | ClickedUploadArtwork
   | ClickedValidationAddressOptions
@@ -1077,9 +1077,9 @@ export enum ActionType {
    */
   clickedTooltip = "clickedTooltip",
   /**
-   * Corresponds to {@link ClickedTermsandConditions}
+   * Corresponds to {@link ClickedTermsAndConditions}
    */
-  clickedTermsandConditions = "clickedTermsandConditions",
+  clickedTermsAndConditions = "clickedTermsAndConditions",
   /**
    * Corresponds to {@link ClickedUpdateArtwork}
    */
