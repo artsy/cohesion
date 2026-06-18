@@ -1,3 +1,15 @@
+# v4.362.0 (Thu Jun 18 2026)
+
+#### 🚀  Enhancement
+
+- feat: TermsAndConditions in checkout [#705](https://github.com/artsy/cohesion/pull/705) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.361.0 (Thu Jun 18 2026)
 
 #### 🚀  Enhancement
