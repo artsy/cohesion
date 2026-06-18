@@ -290,7 +290,7 @@ export interface SelectedSearchSuggestionQuickNavigationItem {
  *    context_module:"OrdersShipping",
  *    context_owner_type: "orders-shipping",
  *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
- *    country: "US" | "GB" | "DE" | "CH" | "IT" | "FR",
+ *    country?: "US" | "GB" | "DE" | "CH" | "IT" | "FR",
  *    input: "Weserstr."
  *    suggested_addresses_results: 3
  *  }
@@ -301,7 +301,7 @@ export interface AddressAutoCompletionResult {
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
-  country: string
+  country?: string
   input: string
   suggested_addresses_results: number
 }
@@ -318,7 +318,7 @@ export interface AddressAutoCompletionResult {
  *    context_module:"OrdersShipping",
  *    context_owner_type: "orders-shipping",
  *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
- *    country: "US" | "GB" | "DE" | "CH" | "IT" | "FR",
+ *    country?: "US" | "GB" | "DE" | "CH" | "IT" | "FR",
  *    input: "Wes",
  *    item: "Weserstr."
  *  }
@@ -329,7 +329,7 @@ export interface SelectedItemFromAddressAutoCompletion {
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
-  country: string
+  country?: string
   input: string
   item: string
 }
@@ -346,7 +346,7 @@ export interface SelectedItemFromAddressAutoCompletion {
  *    context_module:"OrdersShipping",
  *    context_owner_type: "orders-shipping",
  *    context_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
- *    country: "US" | "GB" | "DE" | "CH" | "IT" | "FR",
+ *    country?: "US" | "GB" | "DE" | "CH" | "IT" | "FR",
  *    field: "Address line 2"
  *  }
  * ```
@@ -356,6 +356,6 @@ export interface EditedAutocompletedAddress {
   context_module: ContextModule
   context_owner_type: PageOwnerType
   context_owner_id?: string
-  country: string
+  country?: string
   field: string
 }
