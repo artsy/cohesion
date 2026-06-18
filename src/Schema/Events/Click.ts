@@ -2854,7 +2854,7 @@ export interface ClickedArtistArtworkImage {
 /**
  * A user clicks on Terms and Conditions link during checkout or counteroffer flow
  *
- * This schema describes events sent to Segment from [[ClickedTermsandConditions]]
+ * This schema describes events sent to Segment from [[ClickedTermsAndConditions]]
  *
  *  @example
  *  ```
