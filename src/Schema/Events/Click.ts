@@ -2850,3 +2850,25 @@ export interface ClickedArtistArtworkImage {
   destination_page_owner_id: string
   destination_page_owner_slug: string
 }
+
+/**
+ * A user clicks on Terms and Conditions link during checkout or counteroffer flow
+ *
+ * This schema describes events sent to Segment from [[ClickedTermsandConditions]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedTermsandConditions",
+ *    context_module: "ordersReview",
+ *    context_page_owner_type: "orders-checkout" | "orders-respond",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b"
+ *  }
+ * ```
+ */
+export interface ClickedTermsandConditions {
+  action: ActionType.clickedTermsandConditions
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+}
