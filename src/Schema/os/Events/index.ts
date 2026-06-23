@@ -1,3 +1,9 @@
+import {
+  ClickedAddBrandKitFile,
+  ClickedBrandKitColor,
+  ClickedBrandKitFont,
+  ClickedSaveBrandKit,
+} from "./BrandKit"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 
 /**
@@ -5,7 +11,12 @@ import { OsMultiAddFlow } from "./MultiAddFlow"
  *
  * Each event describes one ActionType
  */
-export type OsEvent = OsMultiAddFlow
+export type OsEvent =
+  | OsMultiAddFlow
+  | ClickedBrandKitColor
+  | ClickedBrandKitFont
+  | ClickedAddBrandKitFile
+  | ClickedSaveBrandKit
 
 /**
  * List of all Art OS actions

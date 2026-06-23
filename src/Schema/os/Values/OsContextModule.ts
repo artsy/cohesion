@@ -7,4 +7,5 @@
 export enum OsContextModule {
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
+  brandKit = "brandKit",
 }
