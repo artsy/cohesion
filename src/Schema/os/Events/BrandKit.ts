@@ -19,7 +19,7 @@ import { OsOwnerType } from "../Values/OsOwnerType"
  *   context_module: "brandKitEditor",
  *   context_page_owner_type: "brandSettings",
  *   field: "text",
- *   value: "#9C9EEA"
+ *   value: "#999be6"
  * }
  * ```
  */
