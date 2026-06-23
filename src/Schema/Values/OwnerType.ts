@@ -93,6 +93,7 @@ export enum OwnerType {
   infiniteDiscoveryArtwork = "infiniteDiscoveryArtwork",
   infiniteDiscoveryArtist = "infiniteDiscoveryArtist",
   infiniteDiscoveryOnboarding = "infiniteDiscoveryOnboarding",
+  inventory = "inventory",
   lotsByArtistsYouFollow = "lotsByArtistsYouFollow",
   lotsForYou = "lotsForYou",
   marketNews = "marketNews",
