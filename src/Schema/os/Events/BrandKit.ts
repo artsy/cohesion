@@ -1,13 +1,14 @@
 import { ActionType } from "../../Events"
 import { OsContextModule } from "../Values/OsContextModule"
+import { OsOwnerType } from "../Values/OsOwnerType"
 
 /**
- * Schemas describing Brand Kit events in the Online Store
+ * Schemas describing Art OS Brand Kit events
  * @packageDocumentation
  */
 
 /**
- * User clicks on a brand kit color option in the Online Store
+ * User clicks on a brand kit color option
  *
  * This schema describes events sent to Segment from [[clickedBrandKitColor]]
  *
@@ -15,21 +16,23 @@ import { OsContextModule } from "../Values/OsContextModule"
  * ```
  * {
  *   action: "clickedBrandKitColor",
- *   context_module: "brandKit",
- *   color_hex: "#FF5733",
- *   color_name: "Primary Red"
+ *   context_module: "brandKitEditor",
+ *   context_page_owner_type: "brandSettings",
+ *   field: "text",
+ *   value: "#9C9EEA"
  * }
  * ```
  */
 export interface ClickedBrandKitColor {
   action: ActionType.clickedBrandKitColor
   context_module: OsContextModule.brandKit
-  color_hex?: string
-  color_name?: string
+  context_page_owner_type: OsOwnerType.studio
+  field: string
+  value: string
 }
 
 /**
- * User clicks on a brand kit font option in the Online Store
+ * User clicks on a brand kit font option
  *
  * This schema describes events sent to Segment from [[clickedBrandKitFont]]
  *
@@ -37,21 +40,23 @@ export interface ClickedBrandKitColor {
  * ```
  * {
  *   action: "clickedBrandKitFont",
- *   context_module: "brandKit",
- *   font_family: "Helvetica Neue",
- *   font_weight: "400"
+ *   context_module: "brandKitEditor",
+ *   context_page_owner_type: "brandSettings",
+ *   field: "font_family",
+ *   value: "Courier"
  * }
  * ```
  */
 export interface ClickedBrandKitFont {
   action: ActionType.clickedBrandKitFont
   context_module: OsContextModule.brandKit
-  font_family?: string
-  font_weight?: string
+  context_page_owner_type: OsOwnerType.studio
+  field: string
+  value: string
 }
 
 /**
- * User clicks to add a brand kit file in the Online Store
+ * User clicks to add a brand kit file
  *
  * This schema describes events sent to Segment from [[clickedAddBrandKitFile]]
  *
@@ -59,21 +64,25 @@ export interface ClickedBrandKitFont {
  * ```
  * {
  *   action: "clickedAddBrandKitFile",
- *   context_module: "brandKit",
- *   file_type: "logo",
- *   file_format: "png"
+ *   context_module: "brandKitEditor",
+ *   context_page_owner_type: "brandSettings",
+ *   label: "brand kit logo",
+ *   field: "file",
+ *   value: "filename.png"
  * }
  * ```
  */
 export interface ClickedAddBrandKitFile {
   action: ActionType.clickedAddBrandKitFile
   context_module: OsContextModule.brandKit
-  file_type?: string
-  file_format?: string
+  context_page_owner_type: OsOwnerType.studio
+  label: string
+  field: string
+  value: string
 }
 
 /**
- * User clicks to save brand kit settings in the Online Store
+ * User clicks to save brand kit settings
  *
  * This schema describes events sent to Segment from [[clickedSaveBrandKit]]
  *
@@ -81,13 +90,13 @@ export interface ClickedAddBrandKitFile {
  * ```
  * {
  *   action: "clickedSaveBrandKit",
- *   context_module: "brandKit",
- *   brand_kit_id: "12345"
+ *   context_module: "brandKitEditor",
+ *   context_page_owner_type: "brandSettings"
  * }
  * ```
  */
 export interface ClickedSaveBrandKit {
   action: ActionType.clickedSaveBrandKit
   context_module: OsContextModule.brandKit
-  brand_kit_id?: string
+  context_page_owner_type: OsOwnerType.studio
 }
