@@ -1,3 +1,15 @@
+# v4.363.0 (Tue Jun 23 2026)
+
+#### 🚀  Enhancement
+
+- chore: add tracking schema for OS Multi-Add feature [#706](https://github.com/artsy/cohesion/pull/706) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.362.0 (Thu Jun 18 2026)
 
 #### 🚀  Enhancement
