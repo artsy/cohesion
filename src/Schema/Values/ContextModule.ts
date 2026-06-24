@@ -79,6 +79,7 @@ export enum ContextModule {
   boothsTab = "boothsTab",
   bottomTabs = "bottomTabs",
   browseFair = "browseFair",
+  bulkEditDrawer = "bulkEditDrawer",
   categoryRail = "categoryRail",
   cityGuideCard = "cityGuideCard",
   collectionCard = "collectionCard",
