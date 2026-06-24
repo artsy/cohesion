@@ -28,7 +28,7 @@ export interface OsClickedActionsDropdown {
   action: OsActionType.clickedActionsDropdown
   context_module: OsContextModule.actionsDropdown
   context_page_owner_type: OsOwnerType
-  value: "Tearsheet" | "Checklist"
+  value: "Tearsheet" | "Checklist" | "Instagram Post"
 }
 
 /**
@@ -49,7 +49,7 @@ export interface OsClickedActionsDropdown {
 export interface OsClickedExitEditor {
   action: OsActionType.clickedExitEditor
   context_module: OsContextModule.editorHeader
-  context_page_owner_type: OsOwnerType.studioMaterials
+  context_page_owner_type: OsOwnerType
   label: string
 }
 
@@ -73,7 +73,7 @@ export interface OsClickedExitEditor {
 export interface OsClickedBrandKitModal {
   action: OsActionType.clickedBrandKitModal
   context_module: OsContextModule.brandKitPromptModal
-  context_page_owner_type: OsOwnerType.studioMaterials
+  context_page_owner_type: OsOwnerType
   label: string
   value: "cancel" | "create"
 }

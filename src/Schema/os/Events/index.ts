@@ -6,6 +6,7 @@ import {
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
 import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
+import { OsInstagramEditor } from "./InstagramEditor"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
@@ -24,6 +25,7 @@ export type OsEvent =
   | ClickedSaveBrandKit
   | OsConnectedAppsFlow
   | OsClickEvent
+  | OsInstagramEditor
   | OsInventoryTable
   | OsMaterialsEditor
   | OsSubmitEvent
@@ -75,14 +77,19 @@ export enum OsActionType {
   clickedArtworkRow = "clickedArtworkRow",
 
   /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedAspectRatio = "clickedAspectRatio",
+
+  /**
+   * Corresponds to {@link OsClickedBrandKitModal}
+   */
+  clickedBrandKitModal = "clickedBrandKitModal",
+
+  /**
    * Corresponds to {@link ClickedCancelBulkEdit}
    */
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
-
-  /**
-   * Corresponds to {@link OsInventoryTable}
-   */
-  clickedEditionSetRow = "clickedEditionSetRow",
 
   /**
    * Corresponds to {@link ClickedConnectAccount}
@@ -95,9 +102,14 @@ export enum OsActionType {
   clickedConnectAccountModal = "clickedConnectAccountModal",
 
   /**
-   * Corresponds to {@link OsClickedBrandKitModal}
+   * Corresponds to {@link OsInstagramEditor}
    */
-  clickedBrandKitModal = "clickedBrandKitModal",
+  clickedConnectModal = "clickedConnectModal",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedEditionSetRow = "clickedEditionSetRow",
 
   /**
    * Corresponds to {@link ClickedExitDropZone}
@@ -110,9 +122,29 @@ export enum OsActionType {
   clickedExitEditor = "clickedExitEditor",
 
   /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedImageBankImage = "clickedImageBankImage",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedImageBankManagement = "clickedImageBankManagement",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   clickedImagesModal = "clickedImagesModal",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedPublishConfirmation = "clickedPublishConfirmation",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedUploadImageBank = "clickedUploadImageBank",
 
   /**
    * Corresponds to {@link CompletedArtworkImport}
@@ -125,7 +157,7 @@ export enum OsActionType {
   createdImportedArtworks = "createdImportedArtworks",
 
   /**
-   * Corresponds to {@link OsCreatedStudioContent}
+   * Corresponds to {@link OsMaterialsEditor} and {@link OsInstagramEditor}
    */
   createdStudioContent = "createdStudioContent",
 

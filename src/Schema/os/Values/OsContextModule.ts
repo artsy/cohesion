@@ -18,8 +18,12 @@ export enum OsContextModule {
   distributeModal = "distributeModal",
   documentsModal = "documentsModal",
   editorHeader = "editorHeader",
+  imageBank = "imageBank",
+  imageEditor = "imageEditor",
   imagesModal = "imagesModal",
+  instagramEditor = "instagramEditor",
   materialsEditor = "materialsEditor",
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
+  publishConfirmationModal = "publishConfirmationModal",
 }

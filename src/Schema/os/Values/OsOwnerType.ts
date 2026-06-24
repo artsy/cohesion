@@ -9,5 +9,6 @@ export enum OsOwnerType {
   inventory = "inventory",
   list = "list",
   studio = "studio",
+  studioInstagram = "studioInstagram",
   studioMaterials = "studioMaterials",
 }
