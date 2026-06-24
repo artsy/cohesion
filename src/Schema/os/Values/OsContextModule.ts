@@ -16,4 +16,5 @@ export enum OsContextModule {
   imagesModal = "imagesModal",
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
+  brandKit = "brandKit",
 }

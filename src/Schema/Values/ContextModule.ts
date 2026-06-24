@@ -74,6 +74,7 @@ export enum ContextModule {
   auctionTab = "auctionTab",
   banner = "banner",
   bannerPopUp = "bannerPopUp",
+  brandKitEditor = "brandKitEditor",
   basedOnYourRecentSavesRail = "basedOnYourRecentSavesRail",
   boothsTab = "boothsTab",
   bottomTabs = "bottomTabs",
