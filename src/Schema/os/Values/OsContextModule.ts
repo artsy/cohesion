@@ -5,10 +5,15 @@
  * @packageDocumentation
  */
 export enum OsContextModule {
+  addArtistModal = "addArtistModal",
+  addLocationModal = "addLocationModal",
   actionsDropdown = "actionsDropdown",
+  artworkTable = "artworkTable",
   bulkEditDrawer = "bulkEditDrawer",
   deleteModal = "deleteModal",
   distributeModal = "distributeModal",
+  documentsModal = "documentsModal",
+  imagesModal = "imagesModal",
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
 }

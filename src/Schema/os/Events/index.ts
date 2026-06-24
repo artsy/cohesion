@@ -1,4 +1,5 @@
 import { OsClickEvent } from "./Click"
+import { OsInventoryTable } from "./InventoryTable"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
 
@@ -7,7 +8,11 @@ import { OsSubmitEvent } from "./Submit"
  *
  * Each event describes one ActionType
  */
-export type OsEvent = OsMultiAddFlow | OsClickEvent | OsSubmitEvent
+export type OsEvent =
+  | OsClickEvent
+  | OsInventoryTable
+  | OsMultiAddFlow
+  | OsSubmitEvent
 
 /**
  * List of all Art OS actions
@@ -15,6 +20,21 @@ export type OsEvent = OsMultiAddFlow | OsClickEvent | OsSubmitEvent
  * Each OsActionType corresponds with a table in Redshift.
  */
 export enum OsActionType {
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  addedArtist = "addedArtist",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  addedArtworkDocument = "addedArtworkDocument",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  addedLocation = "addedLocation",
+
   /**
    * Corresponds to {@link BulkEditedArtworks}
    */
@@ -35,15 +55,30 @@ export enum OsActionType {
    */
   clickedAddFromFile = "clickedAddFromFile",
 
+  /*
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedArtworkRow = "clickedArtworkRow",
+
   /**
    * Corresponds to {@link ClickedCancelBulkEdit}
    */
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedEditionSetRow = "clickedEditionSetRow",
+
+  /**
    * Corresponds to {@link ClickedExitDropZone}
    */
   clickedExitDropZone = "clickedExitDropZone",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedImagesModal = "clickedImagesModal",
 
   /**
    * Corresponds to {@link CompletedArtworkImport}
@@ -71,9 +106,19 @@ export enum OsActionType {
   editedArtworkField = "editedArtworkField",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  removedArtworkDocument = "removedArtworkDocument",
+
+  /**
    * Corresponds to {@link ResumedArtworkImport}
    */
   resumedArtworkImport = "resumedArtworkImport",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  savedArtworkImages = "savedArtworkImages",
 
   /**
    * Corresponds to {@link StartedArtworkImport}
