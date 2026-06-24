@@ -4,5 +4,6 @@
  * @packageDocumentation
  */
 export enum OsOwnerType {
+  collection = "collection",
   inventory = "inventory",
 }
