@@ -83,7 +83,39 @@ export interface DistributedArtworks {
   selected_count: number
 }
 
+/**
+ * The websocket-driven distribute job reaches a terminal state (complete or failed).
+ * Driven by `useDistributeWebsocket` (`PartnersChannel`, `metadata_update`).
+ * Fire on the final websocket message to capture success/skip rates.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "completedArtworkDistribution",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   destination: ["artsy"],
+ *   total_artworks: 12,
+ *   success_count: 10,
+ *   skipped_count: 2,
+ *   value: "partial"
+ * }
+ * ```
+ */
+export interface CompletedArtworkDistribution {
+  action: OsActionType.completedArtworkDistribution
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType.inventory
+  /** Destination marketplaces (currently Artsy only; extensible) */
+  destination: string[]
+  total_artworks: number
+  success_count: number
+  skipped_count: number
+  value: "success" | "partial" | "error"
+}
+
 export type OsSubmitEvent =
   | BulkEditedArtworks
+  | CompletedArtworkDistribution
   | DeletedArtwork
   | DistributedArtworks

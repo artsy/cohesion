@@ -8,6 +8,7 @@ import { OsClickEvent } from "./Click"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
+import { OsToggleEvent } from "./Toggle"
 
 /**
  * List of valid schemas for Art OS analytics actions
@@ -22,8 +23,8 @@ export type OsEvent =
   | ClickedSaveBrandKit
   | OsClickEvent
   | OsInventoryTable
-  | OsMultiAddFlow
   | OsSubmitEvent
+  | OsToggleEvent
 
 /**
  * List of all Art OS actions
@@ -77,6 +78,11 @@ export enum OsActionType {
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
 
   /**
+   * Corresponds to {@link ClickedDivergenceMarker}
+   */
+  clickedDivergenceMarker = "clickedDivergenceMarker",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   clickedEditionSetRow = "clickedEditionSetRow",
@@ -90,6 +96,11 @@ export enum OsActionType {
    * Corresponds to {@link OsInventoryTable}
    */
   clickedImagesModal = "clickedImagesModal",
+
+  /**
+   * Corresponds to {@link CompletedArtworkDistribution}
+   */
+  completedArtworkDistribution = "completedArtworkDistribution",
 
   /**
    * Corresponds to {@link CompletedArtworkImport}
@@ -117,6 +128,11 @@ export enum OsActionType {
   editedArtworkField = "editedArtworkField",
 
   /**
+   * Corresponds to {@link EditedInventoryField}
+   */
+  editedInventoryField = "editedInventoryField",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   removedArtworkDocument = "removedArtworkDocument",
@@ -135,4 +151,14 @@ export enum OsActionType {
    * Corresponds to {@link StartedArtworkImport}
    */
   startedArtworkImport = "startedArtworkImport",
+
+  /**
+   * Corresponds to {@link ToggledDistributionSync}
+   */
+  toggledDistributionSync = "toggledDistributionSync",
+
+  /**
+   * Corresponds to {@link ViewedDivergenceMarker}
+   */
+  viewedDivergenceMarker = "viewedDivergenceMarker",
 }

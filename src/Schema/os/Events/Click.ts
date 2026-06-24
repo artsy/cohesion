@@ -53,4 +53,54 @@ export interface ClickedCancelBulkEdit {
   artwork_ids: string[]
 }
 
-export type OsClickEvent = ClickedActionsDropdown | ClickedCancelBulkEdit
+/**
+ * The divergence marker appears in a syncable cell when the OS value
+ * diverges from the Artsy CMS value. Fires as an impression when the marker
+ * first renders for a given artwork/field combination.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "viewedDivergenceMarker",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   field: "availability"
+ * }
+ * ```
+ */
+export interface ViewedDivergenceMarker {
+  action: OsActionType.viewedDivergenceMarker
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  field: "availability" | "medium" | "price"
+}
+
+/**
+ * A partner clicks the divergence marker to inspect the CMS value.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedDivergenceMarker",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   field: "availability"
+ * }
+ * ```
+ */
+export interface ClickedDivergenceMarker {
+  action: OsActionType.clickedDivergenceMarker
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  field: "availability" | "medium" | "price"
+}
+
+export type OsClickEvent =
+  | ClickedActionsDropdown
+  | ClickedCancelBulkEdit
+  | ClickedDivergenceMarker
+  | ViewedDivergenceMarker
