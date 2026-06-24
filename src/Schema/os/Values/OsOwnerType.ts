@@ -5,4 +5,5 @@
  */
 export enum OsOwnerType {
   inventory = "inventory",
+  connectedApps = "connectedApps",
 }

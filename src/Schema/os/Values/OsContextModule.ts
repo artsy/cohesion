@@ -5,6 +5,8 @@
  * @packageDocumentation
  */
 export enum OsContextModule {
+  connectedAppsList = "connectedAppsList",
+  connectModal = "connectModal",
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
 }

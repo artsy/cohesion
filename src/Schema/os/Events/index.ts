@@ -1,3 +1,4 @@
+import { OSConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 
 /**
@@ -5,7 +6,7 @@ import { OsMultiAddFlow } from "./MultiAddFlow"
  *
  * Each event describes one ActionType
  */
-export type OsEvent = OsMultiAddFlow
+export type OsEvent = OsMultiAddFlow | OSConnectedAppsFlow
 
 /**
  * List of all Art OS actions
@@ -22,6 +23,16 @@ export enum OsActionType {
    * Corresponds to {@link ClickedAddFromFile}
    */
   clickedAddFromFile = "clickedAddFromFile",
+
+  /**
+   * Corresponds to {@link ClickedConnectAccount}
+   */
+  clickedConnectAccount = "clickedConnectAccount",
+
+  /**
+   * Corresponds to {@link ClickedConnectAccountModal}
+   */
+  clickedConnectAccountModal = "clickedConnectAccountModal",
 
   /**
    * Corresponds to {@link ClickedExitDropZone}
