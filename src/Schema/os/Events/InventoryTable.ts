@@ -288,21 +288,34 @@ export interface OsRemovedArtworkDocument {
 }
 
 /**
- * A partner selects an item from the inventory actions dropdown.
- * The dropdown is surfaced three ways: action button (toolbar), row action (3-dots icon),
- * and context menu (right-click). `label` identifies which trigger opened it.
+ * A partner selects an item from any inventory actions dropdown.
+ * Covers the three top-bar dropdowns ("Add to", "Open in Studio", "More") and the
+ * per-row / right-click menus. `label` identifies which specific button or trigger
+ * the partner used; `value` is the action item they selected within it.
  *
  * This schema describes events sent to Segment from [[OsClickedActionsDropdown]]
  *
- * @example
+ * @example Top-bar "Add to" dropdown
  * ```
  * {
  *   action: "clickedActionsDropdown",
  *   context_module: "actionsDropdown",
  *   context_page_owner_type: "inventory",
- *   value: "Distribute to Artsy",
- *   label: "context menu",
+ *   value: "Add to Artsy",
+ *   label: "add to dropdown",
  *   artwork_ids: ["abc123", "def456"]
+ * }
+ * ```
+ *
+ * @example Right-click context menu
+ * ```
+ * {
+ *   action: "clickedActionsDropdown",
+ *   context_module: "actionsDropdown",
+ *   context_page_owner_type: "inventory",
+ *   value: "Convert to Edition Set",
+ *   label: "context menu",
+ *   artwork_ids: ["abc123"]
  * }
  * ```
  */
@@ -310,14 +323,35 @@ export interface OsClickedActionsDropdown {
   action: OsActionType.clickedActionsDropdown
   context_module: OsContextModule.actionsDropdown
   context_page_owner_type: OsOwnerType
+  /**
+   * The specific action item selected within the dropdown.
+   * Top-bar "Add to": "Add to Artsy" | "Add to Collection"
+   * Top-bar "Open in Studio": "Tearsheet" | "Checklist" | "Instagram Post" | "Mailchimp Campaign"
+   * Top-bar "More": "Delete"
+   * Row/context menu only: "Remove from Artsy" | "Change Collection" | "Remove from Collection" |
+   *   "Convert to Edition Set" | "Edit Edition Set" | "Convert to Unique"
+   */
   value:
+    | "Add to Artsy"
+    | "Add to Collection"
+    | "Change Collection"
+    | "Checklist"
     | "Convert to Edition Set"
     | "Convert to Unique"
     | "Delete"
-    | "Distribute to Artsy"
     | "Edit Edition Set"
-  /** Which trigger opened the dropdown */
-  label: "action button" | "context menu" | "row action"
+    | "Instagram Post"
+    | "Mailchimp Campaign"
+    | "Remove from Artsy"
+    | "Remove from Collection"
+    | "Tearsheet"
+  /** Which button or trigger the partner used to open this dropdown */
+  label:
+    | "add to dropdown"
+    | "context menu"
+    | "more dropdown"
+    | "row action"
+    | "studio dropdown"
   artwork_ids: string[]
 }
 
