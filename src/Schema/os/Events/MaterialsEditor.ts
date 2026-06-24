@@ -8,6 +8,30 @@ import { OsActionType } from "."
  */
 
 /**
+ * A partner selects "Tearsheet" or "Checklist" from the inventory actions dropdown
+ * to open the Materials editor. The dropdown is surfaced three ways: the artwork's
+ * actions, bulk actions, and the right-click context menu.
+ *
+ * This schema describes events sent to Segment from [[OsClickedActionsDropdown]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedActionsDropdown",
+ *   context_module: "actionsDropdown",
+ *   context_page_owner_type: "inventory",
+ *   value: "Tearsheet"
+ * }
+ * ```
+ */
+export interface OsClickedActionsDropdown {
+  action: OsActionType.clickedActionsDropdown
+  context_module: OsContextModule.actionsDropdown
+  context_page_owner_type: OsOwnerType
+  value: "Tearsheet" | "Checklist"
+}
+
+/**
  * A partner clicks "Exit" in the Materials editor header to leave the editor.
  *
  * This schema describes events sent to Segment from [[OsClickedExitEditor]]
@@ -91,6 +115,7 @@ export interface OsCreatedStudioContent {
 }
 
 export type OsMaterialsEditor =
+  | OsClickedActionsDropdown
   | OsClickedBrandKitModal
   | OsClickedExitEditor
   | OsCreatedStudioContent
