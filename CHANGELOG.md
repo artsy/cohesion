@@ -1,3 +1,27 @@
+# v4.365.0 (Wed Jun 24 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add tracking schema for the invetory table [#709](https://github.com/artsy/cohesion/pull/709) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
+# v4.364.0 (Wed Jun 24 2026)
+
+#### 🚀  Enhancement
+
+- chore: add analytics schema for OS bulk edit [#708](https://github.com/artsy/cohesion/pull/708) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.363.0 (Tue Jun 23 2026)
 
 #### 🚀  Enhancement

@@ -1,12 +1,20 @@
 import { OSConnectedAppsFlow } from "./ConnectedAppsFlow"
+import { OsClickEvent } from "./Click"
+import { OsInventoryTable } from "./InventoryTable"
 import { OsMultiAddFlow } from "./MultiAddFlow"
+import { OsSubmitEvent } from "./Submit"
 
 /**
  * List of valid schemas for Art OS analytics actions
  *
  * Each event describes one ActionType
  */
-export type OsEvent = OsMultiAddFlow | OSConnectedAppsFlow
+export type OsEvent =
+  | OSConnectedAppsFlow
+  | OsClickEvent
+  | OsInventoryTable
+  | OsMultiAddFlow
+  | OsSubmitEvent
 
 /**
  * List of all Art OS actions
@@ -15,14 +23,54 @@ export type OsEvent = OsMultiAddFlow | OSConnectedAppsFlow
  */
 export enum OsActionType {
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  addedArtist = "addedArtist",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  addedArtworkDocument = "addedArtworkDocument",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  addedLocation = "addedLocation",
+
+  /**
+   * Corresponds to {@link BulkEditedArtworks}
+   */
+  bulkEditedArtworks = "bulkEditedArtworks",
+
+  /**
    * Corresponds to {@link CancelledArtworkImport}
    */
   cancelledArtworkImport = "cancelledArtworkImport",
 
   /**
+   * Corresponds to {@link ClickedActionsDropdown}
+   */
+  clickedActionsDropdown = "clickedActionsDropdown",
+
+  /**
    * Corresponds to {@link ClickedAddFromFile}
    */
   clickedAddFromFile = "clickedAddFromFile",
+
+  /*
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedArtworkRow = "clickedArtworkRow",
+
+  /**
+   * Corresponds to {@link ClickedCancelBulkEdit}
+   */
+  clickedCancelBulkEdit = "clickedCancelBulkEdit",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedEditionSetRow = "clickedEditionSetRow",
 
   /**
    * Corresponds to {@link ClickedConnectAccount}
@@ -40,6 +88,11 @@ export enum OsActionType {
   clickedExitDropZone = "clickedExitDropZone",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedImagesModal = "clickedImagesModal",
+
+  /**
    * Corresponds to {@link CompletedArtworkImport}
    */
   completedArtworkImport = "completedArtworkImport",
@@ -50,14 +103,34 @@ export enum OsActionType {
   createdImportedArtworks = "createdImportedArtworks",
 
   /**
+   * Corresponds to {@link DeletedArtwork}
+   */
+  deletedArtwork = "deletedArtwork",
+
+  /**
+   * Corresponds to {@link DistributedArtworks}
+   */
+  distributedArtworks = "distributedArtworks",
+
+  /**
    * Corresponds to {@link EditedArtworkField}
    */
   editedArtworkField = "editedArtworkField",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  removedArtworkDocument = "removedArtworkDocument",
+
+  /**
    * Corresponds to {@link ResumedArtworkImport}
    */
   resumedArtworkImport = "resumedArtworkImport",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  savedArtworkImages = "savedArtworkImages",
 
   /**
    * Corresponds to {@link StartedArtworkImport}
