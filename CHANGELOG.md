@@ -1,3 +1,15 @@
+# v4.364.0 (Wed Jun 24 2026)
+
+#### 🚀  Enhancement
+
+- chore: add analytics schema for OS bulk edit [#708](https://github.com/artsy/cohesion/pull/708) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.363.0 (Tue Jun 23 2026)
 
 #### 🚀  Enhancement
