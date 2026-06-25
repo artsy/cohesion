@@ -7,6 +7,7 @@ import {
 import { OsClickEvent } from "./Click"
 import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsInventoryTable } from "./InventoryTable"
+import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
 
@@ -24,7 +25,7 @@ export type OsEvent =
   | OsConnectedAppsFlow
   | OsClickEvent
   | OsInventoryTable
-  | OsMultiAddFlow
+  | OsMaterialsEditor
   | OsSubmitEvent
 
 /**
@@ -59,7 +60,7 @@ export enum OsActionType {
   cancelledArtworkImport = "cancelledArtworkImport",
 
   /**
-   * Corresponds to {@link ClickedActionsDropdown}
+   * Corresponds to {@link OsClickedActionsDropdown}
    */
   clickedActionsDropdown = "clickedActionsDropdown",
 
@@ -94,9 +95,19 @@ export enum OsActionType {
   clickedConnectAccountModal = "clickedConnectAccountModal",
 
   /**
+   * Corresponds to {@link OsClickedBrandKitModal}
+   */
+  clickedBrandKitModal = "clickedBrandKitModal",
+
+  /**
    * Corresponds to {@link ClickedExitDropZone}
    */
   clickedExitDropZone = "clickedExitDropZone",
+
+  /**
+   * Corresponds to {@link OsClickedExitEditor}
+   */
+  clickedExitEditor = "clickedExitEditor",
 
   /**
    * Corresponds to {@link OsInventoryTable}
@@ -112,6 +123,11 @@ export enum OsActionType {
    * Corresponds to {@link CreatedImportedArtworks}
    */
   createdImportedArtworks = "createdImportedArtworks",
+
+  /**
+   * Corresponds to {@link OsCreatedStudioContent}
+   */
+  createdStudioContent = "createdStudioContent",
 
   /**
    * Corresponds to {@link DeletedArtwork}

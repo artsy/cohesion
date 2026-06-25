@@ -5,18 +5,21 @@
  * @packageDocumentation
  */
 export enum OsContextModule {
+  actionsDropdown = "actionsDropdown",
   addArtistModal = "addArtistModal",
   addLocationModal = "addLocationModal",
-  actionsDropdown = "actionsDropdown",
   artworkTable = "artworkTable",
+  brandKit = "brandKit",
+  brandKitPromptModal = "brandKitPromptModal",
   bulkEditDrawer = "bulkEditDrawer",
   connectedAppsList = "connectedAppsList",
   connectModal = "connectModal",
   deleteModal = "deleteModal",
   distributeModal = "distributeModal",
   documentsModal = "documentsModal",
+  editorHeader = "editorHeader",
   imagesModal = "imagesModal",
+  materialsEditor = "materialsEditor",
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
-  brandKit = "brandKit",
 }
