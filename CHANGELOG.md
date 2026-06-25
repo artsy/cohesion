@@ -1,3 +1,15 @@
+# v4.370.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- chore: add tracking for lists and bulk list actions (OS) [#716](https://github.com/artsy/cohesion/pull/716) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
 # v4.369.0 (Thu Jun 25 2026)
 
 #### 🚀  Enhancement
