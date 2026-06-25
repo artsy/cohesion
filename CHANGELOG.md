@@ -1,3 +1,15 @@
+# v4.367.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- feat: add tracking schema for OS Connected Apps (integrations management) [#712](https://github.com/artsy/cohesion/pull/712) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.366.0 (Wed Jun 24 2026)
 
 #### 🚀  Enhancement
