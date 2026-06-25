@@ -55,8 +55,8 @@ export interface ClickedCancelBulkEdit {
 
 /**
  * The divergence marker appears in a syncable cell when the OS value
- * diverges from the Artsy CMS value. Fires as an impression when the marker
- * first renders for a given artwork/field combination.
+ * diverges from the downstream destination value (e.g. Artsy CMS). Fires as an
+ * impression when the marker first renders for a given artwork/field combination.
  *
  * @example
  * ```
@@ -78,7 +78,7 @@ export interface ViewedDivergenceMarker {
 }
 
 /**
- * A partner clicks the divergence marker to inspect the CMS value.
+ * A partner clicks the divergence marker to inspect the downstream destination value (e.g. Artsy CMS).
  *
  * @example
  * ```

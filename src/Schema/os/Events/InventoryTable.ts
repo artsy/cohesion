@@ -359,9 +359,9 @@ export interface OsClickedActionsDropdown {
 
 /**
  * A partner edits an availability, medium, or price cell that is configured to sync
- * with Artsy CMS. Fires on mutation success. Distinct from {@link OsEditedArtworkField}
- * (general field edits) — this captures only the three syncable fields and whether a
- * CMS push actually occurred.
+ * with a downstream destination (e.g. Artsy CMS). Fires on mutation success. Distinct
+ * from {@link OsEditedArtworkField} (general field edits) — this captures only the three
+ * syncable fields and whether a push to the destination actually occurred.
  *
  * @example
  * ```
@@ -380,11 +380,11 @@ export interface EditedInventoryField {
   action: OsActionType.editedInventoryField
   context_module: OsContextModule.artworkTable
   context_page_owner_type: OsOwnerType
-  /** Destination marketplaces the value was pushed to (currently Artsy only) */
+  /** Downstream destinations the value was pushed to (e.g. ["artsy"]) */
   destination: string[]
   artwork_id: string
   field: "availability" | "medium" | "price"
-  /** false e.g. for "Not For Sale" (OS-only value that does not push to CMS) */
+  /** false e.g. for "Not For Sale" (OS-only value that does not push to the destination) */
   did_push_to_cms: boolean
 }
 
