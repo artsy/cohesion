@@ -5,7 +5,10 @@ import {
   ClickedSaveBrandKit,
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
+import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
+import { OsInstagramEditor } from "./InstagramEditor"
 import { OsInventoryTable } from "./InventoryTable"
+import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
 import { OsToggleEvent } from "./Toggle"
@@ -21,8 +24,11 @@ export type OsEvent =
   | ClickedBrandKitFont
   | ClickedAddBrandKitFile
   | ClickedSaveBrandKit
+  | OsConnectedAppsFlow
   | OsClickEvent
+  | OsInstagramEditor
   | OsInventoryTable
+  | OsMaterialsEditor
   | OsSubmitEvent
   | OsToggleEvent
 
@@ -43,6 +49,11 @@ export enum OsActionType {
   addedArtworkDocument = "addedArtworkDocument",
 
   /**
+   * Corresponds to {@link AddedArtworksToList}
+   */
+  addedArtworksToList = "addedArtworksToList",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   addedLocation = "addedLocation",
@@ -58,7 +69,7 @@ export enum OsActionType {
   cancelledArtworkImport = "cancelledArtworkImport",
 
   /**
-   * Corresponds to {@link ClickedActionsDropdown}
+   * Corresponds to {@link OsClickedActionsDropdown}
    */
   clickedActionsDropdown = "clickedActionsDropdown",
 
@@ -73,9 +84,34 @@ export enum OsActionType {
   clickedArtworkRow = "clickedArtworkRow",
 
   /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedAspectRatio = "clickedAspectRatio",
+
+  /**
+   * Corresponds to {@link OsClickedBrandKitModal}
+   */
+  clickedBrandKitModal = "clickedBrandKitModal",
+
+  /**
    * Corresponds to {@link ClickedCancelBulkEdit}
    */
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
+
+  /**
+   * Corresponds to {@link ClickedConnectAccount}
+   */
+  clickedConnectAccount = "clickedConnectAccount",
+
+  /**
+   * Corresponds to {@link ClickedConnectAccountModal}
+   */
+  clickedConnectAccountModal = "clickedConnectAccountModal",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedConnectModal = "clickedConnectModal",
 
   /**
    * Corresponds to {@link ClickedDivergenceMarker}
@@ -93,9 +129,39 @@ export enum OsActionType {
   clickedExitDropZone = "clickedExitDropZone",
 
   /**
+   * Corresponds to {@link OsClickedExitEditor}
+   */
+  clickedExitEditor = "clickedExitEditor",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedImageBankImage = "clickedImageBankImage",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedImageBankManagement = "clickedImageBankManagement",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   clickedImagesModal = "clickedImagesModal",
+
+  /**
+   * Corresponds to {@link ClickedOpenList}
+   */
+  clickedOpenList = "clickedOpenList",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedPublishConfirmation = "clickedPublishConfirmation",
+
+  /**
+   * Corresponds to {@link OsInstagramEditor}
+   */
+  clickedUploadImageBank = "clickedUploadImageBank",
 
   /**
    * Corresponds to {@link CompletedArtworkDistribution}
@@ -113,14 +179,34 @@ export enum OsActionType {
   createdImportedArtworks = "createdImportedArtworks",
 
   /**
+   * Corresponds to {@link CreatedList}
+   */
+  createdList = "createdList",
+
+  /**
+   * Corresponds to {@link OsMaterialsEditor} and {@link OsInstagramEditor}
+   */
+  createdStudioContent = "createdStudioContent",
+
+  /**
    * Corresponds to {@link DeletedArtwork}
    */
   deletedArtwork = "deletedArtwork",
 
   /**
+   * Corresponds to {@link DeletedList}
+   */
+  deletedList = "deletedList",
+
+  /**
    * Corresponds to {@link DistributedArtworks}
    */
   distributedArtworks = "distributedArtworks",
+
+  /**
+   * Corresponds to {@link DistributedList}
+   */
+  distributedList = "distributedList",
 
   /**
    * Corresponds to {@link EditedArtworkField}
@@ -133,9 +219,19 @@ export enum OsActionType {
   editedInventoryField = "editedInventoryField",
 
   /**
+   * Corresponds to {@link MovedArtworksBetweenLists}
+   */
+  movedArtworksBetweenLists = "movedArtworksBetweenLists",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   removedArtworkDocument = "removedArtworkDocument",
+
+  /**
+   * Corresponds to {@link RemovedArtworksFromList}
+   */
+  removedArtworksFromList = "removedArtworksFromList",
 
   /**
    * Corresponds to {@link ResumedArtworkImport}
@@ -156,6 +252,11 @@ export enum OsActionType {
    * Corresponds to {@link ToggledDistributionSync}
    */
   toggledDistributionSync = "toggledDistributionSync",
+
+  /**
+   * Corresponds to {@link UpdatedList}
+   */
+  updatedList = "updatedList",
 
   /**
    * Corresponds to {@link ViewedDivergenceMarker}

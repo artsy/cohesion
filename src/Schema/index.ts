@@ -39,8 +39,6 @@ export * from "./Values/Tab"
  */
 
 export * from "./CMS/Events"
-export * from "./CMS/Values/CmsContextModule"
-export * from "./CMS/Values/CmsOwnerType"
 export * from "./CMS/Events/AnalyticsPage"
 export * from "./CMS/Events/ArtworkFilter"
 export * from "./CMS/Events/BatchImportFlow"
@@ -50,17 +48,21 @@ export * from "./CMS/Events/QuickReplyFlow"
 export * from "./CMS/Events/SettingsFlow"
 export * from "./CMS/Events/ShowFlow"
 export * from "./CMS/Events/UploadArtworkFlow"
+export * from "./CMS/Values/CmsContextModule"
+export * from "./CMS/Values/CmsOwnerType"
 
 /**
  * Art OS-specific exports
  */
 
 export * from "./os/Events"
-export * from "./os/Values/OsContextModule"
-export * from "./os/Values/OsOwnerType"
+export * from "./os/Events/BrandKit"
 export * from "./os/Events/Click"
+export * from "./os/Events/ConnectedAppsFlow"
+export * from "./os/Events/InstagramEditor"
 export * from "./os/Events/InventoryTable"
 export * from "./os/Events/MultiAddFlow"
-export * from "./os/Events/BrandKit"
 export * from "./os/Events/Submit"
 export * from "./os/Events/Toggle"
+export * from "./os/Values/OsContextModule"
+export * from "./os/Values/OsOwnerType"

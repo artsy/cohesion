@@ -1,3 +1,51 @@
+# v4.370.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- chore: add tracking for lists and bulk list actions (OS) [#716](https://github.com/artsy/cohesion/pull/716) ([@mzikherman](https://github.com/mzikherman))
+
+#### Authors: 1
+
+- Matt Zikherman ([@mzikherman](https://github.com/mzikherman))
+
+---
+
+# v4.369.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add tracking schema for OS Instagram Editor [#711](https://github.com/artsy/cohesion/pull/711) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
+# v4.368.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add tracking schema for OS Materials Editor [#710](https://github.com/artsy/cohesion/pull/710) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
+# v4.367.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- feat: add tracking schema for OS Connected Apps (integrations management) [#712](https://github.com/artsy/cohesion/pull/712) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.366.0 (Wed Jun 24 2026)
 
 #### 🚀  Enhancement
