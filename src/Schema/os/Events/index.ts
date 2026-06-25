@@ -1,3 +1,9 @@
+import {
+  ClickedAddBrandKitFile,
+  ClickedBrandKitColor,
+  ClickedBrandKitFont,
+  ClickedSaveBrandKit,
+} from "./BrandKit"
 import { OSConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsClickEvent } from "./Click"
 import { OsInventoryTable } from "./InventoryTable"
@@ -10,6 +16,11 @@ import { OsSubmitEvent } from "./Submit"
  * Each event describes one ActionType
  */
 export type OsEvent =
+  | OsMultiAddFlow
+  | ClickedBrandKitColor
+  | ClickedBrandKitFont
+  | ClickedAddBrandKitFile
+  | ClickedSaveBrandKit
   | OSConnectedAppsFlow
   | OsClickEvent
   | OsInventoryTable

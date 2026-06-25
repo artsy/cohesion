@@ -1954,4 +1954,20 @@ export enum ActionType {
    * Corresponds to {@link VisitMyCollectionOnboardingSlide}
    */
   visitMyCollectionOnboardingSlide = "visitMyCollectionOnboardingSlide",
+  /**
+   * Corresponds to {@link ClickedBrandKitColor}
+   */
+  clickedBrandKitColor = "clickedBrandKitColor",
+  /**
+   * Corresponds to {@link ClickedBrandKitFont}
+   */
+  clickedBrandKitFont = "clickedBrandKitFont",
+  /**
+   * Corresponds to {@link ClickedAddBrandKitFile}
+   */
+  clickedAddBrandKitFile = "clickedAddBrandKitFile",
+  /**
+   * Corresponds to {@link ClickedSaveBrandKit}
+   */
+  clickedSaveBrandKit = "clickedSaveBrandKit",
 }

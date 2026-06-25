@@ -1,3 +1,15 @@
+# v4.366.0 (Wed Jun 24 2026)
+
+#### 🚀  Enhancement
+
+- chore: add art os BrandKit events [#707](https://github.com/artsy/cohesion/pull/707) ([@mc-jones](https://github.com/mc-jones))
+
+#### Authors: 1
+
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v4.365.0 (Wed Jun 24 2026)
 
 #### 🚀  Enhancement
