@@ -4,6 +4,7 @@
  * @packageDocumentation
  */
 export enum OsOwnerType {
+  connectedApps = "connectedApps",
   list = "list",
   inventory = "inventory",
   studio = "studio",

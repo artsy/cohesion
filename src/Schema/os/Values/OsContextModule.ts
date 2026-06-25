@@ -10,6 +10,8 @@ export enum OsContextModule {
   actionsDropdown = "actionsDropdown",
   artworkTable = "artworkTable",
   bulkEditDrawer = "bulkEditDrawer",
+  connectedAppsList = "connectedAppsList",
+  connectModal = "connectModal",
   deleteModal = "deleteModal",
   distributeModal = "distributeModal",
   documentsModal = "documentsModal",

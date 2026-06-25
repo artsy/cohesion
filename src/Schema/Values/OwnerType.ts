@@ -61,6 +61,7 @@ export enum OwnerType {
   collections = "collections",
   collectionsCategory = "collectionsCategory",
   confirmYourBid = "confirmYourBid",
+  connectedApps = "connectedApps",
   consign = "consign",
   consignmentFlow = "consignmentFlow",
   consignmentInquiry = "consignmentInquiry",

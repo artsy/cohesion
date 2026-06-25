@@ -5,6 +5,7 @@ import {
   ClickedSaveBrandKit,
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
+import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
@@ -20,6 +21,7 @@ export type OsEvent =
   | ClickedBrandKitFont
   | ClickedAddBrandKitFile
   | ClickedSaveBrandKit
+  | OsConnectedAppsFlow
   | OsClickEvent
   | OsInventoryTable
   | OsMultiAddFlow
@@ -80,6 +82,16 @@ export enum OsActionType {
    * Corresponds to {@link OsInventoryTable}
    */
   clickedEditionSetRow = "clickedEditionSetRow",
+
+  /**
+   * Corresponds to {@link ClickedConnectAccount}
+   */
+  clickedConnectAccount = "clickedConnectAccount",
+
+  /**
+   * Corresponds to {@link ClickedConnectAccountModal}
+   */
+  clickedConnectAccountModal = "clickedConnectAccountModal",
 
   /**
    * Corresponds to {@link ClickedExitDropZone}
