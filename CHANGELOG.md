@@ -1,3 +1,15 @@
+# v4.369.0 (Thu Jun 25 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add tracking schema for OS Instagram Editor [#711](https://github.com/artsy/cohesion/pull/711) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.368.0 (Thu Jun 25 2026)
 
 #### 🚀  Enhancement
