@@ -4,8 +4,10 @@
  * @packageDocumentation
  */
 export enum OsOwnerType {
+  collection = "collection",
   connectedApps = "connectedApps",
   list = "list",
   inventory = "inventory",
   studio = "studio",
+  studioInstagram = "studioInstagram",
 }

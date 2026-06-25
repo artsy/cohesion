@@ -6,6 +6,7 @@ import {
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
 import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
+import { OsInstagramEditor } from "./InstagramEditor"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
@@ -23,6 +24,7 @@ export type OsEvent =
   | ClickedSaveBrandKit
   | OsConnectedAppsFlow
   | OsClickEvent
+  | OsInstagramEditor
   | OsInventoryTable
   | OsMultiAddFlow
   | OsSubmitEvent
@@ -74,6 +76,16 @@ export enum OsActionType {
   clickedArtworkRow = "clickedArtworkRow",
 
   /**
+   * Corresponds to {@link OsClickedAspectRatio}
+   */
+  clickedAspectRatio = "clickedAspectRatio",
+
+  /**
+   * Corresponds to {@link OsClickedBrandKitModal}
+   */
+  clickedBrandKitModal = "clickedBrandKitModal",
+
+  /**
    * Corresponds to {@link ClickedCancelBulkEdit}
    */
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
@@ -94,14 +106,44 @@ export enum OsActionType {
   clickedConnectAccountModal = "clickedConnectAccountModal",
 
   /**
+   * Corresponds to {@link OsClickedConnectModal}
+   */
+  clickedConnectModal = "clickedConnectModal",
+
+  /**
    * Corresponds to {@link ClickedExitDropZone}
    */
   clickedExitDropZone = "clickedExitDropZone",
 
   /**
+   * Corresponds to {@link OsClickedExitEditor}
+   */
+  clickedExitEditor = "clickedExitEditor",
+
+  /**
+   * Corresponds to {@link OsClickedImageBankImage}
+   */
+  clickedImageBankImage = "clickedImageBankImage",
+
+  /**
+   * Corresponds to {@link OsClickedImageBankManagement}
+   */
+  clickedImageBankManagement = "clickedImageBankManagement",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   clickedImagesModal = "clickedImagesModal",
+
+  /**
+   * Corresponds to {@link OsClickedPublishConfirmation}
+   */
+  clickedPublishConfirmation = "clickedPublishConfirmation",
+
+  /**
+   * Corresponds to {@link OsClickedUploadImageBank}
+   */
+  clickedUploadImageBank = "clickedUploadImageBank",
 
   /**
    * Corresponds to {@link CompletedArtworkImport}
@@ -112,6 +154,11 @@ export enum OsActionType {
    * Corresponds to {@link CreatedImportedArtworks}
    */
   createdImportedArtworks = "createdImportedArtworks",
+
+  /**
+   * Corresponds to {@link OsCreatedStudioContent}
+   */
+  createdStudioContent = "createdStudioContent",
 
   /**
    * Corresponds to {@link DeletedArtwork}
