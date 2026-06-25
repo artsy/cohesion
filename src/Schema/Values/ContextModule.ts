@@ -78,6 +78,7 @@ export enum ContextModule {
   basedOnYourRecentSavesRail = "basedOnYourRecentSavesRail",
   boothsTab = "boothsTab",
   bottomTabs = "bottomTabs",
+  brandKitPromptModal = "brandKitPromptModal",
   browseFair = "browseFair",
   bulkEditDrawer = "bulkEditDrawer",
   categoryRail = "categoryRail",

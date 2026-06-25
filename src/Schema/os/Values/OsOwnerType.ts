@@ -5,7 +5,8 @@
  */
 export enum OsOwnerType {
   connectedApps = "connectedApps",
-  list = "list",
   inventory = "inventory",
+  list = "list",
   studio = "studio",
+  studioMaterials = "studioMaterials",
 }

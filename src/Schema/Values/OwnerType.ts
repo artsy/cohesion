@@ -148,6 +148,7 @@ export enum OwnerType {
   shows = "shows",
   signup = "signup",
   similarToRecentlyViewed = "similarToRecentlyViewed",
+  studioMaterials = "studioMaterials",
   submitArtworkStepAddDetails = "submitArtworkStepAddDetails",
   submitArtworkStepAddDimensions = "submitArtworkStepAddDimensions",
   submitArtworkStepAddPhoneNumber = "submitArtworkStepAddPhoneNumber",
