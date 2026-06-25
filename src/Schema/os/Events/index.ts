@@ -4,8 +4,8 @@ import {
   ClickedBrandKitFont,
   ClickedSaveBrandKit,
 } from "./BrandKit"
-import { OSConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsClickEvent } from "./Click"
+import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
@@ -21,7 +21,7 @@ export type OsEvent =
   | ClickedBrandKitFont
   | ClickedAddBrandKitFile
   | ClickedSaveBrandKit
-  | OSConnectedAppsFlow
+  | OsConnectedAppsFlow
   | OsClickEvent
   | OsInventoryTable
   | OsMultiAddFlow

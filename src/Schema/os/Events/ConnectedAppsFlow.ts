@@ -51,6 +51,6 @@ export interface ClickedConnectAccountModal {
   value: "connect" | "disconnect" | "cancel"
 }
 
-export type OSConnectedAppsFlow =
+export type OsConnectedAppsFlow =
   | ClickedConnectAccount
   | ClickedConnectAccountModal
