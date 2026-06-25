@@ -47,6 +47,11 @@ export enum OsActionType {
   addedArtworkDocument = "addedArtworkDocument",
 
   /**
+   * Corresponds to {@link AddedArtworksToList}
+   */
+  addedArtworksToList = "addedArtworksToList",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   addedLocation = "addedLocation",
@@ -137,6 +142,11 @@ export enum OsActionType {
   clickedImagesModal = "clickedImagesModal",
 
   /**
+   * Corresponds to {@link ClickedOpenList}
+   */
+  clickedOpenList = "clickedOpenList",
+
+  /**
    * Corresponds to {@link OsInstagramEditor}
    */
   clickedPublishConfirmation = "clickedPublishConfirmation",
@@ -157,6 +167,11 @@ export enum OsActionType {
   createdImportedArtworks = "createdImportedArtworks",
 
   /**
+   * Corresponds to {@link CreatedList}
+   */
+  createdList = "createdList",
+
+  /**
    * Corresponds to {@link OsMaterialsEditor} and {@link OsInstagramEditor}
    */
   createdStudioContent = "createdStudioContent",
@@ -167,9 +182,19 @@ export enum OsActionType {
   deletedArtwork = "deletedArtwork",
 
   /**
+   * Corresponds to {@link DeletedList}
+   */
+  deletedList = "deletedList",
+
+  /**
    * Corresponds to {@link DistributedArtworks}
    */
   distributedArtworks = "distributedArtworks",
+
+  /**
+   * Corresponds to {@link DistributedList}
+   */
+  distributedList = "distributedList",
 
   /**
    * Corresponds to {@link EditedArtworkField}
@@ -177,9 +202,19 @@ export enum OsActionType {
   editedArtworkField = "editedArtworkField",
 
   /**
+   * Corresponds to {@link MovedArtworksBetweenLists}
+   */
+  movedArtworksBetweenLists = "movedArtworksBetweenLists",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   removedArtworkDocument = "removedArtworkDocument",
+
+  /**
+   * Corresponds to {@link RemovedArtworksFromList}
+   */
+  removedArtworksFromList = "removedArtworksFromList",
 
   /**
    * Corresponds to {@link ResumedArtworkImport}
@@ -195,4 +230,9 @@ export enum OsActionType {
    * Corresponds to {@link StartedArtworkImport}
    */
   startedArtworkImport = "startedArtworkImport",
+
+  /**
+   * Corresponds to {@link UpdatedList}
+   */
+  updatedList = "updatedList",
 }

@@ -1,6 +1,10 @@
 import { OsContextModule } from "../../Values/OsContextModule"
 import { OsOwnerType } from "../../Values/OsOwnerType"
-import { ClickedActionsDropdown, ClickedCancelBulkEdit } from "../Click"
+import {
+  ClickedActionsDropdown,
+  ClickedCancelBulkEdit,
+  ClickedOpenList,
+} from "../Click"
 import { OsActionType } from "../index"
 
 describe("Bulk-action click events", () => {
@@ -37,6 +41,26 @@ describe("Bulk-action click events", () => {
       artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d", "5d2b5b5d5e5b5d000e1b5b5e"],
       context_module: "bulkEditDrawer",
       context_page_owner_type: "list",
+    })
+  })
+
+  it("ClickedOpenList serializes to the expected shape", () => {
+    const event: ClickedOpenList = {
+      action: OsActionType.clickedOpenList,
+      context_module: OsContextModule.listCard,
+      context_page_owner_type: OsOwnerType.collection,
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      source: "listsPage",
+    }
+
+    expect(event).toEqual({
+      action: "clickedOpenList",
+      context_module: "listCard",
+      context_page_owner_type: "collection",
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      source: "listsPage",
     })
   })
 })

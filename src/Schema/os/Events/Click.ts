@@ -53,4 +53,33 @@ export interface ClickedCancelBulkEdit {
   artwork_ids: string[]
 }
 
-export type OsClickEvent = ClickedActionsDropdown | ClickedCancelBulkEdit
+/**
+ * A partner opens a list, either from the Lists surface (a `ListCard`) or from
+ * the recent-lists shortcut on the Inventory surface. `source` distinguishes the
+ * two entry points (`listsPage` | `inventory`) so they can be compared.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedOpenList",
+ *   context_module: "listCard",
+ *   context_page_owner_type: "collection",
+ *   list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+ *   list_type: "SHOW",
+ *   source: "listsPage"
+ * }
+ * ```
+ */
+export interface ClickedOpenList {
+  action: OsActionType.clickedOpenList
+  context_module: OsContextModule.listCard
+  context_page_owner_type: OsOwnerType
+  list_id: string
+  list_type: string
+  source: string
+}
+
+export type OsClickEvent =
+  | ClickedActionsDropdown
+  | ClickedCancelBulkEdit
+  | ClickedOpenList
