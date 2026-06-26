@@ -78,28 +78,6 @@ export interface ViewedDivergenceMarker {
 }
 
 /**
- * A partner clicks the divergence marker to inspect the downstream destination value (e.g. Artsy CMS).
- *
- * @example
- * ```
- * {
- *   action: "clickedDivergenceMarker",
- *   context_module: "artworkTable",
- *   context_page_owner_type: "inventory",
- *   artwork_id: "abc123",
- *   field: "availability"
- * }
- * ```
- */
-export interface ClickedDivergenceMarker {
-  action: OsActionType.clickedDivergenceMarker
-  context_module: OsContextModule.artworkTable
-  context_page_owner_type: OsOwnerType
-  artwork_id: string
-  field: "availability" | "medium" | "price"
-}
-
-/**
  * A partner opens a list, either from the Lists surface (a `ListCard`) or from
  * the recent-lists shortcut on the Inventory surface. `source` distinguishes the
  * two entry points (`listsPage` | `inventory`) so they can be compared.
@@ -128,6 +106,5 @@ export interface ClickedOpenList {
 export type OsClickEvent =
   | ClickedActionsDropdown
   | ClickedCancelBulkEdit
-  | ClickedDivergenceMarker
   | ViewedDivergenceMarker
   | ClickedOpenList

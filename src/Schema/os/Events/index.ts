@@ -114,11 +114,6 @@ export enum OsActionType {
   clickedConnectModal = "clickedConnectModal",
 
   /**
-   * Corresponds to {@link ClickedDivergenceMarker}
-   */
-  clickedDivergenceMarker = "clickedDivergenceMarker",
-
-  /**
    * Corresponds to {@link OsInventoryTable}
    */
   clickedEditionSetRow = "clickedEditionSetRow",
