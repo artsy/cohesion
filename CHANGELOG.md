@@ -1,3 +1,15 @@
+# v4.371.0 (Fri Jun 26 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add AGENTS.md and CLAUDE.md for agent onboarding [#715](https://github.com/artsy/cohesion/pull/715) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.370.0 (Thu Jun 25 2026)
 
 #### 🚀  Enhancement
