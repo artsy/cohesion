@@ -1,3 +1,15 @@
+# v4.372.0 (Fri Jun 26 2026)
+
+#### 🚀  Enhancement
+
+- chore: Remove list from os owner type [#718](https://github.com/artsy/cohesion/pull/718) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.371.0 (Fri Jun 26 2026)
 
 #### 🚀  Enhancement
