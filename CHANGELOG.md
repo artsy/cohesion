@@ -1,3 +1,15 @@
+# v4.374.0 (Sat Jun 27 2026)
+
+#### 🚀  Enhancement
+
+- chore(os): Add tracking schema for Art OS Filter, Sort, Search [#714](https://github.com/artsy/cohesion/pull/714) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.373.0 (Fri Jun 26 2026)
 
 #### 🚀  Enhancement
