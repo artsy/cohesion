@@ -6,6 +6,7 @@ import {
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
 import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
+import { OsFilterSortSearch } from "./FilterSortSearch"
 import { OsInstagramEditor } from "./InstagramEditor"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMaterialsEditor } from "./MaterialsEditor"
@@ -25,6 +26,7 @@ export type OsEvent =
   | ClickedSaveBrandKit
   | OsConnectedAppsFlow
   | OsClickEvent
+  | OsFilterSortSearch
   | OsInstagramEditor
   | OsInventoryTable
   | OsMaterialsEditor
@@ -36,6 +38,11 @@ export type OsEvent =
  * Each OsActionType corresponds with a table in Redshift.
  */
 export enum OsActionType {
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  appliedFilter = "appliedFilter",
+
   /**
    * Corresponds to {@link OsInventoryTable}
    */
@@ -95,6 +102,11 @@ export enum OsActionType {
    * Corresponds to {@link ClickedCancelBulkEdit}
    */
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  clickedFilterDrawer = "clickedFilterDrawer",
 
   /**
    * Corresponds to {@link ClickedConnectAccount}
@@ -177,6 +189,11 @@ export enum OsActionType {
   createdStudioContent = "createdStudioContent",
 
   /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  clearedFilters = "clearedFilters",
+
+  /**
    * Corresponds to {@link DeletedArtwork}
    */
   deletedArtwork = "deletedArtwork",
@@ -212,6 +229,11 @@ export enum OsActionType {
   removedArtworkDocument = "removedArtworkDocument",
 
   /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  removedFilter = "removedFilter",
+
+  /**
    * Corresponds to {@link RemovedArtworksFromList}
    */
   removedArtworksFromList = "removedArtworksFromList",
@@ -225,6 +247,16 @@ export enum OsActionType {
    * Corresponds to {@link OsInventoryTable}
    */
   savedArtworkImages = "savedArtworkImages",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  searchedArtworks = "searchedArtworks",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  sortedColumn = "sortedColumn",
 
   /**
    * Corresponds to {@link StartedArtworkImport}

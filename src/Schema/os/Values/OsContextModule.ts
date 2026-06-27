@@ -9,6 +9,8 @@ export enum OsContextModule {
   addArtistModal = "addArtistModal",
   addLocationModal = "addLocationModal",
   addToListModal = "addToListModal",
+  artworkFilters = "artworkFilters",
+  artworkSearch = "artworkSearch",
   artworkTable = "artworkTable",
   brandKit = "brandKit",
   brandKitPromptModal = "brandKitPromptModal",
