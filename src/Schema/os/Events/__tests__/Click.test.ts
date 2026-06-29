@@ -33,14 +33,14 @@ describe("Bulk-action click events", () => {
       action: OsActionType.clickedCancelBulkEdit,
       artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d", "5d2b5b5d5e5b5d000e1b5b5e"],
       context_module: OsContextModule.bulkEditDrawer,
-      context_page_owner_type: OsOwnerType.list,
+      context_page_owner_type: OsOwnerType.collection,
     }
 
     expect(event).toEqual({
       action: "clickedCancelBulkEdit",
       artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d", "5d2b5b5d5e5b5d000e1b5b5e"],
       context_module: "bulkEditDrawer",
-      context_page_owner_type: "list",
+      context_page_owner_type: "collection",
     })
   })
 

@@ -1,3 +1,63 @@
+# v4.375.0 (Mon Jun 29 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add edition sets tracking events [#720](https://github.com/artsy/cohesion/pull/720) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
+# v4.374.0 (Sat Jun 27 2026)
+
+#### 🚀  Enhancement
+
+- chore(os): Add tracking schema for Art OS Filter, Sort, Search [#714](https://github.com/artsy/cohesion/pull/714) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
+# v4.373.0 (Fri Jun 26 2026)
+
+#### 🚀  Enhancement
+
+- fix(os): Export MaterialsEditor events correctly from Schema [#719](https://github.com/artsy/cohesion/pull/719) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
+# v4.372.0 (Fri Jun 26 2026)
+
+#### 🚀  Enhancement
+
+- chore: Remove list from os owner type [#718](https://github.com/artsy/cohesion/pull/718) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
+# v4.371.0 (Fri Jun 26 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add AGENTS.md and CLAUDE.md for agent onboarding [#715](https://github.com/artsy/cohesion/pull/715) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.370.0 (Thu Jun 25 2026)
 
 #### 🚀  Enhancement

@@ -6,6 +6,7 @@ import {
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
 import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
+import { OsFilterSortSearch } from "./FilterSortSearch"
 import { OsInstagramEditor } from "./InstagramEditor"
 import { OsInventoryTable } from "./InventoryTable"
 import { OsMaterialsEditor } from "./MaterialsEditor"
@@ -26,6 +27,7 @@ export type OsEvent =
   | ClickedSaveBrandKit
   | OsConnectedAppsFlow
   | OsClickEvent
+  | OsFilterSortSearch
   | OsInstagramEditor
   | OsInventoryTable
   | OsMaterialsEditor
@@ -38,6 +40,11 @@ export type OsEvent =
  * Each OsActionType corresponds with a table in Redshift.
  */
 export enum OsActionType {
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  appliedFilter = "appliedFilter",
+
   /**
    * Corresponds to {@link OsInventoryTable}
    */
@@ -97,6 +104,11 @@ export enum OsActionType {
    * Corresponds to {@link ClickedCancelBulkEdit}
    */
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  clickedFilterDrawer = "clickedFilterDrawer",
 
   /**
    * Corresponds to {@link ClickedConnectAccount}
@@ -169,6 +181,16 @@ export enum OsActionType {
   completedArtworkImport = "completedArtworkImport",
 
   /**
+   * Corresponds to {@link ConvertedArtworkToUnique}
+   */
+  convertedArtworkToUnique = "convertedArtworkToUnique",
+
+  /**
+   * Corresponds to {@link CreatedEditionSet}
+   */
+  createdEditionSet = "createdEditionSet",
+
+  /**
    * Corresponds to {@link CreatedImportedArtworks}
    */
   createdImportedArtworks = "createdImportedArtworks",
@@ -182,6 +204,11 @@ export enum OsActionType {
    * Corresponds to {@link OsMaterialsEditor} and {@link OsInstagramEditor}
    */
   createdStudioContent = "createdStudioContent",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  clearedFilters = "clearedFilters",
 
   /**
    * Corresponds to {@link DeletedArtwork}
@@ -224,6 +251,11 @@ export enum OsActionType {
   removedArtworkDocument = "removedArtworkDocument",
 
   /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  removedFilter = "removedFilter",
+
+  /**
    * Corresponds to {@link RemovedArtworksFromList}
    */
   removedArtworksFromList = "removedArtworksFromList",
@@ -239,6 +271,16 @@ export enum OsActionType {
   savedArtworkImages = "savedArtworkImages",
 
   /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  searchedArtworks = "searchedArtworks",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  sortedColumn = "sortedColumn",
+
+  /**
    * Corresponds to {@link StartedArtworkImport}
    */
   startedArtworkImport = "startedArtworkImport",
@@ -247,6 +289,11 @@ export enum OsActionType {
    * Corresponds to {@link ToggledDistributionSync}
    */
   toggledDistributionSync = "toggledDistributionSync",
+
+  /**
+   * Corresponds to {@link UpdatedEditionSet}
+   */
+  updatedEditionSet = "updatedEditionSet",
 
   /**
    * Corresponds to {@link UpdatedList}
