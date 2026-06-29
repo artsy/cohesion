@@ -1,3 +1,15 @@
+# v4.376.0 (Mon Jun 29 2026)
+
+#### 🚀  Enhancement
+
+- chore: add ArtOS distribute and sync tracking [#717](https://github.com/artsy/cohesion/pull/717) ([@mc-jones](https://github.com/mc-jones))
+
+#### Authors: 1
+
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v4.375.0 (Mon Jun 29 2026)
 
 #### 🚀  Enhancement
