@@ -2653,7 +2653,7 @@ export interface SubmittedOffer {
 }
 
 /**
- * A user submits a counter offer in response to a gallery counter offer.
+ * A user submits a counter offer in response to a gallery counter offer. Does not fire for accept/reject actions.
  *
  * This schema describes events sent to Segment from [[SubmittedCounterOffer]]
  *
@@ -2664,7 +2664,6 @@ export interface SubmittedOffer {
  *    context_module: "ordersReview",
  *    context_page_owner_type: "orders-respond",
  *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
- *    option: "accept" | "decline" | "counter"
  *  }
  * ```
  */
@@ -2673,7 +2672,6 @@ export interface SubmittedCounterOffer {
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string
-  option: "accept" | "decline" | "counter"
 }
 
 /**
