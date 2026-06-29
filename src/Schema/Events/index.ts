@@ -64,6 +64,7 @@ import {
   ClickedCompleteYourProfile,
   ClickedContactGallery,
   ClickedConversationsFilter,
+  ClickedCounterOfferOption,
   ClickedCreateAlert,
   ClickedCV,
   ClickedDeliveryMethod,
@@ -133,6 +134,7 @@ import {
   ClickedViewingRoomCard,
   ClickedViewWork,
   ClickedVisitHelpCenter,
+  SubmittedCounterOffer,
   SubmittedOffer,
   SubmittedOrder,
 } from "./Click"
@@ -316,6 +318,7 @@ import {
   ToggledArtistBio,
   ToggledCollapsibleOrderSummary,
   ToggledNotification,
+  ToggledOfferHistory,
   ToggledSavedSearch,
 } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -371,6 +374,7 @@ export type Event =
   | ClickedCompleteYourProfile
   | ClickedContactGallery
   | ClickedConversationsFilter
+  | ClickedCounterOfferOption
   | ClickedCreateAlert
   | ClickedCV
   | ClickedDeliveryMethod
@@ -524,6 +528,7 @@ export type Event =
   | ShippingQuoteViewed
   | StartedOnboarding
   | SubmitAnotherArtwork
+  | SubmittedCounterOffer
   | SubmittedOffer
   | SubmittedOrder
   | SuccessfullyLoggedIn
@@ -607,6 +612,7 @@ export type Event =
   | ToggledArtistBio
   | ToggledCollapsibleOrderSummary
   | ToggledNotification
+  | ToggledOfferHistory
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
@@ -804,6 +810,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedContactGallery}
    */
   clickedContactGallery = "clickedContactGallery",
+  /**
+   * Corresponds to {@link ClickedCounterOfferOption}
+   */
+  clickedCounterOfferOption = "clickedCounterOfferOption",
   /**
    * Corresponds to {@link ClickedCreateAlert}
    */
@@ -1506,6 +1516,10 @@ export enum ActionType {
    */
   submitAnotherArtwork = "submitAnotherArtwork",
   /**
+   * Corresponds to {@link SubmittedCounterOffer}
+   */
+  submittedCounterOffer = "submittedCounterOffer",
+  /**
    * Corresponds to {@link SubmittedOffer}
    */
   submittedOffer = "submittedOffer",
@@ -1894,6 +1908,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledNotification}
    */
   toggledNotification = "toggledNotification",
+  /**
+   * Corresponds to {@link ToggledOfferHistory}
+   */
+  toggledOfferHistory = "toggledOfferHistory",
   /**
    * Corresponds to {@link ToggledPresentationModeSetting}
    */

@@ -113,3 +113,27 @@ export interface ToggledArtistBio {
   context_page_owner_slug: string
   expand: boolean
 }
+
+/**
+ * A user toggles the offer history section on the counteroffer flow
+ *
+ * This schema describes events sent to Segment from [[ToggledOfferHistory]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "toggledOfferHistory",
+ *    context_module : "ordersCounter",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "57e60c68-a198-431e-8a02-6ecb01e3a99b",
+ *    expanded: true | false
+ *  }
+ * ```
+ */
+export interface ToggledOfferHistory {
+  action: ActionType.toggledOfferHistory
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  expanded: boolean
+}
