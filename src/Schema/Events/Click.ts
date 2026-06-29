@@ -2653,7 +2653,7 @@ export interface SubmittedOffer {
 }
 
 /**
- * A user submits a counter offer in response to a gallery counter offer. Does not fire for accept/reject actions.
+ * A user submits a counter offer in response to a gallery counter offer.
  *
  * This schema describes events sent to Segment from [[SubmittedCounterOffer]]
  *
@@ -2669,6 +2669,50 @@ export interface SubmittedOffer {
  */
 export interface SubmittedCounterOffer {
   action: ActionType.submittedCounterOffer
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+}
+
+/**
+ * A user accepts a gallery's counter offer.
+ *
+ * This schema describes events sent to Segment from [[AcceptedOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "acceptedOffer",
+ *    context_module: "ordersReview",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *  }
+ * ```
+ */
+export interface AcceptedOffer {
+  action: ActionType.acceptedOffer
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+}
+
+/**
+ * A user declines a gallery's counter offer.
+ *
+ * This schema describes events sent to Segment from [[DeclinedOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "declinedOffer",
+ *    context_module: "ordersReview",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *  }
+ * ```
+ */
+export interface DeclinedOffer {
+  action: ActionType.declinedOffer
   context_module: ContextModule
   context_page_owner_type: PageOwnerType
   context_page_owner_id: string

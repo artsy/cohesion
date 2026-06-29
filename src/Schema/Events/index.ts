@@ -35,6 +35,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  AcceptedOffer,
   CheckedAccountBalance,
   ClickedAddFilters,
   ClickedAddMissingArtworksDetails,
@@ -134,6 +135,7 @@ import {
   ClickedViewingRoomCard,
   ClickedViewWork,
   ClickedVisitHelpCenter,
+  DeclinedOffer,
   SubmittedCounterOffer,
   SubmittedOffer,
   SubmittedOrder,
@@ -331,6 +333,7 @@ import { ViewedVideo } from "./Video"
  * Each event describes one ActionType
  */
 export type Event =
+  | AcceptedOffer
   | AddCollectedArtwork
   | AddedArtworkToArtworkList
   | AddedToAlbum
@@ -462,6 +465,7 @@ export type Event =
   | CreatedAlbum
   | CreatedArtworkList
   | DarkModeOptionUpdated
+  | DeclinedOffer
   | DeleteCollectedArtwork
   | DeletedArtworkList
   | DeletedSavedSearch
@@ -634,6 +638,10 @@ export type Event =
  * Each ActionType corresponds with a table in Redshift.
  */
 export enum ActionType {
+  /**
+   * Corresponds to {@link AcceptedOffer}
+   */
+  acceptedOffer = "acceptedOffer",
   /**
    * Corresponds to {@link AddedArtworkToArtworkList}
    */
@@ -1211,6 +1219,10 @@ export enum ActionType {
    * Corresponds to {@link DarkModeOptionUpdated}
    */
   darkModeOptionUpdated = "darkModeOptionUpdated",
+  /**
+   * Corresponds to {@link DeclinedOffer}
+   */
+  declinedOffer = "declinedOffer",
   /**
    * Corresponds to {@link DeleteCollectedArtwork}
    */
