@@ -1,3 +1,15 @@
+# v4.375.0 (Mon Jun 29 2026)
+
+#### 🚀  Enhancement
+
+- chore: Add edition sets tracking events [#720](https://github.com/artsy/cohesion/pull/720) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.374.0 (Sat Jun 27 2026)
 
 #### 🚀  Enhancement
