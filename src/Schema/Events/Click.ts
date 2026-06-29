@@ -812,7 +812,7 @@ export interface ClickedOfferOption {
 }
 
 /**
- * A user clicks a counteroffer option on the counteroffer page
+ * A user clicks a counter offer option on the counter offer page
  *
  * This schema describes events sent to Segment from [[ClickedCounterOfferOption]]
  *
@@ -2653,7 +2653,7 @@ export interface SubmittedOffer {
 }
 
 /**
- * A user submits a counteroffer in response to a gallery counteroffer.
+ * A user submits a counter offer in response to a gallery counter offer.
  *
  * This schema describes events sent to Segment from [[SubmittedCounterOffer]]
  *
@@ -2904,7 +2904,7 @@ export interface ClickedArtistArtworkImage {
 }
 
 /**
- * A user clicks on Terms and Conditions link during checkout or counteroffer flow
+ * A user clicks on Terms and Conditions link during checkout or counter offer flow
  *
  * This schema describes events sent to Segment from [[ClickedTermsAndConditions]]
  *

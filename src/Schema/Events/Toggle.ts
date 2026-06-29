@@ -115,7 +115,7 @@ export interface ToggledArtistBio {
 }
 
 /**
- * A user toggles the offer history section on the counteroffer flow
+ * A user toggles the offer history section on the counter offer flow
  *
  * This schema describes events sent to Segment from [[ToggledOfferHistory]]
  *
