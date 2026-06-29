@@ -33,4 +33,5 @@ export enum OsContextModule {
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
   publishConfirmationModal = "publishConfirmationModal",
+  tableActions = "tableActions",
 }

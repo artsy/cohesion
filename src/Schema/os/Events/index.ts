@@ -12,6 +12,7 @@ import { OsInventoryTable } from "./InventoryTable"
 import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsSubmitEvent } from "./Submit"
+import { OsToggleEvent } from "./Toggle"
 
 /**
  * List of valid schemas for Art OS analytics actions
@@ -31,6 +32,7 @@ export type OsEvent =
   | OsInventoryTable
   | OsMaterialsEditor
   | OsSubmitEvent
+  | OsToggleEvent
 
 /**
  * List of all Art OS actions
@@ -169,6 +171,11 @@ export enum OsActionType {
   clickedUploadImageBank = "clickedUploadImageBank",
 
   /**
+   * Corresponds to {@link CompletedArtworkDistribution}
+   */
+  completedArtworkDistribution = "completedArtworkDistribution",
+
+  /**
    * Corresponds to {@link CompletedArtworkImport}
    */
   completedArtworkImport = "completedArtworkImport",
@@ -229,6 +236,11 @@ export enum OsActionType {
   editedArtworkField = "editedArtworkField",
 
   /**
+   * Corresponds to {@link EditedInventoryField}
+   */
+  editedInventoryField = "editedInventoryField",
+
+  /**
    * Corresponds to {@link MovedArtworksBetweenLists}
    */
   movedArtworksBetweenLists = "movedArtworksBetweenLists",
@@ -274,6 +286,11 @@ export enum OsActionType {
   startedArtworkImport = "startedArtworkImport",
 
   /**
+   * Corresponds to {@link ToggledDistributionSync}
+   */
+  toggledDistributionSync = "toggledDistributionSync",
+
+  /**
    * Corresponds to {@link UpdatedEditionSet}
    */
   updatedEditionSet = "updatedEditionSet",
@@ -282,4 +299,9 @@ export enum OsActionType {
    * Corresponds to {@link UpdatedList}
    */
   updatedList = "updatedList",
+
+  /**
+   * Corresponds to {@link ViewedDivergenceMarker}
+   */
+  viewedDivergenceMarker = "viewedDivergenceMarker",
 }

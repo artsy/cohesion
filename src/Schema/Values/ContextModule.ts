@@ -55,6 +55,7 @@ export enum ContextModule {
   artworkRecommendationsRail = "artworkRecommendationsRail",
   artworkSidebar = "artworkSidebar",
   artworksTab = "artworksTab",
+  artworkTable = "artworkTable",
   associatedViewingRoom = "associatedViewingRoom",
   auctionCard = "auctionCard",
   auctionHome = "auctionHome",

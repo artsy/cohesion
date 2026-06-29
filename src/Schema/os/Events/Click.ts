@@ -54,6 +54,30 @@ export interface ClickedCancelBulkEdit {
 }
 
 /**
+ * The divergence marker appears in a syncable cell when the OS value
+ * diverges from the downstream destination value (e.g. Artsy CMS). Fires as an
+ * impression when the marker first renders for a given artwork/field combination.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "viewedDivergenceMarker",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   field: "availability"
+ * }
+ * ```
+ */
+export interface ViewedDivergenceMarker {
+  action: OsActionType.viewedDivergenceMarker
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  field: "availability" | "medium" | "price"
+}
+
+/**
  * A partner opens a list, either from the Lists surface (a `ListCard`) or from
  * the recent-lists shortcut on the Inventory surface. `source` distinguishes the
  * two entry points (`listsPage` | `inventory`) so they can be compared.
@@ -82,4 +106,5 @@ export interface ClickedOpenList {
 export type OsClickEvent =
   | ClickedActionsDropdown
   | ClickedCancelBulkEdit
+  | ViewedDivergenceMarker
   | ClickedOpenList

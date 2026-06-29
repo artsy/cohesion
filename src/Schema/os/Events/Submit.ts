@@ -84,6 +84,37 @@ export interface DistributedArtworks {
 }
 
 /**
+ * The websocket-driven distribute job reaches a terminal state (complete or failed).
+ * Driven by `useDistributeWebsocket` (`PartnersChannel`, `metadata_update`).
+ * Fire on the final websocket message to capture success/skip rates.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "completedArtworkDistribution",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   destination: ["artsy"],
+ *   total_artworks: 12,
+ *   success_count: 10,
+ *   skipped_count: 2,
+ *   value: "partial"
+ * }
+ * ```
+ */
+export interface CompletedArtworkDistribution {
+  action: OsActionType.completedArtworkDistribution
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType.inventory
+  /** Destination marketplaces (currently Artsy only; extensible) */
+  destination: string[]
+  total_artworks: number
+  success_count: number
+  skipped_count: number
+  value: "success" | "partial" | "error"
+}
+
+/**
  * A partner creates a new list in the Add-to-list modal and bulk-adds the current
  * selection to it. `start_date` / `end_date` are null when unset; `fair_id` is
  * present only when `list_type` is FAIR.
@@ -361,11 +392,16 @@ export interface ConvertedArtworkToUnique {
 export type OsSubmitEvent =
   | AddedArtworksToList
   | BulkEditedArtworks
+  | BulkEditedArtworks
+  | CompletedArtworkDistribution
   | ConvertedArtworkToUnique
   | CreatedEditionSet
   | CreatedList
+  | CreatedList
+  | DeletedArtwork
   | DeletedArtwork
   | DeletedList
+  | DistributedArtworks
   | DistributedArtworks
   | DistributedList
   | MovedArtworksBetweenLists

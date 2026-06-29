@@ -330,6 +330,7 @@ export interface OsClickedActionsDropdown {
    * Top-bar "More": "Delete"
    * Row/context menu only: "Remove from Artsy" | "Change Collection" | "Remove from Collection" |
    *   "Convert to Edition Set" | "Edit Edition Set" | "Convert to Unique"
+   * Distribution: "Distribute to Artsy"
    */
   value:
     | "Add to Artsy"
@@ -339,6 +340,7 @@ export interface OsClickedActionsDropdown {
     | "Convert to Edition Set"
     | "Convert to Unique"
     | "Delete"
+    | "Distribute to Artsy"
     | "Edit Edition Set"
     | "Instagram Post"
     | "Mailchimp Campaign"
@@ -355,7 +357,39 @@ export interface OsClickedActionsDropdown {
   artwork_ids: string[]
 }
 
+/**
+ * A partner edits an availability, medium, or price cell that is configured to sync
+ * with a downstream destination (e.g. Artsy CMS). Fires on mutation success. Distinct
+ * from {@link OsEditedArtworkField} (general field edits) — this captures only the three
+ * syncable fields and whether a push to the destination actually occurred.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "editedInventoryField",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   destination: ["artsy"],
+ *   artwork_id: "abc123",
+ *   field: "availability",
+ *   did_push_to_cms: false
+ * }
+ * ```
+ */
+export interface EditedInventoryField {
+  action: OsActionType.editedInventoryField
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  /** Downstream destinations the value was pushed to (e.g. ["artsy"]) */
+  destination: string[]
+  artwork_id: string
+  field: "availability" | "medium" | "price"
+  /** false e.g. for "Not For Sale" (OS-only value that does not push to the destination) */
+  did_push_to_cms: boolean
+}
+
 export type OsInventoryTable =
+  | EditedInventoryField
   | OsAddedArtist
   | OsAddedArtworkDocument
   | OsAddedLocation
