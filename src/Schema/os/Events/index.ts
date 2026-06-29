@@ -174,6 +174,16 @@ export enum OsActionType {
   completedArtworkImport = "completedArtworkImport",
 
   /**
+   * Corresponds to {@link ConvertedArtworkToUnique}
+   */
+  convertedArtworkToUnique = "convertedArtworkToUnique",
+
+  /**
+   * Corresponds to {@link CreatedEditionSet}
+   */
+  createdEditionSet = "createdEditionSet",
+
+  /**
    * Corresponds to {@link CreatedImportedArtworks}
    */
   createdImportedArtworks = "createdImportedArtworks",
@@ -262,6 +272,11 @@ export enum OsActionType {
    * Corresponds to {@link StartedArtworkImport}
    */
   startedArtworkImport = "startedArtworkImport",
+
+  /**
+   * Corresponds to {@link UpdatedEditionSet}
+   */
+  updatedEditionSet = "updatedEditionSet",
 
   /**
    * Corresponds to {@link UpdatedList}

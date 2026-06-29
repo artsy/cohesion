@@ -271,14 +271,104 @@ export interface DistributedList {
   partner_show_id: string
 }
 
+/**
+ * A partner confirms conversion of a unique artwork to an edition set in the
+ * edition set modal. `is_limited` is true when an edition size was provided
+ * (Limited Edition), false when the edition size is unknown.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "createdEditionSet",
+ *   context_module: "editionSetModal",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "5d2b5b5d5e5b5d000e1b5b5d",
+ *   is_limited: true,
+ *   variants: [{ edition_size: 4, inventory_count: 5 }]
+ * }
+ * ```
+ */
+export interface CreatedEditionSet {
+  action: OsActionType.createdEditionSet
+  artwork_id: string
+  context_module: OsContextModule.editionSetModal
+  context_page_owner_type: OsOwnerType
+  is_limited: boolean
+  variants: Array<{
+    edition_size: number | null
+    inventory_count: number | null
+  }>
+}
+
+/**
+ * A partner saves edits to an existing edition set in the edition set modal.
+ * `variants_added`, `variants_edited`, and `variants_removed` reflect the diff
+ * between the original and submitted variants array.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "updatedEditionSet",
+ *   context_module: "editionSetModal",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "5d2b5b5d5e5b5d000e1b5b5d",
+ *   is_limited: true,
+ *   variants: [{ edition_size: 4, inventory_count: 5 }],
+ *   variants_added: 0,
+ *   variants_edited: 1,
+ *   variants_removed: 0
+ * }
+ * ```
+ */
+export interface UpdatedEditionSet {
+  action: OsActionType.updatedEditionSet
+  artwork_id: string
+  context_module: OsContextModule.editionSetModal
+  context_page_owner_type: OsOwnerType
+  is_limited: boolean
+  variants: Array<{
+    edition_size: number | null
+    inventory_count: number | null
+  }>
+  variants_added: number
+  variants_edited: number
+  variants_removed: number
+}
+
+/**
+ * A partner confirms or cancels reverting an edition-set artwork to a unique
+ * work in the Convert to Unique confirmation modal.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "convertedArtworkToUnique",
+ *   context_module: "convertToUniqueModal",
+ *   context_page_owner_type: "inventory",
+ *   artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d"],
+ *   value: "confirm"
+ * }
+ * ```
+ */
+export interface ConvertedArtworkToUnique {
+  action: OsActionType.convertedArtworkToUnique
+  artwork_ids: string[]
+  context_module: OsContextModule.convertToUniqueModal
+  context_page_owner_type: OsOwnerType
+  value: "confirm" | "cancel"
+}
+
 export type OsSubmitEvent =
-  | BulkEditedArtworks
-  | DeletedArtwork
-  | DistributedArtworks
-  | CreatedList
   | AddedArtworksToList
-  | UpdatedList
+  | BulkEditedArtworks
+  | ConvertedArtworkToUnique
+  | CreatedEditionSet
+  | CreatedList
+  | DeletedArtwork
   | DeletedList
-  | RemovedArtworksFromList
-  | MovedArtworksBetweenLists
+  | DistributedArtworks
   | DistributedList
+  | MovedArtworksBetweenLists
+  | RemovedArtworksFromList
+  | UpdatedEditionSet
+  | UpdatedList

@@ -4,6 +4,8 @@ import { OsActionType } from "../index"
 import {
   AddedArtworksToList,
   BulkEditedArtworks,
+  ConvertedArtworkToUnique,
+  CreatedEditionSet,
   CreatedList,
   DeletedArtwork,
   DeletedList,
@@ -11,8 +13,75 @@ import {
   DistributedList,
   MovedArtworksBetweenLists,
   RemovedArtworksFromList,
+  UpdatedEditionSet,
   UpdatedList,
 } from "../Submit"
+
+describe("Edition set submit events", () => {
+  it("CreatedEditionSet serializes to the expected shape", () => {
+    const event: CreatedEditionSet = {
+      action: OsActionType.createdEditionSet,
+      artwork_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      context_module: OsContextModule.editionSetModal,
+      context_page_owner_type: OsOwnerType.inventory,
+      is_limited: true,
+      variants: [{ edition_size: 4, inventory_count: 5 }],
+    }
+
+    expect(event).toEqual({
+      action: "createdEditionSet",
+      artwork_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      context_module: "editionSetModal",
+      context_page_owner_type: "inventory",
+      is_limited: true,
+      variants: [{ edition_size: 4, inventory_count: 5 }],
+    })
+  })
+
+  it("UpdatedEditionSet serializes to the expected shape", () => {
+    const event: UpdatedEditionSet = {
+      action: OsActionType.updatedEditionSet,
+      artwork_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      context_module: OsContextModule.editionSetModal,
+      context_page_owner_type: OsOwnerType.inventory,
+      is_limited: true,
+      variants: [{ edition_size: 4, inventory_count: 5 }],
+      variants_added: 0,
+      variants_edited: 1,
+      variants_removed: 0,
+    }
+
+    expect(event).toEqual({
+      action: "updatedEditionSet",
+      artwork_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      context_module: "editionSetModal",
+      context_page_owner_type: "inventory",
+      is_limited: true,
+      variants: [{ edition_size: 4, inventory_count: 5 }],
+      variants_added: 0,
+      variants_edited: 1,
+      variants_removed: 0,
+    })
+  })
+
+  it("ConvertedArtworkToUnique serializes to the expected shape", () => {
+    const event: ConvertedArtworkToUnique = {
+      action: OsActionType.convertedArtworkToUnique,
+      artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d"],
+      context_module: OsContextModule.convertToUniqueModal,
+      context_page_owner_type: OsOwnerType.inventory,
+      value: "confirm",
+    }
+
+    expect(event).toEqual({
+      action: "convertedArtworkToUnique",
+      artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d"],
+      context_module: "convertToUniqueModal",
+      context_page_owner_type: "inventory",
+      value: "confirm",
+    })
+  })
+})
 
 describe("Bulk-action submit events", () => {
   it("BulkEditedArtworks serializes to the expected shape", () => {
