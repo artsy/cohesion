@@ -21,18 +21,18 @@ import { OsToggleEvent } from "./Toggle"
  * Each event describes one ActionType
  */
 export type OsEvent =
-  | OsMultiAddFlow
-  | OsOnboardingFlow
+  | ClickedAddBrandKitFile
   | ClickedBrandKitColor
   | ClickedBrandKitFont
-  | ClickedAddBrandKitFile
   | ClickedSaveBrandKit
-  | OsConnectedAppsFlow
   | OsClickEvent
+  | OsConnectedAppsFlow
   | OsFilterSortSearch
   | OsInstagramEditor
   | OsInventoryTable
   | OsMaterialsEditor
+  | OsMultiAddFlow
+  | OsOnboardingFlow
   | OsSubmitEvent
   | OsToggleEvent
 
