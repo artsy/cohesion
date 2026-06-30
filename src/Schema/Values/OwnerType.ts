@@ -149,6 +149,7 @@ export enum OwnerType {
   signup = "signup",
   similarToRecentlyViewed = "similarToRecentlyViewed",
   studioInstagram = "studioInstagram",
+  studioMailchimp = "studioMailchimp",
   studioMaterials = "studioMaterials",
   submitArtworkStepAddDetails = "submitArtworkStepAddDetails",
   submitArtworkStepAddDimensions = "submitArtworkStepAddDimensions",
