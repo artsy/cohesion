@@ -1,3 +1,15 @@
+# v4.380.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- feat: counter offer tracking [#721](https://github.com/artsy/cohesion/pull/721) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
 # v4.379.0 (Tue Jun 30 2026)
 
 #### 🚀  Enhancement
