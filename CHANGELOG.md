@@ -1,3 +1,15 @@
+# v4.379.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- feat(os): Rename Change Collection to Move to Collection in actions dropdown tracking [#725](https://github.com/artsy/cohesion/pull/725) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.378.0 (Tue Jun 30 2026)
 
 #### 🚀  Enhancement
