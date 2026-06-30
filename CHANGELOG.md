@@ -1,3 +1,15 @@
+# v4.377.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add Art OS Mailchimp campaign tracking events [#723](https://github.com/artsy/cohesion/pull/723) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.376.0 (Mon Jun 29 2026)
 
 #### 🚀  Enhancement
