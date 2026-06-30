@@ -1,3 +1,15 @@
+# v4.378.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- chore(schema): Add missing Mailchimp tracking context values [#724](https://github.com/artsy/cohesion/pull/724) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.377.0 (Tue Jun 30 2026)
 
 #### 🚀  Enhancement
