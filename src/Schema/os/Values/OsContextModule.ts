@@ -29,9 +29,11 @@ export enum OsContextModule {
   instagramEditor = "instagramEditor",
   listCard = "listCard",
   listDetail = "listDetail",
+  mailchimpEditor = "mailchimpEditor",
   materialsEditor = "materialsEditor",
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
   publishConfirmationModal = "publishConfirmationModal",
+  sendConfirmationModal = "sendConfirmationModal",
   tableActions = "tableActions",
 }
