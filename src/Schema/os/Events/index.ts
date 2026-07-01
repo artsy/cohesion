@@ -12,6 +12,7 @@ import { OsInventoryTable } from "./InventoryTable"
 import { OsMailchimpEditor } from "./MailchimpEditor"
 import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
+import { OsOnboardingFlow } from "./OnboardingFlow"
 import { OsSubmitEvent } from "./Submit"
 import { OsToggleEvent } from "./Toggle"
 
@@ -21,18 +22,19 @@ import { OsToggleEvent } from "./Toggle"
  * Each event describes one ActionType
  */
 export type OsEvent =
-  | OsMultiAddFlow
+  | ClickedAddBrandKitFile
   | ClickedBrandKitColor
   | ClickedBrandKitFont
-  | ClickedAddBrandKitFile
   | ClickedSaveBrandKit
-  | OsConnectedAppsFlow
   | OsClickEvent
+  | OsConnectedAppsFlow
   | OsFilterSortSearch
   | OsInstagramEditor
   | OsInventoryTable
   | OsMailchimpEditor
   | OsMaterialsEditor
+  | OsMultiAddFlow
+  | OsOnboardingFlow
   | OsSubmitEvent
   | OsToggleEvent
 
@@ -168,6 +170,11 @@ export enum OsActionType {
   clickedPublishConfirmation = "clickedPublishConfirmation",
 
   /**
+   * Corresponds to {@link ClickedShowMeHow}
+   */
+  clickedShowMeHow = "clickedShowMeHow",
+
+  /**
    * Corresponds to {@link OsMailchimpEditor}
    */
   clickedSendConfirmation = "clickedSendConfirmation",
@@ -186,6 +193,11 @@ export enum OsActionType {
    * Corresponds to {@link CompletedArtworkImport}
    */
   completedArtworkImport = "completedArtworkImport",
+
+  /**
+   * Corresponds to {@link CompletedGettingStarted}
+   */
+  completedOnboarding = "completedOnboarding",
 
   /**
    * Corresponds to {@link ConvertedArtworkToUnique}
@@ -252,6 +264,11 @@ export enum OsActionType {
    * Corresponds to {@link MovedArtworksBetweenLists}
    */
   movedArtworksBetweenLists = "movedArtworksBetweenLists",
+
+  /**
+   * Corresponds to {@link ProgressedGettingStarted}
+   */
+  progressedOnboarding = "progressedOnboarding",
 
   /**
    * Corresponds to {@link OsInventoryTable}
