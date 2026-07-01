@@ -328,14 +328,14 @@ export interface OsClickedActionsDropdown {
    * Top-bar "Add to": "Add to Artsy" | "Add to Collection"
    * Top-bar "Open in Studio": "Tearsheet" | "Checklist" | "Instagram Post" | "Mailchimp Campaign"
    * Top-bar "More": "Delete"
-   * Row/context menu only: "Remove from Artsy" | "Change Collection" | "Remove from Collection" |
+   * Row/context menu only: "Remove from Artsy" | "Move to Collection" | "Remove from Collection" |
    *   "Convert to Edition Set" | "Edit Edition Set" | "Convert to Unique"
    * Distribution: "Distribute to Artsy"
    */
   value:
     | "Add to Artsy"
     | "Add to Collection"
-    | "Change Collection"
+    | "Move to Collection"
     | "Checklist"
     | "Convert to Edition Set"
     | "Convert to Unique"

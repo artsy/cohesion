@@ -8,8 +8,9 @@ import { OsActionType } from "."
  */
 
 /**
- * A partner clicks "Connect" or "Cancel" in the Instagram account connection modal.
- * The same modal is also used for Mailchimp; `label` identifies which service it is.
+ * A partner clicks "Connect" or "Cancel" in the account connection modal. The same
+ * modal is reused for Mailchimp; `label` identifies the service and
+ * `context_page_owner_type` identifies the surface it was opened from.
  *
  * This schema describes events sent to Segment from [[OsClickedConnectModal]]
  *
@@ -38,7 +39,7 @@ import { OsActionType } from "."
 export interface OsClickedConnectModal {
   action: OsActionType.clickedConnectModal
   context_module: OsContextModule.connectModal
-  context_page_owner_type: OsOwnerType.studioInstagram
+  context_page_owner_type: OsOwnerType
   label: "instagram" | "mailchimp"
   value: "connect" | "cancel"
 }

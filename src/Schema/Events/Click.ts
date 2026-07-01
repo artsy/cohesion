@@ -812,6 +812,34 @@ export interface ClickedOfferOption {
 }
 
 /**
+ * A user clicks a counter offer option on the counter offer page
+ *
+ * This schema describes events sent to Segment from [[ClickedCounterOfferOption]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCounterOfferOption",
+ *    context_module: "ordersCounter",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "dd0cbbb5-300b-4c49-92a1-fed55b077fa9",
+ *    option: "accept" | "counter" | "decline",
+ *    amount?: 2000,
+ *    currency?: "USD"
+ *  }
+ * ```
+ */
+export interface ClickedCounterOfferOption {
+  action: ActionType.clickedCounterOfferOption
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+  option: "accept" | "counter" | "decline"
+  amount?: number
+  currency?: string
+}
+
+/**
  * A Partner clicks on Artwork weight (without packaging) bar in the artwork edit page
  * in CMS.
  *
@@ -2625,6 +2653,72 @@ export interface SubmittedOffer {
 }
 
 /**
+ * A user submits a counter offer in response to a gallery counter offer.
+ *
+ * This schema describes events sent to Segment from [[SubmittedCounterOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "submittedCounterOffer",
+ *    context_module: "ordersReview",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *  }
+ * ```
+ */
+export interface SubmittedCounterOffer {
+  action: ActionType.submittedCounterOffer
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+}
+
+/**
+ * A user accepts a gallery's counter offer.
+ *
+ * This schema describes events sent to Segment from [[AcceptedOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "acceptedOffer",
+ *    context_module: "ordersReview",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *  }
+ * ```
+ */
+export interface AcceptedOffer {
+  action: ActionType.acceptedOffer
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+}
+
+/**
+ * A user declines a gallery's counter offer.
+ *
+ * This schema describes events sent to Segment from [[DeclinedOffer]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "declinedOffer",
+ *    context_module: "ordersReview",
+ *    context_page_owner_type: "orders-respond",
+ *    context_page_owner_id: "b0ac7b78-ee9b-4fa8-b0ca-b726169db217",
+ *  }
+ * ```
+ */
+export interface DeclinedOffer {
+  action: ActionType.declinedOffer
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id: string
+}
+
+/**
  * A user submits an order. Includes normal and express checkout flows.
  *
  * This schema describes events sent to Segment from [[SubmittedOrder]]
@@ -2852,7 +2946,7 @@ export interface ClickedArtistArtworkImage {
 }
 
 /**
- * A user clicks on Terms and Conditions link during checkout or counteroffer flow
+ * A user clicks on Terms and Conditions link during checkout or counter offer flow
  *
  * This schema describes events sent to Segment from [[ClickedTermsAndConditions]]
  *

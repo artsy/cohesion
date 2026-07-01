@@ -9,6 +9,7 @@ import { OsConnectedAppsFlow } from "./ConnectedAppsFlow"
 import { OsFilterSortSearch } from "./FilterSortSearch"
 import { OsInstagramEditor } from "./InstagramEditor"
 import { OsInventoryTable } from "./InventoryTable"
+import { OsMailchimpEditor } from "./MailchimpEditor"
 import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsOnboardingFlow } from "./OnboardingFlow"
@@ -30,6 +31,7 @@ export type OsEvent =
   | OsFilterSortSearch
   | OsInstagramEditor
   | OsInventoryTable
+  | OsMailchimpEditor
   | OsMaterialsEditor
   | OsMultiAddFlow
   | OsOnboardingFlow
@@ -173,6 +175,11 @@ export enum OsActionType {
   clickedShowMeHow = "clickedShowMeHow",
 
   /**
+   * Corresponds to {@link OsMailchimpEditor}
+   */
+  clickedSendConfirmation = "clickedSendConfirmation",
+
+  /**
    * Corresponds to {@link OsInstagramEditor}
    */
   clickedUploadImageBank = "clickedUploadImageBank",
@@ -213,7 +220,8 @@ export enum OsActionType {
   createdList = "createdList",
 
   /**
-   * Corresponds to {@link OsMaterialsEditor} and {@link OsInstagramEditor}
+   * Corresponds to {@link OsMaterialsEditor}, {@link OsInstagramEditor}, and
+   * {@link OsMailchimpEditor}
    */
   createdStudioContent = "createdStudioContent",
 

@@ -1,3 +1,51 @@
+# v4.380.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- feat: counter offer tracking [#721](https://github.com/artsy/cohesion/pull/721) ([@xander-pero](https://github.com/xander-pero))
+
+#### Authors: 1
+
+- [@xander-pero](https://github.com/xander-pero)
+
+---
+
+# v4.379.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- feat(os): Rename Change Collection to Move to Collection in actions dropdown tracking [#725](https://github.com/artsy/cohesion/pull/725) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
+# v4.378.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- chore(schema): Add missing Mailchimp tracking context values [#724](https://github.com/artsy/cohesion/pull/724) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
+# v4.377.0 (Tue Jun 30 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add Art OS Mailchimp campaign tracking events [#723](https://github.com/artsy/cohesion/pull/723) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.376.0 (Mon Jun 29 2026)
 
 #### 🚀  Enhancement

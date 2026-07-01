@@ -35,6 +35,7 @@ import {
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
+  AcceptedOffer,
   CheckedAccountBalance,
   ClickedAddFilters,
   ClickedAddMissingArtworksDetails,
@@ -64,6 +65,7 @@ import {
   ClickedCompleteYourProfile,
   ClickedContactGallery,
   ClickedConversationsFilter,
+  ClickedCounterOfferOption,
   ClickedCreateAlert,
   ClickedCV,
   ClickedDeliveryMethod,
@@ -133,6 +135,8 @@ import {
   ClickedViewingRoomCard,
   ClickedViewWork,
   ClickedVisitHelpCenter,
+  DeclinedOffer,
+  SubmittedCounterOffer,
   SubmittedOffer,
   SubmittedOrder,
 } from "./Click"
@@ -316,6 +320,7 @@ import {
   ToggledArtistBio,
   ToggledCollapsibleOrderSummary,
   ToggledNotification,
+  ToggledOfferHistory,
   ToggledSavedSearch,
 } from "./Toggle"
 import { UploadSizeLimitExceeded } from "./UploadSizeLimitExceeded"
@@ -328,6 +333,7 @@ import { ViewedVideo } from "./Video"
  * Each event describes one ActionType
  */
 export type Event =
+  | AcceptedOffer
   | AddCollectedArtwork
   | AddedArtworkToArtworkList
   | AddedToAlbum
@@ -371,6 +377,7 @@ export type Event =
   | ClickedCompleteYourProfile
   | ClickedContactGallery
   | ClickedConversationsFilter
+  | ClickedCounterOfferOption
   | ClickedCreateAlert
   | ClickedCV
   | ClickedDeliveryMethod
@@ -458,6 +465,7 @@ export type Event =
   | CreatedAlbum
   | CreatedArtworkList
   | DarkModeOptionUpdated
+  | DeclinedOffer
   | DeleteCollectedArtwork
   | DeletedArtworkList
   | DeletedSavedSearch
@@ -524,6 +532,7 @@ export type Event =
   | ShippingQuoteViewed
   | StartedOnboarding
   | SubmitAnotherArtwork
+  | SubmittedCounterOffer
   | SubmittedOffer
   | SubmittedOrder
   | SuccessfullyLoggedIn
@@ -607,6 +616,7 @@ export type Event =
   | ToggledArtistBio
   | ToggledCollapsibleOrderSummary
   | ToggledNotification
+  | ToggledOfferHistory
   | ToggledPresentationModeSetting
   | ToggledSavedSearch
   | TooltipViewed
@@ -628,6 +638,10 @@ export type Event =
  * Each ActionType corresponds with a table in Redshift.
  */
 export enum ActionType {
+  /**
+   * Corresponds to {@link AcceptedOffer}
+   */
+  acceptedOffer = "acceptedOffer",
   /**
    * Corresponds to {@link AddedArtworkToArtworkList}
    */
@@ -804,6 +818,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedContactGallery}
    */
   clickedContactGallery = "clickedContactGallery",
+  /**
+   * Corresponds to {@link ClickedCounterOfferOption}
+   */
+  clickedCounterOfferOption = "clickedCounterOfferOption",
   /**
    * Corresponds to {@link ClickedCreateAlert}
    */
@@ -1202,6 +1220,10 @@ export enum ActionType {
    */
   darkModeOptionUpdated = "darkModeOptionUpdated",
   /**
+   * Corresponds to {@link DeclinedOffer}
+   */
+  declinedOffer = "declinedOffer",
+  /**
    * Corresponds to {@link DeleteCollectedArtwork}
    */
   deleteCollectedArtwork = "deleteCollectedArtwork",
@@ -1505,6 +1527,10 @@ export enum ActionType {
    * Corresponds to {@link SubmitAnotherArtwork}
    */
   submitAnotherArtwork = "submitAnotherArtwork",
+  /**
+   * Corresponds to {@link SubmittedCounterOffer}
+   */
+  submittedCounterOffer = "submittedCounterOffer",
   /**
    * Corresponds to {@link SubmittedOffer}
    */
@@ -1894,6 +1920,10 @@ export enum ActionType {
    * Corresponds to {@link ToggledNotification}
    */
   toggledNotification = "toggledNotification",
+  /**
+   * Corresponds to {@link ToggledOfferHistory}
+   */
+  toggledOfferHistory = "toggledOfferHistory",
   /**
    * Corresponds to {@link ToggledPresentationModeSetting}
    */
