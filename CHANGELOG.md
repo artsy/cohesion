@@ -1,3 +1,15 @@
+# v4.381.0 (Wed Jul 01 2026)
+
+#### 🚀  Enhancement
+
+- chore: add onboarding tracking [#722](https://github.com/artsy/cohesion/pull/722) ([@mc-jones](https://github.com/mc-jones))
+
+#### Authors: 1
+
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v4.380.0 (Tue Jun 30 2026)
 
 #### 🚀  Enhancement
