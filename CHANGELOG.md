@@ -1,3 +1,15 @@
+# v4.383.0 (Thu Jul 02 2026)
+
+#### 🚀  Enhancement
+
+- chore: remove viewedDivergenceMarker event [#727](https://github.com/artsy/cohesion/pull/727) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.382.0 (Thu Jul 02 2026)
 
 #### 🚀  Enhancement
