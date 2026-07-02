@@ -34,6 +34,44 @@ export interface ClickedActionsDropdown {
 }
 
 /**
+ * A partner clicks "Unique Work" in the Add Artworks dropdown to create a
+ * single new artwork.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedAddUniqueWork",
+ *   context_module: "addArtworkDropdown",
+ *   context_page_owner_type: "inventory"
+ * }
+ * ```
+ */
+export interface ClickedAddUniqueWork {
+  action: OsActionType.clickedAddUniqueWork
+  context_module: OsContextModule.addArtworkDropdown
+  context_page_owner_type: OsOwnerType
+}
+
+/**
+ * A partner clicks "Edition Set" in the Add Artworks dropdown to open the
+ * add-edition-set modal.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedAddEditionSet",
+ *   context_module: "addArtworkDropdown",
+ *   context_page_owner_type: "inventory"
+ * }
+ * ```
+ */
+export interface ClickedAddEditionSet {
+  action: OsActionType.clickedAddEditionSet
+  context_module: OsContextModule.addArtworkDropdown
+  context_page_owner_type: OsOwnerType
+}
+
+/**
  * A partner cancels the bulk-edit drawer without applying changes.
  *
  * @example
@@ -105,6 +143,8 @@ export interface ClickedOpenList {
 
 export type OsClickEvent =
   | ClickedActionsDropdown
+  | ClickedAddUniqueWork
+  | ClickedAddEditionSet
   | ClickedCancelBulkEdit
   | ViewedDivergenceMarker
   | ClickedOpenList

@@ -2,6 +2,8 @@ import { OsContextModule } from "../../Values/OsContextModule"
 import { OsOwnerType } from "../../Values/OsOwnerType"
 import {
   ClickedActionsDropdown,
+  ClickedAddEditionSet,
+  ClickedAddUniqueWork,
   ClickedCancelBulkEdit,
   ClickedOpenList,
 } from "../Click"
@@ -25,6 +27,34 @@ describe("Bulk-action click events", () => {
       context_page_owner_type: "inventory",
       label: "action button",
       value: "Add to Artsy (as Draft)",
+    })
+  })
+
+  it("ClickedAddUniqueWork serializes to the expected shape", () => {
+    const event: ClickedAddUniqueWork = {
+      action: OsActionType.clickedAddUniqueWork,
+      context_module: OsContextModule.addArtworkDropdown,
+      context_page_owner_type: OsOwnerType.inventory,
+    }
+
+    expect(event).toEqual({
+      action: "clickedAddUniqueWork",
+      context_module: "addArtworkDropdown",
+      context_page_owner_type: "inventory",
+    })
+  })
+
+  it("ClickedAddEditionSet serializes to the expected shape", () => {
+    const event: ClickedAddEditionSet = {
+      action: OsActionType.clickedAddEditionSet,
+      context_module: OsContextModule.addArtworkDropdown,
+      context_page_owner_type: OsOwnerType.inventory,
+    }
+
+    expect(event).toEqual({
+      action: "clickedAddEditionSet",
+      context_module: "addArtworkDropdown",
+      context_page_owner_type: "inventory",
     })
   })
 

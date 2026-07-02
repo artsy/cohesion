@@ -7,6 +7,7 @@
 export enum OsContextModule {
   actionsDropdown = "actionsDropdown",
   addArtistModal = "addArtistModal",
+  addArtworkDropdown = "addArtworkDropdown",
   addLocationModal = "addLocationModal",
   addToListModal = "addToListModal",
   artworkFilters = "artworkFilters",
