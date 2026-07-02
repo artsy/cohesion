@@ -85,9 +85,19 @@ export enum OsActionType {
   clickedActionsDropdown = "clickedActionsDropdown",
 
   /**
+   * Corresponds to {@link ClickedAddEditionSet}
+   */
+  clickedAddEditionSet = "clickedAddEditionSet",
+
+  /**
    * Corresponds to {@link ClickedAddFromFile}
    */
   clickedAddFromFile = "clickedAddFromFile",
+
+  /**
+   * Corresponds to {@link ClickedAddUniqueWork}
+   */
+  clickedAddUniqueWork = "clickedAddUniqueWork",
 
   /*
    * Corresponds to {@link OsInventoryTable}
