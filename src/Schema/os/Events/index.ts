@@ -334,9 +334,4 @@ export enum OsActionType {
    * Corresponds to {@link UpdatedList}
    */
   updatedList = "updatedList",
-
-  /**
-   * Corresponds to {@link ViewedDivergenceMarker}
-   */
-  viewedDivergenceMarker = "viewedDivergenceMarker",
 }

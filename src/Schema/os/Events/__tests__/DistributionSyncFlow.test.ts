@@ -1,6 +1,5 @@
 import { OsContextModule } from "../../Values/OsContextModule"
 import { OsOwnerType } from "../../Values/OsOwnerType"
-import { ViewedDivergenceMarker } from "../Click"
 import { OsActionType } from "../index"
 import { EditedInventoryField } from "../InventoryTable"
 import { CompletedArtworkDistribution } from "../Submit"
@@ -66,24 +65,6 @@ describe("Distribution Sync & Mapping flow events", () => {
       success_count: 10,
       total_artworks: 12,
       value: "partial",
-    })
-  })
-
-  it("ViewedDivergenceMarker serializes to the expected shape", () => {
-    const event: ViewedDivergenceMarker = {
-      action: OsActionType.viewedDivergenceMarker,
-      artwork_id: "abc123",
-      context_module: OsContextModule.artworkTable,
-      context_page_owner_type: OsOwnerType.inventory,
-      field: "availability",
-    }
-
-    expect(event).toEqual({
-      action: "viewedDivergenceMarker",
-      artwork_id: "abc123",
-      context_module: "artworkTable",
-      context_page_owner_type: "inventory",
-      field: "availability",
     })
   })
 })
