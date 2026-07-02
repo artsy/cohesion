@@ -1,3 +1,15 @@
+# v4.382.0 (Thu Jul 02 2026)
+
+#### 🚀  Enhancement
+
+- chore: add Add Artwork tracking events [#726](https://github.com/artsy/cohesion/pull/726) ([@MrSltun](https://github.com/MrSltun))
+
+#### Authors: 1
+
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.381.0 (Wed Jul 01 2026)
 
 #### 🚀  Enhancement
