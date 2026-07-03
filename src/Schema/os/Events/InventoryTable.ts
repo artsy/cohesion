@@ -371,6 +371,7 @@ export interface OsClickedActionsDropdown {
  *   context_page_owner_type: "inventory",
  *   destination: ["artsy"],
  *   artwork_id: "abc123",
+ *   edition_set_id: "xyz789",
  *   field: "availability",
  *   did_push_to_cms: false
  * }
@@ -383,6 +384,8 @@ export interface EditedInventoryField {
   /** Downstream destinations the value was pushed to (e.g. ["artsy"]) */
   destination: string[]
   artwork_id: string
+  /** The edition set the edited value belongs to, when the edit targets an edition set row */
+  edition_set_id?: string
   field: "availability" | "medium" | "price"
   /** false e.g. for "Not For Sale" (OS-only value that does not push to the destination) */
   did_push_to_cms: boolean
