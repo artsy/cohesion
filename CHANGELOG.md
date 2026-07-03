@@ -1,3 +1,15 @@
+# v4.384.0 (Fri Jul 03 2026)
+
+#### 🚀  Enhancement
+
+- feat: add edition_set_id to EditedInventoryField event [#728](https://github.com/artsy/cohesion/pull/728) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.383.0 (Thu Jul 02 2026)
 
 #### 🚀  Enhancement
