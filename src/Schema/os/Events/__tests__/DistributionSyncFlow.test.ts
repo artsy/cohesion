@@ -44,6 +44,30 @@ describe("Distribution Sync & Mapping flow events", () => {
     })
   })
 
+  it("EditedInventoryField includes edition_set_id when editing an edition set row", () => {
+    const event: EditedInventoryField = {
+      action: OsActionType.editedInventoryField,
+      artwork_id: "abc123",
+      context_module: OsContextModule.artworkTable,
+      context_page_owner_type: OsOwnerType.inventory,
+      destination: ["artsy"],
+      did_push_to_cms: true,
+      edition_set_id: "xyz789",
+      field: "price",
+    }
+
+    expect(event).toEqual({
+      action: "editedInventoryField",
+      artwork_id: "abc123",
+      context_module: "artworkTable",
+      context_page_owner_type: "inventory",
+      destination: ["artsy"],
+      did_push_to_cms: true,
+      edition_set_id: "xyz789",
+      field: "price",
+    })
+  })
+
   it("CompletedArtworkDistribution serializes to the expected shape", () => {
     const event: CompletedArtworkDistribution = {
       action: OsActionType.completedArtworkDistribution,
