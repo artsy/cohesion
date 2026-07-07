@@ -1,3 +1,15 @@
+# v4.385.0 (Tue Jul 07 2026)
+
+#### 🚀  Enhancement
+
+- fix: allow CompletedArtworkDistribution to fire on any owner type [#729](https://github.com/artsy/cohesion/pull/729) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.384.0 (Fri Jul 03 2026)
 
 #### 🚀  Enhancement
