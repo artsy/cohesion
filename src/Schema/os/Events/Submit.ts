@@ -105,7 +105,7 @@ export interface DistributedArtworks {
 export interface CompletedArtworkDistribution {
   action: OsActionType.completedArtworkDistribution
   context_module: OsContextModule.artworkTable
-  context_page_owner_type: OsOwnerType.inventory
+  context_page_owner_type: OsOwnerType
   /** Destination marketplaces (currently Artsy only; extensible) */
   destination: string[]
   total_artworks: number
