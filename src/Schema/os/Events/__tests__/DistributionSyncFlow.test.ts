@@ -91,4 +91,28 @@ describe("Distribution Sync & Mapping flow events", () => {
       value: "partial",
     })
   })
+
+  it("CompletedArtworkDistribution serializes to the expected shape for a collection", () => {
+    const event: CompletedArtworkDistribution = {
+      action: OsActionType.completedArtworkDistribution,
+      context_module: OsContextModule.artworkTable,
+      context_page_owner_type: OsOwnerType.collection,
+      destination: ["artsy"],
+      skipped_count: 2,
+      success_count: 10,
+      total_artworks: 12,
+      value: "partial",
+    }
+
+    expect(event).toEqual({
+      action: "completedArtworkDistribution",
+      context_module: "artworkTable",
+      context_page_owner_type: "collection",
+      destination: ["artsy"],
+      skipped_count: 2,
+      success_count: 10,
+      total_artworks: 12,
+      value: "partial",
+    })
+  })
 })
