@@ -19,6 +19,7 @@ export enum Intent {
   seePriceAuctionRecords = "seePriceAuctionRecords",
   seeRealizedPriceAuctionRecords = "seeRealizedPriceAuctionRecords",
   makeOffer = "makeOffer",
+  oneTap = "oneTap",
   registerToBid = "registerToBid",
   requestConditionReport = "requestConditionReport",
   saveArtwork = "saveArtwork",
@@ -50,6 +51,7 @@ export type AuthIntent =
   | Intent.seePriceAuctionRecords
   | Intent.seeRealizedPriceAuctionRecords
   | Intent.makeOffer
+  | Intent.oneTap
   | Intent.registerToBid
   | Intent.requestConditionReport
   | Intent.saveArtwork
