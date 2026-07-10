@@ -1,3 +1,15 @@
+# v4.386.0 (Fri Jul 10 2026)
+
+#### 🚀  Enhancement
+
+- chore: add link-pr-to-notion workflow [#730](https://github.com/artsy/cohesion/pull/730) ([@rabidpaul](https://github.com/rabidpaul))
+
+#### Authors: 1
+
+- Paul Sanders ([@rabidpaul](https://github.com/rabidpaul))
+
+---
+
 # v4.385.0 (Tue Jul 07 2026)
 
 #### 🚀  Enhancement
