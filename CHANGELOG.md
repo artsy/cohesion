@@ -1,3 +1,16 @@
+# v4.386.1 (Tue Jul 14 2026)
+
+#### 🐛  Bug Fix
+
+- feat: add "fairs" as a SelectedFromDrawerSubject [#732](https://github.com/artsy/cohesion/pull/732) ([@claude](https://github.com/claude) [@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 2
+
+- Claude ([@claude](https://github.com/claude))
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.386.0 (Fri Jul 10 2026)
 
 #### 🚀  Enhancement
