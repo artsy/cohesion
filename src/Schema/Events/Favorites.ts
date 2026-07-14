@@ -74,8 +74,9 @@ export interface TappedArtworkList {
  */
 export type SelectedFromDrawerSubject =
   | "artists"
-  | "galleries"
   | "categories"
+  | "fairs"
+  | "galleries"
   | "shows"
 export interface SelectedFromDrawer {
   action: ActionType.selectedFromDrawer
