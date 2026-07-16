@@ -180,6 +180,7 @@ export interface TappedHeroUnitGroup extends TappedEntityGroup {
  */
 export interface TappedArtworkGroup extends TappedEntityGroup {
   action: ActionType.tappedArtworkGroup
+  has_curator_note?: boolean
   signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
@@ -587,6 +588,7 @@ export interface TappedMainArtworkGrid {
   destination_screen_owner_type: ScreenOwnerType
   destination_screen_owner_id: string
   destination_screen_owner_slug: string
+  has_curator_note?: boolean
   position?: number
   sort?: string
   type: "thumbnail"
@@ -594,6 +596,35 @@ export interface TappedMainArtworkGrid {
   signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
+}
+
+/**
+ * A user taps a curator's note shown on an artwork within a marketing collection
+ * (opens a sheet with the full note). iOS.
+ *
+ * This schema describes events sent to Segment from [[tappedCuratorNote]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCuratorNote",
+ *    context_module: "collectionRail",
+ *    context_screen_owner_type: "collection",
+ *    context_screen_owner_id: "5f80bfefe8d808000ea212c1",
+ *    context_screen_owner_slug: "curators-picks-emerging",
+ *    artwork_id: "53188b0d8b3b8192bb0005ae",
+ *    artwork_slug: "damien-hirst-anatomy-of-an-angel"
+ *  }
+ * ```
+ */
+export interface TappedCuratorNote {
+  action: ActionType.tappedCuratorNote
+  artwork_id?: string
+  artwork_slug?: string
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
 }
 
 /**
