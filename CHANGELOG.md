@@ -1,3 +1,15 @@
+# v4.387.0 (Mon Jul 27 2026)
+
+#### 🚀  Enhancement
+
+- feat: add searchPageResults context module [#734](https://github.com/artsy/cohesion/pull/734) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.386.1 (Tue Jul 14 2026)
 
 #### 🐛  Bug Fix
