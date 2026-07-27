@@ -242,6 +242,7 @@ export enum ContextModule {
   relatedWorksRail = "relatedWorksRail",
   saves = "saves",
   saveWorksCTA = "saveWorksCTA",
+  searchPageResults = "searchPageResults",
   sell = "sell",
   sellFooter = "sellFooter",
   sellHeader = "sellHeader",
