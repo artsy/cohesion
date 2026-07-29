@@ -1,3 +1,15 @@
+# v4.388.0 (Wed Jul 29 2026)
+
+#### 🚀  Enhancement
+
+- chore: Support the new fields tracking in OS Inventory [#735](https://github.com/artsy/cohesion/pull/735) ([@lidimayra](https://github.com/lidimayra))
+
+#### Authors: 1
+
+- Lidiane T ([@lidimayra](https://github.com/lidimayra))
+
+---
+
 # v4.387.0 (Mon Jul 27 2026)
 
 #### 🚀  Enhancement
