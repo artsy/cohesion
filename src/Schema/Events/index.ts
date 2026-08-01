@@ -67,6 +67,7 @@ import {
   ClickedConversationsFilter,
   ClickedCounterOfferOption,
   ClickedCreateAlert,
+  ClickedCuratorNote,
   ClickedCV,
   ClickedDeliveryMethod,
   ClickedDismissInquiry,
@@ -287,6 +288,7 @@ import {
   TappedConsignmentInquiry,
   TappedContactGallery,
   TappedCreateAlert,
+  TappedCuratorNote,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -379,6 +381,7 @@ export type Event =
   | ClickedConversationsFilter
   | ClickedCounterOfferOption
   | ClickedCreateAlert
+  | ClickedCuratorNote
   | ClickedCV
   | ClickedDeliveryMethod
   | ClickedDismissInquiry
@@ -566,6 +569,7 @@ export type Event =
   | TappedConsignmentInquiry
   | TappedContactGallery
   | TappedCreateAlert
+  | TappedCuratorNote
   | TappedEditedProfile
   | TappedExploreGroup
   | TappedExploreMyCollection
@@ -826,6 +830,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedCreateAlert}
    */
   clickedCreateAlert = "clickedCreateAlert",
+  /**
+   * Corresponds to {@link ClickedCuratorNote}
+   */
+  clickedCuratorNote = "clickedCuratorNote",
   /**
    * Corresponds to {@link ClickedDeliveryMethod}
    */
@@ -1672,6 +1680,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCreateAlertHeader}
    */
   tappedCreateAlertHeader = "tappedCreateAlertHeader",
+  /**
+   * Corresponds to {@link TappedCuratorNote}
+   */
+  tappedCuratorNote = "tappedCuratorNote",
   /**
    * Corresponds to {@link TappedEditedProfile}
    */
