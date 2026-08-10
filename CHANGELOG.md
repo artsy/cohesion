@@ -1,3 +1,15 @@
+# v4.389.0 (Mon Aug 10 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add OsReorderedInventoryTableColumns event for column drag-reorder [#736](https://github.com/artsy/cohesion/pull/736) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.388.0 (Wed Jul 29 2026)
 
 #### 🚀  Enhancement
