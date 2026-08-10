@@ -394,6 +394,40 @@ export interface EditedInventoryField {
   did_push_to_cms: boolean
 }
 
+/**
+ * A partner drags a column header and drops it in a new position in the inventory
+ * table. Fires once per completed drop (not per drag-over). The new order is
+ * persisted to localStorage, keyed per browser/device.
+ *
+ * This schema describes events sent to Segment from [[OsReorderedInventoryTableColumns]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "reorderedInventoryTableColumns",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   column: "price",
+ *   from_index: 4,
+ *   to_index: 1,
+ *   new_order: ["title", "price", "artist", "medium", "dimensions"]
+ * }
+ * ```
+ */
+export interface OsReorderedInventoryTableColumns {
+  action: OsActionType.reorderedInventoryTableColumns
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  /** The key of the column that was dragged */
+  column: string
+  /** 0-based position among reorderable (non-pinned) columns before the move */
+  from_index: number
+  /** 0-based position among reorderable (non-pinned) columns after the move */
+  to_index: number
+  /** Full resulting column key order (reorderable columns only, pinned columns excluded) */
+  new_order: string[]
+}
+
 export type OsInventoryTable =
   | EditedInventoryField
   | OsAddedArtist
@@ -405,4 +439,5 @@ export type OsInventoryTable =
   | OsClickedImagesModal
   | OsEditedArtworkField
   | OsRemovedArtworkDocument
+  | OsReorderedInventoryTableColumns
   | OsSavedArtworkImages
