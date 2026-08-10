@@ -296,6 +296,11 @@ export enum OsActionType {
   removedArtworksFromList = "removedArtworksFromList",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  reorderedInventoryTableColumns = "reorderedInventoryTableColumns",
+
+  /**
    * Corresponds to {@link ResumedArtworkImport}
    */
   resumedArtworkImport = "resumedArtworkImport",
