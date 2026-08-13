@@ -367,6 +367,30 @@ export interface UpdatedEditionSet {
 }
 
 /**
+ * A partner applies column visibility changes by clicking "Done" in the
+ * column-settings dropdown panel. Fires on persist to localStorage.
+ * `hidden_columns` and `visible_columns` capture the resulting state.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "changedInventoryTableColumnVisibility",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   hidden_columns: ["inventoryId", "provenance"],
+ *   visible_columns: ["title", "artist", "price", "medium", "dimensions"]
+ * }
+ * ```
+ */
+export interface ChangedInventoryTableColumnVisibility {
+  action: OsActionType.changedInventoryTableColumnVisibility
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  hidden_columns: string[]
+  visible_columns: string[]
+}
+
+/**
  * A partner confirms or cancels reverting an edition-set artwork to a unique
  * work in the Convert to Unique confirmation modal.
  *
@@ -389,10 +413,32 @@ export interface ConvertedArtworkToUnique {
   value: "confirm" | "cancel"
 }
 
+/**
+ * A partner hides a column immediately via the right-click header context menu
+ * ("Hide column"). Fires on persist to localStorage.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "hidInventoryTableColumn",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   column: "provenance"
+ * }
+ * ```
+ */
+export interface HidInventoryTableColumn {
+  action: OsActionType.hidInventoryTableColumn
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  column: string
+}
+
 export type OsSubmitEvent =
   | AddedArtworksToList
   | BulkEditedArtworks
   | BulkEditedArtworks
+  | ChangedInventoryTableColumnVisibility
   | CompletedArtworkDistribution
   | ConvertedArtworkToUnique
   | CreatedEditionSet
@@ -404,6 +450,7 @@ export type OsSubmitEvent =
   | DistributedArtworks
   | DistributedArtworks
   | DistributedList
+  | HidInventoryTableColumn
   | MovedArtworksBetweenLists
   | RemovedArtworksFromList
   | UpdatedEditionSet

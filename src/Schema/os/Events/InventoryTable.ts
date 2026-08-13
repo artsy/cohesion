@@ -1,6 +1,10 @@
 import { OsContextModule } from "../Values/OsContextModule"
 import { OsOwnerType } from "../Values/OsOwnerType"
 import { OsActionType } from "."
+import {
+  ChangedInventoryTableColumnVisibility,
+  HidInventoryTableColumn,
+} from "./Submit"
 
 /**
  * Schemas describing Art OS Inventory Table events
@@ -429,7 +433,9 @@ export interface OsReorderedInventoryTableColumns {
 }
 
 export type OsInventoryTable =
+  | ChangedInventoryTableColumnVisibility
   | EditedInventoryField
+  | HidInventoryTableColumn
   | OsAddedArtist
   | OsAddedArtworkDocument
   | OsAddedLocation

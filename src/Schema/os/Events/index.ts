@@ -45,14 +45,14 @@ export type OsEvent =
  */
 export enum OsActionType {
   /**
-   * Corresponds to {@link OsFilterSortSearch}
-   */
-  appliedFilter = "appliedFilter",
-
-  /**
    * Corresponds to {@link OsInventoryTable}
    */
   addedArtist = "addedArtist",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  appliedFilter = "appliedFilter",
 
   /**
    * Corresponds to {@link OsInventoryTable}
@@ -78,6 +78,11 @@ export enum OsActionType {
    * Corresponds to {@link CancelledArtworkImport}
    */
   cancelledArtworkImport = "cancelledArtworkImport",
+
+  /**
+   * Corresponds to {@link ChangedInventoryTableColumnVisibility}
+   */
+  changedInventoryTableColumnVisibility = "changedInventoryTableColumnVisibility",
 
   /**
    * Corresponds to {@link OsClickedActionsDropdown}
@@ -120,9 +125,9 @@ export enum OsActionType {
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
 
   /**
-   * Corresponds to {@link OsFilterSortSearch}
+   * Corresponds to {@link ClickedColumnVisibilityDropdown}
    */
-  clickedFilterDrawer = "clickedFilterDrawer",
+  clickedColumnVisibilityDropdown = "clickedColumnVisibilityDropdown",
 
   /**
    * Corresponds to {@link ClickedConnectAccount}
@@ -133,6 +138,11 @@ export enum OsActionType {
    * Corresponds to {@link ClickedConnectAccountModal}
    */
   clickedConnectAccountModal = "clickedConnectAccountModal",
+
+  /**
+   * Corresponds to {@link OsFilterSortSearch}
+   */
+  clickedFilterDrawer = "clickedFilterDrawer",
 
   /**
    * Corresponds to {@link OsInstagramEditor}
@@ -269,6 +279,11 @@ export enum OsActionType {
    * Corresponds to {@link EditedInventoryField}
    */
   editedInventoryField = "editedInventoryField",
+
+  /**
+   * Corresponds to {@link HidInventoryTableColumn}
+   */
+  hidInventoryTableColumn = "hidInventoryTableColumn",
 
   /**
    * Corresponds to {@link MovedArtworksBetweenLists}
