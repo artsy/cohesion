@@ -125,11 +125,6 @@ export enum OsActionType {
   clickedCancelBulkEdit = "clickedCancelBulkEdit",
 
   /**
-   * Corresponds to {@link ClickedColumnVisibilityDropdown}
-   */
-  clickedColumnVisibilityDropdown = "clickedColumnVisibilityDropdown",
-
-  /**
    * Corresponds to {@link ClickedConnectAccount}
    */
   clickedConnectAccount = "clickedConnectAccount",
@@ -279,11 +274,6 @@ export enum OsActionType {
    * Corresponds to {@link EditedInventoryField}
    */
   editedInventoryField = "editedInventoryField",
-
-  /**
-   * Corresponds to {@link HidInventoryTableColumn}
-   */
-  hidInventoryTableColumn = "hidInventoryTableColumn",
 
   /**
    * Corresponds to {@link MovedArtworksBetweenLists}

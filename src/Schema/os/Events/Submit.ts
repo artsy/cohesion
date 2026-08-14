@@ -367,18 +367,33 @@ export interface UpdatedEditionSet {
 }
 
 /**
- * A partner applies column visibility changes by clicking "Done" in the
- * column-settings dropdown panel. Fires on persist to localStorage.
- * `hidden_columns` and `visible_columns` capture the resulting state.
+ * A partner changes column visibility either by clicking "Done" in the
+ * column-visibility dropdown panel or by right-clicking a header and selecting
+ * "Hide column". Fires on persist to localStorage. `mode` distinguishes the two
+ * entry points: `dropdown` for the panel's "Done" button, `header` for the
+ * right-click context menu.
  *
- * @example
+ * @example Dropdown mode
  * ```
  * {
  *   action: "changedInventoryTableColumnVisibility",
  *   context_module: "artworkTable",
  *   context_page_owner_type: "inventory",
  *   hidden_columns: ["inventoryId", "provenance"],
- *   visible_columns: ["title", "artist", "price", "medium", "dimensions"]
+ *   visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+ *   mode: "dropdown"
+ * }
+ * ```
+ *
+ * @example Header context menu mode
+ * ```
+ * {
+ *   action: "changedInventoryTableColumnVisibility",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   hidden_columns: ["provenance"],
+ *   visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+ *   mode: "header"
  * }
  * ```
  */
@@ -387,6 +402,7 @@ export interface ChangedInventoryTableColumnVisibility {
   context_module: OsContextModule.artworkTable
   context_page_owner_type: OsOwnerType
   hidden_columns: string[]
+  mode: "dropdown" | "header"
   visible_columns: string[]
 }
 
@@ -413,27 +429,6 @@ export interface ConvertedArtworkToUnique {
   value: "confirm" | "cancel"
 }
 
-/**
- * A partner hides a column immediately via the right-click header context menu
- * ("Hide column"). Fires on persist to localStorage.
- *
- * @example
- * ```
- * {
- *   action: "hidInventoryTableColumn",
- *   context_module: "artworkTable",
- *   context_page_owner_type: "inventory",
- *   column: "provenance"
- * }
- * ```
- */
-export interface HidInventoryTableColumn {
-  action: OsActionType.hidInventoryTableColumn
-  context_module: OsContextModule.artworkTable
-  context_page_owner_type: OsOwnerType
-  column: string
-}
-
 export type OsSubmitEvent =
   | AddedArtworksToList
   | BulkEditedArtworks
@@ -450,7 +445,6 @@ export type OsSubmitEvent =
   | DistributedArtworks
   | DistributedArtworks
   | DistributedList
-  | HidInventoryTableColumn
   | MovedArtworksBetweenLists
   | RemovedArtworksFromList
   | UpdatedEditionSet

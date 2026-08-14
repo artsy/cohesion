@@ -5,7 +5,6 @@ import {
   ClickedAddEditionSet,
   ClickedAddUniqueWork,
   ClickedCancelBulkEdit,
-  ClickedColumnVisibilityDropdown,
   ClickedOpenList,
 } from "../Click"
 import { OsActionType } from "../index"
@@ -72,20 +71,6 @@ describe("Bulk-action click events", () => {
       artwork_ids: ["5d2b5b5d5e5b5d000e1b5b5d", "5d2b5b5d5e5b5d000e1b5b5e"],
       context_module: "bulkEditDrawer",
       context_page_owner_type: "collection",
-    })
-  })
-
-  it("ClickedColumnVisibilityDropdown serializes to the expected shape", () => {
-    const event: ClickedColumnVisibilityDropdown = {
-      action: OsActionType.clickedColumnVisibilityDropdown,
-      context_module: OsContextModule.artworkTable,
-      context_page_owner_type: OsOwnerType.inventory,
-    }
-
-    expect(event).toEqual({
-      action: "clickedColumnVisibilityDropdown",
-      context_module: "artworkTable",
-      context_page_owner_type: "inventory",
     })
   })
 

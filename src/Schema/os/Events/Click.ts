@@ -92,25 +92,6 @@ export interface ClickedCancelBulkEdit {
 }
 
 /**
- * A partner clicks the column-visibility dropdown icon in the inventory table
- * header to open the show/hide column panel.
- *
- * @example
- * ```
- * {
- *   action: "clickedColumnVisibilityDropdown",
- *   context_module: "artworkTable",
- *   context_page_owner_type: "inventory"
- * }
- * ```
- */
-export interface ClickedColumnVisibilityDropdown {
-  action: OsActionType.clickedColumnVisibilityDropdown
-  context_module: OsContextModule.artworkTable
-  context_page_owner_type: OsOwnerType
-}
-
-/**
  * A partner opens a list, either from the Lists surface (a `ListCard`) or from
  * the recent-lists shortcut on the Inventory surface. `source` distinguishes the
  * two entry points (`listsPage` | `inventory`) so they can be compared.
@@ -141,5 +122,4 @@ export type OsClickEvent =
   | ClickedAddEditionSet
   | ClickedAddUniqueWork
   | ClickedCancelBulkEdit
-  | ClickedColumnVisibilityDropdown
   | ClickedOpenList

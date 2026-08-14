@@ -12,7 +12,6 @@ import {
   DeletedList,
   DistributedArtworks,
   DistributedList,
-  HidInventoryTableColumn,
   MovedArtworksBetweenLists,
   RemovedArtworksFromList,
   UpdatedEditionSet,
@@ -300,12 +299,13 @@ describe("List submit events", () => {
 })
 
 describe("Inventory table column submit events", () => {
-  it("ChangedInventoryTableColumnVisibility serializes to the expected shape", () => {
+  it("ChangedInventoryTableColumnVisibility (dropdown mode) serializes to the expected shape", () => {
     const event: ChangedInventoryTableColumnVisibility = {
       action: OsActionType.changedInventoryTableColumnVisibility,
       context_module: OsContextModule.artworkTable,
       context_page_owner_type: OsOwnerType.inventory,
       hidden_columns: ["inventoryId", "provenance"],
+      mode: "dropdown",
       visible_columns: ["title", "artist", "price", "medium", "dimensions"],
     }
 
@@ -314,23 +314,28 @@ describe("Inventory table column submit events", () => {
       context_module: "artworkTable",
       context_page_owner_type: "inventory",
       hidden_columns: ["inventoryId", "provenance"],
+      mode: "dropdown",
       visible_columns: ["title", "artist", "price", "medium", "dimensions"],
     })
   })
 
-  it("HidInventoryTableColumn serializes to the expected shape", () => {
-    const event: HidInventoryTableColumn = {
-      action: OsActionType.hidInventoryTableColumn,
-      column: "provenance",
+  it("ChangedInventoryTableColumnVisibility (header mode) serializes to the expected shape", () => {
+    const event: ChangedInventoryTableColumnVisibility = {
+      action: OsActionType.changedInventoryTableColumnVisibility,
       context_module: OsContextModule.artworkTable,
       context_page_owner_type: OsOwnerType.inventory,
+      hidden_columns: ["provenance"],
+      mode: "header",
+      visible_columns: ["title", "artist", "price", "medium", "dimensions"],
     }
 
     expect(event).toEqual({
-      action: "hidInventoryTableColumn",
-      column: "provenance",
+      action: "changedInventoryTableColumnVisibility",
       context_module: "artworkTable",
       context_page_owner_type: "inventory",
+      hidden_columns: ["provenance"],
+      mode: "header",
+      visible_columns: ["title", "artist", "price", "medium", "dimensions"],
     })
   })
 })
