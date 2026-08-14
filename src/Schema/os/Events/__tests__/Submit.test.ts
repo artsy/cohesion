@@ -4,6 +4,7 @@ import { OsActionType } from "../index"
 import {
   AddedArtworksToList,
   BulkEditedArtworks,
+  ChangedInventoryTableColumnVisibility,
   ConvertedArtworkToUnique,
   CreatedEditionSet,
   CreatedList,
@@ -293,6 +294,48 @@ describe("List submit events", () => {
       list_id: "5d2b5b5d5e5b5d000e1b5b5d",
       list_type: "SHOW",
       partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e",
+    })
+  })
+})
+
+describe("Inventory table column submit events", () => {
+  it("ChangedInventoryTableColumnVisibility (dropdown mode) serializes to the expected shape", () => {
+    const event: ChangedInventoryTableColumnVisibility = {
+      action: OsActionType.changedInventoryTableColumnVisibility,
+      context_module: OsContextModule.artworkTable,
+      context_page_owner_type: OsOwnerType.inventory,
+      hidden_columns: ["inventoryId", "provenance"],
+      mode: "dropdown",
+      visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+    }
+
+    expect(event).toEqual({
+      action: "changedInventoryTableColumnVisibility",
+      context_module: "artworkTable",
+      context_page_owner_type: "inventory",
+      hidden_columns: ["inventoryId", "provenance"],
+      mode: "dropdown",
+      visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+    })
+  })
+
+  it("ChangedInventoryTableColumnVisibility (header mode) serializes to the expected shape", () => {
+    const event: ChangedInventoryTableColumnVisibility = {
+      action: OsActionType.changedInventoryTableColumnVisibility,
+      context_module: OsContextModule.artworkTable,
+      context_page_owner_type: OsOwnerType.inventory,
+      hidden_columns: ["provenance"],
+      mode: "header",
+      visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+    }
+
+    expect(event).toEqual({
+      action: "changedInventoryTableColumnVisibility",
+      context_module: "artworkTable",
+      context_page_owner_type: "inventory",
+      hidden_columns: ["provenance"],
+      mode: "header",
+      visible_columns: ["title", "artist", "price", "medium", "dimensions"],
     })
   })
 })

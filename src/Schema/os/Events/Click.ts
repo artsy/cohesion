@@ -119,7 +119,7 @@ export interface ClickedOpenList {
 
 export type OsClickEvent =
   | ClickedActionsDropdown
-  | ClickedAddUniqueWork
   | ClickedAddEditionSet
+  | ClickedAddUniqueWork
   | ClickedCancelBulkEdit
   | ClickedOpenList

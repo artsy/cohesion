@@ -367,6 +367,46 @@ export interface UpdatedEditionSet {
 }
 
 /**
+ * A partner changes column visibility either by clicking "Done" in the
+ * column-visibility dropdown panel or by right-clicking a header and selecting
+ * "Hide column". Fires on persist to localStorage. `mode` distinguishes the two
+ * entry points: `dropdown` for the panel's "Done" button, `header` for the
+ * right-click context menu.
+ *
+ * @example Dropdown mode
+ * ```
+ * {
+ *   action: "changedInventoryTableColumnVisibility",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   hidden_columns: ["inventoryId", "provenance"],
+ *   visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+ *   mode: "dropdown"
+ * }
+ * ```
+ *
+ * @example Header context menu mode
+ * ```
+ * {
+ *   action: "changedInventoryTableColumnVisibility",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   hidden_columns: ["provenance"],
+ *   visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+ *   mode: "header"
+ * }
+ * ```
+ */
+export interface ChangedInventoryTableColumnVisibility {
+  action: OsActionType.changedInventoryTableColumnVisibility
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  hidden_columns: string[]
+  mode: "dropdown" | "header"
+  visible_columns: string[]
+}
+
+/**
  * A partner confirms or cancels reverting an edition-set artwork to a unique
  * work in the Convert to Unique confirmation modal.
  *
@@ -393,6 +433,7 @@ export type OsSubmitEvent =
   | AddedArtworksToList
   | BulkEditedArtworks
   | BulkEditedArtworks
+  | ChangedInventoryTableColumnVisibility
   | CompletedArtworkDistribution
   | ConvertedArtworkToUnique
   | CreatedEditionSet
