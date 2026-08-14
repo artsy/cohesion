@@ -1,3 +1,15 @@
+# v4.390.0 (Fri Aug 14 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add ArtOS column visibility tracking events [#737](https://github.com/artsy/cohesion/pull/737) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.389.0 (Mon Aug 10 2026)
 
 #### 🚀  Enhancement
