@@ -20,6 +20,7 @@ import { CmsActionType } from "."
 export type CmsCompletenessScoreClickLabel =
   | "completeness checklist link"
   | "edit artwork"
+  | "show missing details"
 
 export interface CmsCompletenessScoreClickedEvent {
   action: "click"
