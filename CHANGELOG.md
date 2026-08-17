@@ -1,3 +1,15 @@
+# v4.391.0 (Mon Aug 17 2026)
+
+#### 🚀  Enhancement
+
+- feat: add private vr events [#738](https://github.com/artsy/cohesion/pull/738) ([@dariakoko](https://github.com/dariakoko))
+
+#### Authors: 1
+
+- Daria Kozlova ([@dariakoko](https://github.com/dariakoko))
+
+---
+
 # v4.390.0 (Fri Aug 14 2026)
 
 #### 🚀  Enhancement
