@@ -1,3 +1,15 @@
+# v4.392.0 (Mon Aug 17 2026)
+
+#### 🚀  Enhancement
+
+- feat: Adds new label for show missing details click event [#739](https://github.com/artsy/cohesion/pull/739) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.391.0 (Mon Aug 17 2026)
 
 #### 🚀  Enhancement
