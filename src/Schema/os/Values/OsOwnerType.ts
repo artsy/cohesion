@@ -7,6 +7,7 @@ export enum OsOwnerType {
   collection = "collection",
   connectedApps = "connectedApps",
   inventory = "inventory",
+  privateViewingRoom = "privateViewingRoom",
   studio = "studio",
   studioInstagram = "studioInstagram",
   studioMailchimp = "studioMailchimp",

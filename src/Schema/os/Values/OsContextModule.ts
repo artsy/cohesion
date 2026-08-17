@@ -35,6 +35,7 @@ export enum OsContextModule {
   multiAdd = "multiAdd",
   multiAddReview = "multiAddReview",
   onboardingFlow = "onboardingFlow",
+  privateViewingRoomEditor = "privateViewingRoomEditor",
   publishConfirmationModal = "publishConfirmationModal",
   sendConfirmationModal = "sendConfirmationModal",
   tableActions = "tableActions",

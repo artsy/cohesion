@@ -13,6 +13,7 @@ import { OsMailchimpEditor } from "./MailchimpEditor"
 import { OsMaterialsEditor } from "./MaterialsEditor"
 import { OsMultiAddFlow } from "./MultiAddFlow"
 import { OsOnboardingFlow } from "./OnboardingFlow"
+import { OsPrivateViewingRoom } from "./PrivateViewingRoom"
 import { OsSubmitEvent } from "./Submit"
 import { OsToggleEvent } from "./Toggle"
 
@@ -35,6 +36,7 @@ export type OsEvent =
   | OsMaterialsEditor
   | OsMultiAddFlow
   | OsOnboardingFlow
+  | OsPrivateViewingRoom
   | OsSubmitEvent
   | OsToggleEvent
 
@@ -185,6 +187,11 @@ export enum OsActionType {
   clickedPublishConfirmation = "clickedPublishConfirmation",
 
   /**
+   * Corresponds to {@link ClickedSharePrivateViewingRoom}
+   */
+  clickedSharePrivateViewingRoom = "clickedSharePrivateViewingRoom",
+
+  /**
    * Corresponds to {@link ClickedShowMeHow}
    */
   clickedShowMeHow = "clickedShowMeHow",
@@ -321,6 +328,11 @@ export enum OsActionType {
   searchedArtworks = "searchedArtworks",
 
   /**
+   * Corresponds to {@link SharedPrivateViewingRoom}
+   */
+  sharedPrivateViewingRoom = "sharedPrivateViewingRoom",
+
+  /**
    * Corresponds to {@link OsFilterSortSearch}
    */
   sortedColumn = "sortedColumn",
@@ -329,6 +341,11 @@ export enum OsActionType {
    * Corresponds to {@link StartedArtworkImport}
    */
   startedArtworkImport = "startedArtworkImport",
+
+  /**
+   * Corresponds to {@link StoppedSharingPrivateViewingRoom}
+   */
+  stoppedSharingPrivateViewingRoom = "stoppedSharingPrivateViewingRoom",
 
   /**
    * Corresponds to {@link ToggledDistributionSync}
