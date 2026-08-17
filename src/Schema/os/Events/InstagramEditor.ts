@@ -167,7 +167,11 @@ export interface OsClickedAspectRatio {
 }
 
 /**
- * A partner clicks "Cancel" or "Continue" in the Instagram post publish confirmation modal.
+ * A partner clicks "Cancel" or "Continue" in a publish confirmation modal.
+ *
+ * Shared across surfaces rather than Instagram-only: the Private Viewing Room
+ * editor sends it from its "Share without a passcode?" confirmation, which is
+ * why `context_page_owner_type` accepts any {@link OsOwnerType}.
  *
  * This schema describes events sent to Segment from [[OsClickedPublishConfirmation]]
  *
@@ -194,7 +198,7 @@ export interface OsClickedAspectRatio {
 export interface OsClickedPublishConfirmation {
   action: OsActionType.clickedPublishConfirmation
   context_module: OsContextModule.publishConfirmationModal
-  context_page_owner_type: OsOwnerType.studioInstagram
+  context_page_owner_type: OsOwnerType
   value: "cancel" | "continue"
 }
 
