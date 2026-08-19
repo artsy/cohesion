@@ -1,3 +1,15 @@
+# v4.393.0 (Wed Aug 19 2026)
+
+#### 🚀  Enhancement
+
+- feat: add recentSearchesRail, trendingArtworksRail and trendingSearches context modules [#740](https://github.com/artsy/cohesion/pull/740) ([@evaschilken](https://github.com/evaschilken))
+
+#### Authors: 1
+
+- Eva Schilken ([@evaschilken](https://github.com/evaschilken))
+
+---
+
 # v4.392.0 (Mon Aug 17 2026)
 
 #### 🚀  Enhancement
