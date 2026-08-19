@@ -233,6 +233,7 @@ export enum ContextModule {
   recentlySavedRail = "recentlySavedRail",
   recentlyViewedRail = "recentlyViewedRail",
   recentPriceRanges = "recentPriceRanges",
+  recentSearchesRail = "recentSearchesRail",
   recommendedArtistsRail = "recommendedArtistsRail",
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
   relatedArticles = "relatedArticles",
@@ -264,7 +265,9 @@ export enum ContextModule {
   topTab = "topTab",
   topWorksRail = "topWorksRail",
   trendingArtistsRail = "trendingArtistsRail",
+  trendingArtworksRail = "trendingArtworksRail",
   trendingLots = "trendingLots",
+  trendingSearches = "trendingSearches",
   troveArtworksRail = "troveArtworksRail",
   upcomingAuctions = "upcomingAuctions",
   upcomingAuctionsRail = "upcomingAuctionsRail",
@@ -386,6 +389,7 @@ export type AuthContextModule =
   | ContextModule.topTab
   | ContextModule.topWorksRail
   | ContextModule.trendingArtistsRail
+  | ContextModule.trendingArtworksRail
   | ContextModule.trendingLots
   | ContextModule.viewingRoom
   | ContextModule.worksByArtistsYouFollowRail
