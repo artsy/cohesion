@@ -40,6 +40,7 @@ export * from "./Values/Tab"
 
 export * from "./CMS/Events"
 export * from "./CMS/Events/AnalyticsPage"
+export * from "./CMS/Events/ArtistFlow"
 export * from "./CMS/Events/ArtworkFilter"
 export * from "./CMS/Events/BatchImportFlow"
 export * from "./CMS/Events/BulkEditFlow"

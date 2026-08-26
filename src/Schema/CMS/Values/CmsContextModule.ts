@@ -6,6 +6,8 @@
  */
 export enum CmsContextModule {
   addArtworkToShow = "Add artwork to show",
+  artistList = "artistList",
+  artistShow = "artistShow",
   analyticsAudience = "analyticsAudience",
   analyticsInquiries = "analyticsInquiries",
   analyticsMostViewed = "analyticsMostViewed",
