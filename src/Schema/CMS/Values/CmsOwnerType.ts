@@ -4,6 +4,7 @@
  * @packageDocumentation
  */
 export enum CmsOwnerType {
+  artist = "artist",
   artwork = "artwork",
   analytics = "analytics",
   bulkEdit = "bulkEdit",

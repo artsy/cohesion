@@ -1,4 +1,5 @@
 import { CmsAnalyticsPage } from "./AnalyticsPage"
+import { CmsArtistFlow } from "./ArtistFlow"
 import { CmsArtworkFilter } from "./ArtworkFilter"
 import { CmsArtworkTemplatesPage } from "./ArtworkTemplatesPage"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
@@ -17,6 +18,7 @@ import { CmsUploadArtworkFlow } from "./UploadArtworkFlow"
  */
 export type CmsEvent =
   | CmsAnalyticsPage
+  | CmsArtistFlow
   | CmsArtworkFilter
   | CmsArtworkTemplatesPage
   | CmsBulkEditFlow
@@ -73,6 +75,11 @@ export enum CmsActionType {
    * Corresponds to {@link CmsArtworkTemplatesPage}
    */
   clickedArtworkNavigationTab = "clickedArtworkNavigationTab",
+
+  /**
+   * Corresponds to {@link CmsClickedFeaturedInEditorialBadge}
+   */
+  clickedFeaturedInEditorialBadge = "clickedFeaturedInEditorialBadge",
 
   /**
    * Corresponds to {@link CmsAnalytics}
