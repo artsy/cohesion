@@ -1,3 +1,15 @@
+# v4.395.0 (Fri Aug 28 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add new click events for artist feature badges [#741](https://github.com/artsy/cohesion/pull/741) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.394.0 (Fri Aug 28 2026)
 
 #### 🚀  Enhancement
