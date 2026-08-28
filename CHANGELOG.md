@@ -1,3 +1,15 @@
+# v4.394.0 (Fri Aug 28 2026)
+
+#### 🚀  Enhancement
+
+- feat: add suggestedFilters context module [#742](https://github.com/artsy/cohesion/pull/742) ([@egdbear](https://github.com/egdbear))
+
+#### Authors: 1
+
+- Dejan ([@egdbear](https://github.com/egdbear))
+
+---
+
 # v4.393.0 (Wed Aug 19 2026)
 
 #### 🚀  Enhancement
