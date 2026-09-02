@@ -184,6 +184,7 @@ export interface ClickedArtistSeriesGroup extends ClickedEntityGroup {
  */
 export interface ClickedArtworkGroup extends ClickedEntityGroup {
   action: ActionType.clickedArtworkGroup
+  has_curator_note?: boolean
   signal_label?: string
   signal_lot_watcher_count?: number
   signal_bid_count?: number
@@ -722,6 +723,7 @@ export interface ClickedMainArtworkGrid {
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id: string
   destination_page_owner_slug: string
+  has_curator_note?: boolean
   type: "thumbnail" | "immersive"
   position?: number
   sort?: string
@@ -729,6 +731,35 @@ export interface ClickedMainArtworkGrid {
   signal_lot_watcher_count?: number
   signal_bid_count?: number
   label?: string
+}
+
+/**
+ * A user clicks a curator's note shown on an artwork within a marketing collection
+ * (opens a dialog with the full note). Web.
+ *
+ * This schema describes events sent to Segment from [[clickedCuratorNote]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedCuratorNote",
+ *    context_module: "artworkGrid",
+ *    context_page_owner_type: "collection",
+ *    context_page_owner_id: "5f80bfefe8d808000ea212c1",
+ *    context_page_owner_slug: "curators-picks-emerging",
+ *    artwork_id: "53188b0d8b3b8192bb0005ae",
+ *    artwork_slug: "damien-hirst-anatomy-of-an-angel"
+ *  }
+ * ```
+ */
+export interface ClickedCuratorNote {
+  action: ActionType.clickedCuratorNote
+  artwork_id?: string
+  artwork_slug?: string
+  context_module: ContextModule
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
 }
 
 /**
