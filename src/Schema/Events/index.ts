@@ -252,6 +252,7 @@ import {
   SearchedPriceDatabase,
   SearchedWithNoResults,
   SearchedWithResults,
+  SearchedWithSuggestedFilter,
   SelectedItemFromAddressAutoCompletion,
   SelectedItemFromPriceDatabaseSearch,
   SelectedItemFromSearch,
@@ -513,6 +514,7 @@ export type Event =
   | SearchedPriceDatabase
   | SearchedWithNoResults
   | SearchedWithResults
+  | SearchedWithSuggestedFilter
   | SelectedItemFromAddressAutoCompletion
   | SelectedItemFromPriceDatabaseSearch
   | SelectedItemFromSearch
@@ -1439,6 +1441,10 @@ export enum ActionType {
    * Corresponds to {@link SearchedWithResults}
    */
   searchedWithResults = "searchedWithResults",
+  /**
+   * Corresponds to {@link SearchedWithSuggestedFilter}
+   */
+  searchedWithSuggestedFilter = "searchedWithSuggestedFilter",
   /**
    * Corresponds to {@link SelectArtistFromSearch}
    */

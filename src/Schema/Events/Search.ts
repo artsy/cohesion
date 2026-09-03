@@ -157,6 +157,33 @@ export interface SearchedWithResults {
 }
 
 /**
+ * A user is shown a suggested filter row for what they typed into search
+ *
+ * This schema describes events sent to Segment from [[searchedWithSuggestedFilter]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "searchedWithSuggestedFilter",
+ *    context_module: "suggestedFilters",
+ *    context_owner_type: "home",
+ *    filters: "{\"additionalGeneIDs\":[\"prints\"],\"priceRange\":\"*-5000\"}",
+ *    query: "warhol prints under 5000"
+ *  }
+ * ```
+ */
+export interface SearchedWithSuggestedFilter {
+  action: ActionType.searchedWithSuggestedFilter
+  context_module: ContextModule
+  context_owner_type: PageOwnerType
+  context_owner_id?: string
+  context_owner_slug?: string
+  /** The filters the query was parsed into, JSON encoded */
+  filters: string
+  query: string
+}
+
+/**
  * A user queries the Artsy Price Database, including the artist_id, string queried, and applied filters
  *
  * This schema describes events sent to Segment from [[searchedPriceDatabase]]
