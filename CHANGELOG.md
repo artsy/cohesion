@@ -1,3 +1,15 @@
+# v4.396.0 (Thu Sep 03 2026)
+
+#### 🚀  Enhancement
+
+- feat: add suggestedFilters tracking [#743](https://github.com/artsy/cohesion/pull/743) ([@egdbear](https://github.com/egdbear))
+
+#### Authors: 1
+
+- Dejan ([@egdbear](https://github.com/egdbear))
+
+---
+
 # v4.395.0 (Fri Aug 28 2026)
 
 #### 🚀  Enhancement
