@@ -73,7 +73,8 @@ export interface DeletedSavedSearch {
 }
 
 /**
- * User taps on a suggested saved search pill
+ * User taps on a suggested filter pill, either while creating an alert or from
+ * the suggested filter row in search
  *
  * This schema describes events sent to Segment from [[selectedSuggestedFilter]]
  *
@@ -85,9 +86,23 @@ export interface DeletedSavedSearch {
  *    subject: "additionalGeneIDs",
  *  }
  * ```
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "selectedSuggestedFilter",
+ *    context_module: "suggestedFilters",
+ *    filters: "{\"additionalGeneIDs\":[\"prints\"],\"priceRange\":\"*-5000\"}",
+ *    query: "warhol prints under 5000"
+ *  }
+ * ```
  */
 export interface SelectedSuggestedFilter {
   action: ActionType.selectedSuggestedFilter
-  context_module: "createAlert" | "editAlert"
+  context_module: "createAlert" | "editAlert" | "suggestedFilters"
   subject?: string
+  /** Search only: the filters the query was parsed into, JSON encoded */
+  filters?: string
+  /** Search only: what the user typed */
+  query?: string
 }
