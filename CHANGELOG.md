@@ -1,3 +1,15 @@
+# v4.397.0 (Fri Sep 04 2026)
+
+#### 🚀  Enhancement
+
+- feat: add Artsy Lens image search events [#744](https://github.com/artsy/cohesion/pull/744) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.396.0 (Thu Sep 03 2026)
 
 #### 🚀  Enhancement
