@@ -157,6 +157,58 @@ export interface SearchedWithResults {
 }
 
 /**
+ * A user searches by image via Artsy Lens and is shown a grid of visually similar
+ * artworks. `photo_source` records whether the photo was taken with the camera or
+ * picked from the photo library.
+ *
+ * Unlike [[searchedWithResults]] there is no `query`, and there is no
+ * `context_module`: the search is initiated by taking a photo rather than from a
+ * module on a page.
+ *
+ * This schema describes events sent to Segment from [[searchedByImageWithResults]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "searchedByImageWithResults",
+ *    context_owner_type: "searchByImage",
+ *    photo_source: "camera"
+ *  }
+ * ```
+ */
+export interface SearchedByImageWithResults {
+  action: ActionType.searchedByImageWithResults
+  context_owner_type: OwnerType.searchByImage
+  /** Where the photo the user searched with came from */
+  photo_source: "camera" | "photo_library"
+}
+
+/**
+ * A user searches by image via Artsy Lens and no visually similar artworks are found.
+ *
+ * Unlike [[searchedWithNoResults]] there is no `query`, and there is no
+ * `context_module`: the search is initiated by taking a photo rather than from a
+ * module on a page.
+ *
+ * This schema describes events sent to Segment from [[searchedByImageWithNoResults]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "searchedByImageWithNoResults",
+ *    context_owner_type: "searchByImage",
+ *    photo_source: "photo_library"
+ *  }
+ * ```
+ */
+export interface SearchedByImageWithNoResults {
+  action: ActionType.searchedByImageWithNoResults
+  context_owner_type: OwnerType.searchByImage
+  /** Where the photo the user searched with came from */
+  photo_source: "camera" | "photo_library"
+}
+
+/**
  * A user is shown a suggested filter row for what they typed into search
  *
  * This schema describes events sent to Segment from [[searchedWithSuggestedFilter]]

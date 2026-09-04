@@ -249,6 +249,8 @@ import {
   FocusedOnPriceDatabaseSearchInput,
   FocusedOnSearchInput,
   PastedIntoSearchInput,
+  SearchedByImageWithNoResults,
+  SearchedByImageWithResults,
   SearchedPriceDatabase,
   SearchedWithNoResults,
   SearchedWithResults,
@@ -303,6 +305,7 @@ import {
   TappedOrderArtworkImage,
   TappedPartnerCard,
   TappedPromoSpace,
+  TappedSearchByImage,
   TappedSeeFewerWorks,
   TappedSell,
   TappedSellArtwork,
@@ -511,6 +514,8 @@ export type Event =
   | SavedPaymentMethodViewed
   | SavedPriceRange
   | Screen
+  | SearchedByImageWithNoResults
+  | SearchedByImageWithResults
   | SearchedPriceDatabase
   | SearchedWithNoResults
   | SearchedWithResults
@@ -599,6 +604,7 @@ export type Event =
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
   | TappedRequestPriceEstimate
+  | TappedSearchByImage
   | TappedSeeFewerWorks
   | TappedSell
   | TappedSellArtwork
@@ -1430,6 +1436,14 @@ export enum ActionType {
    */
   sentContent = "sentContent",
   /**
+   * Corresponds to {@link SearchedByImageWithNoResults}
+   */
+  searchedByImageWithNoResults = "searchedByImageWithNoResults",
+  /**
+   * Corresponds to {@link SearchedByImageWithResults}
+   */
+  searchedByImageWithResults = "searchedByImageWithResults",
+  /**
    * Corresponds to {@link SearchedPriceDatabase}
    */
   searchedPriceDatabase = "searchedPriceDatabase",
@@ -1810,6 +1824,10 @@ export enum ActionType {
    * Corresponds to {@link TappedRewind}
    */
   tappedRewind = "tappedRewind",
+  /**
+   * Corresponds to {@link TappedSearchByImage}
+   */
+  tappedSearchByImage = "tappedSearchByImage",
   /**
    * Corresponds to {@link TappedConfirmSeeFewerWorks}
    */
