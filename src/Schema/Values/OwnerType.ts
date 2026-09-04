@@ -141,6 +141,7 @@ export enum OwnerType {
   savesAndFollows = "savesAndFollows",
   savesInfoModal = "savesInfoModal",
   search = "search",
+  searchByImage = "searchByImage",
   sell = "sell",
   sendOffers = "sendOffers",
   settings = "settings",
@@ -296,6 +297,7 @@ export type ScreenOwnerType =
   | OwnerType.savesAndFollows
   | OwnerType.savesInfoModal
   | OwnerType.search
+  | OwnerType.searchByImage
   | OwnerType.sell
   | OwnerType.settings
   | OwnerType.show
@@ -383,6 +385,7 @@ export type PageOwnerType =
   | OwnerType.savedSearches
   | OwnerType.saves
   | OwnerType.search
+  | OwnerType.searchByImage
   | OwnerType.sendOffers
   | OwnerType.show
   | OwnerType.shows

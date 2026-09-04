@@ -1527,6 +1527,32 @@ export interface TappedGlobalSearchBar {
 }
 
 /**
+ * A user taps an entry point into Artsy Lens, the image search flow, and is taken
+ * to the camera. `type` names the entry point that was tapped.
+ *
+ * This schema describes events sent to Segment from [[tappedSearchByImage]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedSearchByImage",
+ *    context_module: "header",
+ *    context_screen_owner_type: "home",
+ *    destination_screen_owner_type: "searchByImage",
+ *    type: "search_input_icon"
+ *  }
+ * ```
+ */
+export interface TappedSearchByImage {
+  action: ActionType.tappedSearchByImage
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: OwnerType.searchByImage
+  /** The entry point that was tapped */
+  type: "search_input_icon" | "search_overlay_button"
+}
+
+/**
  * A user taps a grouping of navigation pills on App
  *
  * This schema describes events sent to Segment from [[tappedNavigationPillsGroup]]
