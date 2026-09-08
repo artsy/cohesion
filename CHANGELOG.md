@@ -1,3 +1,15 @@
+# v4.398.0 (Tue Sep 08 2026)
+
+#### 🚀  Enhancement
+
+- chore: Allow Duplicate functionality to be tracked in ArtOS [#745](https://github.com/artsy/cohesion/pull/745) ([@lidimayra](https://github.com/lidimayra))
+
+#### Authors: 1
+
+- Lidiane T ([@lidimayra](https://github.com/lidimayra))
+
+---
+
 # v4.397.0 (Fri Sep 04 2026)
 
 #### 🚀  Enhancement
