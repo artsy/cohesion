@@ -333,7 +333,7 @@ export interface OsClickedActionsDropdown {
    * Top-bar "Open in Studio": "Tearsheet" | "Checklist" | "Instagram Post" | "Mailchimp Campaign"
    * Top-bar "More": "Delete"
    * Row/context menu only: "Remove from Artsy" | "Move to Collection" | "Remove from Collection" |
-   *   "Convert to Edition Set" | "Edit Edition Set" | "Convert to Unique"
+   *   "Convert to Edition Set" | "Edit Edition Set" | "Convert to Unique" | "Duplicate"
    * Distribution: "Distribute to Artsy"
    */
   value:
@@ -345,6 +345,7 @@ export interface OsClickedActionsDropdown {
     | "Convert to Unique"
     | "Delete"
     | "Distribute to Artsy"
+    | "Duplicate"
     | "Edit Edition Set"
     | "Instagram Post"
     | "Mailchimp Campaign"
