@@ -1,3 +1,15 @@
+# v4.399.0 (Wed Sep 09 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add artworkEditDrawer context module and clickedEditArtworkButton event [#746](https://github.com/artsy/cohesion/pull/746) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.398.0 (Tue Sep 08 2026)
 
 #### 🚀  Enhancement
