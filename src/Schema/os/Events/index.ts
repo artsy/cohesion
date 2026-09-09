@@ -147,6 +147,11 @@ export enum OsActionType {
   clickedConnectModal = "clickedConnectModal",
 
   /**
+   * Corresponds to {@link OsClickedEditArtworkButton}
+   */
+  clickedEditArtworkButton = "clickedEditArtworkButton",
+
+  /**
    * Corresponds to {@link OsInventoryTable}
    */
   clickedEditionSetRow = "clickedEditionSetRow",

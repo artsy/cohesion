@@ -56,9 +56,34 @@ export interface OsClickedEditionSetRow {
 }
 
 /**
- * A partner edits a field inline in the inventory table.
+ * A partner clicks the "Edit artwork" button on an inventory table row to open
+ * the Edit Artwork drawer.
+ *
+ * This schema describes events sent to Segment from [[OsClickedEditArtworkButton]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedEditArtworkButton",
+ *   context_module: "artworkEditDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123"
+ * }
+ * ```
+ */
+export interface OsClickedEditArtworkButton {
+  action: OsActionType.clickedEditArtworkButton
+  context_module: OsContextModule.artworkEditDrawer
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+}
+
+/**
+ * A partner edits a field inline in the inventory table, or in the Edit Artwork
+ * drawer opened from a table row.
  * Fires on mutation success (not on the toast render).
- * All field edits share this single event; use `field` to distinguish them.
+ * All field edits share this single event; use `field` to distinguish them, and
+ * `context_module` to distinguish which surface the edit was made from.
  *
  * This schema describes events sent to Segment from [[OsEditedArtworkField]]
  *
@@ -101,10 +126,25 @@ export interface OsClickedEditionSetRow {
  *   matched_id: "artist-internal-id"
  * }
  * ```
+ *
+ * @example Edited from the Edit Artwork drawer
+ * ```
+ * {
+ *   action: "editedArtworkField",
+ *   context_module: "artworkEditDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   field: "title",
+ *   old_value: "Untitled",
+ *   new_value: "Blue"
+ * }
+ * ```
  */
 export interface OsEditedArtworkField {
   action: OsActionType.editedArtworkField
-  context_module: OsContextModule.artworkTable
+  context_module:
+    | OsContextModule.artworkTable
+    | OsContextModule.artworkEditDrawer
   context_page_owner_type: OsOwnerType
   artwork_id: string
   /** Present only for edition-set variant rows in the Artsy CMS sub-row */
@@ -438,6 +478,7 @@ export type OsInventoryTable =
   | OsAddedLocation
   | OsClickedActionsDropdown
   | OsClickedArtworkRow
+  | OsClickedEditArtworkButton
   | OsClickedEditionSetRow
   | OsClickedImagesModal
   | OsEditedArtworkField
