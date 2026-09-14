@@ -11,4 +11,5 @@ export enum CmsOwnerType {
   batchImport = "batchImport",
   batchImportArtistMatching = "batchImportArtistMatching",
   settings = "settings",
+  home = "home",
 }
