@@ -1,3 +1,15 @@
+# v4.400.0 (Tue Sep 15 2026)
+
+#### 🚀  Enhancement
+
+- feat: Adds event schema for clicking actionable insights cms [#747](https://github.com/artsy/cohesion/pull/747) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.399.0 (Wed Sep 09 2026)
 
 #### 🚀  Enhancement
