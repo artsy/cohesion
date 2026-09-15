@@ -5,6 +5,7 @@ import { CmsArtworkTemplatesPage } from "./ArtworkTemplatesPage"
 import { CmsBatchImportFlow } from "./BatchImportFlow"
 import { CmsBulkEditFlow } from "./BulkEditFlow"
 import { CmsCompletenessScoreFlow } from "./CompletenessScoreFlow"
+import { CmsHomePage } from "./HomePage"
 import { CmsOnboardingFlow } from "./OnboardingFlow"
 import { CmsQuickReplyFlow } from "./QuickReplyFlow"
 import { CmsSettingsFlow } from "./SettingsFlow"
@@ -24,6 +25,7 @@ export type CmsEvent =
   | CmsBulkEditFlow
   | CmsBatchImportFlow
   | CmsCompletenessScoreFlow
+  | CmsHomePage
   | CmsOnboardingFlow
   | CmsUploadArtworkFlow
   | CmsQuickReplyFlow
@@ -75,6 +77,11 @@ export enum CmsActionType {
    * Corresponds to {@link CmsArtworkTemplatesPage}
    */
   clickedArtworkNavigationTab = "clickedArtworkNavigationTab",
+
+  /**
+   * Corresponds to {@link CmsHomePage}
+   */
+  clickedActionableInsight = "clickedActionableInsight",
 
   /**
    * Corresponds to {@link CmsClickedFeaturedInEditorialBadge}

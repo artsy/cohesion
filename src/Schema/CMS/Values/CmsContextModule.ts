@@ -5,6 +5,7 @@
  * @packageDocumentation
  */
 export enum CmsContextModule {
+  actionableInsights = "actionableInsights",
   addArtworkToShow = "Add artwork to show",
   artistList = "artistList",
   artistShow = "artistShow",
