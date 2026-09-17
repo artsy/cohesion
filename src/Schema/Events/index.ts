@@ -6,6 +6,12 @@ import {
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  RatedArtAssistantAnswer,
+  SentArtAssistantPrompt,
+  TappedArtAssistantArtwork,
+  TappedArtAssistantSuggestion,
+} from "./ArtAssistant"
+import {
   AddedArtworkToArtworkList,
   CreatedArtworkList,
   DeletedArtworkList,
@@ -343,6 +349,10 @@ export type Event =
   | AddedToAlbum
   | AddressAutoCompletionResult
   | AddToCalendar
+  | RatedArtAssistantAnswer
+  | SentArtAssistantPrompt
+  | TappedArtAssistantArtwork
+  | TappedArtAssistantSuggestion
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
@@ -2024,4 +2034,20 @@ export enum ActionType {
    * Corresponds to {@link ClickedSaveBrandKit}
    */
   clickedSaveBrandKit = "clickedSaveBrandKit",
+  /**
+   * Corresponds to {@link SentArtAssistantPrompt}
+   */
+  sentArtAssistantPrompt = "sentArtAssistantPrompt",
+  /**
+   * Corresponds to {@link TappedArtAssistantSuggestion}
+   */
+  tappedArtAssistantSuggestion = "tappedArtAssistantSuggestion",
+  /**
+   * Corresponds to {@link TappedArtAssistantArtwork}
+   */
+  tappedArtAssistantArtwork = "tappedArtAssistantArtwork",
+  /**
+   * Corresponds to {@link RatedArtAssistantAnswer}
+   */
+  ratedArtAssistantAnswer = "ratedArtAssistantAnswer",
 }

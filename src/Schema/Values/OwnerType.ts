@@ -32,6 +32,7 @@ export enum OwnerType {
   alert = "alert",
   alertsInfoModal = "alertsInfoModal",
   allArtistSeries = "allArtistSeries",
+  artAssistant = "artAssistant",
   article = "article",
   articles = "articles",
   artist = "artist",
@@ -212,6 +213,7 @@ export type ScreenOwnerType =
   | OwnerType.alert
   | OwnerType.alertsInfoModal
   | OwnerType.allArtistSeries
+  | OwnerType.artAssistant
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
