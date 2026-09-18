@@ -1,3 +1,15 @@
+# v4.402.0 (Fri Sep 18 2026)
+
+#### 🚀  Enhancement
+
+- feat: add artist instagram tracking events [#750](https://github.com/artsy/cohesion/pull/750) ([@rquartararo](https://github.com/rquartararo))
+
+#### Authors: 1
+
+- Rachel Quartararo ([@rquartararo](https://github.com/rquartararo))
+
+---
+
 # v4.401.0 (Fri Sep 18 2026)
 
 #### 🚀  Enhancement
