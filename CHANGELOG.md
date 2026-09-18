@@ -1,3 +1,15 @@
+# v4.401.0 (Fri Sep 18 2026)
+
+#### 🚀  Enhancement
+
+- feat: add Art Assistant events [#749](https://github.com/artsy/cohesion/pull/749) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.400.0 (Tue Sep 15 2026)
 
 #### 🚀  Enhancement
