@@ -131,6 +131,7 @@ import {
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
+  ClickedSocialPost,
   ClickedStartPartnerOffer,
   ClickedTermsAndConditions,
   ClickedUpdateArtwork,
@@ -268,7 +269,6 @@ import {
 } from "./Search"
 import { DarkModeOptionUpdated } from "./Settings"
 import { ClickedOpenInNewTabButton, ClickedShareButton, Share } from "./Share"
-import { ClickedSocialPost } from "./Socials"
 import { SwipedInfiniteDiscoveryArtwork, SwipedUp } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
