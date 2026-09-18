@@ -47,7 +47,7 @@ export interface SentArtAssistantMessage {
   message?: string
   /** Client-generated id of this message */
   message_id: string
-  /** Zero-based position of this message within the conversation */
+  /** Zero-based index of this message among the user's messages in the conversation */
   message_index: number
   /** Whether the text came from a tapped suggestion or was typed by the user */
   type: "suggestion" | "typed"
