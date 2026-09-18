@@ -2830,7 +2830,7 @@ export interface ClickedImportFees {
  *    action: "clickedHeader",
  *    context_module: "artistHeader",
  *    context_page_owner_type: "artist" | "artistAuctionResults",
- *    subject: "artworks" | "auction results" | "about"
+ *    subject: "artworks" | "auction results" | "about" | "social"
  *  }
  *  ```
  */

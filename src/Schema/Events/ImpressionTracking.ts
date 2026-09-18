@@ -16,9 +16,9 @@ import { Platform } from "./MyCollection"
  *  @example
  *  ```
  *  {
- *    action: "rail_viewed",
+ *    action: "railViewed",
  *    context_screen: "home",
- *    context_module: "Home"
+ *    context_module: "recentSearchesRail"
  *    position_y: 2, // optional
  *  }
  * ```

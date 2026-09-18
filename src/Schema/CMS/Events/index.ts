@@ -134,6 +134,11 @@ export enum CmsActionType {
   editedLocation = "editedLocation",
 
   /**
+   * Corresponds to {@link CmsEnteredArtistSocialHandle}
+   */
+  enteredArtistSocialHandle = "enteredArtistSocialHandle",
+
+  /**
    * Corresponds to {@link CmsBulkEditFlow}
    */
   processingStarted = "processingStarted",

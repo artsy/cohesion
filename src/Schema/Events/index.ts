@@ -268,6 +268,7 @@ import {
 } from "./Search"
 import { DarkModeOptionUpdated } from "./Settings"
 import { ClickedOpenInNewTabButton, ClickedShareButton, Share } from "./Share"
+import { ClickedSocialPost } from "./Socials"
 import { SwipedInfiniteDiscoveryArtwork, SwipedUp } from "./Swipe"
 import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
@@ -455,6 +456,7 @@ export type Event =
   | ClickedShowGroup
   | ClickedShowMore
   | ClickedSnooze
+  | ClickedSocialPost
   | ClickedStartPartnerOffer
   | ClickedTermsAndConditions
   | ClickedUpdateArtwork
@@ -1108,6 +1110,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedUploadArtwork}
    */
   clickedUploadArtwork = "clickedUploadArtwork",
+  /**
+   * Corresponds to {@link ClickedSocialPost}
+   */
+  clickedSocialPost = "clickedSocialPost",
   /**
    * Corresponds to {@link ClickedSponsorLink}
    */
