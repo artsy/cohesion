@@ -6,6 +6,11 @@ import {
 } from "./ActivityPanel"
 import { AddToCalendar } from "./AddToCalendar"
 import {
+  ArtAssistantTurnFailed,
+  ReceivedArtAssistantResponse,
+  SentArtAssistantMessage,
+} from "./ArtAssistant"
+import {
   AddedArtworkToArtworkList,
   CreatedArtworkList,
   DeletedArtworkList,
@@ -268,6 +273,9 @@ import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   Tapped3Dots,
   TappedActivityGroup,
+  TappedArtAssistant,
+  TappedArtAssistantNewChat,
+  TappedArtAssistantSuggestion,
   TappedArticleGroup,
   TappedArticleShare,
   TappedArtistGroup,
@@ -343,6 +351,7 @@ export type Event =
   | AddedToAlbum
   | AddressAutoCompletionResult
   | AddToCalendar
+  | ArtAssistantTurnFailed
   | ArtworkDetailsCompleted
   | AuctionPageView
   | AuctionResultsFilterParamsChanged
@@ -504,6 +513,7 @@ export type Event =
   | PriceDatabaseFilterParamsChanged
   | PromptForReview
   | RailViewed
+  | ReceivedArtAssistantResponse
   | RegistrationPageView
   | RegistrationSubmitted
   | ResetYourPassword
@@ -531,6 +541,7 @@ export type Event =
   | SendOffersErrorMessage
   | SendOffersModalViewed
   | SentConsignmentInquiry
+  | SentArtAssistantMessage
   | SentContent
   | SentConversationMessage
   | SentRequestPriceEstimate
@@ -548,6 +559,9 @@ export type Event =
   | Tapped3Dots
   | TappedActivityGroup
   | TappedAlertsGroup
+  | TappedArtAssistant
+  | TappedArtAssistantNewChat
+  | TappedArtAssistantSuggestion
   | TappedArticleGroup
   | TappedArticleShare
   | TappedArtistGroup
@@ -1432,6 +1446,18 @@ export enum ActionType {
    */
   selectedSearchSuggestionQuickNavigationItem = "selectedSearchSuggestionQuickNavigationItem",
   /**
+   * Corresponds to {@link ArtAssistantTurnFailed}
+   */
+  artAssistantTurnFailed = "artAssistantTurnFailed",
+  /**
+   * Corresponds to {@link ReceivedArtAssistantResponse}
+   */
+  receivedArtAssistantResponse = "receivedArtAssistantResponse",
+  /**
+   * Corresponds to {@link SentArtAssistantMessage}
+   */
+  sentArtAssistantMessage = "sentArtAssistantMessage",
+  /**
    * Corresponds to {@link SentContent}
    */
   sentContent = "sentContent",
@@ -1584,6 +1610,18 @@ export enum ActionType {
    * Corresponds to {@link TappedAlertsGroup}
    */
   tappedAlertsGroup = "tappedAlertsGroup",
+  /**
+   * Corresponds to {@link TappedArtAssistant}
+   */
+  tappedArtAssistant = "tappedArtAssistant",
+  /**
+   * Corresponds to {@link TappedArtAssistantNewChat}
+   */
+  tappedArtAssistantNewChat = "tappedArtAssistantNewChat",
+  /**
+   * Corresponds to {@link TappedArtAssistantSuggestion}
+   */
+  tappedArtAssistantSuggestion = "tappedArtAssistantSuggestion",
   /**
    * Corresponds to {@link TappedArticleGroup}
    */

@@ -34,6 +34,92 @@ export interface Tapped3Dots {
 }
 
 /**
+ * A user taps an entry point into Art Assistant, the conversational search flow, and is
+ * taken to the chat screen. `type` names the affordance that was tapped and
+ * `context_module` names where that affordance lives.
+ *
+ * This schema describes events sent to Segment from [[tappedArtAssistant]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtAssistant",
+ *    context_module: "header",
+ *    context_screen_owner_type: "search",
+ *    destination_screen_owner_type: "artAssistant",
+ *    type: "icon"
+ *  }
+ * ```
+ */
+export interface TappedArtAssistant {
+  action: ActionType.tappedArtAssistant
+  context_module: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  destination_screen_owner_type: OwnerType.artAssistant
+  /** The affordance that was tapped */
+  type: "button" | "icon"
+}
+
+/**
+ * A user taps one of the suggested prompts Art Assistant offers before the first message.
+ * Tapping fills the composer with that text, so a suggestion that is tapped but never sent
+ * shows up here without a matching [[sentArtAssistantMessage]].
+ *
+ * `suggestion` is app copy rather than user content, so it is always sent.
+ *
+ * This schema describes events sent to Segment from [[tappedArtAssistantSuggestion]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtAssistantSuggestion",
+ *    context_module: "artAssistantSuggestions",
+ *    context_screen_owner_type: "artAssistant",
+ *    position: 1,
+ *    suggestion: "Large black and white paintings under $5K"
+ *  }
+ * ```
+ */
+export interface TappedArtAssistantSuggestion {
+  action: ActionType.tappedArtAssistantSuggestion
+  context_module: ContextModule.artAssistantSuggestions
+  context_screen_owner_type: OwnerType.artAssistant
+  /** Zero-based position of the suggestion in the list */
+  position: number
+  /** The suggestion copy that was tapped */
+  suggestion: string
+}
+
+/**
+ * A user discards an Art Assistant chat and starts a new one, which is also a signal that
+ * the conversation so far did not get them what they wanted. It fires when the user
+ * confirms the prompt, not when they open it, and `message_count` counts the user and
+ * assistant messages being discarded.
+ *
+ * This schema describes events sent to Segment from [[tappedArtAssistantNewChat]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtAssistantNewChat",
+ *    context_module: "artAssistant",
+ *    context_screen_owner_type: "artAssistant",
+ *    conversation_id: "6f1b8b0e-1f27-4a0e-9d6f-2c2f2a3d1f45",
+ *    message_count: 4
+ *  }
+ * ```
+ */
+export interface TappedArtAssistantNewChat {
+  action: ActionType.tappedArtAssistantNewChat
+  context_module: ContextModule.artAssistant
+  context_screen_owner_type: OwnerType.artAssistant
+  /** Client-generated id of the conversation being discarded */
+  conversation_id: string
+  /** Number of user and assistant messages in the discarded conversation */
+  message_count: number
+}
+
+/**
  * A user taps a grouping of articles on iOS
  *
  *  This schema describes events sent to Segment from [[tappedArticleGroup]]
