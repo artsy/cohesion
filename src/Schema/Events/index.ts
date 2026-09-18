@@ -131,6 +131,7 @@ import {
   ClickedShowGroup,
   ClickedShowMore,
   ClickedSnooze,
+  ClickedSocialPost,
   ClickedStartPartnerOffer,
   ClickedTermsAndConditions,
   ClickedUpdateArtwork,
@@ -455,6 +456,7 @@ export type Event =
   | ClickedShowGroup
   | ClickedShowMore
   | ClickedSnooze
+  | ClickedSocialPost
   | ClickedStartPartnerOffer
   | ClickedTermsAndConditions
   | ClickedUpdateArtwork
@@ -1108,6 +1110,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedUploadArtwork}
    */
   clickedUploadArtwork = "clickedUploadArtwork",
+  /**
+   * Corresponds to {@link ClickedSocialPost}
+   */
+  clickedSocialPost = "clickedSocialPost",
   /**
    * Corresponds to {@link ClickedSponsorLink}
    */

@@ -261,6 +261,7 @@ export enum ContextModule {
   showTab = "showTab",
   similarToWorksYouSavedRail = "similarToWorksYouSavedRail",
   similarToWorksYouViewedRail = "similarToWorksYouViewedRail",
+  socialRail = "socialRail",
   standoutLots = "standoutLots",
   suggestedFilters = "suggestedFilters",
   tabBar = "tabBar",

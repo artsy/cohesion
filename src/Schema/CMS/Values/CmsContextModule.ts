@@ -8,6 +8,7 @@ export enum CmsContextModule {
   actionableInsights = "actionableInsights",
   addArtworkToShow = "Add artwork to show",
   artistList = "artistList",
+  artistOverviewSocials = "artistOverviewSocials",
   artistShow = "artistShow",
   analyticsAudience = "analyticsAudience",
   analyticsInquiries = "analyticsInquiries",

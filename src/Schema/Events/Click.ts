@@ -1519,6 +1519,40 @@ export interface ClickedExternalNewsSource {
 }
 
 /**
+ * A user clicks a post in the "Social" rail — today, an Instagram post on the artist
+ * overview page. The tile links out to the post on the network itself.
+ *
+ * This schema describes events sent to Segment from [[clickedSocialPost]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedSocialPost",
+ *    context_module: "socialRail",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
+ *    context_page_owner_slug: "damien-hirst",
+ *    destination_path: "https://www.instagram.com/p/C8xK1qLtY0z",
+ *    horizontal_slide_position: 2,
+ *    service: "instagram"
+ *  }
+ * ```
+ */
+export interface ClickedSocialPost {
+  action: ActionType.clickedSocialPost
+  context_module: ContextModule.socialRail
+  context_page_owner_type: PageOwnerType
+  context_page_owner_id?: string
+  context_page_owner_slug?: string
+  /** The post the tile links out to. Absent when the post has no permalink */
+  destination_path?: string
+  /** One-based position of the post in the rail */
+  horizontal_slide_position?: number
+  /** The network the post came from. Instagram is the only one we surface today */
+  service: "instagram"
+}
+
+/**
  * A user clicks on the sponsor of an article
  *
  * This schema describes events sent to Segment from [[clickedSponsorLink]]
@@ -2830,7 +2864,7 @@ export interface ClickedImportFees {
  *    action: "clickedHeader",
  *    context_module: "artistHeader",
  *    context_page_owner_type: "artist" | "artistAuctionResults",
- *    subject: "artworks" | "auction results" | "about"
+ *    subject: "artworks" | "auction results" | "about" | "social"
  *  }
  *  ```
  */
