@@ -57,10 +57,11 @@ export interface SentArtAssistantMessage {
  * Art Assistant finishes answering a message, with the final answer and any entities it
  * found. It fires once per turn, when the agent reports the turn complete.
  *
- * `duration_ms` and `time_to_first_token_ms` are measured on the client from the moment
- * the message was sent, so together they describe how long the user waited and how long
- * the agent worked before it started answering. `item_type` and `item_ids` describe the
- * entities shown alongside the answer — artworks today, other entity types later.
+ * `duration_ms` is measured on the client from the moment the message was sent, so it
+ * describes how long the user waited for the answer. `item_type` and `item_ids` describe
+ * the entities shown alongside the answer — artworks today, other entity types later.
+ * `item_type` is free text rather than an enum so the app can name a new entity type
+ * without a schema change; its values are the matching `OwnerType` names.
  *
  * `response` carries the agent's own words, so it is only populated while message content
  * tracking is enabled; the rest of the event is always sent. It holds the final answer
@@ -86,7 +87,6 @@ export interface SentArtAssistantMessage {
  *    prompt_message_id: "a12c9d3e-6a41-4a59-8c0b-5f9b0a1d2e77",
  *    response: "Here are a few large black and white paintings under $5,000.",
  *    stop_reason: "end_turn",
- *    time_to_first_token_ms: 6104,
  *    tool_call_count: 3
  *  }
  * ```
@@ -103,13 +103,12 @@ export interface ReceivedArtAssistantResponse {
   item_count: number
   /** Ids of the entities shown alongside the answer, in display order */
   item_ids: string[]
-  /** The type of entity shown alongside the answer, absent when the answer has none */
-  item_type?:
-    | OwnerType.artist
-    | OwnerType.artwork
-    | OwnerType.partner
-    | OwnerType.show
-    | OwnerType.viewingRoom
+  /**
+   * The type of entity shown alongside the answer, named after the matching `OwnerType`
+   * (`artwork`, `artist`, `partner`, `show`, `viewingRoom`, …). Absent when the answer
+   * has none.
+   */
+  item_type?: string
   /** Client-generated id of the assistant message holding the answer */
   message_id: string
   /** `message_id` of the [[sentArtAssistantMessage]] this answers */
@@ -118,8 +117,6 @@ export interface ReceivedArtAssistantResponse {
   response?: string
   /** Why the agent ended the turn, as reported by the server */
   stop_reason: string
-  /** Milliseconds from sending the message to the first streamed token of the answer */
-  time_to_first_token_ms?: number
   /** Number of tools the agent called while answering */
   tool_call_count: number
 }
