@@ -88,6 +88,7 @@ export enum ContextModule {
   bulkEditDrawer = "bulkEditDrawer",
   categoryRail = "categoryRail",
   cityGuideCard = "cityGuideCard",
+  cityGuideMapToggle = "cityGuideMapToggle",
   collectionCard = "collectionCard",
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",

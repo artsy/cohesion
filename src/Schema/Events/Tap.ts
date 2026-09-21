@@ -1121,6 +1121,101 @@ export interface TappedCreateAlert {
 }
 
 /**
+ * A user taps the "+"/save control on a show, fair, or custom stop to open the Add to
+ * Itinerary sheet, in City Guide
+ *
+ * This schema describes events sent to Segment from [[tappedAddToItinerary]]
+ *
+ *  @example Tapped from a show page, not a City Guide guide at all
+ *  ```
+ *  {
+ *    action: "tappedAddToItinerary",
+ *    context_module: "cityGuideCard",
+ *    context_screen_owner_type: "cityGuide",
+ *    context_screen_owner_slug: "london-united-kingdom",
+ *    destination_screen_owner_type: "show",
+ *    destination_screen_owner_id: "5f2c930b1ee0d500043b47dd",
+ *    is_curated_guide: false
+ *  }
+ * ```
+ *
+ *  @example Tapped from a stop row inside a curated guide — `context_screen_owner_id`/
+ *  `context_screen_owner_slug` are that guide's own id/slug
+ *  ```
+ *  {
+ *    action: "tappedAddToItinerary",
+ *    context_module: "cityGuideCard",
+ *    context_screen_owner_type: "cityGuideGuide",
+ *    context_screen_owner_id: "b0b1c2d3-e4f5-4a6b-8c9d-0e1f2a3b4c5d",
+ *    context_screen_owner_slug: "chill-vibes-only",
+ *    destination_screen_owner_type: "show",
+ *    destination_screen_owner_id: "5f2c930b1ee0d500043b47dd",
+ *    is_curated_guide: true
+ *  }
+ * ```
+ */
+export interface TappedAddToItinerary {
+  action: ActionType.tappedAddToItinerary
+  context_module?: ContextModule
+  /** The screen the tap happened on. When it's a curated guide's own stop list, this is
+   *  `cityGuideGuide` with `context_screen_owner_id`/`_slug` set to that guide. */
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type?: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+  /** Whether the row this tap came from belongs to a curated City Guide guide, rather than the
+   *  viewer's own personal itinerary or somewhere outside City Guide entirely (a show/fair
+   *  page, a custom stop screen, a saved list). */
+  is_curated_guide: boolean
+}
+
+/**
+ * A user taps "Add Full List" on a curated City Guide guide, to add every one of its stops
+ * to one or more of their own itineraries
+ *
+ * This schema describes events sent to Segment from [[tappedAddFullListToItinerary]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAddFullListToItinerary",
+ *    context_screen_owner_type: "cityGuideGuide",
+ *    context_screen_owner_id: "b0b1c2d3-e4f5-4a6b-8c9d-0e1f2a3b4c5d",
+ *    context_screen_owner_slug: "chill-vibes-only"
+ *  }
+ * ```
+ */
+export interface TappedAddFullListToItinerary {
+  action: ActionType.tappedAddFullListToItinerary
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}
+
+/**
+ * A user taps "Create New Itinerary" inside the Add to Itinerary sheet, in City Guide
+ *
+ * This schema describes events sent to Segment from [[tappedCreateItinerary]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCreateItinerary",
+ *    context_screen_owner_type: "cityGuide",
+ *    context_screen_owner_slug: "london-united-kingdom"
+ *  }
+ * ```
+ */
+export interface TappedCreateItinerary {
+  action: ActionType.tappedCreateItinerary
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}
+
+/**
  * A user taps "Bid" on an artwork page inside an Auction
  *
  * This schema describes events sent to Segment from [[tappedBid]]
