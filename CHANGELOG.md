@@ -1,3 +1,15 @@
+# v4.403.0 (Mon Sep 21 2026)
+
+#### 🚀  Enhancement
+
+- feat: add OwnerType.cityGuide for the City Guide home screen [#752](https://github.com/artsy/cohesion/pull/752) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.402.0 (Fri Sep 18 2026)
 
 #### 🚀  Enhancement
