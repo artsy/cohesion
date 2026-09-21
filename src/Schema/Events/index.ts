@@ -274,6 +274,8 @@ import { SaleScreenLoadComplete, Screen, TimeOnPage } from "./System"
 import {
   Tapped3Dots,
   TappedActivityGroup,
+  TappedAddFullListToItinerary,
+  TappedAddToItinerary,
   TappedArtAssistant,
   TappedArtAssistantNewChat,
   TappedArtAssistantSuggestion,
@@ -299,6 +301,7 @@ import {
   TappedConsignmentInquiry,
   TappedContactGallery,
   TappedCreateAlert,
+  TappedCreateItinerary,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -560,6 +563,8 @@ export type Event =
   | SwipedUp
   | Tapped3Dots
   | TappedActivityGroup
+  | TappedAddFullListToItinerary
+  | TappedAddToItinerary
   | TappedAlertsGroup
   | TappedArtAssistant
   | TappedArtAssistantNewChat
@@ -589,6 +594,7 @@ export type Event =
   | TappedConsignmentInquiry
   | TappedContactGallery
   | TappedCreateAlert
+  | TappedCreateItinerary
   | TappedEditedProfile
   | TappedExploreGroup
   | TappedExploreMyCollection
@@ -1613,6 +1619,14 @@ export enum ActionType {
    */
   tappedActivityGroup = "tappedActivityGroup",
   /**
+   * Corresponds to {@link TappedAddFullListToItinerary}
+   */
+  tappedAddFullListToItinerary = "tappedAddFullListToItinerary",
+  /**
+   * Corresponds to {@link TappedAddToItinerary}
+   */
+  tappedAddToItinerary = "tappedAddToItinerary",
+  /**
    * Corresponds to {@link TappedAlertsGroup}
    */
   tappedAlertsGroup = "tappedAlertsGroup",
@@ -1736,6 +1750,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCreateAlertHeader}
    */
   tappedCreateAlertHeader = "tappedCreateAlertHeader",
+  /**
+   * Corresponds to {@link TappedCreateItinerary}
+   */
+  tappedCreateItinerary = "tappedCreateItinerary",
   /**
    * Corresponds to {@link TappedEditedProfile}
    */

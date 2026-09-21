@@ -1121,6 +1121,79 @@ export interface TappedCreateAlert {
 }
 
 /**
+ * A user taps the "+"/save control on a show, fair, or custom stop to open the Add to
+ * Itinerary sheet, in City Guide
+ *
+ * This schema describes events sent to Segment from [[tappedAddToItinerary]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAddToItinerary",
+ *    context_module: "cityGuideCard",
+ *    context_screen_owner_type: "cityGuide",
+ *    context_screen_owner_slug: "london-united-kingdom",
+ *    destination_screen_owner_type: "show",
+ *    destination_screen_owner_id: "5f2c930b1ee0d500043b47dd"
+ *  }
+ * ```
+ */
+export interface TappedAddToItinerary {
+  action: ActionType.tappedAddToItinerary
+  context_module?: ContextModule
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  destination_screen_owner_type?: ScreenOwnerType
+  destination_screen_owner_id?: string
+  destination_screen_owner_slug?: string
+}
+
+/**
+ * A user taps "Add Full List" on a curated City Guide guide, to add every one of its stops
+ * to one or more of their own itineraries
+ *
+ * This schema describes events sent to Segment from [[tappedAddFullListToItinerary]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedAddFullListToItinerary",
+ *    context_screen_owner_type: "cityGuideGuide",
+ *    context_screen_owner_id: "b0b1c2d3-e4f5-4a6b-8c9d-0e1f2a3b4c5d",
+ *    context_screen_owner_slug: "chill-vibes-only"
+ *  }
+ * ```
+ */
+export interface TappedAddFullListToItinerary {
+  action: ActionType.tappedAddFullListToItinerary
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}
+
+/**
+ * A user taps "Create New Itinerary" inside the Add to Itinerary sheet, in City Guide
+ *
+ * This schema describes events sent to Segment from [[tappedCreateItinerary]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCreateItinerary",
+ *    context_screen_owner_type: "cityGuide",
+ *    context_screen_owner_slug: "london-united-kingdom"
+ *  }
+ * ```
+ */
+export interface TappedCreateItinerary {
+  action: ActionType.tappedCreateItinerary
+  context_screen_owner_type: ScreenOwnerType
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+}
+
+/**
  * A user taps "Bid" on an artwork page inside an Auction
  *
  * This schema describes events sent to Segment from [[tappedBid]]
