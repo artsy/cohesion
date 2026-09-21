@@ -2,7 +2,9 @@ import { OsContextModule } from "../../Values/OsContextModule"
 import { OsOwnerType } from "../../Values/OsOwnerType"
 import { OsActionType } from "../index"
 import {
+  OsAddedGeneratedArtworkDescription,
   OsClickedEditArtworkButton,
+  OsClickedWritingAssistant,
   OsEditedArtworkField,
   OsReorderedInventoryTableColumns,
 } from "../InventoryTable"
@@ -65,6 +67,44 @@ describe("Inventory Table events", () => {
       from_index: 4,
       new_order: ["title", "price", "artist", "medium", "dimensions"],
       to_index: 1,
+    })
+  })
+
+  it("OsClickedWritingAssistant serializes to the expected shape", () => {
+    const event: OsClickedWritingAssistant = {
+      action: OsActionType.clickedWritingAssistant,
+      artwork_id: "abc123",
+      context_module: OsContextModule.artworkTable,
+      context_page_owner_type: OsOwnerType.inventory,
+    }
+
+    expect(event).toEqual({
+      action: "clickedWritingAssistant",
+      artwork_id: "abc123",
+      context_module: "artworkTable",
+      context_page_owner_type: "inventory",
+    })
+  })
+
+  it("OsAddedGeneratedArtworkDescription serializes to the expected shape", () => {
+    const event: OsAddedGeneratedArtworkDescription = {
+      action: OsActionType.addedGeneratedArtworkDescription,
+      artwork_id: "abc123",
+      context_module: OsContextModule.writingAssistantDrawer,
+      context_page_owner_type: OsOwnerType.inventory,
+      document_count: 1,
+      regenerate_count: 2,
+      was_edited: true,
+    }
+
+    expect(event).toEqual({
+      action: "addedGeneratedArtworkDescription",
+      artwork_id: "abc123",
+      context_module: "writingAssistantDrawer",
+      context_page_owner_type: "inventory",
+      document_count: 1,
+      regenerate_count: 2,
+      was_edited: true,
     })
   })
 })

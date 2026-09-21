@@ -40,4 +40,5 @@ export enum OsContextModule {
   publishConfirmationModal = "publishConfirmationModal",
   sendConfirmationModal = "sendConfirmationModal",
   tableActions = "tableActions",
+  writingAssistantDrawer = "writingAssistantDrawer",
 }

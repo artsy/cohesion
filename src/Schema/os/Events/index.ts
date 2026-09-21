@@ -69,6 +69,11 @@ export enum OsActionType {
   /**
    * Corresponds to {@link OsInventoryTable}
    */
+  addedGeneratedArtworkDescription = "addedGeneratedArtworkDescription",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
   addedLocation = "addedLocation",
 
   /**
@@ -210,6 +215,11 @@ export enum OsActionType {
    * Corresponds to {@link OsInstagramEditor}
    */
   clickedUploadImageBank = "clickedUploadImageBank",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedWritingAssistant = "clickedWritingAssistant",
 
   /**
    * Corresponds to {@link CompletedArtworkDistribution}
