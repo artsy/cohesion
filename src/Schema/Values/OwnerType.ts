@@ -54,6 +54,7 @@ export enum OwnerType {
   basedOnYourRecentSaves = "basedOnYourRecentSaves",
   brandSettings = "brandSettings",
   category = "category",
+  cityGuide = "cityGuide",
   cityGuideGuide = "cityGuideGuide",
   cityGuideMap = "cityGuideMap",
   cityPicker = "cityPicker",
@@ -231,6 +232,7 @@ export type ScreenOwnerType =
   | OwnerType.authModal
   | OwnerType.basedOnYourRecentSaves
   | OwnerType.category
+  | OwnerType.cityGuide
   | OwnerType.cityGuideGuide
   | OwnerType.cityGuideMap
   | OwnerType.cityPicker
