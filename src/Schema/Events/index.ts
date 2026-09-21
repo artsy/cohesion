@@ -222,6 +222,7 @@ import {
   ValidationAddressViewed,
   ViewedToast,
 } from "./ImpressionTracking"
+import { AddedStopToItinerary } from "./Itineraries"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -352,6 +353,7 @@ export type Event =
   | AcceptedOffer
   | AddCollectedArtwork
   | AddedArtworkToArtworkList
+  | AddedStopToItinerary
   | AddedToAlbum
   | AddressAutoCompletionResult
   | AddToCalendar
@@ -676,6 +678,10 @@ export enum ActionType {
    * Corresponds to {@link AddedArtworkToArtworkList}
    */
   addedArtworkToArtworkList = "addedArtworkToArtworkList",
+  /**
+   * Corresponds to {@link AddedStopToItinerary}
+   */
+  addedStopToItinerary = "addedStopToItinerary",
   /**
    * Corresponds to {@link AddedToAlbum}
    */
