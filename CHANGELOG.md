@@ -1,3 +1,15 @@
+# v4.404.0 (Mon Sep 21 2026)
+
+#### 🚀  Enhancement
+
+- feat: add City Guide's Add to Itinerary tap events [#753](https://github.com/artsy/cohesion/pull/753) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.403.0 (Mon Sep 21 2026)
 
 #### 🚀  Enhancement
