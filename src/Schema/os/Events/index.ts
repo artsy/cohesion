@@ -222,6 +222,11 @@ export enum OsActionType {
   clickedWritingAssistant = "clickedWritingAssistant",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  closedWritingAssistant = "closedWritingAssistant",
+
+  /**
    * Corresponds to {@link CompletedArtworkDistribution}
    */
   completedArtworkDistribution = "completedArtworkDistribution",
@@ -306,6 +311,11 @@ export enum OsActionType {
    * Corresponds to {@link ProgressedGettingStarted}
    */
   progressedOnboarding = "progressedOnboarding",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  ratedGeneratedArtworkDescription = "ratedGeneratedArtworkDescription",
 
   /**
    * Corresponds to {@link OsInventoryTable}

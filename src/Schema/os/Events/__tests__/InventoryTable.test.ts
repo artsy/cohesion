@@ -5,7 +5,9 @@ import {
   OsAddedGeneratedArtworkDescription,
   OsClickedEditArtworkButton,
   OsClickedWritingAssistant,
+  OsClosedWritingAssistant,
   OsEditedArtworkField,
+  OsRatedGeneratedArtworkDescription,
   OsReorderedInventoryTableColumns,
 } from "../InventoryTable"
 
@@ -93,6 +95,7 @@ describe("Inventory Table events", () => {
       context_module: OsContextModule.writingAssistantDrawer,
       context_page_owner_type: OsOwnerType.inventory,
       document_count: 1,
+      generated_description: "A vibrant abstract composition...",
       regenerate_count: 2,
       was_edited: true,
     }
@@ -103,8 +106,61 @@ describe("Inventory Table events", () => {
       context_module: "writingAssistantDrawer",
       context_page_owner_type: "inventory",
       document_count: 1,
+      generated_description: "A vibrant abstract composition...",
       regenerate_count: 2,
       was_edited: true,
+    })
+  })
+
+  it("OsClosedWritingAssistant serializes to the expected shape", () => {
+    const event: OsClosedWritingAssistant = {
+      action: OsActionType.closedWritingAssistant,
+      artwork_id: "abc123",
+      context_module: OsContextModule.writingAssistantDrawer,
+      context_page_owner_type: OsOwnerType.inventory,
+      document_count: 1,
+      generated_description: "A vibrant abstract composition...",
+      regenerate_count: 2,
+      value: "cancel",
+      was_edited: true,
+    }
+
+    expect(event).toEqual({
+      action: "closedWritingAssistant",
+      artwork_id: "abc123",
+      context_module: "writingAssistantDrawer",
+      context_page_owner_type: "inventory",
+      document_count: 1,
+      generated_description: "A vibrant abstract composition...",
+      regenerate_count: 2,
+      value: "cancel",
+      was_edited: true,
+    })
+  })
+
+  it("OsRatedGeneratedArtworkDescription serializes to the expected shape", () => {
+    const event: OsRatedGeneratedArtworkDescription = {
+      action: OsActionType.ratedGeneratedArtworkDescription,
+      artwork_id: "abc123",
+      context_module: OsContextModule.writingAssistantDrawer,
+      context_page_owner_type: OsOwnerType.inventory,
+      document_count: 1,
+      generated_description: "A vibrant abstract composition...",
+      regenerate_count: 2,
+      value: "up",
+      was_edited: false,
+    }
+
+    expect(event).toEqual({
+      action: "ratedGeneratedArtworkDescription",
+      artwork_id: "abc123",
+      context_module: "writingAssistantDrawer",
+      context_page_owner_type: "inventory",
+      document_count: 1,
+      generated_description: "A vibrant abstract composition...",
+      regenerate_count: 2,
+      value: "up",
+      was_edited: false,
     })
   })
 })
