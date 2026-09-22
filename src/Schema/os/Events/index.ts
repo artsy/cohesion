@@ -69,6 +69,11 @@ export enum OsActionType {
   /**
    * Corresponds to {@link OsInventoryTable}
    */
+  addedGeneratedArtworkDescription = "addedGeneratedArtworkDescription",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
   addedLocation = "addedLocation",
 
   /**
@@ -212,6 +217,16 @@ export enum OsActionType {
   clickedUploadImageBank = "clickedUploadImageBank",
 
   /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  clickedWritingAssistant = "clickedWritingAssistant",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  closedWritingAssistant = "closedWritingAssistant",
+
+  /**
    * Corresponds to {@link CompletedArtworkDistribution}
    */
   completedArtworkDistribution = "completedArtworkDistribution",
@@ -296,6 +311,11 @@ export enum OsActionType {
    * Corresponds to {@link ProgressedGettingStarted}
    */
   progressedOnboarding = "progressedOnboarding",
+
+  /**
+   * Corresponds to {@link OsInventoryTable}
+   */
+  ratedGeneratedArtworkDescription = "ratedGeneratedArtworkDescription",
 
   /**
    * Corresponds to {@link OsInventoryTable}

@@ -177,6 +177,160 @@ export interface OsEditedArtworkField {
 }
 
 /**
+ * A partner clicks the Writing Assistant button on a description cell to open the
+ * AI description drawer.
+ *
+ * This schema describes events sent to Segment from [[OsClickedWritingAssistant]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedWritingAssistant",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123"
+ * }
+ * ```
+ */
+export interface OsClickedWritingAssistant {
+  action: OsActionType.clickedWritingAssistant
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+}
+
+/**
+ * A partner clicks "Add Description" in the Writing Assistant drawer, applying the
+ * generated (and possibly edited) description to the description cell.
+ *
+ * This schema describes events sent to Segment from [[OsAddedGeneratedArtworkDescription]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "addedGeneratedArtworkDescription",
+ *   context_module: "writingAssistantDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   regenerate_count: 2,
+ *   was_edited: true,
+ *   document_count: 1,
+ *   generated_description: "A vibrant abstract composition..."
+ * }
+ * ```
+ */
+export interface OsAddedGeneratedArtworkDescription {
+  action: OsActionType.addedGeneratedArtworkDescription
+  context_module: OsContextModule.writingAssistantDrawer
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  /** Number of times the partner clicked Regenerate (excludes automatic regenerations triggered by adding/removing a document) */
+  regenerate_count: number
+  /** Whether the final text differs from the last generated text */
+  was_edited: boolean
+  /** Number of supporting documents attached at the time of adding the description */
+  document_count: number
+  /** The raw AI-generated text, before any edits the partner made */
+  generated_description: string
+}
+
+/**
+ * A partner closes the Writing Assistant drawer without adding the generated description,
+ * via the Cancel button, the X, the backdrop, or Escape.
+ *
+ * This schema describes events sent to Segment from [[OsClosedWritingAssistant]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "closedWritingAssistant",
+ *   context_module: "writingAssistantDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   value: "cancel",
+ *   regenerate_count: 2,
+ *   was_edited: true,
+ *   document_count: 1,
+ *   generated_description: "A vibrant abstract composition..."
+ * }
+ * ```
+ */
+export interface OsClosedWritingAssistant {
+  action: OsActionType.closedWritingAssistant
+  context_module: OsContextModule.writingAssistantDrawer
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  /** "cancel" = Cancel button, "close" = X, backdrop, or Escape */
+  value: "cancel" | "close"
+  /** Number of times the partner clicked Regenerate (excludes automatic regenerations triggered by adding/removing a document) */
+  regenerate_count: number
+  /** Whether the discarded text differs from the last generated text */
+  was_edited: boolean
+  /** Number of supporting documents attached when the drawer was closed */
+  document_count: number
+  /** The raw AI-generated text that was discarded */
+  generated_description: string
+}
+
+/**
+ * A partner rates a generated description as helpful or not, via the thumbs feedback
+ * shown below the text in the Writing Assistant drawer. Fires once the follow-up detail
+ * modal resolves (Send, Skip, or close) — `detail` is the optional free text the partner
+ * added, or an empty string if they skipped or closed without typing anything.
+ *
+ * This schema describes events sent to Segment from [[OsRatedGeneratedArtworkDescription]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "ratedGeneratedArtworkDescription",
+ *   context_module: "writingAssistantDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   value: "up",
+ *   detail: "",
+ *   regenerate_count: 2,
+ *   was_edited: false,
+ *   document_count: 1,
+ *   generated_description: "A vibrant abstract composition..."
+ * }
+ * ```
+ *
+ * @example With optional detail text
+ * ```
+ * {
+ *   action: "ratedGeneratedArtworkDescription",
+ *   context_module: "writingAssistantDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   value: "down",
+ *   detail: "Too generic, didn't mention the material",
+ *   regenerate_count: 0,
+ *   was_edited: false,
+ *   document_count: 0,
+ *   generated_description: "A vibrant abstract composition..."
+ * }
+ * ```
+ */
+export interface OsRatedGeneratedArtworkDescription {
+  action: OsActionType.ratedGeneratedArtworkDescription
+  context_module: OsContextModule.writingAssistantDrawer
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  value: "up" | "down"
+  /** Optional free text the partner added in the follow-up modal; empty string if skipped or closed without typing */
+  detail: string
+  /** Number of times the partner clicked Regenerate (excludes automatic regenerations triggered by adding/removing a document) */
+  regenerate_count: number
+  /** Whether the rated text differs from the last generated text */
+  was_edited: boolean
+  /** Number of supporting documents attached at the time of rating */
+  document_count: number
+  /** The raw AI-generated text being rated */
+  generated_description: string
+}
+
+/**
  * A partner successfully adds a new location via the Add Location modal (2-step flow).
  * Fires on useCreatePartnerLocation mutation success.
  *
@@ -293,10 +447,24 @@ export interface OsSavedArtworkImages {
  *   document_count: 3
  * }
  * ```
+ *
+ * @example Uploaded from the Writing Assistant drawer
+ * ```
+ * {
+ *   action: "addedArtworkDocument",
+ *   context_module: "writingAssistantDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   document_count: 1,
+ *   value: { type: "pdf", size: "1.2MB" }
+ * }
+ * ```
  */
 export interface OsAddedArtworkDocument {
   action: OsActionType.addedArtworkDocument
-  context_module: OsContextModule.documentsModal
+  context_module:
+    | OsContextModule.documentsModal
+    | OsContextModule.writingAssistantDrawer
   context_page_owner_type: OsOwnerType
   artwork_id: string
   /** Document count after the upload */
@@ -475,13 +643,17 @@ export type OsInventoryTable =
   | EditedInventoryField
   | OsAddedArtist
   | OsAddedArtworkDocument
+  | OsAddedGeneratedArtworkDescription
   | OsAddedLocation
   | OsClickedActionsDropdown
   | OsClickedArtworkRow
   | OsClickedEditArtworkButton
   | OsClickedEditionSetRow
   | OsClickedImagesModal
+  | OsClickedWritingAssistant
+  | OsClosedWritingAssistant
   | OsEditedArtworkField
+  | OsRatedGeneratedArtworkDescription
   | OsRemovedArtworkDocument
   | OsReorderedInventoryTableColumns
   | OsSavedArtworkImages
