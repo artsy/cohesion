@@ -2,6 +2,7 @@ import {
   ClickedAddBrandKitFile,
   ClickedBrandKitColor,
   ClickedBrandKitFont,
+  ClickedBrandKitWriting,
   ClickedSaveBrandKit,
 } from "./BrandKit"
 import { OsClickEvent } from "./Click"
@@ -26,6 +27,7 @@ export type OsEvent =
   | ClickedAddBrandKitFile
   | ClickedBrandKitColor
   | ClickedBrandKitFont
+  | ClickedBrandKitWriting
   | ClickedSaveBrandKit
   | OsClickEvent
   | OsConnectedAppsFlow

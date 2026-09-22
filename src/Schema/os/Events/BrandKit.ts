@@ -100,3 +100,39 @@ export interface ClickedSaveBrandKit {
   context_module: OsContextModule.brandKit
   context_page_owner_type: OsOwnerType.studio
 }
+
+/**
+ * User edits a My Brand writing preference (writing language or writing sample).
+ * Fires on blur, once the field commits.
+ *
+ * This schema describes events sent to Segment from [[clickedBrandKitWriting]]
+ *
+ * @example
+ * ```
+ * {
+ *   action: "clickedBrandKitWriting",
+ *   context_module: "brandKit",
+ *   context_page_owner_type: "brandSettings",
+ *   field: "writing_language",
+ *   value: "English"
+ * }
+ * ```
+ *
+ * @example Writing sample
+ * ```
+ * {
+ *   action: "clickedBrandKitWriting",
+ *   context_module: "brandKit",
+ *   context_page_owner_type: "brandSettings",
+ *   field: "writing_sample",
+ *   value: "A spare, observational tone."
+ * }
+ * ```
+ */
+export interface ClickedBrandKitWriting {
+  action: ActionType.clickedBrandKitWriting
+  context_module: OsContextModule.brandKit
+  context_page_owner_type: OsOwnerType.studio
+  field: "writing_language" | "writing_sample"
+  value: string
+}

@@ -2092,4 +2092,8 @@ export enum ActionType {
    * Corresponds to {@link ClickedSaveBrandKit}
    */
   clickedSaveBrandKit = "clickedSaveBrandKit",
+  /**
+   * Corresponds to {@link ClickedBrandKitWriting}
+   */
+  clickedBrandKitWriting = "clickedBrandKitWriting",
 }
