@@ -5,6 +5,7 @@ import {
   ClickedAddBrandKitFile,
   ClickedBrandKitColor,
   ClickedBrandKitFont,
+  ClickedBrandKitWriting,
   ClickedSaveBrandKit,
 } from "../BrandKit"
 
@@ -76,6 +77,42 @@ describe("Brand Kit events", () => {
       action: "clickedSaveBrandKit",
       context_module: "brandKit",
       context_page_owner_type: "studio",
+    })
+  })
+
+  it("ClickedBrandKitWriting serializes to the expected shape", () => {
+    const event: ClickedBrandKitWriting = {
+      action: ActionType.clickedBrandKitWriting,
+      context_module: OsContextModule.brandKit,
+      context_page_owner_type: OsOwnerType.studio,
+      field: "writing_language",
+      value: "English",
+    }
+
+    expect(event).toEqual({
+      action: "clickedBrandKitWriting",
+      context_module: "brandKit",
+      context_page_owner_type: "studio",
+      field: "writing_language",
+      value: "English",
+    })
+  })
+
+  it("ClickedBrandKitWriting serializes for the writing sample field", () => {
+    const event: ClickedBrandKitWriting = {
+      action: ActionType.clickedBrandKitWriting,
+      context_module: OsContextModule.brandKit,
+      context_page_owner_type: OsOwnerType.studio,
+      field: "writing_sample",
+      value: "A spare, observational tone.",
+    }
+
+    expect(event).toEqual({
+      action: "clickedBrandKitWriting",
+      context_module: "brandKit",
+      context_page_owner_type: "studio",
+      field: "writing_sample",
+      value: "A spare, observational tone.",
     })
   })
 })
