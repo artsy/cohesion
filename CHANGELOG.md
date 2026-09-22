@@ -1,3 +1,15 @@
+# v4.406.0 (Tue Sep 22 2026)
+
+#### 🚀  Enhancement
+
+- fix: Add writing example to writing assistant events [#754](https://github.com/artsy/cohesion/pull/754) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.405.0 (Tue Sep 22 2026)
 
 #### 🚀  Enhancement
