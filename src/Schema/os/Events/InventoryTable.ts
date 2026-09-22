@@ -215,7 +215,9 @@ export interface OsClickedWritingAssistant {
  *   regenerate_count: 2,
  *   was_edited: true,
  *   document_count: 1,
- *   generated_description: "A vibrant abstract composition..."
+ *   generated_description: "A vibrant abstract composition...",
+ *   writing_language: "English",
+ *   writing_sample: "A spare, observational tone."
  * }
  * ```
  */
@@ -232,6 +234,10 @@ export interface OsAddedGeneratedArtworkDescription {
   document_count: number
   /** The raw AI-generated text, before any edits the partner made */
   generated_description: string
+  /** The partner's My Brand writing language preference; empty string if unset */
+  writing_language: string
+  /** The partner's My Brand writing sample; empty string if unset */
+  writing_sample: string
 }
 
 /**
@@ -292,7 +298,9 @@ export interface OsClosedWritingAssistant {
  *   regenerate_count: 2,
  *   was_edited: false,
  *   document_count: 1,
- *   generated_description: "A vibrant abstract composition..."
+ *   generated_description: "A vibrant abstract composition...",
+ *   writing_language: "English",
+ *   writing_sample: "A spare, observational tone."
  * }
  * ```
  *
@@ -308,7 +316,9 @@ export interface OsClosedWritingAssistant {
  *   regenerate_count: 0,
  *   was_edited: false,
  *   document_count: 0,
- *   generated_description: "A vibrant abstract composition..."
+ *   generated_description: "A vibrant abstract composition...",
+ *   writing_language: "",
+ *   writing_sample: ""
  * }
  * ```
  */
@@ -328,6 +338,10 @@ export interface OsRatedGeneratedArtworkDescription {
   document_count: number
   /** The raw AI-generated text being rated */
   generated_description: string
+  /** The partner's My Brand writing language preference; empty string if unset */
+  writing_language: string
+  /** The partner's My Brand writing sample; empty string if unset */
+  writing_sample: string
 }
 
 /**

@@ -98,6 +98,8 @@ describe("Inventory Table events", () => {
       generated_description: "A vibrant abstract composition...",
       regenerate_count: 2,
       was_edited: true,
+      writing_language: "English",
+      writing_sample: "A spare, observational tone.",
     }
 
     expect(event).toEqual({
@@ -109,6 +111,8 @@ describe("Inventory Table events", () => {
       generated_description: "A vibrant abstract composition...",
       regenerate_count: 2,
       was_edited: true,
+      writing_language: "English",
+      writing_sample: "A spare, observational tone.",
     })
   })
 
@@ -150,6 +154,8 @@ describe("Inventory Table events", () => {
       regenerate_count: 2,
       value: "up",
       was_edited: false,
+      writing_language: "English",
+      writing_sample: "A spare, observational tone.",
     }
 
     expect(event).toEqual({
@@ -163,6 +169,8 @@ describe("Inventory Table events", () => {
       regenerate_count: 2,
       value: "up",
       was_edited: false,
+      writing_language: "English",
+      writing_sample: "A spare, observational tone.",
     })
   })
 
@@ -178,6 +186,8 @@ describe("Inventory Table events", () => {
       regenerate_count: 0,
       value: "down",
       was_edited: false,
+      writing_language: "",
+      writing_sample: "",
     }
 
     expect(event).toEqual({
@@ -191,6 +201,8 @@ describe("Inventory Table events", () => {
       regenerate_count: 0,
       value: "down",
       was_edited: false,
+      writing_language: "",
+      writing_sample: "",
     })
   })
 })
