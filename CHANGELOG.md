@@ -1,3 +1,15 @@
+# v4.405.0 (Tue Sep 22 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add Writing Assistant event schemas [#751](https://github.com/artsy/cohesion/pull/751) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.404.0 (Mon Sep 21 2026)
 
 #### 🚀  Enhancement
