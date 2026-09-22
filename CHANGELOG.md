@@ -1,3 +1,15 @@
+# v4.407.0 (Tue Sep 22 2026)
+
+#### 🚀  Enhancement
+
+- feat: Add tracking for My Brand writing language and sample [#755](https://github.com/artsy/cohesion/pull/755) ([@olerichter00](https://github.com/olerichter00))
+
+#### Authors: 1
+
+- Ole ([@olerichter00](https://github.com/olerichter00))
+
+---
+
 # v4.406.0 (Tue Sep 22 2026)
 
 #### 🚀  Enhancement
