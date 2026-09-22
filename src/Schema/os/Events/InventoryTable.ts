@@ -274,7 +274,9 @@ export interface OsClosedWritingAssistant {
 
 /**
  * A partner rates a generated description as helpful or not, via the thumbs feedback
- * shown below the text in the Writing Assistant drawer.
+ * shown below the text in the Writing Assistant drawer. Fires once the follow-up detail
+ * modal resolves (Send, Skip, or close) — `detail` is the optional free text the partner
+ * added, or an empty string if they skipped or closed without typing anything.
  *
  * This schema describes events sent to Segment from [[OsRatedGeneratedArtworkDescription]]
  *
@@ -286,9 +288,26 @@ export interface OsClosedWritingAssistant {
  *   context_page_owner_type: "inventory",
  *   artwork_id: "abc123",
  *   value: "up",
+ *   detail: "",
  *   regenerate_count: 2,
  *   was_edited: false,
  *   document_count: 1,
+ *   generated_description: "A vibrant abstract composition..."
+ * }
+ * ```
+ *
+ * @example With optional detail text
+ * ```
+ * {
+ *   action: "ratedGeneratedArtworkDescription",
+ *   context_module: "writingAssistantDrawer",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   value: "down",
+ *   detail: "Too generic, didn't mention the material",
+ *   regenerate_count: 0,
+ *   was_edited: false,
+ *   document_count: 0,
  *   generated_description: "A vibrant abstract composition..."
  * }
  * ```
@@ -299,6 +318,8 @@ export interface OsRatedGeneratedArtworkDescription {
   context_page_owner_type: OsOwnerType
   artwork_id: string
   value: "up" | "down"
+  /** Optional free text the partner added in the follow-up modal; empty string if skipped or closed without typing */
+  detail: string
   /** Number of times the partner clicked Regenerate (excludes automatic regenerations triggered by adding/removing a document) */
   regenerate_count: number
   /** Whether the rated text differs from the last generated text */

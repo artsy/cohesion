@@ -144,6 +144,7 @@ describe("Inventory Table events", () => {
       artwork_id: "abc123",
       context_module: OsContextModule.writingAssistantDrawer,
       context_page_owner_type: OsOwnerType.inventory,
+      detail: "",
       document_count: 1,
       generated_description: "A vibrant abstract composition...",
       regenerate_count: 2,
@@ -156,10 +157,39 @@ describe("Inventory Table events", () => {
       artwork_id: "abc123",
       context_module: "writingAssistantDrawer",
       context_page_owner_type: "inventory",
+      detail: "",
       document_count: 1,
       generated_description: "A vibrant abstract composition...",
       regenerate_count: 2,
       value: "up",
+      was_edited: false,
+    })
+  })
+
+  it("OsRatedGeneratedArtworkDescription serializes with an optional detail", () => {
+    const event: OsRatedGeneratedArtworkDescription = {
+      action: OsActionType.ratedGeneratedArtworkDescription,
+      artwork_id: "abc123",
+      context_module: OsContextModule.writingAssistantDrawer,
+      context_page_owner_type: OsOwnerType.inventory,
+      detail: "Too generic, didn't mention the material",
+      document_count: 0,
+      generated_description: "A vibrant abstract composition...",
+      regenerate_count: 0,
+      value: "down",
+      was_edited: false,
+    }
+
+    expect(event).toEqual({
+      action: "ratedGeneratedArtworkDescription",
+      artwork_id: "abc123",
+      context_module: "writingAssistantDrawer",
+      context_page_owner_type: "inventory",
+      detail: "Too generic, didn't mention the material",
+      document_count: 0,
+      generated_description: "A vibrant abstract composition...",
+      regenerate_count: 0,
+      value: "down",
       was_edited: false,
     })
   })
