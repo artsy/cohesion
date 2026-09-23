@@ -238,6 +238,7 @@ export enum ContextModule {
   recentlyViewedRail = "recentlyViewedRail",
   recentPriceRanges = "recentPriceRanges",
   recentSearchesRail = "recentSearchesRail",
+  recommendedArticles = "recommendedArticles",
   recommendedArtistsRail = "recommendedArtistsRail",
   recommendedWorksForYouRail = "recommendedWorksForYouRail",
   relatedArticles = "relatedArticles",
