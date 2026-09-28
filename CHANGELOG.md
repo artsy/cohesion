@@ -1,3 +1,15 @@
+# v4.408.0 (Mon Sep 28 2026)
+
+#### 🚀  Enhancement
+
+- feat: add CmsShowAddShowToInventory event [#757](https://github.com/artsy/cohesion/pull/757) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.407.0 (Tue Sep 22 2026)
 
 #### 🚀  Enhancement
