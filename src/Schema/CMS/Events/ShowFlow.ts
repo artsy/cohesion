@@ -59,6 +59,7 @@ export interface CmsShowDownloadOriginalShot {
  * {
  *   action: "click",
  *   artwork_count: 12,
+ *   context_module: CmsContextModule.addShowToInventory,
  *   partner_list_id: "partner-list-id",
  *   show_id: "show-id",
  *   user_id: "user-id",
@@ -68,6 +69,7 @@ export interface CmsShowDownloadOriginalShot {
 export interface CmsShowAddShowToInventory {
   action: "click"
   artwork_count: number
+  context_module: CmsContextModule.addShowToInventory
   partner_list_id: string
   show_id: string
   user_id: string
