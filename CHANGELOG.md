@@ -1,3 +1,15 @@
+# v4.409.0 (Mon Sep 28 2026)
+
+#### 🚀  Enhancement
+
+- feat: add context module to CmsShowAddShowToInventory [#758](https://github.com/artsy/cohesion/pull/758) ([@chr-tatu](https://github.com/chr-tatu))
+
+#### Authors: 1
+
+- Christian Tatu ([@chr-tatu](https://github.com/chr-tatu))
+
+---
+
 # v4.408.0 (Mon Sep 28 2026)
 
 #### 🚀  Enhancement
