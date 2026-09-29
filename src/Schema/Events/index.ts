@@ -37,6 +37,7 @@ import {
   OnboardingUserInputData,
   ResetYourPassword,
   StartedOnboarding,
+  SubscribedToEmail,
   SuccessfullyLoggedIn,
 } from "./Authentication"
 import {
@@ -560,6 +561,7 @@ export type Event =
   | SubmittedCounterOffer
   | SubmittedOffer
   | SubmittedOrder
+  | SubscribedToEmail
   | SuccessfullyLoggedIn
   | SwipedInfiniteDiscoveryArtwork
   | SwipedUp
@@ -1603,6 +1605,10 @@ export enum ActionType {
    * Corresponds to {@link SubmittedOrder}
    */
   submittedOrder = "submittedOrder",
+  /**
+   * Corresponds to {@link SubscribedToEmail}
+   */
+  subscribedToEmail = "subscribedToEmail",
   /**
    * Corresponds to {@link SuccessfullyLoggedIn}
    */

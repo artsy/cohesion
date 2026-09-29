@@ -221,3 +221,19 @@ export interface StartedOnboarding {
 export interface CompletedOnboarding {
   action: ActionType.completedOnboarding
 }
+
+/**
+ * A user subscribes to email updates
+ *
+ * This schema describes events sent to Segment from [[subscribedToEmail]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "subscribedToEmail",
+ *  }
+ * ```
+ */
+export interface SubscribedToEmail {
+  action: ActionType.subscribedToEmail
+}
