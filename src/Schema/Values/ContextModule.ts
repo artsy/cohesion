@@ -197,6 +197,7 @@ export enum ContextModule {
   newWorksForYouRail = "newWorksForYouRail",
   notification = "notification",
   onboardingActivity = "onboardingActivity",
+  onboardingAttribution = "onboardingAttribution",
   onboardingCollectorLevel = "onboardingCollectorLevel",
   onboardingFlow = "onboardingFlow",
   onboardingInterests = "onboardingInterests",
@@ -360,6 +361,7 @@ export type AuthContextModule =
   | ContextModule.newWorksForYouRail
   | ContextModule.notification
   | ContextModule.onboardingActivity
+  | ContextModule.onboardingAttribution
   | ContextModule.onboardingCollectorLevel
   | ContextModule.onboardingFlow
   | ContextModule.onboardingInterests
