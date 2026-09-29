@@ -1,3 +1,15 @@
+# v4.410.0 (Tue Sep 29 2026)
+
+#### 🚀  Enhancement
+
+- chore(DI-633): adding subscribedToEmail for new onboarding flow [#759](https://github.com/artsy/cohesion/pull/759) ([@JanaeHijaz](https://github.com/JanaeHijaz))
+
+#### Authors: 1
+
+- Janae Hijaz Edwards ([@JanaeHijaz](https://github.com/JanaeHijaz))
+
+---
+
 # v4.409.0 (Mon Sep 28 2026)
 
 #### 🚀  Enhancement
