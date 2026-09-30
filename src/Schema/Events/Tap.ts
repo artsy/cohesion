@@ -1730,7 +1730,7 @@ export interface TappedSearchByImage {
   context_screen_owner_type: ScreenOwnerType
   destination_screen_owner_type: OwnerType.searchByImage
   /** The entry point that was tapped */
-  type: "search_input_icon" | "search_overlay_button"
+  type: string
 }
 
 /**
