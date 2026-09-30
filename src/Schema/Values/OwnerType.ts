@@ -55,6 +55,7 @@ export enum OwnerType {
   brandSettings = "brandSettings",
   category = "category",
   cityGuide = "cityGuide",
+  cityGuideCuratedGuides = "cityGuideCuratedGuides",
   cityGuideCustomStop = "cityGuideCustomStop",
   cityGuideEventList = "cityGuideEventList",
   cityGuideGuide = "cityGuideGuide",
@@ -236,6 +237,7 @@ export type ScreenOwnerType =
   | OwnerType.basedOnYourRecentSaves
   | OwnerType.category
   | OwnerType.cityGuide
+  | OwnerType.cityGuideCuratedGuides
   | OwnerType.cityGuideCustomStop
   | OwnerType.cityGuideEventList
   | OwnerType.cityGuideGuide
