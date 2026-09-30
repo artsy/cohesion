@@ -1,3 +1,15 @@
+# v4.410.1 (Wed Sep 30 2026)
+
+#### 🐛  Bug Fix
+
+- feat: add curated city guides screen owner type [#760](https://github.com/artsy/cohesion/pull/760) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.410.0 (Tue Sep 29 2026)
 
 #### 🚀  Enhancement
