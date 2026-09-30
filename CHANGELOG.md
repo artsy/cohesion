@@ -1,3 +1,15 @@
+# v4.411.0 (Wed Sep 30 2026)
+
+#### 🚀  Enhancement
+
+- feat: allow any search by image entry point type [#761](https://github.com/artsy/cohesion/pull/761) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.410.1 (Wed Sep 30 2026)
 
 #### 🐛  Bug Fix
