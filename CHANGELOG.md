@@ -1,3 +1,15 @@
+# v4.412.0 (Thu Oct 01 2026)
+
+#### 🚀  Enhancement
+
+- feat: add artDiscoveryMethods context module [#762](https://github.com/artsy/cohesion/pull/762) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.411.0 (Wed Sep 30 2026)
 
 #### 🚀  Enhancement
