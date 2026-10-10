@@ -1,3 +1,15 @@
+# v4.412.1 (Sat Oct 10 2026)
+
+#### 🐛  Bug Fix
+
+- Update cimg/python Docker tag to v3.15 [#763](https://github.com/artsy/cohesion/pull/763) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 1
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+
+---
+
 # v4.412.0 (Thu Oct 01 2026)
 
 #### 🚀  Enhancement
