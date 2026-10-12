@@ -280,6 +280,7 @@ import {
   TappedAddToItinerary,
   TappedArtAssistant,
   TappedArtAssistantNewChat,
+  TappedArtAssistantSuggestedReply,
   TappedArtAssistantSuggestion,
   TappedArticleGroup,
   TappedArticleShare,
@@ -572,6 +573,7 @@ export type Event =
   | TappedAlertsGroup
   | TappedArtAssistant
   | TappedArtAssistantNewChat
+  | TappedArtAssistantSuggestedReply
   | TappedArtAssistantSuggestion
   | TappedArticleGroup
   | TappedArticleShare
@@ -1650,6 +1652,10 @@ export enum ActionType {
    * Corresponds to {@link TappedArtAssistantNewChat}
    */
   tappedArtAssistantNewChat = "tappedArtAssistantNewChat",
+  /**
+   * Corresponds to {@link TappedArtAssistantSuggestedReply}
+   */
+  tappedArtAssistantSuggestedReply = "tappedArtAssistantSuggestedReply",
   /**
    * Corresponds to {@link TappedArtAssistantSuggestion}
    */
