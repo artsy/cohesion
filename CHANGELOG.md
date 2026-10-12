@@ -1,3 +1,15 @@
+# v4.413.0 (Mon Oct 12 2026)
+
+#### 🚀  Enhancement
+
+- feat: add art assistant suggested reply tracking [#764](https://github.com/artsy/cohesion/pull/764) ([@leamotta](https://github.com/leamotta))
+
+#### Authors: 1
+
+- [@leamotta](https://github.com/leamotta)
+
+---
+
 # v4.412.1 (Sat Oct 10 2026)
 
 #### 🐛  Bug Fix
