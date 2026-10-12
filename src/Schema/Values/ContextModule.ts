@@ -35,6 +35,7 @@ export enum ContextModule {
   artistAuctionResults = "artistAuctionResults",
   artAssistant = "artAssistant",
   artAssistantResults = "artAssistantResults",
+  artAssistantSuggestedReplies = "artAssistantSuggestedReplies",
   artAssistantSuggestions = "artAssistantSuggestions",
   /** Entry points for alternative ways to discover art, such as Artsy Lens and City Guide. */
   artDiscoveryMethods = "artDiscoveryMethods",
