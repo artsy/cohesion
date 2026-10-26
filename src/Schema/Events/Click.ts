@@ -1538,19 +1538,6 @@ export interface ClickedExternalNewsSource {
  *    service: "instagram"
  *  }
  * ```
- *
- *  @example
- *  ```
- *  {
- *    action: "clickedSocialPost",
- *    context_module: "artistHeader",
- *    context_page_owner_type: "artist",
- *    context_page_owner_id: "4d8b926a4eb68a1b2c0000ae",
- *    context_page_owner_slug: "damien-hirst",
- *    destination_path: "https://www.instagram.com/damienhirst",
- *    service: "instagram"
- *  }
- * ```
  */
 export interface ClickedSocialPost {
   action: ActionType.clickedSocialPost
