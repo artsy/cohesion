@@ -5,6 +5,7 @@ import {
   AddedArtworksToList,
   BulkEditedArtworks,
   ChangedInventoryTableColumnVisibility,
+  ConfirmedListSyncPush,
   ConvertedArtworkToUnique,
   CreatedEditionSet,
   CreatedList,
@@ -14,8 +15,10 @@ import {
   DistributedList,
   MovedArtworksBetweenLists,
   RemovedArtworksFromList,
+  UndistributedList,
   UpdatedEditionSet,
   UpdatedList,
+  ViewedAddToListSyncWarning,
 } from "../Submit"
 
 describe("Edition set submit events", () => {
@@ -336,6 +339,74 @@ describe("Inventory table column submit events", () => {
       hidden_columns: ["provenance"],
       mode: "header",
       visible_columns: ["title", "artist", "price", "medium", "dimensions"],
+    })
+  })
+})
+
+describe("List sync events", () => {
+  it("UndistributedList serializes to the expected shape", () => {
+    const event: UndistributedList = {
+      action: OsActionType.undistributedList,
+      context_module: OsContextModule.listDetail,
+      context_page_owner_type: OsOwnerType.collection,
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e",
+    }
+
+    expect(event).toEqual({
+      action: "undistributedList",
+      context_module: "listDetail",
+      context_page_owner_type: "collection",
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e",
+    })
+  })
+
+  it("ConfirmedListSyncPush serializes to the expected shape", () => {
+    const event: ConfirmedListSyncPush = {
+      action: OsActionType.confirmedListSyncPush,
+      context_module: OsContextModule.listSyncConfirmationModal,
+      context_page_owner_type: OsOwnerType.collection,
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e",
+      should_hide_future_confirmations: true,
+      value: "confirm",
+    }
+
+    expect(event).toEqual({
+      action: "confirmedListSyncPush",
+      context_module: "listSyncConfirmationModal",
+      context_page_owner_type: "collection",
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e",
+      should_hide_future_confirmations: true,
+      value: "confirm",
+    })
+  })
+
+  it("ViewedAddToListSyncWarning serializes to the expected shape", () => {
+    const event: ViewedAddToListSyncWarning = {
+      action: OsActionType.viewedAddToListSyncWarning,
+      affected_count: 2,
+      context_module: OsContextModule.addToListModal,
+      context_page_owner_type: OsOwnerType.inventory,
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      variant: "listed",
+    }
+
+    expect(event).toEqual({
+      action: "viewedAddToListSyncWarning",
+      affected_count: 2,
+      context_module: "addToListModal",
+      context_page_owner_type: "inventory",
+      list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+      list_type: "SHOW",
+      variant: "listed",
     })
   })
 })
