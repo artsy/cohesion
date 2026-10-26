@@ -1,3 +1,15 @@
+# v4.414.0 (Mon Oct 26 2026)
+
+#### 🚀  Enhancement
+
+- feat: allow artistHeader context module on clickedSocialPost [#765](https://github.com/artsy/cohesion/pull/765) ([@rquartararo](https://github.com/rquartararo))
+
+#### Authors: 1
+
+- Rachel Quartararo ([@rquartararo](https://github.com/rquartararo))
+
+---
+
 # v4.413.0 (Mon Oct 12 2026)
 
 #### 🚀  Enhancement
