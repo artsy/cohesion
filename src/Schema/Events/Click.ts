@@ -1520,7 +1520,8 @@ export interface ClickedExternalNewsSource {
 
 /**
  * A user clicks a post in the "Social" rail — today, an Instagram post on the artist
- * overview page. The tile links out to the post on the network itself.
+ * overview page — or the social profile link in the artist header. Either links out
+ * to the network itself.
  *
  * This schema describes events sent to Segment from [[clickedSocialPost]]
  *
@@ -1540,11 +1541,11 @@ export interface ClickedExternalNewsSource {
  */
 export interface ClickedSocialPost {
   action: ActionType.clickedSocialPost
-  context_module: ContextModule.socialRail
+  context_module: ContextModule.socialRail | ContextModule.artistHeader
   context_page_owner_type: PageOwnerType
   context_page_owner_id?: string
   context_page_owner_slug?: string
-  /** The post the tile links out to. Absent when the post has no permalink */
+  /** The post (rail) or profile (header) the click links out to. Absent when the post has no permalink */
   destination_path?: string
   /** One-based position of the post in the rail */
   horizontal_slide_position?: number
