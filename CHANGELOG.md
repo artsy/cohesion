@@ -1,3 +1,15 @@
+# v4.415.0 (Tue Oct 27 2026)
+
+#### 🚀  Enhancement
+
+- feat: add recommendedArticles context module [#756](https://github.com/artsy/cohesion/pull/756) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.414.0 (Mon Oct 26 2026)
 
 #### 🚀  Enhancement
