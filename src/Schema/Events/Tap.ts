@@ -1254,6 +1254,47 @@ export interface TappedCreateItinerary {
 }
 
 /**
+ * A user taps a pin on a City Guide map: the city map, or the map view of a guide or
+ * itinerary
+ *
+ * This schema describes events sent to Segment from [[tappedMapPin]]
+ *
+ *  @example A single pin
+ *  ```
+ *  {
+ *    action: "tappedMapPin",
+ *    context_screen_owner_slug: "london-united-kingdom",
+ *    context_screen_owner_type: "cityGuideMap",
+ *    is_cluster: false,
+ *    owner_id: "5f2c930b1ee0d500043b47dd",
+ *    owner_slug: "andy-warhol-flowers",
+ *    owner_type: "show"
+ *  }
+ * ```
+ *
+ *  @example A cluster of pins
+ *  ```
+ *  {
+ *    action: "tappedMapPin",
+ *    context_screen_owner_id: "b0b1c2d3-e4f5-4a6b-8c9d-0e1f2a3b4c5d",
+ *    context_screen_owner_type: "cityGuideGuide",
+ *    is_cluster: true
+ *  }
+ * ```
+ */
+export interface TappedMapPin {
+  action: ActionType.tappedMapPin
+  context_screen_owner_id?: string
+  context_screen_owner_slug?: string
+  context_screen_owner_type: ScreenOwnerType
+  is_cluster: boolean
+  /** The pin's entity. Not set for a cluster, or for a custom stop with no Artsy entity. */
+  owner_id?: string
+  owner_slug?: string
+  owner_type?: OwnerType
+}
+
+/**
  * A user taps "Bid" on an artwork page inside an Auction
  *
  * This schema describes events sent to Segment from [[tappedBid]]

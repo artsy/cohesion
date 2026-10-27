@@ -55,12 +55,16 @@ export enum OwnerType {
   brandSettings = "brandSettings",
   category = "category",
   cityGuide = "cityGuide",
+  cityGuideArticles = "cityGuideArticles",
   cityGuideCuratedGuides = "cityGuideCuratedGuides",
   cityGuideCustomStop = "cityGuideCustomStop",
   cityGuideEventList = "cityGuideEventList",
   cityGuideGuide = "cityGuideGuide",
+  cityGuideItineraries = "cityGuideItineraries",
+  cityGuideItinerary = "cityGuideItinerary",
   cityGuideMap = "cityGuideMap",
   cityGuideSavedList = "cityGuideSavedList",
+  cityGuideSharedItinerary = "cityGuideSharedItinerary",
   cityPicker = "cityPicker",
   collect = "collect",
   collection = "collection",
@@ -237,12 +241,16 @@ export type ScreenOwnerType =
   | OwnerType.basedOnYourRecentSaves
   | OwnerType.category
   | OwnerType.cityGuide
+  | OwnerType.cityGuideArticles
   | OwnerType.cityGuideCuratedGuides
   | OwnerType.cityGuideCustomStop
   | OwnerType.cityGuideEventList
   | OwnerType.cityGuideGuide
+  | OwnerType.cityGuideItineraries
+  | OwnerType.cityGuideItinerary
   | OwnerType.cityGuideMap
   | OwnerType.cityGuideSavedList
+  | OwnerType.cityGuideSharedItinerary
   | OwnerType.cityPicker
   | OwnerType.collect
   | OwnerType.collection
