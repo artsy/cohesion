@@ -223,7 +223,15 @@ import {
   ValidationAddressViewed,
   ViewedToast,
 } from "./ImpressionTracking"
-import { AddedStopToItinerary } from "./Itineraries"
+import {
+  AddedStopToItinerary,
+  ClosedAddToItinerary,
+  CreatedItinerary,
+  DeletedItinerary,
+  EditedItinerary,
+  RemovedStopFromItinerary,
+  ReorderedItineraryStop,
+} from "./Itineraries"
 import {
   AddCollectedArtwork,
   DeleteCollectedArtwork,
@@ -314,6 +322,7 @@ import {
   TappedLearnMore,
   TappedLink,
   TappedMainArtworkGrid,
+  TappedMapPin,
   TappedMenuItemGroup,
   TappedNavigationPillsGroup,
   TappedNavigationTab,
@@ -473,6 +482,7 @@ export type Event =
   | ClickedViewingRoomCard
   | ClickedViewWork
   | ClickedVisitHelpCenter
+  | ClosedAddToItinerary
   | CommercialFilterParamsChanged
   | CommercialFilterSelectedAll
   | CompletedOfflineSync
@@ -486,15 +496,18 @@ export type Event =
   | CreateAlertReminderMessageViewed
   | CreatedAlbum
   | CreatedArtworkList
+  | CreatedItinerary
   | DarkModeOptionUpdated
   | DeclinedOffer
   | DeleteCollectedArtwork
   | DeletedArtworkList
+  | DeletedItinerary
   | DeletedSavedSearch
   | EditCollectedArtwork
   | EditedAlert
   | EditedArtworkList
   | EditedAutocompletedAddress
+  | EditedItinerary
   | EditedSavedSearch
   | EditedUserProfile
   | EditProfileModalViewed
@@ -525,6 +538,8 @@ export type Event =
   | ReceivedArtAssistantResponse
   | RegistrationPageView
   | RegistrationSubmitted
+  | RemovedStopFromItinerary
+  | ReorderedItineraryStop
   | ResetYourPassword
   | SaleScreenLoadComplete
   | SaveCollectedArtwork
@@ -615,6 +630,7 @@ export type Event =
   | TappedLink
   | TappedMainArtworkGrid
   | TappedMakeOffer
+  | TappedMapPin
   | TappedMenuItemGroup
   | TappedMyCollection
   | TappedMyCollectionAddArtworkArtist
@@ -1191,6 +1207,10 @@ export enum ActionType {
    */
   clickedCV = "clickedCV",
   /**
+   * Corresponds to {@link ClosedAddToItinerary}
+   */
+  closedAddToItinerary = "closedAddToItinerary",
+  /**
    * Corresponds to {@link CommercialFilterParamsChanged}
    */
   commercialFilterParamsChanged = "commercialFilterParamsChanged",
@@ -1198,6 +1218,26 @@ export enum ActionType {
    * Corresponds to {@link CommercialFilterSelectedAll}
    */
   commercialFilterSelectedAll = "commercialFilterSelectedAll",
+  /**
+   * Corresponds to {@link CreatedItinerary}
+   */
+  createdItinerary = "createdItinerary",
+  /**
+   * Corresponds to {@link DeletedItinerary}
+   */
+  deletedItinerary = "deletedItinerary",
+  /**
+   * Corresponds to {@link EditedItinerary}
+   */
+  editedItinerary = "editedItinerary",
+  /**
+   * Corresponds to {@link RemovedStopFromItinerary}
+   */
+  removedStopFromItinerary = "removedStopFromItinerary",
+  /**
+   * Corresponds to {@link ReorderedItineraryStop}
+   */
+  reorderedItineraryStop = "reorderedItineraryStop",
   /**
    * Corresponds to {@link SelectedFromDrawer}
    */
@@ -1323,6 +1363,10 @@ export enum ActionType {
    * Corresponds to {@link ItemViewed}
    */
   itemViewed = "item_viewed", // intentional snake case to match tracked event
+  /**
+   * Corresponds to {@link TappedMapPin}
+   */
+  tappedMapPin = "tappedMapPin",
   /**
    * Corresponds to {@link UploadSizeLimitExceeded}
    */
