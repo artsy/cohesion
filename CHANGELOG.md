@@ -1,3 +1,15 @@
+# v4.417.0 (Tue Oct 27 2026)
+
+#### 🚀  Enhancement
+
+- chore: OS - 2-way sync [#767](https://github.com/artsy/cohesion/pull/767) ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+#### Authors: 1
+
+- Mitchell Henson ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+---
+
 # v4.416.0 (Tue Oct 27 2026)
 
 #### 🚀  Enhancement
