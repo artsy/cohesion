@@ -1,3 +1,15 @@
+# v4.416.0 (Tue Oct 27 2026)
+
+#### 🚀  Enhancement
+
+- feat: add City Guide events for the itinerary funnel, edits and map pins [#766](https://github.com/artsy/cohesion/pull/766) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.415.0 (Tue Oct 27 2026)
 
 #### 🚀  Enhancement
