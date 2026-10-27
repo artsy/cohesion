@@ -429,12 +429,97 @@ export interface ConvertedArtworkToUnique {
   value: "confirm" | "cancel"
 }
 
+/**
+ * A partner removes a distributed Show or Fair collection from Artsy. The CMS
+ * show is deleted, the collection returns to Private and sync stops.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "undistributedList",
+ *   context_module: "listDetail",
+ *   context_page_owner_type: "collection",
+ *   list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+ *   list_type: "SHOW",
+ *   partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e"
+ * }
+ * ```
+ */
+export interface UndistributedList {
+  action: OsActionType.undistributedList
+  context_module: OsContextModule.listDetail
+  context_page_owner_type: OsOwnerType
+  list_id: string
+  list_type: string
+  fair_id?: string
+  partner_show_id: string
+}
+
+/**
+ * A partner responds to the one-time confirmation shown before an edit in
+ * ArtOS is pushed to a Listed Show or Fair. `should_hide_future_confirmations`
+ * is true when "Do not show again" was checked.
+ *
+ * @example
+ * ```
+ * {
+ *   action: "confirmedListSyncPush",
+ *   context_module: "listSyncConfirmationModal",
+ *   context_page_owner_type: "collection",
+ *   list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+ *   list_type: "SHOW",
+ *   partner_show_id: "5d2b5b5d5e5b5d000e1b5b5e",
+ *   should_hide_future_confirmations: true,
+ *   value: "confirm"
+ * }
+ * ```
+ */
+export interface ConfirmedListSyncPush {
+  action: OsActionType.confirmedListSyncPush
+  context_module: OsContextModule.listSyncConfirmationModal
+  context_page_owner_type: OsOwnerType
+  list_id: string
+  list_type: string
+  partner_show_id: string
+  should_hide_future_confirmations: boolean
+  value: "confirm" | "cancel"
+}
+
+/**
+ * A partner sees the warning in the Add to Collection modal that adding
+ * private artworks to a Distributed or Listed Show or Fair will also add them
+ * to Artsy (`added_to_platform`) or list them (`listed`).
+ *
+ * @example
+ * ```
+ * {
+ *   action: "viewedAddToListSyncWarning",
+ *   context_module: "addToListModal",
+ *   context_page_owner_type: "inventory",
+ *   affected_count: 2,
+ *   list_id: "5d2b5b5d5e5b5d000e1b5b5d",
+ *   list_type: "SHOW",
+ *   variant: "listed"
+ * }
+ * ```
+ */
+export interface ViewedAddToListSyncWarning {
+  action: OsActionType.viewedAddToListSyncWarning
+  context_module: OsContextModule.addToListModal
+  context_page_owner_type: OsOwnerType
+  affected_count: number
+  list_id: string
+  list_type: string
+  variant: "listed" | "added_to_platform"
+}
+
 export type OsSubmitEvent =
   | AddedArtworksToList
   | BulkEditedArtworks
   | BulkEditedArtworks
   | ChangedInventoryTableColumnVisibility
   | CompletedArtworkDistribution
+  | ConfirmedListSyncPush
   | ConvertedArtworkToUnique
   | CreatedEditionSet
   | CreatedList
@@ -447,5 +532,7 @@ export type OsSubmitEvent =
   | DistributedList
   | MovedArtworksBetweenLists
   | RemovedArtworksFromList
+  | UndistributedList
   | UpdatedEditionSet
   | UpdatedList
+  | ViewedAddToListSyncWarning

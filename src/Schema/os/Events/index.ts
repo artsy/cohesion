@@ -275,6 +275,11 @@ export enum OsActionType {
   clearedFilters = "clearedFilters",
 
   /**
+   * Corresponds to {@link ConfirmedListSyncPush}
+   */
+  confirmedListSyncPush = "confirmedListSyncPush",
+
+  /**
    * Corresponds to {@link DeletedArtwork}
    */
   deletedArtwork = "deletedArtwork",
@@ -380,6 +385,11 @@ export enum OsActionType {
   toggledDistributionSync = "toggledDistributionSync",
 
   /**
+   * Corresponds to {@link UndistributedList}
+   */
+  undistributedList = "undistributedList",
+
+  /**
    * Corresponds to {@link UpdatedEditionSet}
    */
   updatedEditionSet = "updatedEditionSet",
@@ -388,4 +398,9 @@ export enum OsActionType {
    * Corresponds to {@link UpdatedList}
    */
   updatedList = "updatedList",
+
+  /**
+   * Corresponds to {@link ViewedAddToListSyncWarning}
+   */
+  viewedAddToListSyncWarning = "viewedAddToListSyncWarning",
 }
