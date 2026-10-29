@@ -1,0 +1,11 @@
+name: 🤖 AI PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, labeled, unlabeled]
+
+jobs:
+  claude-review:
+    uses: artsy/duchamp/.github/workflows/claude-review.yml@main
+    secrets:
+      anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
