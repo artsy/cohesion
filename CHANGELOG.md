@@ -1,3 +1,15 @@
+# v4.418.0 (Thu Oct 29 2026)
+
+#### 🚀  Enhancement
+
+- chore: add the Claude AI PR review [#769](https://github.com/artsy/cohesion/pull/769) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.417.0 (Tue Oct 27 2026)
 
 #### 🚀  Enhancement
