@@ -1,3 +1,15 @@
+# v4.419.0 (Thu Oct 29 2026)
+
+#### 🚀  Enhancement
+
+- feat: Adding new variants for click event [#768](https://github.com/artsy/cohesion/pull/768) ([@jpotts244](https://github.com/jpotts244))
+
+#### Authors: 1
+
+- Jacqueline Potts ([@jpotts244](https://github.com/jpotts244))
+
+---
+
 # v4.418.0 (Thu Oct 29 2026)
 
 #### 🚀  Enhancement
