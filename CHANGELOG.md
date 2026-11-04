@@ -1,3 +1,15 @@
+# v4.420.0 (Wed Nov 04 2026)
+
+#### 🚀  Enhancement
+
+- feat(art-assistant): add feedback tracking [#772](https://github.com/artsy/cohesion/pull/772) ([@egdbear](https://github.com/egdbear))
+
+#### Authors: 1
+
+- Dejan ([@egdbear](https://github.com/egdbear))
+
+---
+
 # v4.419.0 (Thu Oct 29 2026)
 
 #### 🚀  Enhancement
