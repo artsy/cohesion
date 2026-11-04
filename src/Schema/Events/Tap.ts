@@ -129,6 +129,44 @@ export interface TappedArtAssistantSuggestedReply {
 }
 
 /**
+ * A user rates an Art Assistant answer with a thumbs up or down from "Was this helpful?"
+ * under it. Rating again replaces the earlier rating, and each tap sends a new event, so the
+ * latest event per `response_message_id` is the current rating.
+ *
+ * `response_message_id` is the `message_id` of the [[receivedArtAssistantResponse]] being
+ * rated. `feedback_id` is the server-issued id of the answer's trace, which joins this
+ * event to the same rating in the agent's tracing tool.
+ *
+ * This schema describes events sent to Segment from [[tappedArtAssistantFeedback]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtAssistantFeedback",
+ *    context_module: "artAssistantFeedback",
+ *    context_screen_owner_type: "artAssistant",
+ *    conversation_id: "6f1b8b0e-1f27-4a0e-9d6f-2c2f2a3d1f45",
+ *    feedback_id: "a55880bfa54bacf7c2a16655dfb523e6",
+ *    rating: "thumbs_down",
+ *    response_message_id: "b7e4f2a1-3c5d-4e6f-8a9b-0c1d2e3f4a5b"
+ *  }
+ * ```
+ */
+export interface TappedArtAssistantFeedback {
+  action: ActionType.tappedArtAssistantFeedback
+  context_module: ContextModule.artAssistantFeedback
+  context_screen_owner_type: OwnerType.artAssistant
+  /** Client-generated id shared by every message in the same chat */
+  conversation_id: string
+  /** Server-issued id of the rated answer's trace */
+  feedback_id: string
+  /** The rating the user chose */
+  rating: "thumbs_down" | "thumbs_up"
+  /** `message_id` of the assistant response being rated */
+  response_message_id: string
+}
+
+/**
  * A user discards an Art Assistant chat and starts a new one, which is also a signal that
  * the conversation so far did not get them what they wanted. It fires when the user
  * confirms the prompt, not when they open it, and `message_count` counts the user and
