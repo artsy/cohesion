@@ -130,8 +130,12 @@ export interface TappedArtAssistantSuggestedReply {
 
 /**
  * A user rates an Art Assistant answer with a thumbs up or down from "Was this helpful?"
- * under it. Rating again replaces the earlier rating, and each tap sends a new event, so the
- * latest event per `response_message_id` is the current rating.
+ * under it. It fires once the rating is saved, so a vote that fails to save sends nothing.
+ * Rating again replaces the earlier rating and sends a new event, so the latest event per
+ * `response_message_id` is the current rating.
+ *
+ * Only answers the server issued a `feedback_id` for can be rated (it does so while agent
+ * tracing is on), so not every [[receivedArtAssistantResponse]] could have been rated.
  *
  * `response_message_id` is the `message_id` of the [[receivedArtAssistantResponse]] being
  * rated. `feedback_id` is the server-issued id of the answer's trace, which joins this
