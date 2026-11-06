@@ -153,7 +153,9 @@ export interface OsSortedColumn {
  *   context_module: "artworkSearch",
  *   context_page_owner_type: "inventory",
  *   query: "Kelly",
- *   value: 42
+ *   value: 42,
+ *   query_length: 5,
+ *   is_partner_search_profile: true
  * }
  * ```
  */
@@ -165,11 +167,71 @@ export interface OsSearchedArtworks {
   query: string
   /** Number of results after the search resolves */
   value: number
+  /**
+   * Length of the committed search string.
+   * Optional for senders that predate the partner search profile.
+   */
+  query_length?: number
+  /**
+   * Whether the search used the partner inventory search profile (`PARTNER_INVENTORY`).
+   * Optional for senders that predate the partner search profile.
+   */
+  is_partner_search_profile?: boolean
+}
+
+/**
+ * A partner opens or selects an artwork in the artwork table while a keyword
+ * search is active. `interaction` is "opened" when the partner expands the row or
+ * opens the Edit Artwork drawer, and "selected" when they check the row's
+ * checkbox (unchecking does not fire). Pairs with [[OsSearchedArtworks]], which
+ * carries the result count, to measure how often a search leads to opening or
+ * selecting a result.
+ *
+ * This schema describes events sent to Segment from [[OsClickedArtworkSearchResult]]
+ *
+ * @example Row expanded or Edit Artwork drawer opened
+ * ```
+ * {
+ *   action: "clickedArtworkSearchResult",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "inventory",
+ *   artwork_id: "abc123",
+ *   interaction: "opened",
+ *   query_length: 5,
+ *   is_partner_search_profile: true
+ * }
+ * ```
+ *
+ * @example Row checkbox checked
+ * ```
+ * {
+ *   action: "clickedArtworkSearchResult",
+ *   context_module: "artworkTable",
+ *   context_page_owner_type: "collection",
+ *   artwork_id: "abc123",
+ *   interaction: "selected",
+ *   query_length: 5,
+ *   is_partner_search_profile: false
+ * }
+ * ```
+ */
+export interface OsClickedArtworkSearchResult {
+  action: OsActionType.clickedArtworkSearchResult
+  context_module: OsContextModule.artworkTable
+  context_page_owner_type: OsOwnerType
+  artwork_id: string
+  /** "opened" = row expanded or Edit Artwork drawer opened, "selected" = row checkbox checked */
+  interaction: "opened" | "selected"
+  /** Length of the active search string */
+  query_length: number
+  /** Whether the active search used the partner inventory search profile (`PARTNER_INVENTORY`) */
+  is_partner_search_profile: boolean
 }
 
 export type OsFilterSortSearch =
   | OsAppliedFilter
   | OsClearedFilters
+  | OsClickedArtworkSearchResult
   | OsClickedFilterDrawer
   | OsRemovedFilter
   | OsSearchedArtworks
