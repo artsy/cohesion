@@ -121,8 +121,10 @@ import {
   ClickedOrderSummary,
   ClickedPartnerCard,
   ClickedPartnerLink,
+  ClickedPauseVideo,
   ClickedPaymentDetails,
   ClickedPaymentMethod,
+  ClickedPlayVideo,
   ClickedPromoSpace,
   ClickedPublish,
   ClickedSaveAsTemplate,
@@ -138,6 +140,7 @@ import {
   ClickedUpdateArtwork,
   ClickedUploadArtwork,
   ClickedValidationAddressOptions,
+  ClickedVanguardBadge,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
   ClickedViewWork,
@@ -460,8 +463,10 @@ export type Event =
   | ClickedOpenInNewTabButton
   | ClickedPartnerCard
   | ClickedPartnerLink
+  | ClickedPauseVideo
   | ClickedPaymentDetails
   | ClickedPaymentMethod
+  | ClickedPlayVideo
   | ClickedPromoSpace
   | ClickedPublish
   | ClickedRegisterToBid
@@ -479,6 +484,7 @@ export type Event =
   | ClickedUpdateArtwork
   | ClickedUploadArtwork
   | ClickedValidationAddressOptions
+  | ClickedVanguardBadge
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | ClickedViewWork
@@ -1097,6 +1103,10 @@ export enum ActionType {
    */
   clickedPaymentDetails = "clickedPaymentDetails",
   /**
+   * Corresponds to {@link ClickedPauseVideo}
+   */
+  clickedPauseVideo = "clickedPauseVideo",
+  /**
    * Corresponds to {@link ClickedPlayVideo}
    */
   clickedPlayVideo = "clickedPlayVideo",
@@ -1180,6 +1190,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedValidationAddressOptions}
    */
   clickedValidationAddressOptions = "clickedValidationAddressOptions",
+  /**
+   * Corresponds to {@link ClickedVanguardBadge}
+   */
+  clickedVanguardBadge = "clickedVanguardBadge",
   /**
    * Corresponds to {@link ClickedCloseValidationAddressModal}
    */
