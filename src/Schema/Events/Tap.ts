@@ -1132,6 +1132,31 @@ export interface TappedPauseVideo {
 }
 
 /**
+ * A user taps a pathway to the artist's CV in the app, such as "See all past shows
+ * and fair booths" on the About tab. The web equivalent is [[clickedCV]].
+ *
+ * This schema describes events sent to Segment from [[tappedCV]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCV",
+ *    context_module: "artistAchievements",
+ *    context_screen_owner_type: "artistAbout",
+ *    context_screen_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_screen_owner_slug: "andy-warhol"
+ *  }
+ * ```
+ */
+export interface TappedCV {
+  action: ActionType.tappedCV
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
  * A user taps a viewing room card
  *
  * This schema describes events sent to Segment from [[tappedViewingRoomCard]]

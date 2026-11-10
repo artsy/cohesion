@@ -317,6 +317,7 @@ import {
   TappedContactGallery,
   TappedCreateAlert,
   TappedCreateItinerary,
+  TappedCV,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -626,6 +627,7 @@ export type Event =
   | TappedContactGallery
   | TappedCreateAlert
   | TappedCreateItinerary
+  | TappedCV
   | TappedEditedProfile
   | TappedExploreGroup
   | TappedExploreMyCollection
@@ -1840,6 +1842,10 @@ export enum ActionType {
    * Corresponds to {@link TappedCreateItinerary}
    */
   tappedCreateItinerary = "tappedCreateItinerary",
+  /**
+   * Corresponds to {@link TappedCV}
+   */
+  tappedCV = "tappedCV",
   /**
    * Corresponds to {@link TappedEditedProfile}
    */
