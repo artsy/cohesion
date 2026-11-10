@@ -1639,9 +1639,9 @@ export interface ClickedPlayVideo {
 }
 
 /**
- * A user clicks the custom pause button on a silent, looping video on the artist
- * page. It pairs with [[clickedPlayVideo]], which fires when the user presses play
- * again. Autoplay on page load is not a click and sends no event.
+ * A user pauses a video on the artist page. It pairs with [[clickedPlayVideo]]
+ * which fires when the user plays again. Autoplay on page load is not a click
+ * and sends no event.
  *
  * This schema describes events sent to Segment from [[clickedPauseVideo]]
  *
@@ -1649,7 +1649,7 @@ export interface ClickedPlayVideo {
  *  ```
  *  {
  *    action: "clickedPauseVideo",
- *    context_module: "artistHeaderVideo" | "artistMotionVideo",
+ *    context_module: "artistHeaderVideo" | "artistMotionVideo" | "artistProcessVideo",
  *    context_owner_type: "artist",
  *    context_owner_id: "4d8b92b34eb68a1b2c0003f4",
  *    context_owner_slug: "andy-warhol",
@@ -1661,6 +1661,7 @@ export interface ClickedPauseVideo {
   context_module:
     | ContextModule.artistHeaderVideo
     | ContextModule.artistMotionVideo
+    | ContextModule.artistProcessVideo
   context_owner_id: string
   context_owner_slug: string
   context_owner_type: PageOwnerType
