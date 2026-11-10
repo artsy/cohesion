@@ -152,10 +152,9 @@ export interface OsSortedColumn {
  *   action: "searchedArtworks",
  *   context_module: "artworkSearch",
  *   context_page_owner_type: "inventory",
+ *   is_partner_search_profile: true,
  *   query: "Kelly",
- *   value: 42,
- *   query_length: 5,
- *   is_partner_search_profile: true
+ *   value: 42
  * }
  * ```
  */
@@ -163,29 +162,28 @@ export interface OsSearchedArtworks {
   action: OsActionType.searchedArtworks
   context_module: OsContextModule.artworkSearch
   context_page_owner_type: OsOwnerType.inventory | OsOwnerType.collection
-  /** The committed search string */
-  query: string
-  /** Number of results after the search resolves */
-  value: number
-  /**
-   * Length of the committed search string.
-   * Optional for senders that predate the partner search profile.
-   */
-  query_length?: number
   /**
    * Whether the search used the partner inventory search profile (`PARTNER_INVENTORY`).
    * Optional for senders that predate the partner search profile.
    */
   is_partner_search_profile?: boolean
+  /** The committed search string */
+  query: string
+  /** Number of results after the search resolves */
+  value: number
 }
 
 /**
  * A partner opens or selects an artwork in the artwork table while a keyword
  * search is active. `interaction` is "opened" when the partner expands the row or
  * opens the Edit Artwork drawer, and "selected" when they check the row's
- * checkbox (unchecking does not fire). Pairs with [[OsSearchedArtworks]], which
- * carries the result count, to measure how often a search leads to opening or
- * selecting a result.
+ * checkbox (unchecking does not fire). It carries the same `query` as
+ * [[OsSearchedArtworks]], which carries the result count, so the two join to
+ * measure how often a search leads to opening or selecting a result.
+ *
+ * "opened" fires alongside [[OsClickedArtworkRow]] (row expanded) or
+ * [[OsClickedEditArtworkButton]] (drawer opened). Don't add it to those when
+ * counting row expands or drawer opens.
  *
  * This schema describes events sent to Segment from [[OsClickedArtworkSearchResult]]
  *
@@ -197,8 +195,8 @@ export interface OsSearchedArtworks {
  *   context_page_owner_type: "inventory",
  *   artwork_id: "abc123",
  *   interaction: "opened",
- *   query_length: 5,
- *   is_partner_search_profile: true
+ *   is_partner_search_profile: true,
+ *   query: "Kelly"
  * }
  * ```
  *
@@ -210,8 +208,8 @@ export interface OsSearchedArtworks {
  *   context_page_owner_type: "collection",
  *   artwork_id: "abc123",
  *   interaction: "selected",
- *   query_length: 5,
- *   is_partner_search_profile: false
+ *   is_partner_search_profile: false,
+ *   query: "Kelly"
  * }
  * ```
  */
@@ -222,10 +220,10 @@ export interface OsClickedArtworkSearchResult {
   artwork_id: string
   /** "opened" = row expanded or Edit Artwork drawer opened, "selected" = row checkbox checked */
   interaction: "opened" | "selected"
-  /** Length of the active search string */
-  query_length: number
   /** Whether the active search used the partner inventory search profile (`PARTNER_INVENTORY`) */
   is_partner_search_profile: boolean
+  /** The active search string */
+  query: string
 }
 
 export type OsFilterSortSearch =

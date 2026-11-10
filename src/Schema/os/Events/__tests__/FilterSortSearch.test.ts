@@ -14,7 +14,6 @@ describe("Filter, sort & search events", () => {
       context_page_owner_type: OsOwnerType.inventory,
       is_partner_search_profile: true,
       query: "Kelly",
-      query_length: 5,
       value: 42,
     }
 
@@ -24,7 +23,6 @@ describe("Filter, sort & search events", () => {
       context_page_owner_type: "inventory",
       is_partner_search_profile: true,
       query: "Kelly",
-      query_length: 5,
       value: 42,
     })
   })
@@ -55,7 +53,7 @@ describe("Filter, sort & search events", () => {
       context_page_owner_type: OsOwnerType.inventory,
       interaction: "opened",
       is_partner_search_profile: true,
-      query_length: 5,
+      query: "Kelly",
     }
 
     expect(event).toEqual({
@@ -65,7 +63,7 @@ describe("Filter, sort & search events", () => {
       context_page_owner_type: "inventory",
       interaction: "opened",
       is_partner_search_profile: true,
-      query_length: 5,
+      query: "Kelly",
     })
   })
 
@@ -77,7 +75,7 @@ describe("Filter, sort & search events", () => {
       context_page_owner_type: OsOwnerType.collection,
       interaction: "selected",
       is_partner_search_profile: false,
-      query_length: 5,
+      query: "Kelly",
     }
 
     expect(event.action).toEqual("clickedArtworkSearchResult")
