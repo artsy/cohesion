@@ -332,6 +332,8 @@ import {
   TappedNavigationTab,
   TappedOrderArtworkImage,
   TappedPartnerCard,
+  TappedPauseVideo,
+  TappedPlayVideo,
   TappedPromoSpace,
   TappedSearchByImage,
   TappedSeeFewerWorks,
@@ -653,6 +655,8 @@ export type Event =
   | TappedOfferSettings
   | TappedOrderArtworkImage
   | TappedPartnerCard
+  | TappedPauseVideo
+  | TappedPlayVideo
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
   | TappedRequestPriceEstimate
@@ -1948,6 +1952,14 @@ export enum ActionType {
    * Corresponds to {@link TappedPartnerCard}
    */
   tappedPartnerCard = "tappedPartnerCard",
+  /**
+   * Corresponds to {@link TappedPauseVideo}
+   */
+  tappedPauseVideo = "tappedPauseVideo",
+  /**
+   * Corresponds to {@link TappedPlayVideo}
+   */
+  tappedPlayVideo = "tappedPlayVideo",
   /**
    * Corresponds to {@link TappedProductCapabilitiesGroup}
    */
