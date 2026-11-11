@@ -154,6 +154,7 @@ export interface OsSortedColumn {
  *   context_page_owner_type: "inventory",
  *   is_partner_search_profile: true,
  *   query: "Kelly",
+ *   search_id: "6f1c2a9e-3b4d-4e8a-9d57-0c1b2a3d4e5f",
  *   value: 42
  * }
  * ```
@@ -169,6 +170,12 @@ export interface OsSearchedArtworks {
   is_partner_search_profile?: boolean
   /** The committed search string */
   query: string
+  /**
+   * Identifies this search. The [[OsClickedArtworkSearchResult]] events sent for
+   * its results carry the same value, which joins each click to its exact search.
+   * Optional for senders that predate it.
+   */
+  search_id?: string
   /** Number of results after the search resolves */
   value: number
 }
@@ -177,9 +184,9 @@ export interface OsSearchedArtworks {
  * A partner opens or selects an artwork in the artwork table while a keyword
  * search is active. `interaction` is "opened" when the partner expands the row or
  * opens the Edit Artwork drawer, and "selected" when they check the row's
- * checkbox (unchecking does not fire). It carries the same `query` as
- * [[OsSearchedArtworks]], which carries the result count, so the two join to
- * measure how often a search leads to opening or selecting a result.
+ * checkbox (unchecking does not fire). It carries the same `query` and
+ * `search_id` as [[OsSearchedArtworks]], which carries the result count, so the
+ * two join to measure how often a search leads to opening or selecting a result.
  *
  * "opened" fires alongside [[OsClickedArtworkRow]] (row expanded) or
  * [[OsClickedEditArtworkButton]] (drawer opened). Don't add it to those when
@@ -196,7 +203,8 @@ export interface OsSearchedArtworks {
  *   artwork_id: "abc123",
  *   interaction: "opened",
  *   is_partner_search_profile: true,
- *   query: "Kelly"
+ *   query: "Kelly",
+ *   search_id: "6f1c2a9e-3b4d-4e8a-9d57-0c1b2a3d4e5f"
  * }
  * ```
  *
@@ -209,14 +217,15 @@ export interface OsSearchedArtworks {
  *   artwork_id: "abc123",
  *   interaction: "selected",
  *   is_partner_search_profile: false,
- *   query: "Kelly"
+ *   query: "Kelly",
+ *   search_id: "0a7e5d41-8c2f-4b36-a1e9-52d6f3c8b7a4"
  * }
  * ```
  */
 export interface OsClickedArtworkSearchResult {
   action: OsActionType.clickedArtworkSearchResult
   context_module: OsContextModule.artworkTable
-  context_page_owner_type: OsOwnerType
+  context_page_owner_type: OsOwnerType.inventory | OsOwnerType.collection
   artwork_id: string
   /** "opened" = row expanded or Edit Artwork drawer opened, "selected" = row checkbox checked */
   interaction: "opened" | "selected"
@@ -224,6 +233,12 @@ export interface OsClickedArtworkSearchResult {
   is_partner_search_profile: boolean
   /** The active search string */
   query: string
+  /**
+   * The `search_id` of the [[OsSearchedArtworks]] event for the active search.
+   * Absent when the page loaded with the search already in the URL, because no
+   * search event was sent for it.
+   */
+  search_id?: string
 }
 
 export type OsFilterSortSearch =
