@@ -1,3 +1,15 @@
+# v4.422.0 (Wed Nov 11 2026)
+
+#### 🚀  Enhancement
+
+- chore: OS - partner search profile tracking for ArtOS artwork search [#774](https://github.com/artsy/cohesion/pull/774) ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+#### Authors: 1
+
+- Mitchell Henson ([@Mitch-Henson](https://github.com/Mitch-Henson))
+
+---
+
 # v4.421.0 (Wed Nov 11 2026)
 
 #### 🚀  Enhancement
