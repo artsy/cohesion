@@ -119,6 +119,11 @@ export enum OsActionType {
   clickedArtworkRow = "clickedArtworkRow",
 
   /**
+   * Corresponds to {@link OsClickedArtworkSearchResult}
+   */
+  clickedArtworkSearchResult = "clickedArtworkSearchResult",
+
+  /**
    * Corresponds to {@link OsInstagramEditor}
    */
   clickedAspectRatio = "clickedAspectRatio",

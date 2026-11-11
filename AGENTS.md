@@ -10,7 +10,7 @@ downstream Redshift table. Consuming apps (web + iOS) import these types to fire
 - **TypeScript** (strict) — the entire schema is type definitions; no runtime code
 - **Babel** — compiles `src/**/*.ts` → `dist/` (`@babel/preset-typescript`)
 - **tsc** — type-checking and `.d.ts` emission only (not used for transpiling)
-- **Jest** — tests assert each event interface serializes to its expected JSON shape
+- **Jest** — runs the existing test suite; new events do not get tests (see Code Style below)
 - **ESLint + Prettier** — `simple-import-sort` and `sort-keys-fix` are enforced
 - **TypeDoc** — public docs at https://cohesion.artsy.net are generated from doc comments
 - **Auto / CircleCI** — versioning and npm publish on merge to `main`
@@ -56,6 +56,10 @@ These are enforced by lint/test or are established conventions — follow them v
   `src/Schema/Events/FilterAndSort.ts` for the canonical style.
 - **Aggregate interfaces into a union** (e.g. `OsSubmitEvent`, `OsEvent`) and re-export
   every new file from the relevant `index.ts` and `src/Schema/index.ts`.
+- **Don't add tests for new events or fields.** An event is only an interface, so a test
+  that builds a fixture and asserts it equals the same literal checks nothing beyond what
+  `yarn type-check` already enforces, and the TypeDoc `@example` documents the shape. Leave
+  the existing tests as they are, but don't copy the pattern into new events.
 - **Prettier:** no semicolons, double quotes, trailing commas, 2-space indent.
 
 To add a CMS or core event, follow the step-by-step guide in [README.md](README.md#schema).
