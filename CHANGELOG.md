@@ -1,3 +1,20 @@
+# v4.421.0 (Wed Nov 11 2026)
+
+#### 🚀  Enhancement
+
+- feat(EL-22): Add tracking event for artist storytelling [#773](https://github.com/artsy/cohesion/pull/773) ([@MrSltun](https://github.com/MrSltun))
+
+#### 🏠  Internal
+
+- Update dep auto from 2.3.0 to v3 [#771](https://github.com/artsy/cohesion/pull/771) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Sultan Al-Maari ([@MrSltun](https://github.com/MrSltun))
+
+---
+
 # v4.420.0 (Wed Nov 04 2026)
 
 #### 🚀  Enhancement
