@@ -1600,7 +1600,9 @@ export interface ClickedArticleShare {
 }
 
 /**
- * A user clicks to play a video
+ * A user clicks to play a video. On the artist page, `context_module` says which
+ * video: the Header Video or a Motion Video (both silent loops, played again from
+ * the custom play/pause button) or the Process Video (played with sound).
  *
  * This schema describes events sent to Segment from [[clickedPlayVideo]]
  *
@@ -1608,14 +1610,58 @@ export interface ClickedArticleShare {
  *  ```
  *  {
  *    action: "clickedPlayVideo",
- *    context_page_owner_type: "article",
- *    context_page_owner_id: "62389c0a0b01c80022eb82a1",
- *    context_page_owner_slug: "artsy-editorial-making-generative-art-changed-understanding",
+ *    context_owner_type: "article",
+ *    context_owner_id: "62389c0a0b01c80022eb82a1",
+ *    context_owner_slug: "artsy-editorial-making-generative-art-changed-understanding",
+ *  }
+ * ```
+ *
+ * @example
+ *  ```
+ *  {
+ *    action: "clickedPlayVideo",
+ *    context_module: "artistProcessVideo",
+ *    context_owner_type: "artist",
+ *    context_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_owner_slug: "andy-warhol",
  *  }
  * ```
  */
 export interface ClickedPlayVideo {
   action: ActionType.clickedPlayVideo
+  context_module?:
+    | ContextModule.artistHeaderVideo
+    | ContextModule.artistMotionVideo
+    | ContextModule.artistProcessVideo
+  context_owner_id: string
+  context_owner_slug: string
+  context_owner_type: PageOwnerType
+}
+
+/**
+ * A user pauses a video on the artist page. It pairs with [[clickedPlayVideo]]
+ * which fires when the user plays again. Autoplay on page load is not a click
+ * and sends no event.
+ *
+ * This schema describes events sent to Segment from [[clickedPauseVideo]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedPauseVideo",
+ *    context_module: "artistHeaderVideo" | "artistMotionVideo" | "artistProcessVideo",
+ *    context_owner_type: "artist",
+ *    context_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_owner_slug: "andy-warhol",
+ *  }
+ * ```
+ */
+export interface ClickedPauseVideo {
+  action: ActionType.clickedPauseVideo
+  context_module:
+    | ContextModule.artistHeaderVideo
+    | ContextModule.artistMotionVideo
+    | ContextModule.artistProcessVideo
   context_owner_id: string
   context_owner_slug: string
   context_owner_type: PageOwnerType
@@ -2119,6 +2165,35 @@ export interface ClickedVerifiedRepresentative {
   context_page_owner_id: string
   destination_page_owner_type: PageOwnerType
   destination_page_owner_id: string
+}
+
+/**
+ * A user clicks the Vanguard badge in the artist page header, which links to the
+ * Artsy Vanguard collection.
+ *
+ * This schema describes events sent to Segment from [[clickedVanguardBadge]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "clickedVanguardBadge",
+ *    context_module: "artistVanguardBadge",
+ *    context_page_owner_type: "artist",
+ *    context_page_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_page_owner_slug: "andy-warhol",
+ *    destination_page_owner_type: "collection",
+ *    destination_page_owner_slug: "artsy-vanguard-artists"
+ *  }
+ * ```
+ */
+export interface ClickedVanguardBadge {
+  action: ActionType.clickedVanguardBadge
+  context_module: ContextModule.artistVanguardBadge
+  context_page_owner_id: string
+  context_page_owner_slug: string
+  context_page_owner_type: PageOwnerType
+  destination_page_owner_slug: string
+  destination_page_owner_type: PageOwnerType
 }
 
 /**

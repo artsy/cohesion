@@ -36,6 +36,8 @@ export enum OwnerType {
   articles = "articles",
   artAssistant = "artAssistant",
   artist = "artist",
+  /** The About tab of the artist screen in the app. */
+  artistAbout = "artistAbout",
   artistArticles = "artistArticles",
   artistAuctionResults = "artistAuctionResults",
   artists = "artists",
@@ -226,6 +228,7 @@ export type ScreenOwnerType =
   | OwnerType.article
   | OwnerType.articles
   | OwnerType.artist
+  | OwnerType.artistAbout
   | OwnerType.artistArticles
   | OwnerType.artistAuctionResults
   | OwnerType.artistSeries

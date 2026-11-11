@@ -1073,6 +1073,91 @@ export interface TappedPartnerCard {
 }
 
 /**
+ * A user taps to play a video on the artist screen in the app. `context_module` says
+ * which video: the Header Video or a Motion Video (both silent loops, played again
+ * from the custom play/pause button) or the Process Video (played with sound).
+ * The web equivalent is [[clickedPlayVideo]].
+ *
+ * This schema describes events sent to Segment from [[tappedPlayVideo]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedPlayVideo",
+ *    context_module: "artistProcessVideo",
+ *    context_screen_owner_type: "artist",
+ *    context_screen_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_screen_owner_slug: "andy-warhol"
+ *  }
+ * ```
+ */
+export interface TappedPlayVideo {
+  action: ActionType.tappedPlayVideo
+  context_module:
+    | ContextModule.artistHeaderVideo
+    | ContextModule.artistMotionVideo
+    | ContextModule.artistProcessVideo
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
+ * A user pauses a video on the artist screen in the app. It pairs with
+ * [[tappedPlayVideo]], which fires when the user plays again.
+ * Autoplay on screen load is not a tap and sends no event.
+ * The web equivalent is [[clickedPauseVideo]].
+ *
+ * This schema describes events sent to Segment from [[tappedPauseVideo]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedPauseVideo",
+ *    context_module: "artistHeaderVideo" | "artistMotionVideo" | "artistProcessVideo",
+ *    context_screen_owner_type: "artist",
+ *    context_screen_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_screen_owner_slug: "andy-warhol"
+ *  }
+ * ```
+ */
+export interface TappedPauseVideo {
+  action: ActionType.tappedPauseVideo
+  context_module:
+    | ContextModule.artistHeaderVideo
+    | ContextModule.artistMotionVideo
+    | ContextModule.artistProcessVideo
+  context_screen_owner_id: string
+  context_screen_owner_slug: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
+ * A user taps a pathway to the artist's CV in the app, such as "See all past shows
+ * and fair booths" on the About tab. The web equivalent is [[clickedCV]].
+ *
+ * This schema describes events sent to Segment from [[tappedCV]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedCV",
+ *    context_module: "artistAchievements",
+ *    context_screen_owner_type: "artistAbout",
+ *    context_screen_owner_id: "4d8b92b34eb68a1b2c0003f4",
+ *    context_screen_owner_slug: "andy-warhol"
+ *  }
+ * ```
+ */
+export interface TappedCV {
+  action: ActionType.tappedCV
+  context_module: ContextModule
+  context_screen_owner_id: string
+  context_screen_owner_slug?: string
+  context_screen_owner_type: ScreenOwnerType
+}
+
+/**
  * A user taps a viewing room card
  *
  * This schema describes events sent to Segment from [[tappedViewingRoomCard]]

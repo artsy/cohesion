@@ -43,12 +43,20 @@ export enum ContextModule {
   artistCard = "artistCard",
   artistGrid = "artistGrid",
   artistHeader = "artistHeader",
+  /** The silent, looping Header Video at the top of the artist page. */
+  artistHeaderVideo = "artistHeaderVideo",
   artistHighDemandGrid = "artistHighDemandGrid",
+  /** The silent, looping Motion Videos in the About section of the artist page. */
+  artistMotionVideo = "artistMotionVideo",
+  /** The Process Video, played with sound, in the About section of the artist page. */
+  artistProcessVideo = "artistProcessVideo",
   artistRecentlySold = "artistRecentlySold",
   artistSeriesRail = "artistSeriesRail",
   artistSeriesTab = "artistSeriesTab",
   artistsTab = "artistsTab",
   artistsToFollowRail = "artistsToFollowRail",
+  /** The Vanguard badge in the artist page header, linking to the Vanguard collection. */
+  artistVanguardBadge = "artistVanguardBadge",
   artworkActions = "artworkActions",
   artworkCarousel = "artworkCarousel",
   artworkClosedLotHeader = "artworkClosedLotHeader",

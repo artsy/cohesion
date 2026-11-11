@@ -121,8 +121,10 @@ import {
   ClickedOrderSummary,
   ClickedPartnerCard,
   ClickedPartnerLink,
+  ClickedPauseVideo,
   ClickedPaymentDetails,
   ClickedPaymentMethod,
+  ClickedPlayVideo,
   ClickedPromoSpace,
   ClickedPublish,
   ClickedSaveAsTemplate,
@@ -138,6 +140,7 @@ import {
   ClickedUpdateArtwork,
   ClickedUploadArtwork,
   ClickedValidationAddressOptions,
+  ClickedVanguardBadge,
   ClickedVerifyIdentity,
   ClickedViewingRoomCard,
   ClickedViewWork,
@@ -314,6 +317,7 @@ import {
   TappedContactGallery,
   TappedCreateAlert,
   TappedCreateItinerary,
+  TappedCV,
   TappedExploreGroup,
   TappedFairCard,
   TappedFairGroup,
@@ -329,6 +333,8 @@ import {
   TappedNavigationTab,
   TappedOrderArtworkImage,
   TappedPartnerCard,
+  TappedPauseVideo,
+  TappedPlayVideo,
   TappedPromoSpace,
   TappedSearchByImage,
   TappedSeeFewerWorks,
@@ -460,8 +466,10 @@ export type Event =
   | ClickedOpenInNewTabButton
   | ClickedPartnerCard
   | ClickedPartnerLink
+  | ClickedPauseVideo
   | ClickedPaymentDetails
   | ClickedPaymentMethod
+  | ClickedPlayVideo
   | ClickedPromoSpace
   | ClickedPublish
   | ClickedRegisterToBid
@@ -479,6 +487,7 @@ export type Event =
   | ClickedUpdateArtwork
   | ClickedUploadArtwork
   | ClickedValidationAddressOptions
+  | ClickedVanguardBadge
   | ClickedVerifyIdentity
   | ClickedViewingRoomCard
   | ClickedViewWork
@@ -618,6 +627,7 @@ export type Event =
   | TappedContactGallery
   | TappedCreateAlert
   | TappedCreateItinerary
+  | TappedCV
   | TappedEditedProfile
   | TappedExploreGroup
   | TappedExploreMyCollection
@@ -647,6 +657,8 @@ export type Event =
   | TappedOfferSettings
   | TappedOrderArtworkImage
   | TappedPartnerCard
+  | TappedPauseVideo
+  | TappedPlayVideo
   | TappedProductCapabilitiesGroup
   | TappedPromoSpace
   | TappedRequestPriceEstimate
@@ -1097,6 +1109,10 @@ export enum ActionType {
    */
   clickedPaymentDetails = "clickedPaymentDetails",
   /**
+   * Corresponds to {@link ClickedPauseVideo}
+   */
+  clickedPauseVideo = "clickedPauseVideo",
+  /**
    * Corresponds to {@link ClickedPlayVideo}
    */
   clickedPlayVideo = "clickedPlayVideo",
@@ -1180,6 +1196,10 @@ export enum ActionType {
    * Corresponds to {@link ClickedValidationAddressOptions}
    */
   clickedValidationAddressOptions = "clickedValidationAddressOptions",
+  /**
+   * Corresponds to {@link ClickedVanguardBadge}
+   */
+  clickedVanguardBadge = "clickedVanguardBadge",
   /**
    * Corresponds to {@link ClickedCloseValidationAddressModal}
    */
@@ -1823,6 +1843,10 @@ export enum ActionType {
    */
   tappedCreateItinerary = "tappedCreateItinerary",
   /**
+   * Corresponds to {@link TappedCV}
+   */
+  tappedCV = "tappedCV",
+  /**
    * Corresponds to {@link TappedEditedProfile}
    */
   tappedEditedProfile = "tappedEditedProfile",
@@ -1934,6 +1958,14 @@ export enum ActionType {
    * Corresponds to {@link TappedPartnerCard}
    */
   tappedPartnerCard = "tappedPartnerCard",
+  /**
+   * Corresponds to {@link TappedPauseVideo}
+   */
+  tappedPauseVideo = "tappedPauseVideo",
+  /**
+   * Corresponds to {@link TappedPlayVideo}
+   */
+  tappedPlayVideo = "tappedPlayVideo",
   /**
    * Corresponds to {@link TappedProductCapabilitiesGroup}
    */
