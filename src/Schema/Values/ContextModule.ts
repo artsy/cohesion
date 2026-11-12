@@ -106,6 +106,7 @@ export enum ContextModule {
   cityGuideMapFilter = "cityGuideMapFilter",
   cityGuideMapTabs = "cityGuideMapTabs",
   cityGuideMapToggle = "cityGuideMapToggle",
+  cityGuidesRail = "cityGuidesRail",
   collectionCard = "collectionCard",
   collectionDescription = "collectionDescription",
   collectionRail = "collectionRail",
