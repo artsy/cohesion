@@ -200,6 +200,37 @@ export interface TappedArtAssistantNewChat {
 }
 
 /**
+ * A user taps the microphone in the Art Assistant composer to start dictating a message, or
+ * taps it again to stop. `type` tells the two taps apart: `start` fires when the user taps
+ * the idle microphone, `stop` when they tap it while it is listening.
+ *
+ * It fires on the tap itself, so a `start` tap that is then refused (microphone permission
+ * denied, no speech recognizer on the device) still shows up here.
+ *
+ * This schema describes events sent to Segment from [[tappedArtAssistantVoiceInput]]
+ *
+ *  @example
+ *  ```
+ *  {
+ *    action: "tappedArtAssistantVoiceInput",
+ *    context_module: "artAssistant",
+ *    context_screen_owner_type: "artAssistant",
+ *    conversation_id: "6f1b8b0e-1f27-4a0e-9d6f-2c2f2a3d1f45",
+ *    type: "start"
+ *  }
+ * ```
+ */
+export interface TappedArtAssistantVoiceInput {
+  action: ActionType.tappedArtAssistantVoiceInput
+  context_module: ContextModule.artAssistant
+  context_screen_owner_type: OwnerType.artAssistant
+  /** Client-generated id of the conversation the user is dictating into */
+  conversation_id: string
+  /** Whether the tap started or stopped dictation */
+  type: "start" | "stop"
+}
+
+/**
  * A user taps a grouping of articles on iOS
  *
  *  This schema describes events sent to Segment from [[tappedArticleGroup]]
