@@ -1,3 +1,15 @@
+# v4.423.0 (Thu Nov 12 2026)
+
+#### 🚀  Enhancement
+
+- feat: add tappedArtAssistantVoiceInput event [#775](https://github.com/artsy/cohesion/pull/775) ([@nickskalkin](https://github.com/nickskalkin))
+
+#### Authors: 1
+
+- Nikita Skalkin ([@nickskalkin](https://github.com/nickskalkin))
+
+---
+
 # v4.422.0 (Wed Nov 11 2026)
 
 #### 🚀  Enhancement
