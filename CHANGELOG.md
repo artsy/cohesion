@@ -1,3 +1,15 @@
+# v4.424.0 (Thu Nov 12 2026)
+
+#### 🚀  Enhancement
+
+- feat(ContextModule): home view city guide rails [#776](https://github.com/artsy/cohesion/pull/776) ([@araujobarret](https://github.com/araujobarret))
+
+#### Authors: 1
+
+- Carlos ([@araujobarret](https://github.com/araujobarret))
+
+---
+
 # v4.423.0 (Thu Nov 12 2026)
 
 #### 🚀  Enhancement
