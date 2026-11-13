@@ -1,3 +1,15 @@
+# v4.425.0 (Fri Nov 13 2026)
+
+#### 🚀  Enhancement
+
+- chore: run the AI review workflow when a PR closes [#777](https://github.com/artsy/cohesion/pull/777) ([@MounirDhahri](https://github.com/MounirDhahri))
+
+#### Authors: 1
+
+- Mounir Dhahri ([@MounirDhahri](https://github.com/MounirDhahri))
+
+---
+
 # v4.424.0 (Thu Nov 12 2026)
 
 #### 🚀  Enhancement
